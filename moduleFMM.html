@@ -87,14 +87,14 @@ $(function() {
 </div>
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: Tristan Roussillon</dt><dd></dd></dl>
 <p>Part of the <a class="el" href="packageGeometry.html">Geometry package</a>.</p>
-<p>The Fast Marching Method (<a class="el" href="classDGtal_1_1FMM.html" title="Aim: Fast Marching Method (FMM) for nd distance transforms. ">FMM</a> for short) is a numerical technique for tracking the evolution of an expanding front within the level-set framework (see <b>[Sethian1998]</b> for a review). <br />
+<p>The Fast Marching Method (<a class="el" href="classDGtal_1_1FMM.html" title="Aim: Fast Marching Method (FMM) for nd distance transforms. ">FMM</a> for short) is a numerical technique for tracking the evolution of an expanding front within the level-set framework (see <a class="el" href="citelist.html#CITEREF_Sethian1998">[78]</a> for a review). <br />
 If the front evolves in the normal direction at unit speed, the arrival time at a point \( x \) corresponds to the distance of \( x \) to the initial front. <br />
  </p><div class="image">
 <img src="FMM-interface.png" alt="FMM-interface.png"/>
 <div class="caption">
 Arrival time and distance to the initial front</div></div>
 <p>That is why <a class="el" href="classDGtal_1_1FMM.html" title="Aim: Fast Marching Method (FMM) for nd distance transforms. ">FMM</a> can be used to compute a (signed) distance field from an initial point set (which may be located around an interface or not). <br />
-However, <a class="el" href="classDGtal_1_1FMM.html" title="Aim: Fast Marching Method (FMM) for nd distance transforms. ">FMM</a> can be used to other tasks: e.g. the extrapolation of a scalar field out of an interface, such that it is constant on rays normal to the interface <b>[Adalsteinsson1999]</b>. <br />
+However, <a class="el" href="classDGtal_1_1FMM.html" title="Aim: Fast Marching Method (FMM) for nd distance transforms. ">FMM</a> can be used to other tasks: e.g. the extrapolation of a scalar field out of an interface, such that it is constant on rays normal to the interface <a class="el" href="citelist.html#CITEREF_Adalsteinsson1999">[2]</a>. <br />
 </p>
 <p>Related examples are <a class="el" href="exampleFMM2D_8cpp.html" title="Computation of a distance field from a given point. ">exampleFMM2D.cpp</a> and <a class="el" href="exampleFMM3D_8cpp.html" title="The aim of this example is to use the FMM (fast marching method) class in order to incrementally comp...">exampleFMM3D.cpp</a>. <br />
 </p>
@@ -127,7 +127,7 @@ Data structures</h2>
 <li>find a given point, update its tentative value if found,</li>
 <li>get the point of smallest tentative value,</li>
 </ul>
-<p class="startli">This data structure is usually a min-heap data structure with back pointers from the lattice to the min-heap (see <b>[Sethian1998]</b>). The memory cost of such solution is however high. That is why, we implemented the candidate point set as a STL set of pairs &lt;point, tentative value&gt;. Instead of updating the tentative values, we insert a new pair &lt;point, tentative value&gt;. This solution is less memory consumming and experimentally (nearly) as efficient as the former one. <br />
+<p class="startli">This data structure is usually a min-heap data structure with back pointers from the lattice to the min-heap (see <a class="el" href="citelist.html#CITEREF_Sethian1998">[78]</a>). The memory cost of such solution is however high. That is why, we implemented the candidate point set as a STL set of pairs &lt;point, tentative value&gt;. Instead of updating the tentative values, we insert a new pair &lt;point, tentative value&gt;. This solution is less memory consumming and experimentally (nearly) as efficient as the former one. <br />
 </p>
 </li>
 </ul>
@@ -149,7 +149,7 @@ over all the quadrants:</p>
 <p>\( \sum_{i = 1 \ldots n } ( d - d_i )^2 = 1 \)</p>
 <p>Obviously, if the distance value \( d&#39; \) of only one 1-neighbor is available, then \( d = d&#39; \pm 1 \) ( \( + \) for positive distance values, \( - \) for negative ones). <br />
 If the distance values of two (or more than two in nD) 1-neighbors are available, the previous quadratic equation should have two solutions and we take the larger one for \( d \). <br />
-The numerical approach implemented in L2FirstOrderLocalDistance::operator() to compute \( d \), even with poor initial data or with numerical errors, is detailed in <b>[OsherFedkiw2003]</b> [p. 72-73]. Note that if \( h \) is the lattice spacing, the approximation error tends to zero in \( O(h) \) (first-order convergence).</p>
+The numerical approach implemented in L2FirstOrderLocalDistance::operator() to compute \( d \), even with poor initial data or with numerical errors, is detailed in <a class="el" href="citelist.html#CITEREF_OsherFedkiw2003">[63]</a> [p. 72-73]. Note that if \( h \) is the lattice spacing, the approximation error tends to zero in \( O(h) \) (first-order convergence).</p>
 <dl class="section note"><dt>Note</dt><dd>This class deals with positive or negative distance values (0 is arbitrarily considered as a positive value, ie. starting with a seed of null value, you must get positive values). However, the behavior is undefined when there are both positive and negative distance values in the neighborhood of \( x \). See <a class="el" href="moduleFMM.html#subsectmoduleFMM31">Signed distance field to an interface</a> for an example of the use of <em>signed</em> distance values.</dd></dl>
 <h2><a class="anchor" id="sectmoduleFMM12"></a>
 Basic usage</h2>
@@ -189,7 +189,7 @@ Stopping criteria</h2>
 </p>
 <h1><a class="anchor" id="sectmoduleFMM3"></a>
 Applications</h1>
-<p>As reported in <b>[Sethian1998]</b>, the Fast Marching Method has numerous applications.</p>
+<p>As reported in <a class="el" href="citelist.html#CITEREF_Sethian1998">[78]</a>, the Fast Marching Method has numerous applications.</p>
 <h2><a class="anchor" id="subsectmoduleFMM31"></a>
 Signed distance field to an interface</h2>
 <p><br />
@@ -218,7 +218,7 @@ Signed distance field computed in a narrow band around a digital surface. </div>
  </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 24 2018 17:19:20 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 27 2018 12:49:09 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
