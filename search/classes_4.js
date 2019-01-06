@@ -14,6 +14,7 @@ var searchData=
   ['digitalmetricadapter',['DigitalMetricAdapter',['../classDGtal_1_1DigitalMetricAdapter.html',1,'DGtal']]],
   ['digitalsetboundary',['DigitalSetBoundary',['../classDGtal_1_1DigitalSetBoundary.html',1,'DGtal']]],
   ['digitalsetbyassociativecontainer',['DigitalSetByAssociativeContainer',['../classDGtal_1_1DigitalSetByAssociativeContainer.html',1,'DGtal']]],
+  ['digitalsetbyassociativecontainer_3c_20dgtal_3a_3az3i_3a_3adomain_2c_20std_3a_3aunordered_5fset_3c_20typename_20dgtal_3a_3az3i_3a_3adomain_3a_3apoint_20_3e_20_3e',['DigitalSetByAssociativeContainer&lt; DGtal::Z3i::Domain, std::unordered_set&lt; typename DGtal::Z3i::Domain::Point &gt; &gt;',['../classDGtal_1_1DigitalSetByAssociativeContainer.html',1,'DGtal']]],
   ['digitalsetbystlset',['DigitalSetBySTLSet',['../classDGtal_1_1DigitalSetBySTLSet.html',1,'DGtal']]],
   ['digitalsetbystlvector',['DigitalSetBySTLVector',['../classDGtal_1_1DigitalSetBySTLVector.html',1,'DGtal']]],
   ['digitalsetconverter',['DigitalSetConverter',['../structDGtal_1_1DigitalSetConverter.html',1,'DGtal']]],

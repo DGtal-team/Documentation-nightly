@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['object',['Object',['../classDGtal_1_1Expander.html#a9705115071f2c6be3f4beaa44007415b',1,'DGtal::Expander::Object()'],['../classDGtal_1_1VoxelComplex.html#a82391d9eac7fbbcae83ec892aa009ca3',1,'DGtal::VoxelComplex::Object()']]],
+  ['object',['Object',['../classDGtal_1_1Expander.html#a9705115071f2c6be3f4beaa44007415b',1,'DGtal::Expander']]],
   ['object18_5f6',['Object18_6',['../namespaceDGtal_1_1Z3i.html#ad3c59f1acd81dabcd6bda393aa940480',1,'DGtal::Z3i']]],
   ['object26_5f6',['Object26_6',['../namespaceDGtal_1_1Z3i.html#af17378e2e0533237cfb81af157e39b68',1,'DGtal::Z3i']]],
   ['object4_5f8',['Object4_8',['../namespaceDGtal_1_1Z2i.html#a7b2f164e461fd4e76244e919ffedf685',1,'DGtal::Z2i']]],

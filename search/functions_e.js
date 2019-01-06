@@ -27,6 +27,7 @@ var searchData=
   ['negate',['negate',['../structDGtal_1_1ClosedIntegerHalfPlane.html#a0b450b65897067400746837b27f66929',1,'DGtal::ClosedIntegerHalfPlane::negate()'],['../classDGtal_1_1ArithmeticalDSL.html#a2ee30d830c7210a1b1bf512ba68127a6',1,'DGtal::ArithmeticalDSL::negate()'],['../classDGtal_1_1ArithmeticalDSS.html#a11d64f0e6371a510b56563a276f24f77',1,'DGtal::ArithmeticalDSS::negate()'],['../classDGtal_1_1PointVector.html#af1ef76404dfcd42da67274de0fcd3eb3',1,'DGtal::PointVector::negate()']]],
   ['neighborhood',['neighborhood',['../classDGtal_1_1Object.html#a6a8da6bf41905a4ae6b24c93d3d0298c',1,'DGtal::Object']]],
   ['neighborhoodsize',['neighborhoodSize',['../classDGtal_1_1Object.html#a0027f115d49cd45c73874a260411906b',1,'DGtal::Object']]],
+  ['neighborhoodvoxels',['neighborhoodVoxels',['../classDGtal_1_1VoxelComplex.html#a4dce887f6e81d781bf7e5a25825770e4',1,'DGtal::VoxelComplex']]],
   ['neighboringfaces',['neighboringFaces',['../classDGtal_1_1HalfEdgeDataStructure.html#a1f90fb7c5b427721d070105cde90e003',1,'DGtal::HalfEdgeDataStructure']]],
   ['neighboringvertices',['neighboringVertices',['../classDGtal_1_1HalfEdgeDataStructure.html#aa78ed5e6435580f8adb27211cb06660c',1,'DGtal::HalfEdgeDataStructure']]],
   ['newcurrenttriangle',['newCurrentTriangle',['../classDGtal_1_1ChordNaivePlaneComputer.html#a53d06facd1d66074f583ef6f544991b9',1,'DGtal::ChordNaivePlaneComputer']]],
