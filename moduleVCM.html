@@ -82,7 +82,7 @@ $(function() {
 </li>
 </ul>
 </div>
-<div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: Jacques-Olivier Lachaud</dt><dd></dd></dl>
+<div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Jacques-Olivier Lachaud</dd></dl>
 <p>Part of the <a class="el" href="packageGeometry.html">Geometry package</a>.</p>
 <p>This part of the manual describes classes and functions related to the Voronoi Covariance <a class="el" href="classDGtal_1_1Measure.html" title="Aim: Implements a simple measure computation (in the Lesbegue sens) of a set. In dimension 2...">Measure</a> (VCM) of a set of points in arbitrary dimension. The VCM is a covariance tensor related to a distance function to the input data points. It was introduced by Mérigot, Ovsjanikov and Guibas <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[61]</a>. The digital version of the VCM was studied by Cuel, Lachaud, and Thibert <a class="el" href="citelist.html#CITEREF_Cuel_2014-dgci">[30]</a>. Stability and multigrid convergence results have been established. This documentation presents the implementation of the digital VCM. The VCM is useful for the following tasks:</p>
 <ul>
@@ -101,7 +101,7 @@ Voronoi Covariance Measure</h1>
 <div class="caption">
 Voronoi Covariance Measure of a point set in the plane.</div></div>
 <dl class="section note"><dt>Note</dt><dd>The stability result of <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[61]</a> implies that information extracted from the covariance matrix such as normals or principal directions are <b>stable</b> with respect to <b>Hausdorff</b> <b>perturbation</b>.</dd></dl>
-<dl class="section user"><dt>Advanced: Remark that this definition matches the definition</dt><dd>introduced in <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[61]</a> : when \(\chi\) is the characteristic function of a ball, one recovers a notion similar to the convolved VCM.</dd></dl>
+<dl class="section user"><dt>Advanced: </dt><dd>Remark that this definition matches the definition introduced in <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[61]</a> : when \(\chi\) is the characteristic function of a ball, one recovers a notion similar to the convolved VCM.</dd></dl>
 <h1><a class="anchor" id="moduleVCM_sec2"></a>
 Computing the Voronoi Covariance Measure of a point set</h1>
 <p>Let <em>K</em> be some point set. In this case, the computation of the VCM can be split into isolated calculations in each Voronoi cell of <em>K</em>. In the digital setting, the Voronoi cells can be efficiently computed by repeated scans of the domain (see <a class="el" href="moduleVolumetric.html">nD Volumetric Analysis using Separable Processes</a>). That's exactly how is computed the VCM. The computational complexity of the VCM is thus the computational complexity of the Voronoi map in nD. The templated class <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html" title="Aim: This class precomputes the Voronoi Covariance Measure of a set of points. It can compute the cov...">VoronoiCovarianceMeasure</a> is the one taking of the computation. It requires two type parameters:</p>
@@ -181,7 +181,7 @@ Absolute curvature estimation with Voronoi Covariance Measure.</div></div>
  </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 6 2019 15:07:48 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 21 2019 09:34:30 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

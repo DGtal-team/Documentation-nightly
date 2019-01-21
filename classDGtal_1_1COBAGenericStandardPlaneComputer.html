@@ -261,10 +261,10 @@ class DGtal::COBAGenericStandardPlaneComputer&lt; TSpace, TInternalInteger &gt;<
   </dd>
 </dl>
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> SpaceND&lt;3,int&gt; <a class="code" href="namespaceDGtal_1_1Z3i.html#a53d22fc69530a513baf89080684d8158">Z3</a>;</div><div class="line"><span class="keyword">typedef</span> COBAGenericStandardPlaneComputer&lt; Z3, int64_t &gt; StandardPlaneComputer;</div><div class="line">StandardPlaneComputer plane;</div><div class="line">plane.<a class="code" href="classDGtal_1_1COBANaivePlaneComputer.html#a17098fa05c7e9cf548d69283410c10e2">init</a>( 100, 1, 1 ); * diameter is 100, width is 1/1 x sqrt(3) =&gt; standard</div><div class="line">plane.extend( <a class="code" href="classDGtal_1_1COBAGenericStandardPlaneComputer.html#a30695f2718c1bcb9771a0ed1caec1af1">Point</a>( 10, 0, 0 ) ); <span class="comment">// return &#39;true&#39;</span></div><div class="line">plane.extend( <a class="code" href="classDGtal_1_1COBAGenericStandardPlaneComputer.html#a30695f2718c1bcb9771a0ed1caec1af1">Point</a>( 0, 8, 0 ) );  <span class="comment">// return &#39;true&#39;</span></div><div class="line">plane.extend( <a class="code" href="classDGtal_1_1COBAGenericStandardPlaneComputer.html#a30695f2718c1bcb9771a0ed1caec1af1">Point</a>( 0, 0, 6 ) );  <span class="comment">// return &#39;true&#39;</span></div><div class="line">plane.extend( <a class="code" href="classDGtal_1_1COBAGenericStandardPlaneComputer.html#a30695f2718c1bcb9771a0ed1caec1af1">Point</a>( 5, 5, 5 ) );  <span class="comment">// return &#39;false&#39;</span></div><div class="line"><span class="comment">// There is no standard plane going through the 3 first points and the last one.</span></div></div><!-- fragment --><p>Model of <a class="el" href="structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. ">boost::DefaultConstructible</a>, <a class="el" href="structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html. ">boost::CopyConstructible</a>, <a class="el" href="structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. ">boost::Assignable</a>, <a class="el" href="structboost_1_1ForwardContainer.html" title="Go to http://www.sgi.com/tech/stl/ForwardContainer.html. ">boost::ForwardContainer</a>, <a class="el" href="structDGtal_1_1concepts_1_1CAdditivePrimitiveComputer.html" title="Aim: Defines the concept describing an object that computes some primitive from input points given gr...">concepts::CAdditivePrimitiveComputer</a>, <a class="el" href="structDGtal_1_1concepts_1_1CPointPredicate.html" title="Aim: Defines a predicate on a point. ">concepts::CPointPredicate</a>.</p>
-<dl class="section user"><dt>Advanced: All accepted inserted points are stored in the</dt><dd>different naive plane computers, but they are stored "transformed". This is why we adapt the iterator on the naive plane computer with a boost::transform_iterator, such that the points are transformed back when accessing to the value of the iterator (notably in <a class="el" href="classDGtal_1_1COBAGenericStandardPlaneComputer.html#a16a1b8ca0f5afdcb726438dc8a3ce169">begin</a> and <a class="el" href="classDGtal_1_1COBAGenericStandardPlaneComputer.html#afb91479a86b6a2ea7d6b8b47187a87d0">end</a> method). </dd></dl>
+<dl class="section user"><dt>Advanced: </dt><dd>All accepted inserted points are stored in the different naive plane computers, but they are stored "transformed". This is why we adapt the iterator on the naive plane computer with a boost::transform_iterator, such that the points are transformed back when accessing to the value of the iterator (notably in <a class="el" href="classDGtal_1_1COBAGenericStandardPlaneComputer.html#a16a1b8ca0f5afdcb726438dc8a3ce169">begin</a> and <a class="el" href="classDGtal_1_1COBAGenericStandardPlaneComputer.html#afb91479a86b6a2ea7d6b8b47187a87d0">end</a> method). </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="io_2viewers_2viewer3D-7-stdplane_8cpp-example.html#_a15">io/viewers/viewer3D-7-stdplane.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00128">128</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00129">129</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a108b341619e2144abd3d0339c9495ebb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a108b341619e2144abd3d0339c9495ebb">&#9670;&nbsp;</a></span>COBAComputer</h2>
@@ -280,7 +280,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00145">145</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00146">146</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -298,7 +298,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00224">224</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00225">225</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -316,7 +316,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00225">225</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00226">226</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -334,7 +334,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00226">226</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00227">227</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -353,7 +353,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
 </div><div class="memdoc">
 <p>We wrap a transform over the iterator on point that uses one of the functor <a class="el" href="structDGtal_1_1COBAGenericStandardPlaneComputer_1_1Transform.html">Transform</a> to cast back the point from the naive space to the standard space. </p>
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00220">220</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00221">221</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -371,7 +371,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00228">228</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00229">229</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -389,7 +389,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00147">147</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00148">148</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +407,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00143">143</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00144">144</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +425,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00144">144</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00145">145</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +451,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00152">152</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00153">153</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -477,7 +477,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00151">151</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00152">152</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -495,7 +495,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00138">138</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00139">139</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -513,7 +513,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00139">139</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00140">140</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -531,7 +531,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00141">141</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00142">142</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -549,7 +549,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00142">142</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00143">143</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -567,7 +567,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00146">146</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00147">147</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -585,7 +585,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00140">140</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00141">141</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -603,7 +603,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00229">229</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00230">230</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -621,7 +621,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00137">137</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00138">138</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -639,7 +639,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00227">227</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00228">228</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -1645,7 +1645,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
 </div><div class="memdoc">
 <p>Useful when erasing orthants. </p>
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00523">523</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00524">524</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -1672,7 +1672,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
 </div><div class="memdoc">
 <p>The four COBA plane computers. </p>
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00521">521</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00522">522</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -1699,7 +1699,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
 </div><div class="memdoc">
 <p>The list of active plane orthants. Starts with {0:++,1:+-,2:-+,3:&ndash;}. </p>
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00520">520</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00521">521</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -1726,7 +1726,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
 </div><div class="memdoc">
 <p>The four space transformation associated with each COBA plane computer, shared by all computers. </p>
 
-<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00522">522</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html#l00523">523</a> of file <a class="el" href="COBAGenericStandardPlaneComputer_8h_source.html">COBAGenericStandardPlaneComputer.h</a>.</p>
 
 </div>
 </div>
@@ -1736,7 +1736,7 @@ template&lt;typename TSpace , typename TInternalInteger &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 6 2019 15:07:51 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 21 2019 09:34:32 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

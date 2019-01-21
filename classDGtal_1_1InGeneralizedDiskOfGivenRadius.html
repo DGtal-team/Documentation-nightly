@@ -190,12 +190,15 @@ class DGtal::InGeneralizedDiskOfGivenRadius&lt; TPoint, TDetComputer &gt;</h3>
 <p>This class is useful for some geometric algorithm involving disks of given radius, such as alpha-hull and alpha-shape computations.</p>
 <p>The radius is given at construction. It is described by a pair of integers <em>myNum2</em> and <em>myDen2</em> that stands for the numerator and denominator of the squared radius. The orientation is also given at construction. It is described by a boolean equal to 'true' (resp. 'false') if the center C of the circle of squared radius <em>myNum2</em> / <em>myDen2</em> and passing by <em>myP</em> and <em>myQ</em> is located on the left side (resp. right side) of the oriented line <em>myP</em> <em>myQ</em>, ie. if <em>myP</em> , <em>myQ</em> , C are counter-clockwise oriented (resp. clockwise oriented).</p>
 <p>The test is done in two steps. After an initialization step that memorizes the two points that uniquely defines the circle whose radius and orientation is given, we can test the position of a third point <em>myR</em> with respect to this circle. Note that the distance between <em>myP</em> and <em>myR</em> is assumed to be greater than the distance between <em>myP</em> and <em>myQ</em> and between <em>myQ</em> and <em>myR</em>. <br />
- - If the third point lies on the same side of the oriented line passing by <em>myP</em> <em>myQ</em> than the circle center, the return value is:</p><ul>
+</p><ul>
+<li>If the third point lies on the same side of the oriented line passing by <em>myP</em> <em>myQ</em> than the circle center, the return value is:<ul>
 <li>zero if the third point belongs to the circle <br />
  - strictly positive if it does not lie in the interior or on the boundary of the circle</li>
 <li>strictly negative if it lies in the interior of the circle</li>
 </ul>
-<p>otherwise, the return value is strictly negative. This case is discarded because segment <em>myP</em> <em>myR</em> is assumed to be the longest side of the triangle <em>myP</em> , <em>myQ</em> , <em>myR</em>.</p>
+</li>
+<li>otherwise, the return value is strictly negative. This case is discarded because segment <em>myP</em> <em>myR</em> is assumed to be the longest side of the triangle <em>myP</em> , <em>myQ</em> , <em>myR</em>.</li>
+</ul>
 <p>The test is reduced to the computation of the determinant of a 2x2 matrix of integral entries, the implementation of which is delegated to a determinant computer. The reduction involves many multiplications and additions so that temporary integers must be coded with at least \( 6b + 9 \) bits for point coordinates coded with \( b \) bits. That's why it is a best practice to use BigInteger to avoid any overflows. You can use however 64 bits integers together with a smart determinant computer, like <a class="el" href="classDGtal_1_1AvnaimEtAl2x2DetSignComputer.html" title="Aim: Class that provides a way of computing the sign of the determinant of a 2x2 matrix from its four...">AvnaimEtAl2x2DetSignComputer</a>, for small domains where point coordinates range within ]-2^9; 2^9[.</p>
 <p>Basic usage: </p><div class="fragment"><div class="line">...</div><div class="line">typedef <a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a> <a class="code" href="classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a2fe18bc9bd60d13b9720a71c2a5d3a51">Point</a>; </div><div class="line"><span class="keyword">typedef</span> Simple2x2DetComputer&lt;Z2i::BigInteger&gt; DeterminantComputer; </div><div class="line"><span class="keyword">typedef</span> InGeneralizedDiskOfGivenRadius&lt;Point, DeterminantComputer&gt; <a class="code" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a>; </div><div class="line"></div><div class="line"><a class="code" href="classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html">Functor</a> functor(<span class="keyword">true</span>, 25, 1); <span class="comment">//circles of radius 5, directly oriented </span></div><div class="line">functor.init( <a class="code" href="classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a2fe18bc9bd60d13b9720a71c2a5d3a51">Point</a>(5,0), <a class="code" href="classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a2fe18bc9bd60d13b9720a71c2a5d3a51">Point</a>(0,5) ); </div><div class="line"><span class="keywordflow">return</span> functor( <a class="code" href="classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a2fe18bc9bd60d13b9720a71c2a5d3a51">Point</a>(-4,1) ); </div><div class="line"><span class="comment">//a strictly positive value is returned because (-4,1) lies in the interior</span></div><div class="line"><span class="comment">//of the circle of center (0,0) and radius 5. </span></div></div><!-- fragment --><p>Note that since a substantial part of the execution time comes from the allocation/desallocation of integers, we follow the same strategy used in <a class="el" href="classDGtal_1_1IntegerComputer.html" title="Aim: This class gathers several types and methods to make computation with integers. ">IntegerComputer</a>: the user instantiates once this object and performs several tests with it.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -207,7 +210,7 @@ class DGtal::InGeneralizedDiskOfGivenRadius&lt; TPoint, TDetComputer &gt;</h3>
 </dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="geometry_2tools_2exampleAlphaShape_8cpp-example.html#_a27">geometry/tools/exampleAlphaShape.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00125">125</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00126">126</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad13a7ac54591fdbe3ee3de2ebf084173"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad13a7ac54591fdbe3ee3de2ebf084173">&#9670;&nbsp;</a></span>AreaFunctor</h2>
@@ -224,7 +227,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Type of functor returning the area of a parallelogram based on two vectors. Used to compute the radius of a circle passing by 3 points. </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00165">165</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00166">166</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -243,7 +246,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Type of determinant computer </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00150">150</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00151">151</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +265,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Type of integers used during the computation </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00155">155</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00156">156</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -281,7 +284,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Type of input points </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00132">132</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00133">133</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -300,7 +303,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Type of point array </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00137">137</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00138">138</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -319,7 +322,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Type used to represent the size of the array </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00141">141</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00142">142</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -338,7 +341,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Type of returned value </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00159">159</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00160">160</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -686,7 +689,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>area of triangle <em>myP</em> <em>myQ</em> <em>myR</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00362">362</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00363">363</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -713,7 +716,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Functor returning the area of a parallelogram based on two vectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00367">367</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00368">368</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -740,7 +743,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Denominator of the squared radius of the circle <em>myP</em> , <em>myQ</em> , <em>myR</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00322">322</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00323">323</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -767,7 +770,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Numerator of the squared radius of the circle <em>myP</em> , <em>myQ</em> , <em>myR</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00318">318</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00319">319</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -794,7 +797,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Denominator of the given squared radius </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00285">285</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00286">286</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -821,7 +824,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Determinant computer used to compare the given (squared) radius <em>myNum2</em> / <em>myDen2</em> to the (squared) radius of the circle passing by <em>myP</em> , <em>myQ</em> , <em>myR</em> , ie. <em>myComputedNum2</em> / <em>myComputedDen2</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00301">301</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00302">302</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -848,7 +851,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>boolean equal to 'true' (resp. 'false') if the center C of the circle of squared radius <em>myNum2</em> / <em>myDen2</em> and passing by <em>myP</em> and <em>myQ</em> is located on the left side (resp. right side) of the oriented line <em>myP</em> <em>myQ</em>, ie. if <em>myP</em> , <em>myQ</em> , C are counter-clockwise oriented (resp. clockwise oriented). </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00294">294</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00295">295</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -875,7 +878,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Numerator of the given squared radius </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00281">281</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00282">282</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +905,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>First point </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00306">306</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00307">307</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -929,7 +932,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>x-coordinate of <em>myQ</em> - <em>myP</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00326">326</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00327">327</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -956,7 +959,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>y-coordinate of <em>myQ</em> - <em>myP</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00330">330</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00331">331</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +986,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Squared length of <em>myQ</em> - <em>myP</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00334">334</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00335">335</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1013,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Second point </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00310">310</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00311">311</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -1037,7 +1040,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>x-coordinate of <em>myR</em> - <em>myQ</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00338">338</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00339">339</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -1064,7 +1067,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>y-coordinate of <em>myR</em> - <em>myQ</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00342">342</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00343">343</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1094,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Squared length of <em>myR</em> - <em>myQ</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00346">346</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00347">347</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1121,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Third point </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00314">314</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00315">315</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +1148,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>x-coordinate of <em>myP</em> - <em>myR</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00350">350</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00351">351</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1175,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>y-coordinate of <em>myP</em> - <em>myR</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00354">354</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00355">355</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -1199,7 +1202,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>Squared length of <em>myP</em> - <em>myR</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00358">358</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00359">359</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -1226,7 +1229,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><div class="memdoc">
 <p>static size of the array, ie. 2 </p>
 
-<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00145">145</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html#l00146">146</a> of file <a class="el" href="InGeneralizedDiskOfGivenRadius_8h_source.html">InGeneralizedDiskOfGivenRadius.h</a>.</p>
 
 </div>
 </div>
@@ -1236,7 +1239,7 @@ template&lt;typename TPoint , typename TDetComputer &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 6 2019 15:07:54 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 21 2019 09:34:35 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

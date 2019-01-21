@@ -84,7 +84,7 @@ $(function() {
 </li>
 </ul>
 </div>
-<div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: by Jacques-Olivier Lachaud</dt><dd></dd></dl>
+<div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>by Jacques-Olivier Lachaud</dd></dl>
 <p>Part of the <a class="el" href="packageGraph.html">Graph package</a>.</p>
 <p>This module defines what are graphs in <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a>, as well as basic associated concepts. Relevant digital models of graph are notably found in <a class="el" href="packageTopology.html">Topology package</a>.</p>
 <p>The following programs are related to this documentation: <a class="el" href="graph_2graphTraversal_8cpp-example.html">graph/graphTraversal.cpp</a>, <a class="el" href="graph_2volDistanceTraversal_8cpp-example.html">graph/volDistanceTraversal.cpp</a></p>
@@ -122,7 +122,7 @@ Enumerating vertices of a graph</h2>
 <img src="graphTraversal-enum.png" alt="graphTraversal-enum.png"/>
 <div class="caption">
 Coloring vertices of an object graph according to the enumeration order.</div></div>
-<h2><a class="anchor" id="dgtal_graph_def_2_3"></a>
+ <h2><a class="anchor" id="dgtal_graph_def_2_3"></a>
 Enumerating edges of a graph</h2>
 <p>You may obtain edges of a graph by using method writeNeighbors as follows:</p>
 <div class="fragment"><div class="line">    <span class="keywordtype">int</span> nn = 0;</div><div class="line">    <span class="keywordtype">int</span> mm = 0;</div><div class="line">    std::vector&lt;Vertex&gt; neighbors;</div><div class="line">    <span class="keywordflow">for</span> ( <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">Graph::ConstIterator</a> it = g.begin(), itEnd = g.end();</div><div class="line">          it != itEnd; ++it, ++nn )</div><div class="line">      {</div><div class="line">        <a class="code" href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Vertex</a> vtx = *it;</div><div class="line">        std::back_insert_iterator&lt; std::vector&lt;Vertex&gt; &gt; neighIt</div><div class="line">          = std::back_inserter( neighbors );</div><div class="line">        g.writeNeighbors( neighIt, vtx );</div><div class="line">        mm += neighbors.size();</div><div class="line">        neighbors.clear();</div><div class="line">      }</div><div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;Graph has &quot;</span> &lt;&lt; nn &lt;&lt; <span class="stringliteral">&quot; vertices and &quot;</span></div><div class="line">                 &lt;&lt; (mm/2) &lt;&lt; <span class="stringliteral">&quot; edges.&quot;</span> &lt;&lt; std::endl;</div></div><!-- fragment --><h2><a class="anchor" id="dgtal_graph_def_2_4"></a>
@@ -151,10 +151,10 @@ Transforming a visitor into a range</h2>
 <img src="graphTraversal-dfs-range.png" alt="graphTraversal-dfs-range.png"/>
 <div class="caption">
 Coloring vertices of an object graph according to their order given by a depth-first traversal.</div></div>
- </div></div><!-- contents -->
+  </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 6 2019 15:07:48 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 21 2019 09:34:30 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
