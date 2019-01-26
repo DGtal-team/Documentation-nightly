@@ -257,6 +257,7 @@ var searchData=
   ['testonebalancedwordcomputer',['testOneBalancedWordComputer',['../testCombinDSS_8cpp.html#a5355d124466e7458022841c0a925f8c9',1,'testCombinDSS.cpp']]],
   ['testopenmp',['testOpenMP',['../testOpenMP_8cpp.html#ad092a92043a417e17e8e46ee72fb02db',1,'testOpenMP.cpp']]],
   ['testorderedalphabet',['testOrderedAlphabet',['../testOrderedAlphabet_8cpp.html#a07b3e985be49ff7e81e7ab5326abe4b0',1,'testOrderedAlphabet.cpp']]],
+  ['testorderingdigitalsurfacefacesaroundvertex',['testOrderingDigitalSurfaceFacesAroundVertex',['../testDigitalSurface_8cpp.html#acfd72c68f40ef48125fba2808e545d2e',1,'testDigitalSurface.cpp']]],
   ['testowningoraliasingptr',['testOwningOrAliasingPtr',['../testOwningOrAliasingPtr_8cpp.html#a54b1d5786714c62c35ee1751cadbb962',1,'testOwningOrAliasingPtr.cpp']]],
   ['testpairs',['testPairs',['../testOutputIteratorAdapter_8cpp.html#a0314a13bebb174c87eff9ca4552fb7c7',1,'testOutputIteratorAdapter.cpp']]],
   ['testpatchcreatepattern',['testPatchCreatePattern',['../testArithmeticalDSS_8cpp.html#ae81c985221eecf2a58209ece17778ade',1,'testArithmeticalDSS.cpp']]],

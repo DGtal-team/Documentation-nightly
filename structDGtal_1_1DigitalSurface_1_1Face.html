@@ -109,7 +109,7 @@ struct DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face</h3>
 
 <p>Defines a face on the digital surface, i.e. an umbrella (open or closed) around a pivot cell (n-3-cell). To be able to compare faces, the face is characterized by one of its possible states. If the face is closed, the representative state is the smallest one. If the face is open, the representative state is the first (applying previous() does not move). </p>
 
-<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00259">259</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00278">278</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a879f0cc2eeac8db370dcad50fa5dda0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a879f0cc2eeac8db370dcad50fa5dda0a">&#9670;&nbsp;</a></span>Face()</h2>
@@ -153,10 +153,10 @@ template&lt;typename TDigitalSurfaceContainer&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00264">264</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        : <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">state</a>( aState ), <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a6d7271d58884c7ba92cefa0426ca6a0a">nbVertices</a>( nb ), <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf">closed</a>( aIsClosed )</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      {}</div><div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a2b562e6ab0cc7c0a9543d5fb37831f6e"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">DGtal::DigitalSurface::Face::state</a></div><div class="ttdeci">UmbrellaState state</div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00260">DigitalSurface.h:260</a></div></div>
-<div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a2021376b880a1abfce1f869d3c649dbf"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf">DGtal::DigitalSurface::Face::closed</a></div><div class="ttdeci">bool closed</div><div class="ttdoc">tells if the face is closed or open. </div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00263">DigitalSurface.h:263</a></div></div>
-<div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a6d7271d58884c7ba92cefa0426ca6a0a"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a6d7271d58884c7ba92cefa0426ca6a0a">DGtal::DigitalSurface::Face::nbVertices</a></div><div class="ttdeci">unsigned int nbVertices</div><div class="ttdoc">number of vertices incident to face. </div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00262">DigitalSurface.h:262</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00283">283</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        : <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">state</a>( aState ), <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a6d7271d58884c7ba92cefa0426ca6a0a">nbVertices</a>( nb ), <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf">closed</a>( aIsClosed )</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      {}</div><div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a2b562e6ab0cc7c0a9543d5fb37831f6e"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">DGtal::DigitalSurface::Face::state</a></div><div class="ttdeci">UmbrellaState state</div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00279">DigitalSurface.h:279</a></div></div>
+<div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a2021376b880a1abfce1f869d3c649dbf"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf">DGtal::DigitalSurface::Face::closed</a></div><div class="ttdeci">bool closed</div><div class="ttdoc">tells if the face is closed or open. </div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00282">DigitalSurface.h:282</a></div></div>
+<div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a6d7271d58884c7ba92cefa0426ca6a0a"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a6d7271d58884c7ba92cefa0426ca6a0a">DGtal::DigitalSurface::Face::nbVertices</a></div><div class="ttdeci">unsigned int nbVertices</div><div class="ttdoc">number of vertices incident to face. </div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00281">DigitalSurface.h:281</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -186,10 +186,10 @@ template&lt;typename TDigitalSurfaceContainer&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00268">268</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00287">287</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="DigitalSurface_8h_source.html#l00263">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::closed</a>.</p>
-<div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      { <span class="keywordflow">return</span> <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf">closed</a>; }</div><div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a2021376b880a1abfce1f869d3c649dbf"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf">DGtal::DigitalSurface::Face::closed</a></div><div class="ttdeci">bool closed</div><div class="ttdoc">tells if the face is closed or open. </div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00263">DigitalSurface.h:263</a></div></div>
+<p class="reference">References <a class="el" href="DigitalSurface_8h_source.html#l00282">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::closed</a>.</p>
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      { <span class="keywordflow">return</span> <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf">closed</a>; }</div><div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a2021376b880a1abfce1f869d3c649dbf"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf">DGtal::DigitalSurface::Face::closed</a></div><div class="ttdeci">bool closed</div><div class="ttdoc">tells if the face is closed or open. </div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00282">DigitalSurface.h:282</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -219,10 +219,10 @@ template&lt;typename TDigitalSurfaceContainer&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00274">274</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00293">293</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="DigitalSurface_8h_source.html#l00260">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::state</a>.</p>
-<div class="fragment"><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      {</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">state</a> &lt; other.state;</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      }</div><div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a2b562e6ab0cc7c0a9543d5fb37831f6e"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">DGtal::DigitalSurface::Face::state</a></div><div class="ttdeci">UmbrellaState state</div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00260">DigitalSurface.h:260</a></div></div>
+<p class="reference">References <a class="el" href="DigitalSurface_8h_source.html#l00279">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::state</a>.</p>
+<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      {</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">state</a> &lt; other.state;</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      }</div><div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a2b562e6ab0cc7c0a9543d5fb37831f6e"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">DGtal::DigitalSurface::Face::state</a></div><div class="ttdeci">UmbrellaState state</div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00279">DigitalSurface.h:279</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -252,10 +252,10 @@ template&lt;typename TDigitalSurfaceContainer&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00270">270</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00289">289</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="DigitalSurface_8h_source.html#l00260">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::state</a>.</p>
-<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      {</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">state</a> == other.state;</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      }</div><div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a2b562e6ab0cc7c0a9543d5fb37831f6e"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">DGtal::DigitalSurface::Face::state</a></div><div class="ttdeci">UmbrellaState state</div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00260">DigitalSurface.h:260</a></div></div>
+<p class="reference">References <a class="el" href="DigitalSurface_8h_source.html#l00279">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::state</a>.</p>
+<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      {</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">state</a> == other.state;</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      }</div><div class="ttc" id="structDGtal_1_1DigitalSurface_1_1Face_html_a2b562e6ab0cc7c0a9543d5fb37831f6e"><div class="ttname"><a href="structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e">DGtal::DigitalSurface::Face::state</a></div><div class="ttdeci">UmbrellaState state</div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface_8h_source.html#l00279">DigitalSurface.h:279</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -276,9 +276,9 @@ template&lt;typename TDigitalSurfaceContainer&gt; </div>
 
 <p>tells if the face is closed or open. </p>
 
-<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00263">263</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00282">282</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DigitalSurface_8h_source.html#l00268">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::isClosed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DigitalSurface_8h_source.html#l00287">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::isClosed()</a>.</p>
 
 </div>
 </div>
@@ -298,7 +298,7 @@ template&lt;typename TDigitalSurfaceContainer&gt; </div>
 
 <p>number of vertices incident to face. </p>
 
-<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00262">262</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00281">281</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
 
 </div>
 </div>
@@ -317,9 +317,9 @@ template&lt;typename TDigitalSurfaceContainer&gt; </div>
 </div><div class="memdoc">
 <p>stores a state from which the whole umbrella can be recomputed. </p>
 
-<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00260">260</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DigitalSurface_8h_source.html#l00279">279</a> of file <a class="el" href="DigitalSurface_8h_source.html">DigitalSurface.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="DigitalSurface_8h_source.html#l00274">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::operator&lt;()</a>, and <a class="el" href="DigitalSurface_8h_source.html#l00270">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::operator==()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="DigitalSurface_8h_source.html#l00293">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::operator&lt;()</a>, and <a class="el" href="DigitalSurface_8h_source.html#l00289">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face::operator==()</a>.</p>
 
 </div>
 </div>
@@ -329,7 +329,7 @@ template&lt;typename TDigitalSurfaceContainer&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 12:09:20 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:23:22 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

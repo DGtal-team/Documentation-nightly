@@ -439,6 +439,7 @@ var searchData=
   ['testopenmp_2ecpp',['testOpenMP.cpp',['../testOpenMP_8cpp.html',1,'']]],
   ['testorderedalphabet',['testOrderedAlphabet',['../testOrderedAlphabet_8cpp.html#a07b3e985be49ff7e81e7ab5326abe4b0',1,'testOrderedAlphabet.cpp']]],
   ['testorderedalphabet_2ecpp',['testOrderedAlphabet.cpp',['../testOrderedAlphabet_8cpp.html',1,'']]],
+  ['testorderingdigitalsurfacefacesaroundvertex',['testOrderingDigitalSurfaceFacesAroundVertex',['../testDigitalSurface_8cpp.html#acfd72c68f40ef48125fba2808e545d2e',1,'testDigitalSurface.cpp']]],
   ['testoutputiteratoradapter_2ecpp',['testOutputIteratorAdapter.cpp',['../testOutputIteratorAdapter_8cpp.html',1,'']]],
   ['testowningoraliasingptr',['testOwningOrAliasingPtr',['../testOwningOrAliasingPtr_8cpp.html#a54b1d5786714c62c35ee1751cadbb962',1,'testOwningOrAliasingPtr.cpp']]],
   ['testowningoraliasingptr_2ecpp',['testOwningOrAliasingPtr.cpp',['../testOwningOrAliasingPtr_8cpp.html',1,'']]],
