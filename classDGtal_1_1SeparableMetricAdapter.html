@@ -82,23 +82,33 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Adapts any model of CMetric to construct a separable metric (model of CSeparableMetric).  
+ <a href="classDGtal_1_1SeparableMetricAdapter.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="SeparableMetricAdapter_8h_source.html">DGtal/geometry/volumes/distance/SeparableMetricAdapter.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:abe4408e62a900c6f9dd30030401183fc"><td class="memItemLeft" align="right" valign="top">typedef TMetric&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SeparableMetricAdapter.html#abe4408e62a900c6f9dd30030401183fc">Metric</a></td></tr>
+<tr class="memdesc:abe4408e62a900c6f9dd30030401183fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the space type.  <a href="#abe4408e62a900c6f9dd30030401183fc">More...</a><br /></td></tr>
 <tr class="separator:abe4408e62a900c6f9dd30030401183fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa06da550bf3b5293852565eff3c00a0a"><td class="memItemLeft" align="right" valign="top">typedef Metric::Point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SeparableMetricAdapter.html#aa06da550bf3b5293852565eff3c00a0a">Point</a></td></tr>
+<tr class="memdesc:aa06da550bf3b5293852565eff3c00a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for points.  <a href="#aa06da550bf3b5293852565eff3c00a0a">More...</a><br /></td></tr>
 <tr class="separator:aa06da550bf3b5293852565eff3c00a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a424bf62df3e7763bb5c39688a799dd5a"><td class="memItemLeft" align="right" valign="top">typedef Point::Coordinate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SeparableMetricAdapter.html#a424bf62df3e7763bb5c39688a799dd5a">Abscissa</a></td></tr>
+<tr class="memdesc:a424bf62df3e7763bb5c39688a799dd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for point abscissa.  <a href="#a424bf62df3e7763bb5c39688a799dd5a">More...</a><br /></td></tr>
 <tr class="separator:a424bf62df3e7763bb5c39688a799dd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cebad1e61680778cb6091fa72c23dc0"><td class="memItemLeft" align="right" valign="top">typedef Metric::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SeparableMetricAdapter.html#a9cebad1e61680778cb6091fa72c23dc0">Value</a></td></tr>
+<tr class="memdesc:a9cebad1e61680778cb6091fa72c23dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for values.  <a href="#a9cebad1e61680778cb6091fa72c23dc0">More...</a><br /></td></tr>
 <tr class="separator:a9cebad1e61680778cb6091fa72c23dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a020e286531926003c9328e171f27581e"><td class="memItemLeft" align="right" valign="top">typedef Metric::RawValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SeparableMetricAdapter.html#a020e286531926003c9328e171f27581e">RawValue</a></td></tr>
+<tr class="memdesc:a020e286531926003c9328e171f27581e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for raw values.  <a href="#a020e286531926003c9328e171f27581e">More...</a><br /></td></tr>
 <tr class="separator:a020e286531926003c9328e171f27581e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e479140cc4f4103c78b5991ad89655"><td class="memItemLeft" align="right" valign="top">typedef Metric::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SeparableMetricAdapter.html#aa0e479140cc4f4103c78b5991ad89655">Vector</a></td></tr>
+<tr class="memdesc:aa0e479140cc4f4103c78b5991ad89655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for vectors.  <a href="#aa0e479140cc4f4103c78b5991ad89655">More...</a><br /></td></tr>
 <tr class="separator:aa0e479140cc4f4103c78b5991ad89655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a3763188f5aa047a40c16be2c85935f"><td class="memItemLeft" align="right" valign="top">typedef Metric::Space&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SeparableMetricAdapter.html#a9a3763188f5aa047a40c16be2c85935f">Space</a></td></tr>
+<tr class="memdesc:a9a3763188f5aa047a40c16be2c85935f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for Space.  <a href="#a9a3763188f5aa047a40c16be2c85935f">More...</a><br /></td></tr>
 <tr class="separator:a9a3763188f5aa047a40c16be2c85935f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -850,7 +860,7 @@ template&lt;typename TMetric &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:28 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:41 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

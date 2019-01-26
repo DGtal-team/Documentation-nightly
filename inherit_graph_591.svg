@@ -11,11 +11,11 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-44 186,-44 186,4 -4,4"/>
 <!-- Node0 -->
 <g id="node1" class="node"><title>Node0</title>
-<g id="a_node1"><a xlink:href="structDGtal_1_1functors_1_1VCMSecondPrincipalAbsoluteCurvatureFunctor.html" target="_top" xlink:title="Aim: A functor Surfel &#45;&gt; Quantity that returns the second principal absolute curvature (smallest curv...">
+<g id="a_node1"><a xlink:href="structDGtal_1_1functors_1_1VCMAbsoluteCurvatureFunctor.html" target="_top" xlink:title="Aim: A functor Surfel &#45;&gt; Quantity that returns the absolute curvature at given surfel. This class has meaning only in 2D. ">
 <polygon fill="white" stroke="black" points="0.5,0.5 0.5,-40.5 181.5,-40.5 181.5,0.5 0.5,0.5"/>
-<text text-anchor="start" x="8.5" y="-28.5" font-family="FreeSans" font-size="10.00">DGtal::functors::VCMSecond</text>
-<text text-anchor="start" x="8.5" y="-17.5" font-family="FreeSans" font-size="10.00">PrincipalAbsoluteCurvatureFunctor</text>
-<text text-anchor="middle" x="91" y="-6.5" font-family="FreeSans" font-size="10.00">&lt; TVCMOnDigitalSurface &gt;</text>
+<text text-anchor="start" x="8.5" y="-28.5" font-family="FreeSans" font-size="10.00">DGtal::functors::VCMAbsolute</text>
+<text text-anchor="start" x="8.5" y="-17.5" font-family="FreeSans" font-size="10.00">CurvatureFunctor&lt; TVCMOnDigital</text>
+<text text-anchor="middle" x="91" y="-6.5" font-family="FreeSans" font-size="10.00">Surface &gt;</text>
 </a>
 </g>
 </g>

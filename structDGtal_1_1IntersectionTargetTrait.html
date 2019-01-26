@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: A class for intersection target used for voxelization.  
+ <a href="structDGtal_1_1IntersectionTargetTrait.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IntersectionTarget_8h_source.html">DGtal/shapes/IntersectionTarget.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::IntersectionTargetTrait&lt; TSpace, TSeparation, TDimension &gt;:</div>
@@ -93,8 +96,10 @@ Inheritance diagram for DGtal::IntersectionTargetTrait&lt; TSpace, TSeparation, 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1IntersectionTargetTrait_1_1Edge.html">Edge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal <a class="el" href="structDGtal_1_1IntersectionTargetTrait_1_1Edge.html" title="Internal Edge structure. ">Edge</a> structure.  <a href="structDGtal_1_1IntersectionTargetTrait_1_1Edge.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget.html">IntersectionTarget</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal intersection target structure.  <a href="structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_0126_00_011_01_4.html">IntersectionTarget&lt; Space, 26, 1 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,10 +122,13 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8925875a5e2650d842d9612e65b60abb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1IntersectionTargetTrait.html#a8925875a5e2650d842d9612e65b60abb">BOOST_STATIC_ASSERT_MSG</a> (TSpace::dimension==3, &quot;DigitalSet dimension must be 3&quot;)</td></tr>
+<tr class="memdesc:a8925875a5e2650d842d9612e65b60abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital Set dimension Checking.  <a href="#a8925875a5e2650d842d9612e65b60abb">More...</a><br /></td></tr>
 <tr class="separator:a8925875a5e2650d842d9612e65b60abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a452ce5a259cd4457bcac1cef0efce084"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1IntersectionTargetTrait.html#a452ce5a259cd4457bcac1cef0efce084">BOOST_STATIC_ASSERT_MSG</a> (TSeparation==6||TSeparation==26, &quot;Separation must be 6 or 26&quot;)</td></tr>
+<tr class="memdesc:a452ce5a259cd4457bcac1cef0efce084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Separation Checking.  <a href="#a452ce5a259cd4457bcac1cef0efce084">More...</a><br /></td></tr>
 <tr class="separator:a452ce5a259cd4457bcac1cef0efce084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2477879fd4f991b103fd2db7f3f4719"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1IntersectionTargetTrait.html#ae2477879fd4f991b103fd2db7f3f4719">BOOST_STATIC_ASSERT_MSG</a> (TDimension==1, &quot;Currently only 1D intersection target is implemented&quot;)</td></tr>
+<tr class="memdesc:ae2477879fd4f991b103fd2db7f3f4719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimension of the intersection target checking.  <a href="#ae2477879fd4f991b103fd2db7f3f4719">More...</a><br /></td></tr>
 <tr class="separator:ae2477879fd4f991b103fd2db7f3f4719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada0699b8efe7c308e5b175ce2eecab7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1IntersectionTargetTrait.html#ada0699b8efe7c308e5b175ce2eecab7a">IntersectionTargetTrait</a> ()=delete</td></tr>
 <tr class="separator:ada0699b8efe7c308e5b175ce2eecab7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -365,7 +373,7 @@ template&lt;typename TSpace, size_t TSeparation, size_t TDimension = 1&gt; </div
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:24 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:38 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

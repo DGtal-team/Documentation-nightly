@@ -82,13 +82,18 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: implements a functor that estimates the arc length of a paramtric curve.  
+ <a href="classDGtal_1_1ParametricShapeArcLengthFunctor.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ParametricShapeArcLengthFunctor_8h_source.html">DGtal/geometry/curves/estimation/ParametricShapeArcLengthFunctor.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a2cd37a2c4995549d4a56cd34488336a2"><td class="memItemLeft" align="right" valign="top">typedef TParametricShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParametricShapeArcLengthFunctor.html#a2cd37a2c4995549d4a56cd34488336a2">ParametricShape</a></td></tr>
+<tr class="memdesc:a2cd37a2c4995549d4a56cd34488336a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of parametric shape.  <a href="#a2cd37a2c4995549d4a56cd34488336a2">More...</a><br /></td></tr>
 <tr class="separator:a2cd37a2c4995549d4a56cd34488336a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc0a6e3f2ee7c0f46f4f01c9e7dc4312"><td class="memItemLeft" align="right" valign="top">typedef TParametricShape::RealPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParametricShapeArcLengthFunctor.html#adc0a6e3f2ee7c0f46f4f01c9e7dc4312">RealPoint</a></td></tr>
+<tr class="memdesc:adc0a6e3f2ee7c0f46f4f01c9e7dc4312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of const iterator on points.  <a href="#adc0a6e3f2ee7c0f46f4f01c9e7dc4312">More...</a><br /></td></tr>
 <tr class="separator:adc0a6e3f2ee7c0f46f4f01c9e7dc4312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab841a9bd70f33eff322e3697c0bf825f"><td class="memItemLeft" align="right" valign="top">typedef TParametricShape::Point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParametricShapeArcLengthFunctor.html#ab841a9bd70f33eff322e3697c0bf825f">Point</a></td></tr>
 <tr class="separator:ab841a9bd70f33eff322e3697c0bf825f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,6 +102,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a88a60be77b7b312648027343244f107e"><td class="memItemLeft" align="right" valign="top">typedef Point::Coordinate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParametricShapeArcLengthFunctor.html#a88a60be77b7b312648027343244f107e">Integer</a></td></tr>
 <tr class="separator:a88a60be77b7b312648027343244f107e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af15dff302c32444a3e915a5a0d707e23"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParametricShapeArcLengthFunctor.html#af15dff302c32444a3e915a5a0d707e23">Quantity</a></td></tr>
+<tr class="memdesc:af15dff302c32444a3e915a5a0d707e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the functor output.  <a href="#af15dff302c32444a3e915a5a0d707e23">More...</a><br /></td></tr>
 <tr class="separator:af15dff302c32444a3e915a5a0d707e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -117,6 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af5f8c88760f11c84caf47496ad82229d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ParametricShapeArcLengthFunctor.html#a2cd37a2c4995549d4a56cd34488336a2">ParametricShape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParametricShapeArcLengthFunctor.html#af5f8c88760f11c84caf47496ad82229d">myShape</a></td></tr>
+<tr class="memdesc:af5f8c88760f11c84caf47496ad82229d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the implicit shape.  <a href="#af5f8c88760f11c84caf47496ad82229d">More...</a><br /></td></tr>
 <tr class="separator:af5f8c88760f11c84caf47496ad82229d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -516,7 +523,7 @@ template&lt;typename TParametricShape &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:26 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:40 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

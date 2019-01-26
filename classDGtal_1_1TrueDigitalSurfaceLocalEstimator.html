@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: An estimator on digital surfaces that returns the reference local geometric quantity. This is used for comparing estimators.  
+ <a href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TrueDigitalSurfaceLocalEstimator_8h_source.html">DGtal/geometry/surfaces/estimation/TrueDigitalSurfaceLocalEstimator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::TrueDigitalSurfaceLocalEstimator&lt; TKSpace, TShape, TGeometricFunctor &gt;:</div>
@@ -153,22 +156,31 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a9ea15b365182aa6d448a6d18d63f3d40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html">CountedConstPtrOrConstPtr</a>&lt; <a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a618adc70d9bc0a85685e6f5469fdd209">KSpace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a9ea15b365182aa6d448a6d18d63f3d40">myKSpace</a></td></tr>
+<tr class="memdesc:a9ea15b365182aa6d448a6d18d63f3d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cellular space.  <a href="#a9ea15b365182aa6d448a6d18d63f3d40">More...</a><br /></td></tr>
 <tr class="separator:a9ea15b365182aa6d448a6d18d63f3d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae81871ff5928006857381825f4c12d98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CowPtr.html">CowPtr</a>&lt; <a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a38e155f1e753b6b07ec34a172ffa7379">GeometricFunctor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#ae81871ff5928006857381825f4c12d98">myFct</a></td></tr>
+<tr class="memdesc:ae81871ff5928006857381825f4c12d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">The functor RealPoint -&gt; Quantity returning some geometric quantity.  <a href="#ae81871ff5928006857381825f4c12d98">More...</a><br /></td></tr>
 <tr class="separator:ae81871ff5928006857381825f4c12d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6c9cb611c20aabfc0185db3b422f42b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a9938aa9a0e49d73ff8724a059dec44b8">SCellEmbedder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#aa6c9cb611c20aabfc0185db3b422f42b">myEmbedder</a></td></tr>
+<tr class="memdesc:aa6c9cb611c20aabfc0185db3b422f42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The surfel embedder. /!\ For now, it is multiplied by myH.  <a href="#aa6c9cb611c20aabfc0185db3b422f42b">More...</a><br /></td></tr>
 <tr class="separator:aa6c9cb611c20aabfc0185db3b422f42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d09f3c9a551ae117d38de0779a30fd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html">CountedConstPtrOrConstPtr</a>&lt; <a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a6a19af4d40581374c1ce3d9a681ff0c8">Shape</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a2d09f3c9a551ae117d38de0779a30fd3">myShape</a></td></tr>
+<tr class="memdesc:a2d09f3c9a551ae117d38de0779a30fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shape of interest.  <a href="#a2d09f3c9a551ae117d38de0779a30fd3">More...</a><br /></td></tr>
 <tr class="separator:a2d09f3c9a551ae117d38de0779a30fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5140ba95e7c75e9f97a8e63f00aa1146"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a57bb234e5d40723550c887ab8b4be67c">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a5140ba95e7c75e9f97a8e63f00aa1146">myH</a></td></tr>
+<tr class="memdesc:a5140ba95e7c75e9f97a8e63f00aa1146"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gridstep.  <a href="#a5140ba95e7c75e9f97a8e63f00aa1146">More...</a><br /></td></tr>
 <tr class="separator:a5140ba95e7c75e9f97a8e63f00aa1146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a503f17a50a9f0f30579a439aeb5cee00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a503f17a50a9f0f30579a439aeb5cee00">myNearest</a></td></tr>
+<tr class="memdesc:a503f17a50a9f0f30579a439aeb5cee00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells if we look for nearest point.  <a href="#a503f17a50a9f0f30579a439aeb5cee00">More...</a><br /></td></tr>
 <tr class="separator:a503f17a50a9f0f30579a439aeb5cee00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a749b3a6b422bcc85acc9f0a6b8f426e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a749b3a6b422bcc85acc9f0a6b8f426e1">myMaxIter</a></td></tr>
+<tr class="memdesc:a749b3a6b422bcc85acc9f0a6b8f426e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixes the maximum number of steps (0: takes the point as is).  <a href="#a749b3a6b422bcc85acc9f0a6b8f426e1">More...</a><br /></td></tr>
 <tr class="separator:a749b3a6b422bcc85acc9f0a6b8f426e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1001046439b79381c12c868f4b696f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a57bb234e5d40723550c887ab8b4be67c">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#ad1001046439b79381c12c868f4b696f8">myAccuracy</a></td></tr>
+<tr class="memdesc:ad1001046439b79381c12c868f4b696f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">distance criterion to stop the descent (proximity of implicit function).  <a href="#ad1001046439b79381c12c868f4b696f8">More...</a><br /></td></tr>
 <tr class="separator:ad1001046439b79381c12c868f4b696f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cc5645c3803029ccbf30763662d38a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a57bb234e5d40723550c887ab8b4be67c">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a7cc5645c3803029ccbf30763662d38a2">myGamma</a></td></tr>
+<tr class="memdesc:a7cc5645c3803029ccbf30763662d38a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">coefficient associated with the gradient (size of each step).  <a href="#a7cc5645c3803029ccbf30763662d38a2">More...</a><br /></td></tr>
 <tr class="separator:a7cc5645c3803029ccbf30763662d38a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -1114,7 +1126,7 @@ template&lt;typename TKSpace , typename TShape , typename TGeometricFunctor &gt;
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:29 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:42 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

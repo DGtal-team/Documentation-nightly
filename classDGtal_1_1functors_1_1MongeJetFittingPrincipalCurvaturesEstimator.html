@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Estimates Gaussian curvature using CGAL Jet Fitting and Monge Form.  
+ <a href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="MongeJetFittingPrincipalCurvaturesEstimator_8h_source.html">DGtal/geometry/surfaces/estimation/estimationFunctors/MongeJetFittingPrincipalCurvaturesEstimator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::functors::MongeJetFittingPrincipalCurvaturesEstimator&lt; TSurfel, TEmbedder &gt;:</div>
@@ -123,12 +126,16 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1ed38e918f92a5efabee7eb05549bd0b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a6c999f4e2f95e0df62aa4eac9dda2c65">SCellEmbedder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a1ed38e918f92a5efabee7eb05549bd0b">myEmbedder</a></td></tr>
+<tr class="memdesc:a1ed38e918f92a5efabee7eb05549bd0b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1Alias.html" title="Aim: This class encapsulates its parameter class so that to indicate to the user that the object/poin...">Alias</a> of the geometrical embedder.  <a href="#a1ed38e918f92a5efabee7eb05549bd0b">More...</a><br /></td></tr>
 <tr class="separator:a1ed38e918f92a5efabee7eb05549bd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae094d968cd0b36460d9ec01090c0a382"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a9cf1d8c72efb4ced2afd5961285396c4">CGALPoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#ae094d968cd0b36460d9ec01090c0a382">myPoints</a></td></tr>
+<tr class="memdesc:ae094d968cd0b36460d9ec01090c0a382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of CGAL points.  <a href="#ae094d968cd0b36460d9ec01090c0a382">More...</a><br /></td></tr>
 <tr class="separator:ae094d968cd0b36460d9ec01090c0a382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40edaceed9244a21ea2246b9196e301c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a40edaceed9244a21ea2246b9196e301c">myH</a></td></tr>
+<tr class="memdesc:a40edaceed9244a21ea2246b9196e301c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grid Step.  <a href="#a40edaceed9244a21ea2246b9196e301c">More...</a><br /></td></tr>
 <tr class="separator:a40edaceed9244a21ea2246b9196e301c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a140c913e35b25a12e489561f33229b3e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a140c913e35b25a12e489561f33229b3e">myD</a></td></tr>
+<tr class="memdesc:a140c913e35b25a12e489561f33229b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Degree of the polynomial surface to fit.  <a href="#a140c913e35b25a12e489561f33229b3e">More...</a><br /></td></tr>
 <tr class="separator:a140c913e35b25a12e489561f33229b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -605,7 +612,7 @@ template&lt;typename TSurfel , typename TEmbedder &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:32 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:45 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This class implements various intersection predicates between a ray and a triangle, a quad or a surfel in dimension 3.  
+ <a href="structDGtal_1_1RayIntersectionPredicate.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="RayIntersectionPredicates_8h_source.html">DGtal/geometry/tools/RayIntersectionPredicates.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::RayIntersectionPredicate&lt; TPoint &gt;:</div>
@@ -93,15 +96,19 @@ Collaboration diagram for DGtal::RayIntersectionPredicate&lt; TPoint &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a0344c7748e058f9207c8985c9546b7bf"><td class="memItemLeft" align="right" valign="top">typedef TPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1RayIntersectionPredicate.html#a0344c7748e058f9207c8985c9546b7bf">Point</a></td></tr>
+<tr class="memdesc:a0344c7748e058f9207c8985c9546b7bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of point.  <a href="#a0344c7748e058f9207c8985c9546b7bf">More...</a><br /></td></tr>
 <tr class="separator:a0344c7748e058f9207c8985c9546b7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d7a27734e158c12bcc574b7822f4238"><td class="memItemLeft" align="right" valign="top">typedef TPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1RayIntersectionPredicate.html#a5d7a27734e158c12bcc574b7822f4238">Vector</a></td></tr>
+<tr class="memdesc:a5d7a27734e158c12bcc574b7822f4238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of vector.  <a href="#a5d7a27734e158c12bcc574b7822f4238">More...</a><br /></td></tr>
 <tr class="separator:a5d7a27734e158c12bcc574b7822f4238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12260bbdcae2a2df87b5612d68f38fd8"><td class="memItemLeft" align="right" valign="top">typedef TPoint::Component&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1RayIntersectionPredicate.html#a12260bbdcae2a2df87b5612d68f38fd8">Component</a></td></tr>
+<tr class="memdesc:a12260bbdcae2a2df87b5612d68f38fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of point coordinates.  <a href="#a12260bbdcae2a2df87b5612d68f38fd8">More...</a><br /></td></tr>
 <tr class="separator:a12260bbdcae2a2df87b5612d68f38fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aea3a739b064b45bb6b57ff07d5746185"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1RayIntersectionPredicate.html#aea3a739b064b45bb6b57ff07d5746185">BOOST_STATIC_ASSERT</a> (TPoint::dimension==3)</td></tr>
+<tr class="memdesc:aea3a739b064b45bb6b57ff07d5746185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only in dimension 3.  <a href="#aea3a739b064b45bb6b57ff07d5746185">More...</a><br /></td></tr>
 <tr class="separator:aea3a739b064b45bb6b57ff07d5746185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe0509ff4f035225023112824077da4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1RayIntersectionPredicate.html#abe0509ff4f035225023112824077da4f">RayIntersectionPredicate</a> (const <a class="el" href="structDGtal_1_1RayIntersectionPredicate.html#a0344c7748e058f9207c8985c9546b7bf">Point</a> &amp;origin, const <a class="el" href="structDGtal_1_1RayIntersectionPredicate.html#a5d7a27734e158c12bcc574b7822f4238">Vector</a> &amp;dest)</td></tr>
 <tr class="separator:abe0509ff4f035225023112824077da4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -503,7 +510,7 @@ template&lt;typename TPoint&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:27 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:41 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

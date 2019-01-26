@@ -85,6 +85,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class precomputes the Voronoi Covariance <a class="el" href="classDGtal_1_1Measure.html" title="Aim: Implements a simple measure computation (in the Lesbegue sens) of a set. In dimension 2...">Measure</a> of a set of points. It can compute the covariance measure of an arbitrary function with given support.  
+ <a href="classDGtal_1_1VoronoiCovarianceMeasure.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="VoronoiCovarianceMeasure_8h_source.html">DGtal/geometry/volumes/estimation/VoronoiCovarianceMeasure.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::VoronoiCovarianceMeasure&lt; TSpace, TSeparableMetric &gt;:</div>
@@ -107,34 +110,49 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:adb72f29e429accacce8aad1401e139ea"><td class="memItemLeft" align="right" valign="top">typedef TSpace&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#adb72f29e429accacce8aad1401e139ea">Space</a></td></tr>
+<tr class="memdesc:adb72f29e429accacce8aad1401e139ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of digital space  <a href="#adb72f29e429accacce8aad1401e139ea">More...</a><br /></td></tr>
 <tr class="separator:adb72f29e429accacce8aad1401e139ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac43c40f111b39e2ca8cb95956a63c567"><td class="memItemLeft" align="right" valign="top">typedef TSeparableMetric&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#ac43c40f111b39e2ca8cb95956a63c567">Metric</a></td></tr>
+<tr class="memdesc:ac43c40f111b39e2ca8cb95956a63c567"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of metric  <a href="#ac43c40f111b39e2ca8cb95956a63c567">More...</a><br /></td></tr>
 <tr class="separator:ac43c40f111b39e2ca8cb95956a63c567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f1851c26751b2cdbddda1e12c9a78aa"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SpaceND.html#a34beb5f81d0848e8ae393f39a1422ebc">Space::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a6f1851c26751b2cdbddda1e12c9a78aa">Point</a></td></tr>
+<tr class="memdesc:a6f1851c26751b2cdbddda1e12c9a78aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of digital point  <a href="#a6f1851c26751b2cdbddda1e12c9a78aa">More...</a><br /></td></tr>
 <tr class="separator:a6f1851c26751b2cdbddda1e12c9a78aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecc1427a07b09ccab6c9575fa2b8a5cf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SpaceND.html#a8486f499b96d020bdb65ee6cd9f4e1eb">Space::Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#aecc1427a07b09ccab6c9575fa2b8a5cf">Size</a></td></tr>
+<tr class="memdesc:aecc1427a07b09ccab6c9575fa2b8a5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type for counting elements  <a href="#aecc1427a07b09ccab6c9575fa2b8a5cf">More...</a><br /></td></tr>
 <tr class="separator:aecc1427a07b09ccab6c9575fa2b8a5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2427dbcbff3a6fa4adc85fa4cc4d2703"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SpaceND.html#a3217d099840050eb7135e24b1ed7940d">Space::Integer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a2427dbcbff3a6fa4adc85fa4cc4d2703">Integer</a></td></tr>
+<tr class="memdesc:a2427dbcbff3a6fa4adc85fa4cc4d2703"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of each digital point coordinate, some integral type  <a href="#a2427dbcbff3a6fa4adc85fa4cc4d2703">More...</a><br /></td></tr>
 <tr class="separator:a2427dbcbff3a6fa4adc85fa4cc4d2703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a167dc09000a4c21ac55e30f3e9c2ecad"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1HyperRectDomain.html">DGtal::HyperRectDomain</a>&lt; <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#adb72f29e429accacce8aad1401e139ea">Space</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a167dc09000a4c21ac55e30f3e9c2ecad">Domain</a></td></tr>
+<tr class="memdesc:a167dc09000a4c21ac55e30f3e9c2ecad"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of rectangular domain of the VCM.  <a href="#a167dc09000a4c21ac55e30f3e9c2ecad">More...</a><br /></td></tr>
 <tr class="separator:a167dc09000a4c21ac55e30f3e9c2ecad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a109252fcb90181e47ca52236973b13a3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html">DGtal::ImageContainerBySTLVector</a>&lt; <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a167dc09000a4c21ac55e30f3e9c2ecad">Domain</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a109252fcb90181e47ca52236973b13a3">CharacteristicSet</a></td></tr>
+<tr class="memdesc:a109252fcb90181e47ca52236973b13a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of a binary image that is the characteristic function of K.  <a href="#a109252fcb90181e47ca52236973b13a3">More...</a><br /></td></tr>
 <tr class="separator:a109252fcb90181e47ca52236973b13a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283b3dcc6d76c87588d6008271b9ecf3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html">DGtal::SpatialCubicalSubdivision</a>&lt; <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#adb72f29e429accacce8aad1401e139ea">Space</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a283b3dcc6d76c87588d6008271b9ecf3">ProximityStructure</a></td></tr>
+<tr class="memdesc:a283b3dcc6d76c87588d6008271b9ecf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">the structure used for proximity queries.  <a href="#a283b3dcc6d76c87588d6008271b9ecf3">More...</a><br /></td></tr>
 <tr class="separator:a283b3dcc6d76c87588d6008271b9ecf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7efab02dfde239e892fd133d9fdf6070"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDGtal_1_1functors_1_1NotPointPredicate.html">DGtal::functors::NotPointPredicate</a>&lt; <a class="el" href="structDGtal_1_1VoronoiCovarianceMeasure_1_1CharacteristicSetPredicate.html">CharacteristicSetPredicate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a7efab02dfde239e892fd133d9fdf6070">NotPredicate</a></td></tr>
+<tr class="memdesc:a7efab02dfde239e892fd133d9fdf6070"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of the point predicate used by the voronoi map.  <a href="#a7efab02dfde239e892fd133d9fdf6070">More...</a><br /></td></tr>
 <tr class="separator:a7efab02dfde239e892fd133d9fdf6070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a879ab99ed28ca53e4beaaeade9acee83"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1VoronoiMap.html">DGtal::VoronoiMap</a>&lt; <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#adb72f29e429accacce8aad1401e139ea">Space</a>, <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a7efab02dfde239e892fd133d9fdf6070">NotPredicate</a>, <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#ac43c40f111b39e2ca8cb95956a63c567">Metric</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a879ab99ed28ca53e4beaaeade9acee83">Voronoi</a></td></tr>
+<tr class="memdesc:a879ab99ed28ca53e4beaaeade9acee83"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of the Voronoi map.  <a href="#a879ab99ed28ca53e4beaaeade9acee83">More...</a><br /></td></tr>
 <tr class="separator:a879ab99ed28ca53e4beaaeade9acee83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf9824d384c1b8a41eef3f18930fa987"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#abf9824d384c1b8a41eef3f18930fa987">Scalar</a></td></tr>
+<tr class="memdesc:abf9824d384c1b8a41eef3f18930fa987"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type for "real" numbers.  <a href="#abf9824d384c1b8a41eef3f18930fa987">More...</a><br /></td></tr>
 <tr class="separator:abf9824d384c1b8a41eef3f18930fa987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3948c49b85c3e45f3ff9ce709b9e550"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SimpleMatrix.html">DGtal::SimpleMatrix</a>&lt; <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#abf9824d384c1b8a41eef3f18930fa987">Scalar</a>, <a class="el" href="classDGtal_1_1SpaceND.html#aae87d3efb1051dbdeac28e159781ba92">Space::dimension</a>, <a class="el" href="classDGtal_1_1SpaceND.html#aae87d3efb1051dbdeac28e159781ba92">Space::dimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#ad3948c49b85c3e45f3ff9ce709b9e550">MatrixNN</a></td></tr>
+<tr class="memdesc:ad3948c49b85c3e45f3ff9ce709b9e550"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type for nxn matrix of real numbers.  <a href="#ad3948c49b85c3e45f3ff9ce709b9e550">More...</a><br /></td></tr>
 <tr class="separator:ad3948c49b85c3e45f3ff9ce709b9e550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a119653ce27337310729a15dc61d2e9ea"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SimpleMatrix.html#af8e92c749dd6f8c4ebb8016504e2d318">MatrixNN::RowVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a119653ce27337310729a15dc61d2e9ea">VectorN</a></td></tr>
+<tr class="memdesc:a119653ce27337310729a15dc61d2e9ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type for N-vector of real numbers  <a href="#a119653ce27337310729a15dc61d2e9ea">More...</a><br /></td></tr>
 <tr class="separator:a119653ce27337310729a15dc61d2e9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5e3723d29acf13e1cf29e0643a80354"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a6f1851c26751b2cdbddda1e12c9a78aa">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#aa5e3723d29acf13e1cf29e0643a80354">PointContainer</a></td></tr>
+<tr class="memdesc:aa5e3723d29acf13e1cf29e0643a80354"><td class="mdescLeft">&#160;</td><td class="mdescRight">the list of points  <a href="#aa5e3723d29acf13e1cf29e0643a80354">More...</a><br /></td></tr>
 <tr class="separator:aa5e3723d29acf13e1cf29e0643a80354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fbd8773236ccd747aed05d7a71bffb6"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a6f1851c26751b2cdbddda1e12c9a78aa">Point</a>, <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#ad3948c49b85c3e45f3ff9ce709b9e550">MatrixNN</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a3fbd8773236ccd747aed05d7a71bffb6">Point2MatrixNN</a></td></tr>
+<tr class="memdesc:a3fbd8773236ccd747aed05d7a71bffb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates a matrix to points.  <a href="#a3fbd8773236ccd747aed05d7a71bffb6">More...</a><br /></td></tr>
 <tr class="separator:a3fbd8773236ccd747aed05d7a71bffb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -185,22 +203,30 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae608b8c3fe131bb045231e5e5bf18d21"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#ae608b8c3fe131bb045231e5e5bf18d21">myBigR</a></td></tr>
+<tr class="memdesc:ae608b8c3fe131bb045231e5e5bf18d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter R in the VCM, i.e. the offset radius for the compact set K.  <a href="#ae608b8c3fe131bb045231e5e5bf18d21">More...</a><br /></td></tr>
 <tr class="separator:ae608b8c3fe131bb045231e5e5bf18d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d70f75147da29fe156bff493f0fe7d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#af5d70f75147da29fe156bff493f0fe7d">mySmallR</a></td></tr>
 <tr class="separator:af5d70f75147da29fe156bff493f0fe7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82bfd5162c0532f6bd4ebfd696228060"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#ac43c40f111b39e2ca8cb95956a63c567">Metric</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a82bfd5162c0532f6bd4ebfd696228060">myMetric</a></td></tr>
+<tr class="memdesc:a82bfd5162c0532f6bd4ebfd696228060"><td class="mdescLeft">&#160;</td><td class="mdescRight">The metric chosen for the Voronoi map.  <a href="#a82bfd5162c0532f6bd4ebfd696228060">More...</a><br /></td></tr>
 <tr class="separator:a82bfd5162c0532f6bd4ebfd696228060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abebac9ad403e46b59df8d38a30cec83c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#abebac9ad403e46b59df8d38a30cec83c">myVerbose</a></td></tr>
+<tr class="memdesc:abebac9ad403e46b59df8d38a30cec83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells if it is verbose mode.  <a href="#abebac9ad403e46b59df8d38a30cec83c">More...</a><br /></td></tr>
 <tr class="separator:abebac9ad403e46b59df8d38a30cec83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d71e5bdca87998aa85f9319db0e6752"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a167dc09000a4c21ac55e30f3e9c2ecad">Domain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a9d71e5bdca87998aa85f9319db0e6752">myDomain</a></td></tr>
+<tr class="memdesc:a9d71e5bdca87998aa85f9319db0e6752"><td class="mdescLeft">&#160;</td><td class="mdescRight">The domain in which all computations are done.  <a href="#a9d71e5bdca87998aa85f9319db0e6752">More...</a><br /></td></tr>
 <tr class="separator:a9d71e5bdca87998aa85f9319db0e6752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c3ccb99b084618e88cd1b2d98427ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a109252fcb90181e47ca52236973b13a3">CharacteristicSet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a88c3ccb99b084618e88cd1b2d98427ab">myCharSet</a></td></tr>
+<tr class="memdesc:a88c3ccb99b084618e88cd1b2d98427ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">A binary image that defines the characteristic set of K.  <a href="#a88c3ccb99b084618e88cd1b2d98427ab">More...</a><br /></td></tr>
 <tr class="separator:a88c3ccb99b084618e88cd1b2d98427ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a668c2ca5553ab0efdb940bb3fa9b79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a879ab99ed28ca53e4beaaeade9acee83">Voronoi</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a6a668c2ca5553ab0efdb940bb3fa9b79">myVoronoi</a></td></tr>
+<tr class="memdesc:a6a668c2ca5553ab0efdb940bb3fa9b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the voronoi map.  <a href="#a6a668c2ca5553ab0efdb940bb3fa9b79">More...</a><br /></td></tr>
 <tr class="separator:a6a668c2ca5553ab0efdb940bb3fa9b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac28aa29f1125b26b6fe2ae119e6df7bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a3fbd8773236ccd747aed05d7a71bffb6">Point2MatrixNN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#ac28aa29f1125b26b6fe2ae119e6df7bf">myVCM</a></td></tr>
+<tr class="memdesc:ac28aa29f1125b26b6fe2ae119e6df7bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The map point -&gt; VCM.  <a href="#ac28aa29f1125b26b6fe2ae119e6df7bf">More...</a><br /></td></tr>
 <tr class="separator:ac28aa29f1125b26b6fe2ae119e6df7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ba339a1fe22e713e002da6e4f9b5ea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a283b3dcc6d76c87588d6008271b9ecf3">ProximityStructure</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a1ba339a1fe22e713e002da6e4f9b5ea5">myProximityStructure</a></td></tr>
+<tr class="memdesc:a1ba339a1fe22e713e002da6e4f9b5ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The structure used for proximity queries.  <a href="#a1ba339a1fe22e713e002da6e4f9b5ea5">More...</a><br /></td></tr>
 <tr class="separator:a1ba339a1fe22e713e002da6e4f9b5ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1269,7 +1295,7 @@ template&lt;typename TSpace, typename TSeparableMetric&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:30 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:43 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

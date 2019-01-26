@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Implementation of the linear in time Voronoi map construction.  
+ <a href="classDGtal_1_1VoronoiMap.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="VoronoiMap_8h_source.html">DGtal/geometry/volumes/distance/VoronoiMap.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::VoronoiMap&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;:</div>
@@ -101,14 +104,19 @@ Collaboration diagram for DGtal::VoronoiMap&lt; TSpace, TPointPredicate, TSepara
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a9a88ce8e48ff34b01825361c1b500978"><td class="memItemLeft" align="right" valign="top">typedef TSpace&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a9a88ce8e48ff34b01825361c1b500978">Space</a></td></tr>
+<tr class="memdesc:a9a88ce8e48ff34b01825361c1b500978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the space type.  <a href="#a9a88ce8e48ff34b01825361c1b500978">More...</a><br /></td></tr>
 <tr class="separator:a9a88ce8e48ff34b01825361c1b500978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf6bc83de4c1fefc60a3a97a81338ceb"><td class="memItemLeft" align="right" valign="top">typedef TPointPredicate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#abf6bc83de4c1fefc60a3a97a81338ceb">PointPredicate</a></td></tr>
+<tr class="memdesc:abf6bc83de4c1fefc60a3a97a81338ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the point predicate type.  <a href="#abf6bc83de4c1fefc60a3a97a81338ceb">More...</a><br /></td></tr>
 <tr class="separator:abf6bc83de4c1fefc60a3a97a81338ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a471aa9180dd6cadeb52c2533d00359e2"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer::Domain&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a471aa9180dd6cadeb52c2533d00359e2">Domain</a></td></tr>
+<tr class="memdesc:a471aa9180dd6cadeb52c2533d00359e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the underlying domain type.  <a href="#a471aa9180dd6cadeb52c2533d00359e2">More...</a><br /></td></tr>
 <tr class="separator:a471aa9180dd6cadeb52c2533d00359e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49d1defb80e18cb551949aa86eb7ad74"><td class="memItemLeft" align="right" valign="top">typedef TSeparableMetric&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a49d1defb80e18cb551949aa86eb7ad74">SeparableMetric</a></td></tr>
+<tr class="memdesc:a49d1defb80e18cb551949aa86eb7ad74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the separable metric type.  <a href="#a49d1defb80e18cb551949aa86eb7ad74">More...</a><br /></td></tr>
 <tr class="separator:a49d1defb80e18cb551949aa86eb7ad74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab052b10b64f69732ba6d2955e1a27378"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceDGtal.html#a1c09e3f63904ff371f1b99f45069fc63">DGtal::int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#ab052b10b64f69732ba6d2955e1a27378">IntegerLong</a></td></tr>
+<tr class="memdesc:ab052b10b64f69732ba6d2955e1a27378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Large integer type for SeparableMetricHelper construction.  <a href="#ab052b10b64f69732ba6d2955e1a27378">More...</a><br /></td></tr>
 <tr class="separator:ab052b10b64f69732ba6d2955e1a27378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28bd33a8d4ddd80cdb13adeeb68fd7dd"><td class="memItemLeft" align="right" valign="top">typedef Space::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a28bd33a8d4ddd80cdb13adeeb68fd7dd">Vector</a></td></tr>
 <tr class="separator:a28bd33a8d4ddd80cdb13adeeb68fd7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,14 +129,19 @@ Public Types</h2></td></tr>
 <tr class="memitem:a9fc11e4b8f57edd1661f42f971f76d5b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html#a6409a51203e0edc907d523fb19ed7e41">Space::Point::Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a9fc11e4b8f57edd1661f42f971f76d5b">Abscissa</a></td></tr>
 <tr class="separator:a9fc11e4b8f57edd1661f42f971f76d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab774e35dd384b8ecb63ca88542039c5e"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#ab774e35dd384b8ecb63ca88542039c5e">OutputImage</a></td></tr>
+<tr class="memdesc:ab774e35dd384b8ecb63ca88542039c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of resulting image.  <a href="#ab774e35dd384b8ecb63ca88542039c5e">More...</a><br /></td></tr>
 <tr class="separator:ab774e35dd384b8ecb63ca88542039c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa62716432627282f6346f531ea207d8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1VoronoiMap.html#a28bd33a8d4ddd80cdb13adeeb68fd7dd">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#aaa62716432627282f6346f531ea207d8">Value</a></td></tr>
+<tr class="memdesc:aaa62716432627282f6346f531ea207d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the image value type.  <a href="#aaa62716432627282f6346f531ea207d8">More...</a><br /></td></tr>
 <tr class="separator:aaa62716432627282f6346f531ea207d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6c1a394b3df4a88777b27e5977f796d"><td class="memItemLeft" align="right" valign="top">typedef OutputImage::ConstRange&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#ae6c1a394b3df4a88777b27e5977f796d">ConstRange</a></td></tr>
+<tr class="memdesc:ae6c1a394b3df4a88777b27e5977f796d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the image value type.  <a href="#ae6c1a394b3df4a88777b27e5977f796d">More...</a><br /></td></tr>
 <tr class="separator:ae6c1a394b3df4a88777b27e5977f796d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a785ac2ec7de049ac5dad12149faee84c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1VoronoiMap.html">VoronoiMap</a>&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a785ac2ec7de049ac5dad12149faee84c">Self</a></td></tr>
+<tr class="memdesc:a785ac2ec7de049ac5dad12149faee84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self type.  <a href="#a785ac2ec7de049ac5dad12149faee84c">More...</a><br /></td></tr>
 <tr class="separator:a785ac2ec7de049ac5dad12149faee84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cba36f4a604f4175bdd1f46ffa779e5"><td class="memItemLeft" align="right" valign="top">typedef std::array&lt; bool, <a class="el" href="classDGtal_1_1SpaceND.html#aae87d3efb1051dbdeac28e159781ba92">Space::dimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a6cba36f4a604f4175bdd1f46ffa779e5">PeriodicitySpec</a></td></tr>
+<tr class="memdesc:a6cba36f4a604f4175bdd1f46ffa779e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodicity specification type.  <a href="#a6cba36f4a604f4175bdd1f46ffa779e5">More...</a><br /></td></tr>
 <tr class="separator:a6cba36f4a604f4175bdd1f46ffa779e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -142,6 +155,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a23a98e6e5ff2ea3d92ed699da905a432"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a23a98e6e5ff2ea3d92ed699da905a432">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImage.html">concepts::CImage</a>&lt; TImageContainer &gt;))</td></tr>
 <tr class="separator:a23a98e6e5ff2ea3d92ed699da905a432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34a24bfb12927916fa2516320998af62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a34a24bfb12927916fa2516320998af62">BOOST_STATIC_ASSERT</a> ((boost::is_same&lt; typename <a class="el" href="testCubicalComplex_8cpp.html#a15e9592ccc512dc691b46185e6814758">TSpace::Point</a>, typename <a class="el" href="testCubicalComplex_8cpp.html#a15e9592ccc512dc691b46185e6814758">TPointPredicate::Point</a> &gt;::value))</td></tr>
+<tr class="memdesc:a34a24bfb12927916fa2516320998af62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Both Space points and PointPredicate points must be the same.  <a href="#a34a24bfb12927916fa2516320998af62">More...</a><br /></td></tr>
 <tr class="separator:a34a24bfb12927916fa2516320998af62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36a4fb24ccd6f6fb2f774b68872a17ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a36a4fb24ccd6f6fb2f774b68872a17ca">BOOST_STATIC_ASSERT</a> ((boost::is_same&lt; TSpace, typename <a class="el" href="sphereCotangentLaplaceOperator_8cpp.html#aa427be41d9fa2a81fa357d8e66afe407">TImageContainer::Domain::Space</a> &gt;::value))</td></tr>
 <tr class="separator:a36a4fb24ccd6f6fb2f774b68872a17ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,10 +193,13 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aa7051e4d7cdb6f15d940f28f50993059"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1VoronoiMap.html#a49d1defb80e18cb551949aa86eb7ad74">SeparableMetric</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#aa7051e4d7cdb6f15d940f28f50993059">myMetricPtr</a></td></tr>
+<tr class="memdesc:aa7051e4d7cdb6f15d940f28f50993059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the separable metric instance.  <a href="#aa7051e4d7cdb6f15d940f28f50993059">More...</a><br /></td></tr>
 <tr class="separator:aa7051e4d7cdb6f15d940f28f50993059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a2c0df6d2651fba038627667ab34bb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1VoronoiMap.html#ab774e35dd384b8ecb63ca88542039c5e">OutputImage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a8a2c0df6d2651fba038627667ab34bb4">myImagePtr</a></td></tr>
+<tr class="memdesc:a8a2c0df6d2651fba038627667ab34bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voronoi map image.  <a href="#a8a2c0df6d2651fba038627667ab34bb4">More...</a><br /></td></tr>
 <tr class="separator:a8a2c0df6d2651fba038627667ab34bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360a8f3fb14bc1b06ffae604b28ee21c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VoronoiMap.html#a6cba36f4a604f4175bdd1f46ffa779e5">PeriodicitySpec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a360a8f3fb14bc1b06ffae604b28ee21c">myPeriodicitySpec</a></td></tr>
+<tr class="memdesc:a360a8f3fb14bc1b06ffae604b28ee21c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodicity along each dimension.  <a href="#a360a8f3fb14bc1b06ffae604b28ee21c">More...</a><br /></td></tr>
 <tr class="separator:a360a8f3fb14bc1b06ffae604b28ee21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -199,18 +216,25 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ad1a39f08e5ecdbee8b4037d63a530cf2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1VoronoiMap.html#a471aa9180dd6cadeb52c2533d00359e2">Domain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#ad1a39f08e5ecdbee8b4037d63a530cf2">myDomainPtr</a></td></tr>
+<tr class="memdesc:ad1a39f08e5ecdbee8b4037d63a530cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the computation domain.  <a href="#ad1a39f08e5ecdbee8b4037d63a530cf2">More...</a><br /></td></tr>
 <tr class="separator:ad1a39f08e5ecdbee8b4037d63a530cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d8eac177521d9e865eb3be8f660fa7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1VoronoiMap.html#abf6bc83de4c1fefc60a3a97a81338ceb">PointPredicate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#af5d8eac177521d9e865eb3be8f660fa7">myPointPredicatePtr</a></td></tr>
+<tr class="memdesc:af5d8eac177521d9e865eb3be8f660fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the point predicate.  <a href="#af5d8eac177521d9e865eb3be8f660fa7">More...</a><br /></td></tr>
 <tr class="separator:af5d8eac177521d9e865eb3be8f660fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ad5477f46b9065afff379509283c7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VoronoiMap.html#a2633b734da905535d6ad12b896a9c2c1">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a06ad5477f46b9065afff379509283c7a">myLowerBoundCopy</a></td></tr>
+<tr class="memdesc:a06ad5477f46b9065afff379509283c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the image lower bound.  <a href="#a06ad5477f46b9065afff379509283c7a">More...</a><br /></td></tr>
 <tr class="separator:a06ad5477f46b9065afff379509283c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9edf745142a23785c9a0e25e911dd6ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VoronoiMap.html#a2633b734da905535d6ad12b896a9c2c1">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a9edf745142a23785c9a0e25e911dd6ed">myUpperBoundCopy</a></td></tr>
+<tr class="memdesc:a9edf745142a23785c9a0e25e911dd6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the image lower bound.  <a href="#a9edf745142a23785c9a0e25e911dd6ed">More...</a><br /></td></tr>
 <tr class="separator:a9edf745142a23785c9a0e25e911dd6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a662ef47dbc79a59f4d448bc87de5c486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VoronoiMap.html#a2633b734da905535d6ad12b896a9c2c1">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a662ef47dbc79a59f4d448bc87de5c486">myInfinity</a></td></tr>
+<tr class="memdesc:a662ef47dbc79a59f4d448bc87de5c486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to act as a +infinity value.  <a href="#a662ef47dbc79a59f4d448bc87de5c486">More...</a><br /></td></tr>
 <tr class="separator:a662ef47dbc79a59f4d448bc87de5c486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32642e3a3b20bd34b077659ae7a08357"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1VoronoiMap.html#a5d3f41c9b6a04aa06f6248306c07ab00">Dimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a32642e3a3b20bd34b077659ae7a08357">myPeriodicityIndex</a></td></tr>
+<tr class="memdesc:a32642e3a3b20bd34b077659ae7a08357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the periodic dimensions.  <a href="#a32642e3a3b20bd34b077659ae7a08357">More...</a><br /></td></tr>
 <tr class="separator:a32642e3a3b20bd34b077659ae7a08357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a206192254d7561042870f8a3e118e86c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VoronoiMap.html#a2633b734da905535d6ad12b896a9c2c1">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VoronoiMap.html#a206192254d7561042870f8a3e118e86c">myDomainExtent</a></td></tr>
+<tr class="memdesc:a206192254d7561042870f8a3e118e86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domain extent.  <a href="#a206192254d7561042870f8a3e118e86c">More...</a><br /></td></tr>
 <tr class="separator:a206192254d7561042870f8a3e118e86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1615,7 +1639,7 @@ template&lt;typename TSpace, typename TPointPredicate, typename TSeparableMetric
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:30 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:43 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

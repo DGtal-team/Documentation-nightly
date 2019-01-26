@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: A functor Matrix -&gt; RealVector that returns the first principal curvature direction by diagonalizing the given covariance matrix. This functor is valid starting from 2D space and is equivalent to <a class="el" href="classDGtal_1_1functors_1_1IITangentDirectionFunctor.html" title="Aim: A functor Matrix -&gt; RealVector that returns the tangent direction by diagonalizing the given cov...">IITangentDirectionFunctor</a> in 2D. Note that by first we mean the direction with greatest curvature in absolute value.  
+ <a href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IIGeometricFunctors_8h_source.html">DGtal/geometry/surfaces/estimation/IIGeometricFunctors.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::functors::IIFirstPrincipalDirectionFunctor&lt; TSpace, TMatrix &gt;:</div>
@@ -116,8 +119,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a28554c3a36be6fe27241a36bf11adf9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#a28554c3a36be6fe27241a36bf11adf9c">BOOST_STATIC_ASSERT</a> ((<a class="el" href="classDGtal_1_1SpaceND.html#aae87d3efb1051dbdeac28e159781ba92">Space::dimension</a> &gt;=2))</td></tr>
 <tr class="separator:a28554c3a36be6fe27241a36bf11adf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35ac3437a2f0e47daa5c3bb8e6e121f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#a35ac3437a2f0e47daa5c3bb8e6e121f8">IIFirstPrincipalDirectionFunctor</a> ()</td></tr>
+<tr class="memdesc:a35ac3437a2f0e47daa5c3bb8e6e121f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a35ac3437a2f0e47daa5c3bb8e6e121f8">More...</a><br /></td></tr>
 <tr class="separator:a35ac3437a2f0e47daa5c3bb8e6e121f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fac4611a0afe372c7d67855c4381b62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#a9fac4611a0afe372c7d67855c4381b62">IIFirstPrincipalDirectionFunctor</a> (const <a class="el" href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#adf8dde5db84de855fe77203165428879">Self</a> &amp;)</td></tr>
+<tr class="memdesc:a9fac4611a0afe372c7d67855c4381b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. Nothing to do.  <a href="#a9fac4611a0afe372c7d67855c4381b62">More...</a><br /></td></tr>
 <tr class="separator:a9fac4611a0afe372c7d67855c4381b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ed50c96ec46971461d5355f25759d98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#adf8dde5db84de855fe77203165428879">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#a9ed50c96ec46971461d5355f25759d98">operator=</a> (const <a class="el" href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#adf8dde5db84de855fe77203165428879">Self</a> &amp;)</td></tr>
 <tr class="separator:a9ed50c96ec46971461d5355f25759d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,8 +134,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab2d2f426a9e9b840b3b653b3f1af328c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#a1d99f2266a6ae0732bf7187e31e629b3">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#ab2d2f426a9e9b840b3b653b3f1af328c">eigenVectors</a></td></tr>
+<tr class="memdesc:ab2d2f426a9e9b840b3b653b3f1af328c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A data member only used for temporary calculations.  <a href="#ab2d2f426a9e9b840b3b653b3f1af328c">More...</a><br /></td></tr>
 <tr class="separator:ab2d2f426a9e9b840b3b653b3f1af328c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94f99b7e15a035c89f73ab15ee4d8e69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#a07bc6b8aaecb9b43518326f247b1ed36">RealVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#a94f99b7e15a035c89f73ab15ee4d8e69">eigenValues</a></td></tr>
+<tr class="memdesc:a94f99b7e15a035c89f73ab15ee4d8e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">A data member only used for temporary calculations.  <a href="#a94f99b7e15a035c89f73ab15ee4d8e69">More...</a><br /></td></tr>
 <tr class="separator:a94f99b7e15a035c89f73ab15ee4d8e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -582,7 +589,7 @@ template&lt;typename TSpace , typename TMatrix  = SimpleMatrix&lt; typename TSpa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:32 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:45 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

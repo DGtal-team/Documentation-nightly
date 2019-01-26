@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: The predicate on surfels that represents the frontier between two regions in an image. It can be used with <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as connected surfels...">ExplicitDigitalSurface</a> or <a class="el" href="classDGtal_1_1LightExplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as connected surfels...">LightExplicitDigitalSurface</a> so as to define a digital surface. Such surfaces may of course be open.  
+ <a href="classDGtal_1_1functors_1_1FrontierPredicate.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FrontierPredicate_8h_source.html">DGtal/topology/helpers/FrontierPredicate.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -125,12 +128,15 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acbd3096b421ab7a49c0c02b67aa7bc3b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1functors_1_1FrontierPredicate.html#ad1bcb396e704376693062971220b70fa">KSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1FrontierPredicate.html#acbd3096b421ab7a49c0c02b67aa7bc3b">myPtrSpace</a></td></tr>
+<tr class="memdesc:acbd3096b421ab7a49c0c02b67aa7bc3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">the cellular space where lies the image.  <a href="#acbd3096b421ab7a49c0c02b67aa7bc3b">More...</a><br /></td></tr>
 <tr class="separator:acbd3096b421ab7a49c0c02b67aa7bc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a226153e9853d56fc7c9cb442be20bf25"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1functors_1_1FrontierPredicate.html#aa55ec8d6dda97cf25de26e2ede84a966">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1FrontierPredicate.html#a226153e9853d56fc7c9cb442be20bf25">myPtrImage</a></td></tr>
 <tr class="separator:a226153e9853d56fc7c9cb442be20bf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed7958255c4cdf282ddf47d6120c71bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1FrontierPredicate.html#afde9e64ce99ceec2781980c572ffd7f6">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1FrontierPredicate.html#aed7958255c4cdf282ddf47d6120c71bc">myLabel1</a></td></tr>
+<tr class="memdesc:aed7958255c4cdf282ddf47d6120c71bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">the label of the inner region that defines the frontier.  <a href="#aed7958255c4cdf282ddf47d6120c71bc">More...</a><br /></td></tr>
 <tr class="separator:aed7958255c4cdf282ddf47d6120c71bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe0a3ea6cf4bb2a231be4062e969acb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1FrontierPredicate.html#afde9e64ce99ceec2781980c572ffd7f6">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1FrontierPredicate.html#afe0a3ea6cf4bb2a231be4062e969acb2">myLabel2</a></td></tr>
+<tr class="memdesc:afe0a3ea6cf4bb2a231be4062e969acb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">the label of the outer region that defines the frontier.  <a href="#afe0a3ea6cf4bb2a231be4062e969acb2">More...</a><br /></td></tr>
 <tr class="separator:afe0a3ea6cf4bb2a231be4062e969acb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -636,7 +642,7 @@ template&lt;typename TKSpace, typename TImage&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:32 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:45 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

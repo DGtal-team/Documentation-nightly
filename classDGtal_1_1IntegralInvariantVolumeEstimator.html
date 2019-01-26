@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class implement an Integral Invariant estimator which computes for each surfel the volume of the intersection of the shape with a ball of given radius centered on the surfel.  
+ <a href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IntegralInvariantVolumeEstimator_8h_source.html">DGtal/geometry/surfaces/estimation/IntegralInvariantVolumeEstimator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::IntegralInvariantVolumeEstimator&lt; TKSpace, TPointPredicate, TVolumeFunctor &gt;:</div>
@@ -121,8 +124,10 @@ Public Types</h2></td></tr>
 <tr class="memitem:a9389423ff64c35a3cb9efbb93b358b11"><td class="memItemLeft" align="right" valign="top">typedef SurfelSet::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a9389423ff64c35a3cb9efbb93b358b11">ConstIteratorKernel</a></td></tr>
 <tr class="separator:a9389423ff64c35a3cb9efbb93b358b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b0369058819c9ee7ecb0fd7c07a82d3"><td class="memItemLeft" align="right" valign="top">typedef VolumeFunctor::Quantity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a5b0369058819c9ee7ecb0fd7c07a82d3">Quantity</a></td></tr>
+<tr class="memdesc:a5b0369058819c9ee7ecb0fd7c07a82d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The returned type of the estimator, depends on the functor.  <a href="#a5b0369058819c9ee7ecb0fd7c07a82d3">More...</a><br /></td></tr>
 <tr class="separator:a5b0369058819c9ee7ecb0fd7c07a82d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af642e135a262aa3ee08a39cbb6ad488f"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#af642e135a262aa3ee08a39cbb6ad488f">Value</a></td></tr>
+<tr class="memdesc:af642e135a262aa3ee08a39cbb6ad488f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type used for convolutions.  <a href="#af642e135a262aa3ee08a39cbb6ad488f">More...</a><br /></td></tr>
 <tr class="separator:af642e135a262aa3ee08a39cbb6ad488f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae63f296240c21b2b4e483f547c76d73d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html">functors::PointFunctorFromPointPredicateAndDomain</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a07bf4f4a0b0cbf9b489bd776d78dcb81">PointPredicate</a>, <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a8b197f8949e229ecbc80cd5d7a2b1238">Domain</a>, unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#ae63f296240c21b2b4e483f547c76d73d">ShapePointFunctor</a></td></tr>
 <tr class="separator:ae63f296240c21b2b4e483f547c76d73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,30 +201,43 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1803327ea7c8edcf73d5709b939cccf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a0e3f4846ee02618a693466d7ace297a7">VolumeFunctor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a1803327ea7c8edcf73d5709b939cccf7">myFct</a></td></tr>
+<tr class="memdesc:a1803327ea7c8edcf73d5709b939cccf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The volume functor that transforms the volume into a quantity.  <a href="#a1803327ea7c8edcf73d5709b939cccf7">More...</a><br /></td></tr>
 <tr class="separator:a1803327ea7c8edcf73d5709b939cccf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11437dce6bb0673c31b81a50f67dbdc6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a44a068674bab0b4396f167dc6582aea1">KernelSpelFunctor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a11437dce6bb0673c31b81a50f67dbdc6">myKernelFunctor</a></td></tr>
+<tr class="memdesc:a11437dce6bb0673c31b81a50f67dbdc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel functor (on Spel)  <a href="#a11437dce6bb0673c31b81a50f67dbdc6">More...</a><br /></td></tr>
 <tr class="separator:a11437dce6bb0673c31b81a50f67dbdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9acee96eee63ead5cc7d316aee3496b3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a5809ebbf0d72432efef0d9b39d19e281">PairIterators</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a9acee96eee63ead5cc7d316aee3496b3">myKernels</a></td></tr>
+<tr class="memdesc:a9acee96eee63ead5cc7d316aee3496b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of begin/end iterator of shifting masks.  <a href="#a9acee96eee63ead5cc7d316aee3496b3">More...</a><br /></td></tr>
 <tr class="separator:a9acee96eee63ead5cc7d316aee3496b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19f8eca9f9a0ecf18b8f253a607f9e71"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#abb26fbeb77cdc53ec6e28e45fd9a0f1e">DigitalSet</a> *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a19f8eca9f9a0ecf18b8f253a607f9e71">myKernelsSet</a></td></tr>
+<tr class="memdesc:a19f8eca9f9a0ecf18b8f253a607f9e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of shifting masks. Size = 9 for each shifting (0-adjacent and full kernel included)  <a href="#a19f8eca9f9a0ecf18b8f253a607f9e71">More...</a><br /></td></tr>
 <tr class="separator:a19f8eca9f9a0ecf18b8f253a607f9e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5ca781f8c8ce33df205edc792b73b8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a6ed8d1189b940592bc27f283f669a0b9">KernelSupport</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#aa5ca781f8c8ce33df205edc792b73b8b">myKernel</a></td></tr>
+<tr class="memdesc:aa5ca781f8c8ce33df205edc792b73b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Euclidean kernel.  <a href="#aa5ca781f8c8ce33df205edc792b73b8b">More...</a><br /></td></tr>
 <tr class="separator:aa5ca781f8c8ce33df205edc792b73b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a909f6bfd7fca4125d3d1eebd861c9626"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#aa34f83369c5d83dd61a22e1aaf6c2351">DigitalShapeKernel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a909f6bfd7fca4125d3d1eebd861c9626">myDigKernel</a></td></tr>
+<tr class="memdesc:a909f6bfd7fca4125d3d1eebd861c9626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital kernel.  <a href="#a909f6bfd7fca4125d3d1eebd861c9626">More...</a><br /></td></tr>
 <tr class="separator:a909f6bfd7fca4125d3d1eebd861c9626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a074da93ec45006473563844dcf6016ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html">CountedConstPtrOrConstPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a07bf4f4a0b0cbf9b489bd776d78dcb81">PointPredicate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a074da93ec45006473563844dcf6016ef">myPointPredicate</a></td></tr>
+<tr class="memdesc:a074da93ec45006473563844dcf6016ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart pointer (if required) on a point predicate.  <a href="#a074da93ec45006473563844dcf6016ef">More...</a><br /></td></tr>
 <tr class="separator:a074da93ec45006473563844dcf6016ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acae8bca7ba8cea988556d1bda55668fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a8b197f8949e229ecbc80cd5d7a2b1238">Domain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#acae8bca7ba8cea988556d1bda55668fc">myShapeDomain</a></td></tr>
+<tr class="memdesc:acae8bca7ba8cea988556d1bda55668fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart pointer on domain.  <a href="#acae8bca7ba8cea988556d1bda55668fc">More...</a><br /></td></tr>
 <tr class="separator:acae8bca7ba8cea988556d1bda55668fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa165c96ab0dc189159feaac6ffaf1c1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#ae63f296240c21b2b4e483f547c76d73d">ShapePointFunctor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#aa165c96ab0dc189159feaac6ffaf1c1c">myShapePointFunctor</a></td></tr>
+<tr class="memdesc:aa165c96ab0dc189159feaac6ffaf1c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart pointer on functor point -&gt; {0,1}.  <a href="#aa165c96ab0dc189159feaac6ffaf1c1c">More...</a><br /></td></tr>
 <tr class="separator:aa165c96ab0dc189159feaac6ffaf1c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6caafd5b424985da7e11e11e6edd8ba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a2316fffad1a33648c059325abe3331f2">ShapeSpelFunctor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a6caafd5b424985da7e11e11e6edd8ba9">myShapeSpelFunctor</a></td></tr>
+<tr class="memdesc:a6caafd5b424985da7e11e11e6edd8ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart pointer on functor spel -&gt; {0,1}.  <a href="#a6caafd5b424985da7e11e11e6edd8ba9">More...</a><br /></td></tr>
 <tr class="separator:a6caafd5b424985da7e11e11e6edd8ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6525a571cb51eb56e37b7a24b0c5381"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a3bb8c5f721c84137fc863cc9574da977">Convolver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#ac6525a571cb51eb56e37b7a24b0c5381">myConvolver</a></td></tr>
+<tr class="memdesc:ac6525a571cb51eb56e37b7a24b0c5381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convolver.  <a href="#ac6525a571cb51eb56e37b7a24b0c5381">More...</a><br /></td></tr>
 <tr class="separator:ac6525a571cb51eb56e37b7a24b0c5381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acebcae363db0b85a17118608fd7b858f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a23125dcadb7ab7835c04e64b95785664">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#acebcae363db0b85a17118608fd7b858f">myH</a></td></tr>
+<tr class="memdesc:acebcae363db0b85a17118608fd7b858f"><td class="mdescLeft">&#160;</td><td class="mdescRight">precision of the grid  <a href="#acebcae363db0b85a17118608fd7b858f">More...</a><br /></td></tr>
 <tr class="separator:acebcae363db0b85a17118608fd7b858f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6ab815e949dfb771f2e49b7b5390977"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a23125dcadb7ab7835c04e64b95785664">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#aa6ab815e949dfb771f2e49b7b5390977">myRadius</a></td></tr>
+<tr class="memdesc:aa6ab815e949dfb771f2e49b7b5390977"><td class="mdescLeft">&#160;</td><td class="mdescRight">"digital" radius of the kernel (buy may be non integer).  <a href="#aa6ab815e949dfb771f2e49b7b5390977">More...</a><br /></td></tr>
 <tr class="separator:aa6ab815e949dfb771f2e49b7b5390977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1669,7 +1687,7 @@ template&lt;typename TKSpace, typename TPointPredicate, typename TVolumeFunctor&
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:24 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:38 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

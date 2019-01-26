@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This functor estimates normal vector for a collection of surfels using spherical accumulator based Hough voting.  
+ <a href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="SphericalHoughNormalVectorEstimator_8h_source.html">DGtal/geometry/surfaces/estimation/estimationFunctors/SphericalHoughNormalVectorEstimator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::functors::SphericalHoughNormalVectorEstimator&lt; TSurfel, TEmbedder &gt;:</div>
@@ -127,24 +130,34 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a89de143a76cf7d87aff60554e3e67c35"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#aa9ea45ef94bbcc12ba0c393a9e147298">SCellEmbedder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a89de143a76cf7d87aff60554e3e67c35">myEmbedder</a></td></tr>
+<tr class="memdesc:a89de143a76cf7d87aff60554e3e67c35"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1Alias.html" title="Aim: This class encapsulates its parameter class so that to indicate to the user that the object/poin...">Alias</a> of the geometrical embedder.  <a href="#a89de143a76cf7d87aff60554e3e67c35">More...</a><br /></td></tr>
 <tr class="separator:a89de143a76cf7d87aff60554e3e67c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cfab893fbc028773c7a448db631910c"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a0cfab893fbc028773c7a448db631910c">myH</a></td></tr>
+<tr class="memdesc:a0cfab893fbc028773c7a448db631910c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grid step.  <a href="#a0cfab893fbc028773c7a448db631910c">More...</a><br /></td></tr>
 <tr class="separator:a0cfab893fbc028773c7a448db631910c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9b97172c59094bee70f721c64ae0b58"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#ac9b97172c59094bee70f721c64ae0b58">myAspectRatio</a></td></tr>
+<tr class="memdesc:ac9b97172c59094bee70f721c64ae0b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimal aspect ratio (norm of the cross-product) to consider a given triangle.  <a href="#ac9b97172c59094bee70f721c64ae0b58">More...</a><br /></td></tr>
 <tr class="separator:ac9b97172c59094bee70f721c64ae0b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe12d33b99085eb63ab85a45337a4bde"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#abe12d33b99085eb63ab85a45337a4bde">myNbTrials</a></td></tr>
+<tr class="memdesc:abe12d33b99085eb63ab85a45337a4bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of trials in the neignborhood.  <a href="#abe12d33b99085eb63ab85a45337a4bde">More...</a><br /></td></tr>
 <tr class="separator:abe12d33b99085eb63ab85a45337a4bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a522d64f744bf5835952db59de5f82eb6"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a522d64f744bf5835952db59de5f82eb6">mySize</a></td></tr>
+<tr class="memdesc:a522d64f744bf5835952db59de5f82eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the accumulator.  <a href="#a522d64f744bf5835952db59de5f82eb6">More...</a><br /></td></tr>
 <tr class="separator:a522d64f744bf5835952db59de5f82eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5a4ff43ed3677e9f1c21e3b52911912"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#ab5a4ff43ed3677e9f1c21e3b52911912">myNbAccumulators</a></td></tr>
+<tr class="memdesc:ab5a4ff43ed3677e9f1c21e3b52911912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of randomly shifted spherical accumulators to consider.  <a href="#ab5a4ff43ed3677e9f1c21e3b52911912">More...</a><br /></td></tr>
 <tr class="separator:ab5a4ff43ed3677e9f1c21e3b52911912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268618969aed1fe1a296211292e25610"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a6ff32a2717b6f5496356c5bd26cc528d">RealPoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a268618969aed1fe1a296211292e25610">myPoints</a></td></tr>
+<tr class="memdesc:a268618969aed1fe1a296211292e25610"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector of embedded surfels  <a href="#a268618969aed1fe1a296211292e25610">More...</a><br /></td></tr>
 <tr class="separator:a268618969aed1fe1a296211292e25610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3581510fb7336461bad37f7be2dd2662"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1SphericalAccumulator.html">SphericalAccumulator</a>&lt; <a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a6ff32a2717b6f5496356c5bd26cc528d">RealPoint</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a3581510fb7336461bad37f7be2dd2662">myAccumulators</a></td></tr>
+<tr class="memdesc:a3581510fb7336461bad37f7be2dd2662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spherical Accumulators.  <a href="#a3581510fb7336461bad37f7be2dd2662">More...</a><br /></td></tr>
 <tr class="separator:a3581510fb7336461bad37f7be2dd2662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9918a81df48bcc8e5d758871bbecadd2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a3689fde62c18f54184ccab751c8cd1c5">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a9918a81df48bcc8e5d758871bbecadd2">myRotations</a></td></tr>
+<tr class="memdesc:a9918a81df48bcc8e5d758871bbecadd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random rotations.  <a href="#a9918a81df48bcc8e5d758871bbecadd2">More...</a><br /></td></tr>
 <tr class="separator:a9918a81df48bcc8e5d758871bbecadd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3154556a9d8257de713bb0cca64fe8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a3689fde62c18f54184ccab751c8cd1c5">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a5e3154556a9d8257de713bb0cca64fe8">myInverseRotations</a></td></tr>
+<tr class="memdesc:a5e3154556a9d8257de713bb0cca64fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random inverse rotations.  <a href="#a5e3154556a9d8257de713bb0cca64fe8">More...</a><br /></td></tr>
 <tr class="separator:a5e3154556a9d8257de713bb0cca64fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -929,7 +942,7 @@ template&lt;typename TSurfel , typename TEmbedder &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:32 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:46 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

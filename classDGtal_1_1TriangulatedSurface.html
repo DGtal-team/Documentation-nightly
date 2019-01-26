@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Represents a triangulated surface. The topology is stored with a half-edge data structure. This object stored the positions of vertices in space. If you need further data attached to the surface, you may use property maps (see <code><a class="el" href="classDGtal_1_1TriangulatedSurface.html#ab35510ce21e2e7885a49b947c0bdb112">TriangulatedSurface::makeVertexMap</a></code>).  
+ <a href="classDGtal_1_1TriangulatedSurface.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TriangulatedSurface_8h_source.html">DGtal/shapes/TriangulatedSurface.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::TriangulatedSurface&lt; TPoint &gt;:</div>
@@ -151,6 +154,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a16c79ffbf0e1c7f4f899a220fcf4abd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a16c79ffbf0e1c7f4f899a220fcf4abd8">TriangulatedSurface</a> ()</td></tr>
 <tr class="separator:a16c79ffbf0e1c7f4f899a220fcf4abd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18a2c135ab440365a295a13925e771dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a18a2c135ab440365a295a13925e771dc">clear</a> ()</td></tr>
+<tr class="memdesc:a18a2c135ab440365a295a13925e771dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears everything.  <a href="#a18a2c135ab440365a295a13925e771dc">More...</a><br /></td></tr>
 <tr class="separator:a18a2c135ab440365a295a13925e771dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4334ce3ecb5f6cdeb4f609732ed4e77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#af4334ce3ecb5f6cdeb4f609732ed4e77">build</a> ()</td></tr>
 <tr class="separator:af4334ce3ecb5f6cdeb4f609732ed4e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,12 +265,16 @@ Protected Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aa43d5ca3271f568d1099f922e4295355"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#aa43d5ca3271f568d1099f922e4295355">isHEDSValid</a></td></tr>
+<tr class="memdesc:aa43d5ca3271f568d1099f922e4295355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the half-edge structure has been created/updated.  <a href="#aa43d5ca3271f568d1099f922e4295355">More...</a><br /></td></tr>
 <tr class="separator:aa43d5ca3271f568d1099f922e4295355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa08435e47fb83ff825c624b111b4da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html">HalfEdgeDataStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a></td></tr>
+<tr class="memdesc:a2fa08435e47fb83ff825c624b111b4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">The half-edge data structure that stores the topology of the mesh.  <a href="#a2fa08435e47fb83ff825c624b111b4da">More...</a><br /></td></tr>
 <tr class="separator:a2fa08435e47fb83ff825c624b111b4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a0282559c1ab5173f1eca66a83b1321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a6b7045cefa16d1feceda3de9d54bc087">PositionsStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a6a0282559c1ab5173f1eca66a83b1321">myPositions</a></td></tr>
+<tr class="memdesc:a6a0282559c1ab5173f1eca66a83b1321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the information for each Vertex.  <a href="#a6a0282559c1ab5173f1eca66a83b1321">More...</a><br /></td></tr>
 <tr class="separator:a6a0282559c1ab5173f1eca66a83b1321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e4de0485400e96327a8fcc7b3a9ae1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#ab1e9b3003ce85344dccb19f361b71dfe">TriangleStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a2e4de0485400e96327a8fcc7b3a9ae1f">myTriangles</a></td></tr>
+<tr class="memdesc:a2e4de0485400e96327a8fcc7b3a9ae1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the triangles.  <a href="#a2e4de0485400e96327a8fcc7b3a9ae1f">More...</a><br /></td></tr>
 <tr class="separator:a2e4de0485400e96327a8fcc7b3a9ae1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -2351,7 +2359,7 @@ template&lt;typename TPoint&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:29 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:42 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Constructive Solid Geometry (CSG) between models of CEuclideanBoundedShape and CEuclideanOrientedShape Use CSG operation (union, intersection, minus) from a shape of Type ShapeA with one (or more) shapes of Type ShapeB. Can combine differents operations. Limitations: Since we don't have a class derived by all shapes, operations can be done by only one type of shapes. Use CSG of CSG to go beyond this limitation.  
+ <a href="classDGtal_1_1EuclideanShapesCSG.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="EuclideanShapesDecorator_8h_source.html">DGtal/shapes/EuclideanShapesDecorator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::EuclideanShapesCSG&lt; ShapeA, ShapeB &gt;:</div>
@@ -142,14 +145,19 @@ Protected Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:adaa898b31ccb1b5a1f918a01907a4879"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html">CountedConstPtrOrConstPtr</a>&lt; ShapeA &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EuclideanShapesCSG.html#adaa898b31ccb1b5a1f918a01907a4879">myShapeA</a></td></tr>
+<tr class="memdesc:adaa898b31ccb1b5a1f918a01907a4879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base Shape.  <a href="#adaa898b31ccb1b5a1f918a01907a4879">More...</a><br /></td></tr>
 <tr class="separator:adaa898b31ccb1b5a1f918a01907a4879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00615efd4a107f5eeeba4dcf876c9618"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; <a class="el" href="classDGtal_1_1EuclideanShapesCSG.html#ac83393f60d7c8e1df1702e28cae457a4">e_operator</a>, <a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html">CountedConstPtrOrConstPtr</a>&lt; ShapeB &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EuclideanShapesCSG.html#a00615efd4a107f5eeeba4dcf876c9618">v_shapes</a></td></tr>
+<tr class="memdesc:a00615efd4a107f5eeeba4dcf876c9618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of all operations (ordered) of ShapeB.  <a href="#a00615efd4a107f5eeeba4dcf876c9618">More...</a><br /></td></tr>
 <tr class="separator:a00615efd4a107f5eeeba4dcf876c9618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b38896252553b0635e9accf4b73b92b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1EuclideanShapesCSG.html#a90267a1267a1066efbddd573bb670b38">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EuclideanShapesCSG.html#a6b38896252553b0635e9accf4b73b92b">myLowerBound</a></td></tr>
+<tr class="memdesc:a6b38896252553b0635e9accf4b73b92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domain lower bound.  <a href="#a6b38896252553b0635e9accf4b73b92b">More...</a><br /></td></tr>
 <tr class="separator:a6b38896252553b0635e9accf4b73b92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb42c5405b81398927f79dd7de9d7c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1EuclideanShapesCSG.html#a90267a1267a1066efbddd573bb670b38">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EuclideanShapesCSG.html#a6eb42c5405b81398927f79dd7de9d7c7">myUpperBound</a></td></tr>
+<tr class="memdesc:a6eb42c5405b81398927f79dd7de9d7c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domain upper bound.  <a href="#a6eb42c5405b81398927f79dd7de9d7c7">More...</a><br /></td></tr>
 <tr class="separator:a6eb42c5405b81398927f79dd7de9d7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0de204bbc31e21df62234bab2a9a0c82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EuclideanShapesCSG.html#a0de204bbc31e21df62234bab2a9a0c82">bIsValid</a></td></tr>
+<tr class="memdesc:a0de204bbc31e21df62234bab2a9a0c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">if the CSG is valid.  <a href="#a0de204bbc31e21df62234bab2a9a0c82">More...</a><br /></td></tr>
 <tr class="separator:a0de204bbc31e21df62234bab2a9a0c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -963,7 +971,7 @@ template&lt;typename ShapeA , typename ShapeB &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:23 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

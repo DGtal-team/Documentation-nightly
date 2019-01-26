@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class aims at representing an iterator that provides a way to scan the points of a DSL. It is both a model of readable iterator and of bidirectional iterator.  
+ <a href="classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ArithmeticalDSL_8h_source.html">DGtal/geometry/curves/ArithmeticalDSL.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::ArithmeticalDSL&lt; TCoordinate, TInteger, adjacency &gt;::ConstIterator:</div>
@@ -130,14 +133,19 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa6b390ba45e97a680d68385d8ec43c6c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1ArithmeticalDSL.html">ArithmeticalDSL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#aa6b390ba45e97a680d68385d8ec43c6c">myDSLPtr</a></td></tr>
+<tr class="memdesc:aa6b390ba45e97a680d68385d8ec43c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant aliasing pointer to the DSL visited by the iterator.  <a href="#aa6b390ba45e97a680d68385d8ec43c6c">More...</a><br /></td></tr>
 <tr class="separator:aa6b390ba45e97a680d68385d8ec43c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23cdebd851eb63075cf21f093f7af045"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ArithmeticalDSL.html#a00dfc0ee75d3c1e61735647f94751653">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#a23cdebd851eb63075cf21f093f7af045">myCurrentPoint</a></td></tr>
+<tr class="memdesc:a23cdebd851eb63075cf21f093f7af045"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current point.  <a href="#a23cdebd851eb63075cf21f093f7af045">More...</a><br /></td></tr>
 <tr class="separator:a23cdebd851eb63075cf21f093f7af045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a081d0517291859bb47570d5ae6c9fd64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ArithmeticalDSL.html#a532df7f0b3b5bc27d5189114a4b33b96">Integer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#a081d0517291859bb47570d5ae6c9fd64">myQuantityToAdd</a></td></tr>
+<tr class="memdesc:a081d0517291859bb47570d5ae6c9fd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quantity to add to the current remainder.  <a href="#a081d0517291859bb47570d5ae6c9fd64">More...</a><br /></td></tr>
 <tr class="separator:a081d0517291859bb47570d5ae6c9fd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa846893881f20eef4e6d12cddef5cd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ArithmeticalDSL.html#a532df7f0b3b5bc27d5189114a4b33b96">Integer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#aaa846893881f20eef4e6d12cddef5cd6">myQuantityToRemove</a></td></tr>
+<tr class="memdesc:aaa846893881f20eef4e6d12cddef5cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quantity to remove to the current remainder.  <a href="#aaa846893881f20eef4e6d12cddef5cd6">More...</a><br /></td></tr>
 <tr class="separator:aaa846893881f20eef4e6d12cddef5cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e0d8a050f47f44a5ef00b367f66b224"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ArithmeticalDSL.html#a532df7f0b3b5bc27d5189114a4b33b96">Integer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#a6e0d8a050f47f44a5ef00b367f66b224">myCurrentRemainder</a></td></tr>
+<tr class="memdesc:a6e0d8a050f47f44a5ef00b367f66b224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remainder of the current point.  <a href="#a6e0d8a050f47f44a5ef00b367f66b224">More...</a><br /></td></tr>
 <tr class="separator:a6e0d8a050f47f44a5ef00b367f66b224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -671,7 +679,7 @@ template&lt;typename TCoordinate, typename TInteger = TCoordinate, unsigned shor
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:20 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:34 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

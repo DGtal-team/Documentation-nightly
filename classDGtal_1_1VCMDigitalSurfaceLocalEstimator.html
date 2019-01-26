@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class adapts a <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasureOnDigitalSurface.html" title="Aim: This class specializes the Voronoi covariance measure for digital surfaces. It adds notably the ...">VoronoiCovarianceMeasureOnDigitalSurface</a> to be a model of CDigitalSurfaceLocalEstimator. It uses the <b>Voronoi</b> <b>Covariance</b> <b><a class="el" href="classDGtal_1_1Measure.html" title="Aim: Implements a simple measure computation (in the Lesbegue sens) of a set. In dimension 2...">Measure</a></b> to estimate geometric quantities. The type TVCMGeometricFunctor specifies which is the estimated quantity. For instance, VCMGeometricFunctors::VCMNormalVectorFunctor returns the estimated VCM surface <b>outward</b> normal for given surfels.  
+ <a href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="VCMDigitalSurfaceLocalEstimator_8h_source.html">DGtal/geometry/surfaces/estimation/VCMDigitalSurfaceLocalEstimator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::VCMDigitalSurfaceLocalEstimator&lt; TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction, TVCMGeometricFunctor &gt;:</div>
@@ -94,28 +97,39 @@ Collaboration diagram for DGtal::VCMDigitalSurfaceLocalEstimator&lt; TDigitalSur
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aa72abaa4f3e75c87d8478e6ee9d1806e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html">VCMDigitalSurfaceLocalEstimator</a>&lt; TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction, TVCMGeometricFunctor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#aa72abaa4f3e75c87d8478e6ee9d1806e">Self</a></td></tr>
+<tr class="memdesc:aa72abaa4f3e75c87d8478e6ee9d1806e"><td class="mdescLeft">&#160;</td><td class="mdescRight">my own type  <a href="#aa72abaa4f3e75c87d8478e6ee9d1806e">More...</a><br /></td></tr>
 <tr class="separator:aa72abaa4f3e75c87d8478e6ee9d1806e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86e3118957393f09178515e92a8a9aa9"><td class="memItemLeft" align="right" valign="top">typedef TDigitalSurfaceContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a86e3118957393f09178515e92a8a9aa9">DigitalSurfaceContainer</a></td></tr>
+<tr class="memdesc:a86e3118957393f09178515e92a8a9aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">the chosen container  <a href="#a86e3118957393f09178515e92a8a9aa9">More...</a><br /></td></tr>
 <tr class="separator:a86e3118957393f09178515e92a8a9aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06958adfa56a302676f19536ec6d2467"><td class="memItemLeft" align="right" valign="top">typedef TSeparableMetric&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a06958adfa56a302676f19536ec6d2467">Metric</a></td></tr>
+<tr class="memdesc:a06958adfa56a302676f19536ec6d2467"><td class="mdescLeft">&#160;</td><td class="mdescRight">the chosen metric  <a href="#a06958adfa56a302676f19536ec6d2467">More...</a><br /></td></tr>
 <tr class="separator:a06958adfa56a302676f19536ec6d2467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa809229f23d4c3d3ce691abad47375b7"><td class="memItemLeft" align="right" valign="top">typedef TKernelFunction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#aa809229f23d4c3d3ce691abad47375b7">KernelFunction</a></td></tr>
+<tr class="memdesc:aa809229f23d4c3d3ce691abad47375b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">the kernel function  <a href="#aa809229f23d4c3d3ce691abad47375b7">More...</a><br /></td></tr>
 <tr class="separator:aa809229f23d4c3d3ce691abad47375b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ea8982dc73792e1a2f18881ad43964d"><td class="memItemLeft" align="right" valign="top">typedef TVCMGeometricFunctor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a2ea8982dc73792e1a2f18881ad43964d">VCMGeometricFunctor</a></td></tr>
 <tr class="separator:a2ea8982dc73792e1a2f18881ad43964d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a010a46532ddb098788434c1dc0c54922"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasureOnDigitalSurface.html">VoronoiCovarianceMeasureOnDigitalSurface</a>&lt; <a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a86e3118957393f09178515e92a8a9aa9">DigitalSurfaceContainer</a>, <a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a06958adfa56a302676f19536ec6d2467">Metric</a>, <a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#aa809229f23d4c3d3ce691abad47375b7">KernelFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a010a46532ddb098788434c1dc0c54922">VCMOnSurface</a></td></tr>
+<tr class="memdesc:a010a46532ddb098788434c1dc0c54922"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of computing the Voronoi covariance measure on a digital surface.  <a href="#a010a46532ddb098788434c1dc0c54922">More...</a><br /></td></tr>
 <tr class="separator:a010a46532ddb098788434c1dc0c54922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac00d29167b15c5fbd1b93c3b6fa8c6db"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasureOnDigitalSurface.html#a61fa07f0b67ac52f54b2b5e4cd3cba6b">VCMOnSurface::Surface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#ac00d29167b15c5fbd1b93c3b6fa8c6db">Surface</a></td></tr>
+<tr class="memdesc:ac00d29167b15c5fbd1b93c3b6fa8c6db"><td class="mdescLeft">&#160;</td><td class="mdescRight">the digital surface  <a href="#ac00d29167b15c5fbd1b93c3b6fa8c6db">More...</a><br /></td></tr>
 <tr class="separator:ac00d29167b15c5fbd1b93c3b6fa8c6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2699b65c25d805d5efe3c834b0690bf4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1DigitalSurface.html#a022bb4ded759e45963bfe00706ae8214">Surface::Surfel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a2699b65c25d805d5efe3c834b0690bf4">Surfel</a></td></tr>
+<tr class="memdesc:a2699b65c25d805d5efe3c834b0690bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the signed surface element  <a href="#a2699b65c25d805d5efe3c834b0690bf4">More...</a><br /></td></tr>
 <tr class="separator:a2699b65c25d805d5efe3c834b0690bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94038bad5ff0a664dac1b8524f3a7aa2"><td class="memItemLeft" align="right" valign="top">typedef VCMGeometricFunctor::Quantity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a94038bad5ff0a664dac1b8524f3a7aa2">Quantity</a></td></tr>
+<tr class="memdesc:a94038bad5ff0a664dac1b8524f3a7aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">the estimation type is given by the geometric functor  <a href="#a94038bad5ff0a664dac1b8524f3a7aa2">More...</a><br /></td></tr>
 <tr class="separator:a94038bad5ff0a664dac1b8524f3a7aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af32dcd90d4a7b1550d674c2e8991cf29"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1DigitalSurface.html#abfa4ca29739a597b3683da322b007002">Surface::SCell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#af32dcd90d4a7b1550d674c2e8991cf29">SCell</a></td></tr>
+<tr class="memdesc:af32dcd90d4a7b1550d674c2e8991cf29"><td class="mdescLeft">&#160;</td><td class="mdescRight">the signed cell  <a href="#af32dcd90d4a7b1550d674c2e8991cf29">More...</a><br /></td></tr>
 <tr class="separator:af32dcd90d4a7b1550d674c2e8991cf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4d4ac70bcf4c7344b5a1caf3823d558"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1DigitalSurface.html#a40056dd099c93e7ab5dfc5196a56e550">Surface::ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#ad4d4ac70bcf4c7344b5a1caf3823d558">ConstIterator</a></td></tr>
+<tr class="memdesc:ad4d4ac70bcf4c7344b5a1caf3823d558"><td class="mdescLeft">&#160;</td><td class="mdescRight">the iterator on surfels  <a href="#ad4d4ac70bcf4c7344b5a1caf3823d558">More...</a><br /></td></tr>
 <tr class="separator:ad4d4ac70bcf4c7344b5a1caf3823d558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdfca07e58497b3e84b10ec183837f8a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasureOnDigitalSurface.html#a0d09e6ee25eb93b7089980a51dd96176">VCMOnSurface::Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#abdfca07e58497b3e84b10ec183837f8a">Scalar</a></td></tr>
+<tr class="memdesc:abdfca07e58497b3e84b10ec183837f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">the "real number" type  <a href="#abdfca07e58497b3e84b10ec183837f8a">More...</a><br /></td></tr>
 <tr class="separator:abdfca07e58497b3e84b10ec183837f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -155,14 +169,19 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a191bd238ab0a1cb61689a32cc7e8d990"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html">CountedConstPtrOrConstPtr</a>&lt; <a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#ac00d29167b15c5fbd1b93c3b6fa8c6db">Surface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a191bd238ab0a1cb61689a32cc7e8d990">mySurface</a></td></tr>
+<tr class="memdesc:a191bd238ab0a1cb61689a32cc7e8d990"><td class="mdescLeft">&#160;</td><td class="mdescRight">A (possibly) shared object storing the digital surface.  <a href="#a191bd238ab0a1cb61689a32cc7e8d990">More...</a><br /></td></tr>
 <tr class="separator:a191bd238ab0a1cb61689a32cc7e8d990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0277734addad2d03f2f654d0ca49eb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceDGtal.html#aaad242ffef715835e8928579a506b2d5">Surfel2PointEmbedding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#ac0277734addad2d03f2f654d0ca49eb9">mySurfelEmbedding</a></td></tr>
+<tr class="memdesc:ac0277734addad2d03f2f654d0ca49eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">the embedding chosen for the surfels.  <a href="#ac0277734addad2d03f2f654d0ca49eb9">More...</a><br /></td></tr>
 <tr class="separator:ac0277734addad2d03f2f654d0ca49eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64cc28d4f74bd8d822e49fc8fc7afb04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html">CountedConstPtrOrConstPtr</a>&lt; <a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a010a46532ddb098788434c1dc0c54922">VCMOnSurface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a64cc28d4f74bd8d822e49fc8fc7afb04">myVCMOnSurface</a></td></tr>
+<tr class="memdesc:a64cc28d4f74bd8d822e49fc8fc7afb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">A (possibly) shared object storing the whole Voronoi covariance measure.  <a href="#a64cc28d4f74bd8d822e49fc8fc7afb04">More...</a><br /></td></tr>
 <tr class="separator:a64cc28d4f74bd8d822e49fc8fc7afb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d5b03520f56065712cd3524db9ccaf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a2ea8982dc73792e1a2f18881ad43964d">VCMGeometricFunctor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a6d5b03520f56065712cd3524db9ccaf7">myGeomFct</a></td></tr>
+<tr class="memdesc:a6d5b03520f56065712cd3524db9ccaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geometric functor.  <a href="#a6d5b03520f56065712cd3524db9ccaf7">More...</a><br /></td></tr>
 <tr class="separator:a6d5b03520f56065712cd3524db9ccaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31e9c26cf9864f58cec957f9f58a6af4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#abdfca07e58497b3e84b10ec183837f8a">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a31e9c26cf9864f58cec957f9f58a6af4">myH</a></td></tr>
+<tr class="memdesc:a31e9c26cf9864f58cec957f9f58a6af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gridstep.  <a href="#a31e9c26cf9864f58cec957f9f58a6af4">More...</a><br /></td></tr>
 <tr class="separator:a31e9c26cf9864f58cec957f9f58a6af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -1085,7 +1104,7 @@ template&lt;typename TDigitalSurfaceContainer , typename TSeparableMetric , type
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:29 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:43 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

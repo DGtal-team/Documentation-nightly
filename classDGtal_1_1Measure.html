@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Implements a simple measure computation (in the Lesbegue sens) of a set. In dimension 2, it corresponds to the area of the set, to the volume in dimension 3,...  
+ <a href="classDGtal_1_1Measure.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Measure_8h_source.html">DGtal/geometry/volumes/estimation/Measure.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -119,10 +122,13 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a23d1c3bea18e68f32e70b9978dfaad1a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Measure.html#a23d1c3bea18e68f32e70b9978dfaad1a">myH</a></td></tr>
+<tr class="memdesc:a23d1c3bea18e68f32e70b9978dfaad1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">grid resolution parameter.  <a href="#a23d1c3bea18e68f32e70b9978dfaad1a">More...</a><br /></td></tr>
 <tr class="separator:a23d1c3bea18e68f32e70b9978dfaad1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dbd95d440129bdbb0d082624cdc680c"><td class="memItemLeft" align="right" valign="top">Set::Size&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Measure.html#a3dbd95d440129bdbb0d082624cdc680c">mySetSize</a></td></tr>
+<tr class="memdesc:a3dbd95d440129bdbb0d082624cdc680c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the set size.  <a href="#a3dbd95d440129bdbb0d082624cdc680c">More...</a><br /></td></tr>
 <tr class="separator:a3dbd95d440129bdbb0d082624cdc680c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a485b31da14eb13513fa5f26ee43beae2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Measure.html#a485b31da14eb13513fa5f26ee43beae2">myIsInitBefore</a></td></tr>
+<tr class="memdesc:a485b31da14eb13513fa5f26ee43beae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to assert that the <a class="el" href="classDGtal_1_1Measure.html#adfaed9bfc8711301fc1056374df1af07">init()</a> was called before the <a class="el" href="classDGtal_1_1Measure.html#a2f136d681b0b1b0f9bc2ec28d5103873">eval()</a>.  <a href="#a485b31da14eb13513fa5f26ee43beae2">More...</a><br /></td></tr>
 <tr class="separator:a485b31da14eb13513fa5f26ee43beae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -503,7 +509,7 @@ template&lt;typename TSet&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:25 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:39 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

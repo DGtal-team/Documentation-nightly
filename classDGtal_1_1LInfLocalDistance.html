@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Class for the computation of the LInf-distance at some point p, from the available distance values of some points lying in the 1-neighborhood of p (ie. points at a L1-distance to p equal to 1).  
+ <a href="classDGtal_1_1LInfLocalDistance.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FMMPointFunctors_8h_source.html">DGtal/geometry/volumes/distance/FMMPointFunctors.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -100,8 +103,10 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afbec1a9b320184203b627f883c0bda66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LInfLocalDistance.html#afbec1a9b320184203b627f883c0bda66">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImage.html">concepts::CImage</a>&lt; TImage &gt;))</td></tr>
+<tr class="memdesc:afbec1a9b320184203b627f883c0bda66"><td class="mdescLeft">&#160;</td><td class="mdescRight">image  <a href="#afbec1a9b320184203b627f883c0bda66">More...</a><br /></td></tr>
 <tr class="separator:afbec1a9b320184203b627f883c0bda66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3719349a9dce3d7cf5951597f75cd05c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LInfLocalDistance.html#a3719349a9dce3d7cf5951597f75cd05c">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CDigitalSet.html">concepts::CDigitalSet</a>&lt; TSet &gt;))</td></tr>
+<tr class="memdesc:a3719349a9dce3d7cf5951597f75cd05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set  <a href="#a3719349a9dce3d7cf5951597f75cd05c">More...</a><br /></td></tr>
 <tr class="separator:a3719349a9dce3d7cf5951597f75cd05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7decd3fb61a7a8798d934ef480fa454b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LInfLocalDistance.html#a7decd3fb61a7a8798d934ef480fa454b">BOOST_STATIC_ASSERT</a> ((boost::is_same&lt; <a class="el" href="classDGtal_1_1LInfLocalDistance.html#a83490c20a09a6dba144699d11570dfee">Point</a>, typename <a class="el" href="testCubicalComplex_8cpp.html#a15e9592ccc512dc691b46185e6814758">TSet::Point</a> &gt;::value))</td></tr>
 <tr class="separator:a7decd3fb61a7a8798d934ef480fa454b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,8 +126,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:af25b65772b257e71eb217dd569af53e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1LInfLocalDistance.html#a4636034af68cc1eee8fac840033bcea2">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LInfLocalDistance.html#af25b65772b257e71eb217dd569af53e4">myImgPtr</a></td></tr>
+<tr class="memdesc:af25b65772b257e71eb217dd569af53e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aliasing pointer on the underlying image.  <a href="#af25b65772b257e71eb217dd569af53e4">More...</a><br /></td></tr>
 <tr class="separator:af25b65772b257e71eb217dd569af53e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bc0a7f3d98c8addc0420f4663f2723f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1LInfLocalDistance.html#a63a65fe4fbf98bd69d6cafebf3e2a2e3">Set</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LInfLocalDistance.html#a6bc0a7f3d98c8addc0420f4663f2723f">mySetPtr</a></td></tr>
+<tr class="memdesc:a6bc0a7f3d98c8addc0420f4663f2723f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aliasing pointer on the underlying set.  <a href="#a6bc0a7f3d98c8addc0420f4663f2723f">More...</a><br /></td></tr>
 <tr class="separator:a6bc0a7f3d98c8addc0420f4663f2723f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
@@ -566,7 +573,7 @@ template&lt;typename TImage , typename TSet &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:25 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:39 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

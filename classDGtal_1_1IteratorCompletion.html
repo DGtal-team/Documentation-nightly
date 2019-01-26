@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Class that uses CRTP to add reverse iterators and ranges to a derived class.  
+ <a href="classDGtal_1_1IteratorCompletion.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IteratorCompletion_8h_source.html">DGtal/base/IteratorCompletion.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::IteratorCompletion&lt; TDerived &gt;:</div>
@@ -93,20 +96,28 @@ Inheritance diagram for DGtal::IteratorCompletion&lt; TDerived &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a3c02bd75db56e57ad7ba6adfd43ddf4a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1IteratorCompletionTraits.html">IteratorCompletionTraits</a>&lt; TDerived &gt;::<a class="el" href="classDGtal_1_1IteratorCompletion.html#a3c02bd75db56e57ad7ba6adfd43ddf4a">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IteratorCompletion.html#a3c02bd75db56e57ad7ba6adfd43ddf4a">Iterator</a></td></tr>
+<tr class="memdesc:a3c02bd75db56e57ad7ba6adfd43ddf4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutable iterator type.  <a href="#a3c02bd75db56e57ad7ba6adfd43ddf4a">More...</a><br /></td></tr>
 <tr class="separator:a3c02bd75db56e57ad7ba6adfd43ddf4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1382fe4fd2906db00243ccaa8534ebaa"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1IteratorCompletionTraits.html">IteratorCompletionTraits</a>&lt; TDerived &gt;::<a class="el" href="classDGtal_1_1IteratorCompletion.html#a1382fe4fd2906db00243ccaa8534ebaa">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IteratorCompletion.html#a1382fe4fd2906db00243ccaa8534ebaa">ConstIterator</a></td></tr>
+<tr class="memdesc:a1382fe4fd2906db00243ccaa8534ebaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant iterator type.  <a href="#a1382fe4fd2906db00243ccaa8534ebaa">More...</a><br /></td></tr>
 <tr class="separator:a1382fe4fd2906db00243ccaa8534ebaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1be7425d1f9a4779fd1701a141299fa"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1IteratorCompletionTraits.html">IteratorCompletionTraits</a>&lt; TDerived &gt;::<a class="el" href="classDGtal_1_1IteratorCompletion.html#ab1be7425d1f9a4779fd1701a141299fa">DistanceFunctor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IteratorCompletion.html#ab1be7425d1f9a4779fd1701a141299fa">DistanceFunctor</a></td></tr>
+<tr class="memdesc:ab1be7425d1f9a4779fd1701a141299fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the functor calculating the distance between iterators.  <a href="#ab1be7425d1f9a4779fd1701a141299fa">More...</a><br /></td></tr>
 <tr class="separator:ab1be7425d1f9a4779fd1701a141299fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0da34a6264bd0a87101c41e4a388ec0"><td class="memItemLeft" align="right" valign="top">typedef boost::reverse_iterator&lt; <a class="el" href="classDGtal_1_1IteratorCompletion.html#a3c02bd75db56e57ad7ba6adfd43ddf4a">Iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IteratorCompletion.html#ad0da34a6264bd0a87101c41e4a388ec0">ReverseIterator</a></td></tr>
+<tr class="memdesc:ad0da34a6264bd0a87101c41e4a388ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutable reverse iterator type.  <a href="#ad0da34a6264bd0a87101c41e4a388ec0">More...</a><br /></td></tr>
 <tr class="separator:ad0da34a6264bd0a87101c41e4a388ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfd711944f16971e90b9b4eecca0074d"><td class="memItemLeft" align="right" valign="top">typedef boost::reverse_iterator&lt; <a class="el" href="classDGtal_1_1IteratorCompletion.html#a1382fe4fd2906db00243ccaa8534ebaa">ConstIterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IteratorCompletion.html#adfd711944f16971e90b9b4eecca0074d">ConstReverseIterator</a></td></tr>
+<tr class="memdesc:adfd711944f16971e90b9b4eecca0074d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant reverse iterator type.  <a href="#adfd711944f16971e90b9b4eecca0074d">More...</a><br /></td></tr>
 <tr class="separator:adfd711944f16971e90b9b4eecca0074d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c9dab7bfcd64eb0eb73cf1c7b6aedc0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SimpleRandomAccessRangeFromPoint.html">SimpleRandomAccessRangeFromPoint</a>&lt; <a class="el" href="classDGtal_1_1IteratorCompletion.html#a1382fe4fd2906db00243ccaa8534ebaa">ConstIterator</a>, <a class="el" href="classDGtal_1_1IteratorCompletion.html#a3c02bd75db56e57ad7ba6adfd43ddf4a">Iterator</a>, <a class="el" href="classDGtal_1_1IteratorCompletion.html#ab1be7425d1f9a4779fd1701a141299fa">DistanceFunctor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IteratorCompletion.html#a8c9dab7bfcd64eb0eb73cf1c7b6aedc0">Range</a></td></tr>
+<tr class="memdesc:a8c9dab7bfcd64eb0eb73cf1c7b6aedc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutable range type.  <a href="#a8c9dab7bfcd64eb0eb73cf1c7b6aedc0">More...</a><br /></td></tr>
 <tr class="separator:a8c9dab7bfcd64eb0eb73cf1c7b6aedc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9ab996530ffc2db8d214f5160543116"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SimpleRandomAccessConstRangeFromPoint.html">SimpleRandomAccessConstRangeFromPoint</a>&lt; <a class="el" href="classDGtal_1_1IteratorCompletion.html#a1382fe4fd2906db00243ccaa8534ebaa">ConstIterator</a>, <a class="el" href="classDGtal_1_1IteratorCompletion.html#ab1be7425d1f9a4779fd1701a141299fa">DistanceFunctor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IteratorCompletion.html#ae9ab996530ffc2db8d214f5160543116">ConstRange</a></td></tr>
+<tr class="memdesc:ae9ab996530ffc2db8d214f5160543116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant range type.  <a href="#ae9ab996530ffc2db8d214f5160543116">More...</a><br /></td></tr>
 <tr class="separator:ae9ab996530ffc2db8d214f5160543116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6fbf35e019da98ae56acf53fa8a2692"><td class="memItemLeft" align="right" valign="top">typedef std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IteratorCompletion.html#aa6fbf35e019da98ae56acf53fa8a2692">Difference</a></td></tr>
+<tr class="memdesc:aa6fbf35e019da98ae56acf53fa8a2692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the distance between two iterators.  <a href="#aa6fbf35e019da98ae56acf53fa8a2692">More...</a><br /></td></tr>
 <tr class="separator:aa6fbf35e019da98ae56acf53fa8a2692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -131,6 +142,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a349b2fea86d82c2d1fe44e35cf57b302"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IteratorCompletion.html#a349b2fea86d82c2d1fe44e35cf57b302">~IteratorCompletion</a> ()</td></tr>
+<tr class="memdesc:a349b2fea86d82c2d1fe44e35cf57b302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected destructor to avoid memory leak.  <a href="#a349b2fea86d82c2d1fe44e35cf57b302">More...</a><br /></td></tr>
 <tr class="separator:a349b2fea86d82c2d1fe44e35cf57b302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -619,7 +631,7 @@ template&lt;typename TDerived&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:24 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:38 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

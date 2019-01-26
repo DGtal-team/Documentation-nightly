@@ -100,5 +100,6 @@ var searchData=
   ['frontstack',['frontStack',['../namespaceDGtal.html#a93025ccea6a783aac046740d9649edaa',1,'DGtal']]],
   ['fulldomain',['fullDomain',['../classDGtal_1_1ArrayImageAdapter_3_01TArrayIterator_00_01HyperRectDomain_3_01TSpace_01_4_01_4.html#a446147ec1088ae2ea78b323fd7738401',1,'DGtal::ArrayImageAdapter&lt; TArrayIterator, HyperRectDomain&lt; TSpace &gt; &gt;']]],
   ['functor',['functor',['../classDGtal_1_1ConstIteratorAdapter.html#a7f03802e00d49693e16a24382c25aea2',1,'DGtal::ConstIteratorAdapter']]],
+  ['functorholder',['FunctorHolder',['../classDGtal_1_1functors_1_1FunctorHolder.html#a26dfd98a1474f56f9cd9ef645350bff5',1,'DGtal::functors::FunctorHolder']]],
   ['functoroncells',['FunctorOnCells',['../classDGtal_1_1FunctorOnCells.html#a6572ca7aad3eab40cde876d1bd7cdaaf',1,'DGtal::FunctorOnCells::FunctorOnCells(Alias&lt; FunctorOnPoints &gt; functor, ConstAlias&lt; KSpace &gt; kspace)'],['../classDGtal_1_1FunctorOnCells.html#a0ec442b4cb4f948c405aba6383e54171',1,'DGtal::FunctorOnCells::FunctorOnCells(const FunctorOnCells &amp;other)'],['../classDGtal_1_1FunctorOnCells.html#a1a152cfeef3d7f52c222ddda0797144e',1,'DGtal::FunctorOnCells::FunctorOnCells()']]]
 ];

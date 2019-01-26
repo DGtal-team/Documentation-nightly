@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Represents a set of n-1-cells in a nD space, together with adjacency relation between these cells. Therefore, a digital surface is a pure cubical complex (model of CCubicalComplex), made of k-cells, 0 &lt;= k &lt; n. This complex is generally not a manifold (i.e. a kind of surface), except when it has the property of being well-composed.  
+ <a href="classDGtal_1_1DigitalSurface.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DigitalSurface_8h_source.html">DGtal/topology/DigitalSurface.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;:</div>
@@ -110,10 +113,13 @@ Public Types</h2></td></tr>
 <tr class="memitem:a1e5d3aa778ac2d76c6a5fe1c3986d63b"><td class="memItemLeft" align="right" valign="top">typedef TDigitalSurfaceContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a1e5d3aa778ac2d76c6a5fe1c3986d63b">DigitalSurfaceContainer</a></td></tr>
 <tr class="separator:a1e5d3aa778ac2d76c6a5fe1c3986d63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31be830d2bfa382bba2806fc5f00cc60"><td class="memItemLeft" align="right" valign="top">typedef boost::undirected_tag&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a31be830d2bfa382bba2806fc5f00cc60">directed_category</a></td></tr>
+<tr class="memdesc:a31be830d2bfa382bba2806fc5f00cc60"><td class="mdescLeft">&#160;</td><td class="mdescRight">the graph is undirected.  <a href="#a31be830d2bfa382bba2806fc5f00cc60">More...</a><br /></td></tr>
 <tr class="separator:a31be830d2bfa382bba2806fc5f00cc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8f2c14baa3acbb99ddf58fb67c829df"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structboost_1_1DigitalSurface__graph__traversal__category.html">boost::DigitalSurface_graph_traversal_category</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#ad8f2c14baa3acbb99ddf58fb67c829df">traversal_category</a></td></tr>
+<tr class="memdesc:ad8f2c14baa3acbb99ddf58fb67c829df"><td class="mdescLeft">&#160;</td><td class="mdescRight">the graph satisfies AdjacencyListGraph and VertexListGraph concepts.  <a href="#ad8f2c14baa3acbb99ddf58fb67c829df">More...</a><br /></td></tr>
 <tr class="separator:ad8f2c14baa3acbb99ddf58fb67c829df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a722fd52877a53f090fca2560921719d5"><td class="memItemLeft" align="right" valign="top">typedef boost::disallow_parallel_edge_tag&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a722fd52877a53f090fca2560921719d5">edge_parallel_category</a></td></tr>
+<tr class="memdesc:a722fd52877a53f090fca2560921719d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">the graph does not allow parallel edges.  <a href="#a722fd52877a53f090fca2560921719d5">More...</a><br /></td></tr>
 <tr class="separator:a722fd52877a53f090fca2560921719d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f666741db27b7f1572ffa9df52e527a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1DigitalSurface.html">DigitalSurface</a>&lt; <a class="el" href="classDGtal_1_1DigitalSurface.html#a1e5d3aa778ac2d76c6a5fe1c3986d63b">DigitalSurfaceContainer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a0f666741db27b7f1572ffa9df52e527a">Self</a></td></tr>
 <tr class="separator:a0f666741db27b7f1572ffa9df52e527a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,22 +142,30 @@ Public Types</h2></td></tr>
 <tr class="memitem:aaa80abbd219d17cd225cc8f961be68f2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a0a02413be83a0f38f23ed5cb45c2bcc4">KSpace::SurfelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#aaa80abbd219d17cd225cc8f961be68f2">SurfelSet</a></td></tr>
 <tr class="separator:aaa80abbd219d17cd225cc8f961be68f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a637f8034aff12a2f65fe9cc47c95b8db"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1DigitalSurface.html#a022bb4ded759e45963bfe00706ae8214">Surfel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a637f8034aff12a2f65fe9cc47c95b8db">Vertex</a></td></tr>
+<tr class="memdesc:a637f8034aff12a2f65fe9cc47c95b8db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the type for a vertex.  <a href="#a637f8034aff12a2f65fe9cc47c95b8db">More...</a><br /></td></tr>
 <tr class="separator:a637f8034aff12a2f65fe9cc47c95b8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6296308d1a6833a0fa93bdeebfbc7dbf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a93973417f7b05e40cb4c121eeb43f5a5">KSpace::Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a6296308d1a6833a0fa93bdeebfbc7dbf">Size</a></td></tr>
+<tr class="memdesc:a6296308d1a6833a0fa93bdeebfbc7dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines how to represent a size (unsigned integral type).  <a href="#a6296308d1a6833a0fa93bdeebfbc7dbf">More...</a><br /></td></tr>
 <tr class="separator:a6296308d1a6833a0fa93bdeebfbc7dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59b53ec1f8a4c8822b7b69a516f1cb7b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a0a02413be83a0f38f23ed5cb45c2bcc4">KSpace::SurfelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a59b53ec1f8a4c8822b7b69a516f1cb7b">VertexSet</a></td></tr>
+<tr class="memdesc:a59b53ec1f8a4c8822b7b69a516f1cb7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines how to represent a set of vertex.  <a href="#a59b53ec1f8a4c8822b7b69a516f1cb7b">More...</a><br /></td></tr>
 <tr class="separator:a59b53ec1f8a4c8822b7b69a516f1cb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cbb677a11598140c386bdfdce17aec2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1UmbrellaComputer.html">UmbrellaComputer</a>&lt; <a class="el" href="classDGtal_1_1DigitalSurface.html#a81da19bd361a25c90f7a0c295e91cfaa">DigitalSurfaceTracker</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a4cbb677a11598140c386bdfdce17aec2">Umbrella</a></td></tr>
+<tr class="memdesc:a4cbb677a11598140c386bdfdce17aec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This define a utility class for computing umbrellas.  <a href="#a4cbb677a11598140c386bdfdce17aec2">More...</a><br /></td></tr>
 <tr class="separator:a4cbb677a11598140c386bdfdce17aec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83504df2d968329d36d731f43113af34"><td class="memItemLeft" align="right" valign="top">typedef Umbrella::State&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a83504df2d968329d36d731f43113af34">UmbrellaState</a></td></tr>
 <tr class="separator:a83504df2d968329d36d731f43113af34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a951074c459f89ceb3fcb0b8259e293"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="structDGtal_1_1DigitalSurface_1_1Arc.html">Arc</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a8a951074c459f89ceb3fcb0b8259e293">ArcRange</a></td></tr>
+<tr class="memdesc:a8a951074c459f89ceb3fcb0b8259e293"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range of arcs is defined as a vector.  <a href="#a8a951074c459f89ceb3fcb0b8259e293">More...</a><br /></td></tr>
 <tr class="separator:a8a951074c459f89ceb3fcb0b8259e293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa10b17c760ac59745d97e05a9877532f"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="structDGtal_1_1DigitalSurface_1_1Face.html">Face</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#aa10b17c760ac59745d97e05a9877532f">FaceRange</a></td></tr>
+<tr class="memdesc:aa10b17c760ac59745d97e05a9877532f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range of faces is defined as a vector.  <a href="#aa10b17c760ac59745d97e05a9877532f">More...</a><br /></td></tr>
 <tr class="separator:aa10b17c760ac59745d97e05a9877532f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bbab2b7e1bedf06738f5151d1157b37"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classDGtal_1_1DigitalSurface.html#a637f8034aff12a2f65fe9cc47c95b8db">Vertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a7bbab2b7e1bedf06738f5151d1157b37">VertexRange</a></td></tr>
+<tr class="memdesc:a7bbab2b7e1bedf06738f5151d1157b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range of vertices is defined as a vector.  <a href="#a7bbab2b7e1bedf06738f5151d1157b37">More...</a><br /></td></tr>
 <tr class="separator:a7bbab2b7e1bedf06738f5151d1157b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca5daf921da1f67b921cfc109f2dbb20"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; <a class="el" href="structDGtal_1_1DigitalSurface_1_1Face.html">Face</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#aca5daf921da1f67b921cfc109f2dbb20">FaceSet</a></td></tr>
+<tr class="memdesc:aca5daf921da1f67b921cfc109f2dbb20"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of faces is defined as set.  <a href="#aca5daf921da1f67b921cfc109f2dbb20">More...</a><br /></td></tr>
 <tr class="separator:aca5daf921da1f67b921cfc109f2dbb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -245,10 +259,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a864562b0c92f06a8145292559f10d4bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1DigitalSurface.html#a1e5d3aa778ac2d76c6a5fe1c3986d63b">DigitalSurfaceContainer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a864562b0c92f06a8145292559f10d4bb">myContainer</a></td></tr>
+<tr class="memdesc:a864562b0c92f06a8145292559f10d4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">a smart pointer on the container.  <a href="#a864562b0c92f06a8145292559f10d4bb">More...</a><br /></td></tr>
 <tr class="separator:a864562b0c92f06a8145292559f10d4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85ac20f70cd198d6151a83bf98383896"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1DigitalSurface.html#a81da19bd361a25c90f7a0c295e91cfaa">DigitalSurfaceTracker</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a85ac20f70cd198d6151a83bf98383896">myTracker</a></td></tr>
+<tr class="memdesc:a85ac20f70cd198d6151a83bf98383896"><td class="mdescLeft">&#160;</td><td class="mdescRight">a pointer on a tracker.  <a href="#a85ac20f70cd198d6151a83bf98383896">More...</a><br /></td></tr>
 <tr class="separator:a85ac20f70cd198d6151a83bf98383896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3065ef97fcf9ae4ea3024a88ca6ca93b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1UmbrellaComputer.html">UmbrellaComputer</a>&lt; <a class="el" href="classDGtal_1_1DigitalSurface.html#a81da19bd361a25c90f7a0c295e91cfaa">DigitalSurfaceTracker</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface.html#a3065ef97fcf9ae4ea3024a88ca6ca93b">myUmbrellaComputer</a></td></tr>
+<tr class="memdesc:a3065ef97fcf9ae4ea3024a88ca6ca93b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This object is used to compute umbrellas over the surface.  <a href="#a3065ef97fcf9ae4ea3024a88ca6ca93b">More...</a><br /></td></tr>
 <tr class="separator:a3065ef97fcf9ae4ea3024a88ca6ca93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1928,7 +1945,7 @@ template&lt;typename TDigitalSurfaceContainer&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:22 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

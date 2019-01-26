@@ -85,6 +85,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Parallelepidec region of a digital space, model of a 'CDomain'.  
+ <a href="classDGtal_1_1HyperRectDomain.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="HyperRectDomain_8h_source.html">DGtal/kernel/domains/HyperRectDomain.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::HyperRectDomain&lt; TSpace &gt;:</div>
@@ -102,6 +105,7 @@ Collaboration diagram for DGtal::HyperRectDomain&lt; TSpace &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1HyperRectDomain_1_1ConstSubRange.html">ConstSubRange</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: range through some subdomain of all the points in the domain. Defines a constructor taking a domain in parameter plus some additional parameters to specify the subdomain, begin and end methods returning ConstIterator, and rbegin and rend methods returning ConstReverseIterator.  <a href="structDGtal_1_1HyperRectDomain_1_1ConstSubRange.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -125,6 +129,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:ac1c2282b10f069b3d652e884cabdde2e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html#a6409a51203e0edc907d523fb19ed7e41">Point::Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1HyperRectDomain.html#ac1c2282b10f069b3d652e884cabdde2e">Coordinate</a></td></tr>
 <tr class="separator:ac1c2282b10f069b3d652e884cabdde2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd306a662192edd7e6e4af6fde9e8f56"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1HyperRectDomain__Iterator.html">HyperRectDomain_Iterator</a>&lt; <a class="el" href="classDGtal_1_1HyperRectDomain.html#ad710ac3a2d91d351b55ca6841cb789f5">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1HyperRectDomain.html#abd306a662192edd7e6e4af6fde9e8f56">Iterator</a></td></tr>
+<tr class="memdesc:abd306a662192edd7e6e4af6fde9e8f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef of domain iterators.  <a href="#abd306a662192edd7e6e4af6fde9e8f56">More...</a><br /></td></tr>
 <tr class="separator:abd306a662192edd7e6e4af6fde9e8f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09091d10ccff062670ea5357820df3b4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classmyreverse__iterator.html">myreverse_iterator</a>&lt; <a class="el" href="classDGtal_1_1HyperRectDomain.html#abd306a662192edd7e6e4af6fde9e8f56">Iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1HyperRectDomain.html#a09091d10ccff062670ea5357820df3b4">ReverseIterator</a></td></tr>
 <tr class="separator:a09091d10ccff062670ea5357820df3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,8 +202,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a11b05f84f0fc71002abb98076383d989"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1HyperRectDomain.html#ad710ac3a2d91d351b55ca6841cb789f5">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1HyperRectDomain.html#a11b05f84f0fc71002abb98076383d989">myLowerBound</a></td></tr>
+<tr class="memdesc:a11b05f84f0fc71002abb98076383d989"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lowest point of the space diagonal.  <a href="#a11b05f84f0fc71002abb98076383d989">More...</a><br /></td></tr>
 <tr class="separator:a11b05f84f0fc71002abb98076383d989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09ca52183454d9638e00343688a710e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1HyperRectDomain.html#ad710ac3a2d91d351b55ca6841cb789f5">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1HyperRectDomain.html#a09ca52183454d9638e00343688a710e7">myUpperBound</a></td></tr>
+<tr class="memdesc:a09ca52183454d9638e00343688a710e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The highest point of the space diagonal.  <a href="#a09ca52183454d9638e00343688a710e7">More...</a><br /></td></tr>
 <tr class="separator:a09ca52183454d9638e00343688a710e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -209,10 +216,13 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa3bbbcec25bf79cd53f16715ca6842b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1HyperRectDomain.html#a431536af83438afd5392c08d89cfe5d5">Predicate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1HyperRectDomain.html#aa3bbbcec25bf79cd53f16715ca6842b5">myPredicate</a></td></tr>
+<tr class="memdesc:aa3bbbcec25bf79cd53f16715ca6842b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">"IsInside" predicate.  <a href="#aa3bbbcec25bf79cd53f16715ca6842b5">More...</a><br /></td></tr>
 <tr class="separator:aa3bbbcec25bf79cd53f16715ca6842b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5274599944718d52b6c691fbf39e2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1HyperRectDomain.html#ad460a9309eb81ab5391a57f7d2a17055">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1HyperRectDomain.html#a6e5274599944718d52b6c691fbf39e2b">myIteratorBegin</a></td></tr>
+<tr class="memdesc:a6e5274599944718d52b6c691fbf39e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin iterator.  <a href="#a6e5274599944718d52b6c691fbf39e2b">More...</a><br /></td></tr>
 <tr class="separator:a6e5274599944718d52b6c691fbf39e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d1b02a6c60bbbc5a05e82560f665a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1HyperRectDomain.html#ad460a9309eb81ab5391a57f7d2a17055">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1HyperRectDomain.html#af5d1b02a6c60bbbc5a05e82560f665a1">myIteratorEnd</a></td></tr>
+<tr class="memdesc:af5d1b02a6c60bbbc5a05e82560f665a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">End iterator.  <a href="#af5d1b02a6c60bbbc5a05e82560f665a1">More...</a><br /></td></tr>
 <tr class="separator:af5d1b02a6c60bbbc5a05e82560f665a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1607,7 +1617,7 @@ template&lt;typename TSpace&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:23 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:37 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

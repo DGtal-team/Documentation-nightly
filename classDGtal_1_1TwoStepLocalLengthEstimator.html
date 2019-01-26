@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: a simple model of CGlobalCurveEstimator that compute the length of a curve using the l_1 metric (just add 1/h for every step).  
+ <a href="classDGtal_1_1TwoStepLocalLengthEstimator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TwoStepLocalLengthEstimator_8h_source.html">DGtal/geometry/curves/estimation/TwoStepLocalLengthEstimator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::TwoStepLocalLengthEstimator&lt; TConstIterator &gt;:</div>
@@ -123,14 +126,18 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acd474c000a4e8767fc0e283813a4644c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TwoStepLocalLengthEstimator.html#acd474c000a4e8767fc0e283813a4644c">myH</a></td></tr>
+<tr class="memdesc:acd474c000a4e8767fc0e283813a4644c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grid size.  <a href="#acd474c000a4e8767fc0e283813a4644c">More...</a><br /></td></tr>
 <tr class="separator:acd474c000a4e8767fc0e283813a4644c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae463636e3efb02102d768525ec9c1801"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TwoStepLocalLengthEstimator.html#ad7d99fc10d4cd9e2e114a01a0bca4d99">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TwoStepLocalLengthEstimator.html#ae463636e3efb02102d768525ec9c1801">myBeginIt</a></td></tr>
+<tr class="memdesc:ae463636e3efb02102d768525ec9c1801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the range.  <a href="#ae463636e3efb02102d768525ec9c1801">More...</a><br /></td></tr>
 <tr class="separator:ae463636e3efb02102d768525ec9c1801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6faee899fce079bc2e55f491f499533b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TwoStepLocalLengthEstimator.html#ad7d99fc10d4cd9e2e114a01a0bca4d99">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TwoStepLocalLengthEstimator.html#a6faee899fce079bc2e55f491f499533b">myEndIt</a></td></tr>
 <tr class="separator:a6faee899fce079bc2e55f491f499533b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6480c6767fede717656508b65ecc0da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TwoStepLocalLengthEstimator.html#ac6480c6767fede717656508b65ecc0da">myIsInitBefore</a></td></tr>
+<tr class="memdesc:ac6480c6767fede717656508b65ecc0da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to make sure that <a class="el" href="classDGtal_1_1TwoStepLocalLengthEstimator.html#a55b5bf1b98b6b408954fe4bc4599a01f">init()</a> has been called before <a class="el" href="classDGtal_1_1TwoStepLocalLengthEstimator.html#a37702eb9560f2a19ee6de765bd30cd53">eval()</a>.  <a href="#ac6480c6767fede717656508b65ecc0da">More...</a><br /></td></tr>
 <tr class="separator:ac6480c6767fede717656508b65ecc0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a566f28aa8613d03b4e52fe7647db4ebe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TwoStepLocalLengthEstimator.html#a566f28aa8613d03b4e52fe7647db4ebe">myWeightDirect</a></td></tr>
+<tr class="memdesc:a566f28aa8613d03b4e52fe7647db4ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights.  <a href="#a566f28aa8613d03b4e52fe7647db4ebe">More...</a><br /></td></tr>
 <tr class="separator:a566f28aa8613d03b4e52fe7647db4ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5601705626b075286ba6c0b72c828098"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TwoStepLocalLengthEstimator.html#a5601705626b075286ba6c0b72c828098">myWeightDiagonal</a></td></tr>
 <tr class="separator:a5601705626b075286ba6c0b72c828098"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -616,7 +623,7 @@ template&lt;typename TConstIterator&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:29 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:43 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

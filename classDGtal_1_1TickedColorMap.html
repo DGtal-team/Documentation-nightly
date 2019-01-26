@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class adapts any colormap to add "ticks" in the colormap colors.  
+ <a href="classDGtal_1_1TickedColorMap.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TickedColorMap_8h_source.html">DGtal/io/colormaps/TickedColorMap.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::TickedColorMap&lt; TValue, TColorMap &gt;:</div>
@@ -94,8 +97,10 @@ Collaboration diagram for DGtal::TickedColorMap&lt; TValue, TColorMap &gt;:</div
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a42271d9d32de6d891973481b6da73fcf"><td class="memItemLeft" align="right" valign="top">typedef TValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TickedColorMap.html#a42271d9d32de6d891973481b6da73fcf">Value</a></td></tr>
+<tr class="memdesc:a42271d9d32de6d891973481b6da73fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value type.  <a href="#a42271d9d32de6d891973481b6da73fcf">More...</a><br /></td></tr>
 <tr class="separator:a42271d9d32de6d891973481b6da73fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acef8481320becf60fe2e0fba01052ad6"><td class="memItemLeft" align="right" valign="top">typedef TColorMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TickedColorMap.html#acef8481320becf60fe2e0fba01052ad6">ColorMap</a></td></tr>
+<tr class="memdesc:acef8481320becf60fe2e0fba01052ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapted colormap type.  <a href="#acef8481320becf60fe2e0fba01052ad6">More...</a><br /></td></tr>
 <tr class="separator:acef8481320becf60fe2e0fba01052ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -149,6 +154,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a081d1de1b779f0d0fce06d0cd8e5c627"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TickedColorMap.html#a081d1de1b779f0d0fce06d0cd8e5c627">myTickColor</a></td></tr>
 <tr class="separator:a081d1de1b779f0d0fce06d0cd8e5c627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec6587c7d4bb856fa45b9969d1ab1873"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; <a class="el" href="classDGtal_1_1TickedColorMap.html#a42271d9d32de6d891973481b6da73fcf">Value</a>, <a class="el" href="classDGtal_1_1TickedColorMap.html#a42271d9d32de6d891973481b6da73fcf">Value</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TickedColorMap.html#aec6587c7d4bb856fa45b9969d1ab1873">myTicks</a></td></tr>
+<tr class="memdesc:aec6587c7d4bb856fa45b9969d1ab1873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorted vector of ticks.  <a href="#aec6587c7d4bb856fa45b9969d1ab1873">More...</a><br /></td></tr>
 <tr class="separator:aec6587c7d4bb856fa45b9969d1ab1873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -838,7 +844,7 @@ template&lt;typename TValue, typename TColorMap&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:29 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:42 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

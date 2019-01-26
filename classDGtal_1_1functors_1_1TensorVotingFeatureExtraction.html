@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Implements a functor to detect feature points from normal tensor voting strategy.  
+ <a href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TensorVotingFeatureExtraction_8h_source.html">DGtal/geometry/surfaces/estimation/estimationFunctors/TensorVotingFeatureExtraction.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::functors::TensorVotingFeatureExtraction&lt; TSurfel, TEmbedder &gt;:</div>
@@ -115,20 +118,25 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a9baecc897b69065631c2411084424338"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#a9baecc897b69065631c2411084424338">myFirstSurfel</a></td></tr>
+<tr class="memdesc:a9baecc897b69065631c2411084424338"><td class="mdescLeft">&#160;</td><td class="mdescRight">First surfel flag.  <a href="#a9baecc897b69065631c2411084424338">More...</a><br /></td></tr>
 <tr class="separator:a9baecc897b69065631c2411084424338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30d8c35130d3be0f03404778efb080ad"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#aed7f68ea92928bad917f3ebcfb6f4e38">SCellEmbedder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#a30d8c35130d3be0f03404778efb080ad">myEmbedder</a></td></tr>
+<tr class="memdesc:a30d8c35130d3be0f03404778efb080ad"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1Alias.html" title="Aim: This class encapsulates its parameter class so that to indicate to the user that the object/poin...">Alias</a> of the geometrical embedder.  <a href="#a30d8c35130d3be0f03404778efb080ad">More...</a><br /></td></tr>
 <tr class="separator:a30d8c35130d3be0f03404778efb080ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74aa29571b7365d9dfe0f5cc0f5cadfb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#a74aa29571b7365d9dfe0f5cc0f5cadfb">myH</a></td></tr>
 <tr class="separator:a74aa29571b7365d9dfe0f5cc0f5cadfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3295d68bc5493c9a8734ea1e1f9e797"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#a60e82e9322fdb59c6a99c86bfcb96049">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#aa3295d68bc5493c9a8734ea1e1f9e797">myReceiver</a></td></tr>
+<tr class="memdesc:aa3295d68bc5493c9a8734ea1e1f9e797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receiver (embedding of the starting surfel)  <a href="#aa3295d68bc5493c9a8734ea1e1f9e797">More...</a><br /></td></tr>
 <tr class="separator:aa3295d68bc5493c9a8734ea1e1f9e797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a571f1aa6b895003814177d68c5a2853f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1SimpleMatrix.html">SimpleMatrix</a>&lt; double, 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#a571f1aa6b895003814177d68c5a2853f">myAccum</a></td></tr>
+<tr class="memdesc:a571f1aa6b895003814177d68c5a2853f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Covariance accumulator.  <a href="#a571f1aa6b895003814177d68c5a2853f">More...</a><br /></td></tr>
 <tr class="separator:a571f1aa6b895003814177d68c5a2853f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad65bf004c3a1b166b64c46f46636929a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1SimpleMatrix.html">SimpleMatrix</a>&lt; double, 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#ad65bf004c3a1b166b64c46f46636929a">myId</a></td></tr>
 <tr class="separator:ad65bf004c3a1b166b64c46f46636929a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa158dd38d31a3f598c78e17bdde2d88a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1SimpleMatrix.html">SimpleMatrix</a>&lt; double, 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#aa158dd38d31a3f598c78e17bdde2d88a">myVote</a></td></tr>
 <tr class="separator:aa158dd38d31a3f598c78e17bdde2d88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24c82b2e625758c57bffb88a76dd20d1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#a24c82b2e625758c57bffb88a76dd20d1">myArea</a></td></tr>
+<tr class="memdesc:a24c82b2e625758c57bffb88a76dd20d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convolution kernel area.  <a href="#a24c82b2e625758c57bffb88a76dd20d1">More...</a><br /></td></tr>
 <tr class="separator:a24c82b2e625758c57bffb88a76dd20d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -656,7 +664,7 @@ template&lt;typename TSurfel , typename TEmbedder &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:32 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:46 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

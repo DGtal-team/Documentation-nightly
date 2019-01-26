@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Represents an (unsigned) cell in a cellular grid space by its Khalimsky coordinates.  
+ <a href="structDGtal_1_1KhalimskyCell.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="KhalimskySpaceND_8h_source.html">DGtal/topology/KhalimskySpaceND.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::KhalimskyCell&lt; dim, TInteger &gt;:</div>
@@ -120,8 +123,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a774590d2688895f39dd688b7cf92d980"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1KhalimskyCell.html#a774590d2688895f39dd688b7cf92d980">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CInteger.html">concepts::CInteger</a>&lt; TInteger &gt;))</td></tr>
 <tr class="separator:a774590d2688895f39dd688b7cf92d980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ffd7428549486148e452b8ea5b11c7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1KhalimskyCell.html#a3ffd7428549486148e452b8ea5b11c7a">operator PreCell const &amp;</a> () const</td></tr>
+<tr class="memdesc:a3ffd7428549486148e452b8ea5b11c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant conversion to <a class="el" href="structDGtal_1_1KhalimskyPreCell.html">KhalimskyPreCell</a>.  <a href="#a3ffd7428549486148e452b8ea5b11c7a">More...</a><br /></td></tr>
 <tr class="separator:a3ffd7428549486148e452b8ea5b11c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a952594a747cd132ddca90495b5b54380"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDGtal_1_1KhalimskyCell.html#aa2b60151c6f09b4378696297a458fafb">PreCell</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1KhalimskyCell.html#a952594a747cd132ddca90495b5b54380">preCell</a> () const</td></tr>
+<tr class="memdesc:a952594a747cd132ddca90495b5b54380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying constant pre-cell.  <a href="#a952594a747cd132ddca90495b5b54380">More...</a><br /></td></tr>
 <tr class="separator:a952594a747cd132ddca90495b5b54380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bfde908b9634cd862ccbf12a61012f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1KhalimskyCell.html#a9bfde908b9634cd862ccbf12a61012f4">KhalimskyCell</a> (<a class="el" href="structDGtal_1_1KhalimskyCell.html#a62e8d7a4a0a5408d1cf943483ba8e2d7">Integer</a> dummy=0)</td></tr>
 <tr class="separator:a9bfde908b9634cd862ccbf12a61012f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +154,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aebcb25f7268a9ab0230aa74955eb0b4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1KhalimskyCell.html#aebcb25f7268a9ab0230aa74955eb0b4e">KhalimskyCell</a> (const <a class="el" href="structDGtal_1_1KhalimskyCell.html#aa2b60151c6f09b4378696297a458fafb">PreCell</a> &amp;aCell)</td></tr>
 <tr class="separator:aebcb25f7268a9ab0230aa74955eb0b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54fe71384e70b9abbe5a1930157e5bea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1KhalimskyCell.html#a54fe71384e70b9abbe5a1930157e5bea">operator PreCell &amp;</a> ()</td></tr>
+<tr class="memdesc:a54fe71384e70b9abbe5a1930157e5bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutable conversion to <a class="el" href="structDGtal_1_1KhalimskyPreCell.html">KhalimskyPreCell</a>.  <a href="#a54fe71384e70b9abbe5a1930157e5bea">More...</a><br /></td></tr>
 <tr class="separator:a54fe71384e70b9abbe5a1930157e5bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -820,7 +826,7 @@ template&lt;Dimension dim, typename TInteger = DGtal::int32_t&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:25 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:38 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -86,6 +86,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Stores a set of labels in {O..L-1} as a sequence of bits.  
+ <a href="classDGtal_1_1Labels.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Labels_8h_source.html">DGtal/base/Labels.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::Labels&lt; L, TWord &gt;:</div>
@@ -163,15 +166,19 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad1956615e44eb6942b3ad6a0253d1f4b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1Labels.html#a784a9b6b042c3d18aee7eeaa5b266fa1">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Labels.html#ad1956615e44eb6942b3ad6a0253d1f4b">_word</a> (<a class="el" href="classDGtal_1_1Labels.html#aa6fd9e49cbe8f29e9b34fdc81fa4776e">Label</a> l)</td></tr>
+<tr class="memdesc:ad1956615e44eb6942b3ad6a0253d1f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the word in which is the label l.  <a href="#ad1956615e44eb6942b3ad6a0253d1f4b">More...</a><br /></td></tr>
 <tr class="separator:ad1956615e44eb6942b3ad6a0253d1f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12da7da1ce3c80b1723ae794a50ff613"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1Labels.html#a784a9b6b042c3d18aee7eeaa5b266fa1">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Labels.html#a12da7da1ce3c80b1723ae794a50ff613">_digit</a> (<a class="el" href="classDGtal_1_1Labels.html#aa6fd9e49cbe8f29e9b34fdc81fa4776e">Label</a> l)</td></tr>
+<tr class="memdesc:a12da7da1ce3c80b1723ae794a50ff613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bit at which is the label l.  <a href="#a12da7da1ce3c80b1723ae794a50ff613">More...</a><br /></td></tr>
 <tr class="separator:a12da7da1ce3c80b1723ae794a50ff613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec4be02294aa5ee16d7f0908c7944bb8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1Labels.html#a59c198233d996b4872f5017025ce0860">Word</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Labels.html#aec4be02294aa5ee16d7f0908c7944bb8">_mask</a> (<a class="el" href="classDGtal_1_1Labels.html#aa6fd9e49cbe8f29e9b34fdc81fa4776e">Label</a> l)</td></tr>
+<tr class="memdesc:aec4be02294aa5ee16d7f0908c7944bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mask for the label l (1 &lt;&lt; _digit( l )).  <a href="#aec4be02294aa5ee16d7f0908c7944bb8">More...</a><br /></td></tr>
 <tr class="separator:aec4be02294aa5ee16d7f0908c7944bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab14f828f83c3003ba9f8d5bb4df702fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Labels.html#a59c198233d996b4872f5017025ce0860">Word</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Labels.html#ab14f828f83c3003ba9f8d5bb4df702fe">myLabels</a> [__DGTAL_LABELS_NBWORDS]</td></tr>
+<tr class="memdesc:ab14f828f83c3003ba9f8d5bb4df702fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the labels as bits. The bit of index l is set if l is in the set.  <a href="#ab14f828f83c3003ba9f8d5bb4df702fe">More...</a><br /></td></tr>
 <tr class="separator:ab14f828f83c3003ba9f8d5bb4df702fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -940,7 +947,7 @@ template&lt;unsigned int L, typename TWord = DGtal::uint8_t&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:25 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:39 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

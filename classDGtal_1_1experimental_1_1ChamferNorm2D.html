@@ -85,6 +85,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: implements a model of CSeparableMetric for Chamfer and path based norms.  
+ <a href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ChamferNorm2D_8h_source.html">DGtal/geometry/volumes/distance/ChamferNorm2D.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::experimental::ChamferNorm2D&lt; TSpace &gt;:</div>
@@ -103,20 +106,27 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aac254e3f86e36942a3272782f9613baa"><td class="memItemLeft" align="right" valign="top">typedef TSpace&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#aac254e3f86e36942a3272782f9613baa">Space</a></td></tr>
+<tr class="memdesc:aac254e3f86e36942a3272782f9613baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying Space.  <a href="#aac254e3f86e36942a3272782f9613baa">More...</a><br /></td></tr>
 <tr class="separator:aac254e3f86e36942a3272782f9613baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9bdfae7d4f6694c5ca908387e30df99"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SpaceND.html#ae194f4dfc28465ea14b437c066e69604">Space::Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#ac9bdfae7d4f6694c5ca908387e30df99">Vector</a></td></tr>
+<tr class="memdesc:ac9bdfae7d4f6694c5ca908387e30df99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for vectors.  <a href="#ac9bdfae7d4f6694c5ca908387e30df99">More...</a><br /></td></tr>
 <tr class="separator:ac9bdfae7d4f6694c5ca908387e30df99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e1b9d886a5ede7ecd6533ed974a1f0d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SpaceND.html#a34beb5f81d0848e8ae393f39a1422ebc">Space::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#a9e1b9d886a5ede7ecd6533ed974a1f0d">Point</a></td></tr>
+<tr class="memdesc:a9e1b9d886a5ede7ecd6533ed974a1f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for points.  <a href="#a9e1b9d886a5ede7ecd6533ed974a1f0d">More...</a><br /></td></tr>
 <tr class="separator:a9e1b9d886a5ede7ecd6533ed974a1f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe37e05b33274fd1a88f1d50beafa9f"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#ac9bdfae7d4f6694c5ca908387e30df99">Vector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#abfe37e05b33274fd1a88f1d50beafa9f">Directions</a></td></tr>
+<tr class="memdesc:abfe37e05b33274fd1a88f1d50beafa9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for set of directions.  <a href="#abfe37e05b33274fd1a88f1d50beafa9f">More...</a><br /></td></tr>
 <tr class="separator:abfe37e05b33274fd1a88f1d50beafa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354d1441d3356c7d0e3bcd36a3c9fa75"><td class="memItemLeft" align="right" valign="top">typedef Directions::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#a354d1441d3356c7d0e3bcd36a3c9fa75">ConstIterator</a></td></tr>
 <tr class="separator:a354d1441d3356c7d0e3bcd36a3c9fa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39728ecf5f1f47e96f1ad9e42b44d093"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#a39728ecf5f1f47e96f1ad9e42b44d093">Value</a></td></tr>
+<tr class="memdesc:a39728ecf5f1f47e96f1ad9e42b44d093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value type for embedded distance evaluation.  <a href="#a39728ecf5f1f47e96f1ad9e42b44d093">More...</a><br /></td></tr>
 <tr class="separator:a39728ecf5f1f47e96f1ad9e42b44d093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7bd4a4be017f0d0daa910e41957855b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SpaceND.html#a3217d099840050eb7135e24b1ed7940d">Space::Integer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#ae7bd4a4be017f0d0daa910e41957855b">RawValue</a></td></tr>
+<tr class="memdesc:ae7bd4a4be017f0d0daa910e41957855b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value type for exact distance evaluation.  <a href="#ae7bd4a4be017f0d0daa910e41957855b">More...</a><br /></td></tr>
 <tr class="separator:ae7bd4a4be017f0d0daa910e41957855b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7fcb1f22dac3624921fa36b5578150d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html#ab5f7548d4edc0d8edb4b64cc332db8f2">Vector::Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#af7fcb1f22dac3624921fa36b5578150d">Abscissa</a></td></tr>
+<tr class="memdesc:af7fcb1f22dac3624921fa36b5578150d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector components type.  <a href="#af7fcb1f22dac3624921fa36b5578150d">More...</a><br /></td></tr>
 <tr class="separator:af7fcb1f22dac3624921fa36b5578150d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -180,17 +190,22 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a120c4c39058d1491d5b1aa8e2df0e9e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#a120c4c39058d1491d5b1aa8e2df0e9e5">BOOST_STATIC_CONSTANT</a> (<a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#af7fcb1f22dac3624921fa36b5578150d">Abscissa</a>, myInfinity=32562)</td></tr>
+<tr class="memdesc:a120c4c39058d1491d5b1aa8e2df0e9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static constant.  <a href="#a120c4c39058d1491d5b1aa8e2df0e9e5">More...</a><br /></td></tr>
 <tr class="separator:a120c4c39058d1491d5b1aa8e2df0e9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab9113eb7179fcef27d8af6875227f5ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#abfe37e05b33274fd1a88f1d50beafa9f">Directions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#ab9113eb7179fcef27d8af6875227f5ba">myDirections</a></td></tr>
+<tr class="memdesc:ab9113eb7179fcef27d8af6875227f5ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask container.  <a href="#ab9113eb7179fcef27d8af6875227f5ba">More...</a><br /></td></tr>
 <tr class="separator:ab9113eb7179fcef27d8af6875227f5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e56c209dac366c147d748650446ac47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#abfe37e05b33274fd1a88f1d50beafa9f">Directions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#a8e56c209dac366c147d748650446ac47">myNormals</a></td></tr>
+<tr class="memdesc:a8e56c209dac366c147d748650446ac47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal to cone container.  <a href="#a8e56c209dac366c147d748650446ac47">More...</a><br /></td></tr>
 <tr class="separator:a8e56c209dac366c147d748650446ac47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab00df8fa6cff580a903807e07e36505c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDGtal_1_1experimental_1_1ChamferNorm2D_1_1LessThanAngular.html">LessThanAngular</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#ab00df8fa6cff580a903807e07e36505c">myLessThanAngular</a></td></tr>
+<tr class="memdesc:ab00df8fa6cff580a903807e07e36505c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance of comparator functor.  <a href="#ab00df8fa6cff580a903807e07e36505c">More...</a><br /></td></tr>
 <tr class="separator:ab00df8fa6cff580a903807e07e36505c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ac16aaf49659941a6245dd7586e51f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#a39728ecf5f1f47e96f1ad9e42b44d093">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#ae6ac16aaf49659941a6245dd7586e51f">myNorm</a></td></tr>
+<tr class="memdesc:ae6ac16aaf49659941a6245dd7586e51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalization factor.  <a href="#ae6ac16aaf49659941a6245dd7586e51f">More...</a><br /></td></tr>
 <tr class="separator:ae6ac16aaf49659941a6245dd7586e51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1654,7 +1669,7 @@ template&lt;typename TSpace&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:31 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:44 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

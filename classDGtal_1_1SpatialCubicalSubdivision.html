@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class is a data structure that subdivides a rectangular domains into cubical domains of size \( r^n \) in order to store points into different bins (each cubical domain is a bin, characterized by one coordinate). This data structure may be used for proximity queries, generally to get the points at distance <em>r</em> from a given point.  
+ <a href="classDGtal_1_1SpatialCubicalSubdivision.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="SpatialCubicalSubdivision_8h_source.html">DGtal/geometry/tools/SpatialCubicalSubdivision.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::SpatialCubicalSubdivision&lt; TSpace &gt;:</div>
@@ -147,8 +150,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:af5dec7f06d6b69aa5b852b5477c5511f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#a9eb14583d7c08df83896255cc0ac4b25">Domain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#af5dec7f06d6b69aa5b852b5477c5511f">myDomain</a></td></tr>
+<tr class="memdesc:af5dec7f06d6b69aa5b852b5477c5511f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the rectangular domain representing the useful points of the space.  <a href="#af5dec7f06d6b69aa5b852b5477c5511f">More...</a><br /></td></tr>
 <tr class="separator:af5dec7f06d6b69aa5b852b5477c5511f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3002714a342f24629e718fddb798954c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#a1b5fdbc3702df52290a21c4157fde153">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#a3002714a342f24629e718fddb798954c">mySize</a></td></tr>
+<tr class="memdesc:a3002714a342f24629e718fddb798954c"><td class="mdescLeft">&#160;</td><td class="mdescRight">the edge size of each bin.  <a href="#a3002714a342f24629e718fddb798954c">More...</a><br /></td></tr>
 <tr class="separator:a3002714a342f24629e718fddb798954c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a021943af78f552485108813a628fe1ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#ada61c11f2053025a8648170b080909f4">StorageArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#a021943af78f552485108813a628fe1ae">myArray</a></td></tr>
 <tr class="separator:a021943af78f552485108813a628fe1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +168,7 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a2e0307ad12acbfa6b5f5be322a8048c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#aa6ac21845890f89d3b5658e2986081c5">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#a2e0307ad12acbfa6b5f5be322a8048c1">myDiag</a></td></tr>
+<tr class="memdesc:a2e0307ad12acbfa6b5f5be322a8048c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">a precomputed point to improve performance of <a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#a1e53e823e10c2b327c74e7a476a428f2">uppermost()</a> method.  <a href="#a2e0307ad12acbfa6b5f5be322a8048c1">More...</a><br /></td></tr>
 <tr class="separator:a2e0307ad12acbfa6b5f5be322a8048c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -945,7 +951,7 @@ template&lt;typename TSpace &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:28 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:42 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -87,6 +87,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: The Stern-Brocot tree is the tree of irreducible fractions. This class allows to construct it progressively and to navigate within fractions in O(1) time for most operations. It is well known that the structure of this tree is a coding of the continued fraction representation of fractions.  
+ <a href="classDGtal_1_1SternBrocot.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="SternBrocot_8h_source.html">DGtal/arithmetic/SternBrocot.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::SternBrocot&lt; TInteger, TQuotient &gt;:</div>
@@ -98,6 +101,7 @@ Collaboration diagram for DGtal::SternBrocot&lt; TInteger, TQuotient &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SternBrocot_1_1Fraction.html">Fraction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This fraction is a model of CPositiveIrreducibleFraction.  <a href="classDGtal_1_1SternBrocot_1_1Fraction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1SternBrocot_1_1Node.html">Node</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,6 +140,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a3cd60240f5e34f974a893ccd7a272890"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1SternBrocot.html#a12faf68f60e71d2bfc28fead3cca7382">Quotient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SternBrocot.html#a3cd60240f5e34f974a893ccd7a272890">nbFractions</a></td></tr>
+<tr class="memdesc:a3cd60240f5e34f974a893ccd7a272890"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of fractions in the current tree.  <a href="#a3cd60240f5e34f974a893ccd7a272890">More...</a><br /></td></tr>
 <tr class="separator:a3cd60240f5e34f974a893ccd7a272890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -159,6 +164,7 @@ Private Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a0aa0ad3b7f1e1b888fa543857fc63ad6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1SternBrocot.html">SternBrocot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SternBrocot.html#a0aa0ad3b7f1e1b888fa543857fc63ad6">singleton</a></td></tr>
+<tr class="memdesc:a0aa0ad3b7f1e1b888fa543857fc63ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton class.  <a href="#a0aa0ad3b7f1e1b888fa543857fc63ad6">More...</a><br /></td></tr>
 <tr class="separator:a0aa0ad3b7f1e1b888fa543857fc63ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -708,7 +714,7 @@ template&lt;typename TInteger , typename TQuotient  = int32_t&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:29 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:42 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

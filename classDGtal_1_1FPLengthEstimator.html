@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: a model of CGlobalCurveEstimator that computes the length of a digital curve using its <a class="el" href="classDGtal_1_1FP.html" title="Aim: Computes the faithful polygon (FP) of a range of 4/8-connected 2D Points. ">FP</a> (faithful polygon)  
+ <a href="classDGtal_1_1FPLengthEstimator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FPLengthEstimator_8h_source.html">DGtal/geometry/curves/estimation/FPLengthEstimator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::FPLengthEstimator&lt; TConstIterator &gt;:</div>
@@ -129,10 +132,13 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a85e9d099075faa7be01fa9918db6a89e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1FPLengthEstimator.html#a85e9d099075faa7be01fa9918db6a89e">myH</a></td></tr>
+<tr class="memdesc:a85e9d099075faa7be01fa9918db6a89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grid size.  <a href="#a85e9d099075faa7be01fa9918db6a89e">More...</a><br /></td></tr>
 <tr class="separator:a85e9d099075faa7be01fa9918db6a89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e4d0559ff6eb2dbb05f295a7b267fd0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1FPLengthEstimator.html#a9c093eb0503cc10432fbead4a5378240">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1FPLengthEstimator.html#a6e4d0559ff6eb2dbb05f295a7b267fd0">myRep</a></td></tr>
+<tr class="memdesc:a6e4d0559ff6eb2dbb05f295a7b267fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">polygonal representation of the input  <a href="#a6e4d0559ff6eb2dbb05f295a7b267fd0">More...</a><br /></td></tr>
 <tr class="separator:a6e4d0559ff6eb2dbb05f295a7b267fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1e27e523096114a7ff312dd76587920"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1FPLengthEstimator.html#aa1e27e523096114a7ff312dd76587920">myIsInitBefore</a></td></tr>
+<tr class="memdesc:aa1e27e523096114a7ff312dd76587920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to make sure that <a class="el" href="classDGtal_1_1FPLengthEstimator.html#ac9b9fea7183fc1eb4afedff662309520">init()</a> has been called before <a class="el" href="classDGtal_1_1FPLengthEstimator.html#a8f9306618b0f688c0af313c45cb291d0">eval()</a>.  <a href="#aa1e27e523096114a7ff312dd76587920">More...</a><br /></td></tr>
 <tr class="separator:aa1e27e523096114a7ff312dd76587920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -567,7 +573,7 @@ template&lt;typename TConstIterator&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:23 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

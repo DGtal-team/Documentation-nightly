@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: implements a factory from an HDF5 file.  
+ <a href="classDGtal_1_1ImageFactoryFromHDF5.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ImageFactoryFromHDF5_8h_source.html">DGtal/images/ImageFactoryFromHDF5.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::ImageFactoryFromHDF5&lt; TImageContainer &gt;:</div>
@@ -97,10 +100,12 @@ Public Types</h2></td></tr>
 <tr class="memitem:ac60d73e699d945ad3c4ef8a0b15cc70e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html">ImageFactoryFromHDF5</a>&lt; TImageContainer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#ac60d73e699d945ad3c4ef8a0b15cc70e">Self</a></td></tr>
 <tr class="separator:ac60d73e699d945ad3c4ef8a0b15cc70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b9f417325fe4331e7d898cfb40bc43"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#a09b9f417325fe4331e7d898cfb40bc43">ImageContainer</a></td></tr>
+<tr class="memdesc:a09b9f417325fe4331e7d898cfb40bc43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types copied from the container.  <a href="#a09b9f417325fe4331e7d898cfb40bc43">More...</a><br /></td></tr>
 <tr class="separator:a09b9f417325fe4331e7d898cfb40bc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafa263c82cbbe0a0efe68e82e0a16869"><td class="memItemLeft" align="right" valign="top">typedef ImageContainer::Domain&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#aafa263c82cbbe0a0efe68e82e0a16869">Domain</a></td></tr>
 <tr class="separator:aafa263c82cbbe0a0efe68e82e0a16869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9632898694babe874c496ce6d4306932"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#a09b9f417325fe4331e7d898cfb40bc43">ImageContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#a9632898694babe874c496ce6d4306932">OutputImage</a></td></tr>
+<tr class="memdesc:a9632898694babe874c496ce6d4306932"><td class="mdescLeft">&#160;</td><td class="mdescRight">New types.  <a href="#a9632898694babe874c496ce6d4306932">More...</a><br /></td></tr>
 <tr class="separator:a9632898694babe874c496ce6d4306932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac169e1b9a4749bb253d759d404c16422"><td class="memItemLeft" align="right" valign="top">typedef OutputImage::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#ac169e1b9a4749bb253d759d404c16422">Value</a></td></tr>
 <tr class="separator:ac169e1b9a4749bb253d759d404c16422"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,6 +113,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f2f94120e2c09b25bd168b2eb49b437"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#a6f2f94120e2c09b25bd168b2eb49b437">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImage.html">concepts::CImage</a>&lt; TImageContainer &gt;))</td></tr>
+<tr class="memdesc:a6f2f94120e2c09b25bd168b2eb49b437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking concepts.  <a href="#a6f2f94120e2c09b25bd168b2eb49b437">More...</a><br /></td></tr>
 <tr class="separator:a6f2f94120e2c09b25bd168b2eb49b437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c2cd79e67877f65ac3e8e35ab73fc83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#a6c2cd79e67877f65ac3e8e35ab73fc83">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CBoundedNumber.html">concepts::CBoundedNumber</a>&lt; <a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#ac169e1b9a4749bb253d759d404c16422">Value</a> &gt;))</td></tr>
 <tr class="separator:a6c2cd79e67877f65ac3e8e35ab73fc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,8 +148,10 @@ Data Fields</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a3ca7bdc76494072f695c600ada73f3cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#aafa263c82cbbe0a0efe68e82e0a16869">Domain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#a3ca7bdc76494072f695c600ada73f3cf">myDomain</a></td></tr>
+<tr class="memdesc:a3ca7bdc76494072f695c600ada73f3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1Alias.html" title="Aim: This class encapsulates its parameter class so that to indicate to the user that the object/poin...">Alias</a> on the image domain.  <a href="#a3ca7bdc76494072f695c600ada73f3cf">More...</a><br /></td></tr>
 <tr class="separator:a3ca7bdc76494072f695c600ada73f3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a715ca6c7bff22e16d300e66f96400675"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#a715ca6c7bff22e16d300e66f96400675">myFilename</a></td></tr>
+<tr class="memdesc:a715ca6c7bff22e16d300e66f96400675"><td class="mdescLeft">&#160;</td><td class="mdescRight">HDF5 filename and datasetname.  <a href="#a715ca6c7bff22e16d300e66f96400675">More...</a><br /></td></tr>
 <tr class="separator:a715ca6c7bff22e16d300e66f96400675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7334f4987608131a6cae3570dfebb7b9"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#a7334f4987608131a6cae3570dfebb7b9">myDataset</a></td></tr>
 <tr class="separator:a7334f4987608131a6cae3570dfebb7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -871,7 +879,7 @@ template&lt;typename TImageContainer &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:24 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:37 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

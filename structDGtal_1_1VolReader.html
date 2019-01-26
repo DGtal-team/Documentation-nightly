@@ -86,6 +86,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: implements methods to read a "Vol" file format.  
+ <a href="structDGtal_1_1VolReader.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="VolReader_8h_source.html">DGtal/io/readers/VolReader.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -122,15 +125,19 @@ Private Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:aae9218449282745963931489ccba45b5"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1VolReader.html#aae9218449282745963931489ccba45b5">getHeaderValue</a> (const char *type, const <a class="el" href="structDGtal_1_1VolReader_1_1HeaderField.html">HeaderField</a> *header)</td></tr>
+<tr class="memdesc:aae9218449282745963931489ccba45b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns NULL if this field is not found.  <a href="#aae9218449282745963931489ccba45b5">More...</a><br /></td></tr>
 <tr class="separator:aae9218449282745963931489ccba45b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c3d0171da904483dc658da94c4ba70"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1VolReader.html#a38c3d0171da904483dc658da94c4ba70">getHeaderValueAsInt</a> (const char *type, int *dest, const <a class="el" href="structDGtal_1_1VolReader_1_1HeaderField.html">HeaderField</a> *header)</td></tr>
+<tr class="memdesc:a38c3d0171da904483dc658da94c4ba70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns non-zero if failure.  <a href="#a38c3d0171da904483dc658da94c4ba70">More...</a><br /></td></tr>
 <tr class="separator:a38c3d0171da904483dc658da94c4ba70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb0b8397f25425ef67d3da096b543d55"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1VolReader.html#abb0b8397f25425ef67d3da096b543d55">getHeaderField</a> (const char *type, const <a class="el" href="structDGtal_1_1VolReader_1_1HeaderField.html">HeaderField</a> *header)</td></tr>
+<tr class="memdesc:abb0b8397f25425ef67d3da096b543d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal method which returns the index of a field or -1 if not found.  <a href="#abb0b8397f25425ef67d3da096b543d55">More...</a><br /></td></tr>
 <tr class="separator:abb0b8397f25425ef67d3da096b543d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a919e7c5a7425e58bb7cea9a7c64db87d"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1VolReader.html#a919e7c5a7425e58bb7cea9a7c64db87d">requiredHeaders</a> []</td></tr>
+<tr class="memdesc:a919e7c5a7425e58bb7cea9a7c64db87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global list of required fields in a .vol file.  <a href="#a919e7c5a7425e58bb7cea9a7c64db87d">More...</a><br /></td></tr>
 <tr class="separator:a919e7c5a7425e58bb7cea9a7c64db87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -485,7 +492,7 @@ template&lt;typename TImageContainer , typename TFunctor  = functors::Cast&lt; t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:29 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:43 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

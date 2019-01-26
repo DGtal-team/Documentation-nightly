@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cubical complex, for instance a <a class="el" href="classDGtal_1_1CubicalComplex.html" title="Aim: This class represents an arbitrary cubical complex living in some Khalimsky space. Cubical complexes are sets of cells of different dimensions related together with incidence relations. Two cells in a cubical complex are incident if and only if they are incident in the surrounding Khalimsky space. In other words, cubical complexes are defined here as subsets of Khalimsky spaces. ">DGtal::CubicalComplex</a>&lt; KhalimskySpaceND&lt; 3, int &gt; &gt;. Three approaches are provided. The first&mdash;<a class="el" href="classDGtal_1_1ParDirCollapse.html" title="Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cu...">ParDirCollapse</a>&mdash;bases on directional collapse of free pairs of faces. Second&mdash;CollapseSurface&mdash;is an extension of <a class="el" href="classDGtal_1_1ParDirCollapse.html" title="Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cu...">ParDirCollapse</a> such that faces of dimension one lower than the dimension of the complex are kept. The last approach &mdash;CollapseIsthmus&mdash;is also an extension of <a class="el" href="classDGtal_1_1ParDirCollapse.html" title="Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cu...">ParDirCollapse</a> such that faces of dimension one lower than the complex are preserved when they do not contain free faces of dimension two lower than the complex. Paper: Chaussard, J. and Couprie, M., Surface Thinning in 3D Cubical Complexes, Combinatorial <a class="el" href="classDGtal_1_1Image.html" title="Aim: implements association bewteen points lying in a digital domain and values. ">Image</a> Analysis, (2009)  
+ <a href="classDGtal_1_1ParDirCollapse.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ParDirCollapse_8h_source.html">DGtal/topology/ParDirCollapse.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::ParDirCollapse&lt; CC &gt;:</div>
@@ -95,16 +98,22 @@ Collaboration diagram for DGtal::ParDirCollapse&lt; CC &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a207fa6e5fa841380c72f1d29985df127"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1CubicalComplex.html#a2d2018bde3a694fa1cca39f5965019e0">CC::KSpace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParDirCollapse.html#a207fa6e5fa841380c72f1d29985df127">KSpace</a></td></tr>
+<tr class="memdesc:a207fa6e5fa841380c72f1d29985df127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any model of <a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html" title="Aim: This concept describes a cellular grid space in nD. In these spaces obtained by cartesian produc...">concepts::CCellularGridSpaceND</a>, i.e. a type that models a Khalimsky space.  <a href="#a207fa6e5fa841380c72f1d29985df127">More...</a><br /></td></tr>
 <tr class="separator:a207fa6e5fa841380c72f1d29985df127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe9fe5eee12d1e91c62a290f3be69ee5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1CubicalComplex.html#a8fd7287b446f7a6bd4de94953cfe2e08">CC::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParDirCollapse.html#afe9fe5eee12d1e91c62a290f3be69ee5">Point</a></td></tr>
+<tr class="memdesc:afe9fe5eee12d1e91c62a290f3be69ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of integer point.  <a href="#afe9fe5eee12d1e91c62a290f3be69ee5">More...</a><br /></td></tr>
 <tr class="separator:afe9fe5eee12d1e91c62a290f3be69ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70a7bd370dd9e84c7016124729e27e5b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1CubicalComplex.html#a8389e2e1b45c05818bc5a4093cf1b1d8">CC::Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParDirCollapse.html#a70a7bd370dd9e84c7016124729e27e5b">Size</a></td></tr>
+<tr class="memdesc:a70a7bd370dd9e84c7016124729e27e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of containers size.  <a href="#a70a7bd370dd9e84c7016124729e27e5b">More...</a><br /></td></tr>
 <tr class="separator:a70a7bd370dd9e84c7016124729e27e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ca390863145bb12efcb81658c2f999"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#af87a8fec76262bec1a3b33881fa38f1f">KSpace::Cell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParDirCollapse.html#ab3ca390863145bb12efcb81658c2f999">Cell</a></td></tr>
+<tr class="memdesc:ab3ca390863145bb12efcb81658c2f999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of cells in Khalimsky space.  <a href="#ab3ca390863145bb12efcb81658c2f999">More...</a><br /></td></tr>
 <tr class="separator:ab3ca390863145bb12efcb81658c2f999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e22f5841b660ddb8d08e0a591f789a0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#afbb82ddbe915a3a4a4f6ecea1ad873ce">KSpace::Cells</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParDirCollapse.html#a5e22f5841b660ddb8d08e0a591f789a0">Cells</a></td></tr>
+<tr class="memdesc:a5e22f5841b660ddb8d08e0a591f789a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of collection of cells.  <a href="#a5e22f5841b660ddb8d08e0a591f789a0">More...</a><br /></td></tr>
 <tr class="separator:a5e22f5841b660ddb8d08e0a591f789a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2986f43cd6104163c07cb88ad4800abb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1CubicalComplex.html#ad81cf19b21560476a0c62f4f16abbb12">CC::CellMapConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParDirCollapse.html#a2986f43cd6104163c07cb88ad4800abb">CellMapConstIterator</a></td></tr>
+<tr class="memdesc:a2986f43cd6104163c07cb88ad4800abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of const iterator over a map of cells.  <a href="#a2986f43cd6104163c07cb88ad4800abb">More...</a><br /></td></tr>
 <tr class="separator:a2986f43cd6104163c07cb88ad4800abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -151,8 +160,10 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a8ebc6de097bf55d0a4dea876452262d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1ParDirCollapse.html#a207fa6e5fa841380c72f1d29985df127">KSpace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParDirCollapse.html#a8ebc6de097bf55d0a4dea876452262d2">K</a></td></tr>
+<tr class="memdesc:a8ebc6de097bf55d0a4dea876452262d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to Khalimsky space in which a given complex is embedded.  <a href="#a8ebc6de097bf55d0a4dea876452262d2">More...</a><br /></td></tr>
 <tr class="separator:a8ebc6de097bf55d0a4dea876452262d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37db469752150ecc56a10b4bd2180d64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testCubicalComplex_8cpp.html#a9f6eee55782bbac774730b7688010a1e">CC</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ParDirCollapse.html#a37db469752150ecc56a10b4bd2180d64">complex</a></td></tr>
+<tr class="memdesc:a37db469752150ecc56a10b4bd2180d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to complex.  <a href="#a37db469752150ecc56a10b4bd2180d64">More...</a><br /></td></tr>
 <tr class="separator:a37db469752150ecc56a10b4bd2180d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -875,7 +886,7 @@ template&lt;typename CC&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:26 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:40 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

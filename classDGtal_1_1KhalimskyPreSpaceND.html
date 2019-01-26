@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class is a model of CPreCellularGridSpaceND. It represents the cubical grid as a cell complex, whose cells are defined as an array of integers. The topology of the cells is defined by the parity of the coordinates (even: closed, odd: open).  
+ <a href="classDGtal_1_1KhalimskyPreSpaceND.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="KhalimskyPreSpaceND_8h_source.html">DGtal/topology/KhalimskyPreSpaceND.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -99,6 +102,7 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a829c858d4548d0f6aee398973ba5073c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a829c858d4548d0f6aee398973ba5073c">Integer</a> = TInteger</td></tr>
+<tr class="memdesc:a829c858d4548d0f6aee398973ba5073c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arithmetic ring induced by (+,-,*) and Integer numbers.  <a href="#a829c858d4548d0f6aee398973ba5073c">More...</a><br /></td></tr>
 <tr class="separator:a829c858d4548d0f6aee398973ba5073c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3705e4e57f5483145302cbb4531d7998"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a3705e4e57f5483145302cbb4531d7998">Cell</a> = <a class="el" href="structDGtal_1_1KhalimskyPreCell.html">KhalimskyPreCell</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, <a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a829c858d4548d0f6aee398973ba5073c">Integer</a> &gt;</td></tr>
 <tr class="separator:a3705e4e57f5483145302cbb4531d7998"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,10 +127,13 @@ Public Types</h2></td></tr>
 <tr class="memitem:ac5cfc2499290762e82b4a4eedd7dc709"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#ac5cfc2499290762e82b4a4eedd7dc709">SCells</a> = <a class="el" href="structDGtal_1_1KhalimskyPreSpaceND_1_1AnyCellCollection.html">AnyCellCollection</a>&lt; <a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a9aab461ca290f009b44c263c862643c6">SCell</a> &gt;</td></tr>
 <tr class="separator:ac5cfc2499290762e82b4a4eedd7dc709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eaec5c88c4bb88781a18c579ec99e49"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a0eaec5c88c4bb88781a18c579ec99e49">CellSet</a> = std::set&lt; <a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a3705e4e57f5483145302cbb4531d7998">Cell</a> &gt;</td></tr>
+<tr class="memdesc:a0eaec5c88c4bb88781a18c579ec99e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred type for defining a set of Cell(s).  <a href="#a0eaec5c88c4bb88781a18c579ec99e49">More...</a><br /></td></tr>
 <tr class="separator:a0eaec5c88c4bb88781a18c579ec99e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a669e429059500138bba045afab1edf69"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a669e429059500138bba045afab1edf69">SCellSet</a> = std::set&lt; <a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a9aab461ca290f009b44c263c862643c6">SCell</a> &gt;</td></tr>
+<tr class="memdesc:a669e429059500138bba045afab1edf69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred type for defining a set of SCell(s).  <a href="#a669e429059500138bba045afab1edf69">More...</a><br /></td></tr>
 <tr class="separator:a669e429059500138bba045afab1edf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bfc88e8f6ff825ca230d201e6c5775b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a6bfc88e8f6ff825ca230d201e6c5775b">SurfelSet</a> = std::set&lt; <a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a9aab461ca290f009b44c263c862643c6">SCell</a> &gt;</td></tr>
+<tr class="memdesc:a6bfc88e8f6ff825ca230d201e6c5775b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred type for defining a set of surfels (always signed cells).  <a href="#a6bfc88e8f6ff825ca230d201e6c5775b">More...</a><br /></td></tr>
 <tr class="separator:a6bfc88e8f6ff825ca230d201e6c5775b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -4583,7 +4590,7 @@ template&lt;Dimension dim, typename TInteger&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:25 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:38 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

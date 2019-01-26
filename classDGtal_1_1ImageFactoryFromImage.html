@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: implements a factory to produce images from a "bigger/original" one according to a given domain.  
+ <a href="classDGtal_1_1ImageFactoryFromImage.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ImageFactoryFromImage_8h_source.html">DGtal/images/ImageFactoryFromImage.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -90,15 +93,18 @@ Public Types</h2></td></tr>
 <tr class="memitem:ae801c0e59d3677af584da98917236257"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ImageFactoryFromImage.html">ImageFactoryFromImage</a>&lt; TImageContainer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#ae801c0e59d3677af584da98917236257">Self</a></td></tr>
 <tr class="separator:ae801c0e59d3677af584da98917236257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0539a0cf1dc77c71a21754fd5165cfc3"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#a0539a0cf1dc77c71a21754fd5165cfc3">ImageContainer</a></td></tr>
+<tr class="memdesc:a0539a0cf1dc77c71a21754fd5165cfc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types copied from the container.  <a href="#a0539a0cf1dc77c71a21754fd5165cfc3">More...</a><br /></td></tr>
 <tr class="separator:a0539a0cf1dc77c71a21754fd5165cfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69306035ebd128cfc40adc4c5ad292ca"><td class="memItemLeft" align="right" valign="top">typedef ImageContainer::Domain&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#a69306035ebd128cfc40adc4c5ad292ca">Domain</a></td></tr>
 <tr class="separator:a69306035ebd128cfc40adc4c5ad292ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca9d85396cf87b8a970ac4bbc3c55587"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#a0539a0cf1dc77c71a21754fd5165cfc3">ImageContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#aca9d85396cf87b8a970ac4bbc3c55587">OutputImage</a></td></tr>
+<tr class="memdesc:aca9d85396cf87b8a970ac4bbc3c55587"><td class="mdescLeft">&#160;</td><td class="mdescRight">New types.  <a href="#aca9d85396cf87b8a970ac4bbc3c55587">More...</a><br /></td></tr>
 <tr class="separator:aca9d85396cf87b8a970ac4bbc3c55587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8d075c729728c22894b9541f8f1c622"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#ad8d075c729728c22894b9541f8f1c622">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImage.html">concepts::CImage</a>&lt; TImageContainer &gt;))</td></tr>
+<tr class="memdesc:ad8d075c729728c22894b9541f8f1c622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking concepts.  <a href="#ad8d075c729728c22894b9541f8f1c622">More...</a><br /></td></tr>
 <tr class="separator:ad8d075c729728c22894b9541f8f1c622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac035ec2e5fa2d1bb7c8f55e1ccd5515c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#ac035ec2e5fa2d1bb7c8f55e1ccd5515c">ImageFactoryFromImage</a> (<a class="el" href="classDGtal_1_1Alias.html">Alias</a>&lt; <a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#a0539a0cf1dc77c71a21754fd5165cfc3">ImageContainer</a> &gt; anImage)</td></tr>
 <tr class="separator:ac035ec2e5fa2d1bb7c8f55e1ccd5515c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,6 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a9209542cc9df20fdc619b35969ac2e0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#a0539a0cf1dc77c71a21754fd5165cfc3">ImageContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#a9209542cc9df20fdc619b35969ac2e0b">myImagePtr</a></td></tr>
+<tr class="memdesc:a9209542cc9df20fdc619b35969ac2e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1Alias.html" title="Aim: This class encapsulates its parameter class so that to indicate to the user that the object/poin...">Alias</a> on the image container.  <a href="#a9209542cc9df20fdc619b35969ac2e0b">More...</a><br /></td></tr>
 <tr class="separator:a9209542cc9df20fdc619b35969ac2e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -622,7 +629,7 @@ template&lt;typename TImageContainer &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:24 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:37 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

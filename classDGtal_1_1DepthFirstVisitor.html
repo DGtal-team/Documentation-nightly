@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class is useful to perform a depth-first exploration of a graph given a starting point or set (called initial core).  
+ <a href="classDGtal_1_1DepthFirstVisitor.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DepthFirstVisitor_8h_source.html">DGtal/graph/DepthFirstVisitor.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::DepthFirstVisitor&lt; TGraph, TMarkSet &gt;:</div>
@@ -105,12 +108,15 @@ Public Types</h2></td></tr>
 <tr class="memitem:a1ab031d1b42b4f970dce9067028403b8"><td class="memItemLeft" align="right" valign="top">typedef Graph::Vertex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DepthFirstVisitor.html#a1ab031d1b42b4f970dce9067028403b8">Vertex</a></td></tr>
 <tr class="separator:a1ab031d1b42b4f970dce9067028403b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a714814639600159361959f75eebce7c9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1DepthFirstVisitor.html#ad23c59808ffce50fbd451ef4fdcded10">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DepthFirstVisitor.html#a714814639600159361959f75eebce7c9">Data</a></td></tr>
+<tr class="memdesc:a714814639600159361959f75eebce7c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data attached to each Vertex is the depth distance to the seed.  <a href="#a714814639600159361959f75eebce7c9">More...</a><br /></td></tr>
 <tr class="separator:a714814639600159361959f75eebce7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1ba7af6d4d1b0ab2be112354a0a00cf"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="classDGtal_1_1DepthFirstVisitor.html#a1ab031d1b42b4f970dce9067028403b8">Vertex</a>, <a class="el" href="classDGtal_1_1DepthFirstVisitor.html#a714814639600159361959f75eebce7c9">Data</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DepthFirstVisitor.html#ad1ba7af6d4d1b0ab2be112354a0a00cf">Node</a></td></tr>
 <tr class="separator:ad1ba7af6d4d1b0ab2be112354a0a00cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a208484ef31e0d80460d675b1f16054e6"><td class="memItemLeft" align="right" valign="top">typedef std::stack&lt; <a class="el" href="classDGtal_1_1DepthFirstVisitor.html#ad1ba7af6d4d1b0ab2be112354a0a00cf">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DepthFirstVisitor.html#a208484ef31e0d80460d675b1f16054e6">NodeQueue</a></td></tr>
+<tr class="memdesc:a208484ef31e0d80460d675b1f16054e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal data structure for computing the depth-first expansion.  <a href="#a208484ef31e0d80460d675b1f16054e6">More...</a><br /></td></tr>
 <tr class="separator:a208484ef31e0d80460d675b1f16054e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fa6eb011f3c806fabae1fdcc653c01f"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classDGtal_1_1DepthFirstVisitor.html#a1ab031d1b42b4f970dce9067028403b8">Vertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DepthFirstVisitor.html#a7fa6eb011f3c806fabae1fdcc653c01f">VertexList</a></td></tr>
+<tr class="memdesc:a7fa6eb011f3c806fabae1fdcc653c01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal data structure for storing vertices.  <a href="#a7fa6eb011f3c806fabae1fdcc653c01f">More...</a><br /></td></tr>
 <tr class="separator:a7fa6eb011f3c806fabae1fdcc653c01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -926,7 +932,7 @@ template&lt;typename TGraph, typename TMarkSet = typename TGraph::VertexSet&gt; 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:22 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:35 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: A functor Matrix -&gt; std::pair&lt;Real,Real&gt; that returns the first and the second principal curvature value by diagonalizing the given covariance matrix. This functor is valid starting from 3D space. Note that by first we mean the value with first greatest curvature in absolute value.  
+ <a href="structDGtal_1_1functors_1_1IIPrincipalCurvatures3DFunctor.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IIGeometricFunctors_8h_source.html">DGtal/geometry/surfaces/estimation/IIGeometricFunctors.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::functors::IIPrincipalCurvatures3DFunctor&lt; TSpace, TMatrix &gt;:</div>
@@ -129,8 +132,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a0ee4ebb4e1ec5c07648a009c242a7171"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1functors_1_1IIPrincipalCurvatures3DFunctor.html#a0ee4ebb4e1ec5c07648a009c242a7171">d8_5r</a></td></tr>
 <tr class="separator:a0ee4ebb4e1ec5c07648a009c242a7171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2308a8adc544387faa793be87290ee39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDGtal_1_1functors_1_1IIPrincipalCurvatures3DFunctor.html#af678b7274eb6d3609df360bca9bd1c0d">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1functors_1_1IIPrincipalCurvatures3DFunctor.html#a2308a8adc544387faa793be87290ee39">eigenVectors</a></td></tr>
+<tr class="memdesc:a2308a8adc544387faa793be87290ee39"><td class="mdescLeft">&#160;</td><td class="mdescRight">A data member only used for temporary calculations.  <a href="#a2308a8adc544387faa793be87290ee39">More...</a><br /></td></tr>
 <tr class="separator:a2308a8adc544387faa793be87290ee39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0fe492a01b65ccd59b90bb9d5aad1f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDGtal_1_1functors_1_1IIPrincipalCurvatures3DFunctor.html#a53becf0c31439d565f071bc6f88ff8a4">RealVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1functors_1_1IIPrincipalCurvatures3DFunctor.html#ae0fe492a01b65ccd59b90bb9d5aad1f5">eigenValues</a></td></tr>
+<tr class="memdesc:ae0fe492a01b65ccd59b90bb9d5aad1f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A data member only used for temporary calculations.  <a href="#ae0fe492a01b65ccd59b90bb9d5aad1f5">More...</a><br /></td></tr>
 <tr class="separator:ae0fe492a01b65ccd59b90bb9d5aad1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -586,7 +591,7 @@ template&lt;typename TSpace , typename TMatrix  = SimpleMatrix&lt; typename TSpa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:32 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:45 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

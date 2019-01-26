@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: A wrapper class around a STL associative container for storing sets of digital points within some given domain.  
+ <a href="classDGtal_1_1DigitalSetByAssociativeContainer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DigitalSetByAssociativeContainer_8h_source.html">DGtal/kernel/sets/DigitalSetByAssociativeContainer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::DigitalSetByAssociativeContainer&lt; TDomain, TContainer &gt;:</div>
@@ -100,27 +103,37 @@ Collaboration diagram for DGtal::DigitalSetByAssociativeContainer&lt; TDomain, T
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a91f48a384b687cefe0354adeaf1be532"><td class="memItemLeft" align="right" valign="top">typedef TDomain&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a91f48a384b687cefe0354adeaf1be532">Domain</a></td></tr>
+<tr class="memdesc:a91f48a384b687cefe0354adeaf1be532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domain type.  <a href="#a91f48a384b687cefe0354adeaf1be532">More...</a><br /></td></tr>
 <tr class="separator:a91f48a384b687cefe0354adeaf1be532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8395dce0b71c50c7597ebaef4b766d06"><td class="memItemLeft" align="right" valign="top">typedef TContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a8395dce0b71c50c7597ebaef4b766d06">Container</a></td></tr>
+<tr class="memdesc:a8395dce0b71c50c7597ebaef4b766d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container type.  <a href="#a8395dce0b71c50c7597ebaef4b766d06">More...</a><br /></td></tr>
 <tr class="separator:a8395dce0b71c50c7597ebaef4b766d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da905b9875f17d6b7bf0203932a5d70"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html">DigitalSetByAssociativeContainer</a>&lt; <a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a91f48a384b687cefe0354adeaf1be532">Domain</a>, <a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a8395dce0b71c50c7597ebaef4b766d06">Container</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a9da905b9875f17d6b7bf0203932a5d70">Self</a></td></tr>
+<tr class="memdesc:a9da905b9875f17d6b7bf0203932a5d70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self Type.  <a href="#a9da905b9875f17d6b7bf0203932a5d70">More...</a><br /></td></tr>
 <tr class="separator:a9da905b9875f17d6b7bf0203932a5d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3151f952b4d9c32b7a216f5b90ca9744"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1HyperRectDomain.html#a82c74aceaaeb73f94a17164cf9ea22e4">Domain::Space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a3151f952b4d9c32b7a216f5b90ca9744">Space</a></td></tr>
+<tr class="memdesc:a3151f952b4d9c32b7a216f5b90ca9744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of digital space.  <a href="#a3151f952b4d9c32b7a216f5b90ca9744">More...</a><br /></td></tr>
 <tr class="separator:a3151f952b4d9c32b7a216f5b90ca9744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b68520ac9fa7c5094222bc743c1379f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1HyperRectDomain.html#ad710ac3a2d91d351b55ca6841cb789f5">Domain::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a1b68520ac9fa7c5094222bc743c1379f">Point</a></td></tr>
+<tr class="memdesc:a1b68520ac9fa7c5094222bc743c1379f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of points in the space.  <a href="#a1b68520ac9fa7c5094222bc743c1379f">More...</a><br /></td></tr>
 <tr class="separator:a1b68520ac9fa7c5094222bc743c1379f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0d0cdd0ba4c6829d818da81590cd320"><td class="memItemLeft" align="right" valign="top">typedef Container::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#ab0d0cdd0ba4c6829d818da81590cd320">Iterator</a></td></tr>
+<tr class="memdesc:ab0d0cdd0ba4c6829d818da81590cd320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator type of the container.  <a href="#ab0d0cdd0ba4c6829d818da81590cd320">More...</a><br /></td></tr>
 <tr class="separator:ab0d0cdd0ba4c6829d818da81590cd320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecfcd73e74012a32d7456fa65e5346d2"><td class="memItemLeft" align="right" valign="top">typedef Container::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#aecfcd73e74012a32d7456fa65e5346d2">ConstIterator</a></td></tr>
+<tr class="memdesc:aecfcd73e74012a32d7456fa65e5346d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConstIterator type of the container;.  <a href="#aecfcd73e74012a32d7456fa65e5346d2">More...</a><br /></td></tr>
 <tr class="separator:aecfcd73e74012a32d7456fa65e5346d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94d6262f929150d1c7eeb481615a1420"><td class="memItemLeft" align="right" valign="top">typedef Container::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a94d6262f929150d1c7eeb481615a1420">value_type</a></td></tr>
+<tr class="memdesc:a94d6262f929150d1c7eeb481615a1420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value type of the container.  <a href="#a94d6262f929150d1c7eeb481615a1420">More...</a><br /></td></tr>
 <tr class="separator:a94d6262f929150d1c7eeb481615a1420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dd9e04caef47c80de2b1e00061b5a99"><td class="memItemLeft" align="right" valign="top">typedef Container::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a7dd9e04caef47c80de2b1e00061b5a99">Size</a></td></tr>
+<tr class="memdesc:a7dd9e04caef47c80de2b1e00061b5a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size type of the container;.  <a href="#a7dd9e04caef47c80de2b1e00061b5a99">More...</a><br /></td></tr>
 <tr class="separator:a7dd9e04caef47c80de2b1e00061b5a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac52dc3e562b826b6767d920589eb3037"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#ac52dc3e562b826b6767d920589eb3037">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CDomain.html">concepts::CDomain</a>&lt; TDomain &gt;))</td></tr>
+<tr class="memdesc:ac52dc3e562b826b6767d920589eb3037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept checks.  <a href="#ac52dc3e562b826b6767d920589eb3037">More...</a><br /></td></tr>
 <tr class="separator:ac52dc3e562b826b6767d920589eb3037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bc12568e9b2bf66e7a382b2a5fee15a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a0bc12568e9b2bf66e7a382b2a5fee15a">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CSTLAssociativeContainer.html">concepts::CSTLAssociativeContainer</a>&lt; TContainer &gt;))</td></tr>
 <tr class="separator:a0bc12568e9b2bf66e7a382b2a5fee15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1358,7 +1371,7 @@ template&lt;typename TDomain, typename TContainer&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:22 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

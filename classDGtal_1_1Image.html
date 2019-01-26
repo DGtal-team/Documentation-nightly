@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: implements association bewteen points lying in a digital domain and values.  
+ <a href="classDGtal_1_1Image.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Image_8h_source.html">DGtal/images/Image.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::Image&lt; TImageContainer &gt;:</div>
@@ -93,6 +96,7 @@ Collaboration diagram for DGtal::Image&lt; TImageContainer &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ac087ec407a76aed579484057f8dab67a"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Image.html#ac087ec407a76aed579484057f8dab67a">ImageContainer</a></td></tr>
+<tr class="memdesc:ac087ec407a76aed579484057f8dab67a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types copied from the container.  <a href="#ac087ec407a76aed579484057f8dab67a">More...</a><br /></td></tr>
 <tr class="separator:ac087ec407a76aed579484057f8dab67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace481f886b37a80824817b5f1494df58"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer::Domain&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Image.html#ace481f886b37a80824817b5f1494df58">Domain</a></td></tr>
 <tr class="separator:ace481f886b37a80824817b5f1494df58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,11 +111,13 @@ Public Types</h2></td></tr>
 <tr class="memitem:aef682a4577cda5e3e03bd5b2941a5628"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer::OutputIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Image.html#aef682a4577cda5e3e03bd5b2941a5628">OutputIterator</a></td></tr>
 <tr class="separator:aef682a4577cda5e3e03bd5b2941a5628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10e735a765ac40bfd25793f45fb03b3b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1CowPtr.html">CowPtr</a>&lt; TImageContainer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Image.html#a10e735a765ac40bfd25793f45fb03b3b">ImagePointer</a></td></tr>
+<tr class="memdesc:a10e735a765ac40bfd25793f45fb03b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the image container data.  <a href="#a10e735a765ac40bfd25793f45fb03b3b">More...</a><br /></td></tr>
 <tr class="separator:a10e735a765ac40bfd25793f45fb03b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac26ba7fef74ac1c8cd92743634077f97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Image.html#ac26ba7fef74ac1c8cd92743634077f97">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImage.html">concepts::CImage</a>&lt; TImageContainer &gt;))</td></tr>
+<tr class="memdesc:ac26ba7fef74ac1c8cd92743634077f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking concepts.  <a href="#ac26ba7fef74ac1c8cd92743634077f97">More...</a><br /></td></tr>
 <tr class="separator:ac26ba7fef74ac1c8cd92743634077f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc6aabd6326a91eb6968c69cdc465c12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Image.html#adc6aabd6326a91eb6968c69cdc465c12">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CVertexMap.html">concepts::CVertexMap</a>&lt; TImageContainer &gt;))</td></tr>
 <tr class="separator:adc6aabd6326a91eb6968c69cdc465c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +155,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ad010e8e7a6fc8650c123ed9c97718e22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Image.html#a10e735a765ac40bfd25793f45fb03b3b">ImagePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Image.html#ad010e8e7a6fc8650c123ed9c97718e22">myImagePointer</a></td></tr>
+<tr class="memdesc:ad010e8e7a6fc8650c123ed9c97718e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Owning smart pointer on the image container.  <a href="#ad010e8e7a6fc8650c123ed9c97718e22">More...</a><br /></td></tr>
 <tr class="separator:ad010e8e7a6fc8650c123ed9c97718e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -965,7 +972,7 @@ template&lt;typename TImageContainer &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:23 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:37 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

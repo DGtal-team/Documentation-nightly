@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Set of static methods that create digital straight segments (DSS) from some input parameters, eg. patterns (or reversed patterns) from two upper leaning points (or lower leaning points).  
+ <a href="classDGtal_1_1ArithmeticalDSSFactory.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ArithmeticalDSSFactory_8h_source.html">DGtal/geometry/curves/ArithmeticalDSSFactory.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -110,10 +113,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af6b5b47fda221a89b57cc9e77ef839c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a544a564acb6f8776c1355a955f50fe64">DSS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#af6b5b47fda221a89b57cc9e77ef839c0">createSubsegment</a> (const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a544a564acb6f8776c1355a955f50fe64">DSS</a> &amp;aDSS, const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a8ba9ba653864bde8fd32c80849dd8628">Point</a> &amp;aF, const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a8ba9ba653864bde8fd32c80849dd8628">Point</a> &amp;aL)</td></tr>
 <tr class="separator:af6b5b47fda221a89b57cc9e77ef839c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4228a5743917171df1c71d6395bbd14b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a544a564acb6f8776c1355a955f50fe64">DSS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a4228a5743917171df1c71d6395bbd14b">createPattern</a> (const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a8ba9ba653864bde8fd32c80849dd8628">Point</a> &amp;aF, const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a8ba9ba653864bde8fd32c80849dd8628">Point</a> &amp;aL)</td></tr>
+<tr class="memdesc:a4228a5743917171df1c71d6395bbd14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that creates a DSS that is a pattern or a repetition of a pattern from two input digital points, viewed as upper leaning points.  <a href="#a4228a5743917171df1c71d6395bbd14b">More...</a><br /></td></tr>
 <tr class="separator:a4228a5743917171df1c71d6395bbd14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a406dffeaa593e1f7f3c08d2033cf9ce8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a544a564acb6f8776c1355a955f50fe64">DSS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a406dffeaa593e1f7f3c08d2033cf9ce8">createReversedPattern</a> (const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a8ba9ba653864bde8fd32c80849dd8628">Point</a> &amp;aF, const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a8ba9ba653864bde8fd32c80849dd8628">Point</a> &amp;aL)</td></tr>
+<tr class="memdesc:a406dffeaa593e1f7f3c08d2033cf9ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that creates a DSS that is a reversed pattern or a repetition of a reversed pattern from two input digital points, viewed as lower leaning points. Creates the pattern from <em>aL</em> to <em>aF</em> and negates the result.  <a href="#a406dffeaa593e1f7f3c08d2033cf9ce8">More...</a><br /></td></tr>
 <tr class="separator:a406dffeaa593e1f7f3c08d2033cf9ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0615cfb65e98c474bf111803f5b2cb47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a544a564acb6f8776c1355a955f50fe64">DSS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a0615cfb65e98c474bf111803f5b2cb47">createDSS</a> (const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#accd34900655506c2c94bc245d850ab9b">Coordinate</a> &amp;aA, const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#accd34900655506c2c94bc245d850ab9b">Coordinate</a> &amp;aB, const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a8ba9ba653864bde8fd32c80849dd8628">Point</a> &amp;aF, const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a8ba9ba653864bde8fd32c80849dd8628">Point</a> &amp;aL, const <a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html#a8ba9ba653864bde8fd32c80849dd8628">Point</a> &amp;aU)</td></tr>
+<tr class="memdesc:a0615cfb65e98c474bf111803f5b2cb47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that creates a DSS from a direction vector, a first and last point and one upper leaning point.  <a href="#a0615cfb65e98c474bf111803f5b2cb47">More...</a><br /></td></tr>
 <tr class="separator:a0615cfb65e98c474bf111803f5b2cb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
@@ -669,7 +675,7 @@ template&lt;typename TCoordinate , typename TInteger  = TCoordinate, unsigned sh
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:20 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:34 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

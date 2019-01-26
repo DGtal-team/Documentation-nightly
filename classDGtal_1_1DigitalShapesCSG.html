@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Constructive Solid Geometry (CSG) between models of CDigitalBoundedShape and CDigitalOrientedShape Use CSG operation (union, intersection, minus) from a shape of Type ShapeA with one (or more) shapes of Type ShapeB. Can combine differents operations. Limitations: Since we don't have a class derived by all shapes, operations can be done by only one type of shapes. Use CSG of CSG to go beyond this limitation.  
+ <a href="classDGtal_1_1DigitalShapesCSG.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DigitalShapesDecorator_8h_source.html">DGtal/shapes/DigitalShapesDecorator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::DigitalShapesCSG&lt; ShapeA, ShapeB &gt;:</div>
@@ -142,14 +145,19 @@ Protected Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a2f5b6922e592be079652b145c2f44462"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html">CountedConstPtrOrConstPtr</a>&lt; ShapeA &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalShapesCSG.html#a2f5b6922e592be079652b145c2f44462">myShapeA</a></td></tr>
+<tr class="memdesc:a2f5b6922e592be079652b145c2f44462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base Shape.  <a href="#a2f5b6922e592be079652b145c2f44462">More...</a><br /></td></tr>
 <tr class="separator:a2f5b6922e592be079652b145c2f44462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1379f6bd41ffff3ad847be862c5444e5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; <a class="el" href="classDGtal_1_1DigitalShapesCSG.html#a1f8a8de904e9c5c29ee55980cd68d7ee">e_operator</a>, <a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html">CountedConstPtrOrConstPtr</a>&lt; ShapeB &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalShapesCSG.html#a1379f6bd41ffff3ad847be862c5444e5">v_shapes</a></td></tr>
+<tr class="memdesc:a1379f6bd41ffff3ad847be862c5444e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of all operations (ordered) of ShapeB.  <a href="#a1379f6bd41ffff3ad847be862c5444e5">More...</a><br /></td></tr>
 <tr class="separator:a1379f6bd41ffff3ad847be862c5444e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83cb6815f02e743e9b1ea87e3c89cf62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1DigitalShapesCSG.html#a0c0802b5ebd6fa66789178359ebd566a">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalShapesCSG.html#a83cb6815f02e743e9b1ea87e3c89cf62">myLowerBound</a></td></tr>
+<tr class="memdesc:a83cb6815f02e743e9b1ea87e3c89cf62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domain lower bound.  <a href="#a83cb6815f02e743e9b1ea87e3c89cf62">More...</a><br /></td></tr>
 <tr class="separator:a83cb6815f02e743e9b1ea87e3c89cf62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a494428d30c79d9ba0e7fc377a22fc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1DigitalShapesCSG.html#a0c0802b5ebd6fa66789178359ebd566a">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalShapesCSG.html#a6a494428d30c79d9ba0e7fc377a22fc8">myUpperBound</a></td></tr>
+<tr class="memdesc:a6a494428d30c79d9ba0e7fc377a22fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domain upper bound.  <a href="#a6a494428d30c79d9ba0e7fc377a22fc8">More...</a><br /></td></tr>
 <tr class="separator:a6a494428d30c79d9ba0e7fc377a22fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae33277452099617072060a2c9f2ab069"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalShapesCSG.html#ae33277452099617072060a2c9f2ab069">bIsValid</a></td></tr>
+<tr class="memdesc:ae33277452099617072060a2c9f2ab069"><td class="mdescLeft">&#160;</td><td class="mdescRight">if the CSG is valid.  <a href="#ae33277452099617072060a2c9f2ab069">More...</a><br /></td></tr>
 <tr class="separator:ae33277452099617072060a2c9f2ab069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -962,7 +970,7 @@ template&lt;typename ShapeA , typename ShapeB &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:22 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

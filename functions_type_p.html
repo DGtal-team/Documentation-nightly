@@ -238,6 +238,8 @@ $(function() {
 , <a class="el" href="structDGtal_1_1functors_1_1BinaryPointPredicate_3_01TPointPredicate1_00_01TPointPredicate2_00_01OrBoolFct2_01_4.html#a7663c52ba73d865523af2b271b57f818">DGtal::functors::BinaryPointPredicate&lt; TPointPredicate1, TPointPredicate2, OrBoolFct2 &gt;</a>
 , <a class="el" href="classDGtal_1_1functors_1_1BoundaryPredicate.html#abaf6c0da62b4f3caeae25f6ff917f452">DGtal::functors::BoundaryPredicate&lt; TKSpace, TImage &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1ConstantPointPredicate.html#af7eba6b1ecd48c293e08381e7e3392a4">DGtal::functors::ConstantPointPredicate&lt; TPoint, boolCst &gt;</a>
+, <a class="el" href="classDGtal_1_1functors_1_1ConstImageFunctorHolder_1_1ConstRange.html#a8f5f67b4882698ceaa422c0f51f02828">DGtal::functors::ConstImageFunctorHolder&lt; TDomain, TValue, TFunctor &gt;::ConstRange</a>
+, <a class="el" href="classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#a8e8c9233041540ba2f0b23262baf90bb">DGtal::functors::ConstImageFunctorHolder&lt; TDomain, TValue, TFunctor &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1DomainPredicate.html#a937789e872d5f59001d21a51cc08e4b6">DGtal::functors::DomainPredicate&lt; TDomain &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1EqualPointPredicate.html#a7d3e322ac4fe1841575c3b1563ddc6fb">DGtal::functors::EqualPointPredicate&lt; TPoint &gt;</a>
 , <a class="el" href="classDGtal_1_1functors_1_1FlipDomainAxis.html#ad81f76b8b85459657d8db9cfec0ff907">DGtal::functors::FlipDomainAxis&lt; TDomain &gt;</a>
@@ -253,6 +255,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1functors_1_1Point2DEmbedderIn3D.html#aafe1feb81d54a1904ff9947d972a67d9">DGtal::functors::Point2DEmbedderIn3D&lt; TDomain3D, TInteger &gt;</a>
 , <a class="el" href="classDGtal_1_1functors_1_1Point2ShapePredicate.html#a4ff635fc98a15db341cfff26a21d6385">DGtal::functors::Point2ShapePredicate&lt; TSurface, isUpward, isClosed &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html#ac98595086101cc5d490e896bd457abb1">DGtal::functors::PointFunctorFromPointPredicateAndDomain&lt; TPointPredicate, TDomain, TValue &gt;</a>
+, <a class="el" href="classDGtal_1_1functors_1_1PointFunctorHolder.html#a15f7e8519aef0bcef83ad5a085dc786f">DGtal::functors::PointFunctorHolder&lt; TPoint, TValue, TFunctor &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1PointFunctorPredicate.html#ac90d21ff10e7c41c51ba858244b8d6b3">DGtal::functors::PointFunctorPredicate&lt; TPointFunctor, TPredicate &gt;</a>
 , <a class="el" href="classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer.html#a5b4a7da86b2084cf2ce0b97faf80edff">DGtal::functors::PolarPointComparatorBy2x2DetComputer&lt; TPoint, TDetComputer &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1Projector.html#a943755ab6b17541f3987a63df31810b4">DGtal::functors::Projector&lt; S &gt;</a>
@@ -428,11 +431,15 @@ $(function() {
 </li>
 <li>pointer
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1ConstIterator.html#a8f1b4346836ef3a1a6f688aff13ccce6">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::ConstIterator</a>
-, <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#a66c88b1a93002856a45a80f8fbc92782">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
 </li>
 <li>Pointer
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#adc8324ab6e68074731671ac9ecb077dd">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
-, <a class="el" href="classDGtal_1_1IndexedListWithBlocks.html#a57ec434a0785d3bac7d68d75027b554f">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;</a>
+</li>
+<li>pointer
+: <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#a66c88b1a93002856a45a80f8fbc92782">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
+</li>
+<li>Pointer
+: <a class="el" href="classDGtal_1_1IndexedListWithBlocks.html#a57ec434a0785d3bac7d68d75027b554f">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;</a>
 </li>
 <li>pointer
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks.html#a5f640be16c2b0cfa2596070438417aa8">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;</a>
@@ -463,15 +470,19 @@ $(function() {
 </li>
 <li>pointer
 : <a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html#abe2be3c004230c366e5830ae65280a6e">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::ConstIterator</a>
-, <a class="el" href="classDGtal_1_1LabelledMap.html#a34e21a8d9a0ebc25f48f44f652e6b90d">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;</a>
 </li>
 <li>Pointer
 : <a class="el" href="classDGtal_1_1LabelledMap.html#ac52d09535812c914e7702665e2bdd5ce">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;</a>
-, <a class="el" href="classDGtal_1_1Labels_1_1ConstEnumerator.html#a7e383dcfbc45ddf820573a989c3f6052">DGtal::Labels&lt; L, TWord &gt;::ConstEnumerator</a>
 </li>
 <li>pointer
-: <a class="el" href="classDGtal_1_1Labels_1_1ConstEnumerator.html#a057735e62f929eb14d7748a5f41af9e3">DGtal::Labels&lt; L, TWord &gt;::ConstEnumerator</a>
-, <a class="el" href="structDGtal_1_1OneBalancedWordComputer_1_1ConstPointIterator.html#aa4074c1e85f8c0569975301866ac4917">DGtal::OneBalancedWordComputer&lt; TConstIterator, TInteger &gt;::ConstPointIterator</a>
+: <a class="el" href="classDGtal_1_1LabelledMap.html#a34e21a8d9a0ebc25f48f44f652e6b90d">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;</a>
+, <a class="el" href="classDGtal_1_1Labels_1_1ConstEnumerator.html#a057735e62f929eb14d7748a5f41af9e3">DGtal::Labels&lt; L, TWord &gt;::ConstEnumerator</a>
+</li>
+<li>Pointer
+: <a class="el" href="classDGtal_1_1Labels_1_1ConstEnumerator.html#a7e383dcfbc45ddf820573a989c3f6052">DGtal::Labels&lt; L, TWord &gt;::ConstEnumerator</a>
+</li>
+<li>pointer
+: <a class="el" href="structDGtal_1_1OneBalancedWordComputer_1_1ConstPointIterator.html#aa4074c1e85f8c0569975301866ac4917">DGtal::OneBalancedWordComputer&lt; TConstIterator, TInteger &gt;::ConstPointIterator</a>
 </li>
 <li>Pointer
 : <a class="el" href="classDGtal_1_1OwningOrAliasingPtr.html#a76cf9dcc58ae373a354f13ae464bb983">DGtal::OwningOrAliasingPtr&lt; T &gt;</a>
@@ -723,7 +734,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:33 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:48 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

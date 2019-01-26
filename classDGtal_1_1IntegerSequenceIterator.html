@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: It is a simple class that mimics a (non mutable) iterator over integers. You can increment it, decrement it, displace it, compare it, etc. It is useful if you have a collection of consecutive integers, and you wish to create an iterator over it. It is used in the class <a class="el" href="classDGtal_1_1TriangulatedSurface.html" title="Aim: Represents a triangulated surface. The topology is stored with a half-edge data structure...">TriangulatedSurface</a> for example, since vertices are numbers from 0 to nbVertices - 1.  
+ <a href="classDGtal_1_1IntegerSequenceIterator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IntegerSequenceIterator_8h_source.html">DGtal/base/IntegerSequenceIterator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::IntegerSequenceIterator&lt; TInteger &gt;:</div>
@@ -123,13 +126,16 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:abab8146faacd10f9923183e40075b9d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IntegerSequenceIterator.html#a19d086c4e83bf7db024460c709b093de">Integer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegerSequenceIterator.html#abab8146faacd10f9923183e40075b9d8">myNumber</a></td></tr>
+<tr class="memdesc:abab8146faacd10f9923183e40075b9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current value of the interator.  <a href="#abab8146faacd10f9923183e40075b9d8">More...</a><br /></td></tr>
 <tr class="separator:abab8146faacd10f9923183e40075b9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a1c34b021852356555e03b7745561a2f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegerSequenceIterator.html#a1c34b021852356555e03b7745561a2f7">increment</a> ()</td></tr>
+<tr class="memdesc:a1c34b021852356555e03b7745561a2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the iterator. Required by boost::iterator_facade.  <a href="#a1c34b021852356555e03b7745561a2f7">More...</a><br /></td></tr>
 <tr class="separator:a1c34b021852356555e03b7745561a2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ebd475566d33f435acf4653538b8a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegerSequenceIterator.html#ae1ebd475566d33f435acf4653538b8a8">decrement</a> ()</td></tr>
+<tr class="memdesc:ae1ebd475566d33f435acf4653538b8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrements the iterator. Required by boost::iterator_facade.  <a href="#ae1ebd475566d33f435acf4653538b8a8">More...</a><br /></td></tr>
 <tr class="separator:ae1ebd475566d33f435acf4653538b8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e14faa60d494b6d23853f8b48593fde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegerSequenceIterator.html#a3e14faa60d494b6d23853f8b48593fde">advance</a> (std::ptrdiff_t n)</td></tr>
 <tr class="separator:a3e14faa60d494b6d23853f8b48593fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -678,7 +684,7 @@ template&lt;typename TInteger &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:24 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:38 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

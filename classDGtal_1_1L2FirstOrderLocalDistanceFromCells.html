@@ -84,15 +84,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Class for the computation of the Euclidean distance at some point p, from the available distance values in the neighborhood of p. Contrary to <a class="el" href="classDGtal_1_1L2FirstOrderLocalDistance.html" title="Aim: Class for the computation of the Euclidean distance at some point p, from the available distance...">L2FirstOrderLocalDistance</a>, the distance values are not available from the points adjacent to p but instead from the (d-1)-cells lying between p and these points.  
+ <a href="classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="FMMPointFunctors_8h_source.html">DGtal/geometry/volumes/distance/FMMPointFunctors.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae9d159a7ef369f9ee3ee026daedc4224"><td class="memItemLeft" align="right" valign="top">typedef TMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#ae9d159a7ef369f9ee3ee026daedc4224">Map</a></td></tr>
+<tr class="memdesc:ae9d159a7ef369f9ee3ee026daedc4224"><td class="mdescLeft">&#160;</td><td class="mdescRight">map  <a href="#ae9d159a7ef369f9ee3ee026daedc4224">More...</a><br /></td></tr>
 <tr class="separator:ae9d159a7ef369f9ee3ee026daedc4224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa33d8cb67c38ee24385a6db78d228372"><td class="memItemLeft" align="right" valign="top">typedef Map::mapped_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#aa33d8cb67c38ee24385a6db78d228372">Value</a></td></tr>
 <tr class="separator:aa33d8cb67c38ee24385a6db78d228372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741b2516c4a9c92a2cacfba53ce9eb86"><td class="memItemLeft" align="right" valign="top">typedef TKSpace&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#a741b2516c4a9c92a2cacfba53ce9eb86">KSpace</a></td></tr>
+<tr class="memdesc:a741b2516c4a9c92a2cacfba53ce9eb86"><td class="mdescLeft">&#160;</td><td class="mdescRight">cellular grid  <a href="#a741b2516c4a9c92a2cacfba53ce9eb86">More...</a><br /></td></tr>
 <tr class="separator:a741b2516c4a9c92a2cacfba53ce9eb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad58bd77b2834fcde6a155ae4300dc8dd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a70d1b8007551de58a7b8ccee328bed00">KSpace::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#ad58bd77b2834fcde6a155ae4300dc8dd">Point</a></td></tr>
 <tr class="separator:ad58bd77b2834fcde6a155ae4300dc8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,8 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ad56b9428464448ccfa0a57b5d10f8456"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#a741b2516c4a9c92a2cacfba53ce9eb86">KSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#ad56b9428464448ccfa0a57b5d10f8456">myKSpace</a></td></tr>
+<tr class="memdesc:ad56b9428464448ccfa0a57b5d10f8456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aliasing pointer on the underlying cellular grid.  <a href="#ad56b9428464448ccfa0a57b5d10f8456">More...</a><br /></td></tr>
 <tr class="separator:ad56b9428464448ccfa0a57b5d10f8456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8385b01b5794c9941464931268d9b02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#ae9d159a7ef369f9ee3ee026daedc4224">Map</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#ad8385b01b5794c9941464931268d9b02">myMap</a></td></tr>
+<tr class="memdesc:ad8385b01b5794c9941464931268d9b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aliasing pointer on the underlying mapping.  <a href="#ad8385b01b5794c9941464931268d9b02">More...</a><br /></td></tr>
 <tr class="separator:ad8385b01b5794c9941464931268d9b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
@@ -520,7 +527,7 @@ template&lt;typename TKSpace , typename TMap , bool isIndirect = false&gt; </div
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:25 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:38 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

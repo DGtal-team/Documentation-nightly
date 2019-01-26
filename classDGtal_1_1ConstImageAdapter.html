@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: implements a const image adapter with a given domain (i.e. a subdomain) and 2 functors : g for domain, f for accessing point values.  
+ <a href="classDGtal_1_1ConstImageAdapter.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ConstImageAdapter_8h_source.html">DGtal/images/ConstImageAdapter.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -96,6 +99,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a64e10f2959c8540b2bc712d710e97e8c"><td class="memItemLeft" align="right" valign="top">typedef TNewValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ConstImageAdapter.html#a64e10f2959c8540b2bc712d710e97e8c">Value</a></td></tr>
 <tr class="separator:a64e10f2959c8540b2bc712d710e97e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8018ac49ad8b34c76afa1a5e3384b5d"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ConstImageAdapter.html#ae8018ac49ad8b34c76afa1a5e3384b5d">ImageContainer</a></td></tr>
+<tr class="memdesc:ae8018ac49ad8b34c76afa1a5e3384b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types copied from the container.  <a href="#ae8018ac49ad8b34c76afa1a5e3384b5d">More...</a><br /></td></tr>
 <tr class="separator:ae8018ac49ad8b34c76afa1a5e3384b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e9cabba0beea42e57a5812b05c06f6f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1DefaultConstImageRange.html">DefaultConstImageRange</a>&lt; <a class="el" href="classDGtal_1_1ConstImageAdapter.html#a7c3753aaec607f27fb757a7400fa8cf5">Self</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ConstImageAdapter.html#a7e9cabba0beea42e57a5812b05c06f6f">ConstRange</a></td></tr>
 <tr class="separator:a7e9cabba0beea42e57a5812b05c06f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,6 +107,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af7c91cae3bd22368c3e5441d3a0064cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ConstImageAdapter.html#af7c91cae3bd22368c3e5441d3a0064cf">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CConstImage.html">concepts::CConstImage</a>&lt; TImageContainer &gt;))</td></tr>
+<tr class="memdesc:af7c91cae3bd22368c3e5441d3a0064cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking concepts.  <a href="#af7c91cae3bd22368c3e5441d3a0064cf">More...</a><br /></td></tr>
 <tr class="separator:af7c91cae3bd22368c3e5441d3a0064cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab761ff5022bb653eb1fd38b820a0280d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ConstImageAdapter.html#ab761ff5022bb653eb1fd38b820a0280d">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CDomain.html">concepts::CDomain</a>&lt; TNewDomain &gt;))</td></tr>
 <tr class="separator:ab761ff5022bb653eb1fd38b820a0280d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,6 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a287bd5b8633c6571e3ab2d959bb82b97"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1ConstImageAdapter.html#ae8018ac49ad8b34c76afa1a5e3384b5d">ImageContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ConstImageAdapter.html#a287bd5b8633c6571e3ab2d959bb82b97">myImagePtr</a></td></tr>
+<tr class="memdesc:a287bd5b8633c6571e3ab2d959bb82b97"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1Alias.html" title="Aim: This class encapsulates its parameter class so that to indicate to the user that the object/poin...">Alias</a> on the image container.  <a href="#a287bd5b8633c6571e3ab2d959bb82b97">More...</a><br /></td></tr>
 <tr class="separator:a287bd5b8633c6571e3ab2d959bb82b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58b746282c66dacfc2dd60a703bc2f65"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1ConstImageAdapter.html#a2a2ba6880a4582ae7d9a93c6f1dd9116">Domain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ConstImageAdapter.html#a58b746282c66dacfc2dd60a703bc2f65">mySubDomainPtr</a></td></tr>
 <tr class="separator:a58b746282c66dacfc2dd60a703bc2f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -993,7 +999,7 @@ template&lt;typename TImageContainer, typename TNewDomain, typename TFunctorD, t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:21 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:35 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

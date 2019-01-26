@@ -103,6 +103,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:ae3730d4b7db6bc217f4774667d54a886"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#a8384eb599b4fa836e3a6ec313cd15b39">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#ae3730d4b7db6bc217f4774667d54a886">Reference</a></td></tr>
 <tr class="separator:ae3730d4b7db6bc217f4774667d54a886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3f5baab934d865d12ba71919c5a26e7"><td class="memItemLeft" align="right" valign="top">typedef std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#ac3f5baab934d865d12ba71919c5a26e7">DifferenceType</a></td></tr>
+<tr class="memdesc:ac3f5baab934d865d12ba71919c5a26e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">only positive offsets allowed.  <a href="#ac3f5baab934d865d12ba71919c5a26e7">More...</a><br /></td></tr>
 <tr class="separator:ac3f5baab934d865d12ba71919c5a26e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41de533f39f6f4a358c86a862a963cf7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#a8384eb599b4fa836e3a6ec313cd15b39">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#a41de533f39f6f4a358c86a862a963cf7">value_type</a></td></tr>
 <tr class="separator:a41de533f39f6f4a358c86a862a963cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,12 +153,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a269a9abf2fe87e9baa795726e4f264f4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#a269a9abf2fe87e9baa795726e4f264f4">myIdx</a></td></tr>
+<tr class="memdesc:a269a9abf2fe87e9baa795726e4f264f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">current index in <em>myDatas</em> of the iterator  <a href="#a269a9abf2fe87e9baa795726e4f264f4">More...</a><br /></td></tr>
 <tr class="separator:a269a9abf2fe87e9baa795726e4f264f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dc3ee25901ea059ecd001d8c80ad294"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#a1dc3ee25901ea059ecd001d8c80ad294">myNbDatas</a></td></tr>
+<tr class="memdesc:a1dc3ee25901ea059ecd001d8c80ad294"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of valid datas in array <em>myDatas</em>  <a href="#a1dc3ee25901ea059ecd001d8c80ad294">More...</a><br /></td></tr>
 <tr class="separator:a1dc3ee25901ea059ecd001d8c80ad294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27a3e429c092145fb20022fec6ba4f93"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1LabelledMap.html#a383ad8063ec1a68cf93132652ccb1782">Data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#a27a3e429c092145fb20022fec6ba4f93">myDatas</a></td></tr>
+<tr class="memdesc:a27a3e429c092145fb20022fec6ba4f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of <em>myNbDatas</em> datas.  <a href="#a27a3e429c092145fb20022fec6ba4f93">More...</a><br /></td></tr>
 <tr class="separator:a27a3e429c092145fb20022fec6ba4f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d12248dc44b298956ba9bdeae63d1ab"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structDGtal_1_1LabelledMap_1_1____AnyBlock.html">__AnyBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#a1d12248dc44b298956ba9bdeae63d1ab">myNext</a></td></tr>
+<tr class="memdesc:a1d12248dc44b298956ba9bdeae63d1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to next block or 0 if last block.  <a href="#a1d12248dc44b298956ba9bdeae63d1ab">More...</a><br /></td></tr>
 <tr class="separator:a1d12248dc44b298956ba9bdeae63d1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -848,7 +853,7 @@ template&lt;typename TData, unsigned int L, typename TWord, unsigned int N, unsi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:25 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:38 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

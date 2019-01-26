@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: model of CConstBidirectionalRangeFromPoint and CBidirectionalRangeWithWritableIteratorFromPoint that adapts the domain of an image in order to iterate over the values associated to its domain points (in a read-only as well as a write-only manner).  
+ <a href="classDGtal_1_1DefaultImageRange.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DefaultImageRange_8h_source.html">DGtal/images/DefaultImageRange.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -97,6 +100,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a231012885a2944f3ed46d0a4f9621798"><td class="memItemLeft" align="right" valign="top">typedef std::reverse_iterator&lt; <a class="el" href="classDGtal_1_1DefaultImageRange.html#ae270fb6666e8e414ce3201fc509d9808">ConstIterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DefaultImageRange.html#a231012885a2944f3ed46d0a4f9621798">ConstReverseIterator</a></td></tr>
 <tr class="separator:a231012885a2944f3ed46d0a4f9621798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4196c61202d6f48dcc32ed259697a0dc"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SetValueIterator.html">SetValueIterator</a>&lt; TImage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DefaultImageRange.html#a4196c61202d6f48dcc32ed259697a0dc">OutputIterator</a></td></tr>
+<tr class="memdesc:a4196c61202d6f48dcc32ed259697a0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">output iterator types  <a href="#a4196c61202d6f48dcc32ed259697a0dc">More...</a><br /></td></tr>
 <tr class="separator:a4196c61202d6f48dcc32ed259697a0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5452885d1de8458e393e40b1454974d1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SetValueIterator.html">SetValueIterator</a>&lt; TImage, typename <a class="el" href="classDGtal_1_1HyperRectDomain.html#a4de42d395584b2684fe7fc6336d505b6">Domain::ConstReverseIterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DefaultImageRange.html#a5452885d1de8458e393e40b1454974d1">ReverseOutputIterator</a></td></tr>
 <tr class="separator:a5452885d1de8458e393e40b1454974d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,6 +110,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa92cac8d8d9b176df8aceb7e197a10b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DefaultImageRange.html#afa92cac8d8d9b176df8aceb7e197a10b">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CTrivialImage.html">concepts::CTrivialImage</a>&lt; TImage &gt;))</td></tr>
 <tr class="separator:afa92cac8d8d9b176df8aceb7e197a10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a596641582f9e31287cb2313600acf225"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DefaultImageRange.html#a596641582f9e31287cb2313600acf225">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CDomain.html">concepts::CDomain</a>&lt; <a class="el" href="classDGtal_1_1DefaultImageRange.html#aa1ab39ee8ba80496154243a981502c19">Domain</a> &gt;))</td></tr>
+<tr class="memdesc:a596641582f9e31287cb2313600acf225"><td class="mdescLeft">&#160;</td><td class="mdescRight">constant iterator types  <a href="#a596641582f9e31287cb2313600acf225">More...</a><br /></td></tr>
 <tr class="separator:a596641582f9e31287cb2313600acf225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b8df881bf8cda0b6a09f40cc0eeee6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DefaultImageRange.html#a34b8df881bf8cda0b6a09f40cc0eeee6">DefaultImageRange</a> (TImage &amp;aImage)</td></tr>
 <tr class="separator:a34b8df881bf8cda0b6a09f40cc0eeee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -927,7 +932,7 @@ template&lt;typename TImage &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:22 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:35 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

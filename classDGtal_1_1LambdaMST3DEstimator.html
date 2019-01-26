@@ -100,16 +100,22 @@ Collaboration diagram for DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation,
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aefaf7a3dd66683c1e11d5d0bc5266bab"><td class="memItemLeft" align="right" valign="top">typedef TSegmentation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#aefaf7a3dd66683c1e11d5d0bc5266bab">Segmentation</a></td></tr>
+<tr class="memdesc:aefaf7a3dd66683c1e11d5d0bc5266bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tangential cover algorithm.  <a href="#aefaf7a3dd66683c1e11d5d0bc5266bab">More...</a><br /></td></tr>
 <tr class="separator:aefaf7a3dd66683c1e11d5d0bc5266bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3361bb97be0685bed79a531c57e364e8"><td class="memItemLeft" align="right" valign="top">typedef TSegmentation::SegmentComputer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a3361bb97be0685bed79a531c57e364e8">SegmentComputer</a></td></tr>
+<tr class="memdesc:a3361bb97be0685bed79a531c57e364e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Curve segmentation algorithm.  <a href="#a3361bb97be0685bed79a531c57e364e8">More...</a><br /></td></tr>
 <tr class="separator:a3361bb97be0685bed79a531c57e364e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8505515a427414ea250ec1fe6138de1d"><td class="memItemLeft" align="right" valign="top">typedef SegmentComputer::ConstIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a></td></tr>
+<tr class="memdesc:a8505515a427414ea250ec1fe6138de1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of iterator, at least readable and forward.  <a href="#a8505515a427414ea250ec1fe6138de1d">More...</a><br /></td></tr>
 <tr class="separator:a8505515a427414ea250ec1fe6138de1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8341a6423b67e1697a9b06a918be5a25"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#aa11b96501432e4f55fe02898c5e42ab7">Functor::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8341a6423b67e1697a9b06a918be5a25">Value</a></td></tr>
+<tr class="memitem:a8341a6423b67e1697a9b06a918be5a25"><td class="memItemLeft" align="right" valign="top">typedef Functor::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8341a6423b67e1697a9b06a918be5a25">Value</a></td></tr>
+<tr class="memdesc:a8341a6423b67e1697a9b06a918be5a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type returned by model of CLMSTTangentFrom2DSS.  <a href="#a8341a6423b67e1697a9b06a918be5a25">More...</a><br /></td></tr>
 <tr class="separator:a8341a6423b67e1697a9b06a918be5a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40775583b0dc81f4fb75f741837c2afa"><td class="memItemLeft" align="right" valign="top">typedef TSpace::RealVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a40775583b0dc81f4fb75f741837c2afa">RealVector</a></td></tr>
+<tr class="memdesc:a40775583b0dc81f4fb75f741837c2afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of 3d real vector.  <a href="#a40775583b0dc81f4fb75f741837c2afa">More...</a><br /></td></tr>
 <tr class="separator:a40775583b0dc81f4fb75f741837c2afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05cfb7180b11feaaa1e9d0909c771330"><td class="memItemLeft" align="right" valign="top">typedef TSpace::Point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a05cfb7180b11feaaa1e9d0909c771330">Point</a></td></tr>
+<tr class="memdesc:a05cfb7180b11feaaa1e9d0909c771330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of 3d real point.  <a href="#a05cfb7180b11feaaa1e9d0909c771330">More...</a><br /></td></tr>
 <tr class="separator:a05cfb7180b11feaaa1e9d0909c771330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -118,11 +124,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac6db3d471654e542402ea609e8fcddb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66c77a683f72d81a15a5ee70b0f8673f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a66c77a683f72d81a15a5ee70b0f8673f">BOOST_STATIC_ASSERT</a> ((TSpace::dimension==3))</td></tr>
 <tr class="separator:a66c77a683f72d81a15a5ee70b0f8673f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2ca1c5e273faca7632b098633b861e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#ab2ca1c5e273faca7632b098633b861e4">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html">concepts::CLMSTTangentFromDSS</a>&lt; <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;))</td></tr>
+<tr class="memitem:ab2ca1c5e273faca7632b098633b861e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#ab2ca1c5e273faca7632b098633b861e4">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html">concepts::CLMSTTangentFromDSS</a>&lt; <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;))</td></tr>
 <tr class="separator:ab2ca1c5e273faca7632b098633b861e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cca948aced664f850b61921a9afa7d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a4cca948aced664f850b61921a9afa7d0">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CForwardSegmentComputer.html">concepts::CForwardSegmentComputer</a>&lt; typename TSegmentation::SegmentComputer &gt;))</td></tr>
 <tr class="separator:a4cca948aced664f850b61921a9afa7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa59af367c342350081ad53804904c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a2aa59af367c342350081ad53804904c5">LambdaMST3DEstimator</a> ()</td></tr>
+<tr class="memdesc:a2aa59af367c342350081ad53804904c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a2aa59af367c342350081ad53804904c5">More...</a><br /></td></tr>
 <tr class="separator:a2aa59af367c342350081ad53804904c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a316574d32265345723b0f84281ed5dea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a316574d32265345723b0f84281ed5dea">init</a> (const <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a> &amp;itb, const <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a> &amp;ite)</td></tr>
 <tr class="separator:a316574d32265345723b0f84281ed5dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +147,7 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7588c7314ad71ee9702b5add5d3f103f"><td class="memTemplParams" colspan="2">template&lt;typename OutputIterator &gt; </td></tr>
 <tr class="memitem:a7588c7314ad71ee9702b5add5d3f103f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a7588c7314ad71ee9702b5add5d3f103f">accumulate</a> (std::multimap&lt; <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a05cfb7180b11feaaa1e9d0909c771330">Point</a>, <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8341a6423b67e1697a9b06a918be5a25">Value</a> &gt; &amp;outValues, const <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a> &amp;itb, const <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a> &amp;ite, OutputIterator &amp;result)</td></tr>
+<tr class="memdesc:a7588c7314ad71ee9702b5add5d3f103f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accumulate partial results obtained for each point. In 3D it can happen that DSSs' direction vectors over same point are opposite. To avoid this problem we measure angle between segments' direction vectors and if this angle is bigger than \(\pi/2\), then one of the vectors is reversed. Finally, tangent direction is estimated and stored.  <a href="#a7588c7314ad71ee9702b5add5d3f103f">More...</a><br /></td></tr>
 <tr class="separator:a7588c7314ad71ee9702b5add5d3f103f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -150,7 +158,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afef5368d586d66617bcd97385842eb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c6eb50ad7a8adba44b17d857e14c402"><td class="memItemLeft" align="right" valign="top">TSegmentation *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a6c6eb50ad7a8adba44b17d857e14c402">dssSegments</a></td></tr>
 <tr class="separator:a6c6eb50ad7a8adba44b17d857e14c402"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c6b18995cbaa78deb92b0ecc994b75c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a7c6b18995cbaa78deb92b0ecc994b75c">myFunctor</a></td></tr>
+<tr class="memitem:a7c6b18995cbaa78deb92b0ecc994b75c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a7c6b18995cbaa78deb92b0ecc994b75c">myFunctor</a></td></tr>
 <tr class="separator:a7c6b18995cbaa78deb92b0ecc994b75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -177,7 +185,7 @@ class DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation, Functor &gt;</h3>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef SegmentComputer::ConstIterator <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a></td>
+          <td class="memname">typedef SegmentComputer::ConstIterator <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -197,7 +205,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TSpace::Point <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a05cfb7180b11feaaa1e9d0909c771330">Point</a></td>
+          <td class="memname">typedef TSpace::Point <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a05cfb7180b11feaaa1e9d0909c771330">Point</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -217,7 +225,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TSpace::RealVector <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a40775583b0dc81f4fb75f741837c2afa">RealVector</a></td>
+          <td class="memname">typedef TSpace::RealVector <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a40775583b0dc81f4fb75f741837c2afa">RealVector</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -237,7 +245,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TSegmentation <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#aefaf7a3dd66683c1e11d5d0bc5266bab">Segmentation</a></td>
+          <td class="memname">typedef TSegmentation <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#aefaf7a3dd66683c1e11d5d0bc5266bab">Segmentation</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -257,7 +265,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TSegmentation::SegmentComputer <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a3361bb97be0685bed79a531c57e364e8">SegmentComputer</a></td>
+          <td class="memname">typedef TSegmentation::SegmentComputer <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a3361bb97be0685bed79a531c57e364e8">SegmentComputer</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -277,7 +285,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#aa11b96501432e4f55fe02898c5e42ab7">Functor::Value</a> <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8341a6423b67e1697a9b06a918be5a25">Value</a></td>
+          <td class="memname">typedef Functor::Value <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8341a6423b67e1697a9b06a918be5a25">Value</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -298,7 +306,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">LambdaMST3DEstimator</a> </td>
+          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">LambdaMST3DEstimator</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -325,7 +333,7 @@ template&lt;typename OutputIterator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::accumulate </td>
+          <td class="memname">void <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::accumulate </td>
           <td>(</td>
           <td class="paramtype">std::multimap&lt; <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a05cfb7180b11feaaa1e9d0909c771330">Point</a>, <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8341a6423b67e1697a9b06a918be5a25">Value</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>outValues</em>, </td>
@@ -389,7 +397,7 @@ template&lt;typename OutputIterator &gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::attach </td>
+          <td class="memname">void <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::attach </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDGtal_1_1Alias.html">Alias</a>&lt; TSegmentation &gt;&#160;</td>
           <td class="paramname"><em>segmentComputer</em></td><td>)</td>
@@ -415,7 +423,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::BOOST_CONCEPT_ASSERT </td>
+          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::BOOST_CONCEPT_ASSERT </td>
           <td>(</td>
           <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1CSpace.html">concepts::CSpace</a>&lt; TSpace &gt;)&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -435,9 +443,9 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::BOOST_CONCEPT_ASSERT </td>
+          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::BOOST_CONCEPT_ASSERT </td>
           <td>(</td>
-          <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html">concepts::CLMSTTangentFromDSS</a>&lt; <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;)&#160;</td>
+          <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html">concepts::CLMSTTangentFromDSS</a>&lt; <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;)&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -455,7 +463,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::BOOST_CONCEPT_ASSERT </td>
+          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::BOOST_CONCEPT_ASSERT </td>
           <td>(</td>
           <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1CForwardSegmentComputer.html">concepts::CForwardSegmentComputer</a>&lt; typename TSegmentation::SegmentComputer &gt;)&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -475,7 +483,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::BOOST_STATIC_ASSERT </td>
+          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::BOOST_STATIC_ASSERT </td>
           <td>(</td>
           <td class="paramtype">(TSpace::dimension==3)&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -495,7 +503,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a40775583b0dc81f4fb75f741837c2afa">RealVector</a> <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::eval </td>
+          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a40775583b0dc81f4fb75f741837c2afa">RealVector</a> <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::eval </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a> &amp;&#160;</td>
           <td class="paramname"><em>it</em></td><td>)</td>
@@ -524,7 +532,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename OutputIterator &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">OutputIterator <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::eval </td>
+          <td class="memname">OutputIterator <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::eval </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a> &amp;&#160;</td>
           <td class="paramname"><em>itb</em>, </td>
@@ -574,7 +582,7 @@ template&lt;typename OutputIterator &gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::init </td>
+          <td class="memname">void <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::init </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a> &amp;&#160;</td>
           <td class="paramname"><em>itb</em>, </td>
@@ -611,7 +619,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::isValid </td>
+          <td class="memname">bool <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::isValid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -635,7 +643,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TSegmentation* <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::dssSegments</td>
+          <td class="memname">TSegmentation* <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::dssSegments</td>
         </tr>
       </table>
   </td>
@@ -662,7 +670,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a> <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::myBegin</td>
+          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a> <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::myBegin</td>
         </tr>
       </table>
   </td>
@@ -689,7 +697,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a> <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::myEnd</td>
+          <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a8505515a427414ea250ec1fe6138de1d">ConstIterator</a> <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::myEnd</td>
         </tr>
       </table>
   </td>
@@ -716,7 +724,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a> &gt;::myFunctor</td>
+          <td class="memname"><a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &gt;::myFunctor</td>
         </tr>
       </table>
   </td>
@@ -737,7 +745,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:25 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:39 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

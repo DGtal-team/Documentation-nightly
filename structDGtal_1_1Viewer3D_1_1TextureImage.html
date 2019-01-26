@@ -93,8 +93,10 @@ Collaboration diagram for DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::TextureImage
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c15027c8d4bc846ee1cb725104687b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html#a7c15027c8d4bc846ee1cb725104687b4">~TextureImage</a> ()</td></tr>
+<tr class="memdesc:a7c15027c8d4bc846ee1cb725104687b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the mode of representation of the image  <a href="#a7c15027c8d4bc846ee1cb725104687b4">More...</a><br /></td></tr>
 <tr class="separator:a7c15027c8d4bc846ee1cb725104687b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee37517f00f95cbd07a79d8f30868d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html#a9ee37517f00f95cbd07a79d8f30868d9">TextureImage</a> (const <a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html">TextureImage</a> &amp;img)</td></tr>
+<tr class="memdesc:a9ee37517f00f95cbd07a79d8f30868d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor (needed due to myTabImage)  <a href="#a9ee37517f00f95cbd07a79d8f30868d9">More...</a><br /></td></tr>
 <tr class="separator:a9ee37517f00f95cbd07a79d8f30868d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c6f9cd1aaa675e9518629ec02a069d6"><td class="memTemplParams" colspan="2">template&lt;typename TImageType , typename TFunctor &gt; </td></tr>
 <tr class="memitem:a4c6f9cd1aaa675e9518629ec02a069d6"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html#a4c6f9cd1aaa675e9518629ec02a069d6">TextureImage</a> (const TImageType &amp;<a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a614d1b1c043b31763c1eb50f64666737">image</a>, const TFunctor &amp;aFunctor, <a class="el" href="classDGtal_1_1Viewer3D.html#ac62e198b80da8dcedc191434a2075f9e">ImageDirection</a> normalDir=<a class="el" href="classDGtal_1_1Viewer3D.html#ac62e198b80da8dcedc191434a2075f9ea1073dd91081c9af363b3149ac2317bbb">zDirection</a>, double xBottomLeft=0.0, double yBottomLeft=0.0, double zBottomLeft=0.0, <a class="el" href="classDGtal_1_1Viewer3D.html#a542350413b6cfa5ffae5cd6b21a81750">TextureMode</a> aMode=<a class="el" href="classDGtal_1_1Viewer3D.html#a542350413b6cfa5ffae5cd6b21a81750af15722305fee39ae0e0593779677ea8c">GrayScaleMode</a>)</td></tr>
@@ -122,16 +124,22 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a66b6710da362c78261fc33045fa99dc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Viewer3D.html#ac62e198b80da8dcedc191434a2075f9e">ImageDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html#a66b6710da362c78261fc33045fa99dc7">myDirection</a></td></tr>
 <tr class="separator:a66b6710da362c78261fc33045fa99dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3b6ea7c66a0ac58a4cb0a35d206c1c2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html#ac3b6ea7c66a0ac58a4cb0a35d206c1c2">myImageWidth</a></td></tr>
+<tr class="memdesc:ac3b6ea7c66a0ac58a4cb0a35d206c1c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">direction of the image (x, y or z axe)  <a href="#ac3b6ea7c66a0ac58a4cb0a35d206c1c2">More...</a><br /></td></tr>
 <tr class="separator:ac3b6ea7c66a0ac58a4cb0a35d206c1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01ec5b620d38d373c2b39c51a3829f98"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html#a01ec5b620d38d373c2b39c51a3829f98">myImageHeight</a></td></tr>
+<tr class="memdesc:a01ec5b620d38d373c2b39c51a3829f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">the width of the image  <a href="#a01ec5b620d38d373c2b39c51a3829f98">More...</a><br /></td></tr>
 <tr class="separator:a01ec5b620d38d373c2b39c51a3829f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a6eb8437e4d066d218a42167d4ef792"><td class="memItemLeft" align="right" valign="top">unsigned int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html#a3a6eb8437e4d066d218a42167d4ef792">myTabImage</a></td></tr>
+<tr class="memdesc:a3a6eb8437e4d066d218a42167d4ef792"><td class="mdescLeft">&#160;</td><td class="mdescRight">the height of the image  <a href="#a3a6eb8437e4d066d218a42167d4ef792">More...</a><br /></td></tr>
 <tr class="separator:a3a6eb8437e4d066d218a42167d4ef792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64e6e77acb4fc58fd4b878f829cf9e4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html#a64e6e77acb4fc58fd4b878f829cf9e4c">myDrawDomain</a></td></tr>
+<tr class="memdesc:a64e6e77acb4fc58fd4b878f829cf9e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">for each pixel of the image, color or height ?  <a href="#a64e6e77acb4fc58fd4b878f829cf9e4c">More...</a><br /></td></tr>
 <tr class="separator:a64e6e77acb4fc58fd4b878f829cf9e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd03716e625c26d55ffb40f17c11fdf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html#accd03716e625c26d55ffb40f17c11fdf">myIndexDomain</a></td></tr>
+<tr class="memdesc:accd03716e625c26d55ffb40f17c11fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if the draw have a domain  <a href="#accd03716e625c26d55ffb40f17c11fdf">More...</a><br /></td></tr>
 <tr class="separator:accd03716e625c26d55ffb40f17c11fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a968a3d0abcfc481e1267f9dd10b0d5c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Viewer3D.html#a542350413b6cfa5ffae5cd6b21a81750">TextureMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html#a968a3d0abcfc481e1267f9dd10b0d5c7">myMode</a></td></tr>
+<tr class="memdesc:a968a3d0abcfc481e1267f9dd10b0d5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">index of the image domain if exist  <a href="#a968a3d0abcfc481e1267f9dd10b0d5c7">More...</a><br /></td></tr>
 <tr class="separator:a968a3d0abcfc481e1267f9dd10b0d5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -838,7 +846,7 @@ template&lt;typename TSpace = SpaceND&lt;3&gt;, typename TKSpace = KhalimskySpac
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:29 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:43 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -85,6 +85,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: A model of CDigitalSurfaceContainer which defines the digital surface as connected surfels. The shape is determined by a predicate telling whether a given surfel belongs or not to the shape boundary. Compute once the boundary of the surface with a tracking.  
+ <a href="classDGtal_1_1ExplicitDigitalSurface.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ExplicitDigitalSurface_8h_source.html">DGtal/topology/ExplicitDigitalSurface.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::ExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;:</div>
@@ -103,10 +106,13 @@ Public Types</h2></td></tr>
 <tr class="memitem:aa3caadc9a8f6de0db73a8699be32ca5e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html">ExplicitDigitalSurface</a>&lt; TKSpace, TSurfelPredicate &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#aa3caadc9a8f6de0db73a8699be32ca5e">Self</a></td></tr>
 <tr class="separator:aa3caadc9a8f6de0db73a8699be32ca5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1eef0948367538f33e909aa8f1861a2"><td class="memItemLeft" align="right" valign="top">typedef TKSpace&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#af1eef0948367538f33e909aa8f1861a2">KSpace</a></td></tr>
+<tr class="memdesc:af1eef0948367538f33e909aa8f1861a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Model of cellular grid space.  <a href="#af1eef0948367538f33e909aa8f1861a2">More...</a><br /></td></tr>
 <tr class="separator:af1eef0948367538f33e909aa8f1861a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0db396535637df067eeac5dd2e89f3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a7d26c7464cdc9dbc684472a204136128">KSpace::SCell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a3f0db396535637df067eeac5dd2e89f3">Surfel</a></td></tr>
+<tr class="memdesc:a3f0db396535637df067eeac5dd2e89f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for surfels.  <a href="#a3f0db396535637df067eeac5dd2e89f3">More...</a><br /></td></tr>
 <tr class="separator:a3f0db396535637df067eeac5dd2e89f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ee5a6f12a774e265a6102e9b4df1cec"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a93973417f7b05e40cb4c121eeb43f5a5">KSpace::Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a5ee5a6f12a774e265a6102e9b4df1cec">Size</a></td></tr>
+<tr class="memdesc:a5ee5a6f12a774e265a6102e9b4df1cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for sizes (unsigned integral type).  <a href="#a5ee5a6f12a774e265a6102e9b4df1cec">More...</a><br /></td></tr>
 <tr class="separator:a5ee5a6f12a774e265a6102e9b4df1cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b8752e74b8542cdbca5f7418b29cc90"><td class="memItemLeft" align="right" valign="top">typedef TSurfelPredicate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a4b8752e74b8542cdbca5f7418b29cc90">SurfelPredicate</a></td></tr>
 <tr class="separator:a4b8752e74b8542cdbca5f7418b29cc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,10 +148,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6bef70a2139054cb149b1fc22c326c29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a6bef70a2139054cb149b1fc22c326c29">ExplicitDigitalSurface</a> (<a class="el" href="classDGtal_1_1ConstAlias.html">ConstAlias</a>&lt; <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#af1eef0948367538f33e909aa8f1861a2">KSpace</a> &gt; aKSpace, const <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a4b8752e74b8542cdbca5f7418b29cc90">SurfelPredicate</a> &amp;aSP, const <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#ab24177a40f32ed01336faa378e77bb73">Adjacency</a> &amp;adj, const <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a3f0db396535637df067eeac5dd2e89f3">Surfel</a> &amp;s, bool closed=false)</td></tr>
 <tr class="separator:a6bef70a2139054cb149b1fc22c326c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d2f63b001504def1b910913d6a41b9a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#ab24177a40f32ed01336faa378e77bb73">Adjacency</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a2d2f63b001504def1b910913d6a41b9a">surfelAdjacency</a> () const</td></tr>
+<tr class="memdesc:a2d2f63b001504def1b910913d6a41b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">accessor to surfel adjacency.  <a href="#a2d2f63b001504def1b910913d6a41b9a">More...</a><br /></td></tr>
 <tr class="separator:a2d2f63b001504def1b910913d6a41b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac7da5e7ab09765afbc72dfe0a7f47f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#ab24177a40f32ed01336faa378e77bb73">Adjacency</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#adac7da5e7ab09765afbc72dfe0a7f47f">surfelAdjacency</a> ()</td></tr>
+<tr class="memdesc:adac7da5e7ab09765afbc72dfe0a7f47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutator to surfel adjacency.  <a href="#adac7da5e7ab09765afbc72dfe0a7f47f">More...</a><br /></td></tr>
 <tr class="separator:adac7da5e7ab09765afbc72dfe0a7f47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0c03496720cb42e70597f4f0d727f4d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a4b8752e74b8542cdbca5f7418b29cc90">SurfelPredicate</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#ae0c03496720cb42e70597f4f0d727f4d">surfelPredicate</a> () const</td></tr>
+<tr class="memdesc:ae0c03496720cb42e70597f4f0d727f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">accessor to point predicate.  <a href="#ae0c03496720cb42e70597f4f0d727f4d">More...</a><br /></td></tr>
 <tr class="separator:ae0c03496720cb42e70597f4f0d727f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22d8b6ed188f64d4a04c7382afe14718"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#af1eef0948367538f33e909aa8f1861a2">KSpace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a22d8b6ed188f64d4a04c7382afe14718">space</a> () const</td></tr>
 <tr class="separator:a22d8b6ed188f64d4a04c7382afe14718"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,12 +190,16 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a70824101c036a128be04d39be261d1a4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#af1eef0948367538f33e909aa8f1861a2">KSpace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a70824101c036a128be04d39be261d1a4">myKSpace</a></td></tr>
+<tr class="memdesc:a70824101c036a128be04d39be261d1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">a reference to the cellular space.  <a href="#a70824101c036a128be04d39be261d1a4">More...</a><br /></td></tr>
 <tr class="separator:a70824101c036a128be04d39be261d1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab53be1bc41f6071a3fd9402f3bed640c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a4b8752e74b8542cdbca5f7418b29cc90">SurfelPredicate</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#ab53be1bc41f6071a3fd9402f3bed640c">mySurfelPredicate</a></td></tr>
+<tr class="memdesc:ab53be1bc41f6071a3fd9402f3bed640c"><td class="mdescLeft">&#160;</td><td class="mdescRight">a reference to the surfel predicate defining the shape.  <a href="#ab53be1bc41f6071a3fd9402f3bed640c">More...</a><br /></td></tr>
 <tr class="separator:ab53be1bc41f6071a3fd9402f3bed640c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea799de7f3d10848bac0402a018a4e56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#ab24177a40f32ed01336faa378e77bb73">Adjacency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#aea799de7f3d10848bac0402a018a4e56">mySurfelAdjacency</a></td></tr>
+<tr class="memdesc:aea799de7f3d10848bac0402a018a4e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">the surfel adjacency used to determine neighbors.  <a href="#aea799de7f3d10848bac0402a018a4e56">More...</a><br /></td></tr>
 <tr class="separator:aea799de7f3d10848bac0402a018a4e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d10b6631461ea4eb2441b0049ce28a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a200a28b462d746270a150e014b71a3bf">SurfelStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html#a2d10b6631461ea4eb2441b0049ce28a0">mySurfels</a></td></tr>
+<tr class="memdesc:a2d10b6631461ea4eb2441b0049ce28a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">a vector storing all the surfels of the boundary.  <a href="#a2d10b6631461ea4eb2441b0049ce28a0">More...</a><br /></td></tr>
 <tr class="separator:a2d10b6631461ea4eb2441b0049ce28a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1096,7 +1109,7 @@ template&lt;typename TKSpace, typename TSurfelPredicate&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:23 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

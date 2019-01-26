@@ -84,11 +84,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class encapsulates its parameter class to indicate that the given parameter is required to be duplicated (generally, this is done to have a longer lifetime than the function itself). On one hand, the user is reminded of the possible cost of duplicating the argument parameter, while he is also aware that the lifetime of the parameter is not a problem for the function. On the other hand, the <a class="el" href="classDGtal_1_1Clone.html" title="Aim: This class encapsulates its parameter class to indicate that the given parameter is required to ...">Clone</a> class is smart enough to enforce duplication <b>only</b> <b>if</b> <b>needed</b>. Substantial speed-up can be achieve through this mechanism.  
+ <a href="classDGtal_1_1Clone.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Clone_8h_source.html">DGtal/base/Clone.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1Clone_1_1TempPtr.html">TempPtr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal class that is used for a late deletion of an acquired pointer.  <a href="structDGtal_1_1Clone_1_1TempPtr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -130,6 +134,7 @@ Protected Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classDGtal_1_1Clone.html#ad6256b7bcf50412643a5d485da330b76a557edcc52f0e3e57aeb9e7b54d1a5a4f">COUNTED_CONST_PTR_OR_CONST_PTR</a>
 <br />
  }</td></tr>
+<tr class="memdesc:ad6256b7bcf50412643a5d485da330b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal class that allows to distinguish the different types of parameters.  <a href="classDGtal_1_1Clone.html#ad6256b7bcf50412643a5d485da330b76">More...</a><br /></td></tr>
 <tr class="separator:ad6256b7bcf50412643a5d485da330b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -142,8 +147,10 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a3b14ca8ce8cd1717f5154315ee1a8bf8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1Clone.html#ad6256b7bcf50412643a5d485da330b76">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Clone.html#a3b14ca8ce8cd1717f5154315ee1a8bf8">myParam</a></td></tr>
+<tr class="memdesc:a3b14ca8ce8cd1717f5154315ee1a8bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Characterizes the type of the input parameter at clone instanciation.  <a href="#a3b14ca8ce8cd1717f5154315ee1a8bf8">More...</a><br /></td></tr>
 <tr class="separator:a3b14ca8ce8cd1717f5154315ee1a8bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e59dd888aa9094c3cbc2d0c36a234c8"><td class="memItemLeft" align="right" valign="top">const void *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Clone.html#a7e59dd888aa9094c3cbc2d0c36a234c8">myPtr</a></td></tr>
+<tr class="memdesc:a7e59dd888aa9094c3cbc2d0c36a234c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the address of the input parameter for further use.  <a href="#a7e59dd888aa9094c3cbc2d0c36a234c8">More...</a><br /></td></tr>
 <tr class="separator:a7e59dd888aa9094c3cbc2d0c36a234c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -806,7 +813,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:21 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:35 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

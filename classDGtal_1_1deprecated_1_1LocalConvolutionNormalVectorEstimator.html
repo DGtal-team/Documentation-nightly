@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Computes the normal vector at a surface element by convolution of elementary normal vector to adjacent surfel.  
+ <a href="classDGtal_1_1deprecated_1_1LocalConvolutionNormalVectorEstimator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="LocalConvolutionNormalVectorEstimator_8h_source.html">DGtal/geometry/surfaces/estimation/LocalConvolutionNormalVectorEstimator.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -141,14 +144,19 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa4bb613e25792a2ae3f61b4a8a5cd59d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1deprecated_1_1LocalConvolutionNormalVectorEstimator.html#aa4bb613e25792a2ae3f61b4a8a5cd59d">myH</a></td></tr>
+<tr class="memdesc:aa4bb613e25792a2ae3f61b4a8a5cd59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grid size.  <a href="#aa4bb613e25792a2ae3f61b4a8a5cd59d">More...</a><br /></td></tr>
 <tr class="separator:aa4bb613e25792a2ae3f61b4a8a5cd59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a078a0045d9bf7650449d863d0294db08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1deprecated_1_1LocalConvolutionNormalVectorEstimator.html#a078a0045d9bf7650449d863d0294db08">myFlagIsInit</a></td></tr>
+<tr class="memdesc:a078a0045d9bf7650449d863d0294db08"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the <a class="el" href="classDGtal_1_1deprecated_1_1LocalConvolutionNormalVectorEstimator.html#a44238e6286565e9af78f12db1b10ebde">init()</a> has been called.  <a href="#a078a0045d9bf7650449d863d0294db08">More...</a><br /></td></tr>
 <tr class="separator:a078a0045d9bf7650449d863d0294db08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac44a66ca4544ec7b64beefc9eb2070cf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1deprecated_1_1LocalConvolutionNormalVectorEstimator.html#ac44a66ca4544ec7b64beefc9eb2070cf">myRadius</a></td></tr>
+<tr class="memdesc:ac44a66ca4544ec7b64beefc9eb2070cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radius of the convolution.  <a href="#ac44a66ca4544ec7b64beefc9eb2070cf">More...</a><br /></td></tr>
 <tr class="separator:ac44a66ca4544ec7b64beefc9eb2070cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ffb567e6ef31bd57876abdd53a2b49e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1deprecated_1_1LocalConvolutionNormalVectorEstimator.html#ad5867b15b6f2c67dccf007a6d51e8633">DigitalSurface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1deprecated_1_1LocalConvolutionNormalVectorEstimator.html#a1ffb567e6ef31bd57876abdd53a2b49e">mySurface</a></td></tr>
+<tr class="memdesc:a1ffb567e6ef31bd57876abdd53a2b49e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the digital surface.  <a href="#a1ffb567e6ef31bd57876abdd53a2b49e">More...</a><br /></td></tr>
 <tr class="separator:a1ffb567e6ef31bd57876abdd53a2b49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3524619c2411b662313bc531bce32b11"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1deprecated_1_1LocalConvolutionNormalVectorEstimator.html#abca7ccebd0ce01f2c17818830c5e070e">KernelFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1deprecated_1_1LocalConvolutionNormalVectorEstimator.html#a3524619c2411b662313bc531bce32b11">myKernelFunctor</a></td></tr>
+<tr class="memdesc:a3524619c2411b662313bc531bce32b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference of the kernel convolution functor.  <a href="#a3524619c2411b662313bc531bce32b11">More...</a><br /></td></tr>
 <tr class="separator:a3524619c2411b662313bc531bce32b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -812,7 +820,7 @@ template&lt;typename TDigitalSurface , typename TKernelFunctor &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:31 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:44 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

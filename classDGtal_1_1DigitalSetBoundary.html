@@ -85,6 +85,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: A model of CDigitalSurfaceContainer which defines the digital surface as the boundary of a given digital set.  
+ <a href="classDGtal_1_1DigitalSetBoundary.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DigitalSetBoundary_8h_source.html">DGtal/topology/DigitalSetBoundary.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::DigitalSetBoundary&lt; TKSpace, TDigitalSet &gt;:</div>
@@ -138,10 +141,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8c18e7161085386f2aa9328a8382f11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#aa8c18e7161085386f2aa9328a8382f11">DigitalSetBoundary</a> (<a class="el" href="classDGtal_1_1ConstAlias.html">ConstAlias</a>&lt; <a class="el" href="classDGtal_1_1DigitalSetBoundary.html#aafdcfedc94ffc7a344d44e65ad267be7">KSpace</a> &gt; aKSpace, const <a class="el" href="classDGtal_1_1DigitalSetBoundary.html#ac3c2dcc16315946de17ce7592f6cc369">DigitalSet</a> &amp;aSet, const <a class="el" href="classDGtal_1_1DigitalSetBoundary.html#ae3ed1c3fb75435a39eb4d0e9380e1e99">Adjacency</a> &amp;adj=<a class="el" href="classDGtal_1_1DigitalSetBoundary.html#ae3ed1c3fb75435a39eb4d0e9380e1e99">Adjacency</a>(true))</td></tr>
 <tr class="separator:aa8c18e7161085386f2aa9328a8382f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6cc110a74b1e10bfd7947b2412b93b4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1DigitalSetBoundary.html#ae3ed1c3fb75435a39eb4d0e9380e1e99">Adjacency</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#ac6cc110a74b1e10bfd7947b2412b93b4">surfelAdjacency</a> () const</td></tr>
+<tr class="memdesc:ac6cc110a74b1e10bfd7947b2412b93b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">accessor to surfel adjacency.  <a href="#ac6cc110a74b1e10bfd7947b2412b93b4">More...</a><br /></td></tr>
 <tr class="separator:ac6cc110a74b1e10bfd7947b2412b93b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe46bca94c4d15731fb6cf292c84760f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#ae3ed1c3fb75435a39eb4d0e9380e1e99">Adjacency</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#afe46bca94c4d15731fb6cf292c84760f">surfelAdjacency</a> ()</td></tr>
+<tr class="memdesc:afe46bca94c4d15731fb6cf292c84760f"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutator to surfel adjacency.  <a href="#afe46bca94c4d15731fb6cf292c84760f">More...</a><br /></td></tr>
 <tr class="separator:afe46bca94c4d15731fb6cf292c84760f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8c88949302962fe10869dd6ec44888d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1DigitalSetBoundary.html#ac3c2dcc16315946de17ce7592f6cc369">DigitalSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#ab8c88949302962fe10869dd6ec44888d">digitalSet</a> () const</td></tr>
+<tr class="memdesc:ab8c88949302962fe10869dd6ec44888d"><td class="mdescLeft">&#160;</td><td class="mdescRight">accessor to digital set  <a href="#ab8c88949302962fe10869dd6ec44888d">More...</a><br /></td></tr>
 <tr class="separator:ab8c88949302962fe10869dd6ec44888d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef64ee037e8d87cbcb5970ac25865a63"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1DigitalSetBoundary.html#aafdcfedc94ffc7a344d44e65ad267be7">KSpace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#aef64ee037e8d87cbcb5970ac25865a63">space</a> () const</td></tr>
 <tr class="separator:aef64ee037e8d87cbcb5970ac25865a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,12 +183,16 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a218e143ad9029c7022fda5bf561cbbd4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1DigitalSetBoundary.html#aafdcfedc94ffc7a344d44e65ad267be7">KSpace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#a218e143ad9029c7022fda5bf561cbbd4">myKSpace</a></td></tr>
+<tr class="memdesc:a218e143ad9029c7022fda5bf561cbbd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">a reference to the cellular space.  <a href="#a218e143ad9029c7022fda5bf561cbbd4">More...</a><br /></td></tr>
 <tr class="separator:a218e143ad9029c7022fda5bf561cbbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab36ae8ba82b3d8b5cbc938a30c3e085"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#ac3c2dcc16315946de17ce7592f6cc369">DigitalSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#aab36ae8ba82b3d8b5cbc938a30c3e085">myDigitalSet</a></td></tr>
+<tr class="memdesc:aab36ae8ba82b3d8b5cbc938a30c3e085"><td class="mdescLeft">&#160;</td><td class="mdescRight">a smart pointer to some digital set.  <a href="#aab36ae8ba82b3d8b5cbc938a30c3e085">More...</a><br /></td></tr>
 <tr class="separator:aab36ae8ba82b3d8b5cbc938a30c3e085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bd2a02a2db9417ac7decf04c79ba935"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#ae3ed1c3fb75435a39eb4d0e9380e1e99">Adjacency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#a3bd2a02a2db9417ac7decf04c79ba935">mySurfelAdjacency</a></td></tr>
+<tr class="memdesc:a3bd2a02a2db9417ac7decf04c79ba935"><td class="mdescLeft">&#160;</td><td class="mdescRight">the surfel adjacency used to determine neighbors.  <a href="#a3bd2a02a2db9417ac7decf04c79ba935">More...</a><br /></td></tr>
 <tr class="separator:a3bd2a02a2db9417ac7decf04c79ba935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf39dd1ae07e865da6e65b815f264475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#aaf0e7a32733758d52955187d967de6c1">SurfelStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSetBoundary.html#abf39dd1ae07e865da6e65b815f264475">mySurfels</a></td></tr>
+<tr class="memdesc:abf39dd1ae07e865da6e65b815f264475"><td class="mdescLeft">&#160;</td><td class="mdescRight">a vector storing all the surfels of the boundary.  <a href="#abf39dd1ae07e865da6e65b815f264475">More...</a><br /></td></tr>
 <tr class="separator:abf39dd1ae07e865da6e65b815f264475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1012,7 +1022,7 @@ template&lt;typename TKSpace, typename TDigitalSet&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:22 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:35 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

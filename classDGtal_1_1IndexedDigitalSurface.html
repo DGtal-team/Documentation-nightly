@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Represents a digital surface with the topology of its dual surface. Its aim is to mimick the standard <a class="el" href="classDGtal_1_1DigitalSurface.html" title="Aim: Represents a set of n-1-cells in a nD space, together with adjacency relation between these cell...">DigitalSurface</a>, but to optimize its traversal and topology services. The idea is simply to number all its vertices (ie surfels), arcs, and faces and to store its topology with an half-edge data structure. It is essentially a <a class="el" href="classDGtal_1_1PolygonalSurface.html" title="Aim: Represents a polygon mesh, i.e. a 2-dimensional combinatorial surface whose faces are (topologic...">PolygonalSurface</a> but with services specific to <a class="el" href="classDGtal_1_1DigitalSurface.html" title="Aim: Represents a set of n-1-cells in a nD space, together with adjacency relation between these cell...">DigitalSurface</a>, like a tracker, a DigitalSurfaceContainer, etc. In theory, it can replace a <a class="el" href="classDGtal_1_1DigitalSurface.html" title="Aim: Represents a set of n-1-cells in a nD space, together with adjacency relation between these cell...">DigitalSurface</a> in many algorithms, and is more efficient if you need to do a lot of traversal on it (like many k-ring operations).  
+ <a href="classDGtal_1_1IndexedDigitalSurface.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IndexedDigitalSurface_8h_source.html">DGtal/topology/IndexedDigitalSurface.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;:</div>
@@ -171,6 +174,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a82b152074e45447928fae1e554ddd521"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a82b152074e45447928fae1e554ddd521">IndexedDigitalSurface</a> (<a class="el" href="classDGtal_1_1ConstAlias.html">ConstAlias</a>&lt; <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#ab1af1137d83ed994a557599081f569a5">DigitalSurfaceContainer</a> &gt; surfContainer)</td></tr>
 <tr class="separator:a82b152074e45447928fae1e554ddd521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62dc9bcf08bd661a89ad3e4c778c46a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a62dc9bcf08bd661a89ad3e4c778c46a0">clear</a> ()</td></tr>
+<tr class="memdesc:a62dc9bcf08bd661a89ad3e4c778c46a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears everything.  <a href="#a62dc9bcf08bd661a89ad3e4c778c46a0">More...</a><br /></td></tr>
 <tr class="separator:a62dc9bcf08bd661a89ad3e4c778c46a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fcbfe76c710f36ed61627cc5717ad87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a9fcbfe76c710f36ed61627cc5717ad87">build</a> (<a class="el" href="classDGtal_1_1ConstAlias.html">ConstAlias</a>&lt; <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#ab1af1137d83ed994a557599081f569a5">DigitalSurfaceContainer</a> &gt; surfContainer)</td></tr>
 <tr class="separator:a9fcbfe76c710f36ed61627cc5717ad87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,26 +301,37 @@ Protected Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:acddcbd3c7e6ed55f91eb1b2fcf286f6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#acddcbd3c7e6ed55f91eb1b2fcf286f6b">isHEDSValid</a></td></tr>
+<tr class="memdesc:acddcbd3c7e6ed55f91eb1b2fcf286f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the half-edge structure has been created/updated.  <a href="#acddcbd3c7e6ed55f91eb1b2fcf286f6b">More...</a><br /></td></tr>
 <tr class="separator:acddcbd3c7e6ed55f91eb1b2fcf286f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2caaac34f6327e307e675d3d3a440365"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html">HalfEdgeDataStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a2caaac34f6327e307e675d3d3a440365">myHEDS</a></td></tr>
+<tr class="memdesc:a2caaac34f6327e307e675d3d3a440365"><td class="mdescLeft">&#160;</td><td class="mdescRight">The half-edge data structure that stores the topology of the mesh.  <a href="#a2caaac34f6327e307e675d3d3a440365">More...</a><br /></td></tr>
 <tr class="separator:a2caaac34f6327e307e675d3d3a440365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c667e6b813ddc84284724319358c284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html">CountedConstPtrOrConstPtr</a>&lt; <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#ab1af1137d83ed994a557599081f569a5">DigitalSurfaceContainer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a7c667e6b813ddc84284724319358c284">myContainer</a></td></tr>
+<tr class="memdesc:a7c667e6b813ddc84284724319358c284"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (secured or not) pointer to the associated digital surface container.  <a href="#a7c667e6b813ddc84284724319358c284">More...</a><br /></td></tr>
 <tr class="separator:a7c667e6b813ddc84284724319358c284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e1a820cd5ad0ee8e3b210e4a3148218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a662664d122b9079cd74c3fa21fe00ccd">PositionsStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a6e1a820cd5ad0ee8e3b210e4a3148218">myPositions</a></td></tr>
+<tr class="memdesc:a6e1a820cd5ad0ee8e3b210e4a3148218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the information for each Vertex.  <a href="#a6e1a820cd5ad0ee8e3b210e4a3148218">More...</a><br /></td></tr>
 <tr class="separator:a6e1a820cd5ad0ee8e3b210e4a3148218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5081f2dd0165e21d1d7d3663ce44bcd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a21209d66d34df52afd72eba032419979">PolygonalFacesStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a5081f2dd0165e21d1d7d3663ce44bcd4">myPolygonalFaces</a></td></tr>
+<tr class="memdesc:a5081f2dd0165e21d1d7d3663ce44bcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the polygonal faces.  <a href="#a5081f2dd0165e21d1d7d3663ce44bcd4">More...</a><br /></td></tr>
 <tr class="separator:a5081f2dd0165e21d1d7d3663ce44bcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2910882ca16c26be5994fc6628cfbb8"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#adeabd7c5be80947cf3f8da895df2ac11">SCell</a>, <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a6532b546054c55b09e248062784c648c">VertexIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#ae2910882ca16c26be5994fc6628cfbb8">mySurfel2VertexIndex</a></td></tr>
+<tr class="memdesc:ae2910882ca16c26be5994fc6628cfbb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping Surfel -&gt; VertexIndex.  <a href="#ae2910882ca16c26be5994fc6628cfbb8">More...</a><br /></td></tr>
 <tr class="separator:ae2910882ca16c26be5994fc6628cfbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76caf83ed7bee8464609d88272cee32b"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#adeabd7c5be80947cf3f8da895df2ac11">SCell</a>, <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#afc77a3bac1f7f77d2cdaf805420234d0">Arc</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a76caf83ed7bee8464609d88272cee32b">myLinel2Arc</a></td></tr>
+<tr class="memdesc:a76caf83ed7bee8464609d88272cee32b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping Linel -&gt; Arc.  <a href="#a76caf83ed7bee8464609d88272cee32b">More...</a><br /></td></tr>
 <tr class="separator:a76caf83ed7bee8464609d88272cee32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90a08a4b442641910706fb7b8c06178c"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#adeabd7c5be80947cf3f8da895df2ac11">SCell</a>, <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#ac60be6a7d58324acdf813405e950ed95">FaceIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a90a08a4b442641910706fb7b8c06178c">myPointel2FaceIndex</a></td></tr>
+<tr class="memdesc:a90a08a4b442641910706fb7b8c06178c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping Pointel -&gt; FaceIndex.  <a href="#a90a08a4b442641910706fb7b8c06178c">More...</a><br /></td></tr>
 <tr class="separator:a90a08a4b442641910706fb7b8c06178c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a022ff10ffe0ff691d3f9fa8370b4245f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#aa5e6526c932c78c6f629a450239df99c">SCellStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a022ff10ffe0ff691d3f9fa8370b4245f">myVertexIndex2Surfel</a></td></tr>
+<tr class="memdesc:a022ff10ffe0ff691d3f9fa8370b4245f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping VertexIndex -&gt; Surfel.  <a href="#a022ff10ffe0ff691d3f9fa8370b4245f">More...</a><br /></td></tr>
 <tr class="separator:a022ff10ffe0ff691d3f9fa8370b4245f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae42febf948d9059651bef4b7a0b5d47b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#aa5e6526c932c78c6f629a450239df99c">SCellStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#ae42febf948d9059651bef4b7a0b5d47b">myArc2Linel</a></td></tr>
+<tr class="memdesc:ae42febf948d9059651bef4b7a0b5d47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping Arc -&gt; Linel.  <a href="#ae42febf948d9059651bef4b7a0b5d47b">More...</a><br /></td></tr>
 <tr class="separator:ae42febf948d9059651bef4b7a0b5d47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf0bd01cdfa9cd46bb1dc0c2846570da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#aa5e6526c932c78c6f629a450239df99c">SCellStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#aaf0bd01cdfa9cd46bb1dc0c2846570da">myFaceIndex2Pointel</a></td></tr>
+<tr class="memdesc:aaf0bd01cdfa9cd46bb1dc0c2846570da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping FaceIndex -&gt; Pointel.  <a href="#aaf0bd01cdfa9cd46bb1dc0c2846570da">More...</a><br /></td></tr>
 <tr class="separator:aaf0bd01cdfa9cd46bb1dc0c2846570da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -3105,7 +3120,7 @@ template&lt;typename TDigitalSurfaceContainer&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:24 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:37 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -85,6 +85,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Model of CImageContainer implementing the association key&lt;-&gt;Value using a hash tree. This class provides a built-in iterator.  
+ <a href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ImageContainerByHashTree_8h_source.html">DGtal/images/ImageContainerByHashTree.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::experimental::ImageContainerByHashTree&lt; TDomain, TValue, THashKey &gt;:</div>
@@ -96,6 +99,7 @@ Collaboration diagram for DGtal::experimental::ImageContainerByHashTree&lt; TDom
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Iterator.html">Iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Built-in iterator on an HashTree. This iterator visits all node in the tree.  <a href="classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Iterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Node.html">Node</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,13 +133,16 @@ Public Types</h2></td></tr>
 <tr class="memitem:afe2ac34e54020daedb844159e55a6d9a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1DefaultImageRange.html">DefaultImageRange</a>&lt; <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#adee026bd6629a69003c92f97f110d75b">Self</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#afe2ac34e54020daedb844159e55a6d9a">Range</a></td></tr>
 <tr class="separator:afe2ac34e54020daedb844159e55a6d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac048976e68fccd490f8f6f7c03d53088"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SetValueIterator.html">SetValueIterator</a>&lt; <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#adee026bd6629a69003c92f97f110d75b">Self</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#ac048976e68fccd490f8f6f7c03d53088">OutputIterator</a></td></tr>
+<tr class="memdesc:ac048976e68fccd490f8f6f7c03d53088"><td class="mdescLeft">&#160;</td><td class="mdescRight">output iterator  <a href="#ac048976e68fccd490f8f6f7c03d53088">More...</a><br /></td></tr>
 <tr class="separator:ac048976e68fccd490f8f6f7c03d53088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a81cee7adf6d95043dcbba51cf2b57599"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a81cee7adf6d95043dcbba51cf2b57599">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CDomain.html">concepts::CDomain</a>&lt; TDomain &gt;))</td></tr>
+<tr class="memdesc:a81cee7adf6d95043dcbba51cf2b57599"><td class="mdescLeft">&#160;</td><td class="mdescRight">domain  <a href="#a81cee7adf6d95043dcbba51cf2b57599">More...</a><br /></td></tr>
 <tr class="separator:a81cee7adf6d95043dcbba51cf2b57599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3520974ce96538296f78ec743300ea39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a3520974ce96538296f78ec743300ea39">BOOST_STATIC_CONSTANT</a> (<a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a3c2a8ab481bb49c885c69d095e9cd688">Dimension</a>, dimension=Domain::dimension)</td></tr>
+<tr class="memdesc:a3520974ce96538296f78ec743300ea39"><td class="mdescLeft">&#160;</td><td class="mdescRight">static constants  <a href="#a3520974ce96538296f78ec743300ea39">More...</a><br /></td></tr>
 <tr class="separator:a3520974ce96538296f78ec743300ea39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80437f349a19302cb4b668c19f4cdaf1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a80437f349a19302cb4b668c19f4cdaf1">BOOST_STATIC_CONSTANT</a> (<a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a3c2a8ab481bb49c885c69d095e9cd688">Dimension</a>, <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>=Domain::dimension)</td></tr>
 <tr class="separator:a80437f349a19302cb4b668c19f4cdaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,8 +151,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ed2bae1104e153411cc48f489411c46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a8ed2bae1104e153411cc48f489411c46">BOOST_STATIC_CONSTANT</a> (<a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#ad221f359a3fde2fa6760a42f78469853">HashKey</a>, ROOT_KEY=static_cast&lt; THashKey &gt;(1))</td></tr>
 <tr class="separator:a8ed2bae1104e153411cc48f489411c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acda3d39f0565a16468c0a7a6fb9ab137"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#acda3d39f0565a16468c0a7a6fb9ab137">BOOST_STATIC_ASSERT</a> ((boost::is_same&lt; <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a567bb2033693f533543d1ac94ad87871">Domain</a>, <a class="el" href="classDGtal_1_1HyperRectDomain.html">HyperRectDomain</a>&lt; typename <a class="el" href="classDGtal_1_1HyperRectDomain.html#a82c74aceaaeb73f94a17164cf9ea22e4">Domain::Space</a> &gt; &gt;::value))</td></tr>
+<tr class="memdesc:acda3d39f0565a16468c0a7a6fb9ab137"><td class="mdescLeft">&#160;</td><td class="mdescRight">domain should be rectangular  <a href="#acda3d39f0565a16468c0a7a6fb9ab137">More...</a><br /></td></tr>
 <tr class="separator:acda3d39f0565a16468c0a7a6fb9ab137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d2d931d2d83fed23c08b958dcf10736"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a9d2d931d2d83fed23c08b958dcf10736">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CLabel.html">concepts::CLabel</a>&lt; TValue &gt;))</td></tr>
+<tr class="memdesc:a9d2d931d2d83fed23c08b958dcf10736"><td class="mdescLeft">&#160;</td><td class="mdescRight">values range  <a href="#a9d2d931d2d83fed23c08b958dcf10736">More...</a><br /></td></tr>
 <tr class="separator:a9d2d931d2d83fed23c08b958dcf10736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69bb1bd7edb29f45863bfaaf23cd5316"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a69bb1bd7edb29f45863bfaaf23cd5316">ImageContainerByHashTree</a> (const unsigned int hashKeySize, const unsigned int depth, const <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#ad58e693966d752f5a6c9f99615336aab">Value</a> defaultValue)</td></tr>
 <tr class="separator:a69bb1bd7edb29f45863bfaaf23cd5316"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,6 +236,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a70055e47374ca5bb1f79bdcea4ff5bd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a1cfc691c5a90c932d77b20e8476d9924">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a70055e47374ca5bb1f79bdcea4ff5bd1">myOrigin</a></td></tr>
 <tr class="separator:a70055e47374ca5bb1f79bdcea4ff5bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3154eebfee073b83fcab230b70b73ab0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Morton.html">Morton</a>&lt; <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#ad221f359a3fde2fa6760a42f78469853">HashKey</a>, <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a1cfc691c5a90c932d77b20e8476d9924">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a3154eebfee073b83fcab230b70b73ab0">myMorton</a></td></tr>
+<tr class="memdesc:a3154eebfee073b83fcab230b70b73ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The morton code computer.  <a href="#a3154eebfee073b83fcab230b70b73ab0">More...</a><br /></td></tr>
 <tr class="separator:a3154eebfee073b83fcab230b70b73ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -2440,7 +2450,7 @@ template&lt;typename TDomain, typename TValue, typename THashKey = typename DGta
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:31 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:45 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

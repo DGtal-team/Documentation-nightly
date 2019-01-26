@@ -29,6 +29,7 @@ var searchData=
   ['point2shapepredicatecomparator_3c_20t_2c_20true_2c_20false_20_3e',['Point2ShapePredicateComparator&lt; T, true, false &gt;',['../structDGtal_1_1functors_1_1Point2ShapePredicateComparator_3_01T_00_01true_00_01false_01_4.html',1,'DGtal::functors']]],
   ['point2shapepredicatecomparator_3c_20t_2c_20true_2c_20true_20_3e',['Point2ShapePredicateComparator&lt; T, true, true &gt;',['../structDGtal_1_1functors_1_1Point2ShapePredicateComparator_3_01T_00_01true_00_01true_01_4.html',1,'DGtal::functors']]],
   ['pointfunctorfrompointpredicateanddomain',['PointFunctorFromPointPredicateAndDomain',['../structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html',1,'DGtal::functors']]],
+  ['pointfunctorholder',['PointFunctorHolder',['../classDGtal_1_1functors_1_1PointFunctorHolder.html',1,'DGtal::functors']]],
   ['pointfunctorpredicate',['PointFunctorPredicate',['../structDGtal_1_1functors_1_1PointFunctorPredicate.html',1,'DGtal::functors']]],
   ['pointlistreader',['PointListReader',['../structDGtal_1_1PointListReader.html',1,'DGtal']]],
   ['pointvaluecompare',['PointValueCompare',['../classDGtal_1_1detail_1_1PointValueCompare.html',1,'DGtal::detail']]],

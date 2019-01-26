@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Implementation of the linear in time Power map construction.  
+ <a href="classDGtal_1_1PowerMap.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="PowerMap_8h_source.html">DGtal/geometry/volumes/distance/PowerMap.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::PowerMap&lt; TWeightImage, TPowerSeparableMetric, TImageContainer &gt;:</div>
@@ -101,6 +104,7 @@ Collaboration diagram for DGtal::PowerMap&lt; TWeightImage, TPowerSeparableMetri
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a96d646a0a331d6d6c3c2075bf4fa1a44"><td class="memItemLeft" align="right" valign="top">typedef TWeightImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a96d646a0a331d6d6c3c2075bf4fa1a44">WeightImage</a></td></tr>
+<tr class="memdesc:a96d646a0a331d6d6c3c2075bf4fa1a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the distance image types.  <a href="#a96d646a0a331d6d6c3c2075bf4fa1a44">More...</a><br /></td></tr>
 <tr class="separator:a96d646a0a331d6d6c3c2075bf4fa1a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a257e5df4f9d27a7039d21056f3fa7e48"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">TWeightImage::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a257e5df4f9d27a7039d21056f3fa7e48">Weight</a></td></tr>
 <tr class="separator:a257e5df4f9d27a7039d21056f3fa7e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,18 +121,25 @@ Public Types</h2></td></tr>
 <tr class="memitem:a154b8445cda9ed4ddf56e1a6a76a6ac1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html#a6409a51203e0edc907d523fb19ed7e41">Space::Point::Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a154b8445cda9ed4ddf56e1a6a76a6ac1">Abscissa</a></td></tr>
 <tr class="separator:a154b8445cda9ed4ddf56e1a6a76a6ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79d414a31dc132259b5e54b522610172"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer::Domain&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a79d414a31dc132259b5e54b522610172">Domain</a></td></tr>
+<tr class="memdesc:a79d414a31dc132259b5e54b522610172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the underlying domain type.  <a href="#a79d414a31dc132259b5e54b522610172">More...</a><br /></td></tr>
 <tr class="separator:a79d414a31dc132259b5e54b522610172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f9a991047d9982a7a8756ecc40eb2f6"><td class="memItemLeft" align="right" valign="top">typedef TPowerSeparableMetric&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a9f9a991047d9982a7a8756ecc40eb2f6">PowerSeparableMetric</a></td></tr>
+<tr class="memdesc:a9f9a991047d9982a7a8756ecc40eb2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">We construct the type associated to the separable metric.  <a href="#a9f9a991047d9982a7a8756ecc40eb2f6">More...</a><br /></td></tr>
 <tr class="separator:a9f9a991047d9982a7a8756ecc40eb2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a779e0caa8a63c4bab0ff690fcc5f349a"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a779e0caa8a63c4bab0ff690fcc5f349a">OutputImage</a></td></tr>
+<tr class="memdesc:a779e0caa8a63c4bab0ff690fcc5f349a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of resulting image.  <a href="#a779e0caa8a63c4bab0ff690fcc5f349a">More...</a><br /></td></tr>
 <tr class="separator:a779e0caa8a63c4bab0ff690fcc5f349a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9709b5265c02cee71eac25450840ec31"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PowerMap.html#afbb4b996c2aeda9c27dc9966a8be2bd0">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a9709b5265c02cee71eac25450840ec31">Value</a></td></tr>
+<tr class="memdesc:a9709b5265c02cee71eac25450840ec31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the image model value type.  <a href="#a9709b5265c02cee71eac25450840ec31">More...</a><br /></td></tr>
 <tr class="separator:a9709b5265c02cee71eac25450840ec31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf6cb66f822ab3e3445c4eec2ecb1117"><td class="memItemLeft" align="right" valign="top">typedef OutputImage::ConstRange&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#acf6cb66f822ab3e3445c4eec2ecb1117">ConstRange</a></td></tr>
+<tr class="memdesc:acf6cb66f822ab3e3445c4eec2ecb1117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the image value type.  <a href="#acf6cb66f822ab3e3445c4eec2ecb1117">More...</a><br /></td></tr>
 <tr class="separator:acf6cb66f822ab3e3445c4eec2ecb1117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d3c9d27987c7fb243b00cea82ff62d7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PowerMap.html">PowerMap</a>&lt; TWeightImage, TPowerSeparableMetric, TImageContainer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a9d3c9d27987c7fb243b00cea82ff62d7">Self</a></td></tr>
+<tr class="memdesc:a9d3c9d27987c7fb243b00cea82ff62d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self type.  <a href="#a9d3c9d27987c7fb243b00cea82ff62d7">More...</a><br /></td></tr>
 <tr class="separator:a9d3c9d27987c7fb243b00cea82ff62d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6080659aeb708d3389688c2197bddef9"><td class="memItemLeft" align="right" valign="top">typedef std::array&lt; bool, <a class="el" href="classDGtal_1_1SpaceND.html#aae87d3efb1051dbdeac28e159781ba92">Space::dimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a6080659aeb708d3389688c2197bddef9">PeriodicitySpec</a></td></tr>
+<tr class="memdesc:a6080659aeb708d3389688c2197bddef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodicity specification type.  <a href="#a6080659aeb708d3389688c2197bddef9">More...</a><br /></td></tr>
 <tr class="separator:a6080659aeb708d3389688c2197bddef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -177,12 +188,16 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a7a2b6c3d46b7d2ce543e23ca9214a9b2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1PowerMap.html#a9f9a991047d9982a7a8756ecc40eb2f6">PowerSeparableMetric</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a7a2b6c3d46b7d2ce543e23ca9214a9b2">myMetricPtr</a></td></tr>
+<tr class="memdesc:a7a2b6c3d46b7d2ce543e23ca9214a9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the separable metric instance.  <a href="#a7a2b6c3d46b7d2ce543e23ca9214a9b2">More...</a><br /></td></tr>
 <tr class="separator:a7a2b6c3d46b7d2ce543e23ca9214a9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7d67983dbc2b57f525d89afdab28e75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1PowerMap.html#a779e0caa8a63c4bab0ff690fcc5f349a">OutputImage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#af7d67983dbc2b57f525d89afdab28e75">myImagePtr</a></td></tr>
+<tr class="memdesc:af7d67983dbc2b57f525d89afdab28e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power map image.  <a href="#af7d67983dbc2b57f525d89afdab28e75">More...</a><br /></td></tr>
 <tr class="separator:af7d67983dbc2b57f525d89afdab28e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53c8e7b60ae8403b6d6443031c2d843e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1PowerMap.html#a96d646a0a331d6d6c3c2075bf4fa1a44">WeightImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a53c8e7b60ae8403b6d6443031c2d843e">myWeightImagePtr</a></td></tr>
+<tr class="memdesc:a53c8e7b60ae8403b6d6443031c2d843e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the point predicate.  <a href="#a53c8e7b60ae8403b6d6443031c2d843e">More...</a><br /></td></tr>
 <tr class="separator:a53c8e7b60ae8403b6d6443031c2d843e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab88a65d68234c110e3fb7e7e7b39cda3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1PowerMap.html#a6080659aeb708d3389688c2197bddef9">PeriodicitySpec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#ab88a65d68234c110e3fb7e7e7b39cda3">myPeriodicitySpec</a></td></tr>
+<tr class="memdesc:ab88a65d68234c110e3fb7e7e7b39cda3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodicity along each dimension.  <a href="#ab88a65d68234c110e3fb7e7e7b39cda3">More...</a><br /></td></tr>
 <tr class="separator:ab88a65d68234c110e3fb7e7e7b39cda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -201,16 +216,22 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a699cc5d667d25f9ed87f0dd94007c84e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1PowerMap.html#a79d414a31dc132259b5e54b522610172">Domain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a699cc5d667d25f9ed87f0dd94007c84e">myDomainPtr</a></td></tr>
+<tr class="memdesc:a699cc5d667d25f9ed87f0dd94007c84e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the computation domain.  <a href="#a699cc5d667d25f9ed87f0dd94007c84e">More...</a><br /></td></tr>
 <tr class="separator:a699cc5d667d25f9ed87f0dd94007c84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad01ae43fa416d0d3183e14b54da075c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1PowerMap.html#af990cf6d4360d8374d51c70848bdf332">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#ad01ae43fa416d0d3183e14b54da075c3">myLowerBoundCopy</a></td></tr>
+<tr class="memdesc:ad01ae43fa416d0d3183e14b54da075c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the image lower bound.  <a href="#ad01ae43fa416d0d3183e14b54da075c3">More...</a><br /></td></tr>
 <tr class="separator:ad01ae43fa416d0d3183e14b54da075c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1155d2479efdff7934c4219c932de6ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1PowerMap.html#af990cf6d4360d8374d51c70848bdf332">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a1155d2479efdff7934c4219c932de6ee">myUpperBoundCopy</a></td></tr>
+<tr class="memdesc:a1155d2479efdff7934c4219c932de6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the image lower bound.  <a href="#a1155d2479efdff7934c4219c932de6ee">More...</a><br /></td></tr>
 <tr class="separator:a1155d2479efdff7934c4219c932de6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac39decf388e6c7798817d93d441626f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1PowerMap.html#af990cf6d4360d8374d51c70848bdf332">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#ac39decf388e6c7798817d93d441626f5">myInfinity</a></td></tr>
+<tr class="memdesc:ac39decf388e6c7798817d93d441626f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value to act as a +infinity value.  <a href="#ac39decf388e6c7798817d93d441626f5">More...</a><br /></td></tr>
 <tr class="separator:ac39decf388e6c7798817d93d441626f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1451da6b3e4c2521b5e53ee5b0c78bbb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1PowerMap.html#adeba35bd3e623aefbb7153a2333c84e3">Dimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a1451da6b3e4c2521b5e53ee5b0c78bbb">myPeriodicityIndex</a></td></tr>
+<tr class="memdesc:a1451da6b3e4c2521b5e53ee5b0c78bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the periodic dimensions.  <a href="#a1451da6b3e4c2521b5e53ee5b0c78bbb">More...</a><br /></td></tr>
 <tr class="separator:a1451da6b3e4c2521b5e53ee5b0c78bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14eaec125300d260ae924e60e054147b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1PowerMap.html#af990cf6d4360d8374d51c70848bdf332">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PowerMap.html#a14eaec125300d260ae924e60e054147b">myDomainExtent</a></td></tr>
+<tr class="memdesc:a14eaec125300d260ae924e60e054147b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domain extent.  <a href="#a14eaec125300d260ae924e60e054147b">More...</a><br /></td></tr>
 <tr class="separator:a14eaec125300d260ae924e60e054147b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1643,7 +1664,7 @@ template&lt;typename TWeightImage, typename TPowerSeparableMetric, typename TIma
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:27 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:41 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

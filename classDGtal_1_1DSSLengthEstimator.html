@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: a model of CGlobalCurveEstimator that segments the digital curve into DSS and computes the length of the resulting (not uniquely defined) polygon.  
+ <a href="classDGtal_1_1DSSLengthEstimator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DSSLengthEstimator_8h_source.html">DGtal/geometry/curves/estimation/DSSLengthEstimator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::DSSLengthEstimator&lt; TConstIterator &gt;:</div>
@@ -135,10 +138,13 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ace3a00427972b1bad2e41fef20249a23"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DSSLengthEstimator.html#ace3a00427972b1bad2e41fef20249a23">myH</a></td></tr>
+<tr class="memdesc:ace3a00427972b1bad2e41fef20249a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grid size.  <a href="#ace3a00427972b1bad2e41fef20249a23">More...</a><br /></td></tr>
 <tr class="separator:ace3a00427972b1bad2e41fef20249a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc4d2a391b4e1ccf497ea76a393604c9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1DSSLengthEstimator.html#a441ffed23e8202c74ef678df37eb5829">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DSSLengthEstimator.html#adc4d2a391b4e1ccf497ea76a393604c9">myRep</a></td></tr>
+<tr class="memdesc:adc4d2a391b4e1ccf497ea76a393604c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">polygonal representation of the input  <a href="#adc4d2a391b4e1ccf497ea76a393604c9">More...</a><br /></td></tr>
 <tr class="separator:adc4d2a391b4e1ccf497ea76a393604c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdbf20304c2b6bd8e78053507a4a23c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DSSLengthEstimator.html#abdbf20304c2b6bd8e78053507a4a23c4">myIsInitBefore</a></td></tr>
+<tr class="memdesc:abdbf20304c2b6bd8e78053507a4a23c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to make sure that <a class="el" href="classDGtal_1_1DSSLengthEstimator.html#ab5cfcd30ff09ba8940adf370e3fb7092">init()</a> has been called before <a class="el" href="classDGtal_1_1DSSLengthEstimator.html#a8a4d1e326254c9354daf861a8af6bfae">eval()</a>.  <a href="#abdbf20304c2b6bd8e78053507a4a23c4">More...</a><br /></td></tr>
 <tr class="separator:abdbf20304c2b6bd8e78053507a4a23c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -670,7 +676,7 @@ template&lt;typename TConstIterator&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:23 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

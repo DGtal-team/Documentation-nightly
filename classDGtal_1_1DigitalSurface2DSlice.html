@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Represents a 2-dimensional slice in a <a class="el" href="classDGtal_1_1DigitalSurface.html" title="Aim: Represents a set of n-1-cells in a nD space, together with adjacency relation between these cell...">DigitalSurface</a>. In a sense, it is a 4-connected contour, open or not. To be valid, it must be connected to some digital surface and a starting surfel.  
+ <a href="classDGtal_1_1DigitalSurface2DSlice.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DigitalSurface2DSlice_8h_source.html">DGtal/topology/DigitalSurface2DSlice.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::DigitalSurface2DSlice&lt; TDigitalSurfaceTracker &gt;:</div>
@@ -130,6 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa92f2b2baf212b9dbe3d62f3bfed4296"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface2DSlice.html#aa92f2b2baf212b9dbe3d62f3bfed4296">init</a> (<a class="el" href="classDGtal_1_1DigitalSurface2DSlice.html#a53c1ebfd70d7abf8d89971c2b2714a8b">DigitalSurfaceTracker</a> *tracker, <a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> i)</td></tr>
 <tr class="separator:aa92f2b2baf212b9dbe3d62f3bfed4296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e90e7dd57b9c42cc0ba37847a20df39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1DigitalSurface2DSlice.html#a3c4867ed3d1b6712f1a1e3570dae3b98">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface2DSlice.html#a0e90e7dd57b9c42cc0ba37847a20df39">size</a> () const</td></tr>
+<tr class="memdesc:a0e90e7dd57b9c42cc0ba37847a20df39"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of surfels of this slice.  <a href="#a0e90e7dd57b9c42cc0ba37847a20df39">More...</a><br /></td></tr>
 <tr class="separator:a0e90e7dd57b9c42cc0ba37847a20df39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3990479fada5df3c4393aa42395d6bf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface2DSlice.html#a3990479fada5df3c4393aa42395d6bf6">isClosed</a> () const</td></tr>
 <tr class="separator:a3990479fada5df3c4393aa42395d6bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,8 +177,10 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ac771add171e3c08eebba54bb13694ab1"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="classDGtal_1_1DigitalSurface2DSlice.html#ac93063202a66da3de98dd50e4fdfa27b">Surfel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface2DSlice.html#ac771add171e3c08eebba54bb13694ab1">mySurfels</a></td></tr>
+<tr class="memdesc:ac771add171e3c08eebba54bb13694ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The container that stores the surfels of this slice.  <a href="#ac771add171e3c08eebba54bb13694ab1">More...</a><br /></td></tr>
 <tr class="separator:ac771add171e3c08eebba54bb13694ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc5c44f927404bd4f455cb99a7185db3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface2DSlice.html#acc5c44f927404bd4f455cb99a7185db3">myIsClosed</a></td></tr>
+<tr class="memdesc:acc5c44f927404bd4f455cb99a7185db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells if the slice is closed (true) or open (false).  <a href="#acc5c44f927404bd4f455cb99a7185db3">More...</a><br /></td></tr>
 <tr class="separator:acc5c44f927404bd4f455cb99a7185db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c35bc617090ade1396e520a1f15a3df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1DigitalSurface2DSlice.html#ae1145cec81eb12a11fff969d8ccc78c9">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurface2DSlice.html#a8c35bc617090ade1396e520a1f15a3df">myStart</a></td></tr>
 <tr class="separator:a8c35bc617090ade1396e520a1f15a3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1024,7 +1030,7 @@ template&lt;typename TDigitalSurfaceTracker &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:22 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

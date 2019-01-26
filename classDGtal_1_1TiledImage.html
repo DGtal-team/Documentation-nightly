@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: implements a tiled image from a "bigger/original" one from an ImageFactory.  
+ <a href="classDGtal_1_1TiledImage.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TiledImage_8h_source.html">DGtal/images/TiledImage.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;:</div>
@@ -101,6 +104,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a2c23ed7d22570cddf4db8154a6568428"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1TiledImage.html">TiledImage</a>&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#a2c23ed7d22570cddf4db8154a6568428">Self</a></td></tr>
 <tr class="separator:a2c23ed7d22570cddf4db8154a6568428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadd6a8427462daf6b2c7b7c79081c102"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#aadd6a8427462daf6b2c7b7c79081c102">ImageContainer</a></td></tr>
+<tr class="memdesc:aadd6a8427462daf6b2c7b7c79081c102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types copied from the container.  <a href="#aadd6a8427462daf6b2c7b7c79081c102">More...</a><br /></td></tr>
 <tr class="separator:aadd6a8427462daf6b2c7b7c79081c102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6a80ac6619abea14e324b69139a6a49"><td class="memItemLeft" align="right" valign="top">typedef ImageContainer::Domain&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#ae6a80ac6619abea14e324b69139a6a49">Domain</a></td></tr>
 <tr class="separator:ae6a80ac6619abea14e324b69139a6a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,6 +115,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a500cded5bbd54feaddab12a60ba2ca51"><td class="memItemLeft" align="right" valign="top">typedef ImageContainer::Difference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#a500cded5bbd54feaddab12a60ba2ca51">Difference</a></td></tr>
 <tr class="separator:a500cded5bbd54feaddab12a60ba2ca51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecdef3756de1c2bd916a254668a1174e"><td class="memItemLeft" align="right" valign="top">typedef TImageFactory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#aecdef3756de1c2bd916a254668a1174e">ImageFactory</a></td></tr>
+<tr class="memdesc:aecdef3756de1c2bd916a254668a1174e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types.  <a href="#aecdef3756de1c2bd916a254668a1174e">More...</a><br /></td></tr>
 <tr class="separator:aecdef3756de1c2bd916a254668a1174e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5121de9a39aac9b8b712ee941c9aa4e1"><td class="memItemLeft" align="right" valign="top">typedef ImageFactory::OutputImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#a5121de9a39aac9b8b712ee941c9aa4e1">OutputImage</a></td></tr>
 <tr class="separator:a5121de9a39aac9b8b712ee941c9aa4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,6 +143,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6ae3884dc29bd11ab422e6abfd16de1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#ae6ae3884dc29bd11ab422e6abfd16de1">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImage.html">concepts::CImage</a>&lt; TImageContainer &gt;))</td></tr>
+<tr class="memdesc:ae6ae3884dc29bd11ab422e6abfd16de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking concepts.  <a href="#ae6ae3884dc29bd11ab422e6abfd16de1">More...</a><br /></td></tr>
 <tr class="separator:ae6ae3884dc29bd11ab422e6abfd16de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4db137c2836b632f08eb05a03d50f3f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#a4db137c2836b632f08eb05a03d50f3f5">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImageFactory.html">concepts::CImageFactory</a>&lt; TImageFactory &gt;))</td></tr>
 <tr class="separator:a4db137c2836b632f08eb05a03d50f3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,20 +225,27 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a69f22e8a0a18ce4e8eae2dd1818a508d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1HyperRectDomain.html#a31c2aa3ab1a46b011f40940dd073be4d">Domain::Integer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#a69f22e8a0a18ce4e8eae2dd1818a508d">myN</a></td></tr>
+<tr class="memdesc:a69f22e8a0a18ce4e8eae2dd1818a508d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of tiles per dimension.  <a href="#a69f22e8a0a18ce4e8eae2dd1818a508d">More...</a><br /></td></tr>
 <tr class="separator:a69f22e8a0a18ce4e8eae2dd1818a508d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab72ababcaf4e41ac40b880898d768071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TiledImage.html#a1b8b739df1c9540567c11efe9638784e">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#ab72ababcaf4e41ac40b880898d768071">mySize</a></td></tr>
+<tr class="memdesc:ab72ababcaf4e41ac40b880898d768071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of a tile (for each dimension)  <a href="#ab72ababcaf4e41ac40b880898d768071">More...</a><br /></td></tr>
 <tr class="separator:ab72ababcaf4e41ac40b880898d768071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3826bf1262807349cd1444290dd22915"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TiledImage.html#aecdef3756de1c2bd916a254668a1174e">ImageFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#a3826bf1262807349cd1444290dd22915">myImageFactory</a></td></tr>
+<tr class="memdesc:a3826bf1262807349cd1444290dd22915"><td class="mdescLeft">&#160;</td><td class="mdescRight">ImageFactory pointer.  <a href="#a3826bf1262807349cd1444290dd22915">More...</a><br /></td></tr>
 <tr class="separator:a3826bf1262807349cd1444290dd22915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6318f6c967b1284ce4c4a1de58b369a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TiledImage.html#a9dd9dc8b8c093bd3f6e876d808376ae2">MyImageCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#a6318f6c967b1284ce4c4a1de58b369a6">myImageCache</a></td></tr>
+<tr class="memdesc:a6318f6c967b1284ce4c4a1de58b369a6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1ImageCache.html" title="Aim: implements an images cache with &#39;read and write&#39; policies. ">ImageCache</a> pointer.  <a href="#a6318f6c967b1284ce4c4a1de58b369a6">More...</a><br /></td></tr>
 <tr class="separator:a6318f6c967b1284ce4c4a1de58b369a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcd672593215e0cfd81ca3fd46bfc6b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TiledImage.html#a1b8b739df1c9540567c11efe9638784e">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#adcd672593215e0cfd81ca3fd46bfc6b0">m_lowerBound</a></td></tr>
+<tr class="memdesc:adcd672593215e0cfd81ca3fd46bfc6b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">domain lower and upper bound  <a href="#adcd672593215e0cfd81ca3fd46bfc6b0">More...</a><br /></td></tr>
 <tr class="separator:adcd672593215e0cfd81ca3fd46bfc6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0532995f27d1d77276eec5560216bd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TiledImage.html#a1b8b739df1c9540567c11efe9638784e">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#aa0532995f27d1d77276eec5560216bd6">m_upperBound</a></td></tr>
 <tr class="separator:aa0532995f27d1d77276eec5560216bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae0f67aff519a2fecce290e98076ecd"><td class="memItemLeft" align="right" valign="top">TImageCacheReadPolicy *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#a1ae0f67aff519a2fecce290e98076ecd">myReadPolicy</a></td></tr>
+<tr class="memdesc:a1ae0f67aff519a2fecce290e98076ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">TImageCacheReadPolicy pointer.  <a href="#a1ae0f67aff519a2fecce290e98076ecd">More...</a><br /></td></tr>
 <tr class="separator:a1ae0f67aff519a2fecce290e98076ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fa84313458d1fd38f534c76563af7a0"><td class="memItemLeft" align="right" valign="top">TImageCacheWritePolicy *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage.html#a7fa84313458d1fd38f534c76563af7a0">myWritePolicy</a></td></tr>
+<tr class="memdesc:a7fa84313458d1fd38f534c76563af7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">TImageCacheWritePolicy pointer.  <a href="#a7fa84313458d1fd38f534c76563af7a0">More...</a><br /></td></tr>
 <tr class="separator:a7fa84313458d1fd38f534c76563af7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -2278,7 +2291,7 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:29 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:42 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

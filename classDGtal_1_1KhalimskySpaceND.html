@@ -86,6 +86,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex, whose cells are defined as an array of integers. The topology of the cells is defined by the parity of the coordinates (even: closed, odd: open).  
+ <a href="classDGtal_1_1KhalimskySpaceND.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="KhalimskySpaceND_8h_source.html">DGtal/topology/KhalimskySpaceND.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;:</div>
@@ -115,10 +118,13 @@ Public Types</h2></td></tr>
 <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#ab1e57d8bd06fd2d995555de82b39d959ab8d2b20d7c51004e774183848cf35931">OPEN</a>, 
 <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#ab1e57d8bd06fd2d995555de82b39d959ae5819c27512f541df22534e93f0ea146">PERIODIC</a>
  }</td></tr>
+<tr class="memdesc:ab1e57d8bd06fd2d995555de82b39d959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boundaries closure type.  <a href="classDGtal_1_1KhalimskySpaceND.html#ab1e57d8bd06fd2d995555de82b39d959">More...</a><br /></td></tr>
 <tr class="separator:ab1e57d8bd06fd2d995555de82b39d959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1101d4adbc2a87db33afcb42209b6f04"><td class="memItemLeft" align="right" valign="top">typedef TInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a1101d4adbc2a87db33afcb42209b6f04">Integer</a></td></tr>
+<tr class="memdesc:a1101d4adbc2a87db33afcb42209b6f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arithmetic ring induced by (+,-,*) and Integer numbers.  <a href="#a1101d4adbc2a87db33afcb42209b6f04">More...</a><br /></td></tr>
 <tr class="separator:a1101d4adbc2a87db33afcb42209b6f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93973417f7b05e40cb4c121eeb43f5a5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDGtal_1_1NumberTraits.html">NumberTraits</a>&lt; <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a1101d4adbc2a87db33afcb42209b6f04">Integer</a> &gt;::UnsignedVersion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a93973417f7b05e40cb4c121eeb43f5a5">Size</a></td></tr>
+<tr class="memdesc:a93973417f7b05e40cb4c121eeb43f5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type used to represent sizes in the digital space.  <a href="#a93973417f7b05e40cb4c121eeb43f5a5">More...</a><br /></td></tr>
 <tr class="separator:a93973417f7b05e40cb4c121eeb43f5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2215bc032ca075e029b33eaf129feec"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SpaceND.html">SpaceND</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a1101d4adbc2a87db33afcb42209b6f04">Integer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskySpaceND.html#ab2215bc032ca075e029b33eaf129feec">Space</a></td></tr>
 <tr class="separator:ab2215bc032ca075e029b33eaf129feec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,10 +158,13 @@ Public Types</h2></td></tr>
 <tr class="memitem:abe54e4a551cce2d23fc06bd047eee2dd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#ab679c5a12996903e3d705da3a3260789">AnyCellCollection</a>&lt; <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a7d26c7464cdc9dbc684472a204136128">SCell</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskySpaceND.html#abe54e4a551cce2d23fc06bd047eee2dd">SCells</a></td></tr>
 <tr class="separator:abe54e4a551cce2d23fc06bd047eee2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadff976a31587821f9a7e9f280c9700a"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#af87a8fec76262bec1a3b33881fa38f1f">Cell</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskySpaceND.html#aadff976a31587821f9a7e9f280c9700a">CellSet</a></td></tr>
+<tr class="memdesc:aadff976a31587821f9a7e9f280c9700a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred type for defining a set of Cell(s).  <a href="#aadff976a31587821f9a7e9f280c9700a">More...</a><br /></td></tr>
 <tr class="separator:aadff976a31587821f9a7e9f280c9700a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6cf442a7d0a46d254f9fbdd7237ab11"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a7d26c7464cdc9dbc684472a204136128">SCell</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskySpaceND.html#ae6cf442a7d0a46d254f9fbdd7237ab11">SCellSet</a></td></tr>
+<tr class="memdesc:ae6cf442a7d0a46d254f9fbdd7237ab11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred type for defining a set of SCell(s).  <a href="#ae6cf442a7d0a46d254f9fbdd7237ab11">More...</a><br /></td></tr>
 <tr class="separator:ae6cf442a7d0a46d254f9fbdd7237ab11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a02413be83a0f38f23ed5cb45c2bcc4"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a7d26c7464cdc9dbc684472a204136128">SCell</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a0a02413be83a0f38f23ed5cb45c2bcc4">SurfelSet</a></td></tr>
+<tr class="memdesc:a0a02413be83a0f38f23ed5cb45c2bcc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred type for defining a set of surfels (always signed cells).  <a href="#a0a02413be83a0f38f23ed5cb45c2bcc4">More...</a><br /></td></tr>
 <tr class="separator:a0a02413be83a0f38f23ed5cb45c2bcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -457,6 +466,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:a74b6da20a6f13875b15429896406de00"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceNDHelper.html">KhalimskySpaceNDHelper</a>&lt; <a class="el" href="classDGtal_1_1KhalimskySpaceND.html">KhalimskySpaceND</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, TInteger &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a74b6da20a6f13875b15429896406de00">Helper</a></td></tr>
+<tr class="memdesc:a74b6da20a6f13875b15429896406de00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Features basic operations on coordinates, especially for periodic dimensions.  <a href="#a74b6da20a6f13875b15429896406de00">More...</a><br /></td></tr>
 <tr class="separator:a74b6da20a6f13875b15429896406de00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -6135,7 +6145,7 @@ template&lt;Dimension dim, typename TInteger&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:25 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:38 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

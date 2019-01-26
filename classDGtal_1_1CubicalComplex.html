@@ -86,6 +86,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class represents an arbitrary cubical complex living in some Khalimsky space. Cubical complexes are sets of cells of different dimensions related together with incidence relations. Two cells in a cubical complex are incident if and only if they are incident in the surrounding Khalimsky space. In other words, cubical complexes are defined here as subsets of Khalimsky spaces.  
+ <a href="classDGtal_1_1CubicalComplex.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="CubicalComplex_8h_source.html">DGtal/topology/CubicalComplex.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;:</div>
@@ -115,34 +118,48 @@ Public Types</h2></td></tr>
 <a class="el" href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60ba801d1a99c453142a837990851cb97056">Free</a>, 
 <a class="el" href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60ba021bd3f986f7643daafce35e8eb7b04c">Any</a>
  }</td></tr>
+<tr class="memdesc:ace655803b6d1411c4b04b106b8cae60b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible cell types within a complex.  <a href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60b">More...</a><br /></td></tr>
 <tr class="separator:ace655803b6d1411c4b04b106b8cae60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d8368c00be3d72f43b552e044af6476"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1CubicalComplex.html">CubicalComplex</a>&lt; TKSpace, TCellContainer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a4d8368c00be3d72f43b552e044af6476">Self</a></td></tr>
 <tr class="separator:a4d8368c00be3d72f43b552e044af6476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d2018bde3a694fa1cca39f5965019e0"><td class="memItemLeft" align="right" valign="top">typedef TKSpace&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a2d2018bde3a694fa1cca39f5965019e0">KSpace</a></td></tr>
+<tr class="memdesc:a2d2018bde3a694fa1cca39f5965019e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the cellular grid space.  <a href="#a2d2018bde3a694fa1cca39f5965019e0">More...</a><br /></td></tr>
 <tr class="separator:a2d2018bde3a694fa1cca39f5965019e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e4ee4fcfb7554c7c4cf173f6fc8bd46"><td class="memItemLeft" align="right" valign="top">typedef TCellContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a1e4ee4fcfb7554c7c4cf173f6fc8bd46">CellContainer</a></td></tr>
+<tr class="memdesc:a1e4ee4fcfb7554c7c4cf173f6fc8bd46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for storing cells, an associative container Cell -&gt; Data.  <a href="#a1e4ee4fcfb7554c7c4cf173f6fc8bd46">More...</a><br /></td></tr>
 <tr class="separator:a1e4ee4fcfb7554c7c4cf173f6fc8bd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1b8a91a1a03ef5f289b01fc2248185"><td class="memItemLeft" align="right" valign="top">typedef CellContainer::mapped_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#acc1b8a91a1a03ef5f289b01fc2248185">Data</a></td></tr>
+<tr class="memdesc:acc1b8a91a1a03ef5f289b01fc2248185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of data associated to each cell.  <a href="#acc1b8a91a1a03ef5f289b01fc2248185">More...</a><br /></td></tr>
 <tr class="separator:acc1b8a91a1a03ef5f289b01fc2248185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b5fbc72524f77bf6420a19fd830a9c9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a1101d4adbc2a87db33afcb42209b6f04">KSpace::Integer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a0b5fbc72524f77bf6420a19fd830a9c9">Integer</a></td></tr>
+<tr class="memdesc:a0b5fbc72524f77bf6420a19fd830a9c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for integers in the space.  <a href="#a0b5fbc72524f77bf6420a19fd830a9c9">More...</a><br /></td></tr>
 <tr class="separator:a0b5fbc72524f77bf6420a19fd830a9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40726f15df8d1f8f5cd777efb002275d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#af87a8fec76262bec1a3b33881fa38f1f">KSpace::Cell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a></td></tr>
+<tr class="memdesc:a40726f15df8d1f8f5cd777efb002275d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for a cell in the space.  <a href="#a40726f15df8d1f8f5cd777efb002275d">More...</a><br /></td></tr>
 <tr class="separator:a40726f15df8d1f8f5cd777efb002275d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabf7cb1cd7ab96ca6cf6305d89624869"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#afbb82ddbe915a3a4a4f6ecea1ad873ce">KSpace::Cells</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#aabf7cb1cd7ab96ca6cf6305d89624869">Cells</a></td></tr>
+<tr class="memdesc:aabf7cb1cd7ab96ca6cf6305d89624869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for a sequence of cells in the space.  <a href="#aabf7cb1cd7ab96ca6cf6305d89624869">More...</a><br /></td></tr>
 <tr class="separator:aabf7cb1cd7ab96ca6cf6305d89624869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a363b58cb2fbc5e4ac05a570902fda973"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#ab2215bc032ca075e029b33eaf129feec">KSpace::Space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a363b58cb2fbc5e4ac05a570902fda973">Space</a></td></tr>
+<tr class="memdesc:a363b58cb2fbc5e4ac05a570902fda973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the digital space.  <a href="#a363b58cb2fbc5e4ac05a570902fda973">More...</a><br /></td></tr>
 <tr class="separator:a363b58cb2fbc5e4ac05a570902fda973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8389e2e1b45c05818bc5a4093cf1b1d8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a93973417f7b05e40cb4c121eeb43f5a5">KSpace::Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a8389e2e1b45c05818bc5a4093cf1b1d8">Size</a></td></tr>
+<tr class="memdesc:a8389e2e1b45c05818bc5a4093cf1b1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for a number of elements.  <a href="#a8389e2e1b45c05818bc5a4093cf1b1d8">More...</a><br /></td></tr>
 <tr class="separator:a8389e2e1b45c05818bc5a4093cf1b1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fd7287b446f7a6bd4de94953cfe2e08"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a70d1b8007551de58a7b8ccee328bed00">KSpace::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a8fd7287b446f7a6bd4de94953cfe2e08">Point</a></td></tr>
+<tr class="memdesc:a8fd7287b446f7a6bd4de94953cfe2e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for a point in the digital space.  <a href="#a8fd7287b446f7a6bd4de94953cfe2e08">More...</a><br /></td></tr>
 <tr class="separator:a8fd7287b446f7a6bd4de94953cfe2e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacfb110b13fa0dc9446b5fdd8a8d759c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#ae43e64aef19d01b248cdece71825e1b6">KSpace::DirIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#aacfb110b13fa0dc9446b5fdd8a8d759c">DirIterator</a></td></tr>
+<tr class="memdesc:aacfb110b13fa0dc9446b5fdd8a8d759c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for iterating over cell directions.  <a href="#aacfb110b13fa0dc9446b5fdd8a8d759c">More...</a><br /></td></tr>
 <tr class="separator:aacfb110b13fa0dc9446b5fdd8a8d759c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad28e1fbb8258551bc0889f9747409758"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1CubicalComplex.html#a1e4ee4fcfb7554c7c4cf173f6fc8bd46">CellContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#ad28e1fbb8258551bc0889f9747409758">CellMap</a></td></tr>
+<tr class="memdesc:ad28e1fbb8258551bc0889f9747409758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for storing cells, an associative container Cell -&gt; Data.  <a href="#ad28e1fbb8258551bc0889f9747409758">More...</a><br /></td></tr>
 <tr class="separator:ad28e1fbb8258551bc0889f9747409758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad81cf19b21560476a0c62f4f16abbb12"><td class="memItemLeft" align="right" valign="top">typedef CellMap::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#ad81cf19b21560476a0c62f4f16abbb12">CellMapConstIterator</a></td></tr>
+<tr class="memdesc:ad81cf19b21560476a0c62f4f16abbb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Const iterator for visiting type CellMap.  <a href="#ad81cf19b21560476a0c62f4f16abbb12">More...</a><br /></td></tr>
 <tr class="separator:ad81cf19b21560476a0c62f4f16abbb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6e8cc82489babad5a1cd7596a02ac14"><td class="memItemLeft" align="right" valign="top">typedef CellMap::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#ab6e8cc82489babad5a1cd7596a02ac14">CellMapIterator</a></td></tr>
+<tr class="memdesc:ab6e8cc82489babad5a1cd7596a02ac14"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structDGtal_1_1CubicalComplex_1_1Iterator.html">Iterator</a> for visiting type CellMap.  <a href="#ab6e8cc82489babad5a1cd7596a02ac14">More...</a><br /></td></tr>
 <tr class="separator:ab6e8cc82489babad5a1cd7596a02ac14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e7a72bfdf7ee0380987af2b78b32e34"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDGtal_1_1CubicalComplex_1_1ConstIterator.html">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a6e7a72bfdf7ee0380987af2b78b32e34">const_iterator</a></td></tr>
 <tr class="separator:a6e7a72bfdf7ee0380987af2b78b32e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,14 +193,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2844cba38339fdce9301cc682a143542"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a2844cba38339fdce9301cc682a143542">BOOST_STATIC_ASSERT</a> ((boost::is_same&lt; typename <a class="el" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">TKSpace::Cell</a>, typename CellContainer::key_type &gt;::value))</td></tr>
 <tr class="separator:a2844cba38339fdce9301cc682a143542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76e28970f9964f95390b4a111265b6f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a76e28970f9964f95390b4a111265b6f0">BOOST_STATIC_CONSTANT</a> (<a class="el" href="namespaceDGtal.html#a27c59126488e9c545120667959d2fc4e">uint32_t</a>, REMOVED=0x10000000)</td></tr>
+<tr class="memdesc:a76e28970f9964f95390b4a111265b6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag Used to indicate in a cell data that this cell has been (virtually) removed.  <a href="#a76e28970f9964f95390b4a111265b6f0">More...</a><br /></td></tr>
 <tr class="separator:a76e28970f9964f95390b4a111265b6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a206bbbb2a648e97e0a5ed4a3a017df04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a206bbbb2a648e97e0a5ed4a3a017df04">BOOST_STATIC_CONSTANT</a> (<a class="el" href="namespaceDGtal.html#a27c59126488e9c545120667959d2fc4e">uint32_t</a>, COLLAPSIBLE=0x20000000)</td></tr>
+<tr class="memdesc:a206bbbb2a648e97e0a5ed4a3a017df04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag Used to indicate in a cell data that this cell is collapsible.  <a href="#a206bbbb2a648e97e0a5ed4a3a017df04">More...</a><br /></td></tr>
 <tr class="separator:a206bbbb2a648e97e0a5ed4a3a017df04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1b468bd8c8b4317500da59afab60a31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#ab1b468bd8c8b4317500da59afab60a31">BOOST_STATIC_CONSTANT</a> (<a class="el" href="namespaceDGtal.html#a27c59126488e9c545120667959d2fc4e">uint32_t</a>, FIXED=0x40000000)</td></tr>
+<tr class="memdesc:ab1b468bd8c8b4317500da59afab60a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag Used to indicate in a cell data that this cell is fixed.  <a href="#ab1b468bd8c8b4317500da59afab60a31">More...</a><br /></td></tr>
 <tr class="separator:ab1b468bd8c8b4317500da59afab60a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ae0562cc3ab02e78ab0aeb6a03fcca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#ae1ae0562cc3ab02e78ab0aeb6a03fcca">BOOST_STATIC_CONSTANT</a> (<a class="el" href="namespaceDGtal.html#a27c59126488e9c545120667959d2fc4e">uint32_t</a>, USER1=0x80000000)</td></tr>
+<tr class="memdesc:ae1ae0562cc3ab02e78ab0aeb6a03fcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">User flag for a cell.  <a href="#ae1ae0562cc3ab02e78ab0aeb6a03fcca">More...</a><br /></td></tr>
 <tr class="separator:ae1ae0562cc3ab02e78ab0aeb6a03fcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f51ff15cf61a90e58756070ccdf520b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a2f51ff15cf61a90e58756070ccdf520b">BOOST_STATIC_CONSTANT</a> (<a class="el" href="namespaceDGtal.html#a27c59126488e9c545120667959d2fc4e">uint32_t</a>, VALUE=0x0fffffff)</td></tr>
+<tr class="memdesc:a2f51ff15cf61a90e58756070ccdf520b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value for a cell.  <a href="#a2f51ff15cf61a90e58756070ccdf520b">More...</a><br /></td></tr>
 <tr class="separator:a2f51ff15cf61a90e58756070ccdf520b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae01ffb5e84521f2be86ce0b225110df2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#ae01ffb5e84521f2be86ce0b225110df2">~CubicalComplex</a> ()</td></tr>
 <tr class="separator:ae01ffb5e84521f2be86ce0b225110df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,6 +385,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ac4a7b9f7a80e6bd5415cd0792b5f5797"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#ac4a7b9f7a80e6bd5415cd0792b5f5797">dimension</a> = KSpace::dimension</td></tr>
+<tr class="memdesc:ac4a7b9f7a80e6bd5415cd0792b5f5797"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimension of the embedding space.  <a href="#ac4a7b9f7a80e6bd5415cd0792b5f5797">More...</a><br /></td></tr>
 <tr class="separator:ac4a7b9f7a80e6bd5415cd0792b5f5797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -373,6 +396,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a36aabda05634cc3a7fee6bff85f84b31"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1CubicalComplex.html#a2d2018bde3a694fa1cca39f5965019e0">KSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a36aabda05634cc3a7fee6bff85f84b31">myKSpace</a></td></tr>
+<tr class="memdesc:a36aabda05634cc3a7fee6bff85f84b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Khalimsky space in which lives the cubical complex.  <a href="#a36aabda05634cc3a7fee6bff85f84b31">More...</a><br /></td></tr>
 <tr class="separator:a36aabda05634cc3a7fee6bff85f84b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8df3c6ef5479b5902812c30ca7221b70"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1CubicalComplex.html#ad28e1fbb8258551bc0889f9747409758">CellMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a8df3c6ef5479b5902812c30ca7221b70">myCells</a></td></tr>
 <tr class="separator:a8df3c6ef5479b5902812c30ca7221b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4417,7 +4441,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:21 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:35 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

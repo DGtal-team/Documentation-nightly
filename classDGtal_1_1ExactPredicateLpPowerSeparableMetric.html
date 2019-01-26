@@ -82,23 +82,33 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: implements weighted separable l_p metrics with exact predicates.  
+ <a href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ExactPredicateLpPowerSeparableMetric_8h_source.html">DGtal/geometry/volumes/distance/ExactPredicateLpPowerSeparableMetric.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a750e9d187fd4e0a48c2637952a25d1c1"><td class="memItemLeft" align="right" valign="top">typedef TSpace&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#a750e9d187fd4e0a48c2637952a25d1c1">Space</a></td></tr>
+<tr class="memdesc:a750e9d187fd4e0a48c2637952a25d1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the space type.  <a href="#a750e9d187fd4e0a48c2637952a25d1c1">More...</a><br /></td></tr>
 <tr class="separator:a750e9d187fd4e0a48c2637952a25d1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69e5fb1d595de86dbb53e6c5177dbeae"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SpaceND.html#a34beb5f81d0848e8ae393f39a1422ebc">Space::Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#a69e5fb1d595de86dbb53e6c5177dbeae">Point</a></td></tr>
+<tr class="memdesc:a69e5fb1d595de86dbb53e6c5177dbeae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for points.  <a href="#a69e5fb1d595de86dbb53e6c5177dbeae">More...</a><br /></td></tr>
 <tr class="separator:a69e5fb1d595de86dbb53e6c5177dbeae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac6c783be7b4efe54d18a0001847a62"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html#a6409a51203e0edc907d523fb19ed7e41">Point::Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#a4ac6c783be7b4efe54d18a0001847a62">Abscissa</a></td></tr>
+<tr class="memdesc:a4ac6c783be7b4efe54d18a0001847a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for points.  <a href="#a4ac6c783be7b4efe54d18a0001847a62">More...</a><br /></td></tr>
 <tr class="separator:a4ac6c783be7b4efe54d18a0001847a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af4ce67df1ea932fe7c37f0867a5a53"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1SpaceND.html#ae194f4dfc28465ea14b437c066e69604">Space::Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#a6af4ce67df1ea932fe7c37f0867a5a53">Vector</a></td></tr>
+<tr class="memdesc:a6af4ce67df1ea932fe7c37f0867a5a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for vectors.  <a href="#a6af4ce67df1ea932fe7c37f0867a5a53">More...</a><br /></td></tr>
 <tr class="separator:a6af4ce67df1ea932fe7c37f0867a5a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e2600140382bc1ab94241d6ec413c09"><td class="memItemLeft" align="right" valign="top">typedef TPromoted&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#a1e2600140382bc1ab94241d6ec413c09">Promoted</a></td></tr>
+<tr class="memdesc:a1e2600140382bc1ab94241d6ec413c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for internal distance values.  <a href="#a1e2600140382bc1ab94241d6ec413c09">More...</a><br /></td></tr>
 <tr class="separator:a1e2600140382bc1ab94241d6ec413c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27a5df51d05d9aaa1b175a73dfd271a0"><td class="memItemLeft" align="right" valign="top">typedef TPromoted&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#a27a5df51d05d9aaa1b175a73dfd271a0">Weight</a></td></tr>
+<tr class="memdesc:a27a5df51d05d9aaa1b175a73dfd271a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for internal distance values.  <a href="#a27a5df51d05d9aaa1b175a73dfd271a0">More...</a><br /></td></tr>
 <tr class="separator:a27a5df51d05d9aaa1b175a73dfd271a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac12f9d7bba1723989610464bf098338"><td class="memItemLeft" align="right" valign="top">typedef TPromoted&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#aac12f9d7bba1723989610464bf098338">Value</a></td></tr>
+<tr class="memdesc:aac12f9d7bba1723989610464bf098338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for Value (alias)  <a href="#aac12f9d7bba1723989610464bf098338">More...</a><br /></td></tr>
 <tr class="separator:aac12f9d7bba1723989610464bf098338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -807,7 +817,7 @@ template&lt;typename TSpace , DGtal::uint32_t p, typename TPromoted  = DGtal::in
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:23 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

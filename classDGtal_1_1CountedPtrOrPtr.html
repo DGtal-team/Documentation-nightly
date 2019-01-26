@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Smart or simple pointer on <em>T</em>. It can be a smart pointer based on reference counts or a simple pointer on <em>T</em> depending either on a boolean value given at construction or on the constructor used. In the first case, we will call this pointer object <b>smart</b>, otherwise we will call it <b>simple</b>.  
+ <a href="classDGtal_1_1CountedPtrOrPtr.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="CountedPtr_8h_source.html">DGtal/base/CountedPtr.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::CountedPtrOrPtr&lt; T &gt;:</div>
@@ -95,6 +98,7 @@ Inheritance diagram for DGtal::CountedPtrOrPtr&lt; T &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:afddfcf65ea5405d9bc72f4fb502e3ab6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; T &gt;::<a class="el" href="classDGtal_1_1CountedPtrOrPtr.html#afddfcf65ea5405d9bc72f4fb502e3ab6">Counter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CountedPtrOrPtr.html#afddfcf65ea5405d9bc72f4fb502e3ab6">Counter</a></td></tr>
+<tr class="memdesc:afddfcf65ea5405d9bc72f4fb502e3ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The counter is the same as <a class="el" href="classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. ">CountedPtr</a>.  <a href="#afddfcf65ea5405d9bc72f4fb502e3ab6">More...</a><br /></td></tr>
 <tr class="separator:afddfcf65ea5405d9bc72f4fb502e3ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -152,6 +156,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae35620658583407f5495a6558c1df0c9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CountedPtrOrPtr.html#ae35620658583407f5495a6558c1df0c9">myAny</a></td></tr>
 <tr class="separator:ae35620658583407f5495a6558c1df0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fc16a8b1521a20b9dbe2eb04007b1cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CountedPtrOrPtr.html#a6fc16a8b1521a20b9dbe2eb04007b1cb">myIsCountedPtr</a></td></tr>
+<tr class="memdesc:a6fc16a8b1521a20b9dbe2eb04007b1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If <code>true</code>, 'this' pointer object is <b>smart</b>, otherwise it is <b>simple</b>.  <a href="#a6fc16a8b1521a20b9dbe2eb04007b1cb">More...</a><br /></td></tr>
 <tr class="separator:a6fc16a8b1521a20b9dbe2eb04007b1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -1111,7 +1116,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:21 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:35 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

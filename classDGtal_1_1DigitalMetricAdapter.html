@@ -83,19 +83,27 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: simple adapter class which adapts any models of <a class="el" href="structDGtal_1_1concepts_1_1CMetricSpace.html" title="Aim: defines the concept of metric spaces. ">concepts::CMetricSpace</a> to a model of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalMetricSpace.html" title="Aim: defines the concept of digital metric spaces. ">concepts::CDigitalMetricSpace</a>.  
+ <a href="classDGtal_1_1DigitalMetricAdapter.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DigitalMetricAdapter_8h_source.html">DGtal/geometry/volumes/distance/DigitalMetricAdapter.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a06e08e272bdd1d254914f085f399f29c"><td class="memItemLeft" align="right" valign="top">typedef TMetric&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalMetricAdapter.html#a06e08e272bdd1d254914f085f399f29c">Metric</a></td></tr>
+<tr class="memdesc:a06e08e272bdd1d254914f085f399f29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input metric type.  <a href="#a06e08e272bdd1d254914f085f399f29c">More...</a><br /></td></tr>
 <tr class="separator:a06e08e272bdd1d254914f085f399f29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cf0a8700790abb3e554e0eabb9619c3"><td class="memItemLeft" align="right" valign="top">typedef TInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalMetricAdapter.html#a2cf0a8700790abb3e554e0eabb9619c3">Value</a></td></tr>
+<tr class="memdesc:a2cf0a8700790abb3e554e0eabb9619c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values are integer numbers.  <a href="#a2cf0a8700790abb3e554e0eabb9619c3">More...</a><br /></td></tr>
 <tr class="separator:a2cf0a8700790abb3e554e0eabb9619c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a907a0a829a822eb82c54266e17ad0d02"><td class="memItemLeft" align="right" valign="top">typedef Metric::Point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalMetricAdapter.html#a907a0a829a822eb82c54266e17ad0d02">Point</a></td></tr>
+<tr class="memdesc:a907a0a829a822eb82c54266e17ad0d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point type.  <a href="#a907a0a829a822eb82c54266e17ad0d02">More...</a><br /></td></tr>
 <tr class="separator:a907a0a829a822eb82c54266e17ad0d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a616f830147e4da45ee4575477db477a1"><td class="memItemLeft" align="right" valign="top">typedef Metric::Space&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalMetricAdapter.html#a616f830147e4da45ee4575477db477a1">Space</a></td></tr>
+<tr class="memdesc:a616f830147e4da45ee4575477db477a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Space type.  <a href="#a616f830147e4da45ee4575477db477a1">More...</a><br /></td></tr>
 <tr class="separator:a616f830147e4da45ee4575477db477a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c4d973aa88af7bfa31920cae8afc049"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1DigitalMetricAdapter.html#a2cf0a8700790abb3e554e0eabb9619c3">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalMetricAdapter.html#a1c4d973aa88af7bfa31920cae8afc049">RawValue</a></td></tr>
+<tr class="memdesc:a1c4d973aa88af7bfa31920cae8afc049"><td class="mdescLeft">&#160;</td><td class="mdescRight">RawValue type.  <a href="#a1c4d973aa88af7bfa31920cae8afc049">More...</a><br /></td></tr>
 <tr class="separator:a1c4d973aa88af7bfa31920cae8afc049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -744,7 +752,7 @@ template&lt;typename TMetric , typename TInteger  = typename TMetric::Space::Int
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:22 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:35 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

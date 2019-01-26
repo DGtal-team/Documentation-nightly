@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Represents a polygon mesh, i.e. a 2-dimensional combinatorial surface whose faces are (topologically at least) simple polygons. The topology is stored with a half-edge data structure. This object stored the positions of vertices in space. If you need further data attached to the surface, you may use property maps (see <code><a class="el" href="classDGtal_1_1PolygonalSurface.html#a2f4a7d1871b0a4b487b01c2b12ddc671">PolygonalSurface::makeVertexMap</a></code>).  
+ <a href="classDGtal_1_1PolygonalSurface.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="PolygonalSurface_8h_source.html">DGtal/shapes/PolygonalSurface.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::PolygonalSurface&lt; TPoint &gt;:</div>
@@ -155,6 +158,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a291de460e7016ff8206ba70390bc222b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PolygonalSurface.html#a291de460e7016ff8206ba70390bc222b">PolygonalSurface</a> (<a class="el" href="classDGtal_1_1Clone.html">Clone</a>&lt; <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html">HalfEdgeDataStructure</a> &gt; <a class="el" href="classDGtal_1_1PolygonalSurface.html#ad4f1d379b476b9d27d19cc3d6bf8a45b">heds</a>, <a class="el" href="classDGtal_1_1Clone.html">Clone</a>&lt; <a class="el" href="classDGtal_1_1PolygonalSurface.html#a1a4db03aa808f5b42fca4ef0a7cdc491">PositionsStorage</a> &gt; pos)</td></tr>
 <tr class="separator:a291de460e7016ff8206ba70390bc222b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfc839d442563c3d3d576537cc4bb1db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PolygonalSurface.html#adfc839d442563c3d3d576537cc4bb1db">clear</a> ()</td></tr>
+<tr class="memdesc:adfc839d442563c3d3d576537cc4bb1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears everything.  <a href="#adfc839d442563c3d3d576537cc4bb1db">More...</a><br /></td></tr>
 <tr class="separator:adfc839d442563c3d3d576537cc4bb1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a791af6dbf32880c9e147a3145b20574c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PolygonalSurface.html#a791af6dbf32880c9e147a3145b20574c">build</a> ()</td></tr>
 <tr class="separator:a791af6dbf32880c9e147a3145b20574c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,12 +273,16 @@ Protected Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a2a108f62ab13d8c570f02365bbfa47b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PolygonalSurface.html#a2a108f62ab13d8c570f02365bbfa47b4">isHEDSValid</a></td></tr>
+<tr class="memdesc:a2a108f62ab13d8c570f02365bbfa47b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the half-edge structure has been created/updated.  <a href="#a2a108f62ab13d8c570f02365bbfa47b4">More...</a><br /></td></tr>
 <tr class="separator:a2a108f62ab13d8c570f02365bbfa47b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3be7fc08be50e26f2463fe6ad7e0ff8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html">HalfEdgeDataStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PolygonalSurface.html#aa3be7fc08be50e26f2463fe6ad7e0ff8">myHEDS</a></td></tr>
+<tr class="memdesc:aa3be7fc08be50e26f2463fe6ad7e0ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The half-edge data structure that stores the topology of the mesh.  <a href="#aa3be7fc08be50e26f2463fe6ad7e0ff8">More...</a><br /></td></tr>
 <tr class="separator:aa3be7fc08be50e26f2463fe6ad7e0ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b29a735ddb06f28bd5495b2ebd8bba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1PolygonalSurface.html#a1a4db03aa808f5b42fca4ef0a7cdc491">PositionsStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PolygonalSurface.html#a88b29a735ddb06f28bd5495b2ebd8bba">myPositions</a></td></tr>
+<tr class="memdesc:a88b29a735ddb06f28bd5495b2ebd8bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the information for each Vertex.  <a href="#a88b29a735ddb06f28bd5495b2ebd8bba">More...</a><br /></td></tr>
 <tr class="separator:a88b29a735ddb06f28bd5495b2ebd8bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65523c4439dd7ff9c728ae78061eca4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1PolygonalSurface.html#a78c3ba0badd6c83c68aeb9f940e2d763">PolygonalFacesStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PolygonalSurface.html#a65523c4439dd7ff9c728ae78061eca4f">myPolygonalFaces</a></td></tr>
+<tr class="memdesc:a65523c4439dd7ff9c728ae78061eca4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the polygonal faces.  <a href="#a65523c4439dd7ff9c728ae78061eca4f">More...</a><br /></td></tr>
 <tr class="separator:a65523c4439dd7ff9c728ae78061eca4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -2433,7 +2441,7 @@ template&lt;typename TPoint&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:26 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:40 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

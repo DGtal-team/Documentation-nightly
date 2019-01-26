@@ -83,30 +83,42 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class provides methods to compute the eigen decomposition of a matrix. Its objective is to replace a specialized matrix library when none are available.  
+ <a href="classDGtal_1_1EigenDecomposition.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="EigenDecomposition_8h_source.html">DGtal/math/linalg/EigenDecomposition.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a510beec4c8ebd5dd33ab7356767a2452"><td class="memItemLeft" align="right" valign="top">typedef TComponent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#a510beec4c8ebd5dd33ab7356767a2452">Component</a></td></tr>
+<tr class="memdesc:a510beec4c8ebd5dd33ab7356767a2452"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of each coefficient, i.e. scalar  <a href="#a510beec4c8ebd5dd33ab7356767a2452">More...</a><br /></td></tr>
 <tr class="separator:a510beec4c8ebd5dd33ab7356767a2452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa527a4ac1e85920df798c070d3a6ff03"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1EigenDecomposition.html#a510beec4c8ebd5dd33ab7356767a2452">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#aa527a4ac1e85920df798c070d3a6ff03">Quantity</a></td></tr>
+<tr class="memdesc:aa527a4ac1e85920df798c070d3a6ff03"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of scalar (i.e. Component)  <a href="#aa527a4ac1e85920df798c070d3a6ff03">More...</a><br /></td></tr>
 <tr class="separator:aa527a4ac1e85920df798c070d3a6ff03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9df3109918d0022c8e349da4b49384db"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html">PointVector</a>&lt; <a class="el" href="classDGtal_1_1EigenDecomposition.html#a93a3c14680da33d103d1638c60514ba1">N</a>, <a class="el" href="classDGtal_1_1EigenDecomposition.html#a510beec4c8ebd5dd33ab7356767a2452">Component</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#a9df3109918d0022c8e349da4b49384db">RowVector</a></td></tr>
+<tr class="memdesc:a9df3109918d0022c8e349da4b49384db"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type for row vectors (1xN)  <a href="#a9df3109918d0022c8e349da4b49384db">More...</a><br /></td></tr>
 <tr class="separator:a9df3109918d0022c8e349da4b49384db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a652b4d3ce630d8c334f1861371f305f8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html">PointVector</a>&lt; <a class="el" href="classDGtal_1_1EigenDecomposition.html#ad22cd2d37b1bebef0977e9ccb2195cec">M</a>, <a class="el" href="classDGtal_1_1EigenDecomposition.html#a510beec4c8ebd5dd33ab7356767a2452">Component</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#a652b4d3ce630d8c334f1861371f305f8">ColumnVector</a></td></tr>
+<tr class="memdesc:a652b4d3ce630d8c334f1861371f305f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type for column vectors (Nx1)  <a href="#a652b4d3ce630d8c334f1861371f305f8">More...</a><br /></td></tr>
 <tr class="separator:a652b4d3ce630d8c334f1861371f305f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91d5ee16b4852008f8631762e478de1b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1EigenDecomposition.html#a652b4d3ce630d8c334f1861371f305f8">ColumnVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#a91d5ee16b4852008f8631762e478de1b">Vector</a></td></tr>
+<tr class="memdesc:a91d5ee16b4852008f8631762e478de1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">an alias for column vectors (Nx1)  <a href="#a91d5ee16b4852008f8631762e478de1b">More...</a><br /></td></tr>
 <tr class="separator:a91d5ee16b4852008f8631762e478de1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac97abb6784d15959845c64ec214ffd7c"><td class="memItemLeft" align="right" valign="top">typedef TMatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#ac97abb6784d15959845c64ec214ffd7c">Matrix</a></td></tr>
+<tr class="memdesc:ac97abb6784d15959845c64ec214ffd7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type for matrices (NxN)  <a href="#ac97abb6784d15959845c64ec214ffd7c">More...</a><br /></td></tr>
 <tr class="separator:ac97abb6784d15959845c64ec214ffd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3abbcf466076dbb368f1c2e730a7fdb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#aa3abbcf466076dbb368f1c2e730a7fdb">tridiagonalize</a> (<a class="el" href="classDGtal_1_1EigenDecomposition.html#ac97abb6784d15959845c64ec214ffd7c">Matrix</a> &amp;V, <a class="el" href="classDGtal_1_1EigenDecomposition.html#a91d5ee16b4852008f8631762e478de1b">Vector</a> &amp;d, <a class="el" href="classDGtal_1_1EigenDecomposition.html#a91d5ee16b4852008f8631762e478de1b">Vector</a> &amp;e)</td></tr>
+<tr class="memdesc:aa3abbcf466076dbb368f1c2e730a7fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduces a real symmetric matrix to a symmetric tridiagonal matrix using and accumulating orthogonal similarity transformations.  <a href="#aa3abbcf466076dbb368f1c2e730a7fdb">More...</a><br /></td></tr>
 <tr class="separator:aa3abbcf466076dbb368f1c2e730a7fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab7e3661f9590577e15388d796efbbad"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#aab7e3661f9590577e15388d796efbbad">decomposeQL</a> (<a class="el" href="classDGtal_1_1EigenDecomposition.html#ac97abb6784d15959845c64ec214ffd7c">Matrix</a> &amp;V, <a class="el" href="classDGtal_1_1EigenDecomposition.html#a91d5ee16b4852008f8631762e478de1b">Vector</a> &amp;d, <a class="el" href="classDGtal_1_1EigenDecomposition.html#a91d5ee16b4852008f8631762e478de1b">Vector</a> e)</td></tr>
+<tr class="memdesc:aab7e3661f9590577e15388d796efbbad"><td class="mdescLeft">&#160;</td><td class="mdescRight">finds the eigenvalues and eigenvectors of a symmetric tridiagonal matrix by the QL method. The eigenvectors of a full symmetric matric can also be found if <a class="el" href="classDGtal_1_1EigenDecomposition.html#aa3abbcf466076dbb368f1c2e730a7fdb" title="Reduces a real symmetric matrix to a symmetric tridiagonal matrix using and accumulating orthogonal s...">tridiagonalize()</a> has been used to reduce this full matrix to tridiagonal form.  <a href="#aab7e3661f9590577e15388d796efbbad">More...</a><br /></td></tr>
 <tr class="separator:aab7e3661f9590577e15388d796efbbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a062ae590027b118c107dac78f0e9773c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#a062ae590027b118c107dac78f0e9773c">getEigenDecomposition</a> (const <a class="el" href="classDGtal_1_1EigenDecomposition.html#ac97abb6784d15959845c64ec214ffd7c">Matrix</a> &amp;matrix, <a class="el" href="classDGtal_1_1EigenDecomposition.html#ac97abb6784d15959845c64ec214ffd7c">Matrix</a> &amp;eigenVectors, <a class="el" href="classDGtal_1_1EigenDecomposition.html#a91d5ee16b4852008f8631762e478de1b">Vector</a> &amp;eigenValues)</td></tr>
+<tr class="memdesc:a062ae590027b118c107dac78f0e9773c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute both eigen vectors and eigen values from an input matrix.  <a href="#a062ae590027b118c107dac78f0e9773c">More...</a><br /></td></tr>
 <tr class="separator:a062ae590027b118c107dac78f0e9773c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -116,8 +128,10 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a93a3c14680da33d103d1638c60514ba1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">DGtal::Dimension</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#a93a3c14680da33d103d1638c60514ba1">N</a> = TN</td></tr>
 <tr class="separator:a93a3c14680da33d103d1638c60514ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac505bc0b881487e455e64ef52dde29ca"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">DGtal::Dimension</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#ac505bc0b881487e455e64ef52dde29ca">dimension</a> = TN</td></tr>
+<tr class="memdesc:ac505bc0b881487e455e64ef52dde29ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usual static constant for dimension.  <a href="#ac505bc0b881487e455e64ef52dde29ca">More...</a><br /></td></tr>
 <tr class="separator:ac505bc0b881487e455e64ef52dde29ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92604f92cf9251af0603d0c7c8562959"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">DGtal::Dimension</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1EigenDecomposition.html#a92604f92cf9251af0603d0c7c8562959">dimensionMinusOne</a> = TN - 1</td></tr>
+<tr class="memdesc:a92604f92cf9251af0603d0c7c8562959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static constant for dimension - 1.  <a href="#a92604f92cf9251af0603d0c7c8562959">More...</a><br /></td></tr>
 <tr class="separator:a92604f92cf9251af0603d0c7c8562959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -617,7 +631,7 @@ template&lt;DGtal::Dimension TN, typename TComponent , typename TMatrix  = Simpl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:23 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

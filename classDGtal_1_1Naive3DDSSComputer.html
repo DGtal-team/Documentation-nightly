@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Dynamic recognition of a 3d-digital straight segment (DSS)  
+ <a href="classDGtal_1_1Naive3DDSSComputer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Naive3DDSSComputer_8h_source.html">DGtal/geometry/curves/Naive3DDSSComputer.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::Naive3DDSSComputer&lt; TIterator, TInteger, connectivity &gt;:</div>
@@ -94,30 +97,43 @@ Collaboration diagram for DGtal::Naive3DDSSComputer&lt; TIterator, TInteger, con
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a39fe93a235d1fb8b809d45d148442785"><td class="memItemLeft" align="right" valign="top">typedef TInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a39fe93a235d1fb8b809d45d148442785">Integer</a></td></tr>
+<tr class="memdesc:a39fe93a235d1fb8b809d45d148442785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of integer, devoted to remainders (and intercepts)  <a href="#a39fe93a235d1fb8b809d45d148442785">More...</a><br /></td></tr>
 <tr class="separator:a39fe93a235d1fb8b809d45d148442785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b7d6c5dd897896127d202809d92bfe"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a39fe93a235d1fb8b809d45d148442785">Integer</a>, <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a39fe93a235d1fb8b809d45d148442785">Integer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a02b7d6c5dd897896127d202809d92bfe">Quotient</a></td></tr>
+<tr class="memdesc:a02b7d6c5dd897896127d202809d92bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type which represent quotient of two integers first/second.  <a href="#a02b7d6c5dd897896127d202809d92bfe">More...</a><br /></td></tr>
 <tr class="separator:a02b7d6c5dd897896127d202809d92bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac66b7475e5eee1235d0bc403f84e8ffe"><td class="memItemLeft" align="right" valign="top">typedef TIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ac66b7475e5eee1235d0bc403f84e8ffe">ConstIterator</a></td></tr>
+<tr class="memdesc:ac66b7475e5eee1235d0bc403f84e8ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of iterator, at least readable and forward.  <a href="#ac66b7475e5eee1235d0bc403f84e8ffe">More...</a><br /></td></tr>
 <tr class="separator:ac66b7475e5eee1235d0bc403f84e8ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9db3134d984712973bab7e0d2aab057"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html">Naive3DDSSComputer</a>&lt; <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ac66b7475e5eee1235d0bc403f84e8ffe">ConstIterator</a>, TInteger, connectivity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ae9db3134d984712973bab7e0d2aab057">Self</a></td></tr>
+<tr class="memdesc:ae9db3134d984712973bab7e0d2aab057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self type.  <a href="#ae9db3134d984712973bab7e0d2aab057">More...</a><br /></td></tr>
 <tr class="separator:ae9db3134d984712973bab7e0d2aab057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41cf98b33e868d497371c52fe94e55e7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html">Naive3DDSSComputer</a>&lt; <a class="el" href="classDGtal_1_1ReverseIterator.html">ReverseIterator</a>&lt; <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ac66b7475e5eee1235d0bc403f84e8ffe">ConstIterator</a> &gt;, TInteger, connectivity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a41cf98b33e868d497371c52fe94e55e7">Reverse</a></td></tr>
+<tr class="memdesc:a41cf98b33e868d497371c52fe94e55e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverse type.  <a href="#a41cf98b33e868d497371c52fe94e55e7">More...</a><br /></td></tr>
 <tr class="separator:a41cf98b33e868d497371c52fe94e55e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f0b750ed2c5fac8372d33fe7b80d788"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDGtal_1_1IteratorCirculatorTraits.html">IteratorCirculatorTraits</a>&lt; <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ac66b7475e5eee1235d0bc403f84e8ffe">ConstIterator</a> &gt;::<a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a1f0b750ed2c5fac8372d33fe7b80d788">Point3d</a></td></tr>
+<tr class="memdesc:a1f0b750ed2c5fac8372d33fe7b80d788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of 3d digital point.  <a href="#a1f0b750ed2c5fac8372d33fe7b80d788">More...</a><br /></td></tr>
 <tr class="separator:a1f0b750ed2c5fac8372d33fe7b80d788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94e61b9e4e216c28a3c9a8f36338e357"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDGtal_1_1IteratorCirculatorTraits.html">IteratorCirculatorTraits</a>&lt; <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ac66b7475e5eee1235d0bc403f84e8ffe">ConstIterator</a> &gt;::<a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a94e61b9e4e216c28a3c9a8f36338e357">Vector3d</a></td></tr>
+<tr class="memdesc:a94e61b9e4e216c28a3c9a8f36338e357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of 3d digital vector.  <a href="#a94e61b9e4e216c28a3c9a8f36338e357">More...</a><br /></td></tr>
 <tr class="separator:a94e61b9e4e216c28a3c9a8f36338e357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fc5f00a14f7fdb9474d37fa6713447b"><td class="memItemLeft" align="right" valign="top">typedef Point3d::Coordinate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a2fc5f00a14f7fdb9474d37fa6713447b">Coordinate</a></td></tr>
+<tr class="memdesc:a2fc5f00a14f7fdb9474d37fa6713447b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of 3d digital point coordinate.  <a href="#a2fc5f00a14f7fdb9474d37fa6713447b">More...</a><br /></td></tr>
 <tr class="separator:a2fc5f00a14f7fdb9474d37fa6713447b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51858b075a4e44cacbc0d32fe78f7ff4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html">DGtal::PointVector</a>&lt; 2, <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a2fc5f00a14f7fdb9474d37fa6713447b">Coordinate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a51858b075a4e44cacbc0d32fe78f7ff4">Point2d</a></td></tr>
+<tr class="memdesc:a51858b075a4e44cacbc0d32fe78f7ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of 2d digital point.  <a href="#a51858b075a4e44cacbc0d32fe78f7ff4">More...</a><br /></td></tr>
 <tr class="separator:a51858b075a4e44cacbc0d32fe78f7ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b83bbf94f098b87af6a31460968a99"><td class="memItemLeft" align="right" valign="top">typedef std::array&lt; <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a02b7d6c5dd897896127d202809d92bfe">Quotient</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ae6b83bbf94f098b87af6a31460968a99">PointR3d</a></td></tr>
+<tr class="memdesc:ae6b83bbf94f098b87af6a31460968a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of 3d rational point.  <a href="#ae6b83bbf94f098b87af6a31460968a99">More...</a><br /></td></tr>
 <tr class="separator:ae6b83bbf94f098b87af6a31460968a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad00fdfceb90a16589fe7580122d793ba"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDGtal_1_1functors_1_1Projector.html">functors::Projector</a>&lt; <a class="el" href="classDGtal_1_1SpaceND.html">SpaceND</a>&lt; 2, <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a2fc5f00a14f7fdb9474d37fa6713447b">Coordinate</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ad00fdfceb90a16589fe7580122d793ba">Projector2d</a></td></tr>
+<tr class="memdesc:ad00fdfceb90a16589fe7580122d793ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapter for iterators.  <a href="#ad00fdfceb90a16589fe7580122d793ba">More...</a><br /></td></tr>
 <tr class="separator:ad00fdfceb90a16589fe7580122d793ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a752591bb67ff57fe04623ac8c0d4efe2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ConstIteratorAdapter.html">ConstIteratorAdapter</a>&lt; <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ac66b7475e5eee1235d0bc403f84e8ffe">ConstIterator</a>, <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ad00fdfceb90a16589fe7580122d793ba">Projector2d</a>, <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a51858b075a4e44cacbc0d32fe78f7ff4">Point2d</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a752591bb67ff57fe04623ac8c0d4efe2">IteratorAdapter</a></td></tr>
+<tr class="memdesc:a752591bb67ff57fe04623ac8c0d4efe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator over adapter.  <a href="#a752591bb67ff57fe04623ac8c0d4efe2">More...</a><br /></td></tr>
 <tr class="separator:a752591bb67ff57fe04623ac8c0d4efe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5060a3f1d4eee15419510d9f18e13cf4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ArithmeticalDSSComputer.html">DGtal::ArithmeticalDSSComputer</a>&lt; <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a752591bb67ff57fe04623ac8c0d4efe2">IteratorAdapter</a>, TInteger, connectivity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a5060a3f1d4eee15419510d9f18e13cf4">ArithmeticalDSSComputer2d</a></td></tr>
+<tr class="memdesc:a5060a3f1d4eee15419510d9f18e13cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D arithmetical DSS recognition algorithm  <a href="#a5060a3f1d4eee15419510d9f18e13cf4">More...</a><br /></td></tr>
 <tr class="separator:a5060a3f1d4eee15419510d9f18e13cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -176,16 +192,22 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aac397a018d82d8384e6376cd8a40f9b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ad00fdfceb90a16589fe7580122d793ba">Projector2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#aac397a018d82d8384e6376cd8a40f9b1">myProjXY</a></td></tr>
+<tr class="memdesc:aac397a018d82d8384e6376cd8a40f9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projector for XY-plane.  <a href="#aac397a018d82d8384e6376cd8a40f9b1">More...</a><br /></td></tr>
 <tr class="separator:aac397a018d82d8384e6376cd8a40f9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab086df69c353d081ada93383bb0dbea6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ad00fdfceb90a16589fe7580122d793ba">Projector2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ab086df69c353d081ada93383bb0dbea6">myProjXZ</a></td></tr>
+<tr class="memdesc:ab086df69c353d081ada93383bb0dbea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projector for XZ-plane.  <a href="#ab086df69c353d081ada93383bb0dbea6">More...</a><br /></td></tr>
 <tr class="separator:ab086df69c353d081ada93383bb0dbea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c6a433f2ddb22f8441a927cec2fe98f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ad00fdfceb90a16589fe7580122d793ba">Projector2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a9c6a433f2ddb22f8441a927cec2fe98f">myProjYZ</a></td></tr>
+<tr class="memdesc:a9c6a433f2ddb22f8441a927cec2fe98f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projector for YZ-plane.  <a href="#a9c6a433f2ddb22f8441a927cec2fe98f">More...</a><br /></td></tr>
 <tr class="separator:a9c6a433f2ddb22f8441a927cec2fe98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17ba38132d9bc592c6f2bc94fc757401"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a5060a3f1d4eee15419510d9f18e13cf4">ArithmeticalDSSComputer2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a17ba38132d9bc592c6f2bc94fc757401">myXYalgo</a></td></tr>
+<tr class="memdesc:a17ba38132d9bc592c6f2bc94fc757401"><td class="mdescLeft">&#160;</td><td class="mdescRight">2d-arithmeticalDSS recognition algorithms for XY-plane.  <a href="#a17ba38132d9bc592c6f2bc94fc757401">More...</a><br /></td></tr>
 <tr class="separator:a17ba38132d9bc592c6f2bc94fc757401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af56911877a19cd69a2be48c2e50370ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a5060a3f1d4eee15419510d9f18e13cf4">ArithmeticalDSSComputer2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#af56911877a19cd69a2be48c2e50370ba">myXZalgo</a></td></tr>
+<tr class="memdesc:af56911877a19cd69a2be48c2e50370ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">2d-arithmeticalDSS recognition algorithms for XZ-plane.  <a href="#af56911877a19cd69a2be48c2e50370ba">More...</a><br /></td></tr>
 <tr class="separator:af56911877a19cd69a2be48c2e50370ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1004b77e1a8488d75bb0788b74c622d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a5060a3f1d4eee15419510d9f18e13cf4">ArithmeticalDSSComputer2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a1004b77e1a8488d75bb0788b74c622d0">myYZalgo</a></td></tr>
+<tr class="memdesc:a1004b77e1a8488d75bb0788b74c622d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">2d-arithmeticalDSS recognition algorithms for YZ-plane.  <a href="#a1004b77e1a8488d75bb0788b74c622d0">More...</a><br /></td></tr>
 <tr class="separator:a1004b77e1a8488d75bb0788b74c622d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af946bfaace7f8c616bb6a5bdb8d78f58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#af946bfaace7f8c616bb6a5bdb8d78f58">blockXY</a></td></tr>
 <tr class="separator:af946bfaace7f8c616bb6a5bdb8d78f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,6 +216,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a92d43ab5d355a99421a63deb6c60f328"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a92d43ab5d355a99421a63deb6c60f328">blockYZ</a></td></tr>
 <tr class="separator:a92d43ab5d355a99421a63deb6c60f328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafa4f2765c511d1df1208925e7b7307e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ac66b7475e5eee1235d0bc403f84e8ffe">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#aafa4f2765c511d1df1208925e7b7307e">myBegin</a></td></tr>
+<tr class="memdesc:aafa4f2765c511d1df1208925e7b7307e"><td class="mdescLeft">&#160;</td><td class="mdescRight">begin and end iterators  <a href="#aafa4f2765c511d1df1208925e7b7307e">More...</a><br /></td></tr>
 <tr class="separator:aafa4f2765c511d1df1208925e7b7307e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e53aeb9faea38f13031908d52d50272"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#ac66b7475e5eee1235d0bc403f84e8ffe">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a0e53aeb9faea38f13031908d52d50272">myEnd</a></td></tr>
 <tr class="separator:a0e53aeb9faea38f13031908d52d50272"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1483,7 +1506,7 @@ template&lt;typename TIterator, typename TInteger, int connectivity = 8&gt; </di
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:26 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:39 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: implements an images cache with 'read and write' policies.  
+ <a href="classDGtal_1_1ImageCache.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ImageCache_8h_source.html">DGtal/images/ImageCache.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -91,6 +94,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a44b859180d507004cf06663657b15dc9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ImageCache.html">ImageCache</a>&lt; TImageContainer, TImageFactory, TReadPolicy, TWritePolicy &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCache.html#a44b859180d507004cf06663657b15dc9">Self</a></td></tr>
 <tr class="separator:a44b859180d507004cf06663657b15dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2bec39c4a519fece7b78e961f3c4fe7"><td class="memItemLeft" align="right" valign="top">typedef TImageContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCache.html#af2bec39c4a519fece7b78e961f3c4fe7">ImageContainer</a></td></tr>
+<tr class="memdesc:af2bec39c4a519fece7b78e961f3c4fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types copied from the container.  <a href="#af2bec39c4a519fece7b78e961f3c4fe7">More...</a><br /></td></tr>
 <tr class="separator:af2bec39c4a519fece7b78e961f3c4fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8a43c6c2c5d1d3320be86707f7a0a64"><td class="memItemLeft" align="right" valign="top">typedef ImageContainer::Domain&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCache.html#ab8a43c6c2c5d1d3320be86707f7a0a64">Domain</a></td></tr>
 <tr class="separator:ab8a43c6c2c5d1d3320be86707f7a0a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,6 +112,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aca8f8c08a11beb5db620125c39b959f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCache.html#aca8f8c08a11beb5db620125c39b959f8">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImage.html">concepts::CImage</a>&lt; TImageContainer &gt;))</td></tr>
+<tr class="memdesc:aca8f8c08a11beb5db620125c39b959f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking concepts.  <a href="#aca8f8c08a11beb5db620125c39b959f8">More...</a><br /></td></tr>
 <tr class="separator:aca8f8c08a11beb5db620125c39b959f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad98a19c043672c9d9d7f9962a0f7defb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCache.html#ad98a19c043672c9d9d7f9962a0f7defb">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImageFactory.html">concepts::CImageFactory</a>&lt; TImageFactory &gt;))</td></tr>
 <tr class="separator:ad98a19c043672c9d9d7f9962a0f7defb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,8 +150,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a9bba86ea808812cf29bc06d20243f23e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageCache.html#aa8a07683ef726e0daa2c8948b9c5e522">ImageFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCache.html#a9bba86ea808812cf29bc06d20243f23e">myImageFactoryPtr</a></td></tr>
+<tr class="memdesc:a9bba86ea808812cf29bc06d20243f23e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1Alias.html" title="Aim: This class encapsulates its parameter class so that to indicate to the user that the object/poin...">Alias</a> on the image factory.  <a href="#a9bba86ea808812cf29bc06d20243f23e">More...</a><br /></td></tr>
 <tr class="separator:a9bba86ea808812cf29bc06d20243f23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87e0ed4f805db96abc1ef86916e5d0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageCache.html#af1465c61ae32eac3ed8c04bd1c6f518d">ReadPolicy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCache.html#aa87e0ed4f805db96abc1ef86916e5d0b">myReadPolicy</a></td></tr>
+<tr class="memdesc:aa87e0ed4f805db96abc1ef86916e5d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized caches.  <a href="#aa87e0ed4f805db96abc1ef86916e5d0b">More...</a><br /></td></tr>
 <tr class="separator:aa87e0ed4f805db96abc1ef86916e5d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9abc21b1369196a2e9eeb811831cc71d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageCache.html#a153b7384ad61d754f305a6cd96870164">WritePolicy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCache.html#a9abc21b1369196a2e9eeb811831cc71d">myWritePolicy</a></td></tr>
 <tr class="separator:a9abc21b1369196a2e9eeb811831cc71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +168,7 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ac8491964b2711078ae91c185724b8476"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCache.html#ac8491964b2711078ae91c185724b8476">cacheMissRead</a></td></tr>
+<tr class="memdesc:ac8491964b2711078ae91c185724b8476"><td class="mdescLeft">&#160;</td><td class="mdescRight">cache miss values  <a href="#ac8491964b2711078ae91c185724b8476">More...</a><br /></td></tr>
 <tr class="separator:ac8491964b2711078ae91c185724b8476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d323e635e696abf9546728bc257c4a2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCache.html#a2d323e635e696abf9546728bc257c4a2">cacheMissWrite</a></td></tr>
 <tr class="separator:a2d323e635e696abf9546728bc257c4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1097,7 +1105,7 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TReadPo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:23 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:37 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

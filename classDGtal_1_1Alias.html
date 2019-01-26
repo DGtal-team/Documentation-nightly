@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class encapsulates its parameter class so that to indicate to the user that the object/pointer will be only aliased. Therefore the user is reminded that the argument parameter is given to the function without any additional cost and may be modified, while he is aware that the lifetime of the argument parameter must be at least as long as the object itself. Note that an instance of Alias&lt;T&gt; is itself a light object (it holds only an enum and a pointer).  
+ <a href="classDGtal_1_1Alias.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Alias_8h_source.html">DGtal/base/Alias.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -128,6 +131,7 @@ Protected Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classDGtal_1_1Alias.html#a22a7083f7b9350124620c5d49e329b08aece4bfb7c26c6e5658766c149ff0de36">COUNTED_CONST_PTR_OR_CONST_PTR</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a22a7083f7b9350124620c5d49e329b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal class that allows to distinguish the different types of parameters.  <a href="classDGtal_1_1Alias.html#a22a7083f7b9350124620c5d49e329b08">More...</a><br /></td></tr>
 <tr class="separator:a22a7083f7b9350124620c5d49e329b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -138,8 +142,10 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a143f8a02862f5d26b0258db54487b587"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1Alias.html#a22a7083f7b9350124620c5d49e329b08">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Alias.html#a143f8a02862f5d26b0258db54487b587">myParam</a></td></tr>
+<tr class="memdesc:a143f8a02862f5d26b0258db54487b587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Characterizes the type of the input parameter at clone instanciation.  <a href="#a143f8a02862f5d26b0258db54487b587">More...</a><br /></td></tr>
 <tr class="separator:a143f8a02862f5d26b0258db54487b587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab41d7caa179e969b563f4569e346622e"><td class="memItemLeft" align="right" valign="top">const void *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Alias.html#ab41d7caa179e969b563f4569e346622e">myPtr</a></td></tr>
+<tr class="memdesc:ab41d7caa179e969b563f4569e346622e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the address of the input parameter for further use.  <a href="#ab41d7caa179e969b563f4569e346622e">More...</a><br /></td></tr>
 <tr class="separator:ab41d7caa179e969b563f4569e346622e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -762,7 +768,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:20 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:34 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

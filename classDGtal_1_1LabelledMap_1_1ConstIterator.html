@@ -99,6 +99,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a9c30a28e74ab0ade2e820c2dd0a8d3f2"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="classDGtal_1_1LabelledMap.html#ad703fcd9f80c1eb3bbd6eb0635a55693">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html#a9c30a28e74ab0ade2e820c2dd0a8d3f2">Pointer</a></td></tr>
 <tr class="separator:a9c30a28e74ab0ade2e820c2dd0a8d3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9835f5c1e943db20ee2706417c4a3d35"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1LabelledMap.html#ad703fcd9f80c1eb3bbd6eb0635a55693">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html#a9835f5c1e943db20ee2706417c4a3d35">Reference</a></td></tr>
+<tr class="memdesc:a9835f5c1e943db20ee2706417c4a3d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note the trick here. The reference is a rvalue. Works only for const iterator.  <a href="#a9835f5c1e943db20ee2706417c4a3d35">More...</a><br /></td></tr>
 <tr class="separator:a9835f5c1e943db20ee2706417c4a3d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72c2755e81b86547c10c386cc13fcdb3"><td class="memItemLeft" align="right" valign="top">typedef std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html#a72c2755e81b86547c10c386cc13fcdb3">DifferenceType</a></td></tr>
 <tr class="separator:a72c2755e81b86547c10c386cc13fcdb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,8 +151,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a5c0d4d99bb632295a3ee1fa2a0aa4456"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1LabelledMap.html#a4f1d1e9407f99f2e22a02ac4abc9c014">LabelsConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html#a5c0d4d99bb632295a3ee1fa2a0aa4456">myLabelsIt</a></td></tr>
+<tr class="memdesc:a5c0d4d99bb632295a3ee1fa2a0aa4456"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html">ConstIterator</a> to visit keys.  <a href="#a5c0d4d99bb632295a3ee1fa2a0aa4456">More...</a><br /></td></tr>
 <tr class="separator:a5c0d4d99bb632295a3ee1fa2a0aa4456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14ac16dcb04c4d60a87d0d6134dc4348"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html">BlockConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html#a14ac16dcb04c4d60a87d0d6134dc4348">myBlockIt</a></td></tr>
+<tr class="memdesc:a14ac16dcb04c4d60a87d0d6134dc4348"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html">ConstIterator</a> to visit datas.  <a href="#a14ac16dcb04c4d60a87d0d6134dc4348">More...</a><br /></td></tr>
 <tr class="separator:a14ac16dcb04c4d60a87d0d6134dc4348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -746,7 +749,7 @@ template&lt;typename TData, unsigned int L, typename TWord, unsigned int N, unsi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:25 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:39 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

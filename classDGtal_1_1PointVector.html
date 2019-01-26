@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Implements basic operations that will be used in Point and Vector classes.  
+ <a href="classDGtal_1_1PointVector.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="PointVector_8h_source.html">DGtal/kernel/PointVector.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;:</div>
@@ -106,20 +109,27 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="separator:ae1c647ad60b34b4d7c8b7d8d7b917fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8140792374fe3f01fc321dff22419e1a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html">PointVector</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, TEuclideanRing, TContainer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#a8140792374fe3f01fc321dff22419e1a">Self</a></td></tr>
+<tr class="memdesc:a8140792374fe3f01fc321dff22419e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self type.  <a href="#a8140792374fe3f01fc321dff22419e1a">More...</a><br /></td></tr>
 <tr class="separator:a8140792374fe3f01fc321dff22419e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5f7548d4edc0d8edb4b64cc332db8f2"><td class="memItemLeft" align="right" valign="top">typedef TEuclideanRing&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#ab5f7548d4edc0d8edb4b64cc332db8f2">Component</a></td></tr>
+<tr class="memdesc:ab5f7548d4edc0d8edb4b64cc332db8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for Vector elements.  <a href="#ab5f7548d4edc0d8edb4b64cc332db8f2">More...</a><br /></td></tr>
 <tr class="separator:ab5f7548d4edc0d8edb4b64cc332db8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6409a51203e0edc907d523fb19ed7e41"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html#ab5f7548d4edc0d8edb4b64cc332db8f2">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#a6409a51203e0edc907d523fb19ed7e41">Coordinate</a></td></tr>
+<tr class="memdesc:a6409a51203e0edc907d523fb19ed7e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for Point elements.  <a href="#a6409a51203e0edc907d523fb19ed7e41">More...</a><br /></td></tr>
 <tr class="separator:a6409a51203e0edc907d523fb19ed7e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a05fbd65f98694b2112668fecc2582c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDGtal_1_1NumberTraits.html">NumberTraits</a>&lt; <a class="el" href="classDGtal_1_1PointVector.html#ab5f7548d4edc0d8edb4b64cc332db8f2">Component</a> &gt;::UnsignedVersion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#a7a05fbd65f98694b2112668fecc2582c">UnsignedComponent</a></td></tr>
+<tr class="memdesc:a7a05fbd65f98694b2112668fecc2582c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsigned version of the components.  <a href="#a7a05fbd65f98694b2112668fecc2582c">More...</a><br /></td></tr>
 <tr class="separator:a7a05fbd65f98694b2112668fecc2582c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac09773b904274222ff4ac439aa44f71f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">DGtal::Dimension</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#ac09773b904274222ff4ac439aa44f71f">Dimension</a></td></tr>
+<tr class="memdesc:ac09773b904274222ff4ac439aa44f71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the dimension type.  <a href="#ac09773b904274222ff4ac439aa44f71f">More...</a><br /></td></tr>
 <tr class="separator:ac09773b904274222ff4ac439aa44f71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a160ef068b6f179cf7757ded26b6a9139"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html#ab5f7548d4edc0d8edb4b64cc332db8f2">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#a160ef068b6f179cf7757ded26b6a9139">Scalar</a></td></tr>
+<tr class="memdesc:a160ef068b6f179cf7757ded26b6a9139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types needed by CLinearAlgebraContainer.  <a href="#a160ef068b6f179cf7757ded26b6a9139">More...</a><br /></td></tr>
 <tr class="separator:a160ef068b6f179cf7757ded26b6a9139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a701bedce7f0e7219c9ab9e5c52f7d416"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html#ac09773b904274222ff4ac439aa44f71f">Dimension</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#a701bedce7f0e7219c9ab9e5c52f7d416">Index</a></td></tr>
 <tr class="separator:a701bedce7f0e7219c9ab9e5c52f7d416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af935e91e665ae4eacb9c3ddd52dd2ef1"><td class="memItemLeft" align="right" valign="top">typedef TContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#af935e91e665ae4eacb9c3ddd52dd2ef1">Container</a></td></tr>
+<tr class="memdesc:af935e91e665ae4eacb9c3ddd52dd2ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the container type.  <a href="#af935e91e665ae4eacb9c3ddd52dd2ef1">More...</a><br /></td></tr>
 <tr class="separator:af935e91e665ae4eacb9c3ddd52dd2ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae39deaab15a2ee5753553afa838ab0e9"><td class="memItemLeft" align="right" valign="top">typedef Container::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#ae39deaab15a2ee5753553afa838ab0e9">Iterator</a></td></tr>
 <tr class="separator:ae39deaab15a2ee5753553afa838ab0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,13 +303,16 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:af59a5af9d91e2dce2b19d855c5ad1e35"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classDGtal_1_1PointVector.html#ac09773b904274222ff4ac439aa44f71f">Dimension</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">dimension</a> = <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a></td></tr>
+<tr class="memdesc:af59a5af9d91e2dce2b19d855c5ad1e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy of the static dimension of the Point/Vector.  <a href="#af59a5af9d91e2dce2b19d855c5ad1e35">More...</a><br /></td></tr>
 <tr class="separator:af59a5af9d91e2dce2b19d855c5ad1e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd6b03ecf112cf2ae8bae7b644164932"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1PointVector.html#a8140792374fe3f01fc321dff22419e1a">Self</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#acd6b03ecf112cf2ae8bae7b644164932">zero</a></td></tr>
+<tr class="memdesc:acd6b03ecf112cf2ae8bae7b644164932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static const for zero <a class="el" href="classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. ">PointVector</a>.  <a href="#acd6b03ecf112cf2ae8bae7b644164932">More...</a><br /></td></tr>
 <tr class="separator:acd6b03ecf112cf2ae8bae7b644164932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab3e10d104908002b8eeb6640013ae4b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1PointVector.html#af935e91e665ae4eacb9c3ddd52dd2ef1">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PointVector.html#ab3e10d104908002b8eeb6640013ae4b4">myArray</a></td></tr>
+<tr class="memdesc:ab3e10d104908002b8eeb6640013ae4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal data-structure: std::array with constant size.  <a href="#ab3e10d104908002b8eeb6640013ae4b4">More...</a><br /></td></tr>
 <tr class="separator:ab3e10d104908002b8eeb6640013ae4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1551,7 +1564,7 @@ template&lt;DGtal::Dimension dim, typename TEuclideanRing, typename TContainer =
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the norm of the point/vector as a double. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="sphereCotangentLaplaceOperator_8cpp_source.html#l00089">laplacian()</a>, <a class="el" href="sphereCotangentLaplaceOperator_8cpp_source.html#l00278">main()</a>, <a class="el" href="Shortcuts_8h_source.html#l01055">DGtal::Shortcuts&lt; TKSpace &gt;::makeLightDigitalSurface()</a>, <a class="el" href="FunctorsLambdaMST_8h_source.html#l00190">DGtal::TangentFromDSS3DFunctor&lt; DSS, LambdaFunction &gt;::operator()()</a>, and <a class="el" href="BasicPointFunctors_8h_source.html#l00388">DGtal::functors::Point2DEmbedderIn3D&lt; TDomain3D, TInteger &gt;::Point2DEmbedderIn3D()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sphereCotangentLaplaceOperator_8cpp_source.html#l00089">laplacian()</a>, <a class="el" href="exampleFunctorHolder_8cpp_source.html#l00204">main()</a>, <a class="el" href="Shortcuts_8h_source.html#l01055">DGtal::Shortcuts&lt; TKSpace &gt;::makeLightDigitalSurface()</a>, <a class="el" href="FunctorsLambdaMST_8h_source.html#l00190">DGtal::TangentFromDSS3DFunctor&lt; DSS, LambdaFunction &gt;::operator()()</a>, <a class="el" href="BasicPointFunctors_8h_source.html#l00388">DGtal::functors::Point2DEmbedderIn3D&lt; TDomain3D, TInteger &gt;::Point2DEmbedderIn3D()</a>, and <a class="el" href="exampleFunctorHolder_8cpp_source.html#l00052">signed_dist_to_unit_circle()</a>.</p>
 
 </div>
 </div>
@@ -2821,7 +2834,7 @@ template&lt;DGtal::Dimension dim, typename TEuclideanRing, typename TContainer =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:26 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:40 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

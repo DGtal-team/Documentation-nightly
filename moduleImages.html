@@ -91,6 +91,7 @@ $(function() {
 </ul>
 </li>
 <li class="level1"><a href="#dgtalImagesFunctions">Useful classes and functions</a><ul><li class="level2"><a href="#SubSampleFct">Subsampling functor</a></li>
+<li class="level2"><a href="#moduleImages_functorconstimage">Constant image from a function, functor or lambda</a></li>
 </ul>
 </li>
 </ul>
@@ -285,12 +286,29 @@ Subsampling functor</h2>
 <div class="fragment"><div class="line">    <a class="code" href="structDGtal_1_1GenericWriter.html#ae9f11d212f4136c678a4a5b3b8b6c111">GenericWriter&lt;ConstImageAdapterForSubSampling&gt;::exportFile</a>(outputname.str(), subsampledImage2D );</div></div><!-- fragment --><p>You will obtain such a result (with also the result on 3D images): </p><div class="image">
 <img src="imageBasicSubsamplingExample.png" alt="imageBasicSubsamplingExample.png"/>
 <div class="caption">
-Illustration of the resulting subsampling given by the imageBasicSubsampling.cpp example</div></div>
-<p>. </p>
+(11) Illustration of the resulting subsampling given by the imageBasicSubsampling.cpp example</div></div>
+<p>.</p>
+<h2><a class="anchor" id="moduleImages_functorconstimage"></a>
+Constant image from a function, functor or lambda</h2>
+<p>If you need to define an image as the result of a callable object (function, functor or lambda) and you don't want to precalculate it or to store it, you should consider using the <a class="el" href="classDGtal_1_1functors_1_1ConstImageFunctorHolder.html">functors::ConstImageFunctorHolder</a> class.</p>
+<p>An instance of this class must be constructed through the associated helper <a class="el" href="namespaceDGtal_1_1functors.html#ae078b1e517d167341988d5a5d6366a91">functors::holdConstImageFunctor</a> and you can use any callable object that accepts a point alone or a point and a domain (in order to have a domain dependent image definition).</p>
+<p>A first usage example should be composed of the appropriate include: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;DGtal/images/ConstImageFunctorHolder.h&quot;</span></div></div><!-- fragment --><p>followed by the image definition: </p><div class="fragment"><div class="line">  <span class="keyword">const</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a> domain1(<a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(1,1), <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(16,16));</div><div class="line"></div><div class="line">  <span class="keyword">auto</span> image1 = <a class="code" href="namespaceDGtal_1_1functors.html#ae078b1e517d167341988d5a5d6366a91">DGtal::functors::holdConstImageFunctor</a>(</div><div class="line">      domain1,</div><div class="line">      [] (<a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> <span class="keyword">const</span>&amp; pt) { <span class="keywordflow">return</span> 25 * ( std::cos( (pt - <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(4,4)).norm() ) + 1 ); }</div><div class="line">  );</div></div><!-- fragment --><p>that gives us the following result: </p><div class="image">
+<img src="ConstImageFunctorHolder_example1.png" alt="ConstImageFunctorHolder_example1.png"/>
+<div class="caption">
+(12) Image generated from a point-dependent lambda.</div></div>
+<p>You can also use a functor that depends on the point and the image's domain: </p><div class="fragment"><div class="line">  <span class="keyword">const</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a> domain2(<a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(-1,1), <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(18,18));</div><div class="line"></div><div class="line">  <span class="keyword">auto</span> image2 = <a class="code" href="namespaceDGtal_1_1functors.html#ae078b1e517d167341988d5a5d6366a91">DGtal::functors::holdConstImageFunctor</a>(</div><div class="line">      domain2,</div><div class="line">      [] (<a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> <span class="keyword">const</span>&amp; pt, <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a> <span class="keyword">const</span>&amp; d) { <span class="comment">// we could also capture the domain</span></div><div class="line">        <span class="keywordflow">return</span> 2 * std::min( ( pt - d.lowerBound() ).norm(), ( pt - d.upperBound() ).norm() );</div><div class="line">      }</div><div class="line">  );</div></div><!-- fragment --><p>resulting in: </p><div class="image">
+<img src="ConstImageFunctorHolder_example2.png" alt="ConstImageFunctorHolder_example2.png"/>
+<div class="caption">
+(13) Image generated from a lambda that depends on the point and the domain.</div></div>
+<p>Going further, you can also capture other images in the lambda so that to define a mix: </p><div class="fragment"><div class="line">  <span class="keyword">auto</span> image3 = <a class="code" href="namespaceDGtal_1_1functors.html#ae078b1e517d167341988d5a5d6366a91">DGtal::functors::holdConstImageFunctor</a>(</div><div class="line">      domain1,</div><div class="line">      [&amp;image1, &amp;image2] (<a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> <span class="keyword">const</span>&amp; pt) { <span class="keywordflow">return</span> image1(pt) + image2(pt); }</div><div class="line">  );</div></div><!-- fragment --><p>resulting in: </p><div class="image">
+<img src="ConstImageFunctorHolder_example3.png" alt="ConstImageFunctorHolder_example3.png"/>
+<div class="caption">
+(14) Image generated as the sum of two images.</div></div>
+<dl class="section see"><dt>See also</dt><dd>FunctorHolder, <a class="el" href="moduleFunctors.html">Using functions, functors and lambdas in DGtal</a> </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:19 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:32 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

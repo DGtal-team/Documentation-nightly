@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: This class implement an Integral Invariant estimator which computes for each surfel the covariance matrix of the intersection of the shape with a ball of given radius centered on the surfel.  
+ <a href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IntegralInvariantCovarianceEstimator_8h_source.html">DGtal/geometry/surfaces/estimation/IntegralInvariantCovarianceEstimator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::IntegralInvariantCovarianceEstimator&lt; TKSpace, TPointPredicate, TCovarianceMatrixFunctor &gt;:</div>
@@ -121,8 +124,10 @@ Public Types</h2></td></tr>
 <tr class="memitem:afd1289c6a7400ddca2df84f9975458bc"><td class="memItemLeft" align="right" valign="top">typedef SurfelSet::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#afd1289c6a7400ddca2df84f9975458bc">ConstIteratorKernel</a></td></tr>
 <tr class="separator:afd1289c6a7400ddca2df84f9975458bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d0eda9334aa2f0b9f93048bef8e7ed6"><td class="memItemLeft" align="right" valign="top">typedef CovarianceMatrixFunctor::Quantity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a4d0eda9334aa2f0b9f93048bef8e7ed6">Quantity</a></td></tr>
+<tr class="memdesc:a4d0eda9334aa2f0b9f93048bef8e7ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The returned type of the estimator, depends on the functor.  <a href="#a4d0eda9334aa2f0b9f93048bef8e7ed6">More...</a><br /></td></tr>
 <tr class="separator:a4d0eda9334aa2f0b9f93048bef8e7ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a271410f5f447d83f9e8ae087610b33eb"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a271410f5f447d83f9e8ae087610b33eb">Value</a></td></tr>
+<tr class="memdesc:a271410f5f447d83f9e8ae087610b33eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type used for convolutions.  <a href="#a271410f5f447d83f9e8ae087610b33eb">More...</a><br /></td></tr>
 <tr class="separator:a271410f5f447d83f9e8ae087610b33eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf4442485b3078cf6ed6bb31ccf7bc30"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html">functors::PointFunctorFromPointPredicateAndDomain</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a1f92fdb3eb281c658a2556edb38d09a3">PointPredicate</a>, <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#aba2afbfbb95f5229445b0ad75d7c07c7">Domain</a>, unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#adf4442485b3078cf6ed6bb31ccf7bc30">ShapePointFunctor</a></td></tr>
 <tr class="separator:adf4442485b3078cf6ed6bb31ccf7bc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,30 +201,43 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aec17754718ca4de0d16bc931b3124192"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a46fb56af262a1f30f06b3bcd726f44de">CovarianceMatrixFunctor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#aec17754718ca4de0d16bc931b3124192">myFct</a></td></tr>
+<tr class="memdesc:aec17754718ca4de0d16bc931b3124192"><td class="mdescLeft">&#160;</td><td class="mdescRight">The covariance matrix functor that transforms the II covariance matrix into a quantity.  <a href="#aec17754718ca4de0d16bc931b3124192">More...</a><br /></td></tr>
 <tr class="separator:aec17754718ca4de0d16bc931b3124192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47cc1d49a4fa4c092b5c692e8dc872f5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a5fab99a9dc9f2f6539be41ac94f897f0">KernelSpelFunctor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a47cc1d49a4fa4c092b5c692e8dc872f5">myKernelFunctor</a></td></tr>
+<tr class="memdesc:a47cc1d49a4fa4c092b5c692e8dc872f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel functor (on Spel)  <a href="#a47cc1d49a4fa4c092b5c692e8dc872f5">More...</a><br /></td></tr>
 <tr class="separator:a47cc1d49a4fa4c092b5c692e8dc872f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1160bd9217290a2fc237d61217769249"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#abd0c06a1833d5977197e858d7f7fd8f3">PairIterators</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a1160bd9217290a2fc237d61217769249">myKernels</a></td></tr>
+<tr class="memdesc:a1160bd9217290a2fc237d61217769249"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of begin/end iterator of shifting masks.  <a href="#a1160bd9217290a2fc237d61217769249">More...</a><br /></td></tr>
 <tr class="separator:a1160bd9217290a2fc237d61217769249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab41dd068888100f6f692d6d1b11dce91"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#ad20e4d311a03e22f700747fbdefc113b">DigitalSet</a> *&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#ab41dd068888100f6f692d6d1b11dce91">myKernelsSet</a></td></tr>
+<tr class="memdesc:ab41dd068888100f6f692d6d1b11dce91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of shifting masks. Size = 9 for each shifting (0-adjacent and full kernel included)  <a href="#ab41dd068888100f6f692d6d1b11dce91">More...</a><br /></td></tr>
 <tr class="separator:ab41dd068888100f6f692d6d1b11dce91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f8a0ff07860a56c68ddf5f7957dad52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a332b9254921abb6e60e7d836b0ded95d">KernelSupport</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a4f8a0ff07860a56c68ddf5f7957dad52">myKernel</a></td></tr>
+<tr class="memdesc:a4f8a0ff07860a56c68ddf5f7957dad52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Euclidean kernel.  <a href="#a4f8a0ff07860a56c68ddf5f7957dad52">More...</a><br /></td></tr>
 <tr class="separator:a4f8a0ff07860a56c68ddf5f7957dad52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84d9a3a046fa526365766a33af3e743b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#ab81b2b0327f14955cc421e2eee347cf7">DigitalShapeKernel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a84d9a3a046fa526365766a33af3e743b">myDigKernel</a></td></tr>
+<tr class="memdesc:a84d9a3a046fa526365766a33af3e743b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital kernel.  <a href="#a84d9a3a046fa526365766a33af3e743b">More...</a><br /></td></tr>
 <tr class="separator:a84d9a3a046fa526365766a33af3e743b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa31b479abab583e081abf179dc07acb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html">CountedConstPtrOrConstPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a1f92fdb3eb281c658a2556edb38d09a3">PointPredicate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#aa31b479abab583e081abf179dc07acb9">myPointPredicate</a></td></tr>
+<tr class="memdesc:aa31b479abab583e081abf179dc07acb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart pointer (if required) on a point predicate.  <a href="#aa31b479abab583e081abf179dc07acb9">More...</a><br /></td></tr>
 <tr class="separator:aa31b479abab583e081abf179dc07acb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af23ecd9d28aa106837ca5568f02e75e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#aba2afbfbb95f5229445b0ad75d7c07c7">Domain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#af23ecd9d28aa106837ca5568f02e75e6">myShapeDomain</a></td></tr>
+<tr class="memdesc:af23ecd9d28aa106837ca5568f02e75e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart pointer on domain.  <a href="#af23ecd9d28aa106837ca5568f02e75e6">More...</a><br /></td></tr>
 <tr class="separator:af23ecd9d28aa106837ca5568f02e75e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40033c8e5015345fb873ebabe5ded164"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#adf4442485b3078cf6ed6bb31ccf7bc30">ShapePointFunctor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a40033c8e5015345fb873ebabe5ded164">myShapePointFunctor</a></td></tr>
+<tr class="memdesc:a40033c8e5015345fb873ebabe5ded164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart pointer on functor point -&gt; {0,1}.  <a href="#a40033c8e5015345fb873ebabe5ded164">More...</a><br /></td></tr>
 <tr class="separator:a40033c8e5015345fb873ebabe5ded164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2733c41e15d08c81ce8c5bc11261ce52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#ab0dd7cab30fe53db7ac6094dcb963335">ShapeSpelFunctor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a2733c41e15d08c81ce8c5bc11261ce52">myShapeSpelFunctor</a></td></tr>
+<tr class="memdesc:a2733c41e15d08c81ce8c5bc11261ce52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smart pointer on functor spel -&gt; {0,1}.  <a href="#a2733c41e15d08c81ce8c5bc11261ce52">More...</a><br /></td></tr>
 <tr class="separator:a2733c41e15d08c81ce8c5bc11261ce52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae161c0c81d762ba1f35bd2aa99553403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a6840e781de744a57aae6a735b06bdbe6">Convolver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#ae161c0c81d762ba1f35bd2aa99553403">myConvolver</a></td></tr>
+<tr class="memdesc:ae161c0c81d762ba1f35bd2aa99553403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convolver.  <a href="#ae161c0c81d762ba1f35bd2aa99553403">More...</a><br /></td></tr>
 <tr class="separator:ae161c0c81d762ba1f35bd2aa99553403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5604e4b584151cf893cd9d7dfbb6c889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a2df34fae00234c62bb97b867320dcdce">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a5604e4b584151cf893cd9d7dfbb6c889">myH</a></td></tr>
+<tr class="memdesc:a5604e4b584151cf893cd9d7dfbb6c889"><td class="mdescLeft">&#160;</td><td class="mdescRight">precision of the grid  <a href="#a5604e4b584151cf893cd9d7dfbb6c889">More...</a><br /></td></tr>
 <tr class="separator:a5604e4b584151cf893cd9d7dfbb6c889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8960ea4753484c6f541d2317662cf1d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a2df34fae00234c62bb97b867320dcdce">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#a8960ea4753484c6f541d2317662cf1d9">myRadius</a></td></tr>
+<tr class="memdesc:a8960ea4753484c6f541d2317662cf1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">"digital" radius of the kernel (but may be non integer).  <a href="#a8960ea4753484c6f541d2317662cf1d9">More...</a><br /></td></tr>
 <tr class="separator:a8960ea4753484c6f541d2317662cf1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1672,7 +1690,7 @@ template&lt;typename TKSpace, typename TPointPredicate, typename TCovarianceMatr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:24 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:38 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: implements a 'FIFO' read policy cache.  
+ <a href="classDGtal_1_1ImageCacheReadPolicyFIFO.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ImageCachePolicies_8h_source.html">DGtal/images/ImageCachePolicies.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DGtal::ImageCacheReadPolicyFIFO&lt; TImageContainer, TImageFactory &gt;:</div>
@@ -107,6 +110,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adde959476c166bb228960469827499dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCacheReadPolicyFIFO.html#adde959476c166bb228960469827499dc">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImage.html">concepts::CImage</a>&lt; TImageContainer &gt;))</td></tr>
+<tr class="memdesc:adde959476c166bb228960469827499dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking concepts.  <a href="#adde959476c166bb228960469827499dc">More...</a><br /></td></tr>
 <tr class="separator:adde959476c166bb228960469827499dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc8a59908b4476b9086ff61e782ac1e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCacheReadPolicyFIFO.html#abc8a59908b4476b9086ff61e782ac1e3">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImageFactory.html">concepts::CImageFactory</a>&lt; TImageFactory &gt;))</td></tr>
 <tr class="separator:abc8a59908b4476b9086ff61e782ac1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,10 +132,13 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a61c2561d4d8ef4df07030aacc628e11b"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="classDGtal_1_1ImageCacheReadPolicyFIFO.html#a3f31606fdd6faf3f891c0a529a905e2d">ImageContainer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCacheReadPolicyFIFO.html#a61c2561d4d8ef4df07030aacc628e11b">myFIFOCacheImages</a></td></tr>
+<tr class="memdesc:a61c2561d4d8ef4df07030aacc628e11b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1Alias.html" title="Aim: This class encapsulates its parameter class so that to indicate to the user that the object/poin...">Alias</a> on the images cache.  <a href="#a61c2561d4d8ef4df07030aacc628e11b">More...</a><br /></td></tr>
 <tr class="separator:a61c2561d4d8ef4df07030aacc628e11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a252cf1818e491bc8f3b65881fa6efcc0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCacheReadPolicyFIFO.html#a252cf1818e491bc8f3b65881fa6efcc0">myFIFOSizeMax</a></td></tr>
+<tr class="memdesc:a252cf1818e491bc8f3b65881fa6efcc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size max of the FIFO.  <a href="#a252cf1818e491bc8f3b65881fa6efcc0">More...</a><br /></td></tr>
 <tr class="separator:a252cf1818e491bc8f3b65881fa6efcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e6b6740b2ad65ce821060b1b17b2e6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageCacheReadPolicyFIFO.html#add16a3acbbef7cb943cd904720b808eb">ImageFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageCacheReadPolicyFIFO.html#a0e6b6740b2ad65ce821060b1b17b2e6e">myImageFactory</a></td></tr>
+<tr class="memdesc:a0e6b6740b2ad65ce821060b1b17b2e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDGtal_1_1Alias.html" title="Aim: This class encapsulates its parameter class so that to indicate to the user that the object/poin...">Alias</a> on the image factory.  <a href="#a0e6b6740b2ad65ce821060b1b17b2e6e">More...</a><br /></td></tr>
 <tr class="separator:a0e6b6740b2ad65ce821060b1b17b2e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -644,7 +651,7 @@ template&lt;typename TImageContainer , typename TImageFactory &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:23 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:37 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

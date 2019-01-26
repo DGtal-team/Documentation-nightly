@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Aim: Random access iterator over an image given his definition domain and viewable domain.  
+ <a href="classDGtal_1_1ArrayImageIterator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ArrayImageIterator_8h_source.html">DGtal/images/ArrayImageIterator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DGtal::ArrayImageIterator&lt; TIterableClass &gt;:</div>
@@ -101,21 +104,28 @@ Collaboration diagram for DGtal::ArrayImageIterator&lt; TIterableClass &gt;:</di
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aa10628f6331920527f070fee54dce5d8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#aa10628f6331920527f070fee54dce5d8">Self</a> = <a class="el" href="classDGtal_1_1ArrayImageIterator.html">ArrayImageIterator</a>&lt; TIterableClass &gt;</td></tr>
+<tr class="memdesc:aa10628f6331920527f070fee54dce5d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self type.  <a href="#aa10628f6331920527f070fee54dce5d8">More...</a><br /></td></tr>
 <tr class="separator:aa10628f6331920527f070fee54dce5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41b8ef878486e45d61c2ed0f475d2485"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a41b8ef878486e45d61c2ed0f475d2485">IterableClass</a> = TIterableClass</td></tr>
+<tr class="memdesc:a41b8ef878486e45d61c2ed0f475d2485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterable class type.  <a href="#a41b8ef878486e45d61c2ed0f475d2485">More...</a><br /></td></tr>
 <tr class="separator:a41b8ef878486e45d61c2ed0f475d2485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af418618af4c7e4510acf3f2247f0ce9a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#af418618af4c7e4510acf3f2247f0ce9a">Domain</a> = typename IterableClass::Domain</td></tr>
+<tr class="memdesc:af418618af4c7e4510acf3f2247f0ce9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domain type.  <a href="#af418618af4c7e4510acf3f2247f0ce9a">More...</a><br /></td></tr>
 <tr class="separator:af418618af4c7e4510acf3f2247f0ce9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ef1da433019e6589201959d57e15813"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a7ef1da433019e6589201959d57e15813">Point</a> = typename <a class="el" href="classDGtal_1_1HyperRectDomain.html#ad710ac3a2d91d351b55ca6841cb789f5">Domain::Point</a></td></tr>
+<tr class="memdesc:a7ef1da433019e6589201959d57e15813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point type.  <a href="#a7ef1da433019e6589201959d57e15813">More...</a><br /></td></tr>
 <tr class="separator:a7ef1da433019e6589201959d57e15813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af59b0b3c19c3436cc8bd612ea26f56f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#af59b0b3c19c3436cc8bd612ea26f56f8">Linearizer</a> = <a class="el" href="structDGtal_1_1Linearizer.html">DGtal::Linearizer</a>&lt; <a class="el" href="classDGtal_1_1ArrayImageIterator.html#af418618af4c7e4510acf3f2247f0ce9a">Domain</a>, <a class="el" href="structDGtal_1_1ColMajorStorage.html">ColMajorStorage</a> &gt;</td></tr>
+<tr class="memdesc:af59b0b3c19c3436cc8bd612ea26f56f8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structDGtal_1_1Linearizer.html" title="Aim: Linearization and de-linearization interface for domains. ">Linearizer</a> type.  <a href="#af59b0b3c19c3436cc8bd612ea26f56f8">More...</a><br /></td></tr>
 <tr class="separator:af59b0b3c19c3436cc8bd612ea26f56f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e88aaafbbcff81a0f43e64445ca96d6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a9e88aaafbbcff81a0f43e64445ca96d6">Reference</a> = decltype(((<a class="el" href="classDGtal_1_1ArrayImageIterator.html#a41b8ef878486e45d61c2ed0f475d2485">IterableClass</a> *) nullptr) -&gt;<a class="el" href="classDGtal_1_1ArrayImageIterator.html#acda526ea0de739816ede50a796bf756a">dereference</a>(Point::diagonal(0), typename Point::Coordinate(0)))</td></tr>
+<tr class="memdesc:a9e88aaafbbcff81a0f43e64445ca96d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type when dereferencing this iterator.  <a href="#a9e88aaafbbcff81a0f43e64445ca96d6">More...</a><br /></td></tr>
 <tr class="separator:a9e88aaafbbcff81a0f43e64445ca96d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a13b999a09084d8be0ff0c2d451cf43d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a13b999a09084d8be0ff0c2d451cf43d8">ArrayImageIterator</a> ()</td></tr>
+<tr class="memdesc:a13b999a09084d8be0ff0c2d451cf43d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a13b999a09084d8be0ff0c2d451cf43d8">More...</a><br /></td></tr>
 <tr class="separator:a13b999a09084d8be0ff0c2d451cf43d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ba314d644c1db408fd30ee37251c52a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a5ba314d644c1db408fd30ee37251c52a">ArrayImageIterator</a> (<a class="el" href="classDGtal_1_1ArrayImageIterator.html#a41b8ef878486e45d61c2ed0f475d2485">IterableClass</a> *anIterableClassPtr, <a class="el" href="classDGtal_1_1ArrayImageIterator.html#af418618af4c7e4510acf3f2247f0ce9a">Domain</a> const &amp;aFullDomain, <a class="el" href="classDGtal_1_1ArrayImageIterator.html#af418618af4c7e4510acf3f2247f0ce9a">Domain</a> const &amp;aViewDomain, <a class="el" href="classDGtal_1_1ArrayImageIterator.html#a7ef1da433019e6589201959d57e15813">Point</a> const &amp;<a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint</a>)</td></tr>
 <tr class="separator:a5ba314d644c1db408fd30ee37251c52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a94c342bc114035f3e906c7d6cc8d9f2f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a94c342bc114035f3e906c7d6cc8d9f2f">ArrayImageIterator</a> (<a class="el" href="classDGtal_1_1ArrayImageIterator.html">ArrayImageIterator</a>&lt; TOtherIterableClass &gt; &amp;&amp;other, typename std::enable_if&lt; std::is_convertible&lt; TOtherIterableClass *, <a class="el" href="classDGtal_1_1ArrayImageIterator.html#a41b8ef878486e45d61c2ed0f475d2485">IterableClass</a> *&gt;::value &gt;::type *=0) noexcept</td></tr>
 <tr class="separator:a94c342bc114035f3e906c7d6cc8d9f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fcd40729d8f979dd091aa142edeaaca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a6fcd40729d8f979dd091aa142edeaaca">~ArrayImageIterator</a> ()</td></tr>
+<tr class="memdesc:a6fcd40729d8f979dd091aa142edeaaca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a6fcd40729d8f979dd091aa142edeaaca">More...</a><br /></td></tr>
 <tr class="separator:a6fcd40729d8f979dd091aa142edeaaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab33ff72ea9a5b180b48ae58774708234"><td class="memTemplParams" colspan="2">template&lt;typename TOtherIterableClass &gt; </td></tr>
 <tr class="memitem:ab33ff72ea9a5b180b48ae58774708234"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_convertible&lt; TOtherIterableClass *, <a class="el" href="classDGtal_1_1ArrayImageIterator.html#a41b8ef878486e45d61c2ed0f475d2485">IterableClass</a> * &gt;::value, <a class="el" href="classDGtal_1_1ArrayImageIterator.html#aa10628f6331920527f070fee54dce5d8">Self</a> &amp;&gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#ab33ff72ea9a5b180b48ae58774708234">operator=</a> (<a class="el" href="classDGtal_1_1ArrayImageIterator.html">ArrayImageIterator</a>&lt; TOtherIterableClass &gt; const &amp;other)</td></tr>
@@ -153,12 +164,15 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a7c5f3752eaabe20e2fe177e9c08e8218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a7c5f3752eaabe20e2fe177e9c08e8218">increment</a> ()</td></tr>
+<tr class="memdesc:a7c5f3752eaabe20e2fe177e9c08e8218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment of one step.  <a href="#a7c5f3752eaabe20e2fe177e9c08e8218">More...</a><br /></td></tr>
 <tr class="separator:a7c5f3752eaabe20e2fe177e9c08e8218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ee941cad4f2232f3dec66a3efc635c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a39ee941cad4f2232f3dec66a3efc635c">decrement</a> ()</td></tr>
+<tr class="memdesc:a39ee941cad4f2232f3dec66a3efc635c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement of one step.  <a href="#a39ee941cad4f2232f3dec66a3efc635c">More...</a><br /></td></tr>
 <tr class="separator:a39ee941cad4f2232f3dec66a3efc635c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ce65def89e84728533e750526f7c9b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a2ce65def89e84728533e750526f7c9b7">equal</a> (<a class="el" href="classDGtal_1_1ArrayImageIterator.html#aa10628f6331920527f070fee54dce5d8">Self</a> const &amp;other) const</td></tr>
 <tr class="separator:a2ce65def89e84728533e750526f7c9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acda526ea0de739816ede50a796bf756a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a9e88aaafbbcff81a0f43e64445ca96d6">Reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#acda526ea0de739816ede50a796bf756a">dereference</a> () const</td></tr>
+<tr class="memdesc:acda526ea0de739816ede50a796bf756a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dereference.  <a href="#acda526ea0de739816ede50a796bf756a">More...</a><br /></td></tr>
 <tr class="separator:acda526ea0de739816ede50a796bf756a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a061cee113e4d83fdf952f6dde78176"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a9a061cee113e4d83fdf952f6dde78176">distance_to</a> (<a class="el" href="classDGtal_1_1ArrayImageIterator.html#aa10628f6331920527f070fee54dce5d8">Self</a> const &amp;other) const</td></tr>
 <tr class="separator:a9a061cee113e4d83fdf952f6dde78176"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,26 +182,35 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a44aec54de5c6598a95636c679f3352eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a41b8ef878486e45d61c2ed0f475d2485">IterableClass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a44aec54de5c6598a95636c679f3352eb">myIterableClassPtr</a></td></tr>
+<tr class="memdesc:a44aec54de5c6598a95636c679f3352eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the iterable class.  <a href="#a44aec54de5c6598a95636c679f3352eb">More...</a><br /></td></tr>
 <tr class="separator:a44aec54de5c6598a95636c679f3352eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a9be1da11bf84857aaf2d0775e92547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#af418618af4c7e4510acf3f2247f0ce9a">Domain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a8a9be1da11bf84857aaf2d0775e92547">myFullDomain</a></td></tr>
+<tr class="memdesc:a8a9be1da11bf84857aaf2d0775e92547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full domain of the image.  <a href="#a8a9be1da11bf84857aaf2d0775e92547">More...</a><br /></td></tr>
 <tr class="separator:a8a9be1da11bf84857aaf2d0775e92547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2f1f574324e9e0262c2145864e2e334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#af418618af4c7e4510acf3f2247f0ce9a">Domain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#af2f1f574324e9e0262c2145864e2e334">myViewDomain</a></td></tr>
+<tr class="memdesc:af2f1f574324e9e0262c2145864e2e334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterable (viewable) domain of the image.  <a href="#af2f1f574324e9e0262c2145864e2e334">More...</a><br /></td></tr>
 <tr class="separator:af2f1f574324e9e0262c2145864e2e334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1cccb3764982c0881a17170aeb2fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a7ef1da433019e6589201959d57e15813">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#acc1cccb3764982c0881a17170aeb2fd7">myFullExtent</a></td></tr>
+<tr class="memdesc:acc1cccb3764982c0881a17170aeb2fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extent of the full domain.  <a href="#acc1cccb3764982c0881a17170aeb2fd7">More...</a><br /></td></tr>
 <tr class="separator:acc1cccb3764982c0881a17170aeb2fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03120c93fa6e9aa902f7b6890b1b45f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a7ef1da433019e6589201959d57e15813">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a03120c93fa6e9aa902f7b6890b1b45f1">myViewExtent</a></td></tr>
+<tr class="memdesc:a03120c93fa6e9aa902f7b6890b1b45f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extent of the viewable domain.  <a href="#a03120c93fa6e9aa902f7b6890b1b45f1">More...</a><br /></td></tr>
 <tr class="separator:a03120c93fa6e9aa902f7b6890b1b45f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1e3f9c01a8131d52b7e560325cfcc59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a7ef1da433019e6589201959d57e15813">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#ad1e3f9c01a8131d52b7e560325cfcc59">myPoint</a></td></tr>
+<tr class="memdesc:ad1e3f9c01a8131d52b7e560325cfcc59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current point where the iterator point to.  <a href="#ad1e3f9c01a8131d52b7e560325cfcc59">More...</a><br /></td></tr>
 <tr class="separator:ad1e3f9c01a8131d52b7e560325cfcc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41f1b23217712da9e05bd49426d22809"><td class="memItemLeft" align="right" valign="top">Point::Coordinate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#a41f1b23217712da9e05bd49426d22809">myFullIndex</a></td></tr>
+<tr class="memdesc:a41f1b23217712da9e05bd49426d22809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearized index of the current point.  <a href="#a41f1b23217712da9e05bd49426d22809">More...</a><br /></td></tr>
 <tr class="separator:a41f1b23217712da9e05bd49426d22809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:afc65493ea8199948c604229edca5761f"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
 <tr class="memitem:afc65493ea8199948c604229edca5761f"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#afc65493ea8199948c604229edca5761f">ArrayImageIterator</a></td></tr>
+<tr class="memdesc:afc65493ea8199948c604229edca5761f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Friendship of interoperability.  <a href="#afc65493ea8199948c604229edca5761f">More...</a><br /></td></tr>
 <tr class="separator:afc65493ea8199948c604229edca5761f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac09f73e325921cc50ebcd96bed0f8096"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArrayImageIterator.html#ac09f73e325921cc50ebcd96bed0f8096">boost::iterator_core_access</a></td></tr>
+<tr class="memdesc:ac09f73e325921cc50ebcd96bed0f8096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Friendship of interoperability.  <a href="#ac09f73e325921cc50ebcd96bed0f8096">More...</a><br /></td></tr>
 <tr class="separator:ac09f73e325921cc50ebcd96bed0f8096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1331,7 +1354,7 @@ template&lt;typename TIterableClass&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:23:20 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 26 2019 15:43:34 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

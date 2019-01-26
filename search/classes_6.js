@@ -24,7 +24,7 @@ var searchData=
   ['forwardtraversalconcept',['ForwardTraversalConcept',['../structboost__concepts_1_1ForwardTraversalConcept.html',1,'boost_concepts']]],
   ['fp',['FP',['../classDGtal_1_1FP.html',1,'DGtal']]],
   ['fplengthestimator',['FPLengthEstimator',['../classDGtal_1_1FPLengthEstimator.html',1,'DGtal']]],
-  ['fraction',['Fraction',['../classDGtal_1_1SternBrocot_1_1Fraction.html',1,'DGtal::SternBrocot&lt; TInteger, TQuotient &gt;::Fraction'],['../classDGtal_1_1LightSternBrocot_1_1Fraction.html',1,'DGtal::LightSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction'],['../classDGtal_1_1LighterSternBrocot_1_1Fraction.html',1,'DGtal::LighterSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction']]],
+  ['fraction',['Fraction',['../classDGtal_1_1LighterSternBrocot_1_1Fraction.html',1,'DGtal::LighterSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction'],['../classDGtal_1_1LightSternBrocot_1_1Fraction.html',1,'DGtal::LightSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction'],['../classDGtal_1_1SternBrocot_1_1Fraction.html',1,'DGtal::SternBrocot&lt; TInteger, TQuotient &gt;::Fraction']]],
   ['frechetshortcut',['FrechetShortcut',['../classDGtal_1_1FrechetShortcut.html',1,'DGtal']]],
   ['frechetshortcut_3c_20constiterator_2c_20integer_20_3e',['FrechetShortcut&lt; ConstIterator, Integer &gt;',['../classDGtal_1_1FrechetShortcut.html',1,'DGtal']]],
   ['freemanchain',['FreemanChain',['../classDGtal_1_1FreemanChain.html',1,'DGtal']]],
@@ -32,5 +32,6 @@ var searchData=
   ['frontierpredicate',['FrontierPredicate',['../classDGtal_1_1functors_1_1FrontierPredicate.html',1,'DGtal::functors']]],
   ['frontinsertionsequence',['FrontInsertionSequence',['../structboost_1_1FrontInsertionSequence.html',1,'boost']]],
   ['frontinsertionsequencetostackadapter',['FrontInsertionSequenceToStackAdapter',['../classDGtal_1_1FrontInsertionSequenceToStackAdapter.html',1,'DGtal']]],
+  ['functorholder',['FunctorHolder',['../classDGtal_1_1functors_1_1FunctorHolder.html',1,'DGtal::functors']]],
   ['functoroncells',['FunctorOnCells',['../classDGtal_1_1FunctorOnCells.html',1,'DGtal']]]
 ];
