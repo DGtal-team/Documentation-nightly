@@ -73,5 +73,6 @@ var searchData=
   ['lowest',['lowest',['../classDGtal_1_1SpatialCubicalSubdivision.html#af0f387d5dfe243a6811660d5c887dba5',1,'DGtal::SpatialCubicalSubdivision']]],
   ['lowestx',['lowestX',['../classDGtal_1_1StandardDSLQ0.html#accb92c02df6ada92b57d2ee82a2ddb35',1,'DGtal::StandardDSLQ0']]],
   ['lowesty',['lowestY',['../classDGtal_1_1StandardDSLQ0.html#a867de772cdfc85cd348afcfe9482a9d0',1,'DGtal::StandardDSLQ0']]],
+  ['lpmetric',['LpMetric',['../classDGtal_1_1LpMetric.html#a340730d2d30fab9437937c8a65c7e95a',1,'DGtal::LpMetric::LpMetric(const double anExponent)'],['../classDGtal_1_1LpMetric.html#ae45b13745be05ff511adc0cd0b720c72',1,'DGtal::LpMetric::LpMetric(const LpMetric &amp;other)']]],
   ['lsf',['LSF',['../polyhedralizer_8cpp.html#afd3918f3eca46604e2195db2334bd800',1,'polyhedralizer.cpp']]]
 ];

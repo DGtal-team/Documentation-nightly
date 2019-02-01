@@ -177,6 +177,7 @@ var searchData=
   ['_7elinflocaldistance',['~LInfLocalDistance',['../classDGtal_1_1LInfLocalDistance.html#aa3dfa2a7e7b68635ccf4f4aaf91e35d3',1,'DGtal::LInfLocalDistance']]],
   ['_7elocalconvolutionnormalvectorestimator',['~LocalConvolutionNormalVectorEstimator',['../classDGtal_1_1deprecated_1_1LocalConvolutionNormalVectorEstimator.html#a1104d6cc5f26cc59d6763a385fa7f614',1,'DGtal::deprecated::LocalConvolutionNormalVectorEstimator']]],
   ['_7elocalestimatorfromsurfelfunctoradapter',['~LocalEstimatorFromSurfelFunctorAdapter',['../classDGtal_1_1LocalEstimatorFromSurfelFunctorAdapter.html#ac20f408079b4b4796211a6d62ff7f764',1,'DGtal::LocalEstimatorFromSurfelFunctorAdapter']]],
+  ['_7elpmetric',['~LpMetric',['../classDGtal_1_1LpMetric.html#abc51c47d3539e05ee6c220c4cb384f18',1,'DGtal::LpMetric']]],
   ['_7emainwindow',['~MainWindow',['http://dgtal.org/doc/tools/nightly/classMainWindow.html#ae98d00a93bc118200eeef9f9bba1dba7',1,'MainWindow']]],
   ['_7emeaningfulscaleanalysis',['~MeaningfulScaleAnalysis',['../classDGtal_1_1MeaningfulScaleAnalysis.html#ae1d395c1bac812a4d2ea15150c0ace9b',1,'DGtal::MeaningfulScaleAnalysis']]],
   ['_7emeasure',['~Measure',['../classDGtal_1_1Measure.html#aa64b069ddbf2ef0f8461f1c3bd8a940d',1,'DGtal::Measure']]],

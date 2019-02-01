@@ -45,5 +45,6 @@ var searchData=
   ['log2_3c_202_20_3e',['LOG2&lt; 2 &gt;',['../classDGtal_1_1LOG2_3_012_01_4.html',1,'DGtal']]],
   ['longvolreader',['LongvolReader',['../structDGtal_1_1LongvolReader.html',1,'DGtal']]],
   ['longvolwriter',['LongvolWriter',['../structDGtal_1_1LongvolWriter.html',1,'DGtal']]],
+  ['lpmetric',['LpMetric',['../classDGtal_1_1LpMetric.html',1,'DGtal']]],
   ['lvalueiteratorconcept',['LvalueIteratorConcept',['../structboost__concepts_1_1LvalueIteratorConcept.html',1,'boost_concepts']]]
 ];

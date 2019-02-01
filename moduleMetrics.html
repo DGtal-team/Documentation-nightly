@@ -104,9 +104,10 @@ Introduction</h1>
 <p>In the following, we restrict our attention to metric spaces even if some of them are induced by norms.</p>
 <h1><a class="anchor" id="subConcepts"></a>
 Main concepts</h1>
-<p>In <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a>, the concept of <a class="el" href="structDGtal_1_1concepts_1_1CMetricSpace.html" title="Aim: defines the concept of metric spaces. ">CMetricSpace</a> is associated with metric space definition. A first refinement of this concept is the concept of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalMetricSpace.html" title="Aim: defines the concept of digital metric spaces. ">CDigitalMetricSpace</a> whose models implement distance functions on integer numbers (i.e. \((\mathbb{Z}^n, \mathbb{Z}, d)\))). For example,</p>
+<p>In <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a>, the concept of <a class="el" href="structDGtal_1_1concepts_1_1CMetricSpace.html" title="Aim: defines the concept of metric spaces. ">CMetricSpace</a> is associated with metric space definition. A first refinement of this concept is the concept of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalMetricSpace.html" title="Aim: defines the concept of digital metric spaces. ">CDigitalMetricSpace</a> whose models implement distance functions on integer numbers (i.e. \((\mathbb{Z}^n, \mathbb{Z}, d)\)). For example,</p>
 <ul>
-<li>\( l_p\) metrics (<a class="el" href="classDGtal_1_1ExactPredicateLpSeparableMetric.html" title="Aim: implements separable l_p metrics with exact predicates. ">ExactPredicateLpSeparableMetric</a> or <a class="el" href="classDGtal_1_1InexactPredicateLpSeparableMetric.html" title="Aim: implements separable l_p metrics with approximated predicates. ">InexactPredicateLpSeparableMetric</a>) are models of <a class="el" href="structDGtal_1_1concepts_1_1CMetricSpace.html" title="Aim: defines the concept of metric spaces. ">CMetricSpace</a> for \(p&gt;1\).</li>
+<li><a class="el" href="classDGtal_1_1LpMetric.html" title="Aim: implements l_p metrics. ">LpMetric</a> are models of <a class="el" href="structDGtal_1_1concepts_1_1CMetricSpace.html" title="Aim: defines the concept of metric spaces. ">CMetricSpace</a> on \((\mathbb{R}^n, \mathbb{R}, d)\) spaces (i.e. all computations are performed on C++ "double").</li>
+<li>\( l_p\) metrics (<a class="el" href="classDGtal_1_1ExactPredicateLpSeparableMetric.html" title="Aim: implements separable l_p metrics with exact predicates. ">ExactPredicateLpSeparableMetric</a> or <a class="el" href="classDGtal_1_1InexactPredicateLpSeparableMetric.html" title="Aim: implements separable l_p metrics with approximated predicates. ">InexactPredicateLpSeparableMetric</a>) are models of <a class="el" href="structDGtal_1_1concepts_1_1CMetricSpace.html" title="Aim: defines the concept of metric spaces. ">CMetricSpace</a> on \((\mathbb{Z}^n, \mathbb{Z}, d)\) for \(p&gt;1\) with specific separability methods.</li>
 <li>Chamfer norms with axis symmetric unit ball (see <a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html" title="Aim: implements a model of CSeparableMetric for Chamfer and path based norms. ">experimental::ChamferNorm2D</a> in dimension 2).</li>
 <li><a class="el" href="classDGtal_1_1DigitalMetricAdapter.html" title="Aim: simple adapter class which adapts any models of concepts::CMetricSpace to a model of concepts::C...">DigitalMetricAdapter</a> which adapts any metric (model of <a class="el" href="structDGtal_1_1concepts_1_1CMetricSpace.html" title="Aim: defines the concept of metric spaces. ">CMetricSpace</a>) to digital space using the ceil function. This induces a digital metric (ceil function preserves the triangular inequality).</li>
 </ul>
@@ -187,7 +188,7 @@ Main models and Computational Costs for Volumetric Analysis</h1>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 26 2019 15:43:32 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 1 2019 10:08:37 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

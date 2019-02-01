@@ -136,6 +136,7 @@ var searchData=
   ['testlocalconvolutionnormalvectorestimator_2ecpp',['testLocalConvolutionNormalVectorEstimator.cpp',['../testLocalConvolutionNormalVectorEstimator_8cpp.html',1,'']]],
   ['testlocalestimatorfromfunctoradapter_2ecpp',['testLocalEstimatorFromFunctorAdapter.cpp',['../testLocalEstimatorFromFunctorAdapter_8cpp.html',1,'']]],
   ['testlongvol_2ecpp',['testLongvol.cpp',['../testLongvol_8cpp.html',1,'']]],
+  ['testlpmetric_2ecpp',['testLpMetric.cpp',['../testLpMetric_8cpp.html',1,'']]],
   ['testmagickreader_2ecpp',['testMagickReader.cpp',['../testMagickReader_8cpp.html',1,'']]],
   ['testmagickwriter_2ecpp',['testMagickWriter.cpp',['../testMagickWriter_8cpp.html',1,'']]],
   ['testmeaningfulscaleanalysis_2ecpp',['testMeaningfulScaleAnalysis.cpp',['../testMeaningfulScaleAnalysis_8cpp.html',1,'']]],
