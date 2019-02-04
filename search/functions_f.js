@@ -24,6 +24,7 @@ var searchData=
   ['operator_20const_20ring_20_26',['operator const Ring &amp;',['../classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#aa9f6fcba82c417f9a235012ed59d8ba4',1,'DGtal::MPolynomial&lt; 0, TRing, TAlloc &gt;']]],
   ['operator_20const_20t_20_26',['operator const T &amp;',['../classDGtal_1_1ConstAlias.html#a10214bec25f01dea637ce5922c090f07',1,'DGtal::ConstAlias']]],
   ['operator_20countedconstptrorconstptr_3c_20t_20_3e',['operator CountedConstPtrOrConstPtr&lt; T &gt;',['../classDGtal_1_1ConstAlias.html#a914a6964657bb0626ba4be455858e8e2',1,'DGtal::ConstAlias']]],
+  ['operator_20countedptr_3c_20t_20_3e',['operator CountedPtr&lt; T &gt;',['../classDGtal_1_1Clone.html#a5ef22dcde860b090c986bfdd966c85b6',1,'DGtal::Clone']]],
   ['operator_20countedptrorptr_3c_20t_20_3e',['operator CountedPtrOrPtr&lt; T &gt;',['../classDGtal_1_1Alias.html#abcd29d6b74955a54b01c8af68cb2cd79',1,'DGtal::Alias']]],
   ['operator_20cowptr_3c_20t_20_3e',['operator CowPtr&lt; T &gt;',['../classDGtal_1_1Clone.html#ab73b0979f7a54636cd6fda56037021a8',1,'DGtal::Clone']]],
   ['operator_20mpolynm1',['operator MPolyNM1',['../classDGtal_1_1MPolynomialEvaluatorImpl.html#a7af3c651f1d07480050f1a7071fdbf35',1,'DGtal::MPolynomialEvaluatorImpl::operator MPolyNM1()'],['../classDGtal_1_1MPolynomialEvaluator.html#aba65745d80258f8b4efdc8e056e28c2c',1,'DGtal::MPolynomialEvaluator::operator MPolyNM1()']]],

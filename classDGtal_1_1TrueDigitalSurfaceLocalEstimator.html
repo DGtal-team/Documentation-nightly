@@ -204,7 +204,7 @@ class DGtal::TrueDigitalSurfaceLocalEstimator&lt; TKSpace, TShape, TGeometricFun
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> ImplicitPolynomial3Shape&lt;Z3i::Space&gt; <a class="code" href="classDGtal_1_1ImplicitPolynomial3Shape.html">ImplicitShape</a>;</div><div class="line"><span class="keyword">typedef</span> ShapeGeometricFunctors::ShapeNormalVectorFunctor&lt;ImplicitShape&gt; NormalFunctor;</div><div class="line"><span class="keyword">typedef</span> TrueDigitalSurfaceLocalEstimator&lt;Z3i::KSpace, ImplicitShape, NormalFunctor&gt; TrueNormalEstimator;</div><div class="line">TrueNormalEstimator true_estimator;</div><div class="line">true_estimator.setParams( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, NormalFunctor() ); <span class="comment">// K is some KSpace</span></div><div class="line">true_estimator.attach( shape );                 <span class="comment">// shape is some ImplicitShape</span></div><div class="line">true_estimator.<a class="code" href="classDGtal_1_1ImplicitPolynomial3Shape.html#af9a38f67eacc066b1b8b509df6a04175">init</a>( 1.0, surface.begin(), surface.end() ); <span class="comment">// surface is a digital surface.</span></div></div><!-- fragment --><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo:</a></b></dt><dd><p class="startdd">add precise concept CShape </p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> ImplicitPolynomial3Shape&lt;Z3i::Space&gt; <a class="code" href="classDGtal_1_1ImplicitPolynomial3Shape.html">ImplicitShape</a>;</div><div class="line"><span class="keyword">typedef</span> ShapeGeometricFunctors::ShapeNormalVectorFunctor&lt;ImplicitShape&gt; NormalFunctor;</div><div class="line"><span class="keyword">typedef</span> TrueDigitalSurfaceLocalEstimator&lt;Z3i::KSpace, ImplicitShape, NormalFunctor&gt; TrueNormalEstimator;</div><div class="line">TrueNormalEstimator true_estimator;</div><div class="line">true_estimator.setParams( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, NormalFunctor() ); <span class="comment">// K is some KSpace</span></div><div class="line">true_estimator.attach( shape );                 <span class="comment">// shape is some ImplicitShape</span></div><div class="line">true_estimator.<a class="code" href="classDGtal_1_1ImplicitPolynomial3Shape.html#af9a38f67eacc066b1b8b509df6a04175">init</a>( 1.0, surface.begin(), surface.end() ); <span class="comment">// surface is a digital surface.</span></div></div><!-- fragment --><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd><p class="startdd">add precise concept CShape </p>
 <p class="enddd">for now we use a <a class="el" href="structDGtal_1_1CanonicSCellEmbedder.html" title="Aim: A trivial embedder for signed cell, which corresponds to the canonic injection of cell centroids...">CanonicSCellEmbedder</a> times the gridstep to embed surfels. </p>
 </dd></dl>
 
@@ -1126,7 +1126,7 @@ template&lt;typename TKSpace , typename TShape , typename TGeometricFunctor &gt;
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 1 2019 17:07:07 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 4 2019 19:08:13 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
