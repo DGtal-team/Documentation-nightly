@@ -169,24 +169,24 @@ Boundary of <em>X</em>, displayed in magenta.</div></div>
 </ul>
 <h1><a class="anchor" id="dgtal_ccomplex_sec6"></a>
 Set operations on complexes</h1>
-<p>A cubical complex can be seen as a generic container (it is a model of <a class="el" href="structboost_1_1Container.html" title="Go to http://www.sgi.com/tech/stl/Container.html. ">boost::Container</a>). Remember though that it is not a model of <a class="el" href="structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. ">boost::DefaultConstructible</a>, because it must know a cellular grid space to be valid. You could thus use operations defined in <a class="el" href="namespaceDGtal_1_1functions_1_1setops.html">DGtal::functions::setops</a> (see <a class="el" href="moduleSetFunctions.html">Set operations on arbitrary containers</a>) to perform set operations and relations on complexes. However, to use the specificity of the templated parameter CellContainer of <a class="el" href="classDGtal_1_1CubicalComplex.html" title="Aim: This class represents an arbitrary cubical complex living in some Khalimsky space. Cubical complexes are sets of cells of different dimensions related together with incidence relations. Two cells in a cubical complex are incident if and only if they are incident in the surrounding Khalimsky space. In other words, cubical complexes are defined here as subsets of Khalimsky spaces. ">CubicalComplex</a>, it is better to use operations and relations defined in namespace DGtal::function, for instance as follows:</p>
-<div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespaceDGtal_1_1functions.html">DGtal::functions</a>;</div><div class="line"><a class="code" href="classDGtal_1_1CubicalComplex.html">CC</a> X( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a> );            <span class="comment">// creates the cubical complex</span></div><div class="line"><a class="code" href="classDGtal_1_1CubicalComplex.html">CC</a> Xc  = ~X;          <span class="comment">// closing of X</span></div><div class="line"><a class="code" href="classDGtal_1_1CubicalComplex.html">CC</a> Xco = *Xc;         <span class="comment">// opening of Xc (interior of X).</span></div><div class="line"><a class="code" href="classDGtal_1_1CubicalComplex.html">CC</a> Xbd = Xc - Xco;    <span class="comment">// boundary of X.</span></div><div class="line"><a class="code" href="classDGtal_1_1CubicalComplex.html">CC</a> Xbd2= X.<a class="code" href="classDGtal_1_1CubicalComplex.html#a84cf9d409da5be61c53bdfb53271afe6">boundary</a>();<span class="comment">// same result for pure complex. </span></div></div><!-- fragment --><p>You have the following operations:</p><ul>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#ae447f1a3e814a5bb11a9aeaec99d8b0f">functions::operator|</a> : union of two complexes.</li>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#ad734479156a9b698609b8712d66a44f6">functions::operator|=</a> : assignment union with another complex.</li>
-<li>functions::operator&amp; : intersection of two complexes.</li>
-<li>functions::operator&amp;= : assignment intersection with another complex.</li>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#a2192cfe9f2c9b5d3b3ae1e11e74696d5">functions::operator-</a> : set difference of two complexes.</li>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#ae84b034580c878cf0e6793c13af5d6dc">functions::operator-=</a> : assignment set difference with another complex.</li>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#aaafb4dd5d75d73c6b2558bda06ff7ba2">functions::operator^</a> : symmetric set difference of two complexes.</li>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#ac2dc598f6424e1a8d919c4f8ec1d6234">functions::operator^=</a> : assignment symmetric set difference with another complex.</li>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#a168a5ac6b1b9969a8aec0f82fd637e89">functions::operator~</a> : closing of a complex (smallest closed complex containg input complex).</li>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#aa66f96d40ea286f17345ce9dc6c16769">functions::operator*</a> : opening of a complex (greatest open complex contained in input complex).</li>
+<p>A cubical complex can be seen as a generic container (it is a model of <a class="el" href="structboost_1_1Container.html" title="Go to http://www.sgi.com/tech/stl/Container.html. ">boost::Container</a>). Remember though that it is not a model of <a class="el" href="structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. ">boost::DefaultConstructible</a>, because it must know a cellular grid space to be valid. You could thus use operations defined in <a class="el" href="namespaceDGtal_1_1functions_1_1setops.html">DGtal::functions::setops</a> (see <a class="el" href="moduleSetFunctions.html">Set operations on arbitrary containers</a>) to perform set operations and relations on complexes. However, to use the specificity of the templated parameter CellContainer of <a class="el" href="classDGtal_1_1CubicalComplex.html" title="Aim: This class represents an arbitrary cubical complex living in some Khalimsky space. Cubical complexes are sets of cells of different dimensions related together with incidence relations. Two cells in a cubical complex are incident if and only if they are incident in the surrounding Khalimsky space. In other words, cubical complexes are defined here as subsets of Khalimsky spaces. ">CubicalComplex</a>, it is better to use operations and relations specifically defined for <a class="el" href="classDGtal_1_1CubicalComplex.html" title="Aim: This class represents an arbitrary cubical complex living in some Khalimsky space. Cubical complexes are sets of cells of different dimensions related together with incidence relations. Two cells in a cubical complex are incident if and only if they are incident in the surrounding Khalimsky space. In other words, cubical complexes are defined here as subsets of Khalimsky spaces. ">CubicalComplex</a>, for instance as follows:</p>
+<div class="fragment"><div class="line"><a class="code" href="classDGtal_1_1CubicalComplex.html">CC</a> X( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a> );            <span class="comment">// creates the cubical complex</span></div><div class="line"><a class="code" href="classDGtal_1_1CubicalComplex.html">CC</a> Xc  = ~X;          <span class="comment">// closing of X</span></div><div class="line"><a class="code" href="classDGtal_1_1CubicalComplex.html">CC</a> Xco = *Xc;         <span class="comment">// opening of Xc (interior of X).</span></div><div class="line"><a class="code" href="classDGtal_1_1CubicalComplex.html">CC</a> Xbd = Xc - Xco;    <span class="comment">// boundary of X.</span></div><div class="line"><a class="code" href="classDGtal_1_1CubicalComplex.html">CC</a> Xbd2= X.<a class="code" href="classDGtal_1_1CubicalComplex.html#a84cf9d409da5be61c53bdfb53271afe6">boundary</a>();<span class="comment">// same result for pure complex. </span></div></div><!-- fragment --><p>You have the following operations:</p><ul>
+<li>operator| : union of two complexes.</li>
+<li>operator|= : assignment union with another complex.</li>
+<li>operator&amp; : intersection of two complexes.</li>
+<li>operator&amp;= : assignment intersection with another complex.</li>
+<li>operator- : set difference of two complexes.</li>
+<li>operator-= : assignment set difference with another complex.</li>
+<li>operator^ : symmetric set difference of two complexes.</li>
+<li>operator^= : assignment symmetric set difference with another complex.</li>
+<li>operator~ : closing of a complex (smallest closed complex containg input complex).</li>
+<li>operator* : opening of a complex (greatest open complex contained in input complex).</li>
 </ul>
 <p>And the following relations:</p><ul>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#aeab33aff5419600defbb447146e533c0">functions::operator&lt;=</a> : inclusion of two complexes (subset).</li>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#a8dbd4654807b58176f0a7aa25edc9173">functions::operator&gt;=</a> : inclusion of two complexes (supset).</li>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#a56c93bd91d630dec05aeaa56370213a6">functions::operator==</a> : equality of two complexes (both subset and supset).</li>
-<li><a class="el" href="namespaceDGtal_1_1functions.html#a93277b98c78598b1057e678c1066848d">functions::operator!=</a> : non-equality of two complexes (equal is false).</li>
+<li>operator&lt;= : inclusion of two complexes (subset).</li>
+<li>operator&gt;= : inclusion of two complexes (supset).</li>
+<li>operator== : equality of two complexes (both subset and supset).</li>
+<li>operator!= : non-equality of two complexes (equal is false).</li>
 </ul>
 <p>All these operations are at most <b>linear</b> in the sum of the number of cells of input complexes, but they are generally exponential in the dimension of complexes.</p>
 <h1><a class="anchor" id="dgtal_ccomplex_sec7"></a>
@@ -234,7 +234,7 @@ The starting complex X after IsthmusCollapse.</div></div>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 4 2019 19:08:03 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2019 14:31:24 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
