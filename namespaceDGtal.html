@@ -913,6 +913,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an (unsigned) cell in a cellular grid space by its Khalimsky coordinates.  <a href="structDGtal_1_1KhalimskyCell.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1KhalimskyPreCell.html">KhalimskyPreCell</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an unsigned cell in an unbounded cellular grid space by its Khalimsky coordinates.  <a href="structDGtal_1_1KhalimskyPreCell.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html">KhalimskyPreSpaceND</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: This class is a model of CPreCellularGridSpaceND. It represents the cubical grid as a cell complex, whose cells are defined as an array of integers. The topology of the cells is defined by the parity of the coordinates (even: closed, odd: open).  <a href="classDGtal_1_1KhalimskyPreSpaceND.html#details">More...</a><br /></td></tr>
@@ -921,6 +922,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex, whose cells are defined as an array of integers. The topology of the cells is defined by the parity of the coordinates (even: closed, odd: open).  <a href="classDGtal_1_1KhalimskySpaceND.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1KhalimskySpaceNDHelper.html">KhalimskySpaceNDHelper</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal class of <a class="el" href="classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex...">KhalimskySpaceND</a> that provides some optimizations depending on the space type.  <a href="classDGtal_1_1KhalimskySpaceNDHelper.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1L1LengthEstimator.html">L1LengthEstimator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: a simple model of CGlobalCurveEstimator that compute the length of a curve using the l_1 metric (just add 1/h for every step).  <a href="classDGtal_1_1L1LengthEstimator.html#details">More...</a><br /></td></tr>
@@ -1235,7 +1237,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: Export a 2D and a 3D <a class="el" href="classDGtal_1_1Image.html" title="Aim: implements association bewteen points lying in a digital domain and values. ">Image</a> using the Netpbm PPM formats (ASCII mode).  <a href="structDGtal_1_1PPMWriter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html">PreCellDirectionIterator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is useful for looping on all "interesting" coordinates of a pre-cell. For instance, surfels in Z3 have two interesting coordinates (the ones spanned by the surfel).  <a href="classDGtal_1_1PreCellDirectionIterator.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is useful for looping on all "interesting" coordinates of a pre-cell.  <a href="classDGtal_1_1PreCellDirectionIterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PredicateFromOrientationFunctor2.html">PredicateFromOrientationFunctor2</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: Small adapter to models of COrientationFunctor2. It is a model of <a class="el" href="structDGtal_1_1concepts_1_1CPointPredicate.html" title="Aim: Defines a predicate on a point. ">concepts::CPointPredicate</a>. It is also a ternary predicate on points, useful for basic geometric tasks such as convex hull computation.  <a href="classDGtal_1_1PredicateFromOrientationFunctor2.html#details">More...</a><br /></td></tr>
@@ -1338,6 +1340,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a signed cell in a cellular grid space by its Khalimsky coordinates and a boolean value.  <a href="structDGtal_1_1SignedKhalimskyCell.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1SignedKhalimskyPreCell.html">SignedKhalimskyPreCell</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a signed cell in an unbounded cellular grid space by its Khalimsky coordinates and a boolean value.  <a href="structDGtal_1_1SignedKhalimskyPreCell.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Simple2x2DetComputer.html">Simple2x2DetComputer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: Small class useful to compute the determinant of a 2x2 matrix from its four coefficients, ie. \( \begin{vmatrix} a &amp; x \\ b &amp; y \end{vmatrix} \).  <a href="classDGtal_1_1Simple2x2DetComputer.html#details">More...</a><br /></td></tr>
@@ -2743,6 +2746,7 @@ Functions</h2></td></tr>
 <tr class="separator:af5fe10bf3d39b724578b076625e81df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c5e0b95cb3bf61322d889850690c71"><td class="memTemplParams" colspan="2">template&lt;Dimension dim, typename TInteger &gt; </td></tr>
 <tr class="memitem:a04c5e0b95cb3bf61322d889850690c71"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal.html#a04c5e0b95cb3bf61322d889850690c71">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html">KhalimskyPreSpaceND</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, TInteger &gt; &amp;object)</td></tr>
+<tr class="memdesc:a04c5e0b95cb3bf61322d889850690c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads 'operator&lt;&lt;' for displaying objects of class '<a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html" title="Aim: This class is a model of CPreCellularGridSpaceND. It represents the cubical grid as a cell compl...">KhalimskyPreSpaceND</a>'.  <a href="#a04c5e0b95cb3bf61322d889850690c71">More...</a><br /></td></tr>
 <tr class="separator:a04c5e0b95cb3bf61322d889850690c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36f9d0220351cf40a44a1430fc7dcb6b"><td class="memTemplParams" colspan="2">template&lt;Dimension dim, typename TInteger &gt; </td></tr>
 <tr class="memitem:a36f9d0220351cf40a44a1430fc7dcb6b"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal.html#a36f9d0220351cf40a44a1430fc7dcb6b">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="structDGtal_1_1KhalimskyCell.html">KhalimskyCell</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, TInteger &gt; &amp;object)</td></tr>
@@ -2752,6 +2756,7 @@ Functions</h2></td></tr>
 <tr class="separator:a6851bd6ddd1a7f9164c8f8273ee2727c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a690f8c5f9f1d11d71b088ef5141506fa"><td class="memTemplParams" colspan="2">template&lt;Dimension dim, typename TInteger &gt; </td></tr>
 <tr class="memitem:a690f8c5f9f1d11d71b088ef5141506fa"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal.html#a690f8c5f9f1d11d71b088ef5141506fa">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classDGtal_1_1KhalimskySpaceND.html">KhalimskySpaceND</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, TInteger &gt; &amp;object)</td></tr>
+<tr class="memdesc:a690f8c5f9f1d11d71b088ef5141506fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads 'operator&lt;&lt;' for displaying objects of class '<a class="el" href="classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex...">KhalimskySpaceND</a>'.  <a href="#a690f8c5f9f1d11d71b088ef5141506fa">More...</a><br /></td></tr>
 <tr class="separator:a690f8c5f9f1d11d71b088ef5141506fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15355fc66cdd9267509b7e1820bb849e"><td class="memTemplParams" colspan="2">template&lt;typename TKSpace , typename TSurfelPredicate &gt; </td></tr>
 <tr class="memitem:a15355fc66cdd9267509b7e1820bb849e"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal.html#a15355fc66cdd9267509b7e1820bb849e">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classDGtal_1_1LightExplicitDigitalSurface.html">LightExplicitDigitalSurface</a>&lt; TKSpace, TSurfelPredicate &gt; &amp;object)</td></tr>
@@ -11351,38 +11356,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="af5fe10bf3d39b724578b076625e81df3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5fe10bf3d39b724578b076625e81df3">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[78/223]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;Dimension dim, typename TInteger &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream&amp; DGtal::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structDGtal_1_1SignedKhalimskyPreCell.html">SignedKhalimskyPreCell</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, TInteger &gt; &amp;&#160;</td>
-          <td class="paramname"><em>object</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a94e0a7004286b0579aa6a27ca6804e85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94e0a7004286b0579aa6a27ca6804e85">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[79/223]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e0a7004286b0579aa6a27ca6804e85">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[78/223]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11419,6 +11394,36 @@ template&lt;typename W , typename TSep &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="ReverseDistanceTransformation_8h_source.html#l00257">257</a> of file <a class="el" href="ReverseDistanceTransformation_8h_source.html">ReverseDistanceTransformation.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  {</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">object</span>.selfDisplay( out );</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">return</span> out;</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="af5fe10bf3d39b724578b076625e81df3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5fe10bf3d39b724578b076625e81df3">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[79/223]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;Dimension dim, typename TInteger &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; DGtal::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structDGtal_1_1SignedKhalimskyPreCell.html">SignedKhalimskyPreCell</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, TInteger &gt; &amp;&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a0d6fd271d4780ea13d45a7b0a62849e9"></a>
@@ -16754,7 +16759,9 @@ template&lt;Dimension dim, typename TInteger &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Overloads 'operator&lt;&lt;' for displaying objects of class '<a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html" title="Aim: This class is a model of CPreCellularGridSpaceND. It represents the cubical grid as a cell compl...">KhalimskyPreSpaceND</a>'. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Overloads 'operator&lt;&lt;' for displaying objects of class '<a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html" title="Aim: This class is a model of CPreCellularGridSpaceND. It represents the cubical grid as a cell compl...">KhalimskyPreSpaceND</a>'. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">out</td><td>the output stream where the object is written. </td></tr>
     <tr><td class="paramname">object</td><td>the object of class '<a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html" title="Aim: This class is a model of CPreCellularGridSpaceND. It represents the cubical grid as a cell compl...">KhalimskyPreSpaceND</a>' to write. </td></tr>
@@ -16868,7 +16875,9 @@ template&lt;Dimension dim, typename TInteger &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Overloads 'operator&lt;&lt;' for displaying objects of class '<a class="el" href="classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex...">KhalimskySpaceND</a>'. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Overloads 'operator&lt;&lt;' for displaying objects of class '<a class="el" href="classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex...">KhalimskySpaceND</a>'. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">out</td><td>the output stream where the object is written. </td></tr>
     <tr><td class="paramname">object</td><td>the object of class '<a class="el" href="classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex...">KhalimskySpaceND</a>' to write. </td></tr>
@@ -18931,7 +18940,7 @@ template&lt;int n, typename Ring &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 28 2019 08:41:42 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 5 2019 16:30:54 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

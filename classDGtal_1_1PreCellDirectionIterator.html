@@ -83,7 +83,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This class is useful for looping on all "interesting" coordinates of a pre-cell. For instance, surfels in Z3 have two interesting coordinates (the ones spanned by the surfel).  
+<p>This class is useful for looping on all "interesting" coordinates of a pre-cell.  
  <a href="classDGtal_1_1PreCellDirectionIterator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="KhalimskyPreSpaceND_8h_source.html">DGtal/topology/KhalimskyPreSpaceND.h</a>&gt;</code></p>
@@ -106,43 +106,56 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a224bfb3310448708a44969d6c1d82c2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a224bfb3310448708a44969d6c1d82c2d">PreCellDirectionIterator</a> (<a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a27f70b0415b02e9d4e4ec8d913653b76">Cell</a> cell, bool open=true)</td></tr>
+<tr class="memdesc:a224bfb3310448708a44969d6c1d82c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from a pre-cell.  <a href="#a224bfb3310448708a44969d6c1d82c2d">More...</a><br /></td></tr>
 <tr class="separator:a224bfb3310448708a44969d6c1d82c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80b8fcd9e851403e6f6b6fcab1c574ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a80b8fcd9e851403e6f6b6fcab1c574ce">PreCellDirectionIterator</a> (<a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a2c0ae6516934a68b7f8a307e05e0ad70">SCell</a> scell, bool open=true)</td></tr>
+<tr class="memdesc:a80b8fcd9e851403e6f6b6fcab1c574ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from a signed pre-cell.  <a href="#a80b8fcd9e851403e6f6b6fcab1c574ce">More...</a><br /></td></tr>
 <tr class="separator:a80b8fcd9e851403e6f6b6fcab1c574ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87aefedc9c630f0c84c8d56a78128c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#af87aefedc9c630f0c84c8d56a78128c8">operator*</a> () const</td></tr>
+<tr class="memdesc:af87aefedc9c630f0c84c8d56a78128c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current direction.  <a href="#af87aefedc9c630f0c84c8d56a78128c8">More...</a><br /></td></tr>
 <tr class="separator:af87aefedc9c630f0c84c8d56a78128c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad816a1650f43c802867c1aabe57e88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html">PreCellDirectionIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#afad816a1650f43c802867c1aabe57e88">operator++</a> ()</td></tr>
+<tr class="memdesc:afad816a1650f43c802867c1aabe57e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-increment. Go to next direction.  <a href="#afad816a1650f43c802867c1aabe57e88">More...</a><br /></td></tr>
 <tr class="separator:afad816a1650f43c802867c1aabe57e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a00661fe73c0d7444f976fde447cf82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a8a00661fe73c0d7444f976fde447cf82">operator!=</a> (const <a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a4c9947583978b2428ae6f62f97f3c832">Integer</a>) const</td></tr>
+<tr class="memdesc:a8a00661fe73c0d7444f976fde447cf82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast comparison with unsigned integer (unused parameter).  <a href="#a8a00661fe73c0d7444f976fde447cf82">More...</a><br /></td></tr>
 <tr class="separator:a8a00661fe73c0d7444f976fde447cf82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6207ca364818d943293e6dc8315e6ec4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a6207ca364818d943293e6dc8315e6ec4">end</a> () const</td></tr>
+<tr class="memdesc:a6207ca364818d943293e6dc8315e6ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return 'true' if the iteration is ended.  <a href="#a6207ca364818d943293e6dc8315e6ec4">More...</a><br /></td></tr>
 <tr class="separator:a6207ca364818d943293e6dc8315e6ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf3aab1d0cc0eb0e2e0d3bc231c3e601"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#aaf3aab1d0cc0eb0e2e0d3bc231c3e601">operator!=</a> (const <a class="el" href="classDGtal_1_1PreCellDirectionIterator.html">PreCellDirectionIterator</a> &amp;other) const</td></tr>
+<tr class="memdesc:aaf3aab1d0cc0eb0e2e0d3bc231c3e601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slow comparison with other iterator. Useful to check for end of loop.  <a href="#aaf3aab1d0cc0eb0e2e0d3bc231c3e601">More...</a><br /></td></tr>
 <tr class="separator:aaf3aab1d0cc0eb0e2e0d3bc231c3e601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd6c027c74b09f53e5a58c3069b6d4d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#afd6c027c74b09f53e5a58c3069b6d4d4">operator==</a> (const <a class="el" href="classDGtal_1_1PreCellDirectionIterator.html">PreCellDirectionIterator</a> &amp;other) const</td></tr>
+<tr class="memdesc:afd6c027c74b09f53e5a58c3069b6d4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slow comparison with other iterator.  <a href="#afd6c027c74b09f53e5a58c3069b6d4d4">More...</a><br /></td></tr>
 <tr class="separator:afd6c027c74b09f53e5a58c3069b6d4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a341ea0aba623a1879d93b28f0c082f39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a341ea0aba623a1879d93b28f0c082f39">find</a> ()</td></tr>
+<tr class="memdesc:a341ea0aba623a1879d93b28f0c082f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look for next valid coordinate.  <a href="#a341ea0aba623a1879d93b28f0c082f39">More...</a><br /></td></tr>
 <tr class="separator:a341ea0aba623a1879d93b28f0c082f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a01f6d545f0681a71f245665233109da0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a01f6d545f0681a71f245665233109da0">myDir</a></td></tr>
+<tr class="memdesc:a01f6d545f0681a71f245665233109da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">the current direction.  <a href="#a01f6d545f0681a71f245665233109da0">More...</a><br /></td></tr>
 <tr class="separator:a01f6d545f0681a71f245665233109da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3889bf939eea76d2af12327b12bcca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a27f70b0415b02e9d4e4ec8d913653b76">Cell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a5e3889bf939eea76d2af12327b12bcca">myCell</a></td></tr>
+<tr class="memdesc:a5e3889bf939eea76d2af12327b12bcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">the cell.  <a href="#a5e3889bf939eea76d2af12327b12bcca">More...</a><br /></td></tr>
 <tr class="separator:a5e3889bf939eea76d2af12327b12bcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a825292a50867694a46c9284b31327981"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a825292a50867694a46c9284b31327981">myOpen</a></td></tr>
+<tr class="memdesc:a825292a50867694a46c9284b31327981"><td class="mdescLeft">&#160;</td><td class="mdescRight">If 'true', returns open coordinates, otherwise returns closed coordinates.  <a href="#a825292a50867694a46c9284b31327981">More...</a><br /></td></tr>
 <tr class="separator:a825292a50867694a46c9284b31327981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;Dimension dim, typename TInteger = DGtal::int32_t&gt;<br />
 class DGtal::PreCellDirectionIterator&lt; dim, TInteger &gt;</h3>
 
-<p>This class is useful for looping on all "interesting" coordinates of a pre-cell. For instance, surfels in Z3 have two interesting coordinates (the ones spanned by the surfel). </p>
+<p>This class is useful for looping on all "interesting" coordinates of a pre-cell. </p>
+<p>For instance, surfels in Z3 have two interesting coordinates (the ones spanned by the surfel).</p>
 <div class="fragment"><div class="line"><a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">KPreSpace::Cell</a> p;</div><div class="line">KPreSpace::DirIterator q;</div><div class="line"><span class="keywordflow">for</span> ( q = KPreSpace::uDirs( p ); q != 0; ++q )</div><div class="line">{</div><div class="line">KPreSpace::Dimension dir = *q;</div><div class="line">...</div><div class="line">}</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00276">276</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00281">281</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a27f70b0415b02e9d4e4ec8d913653b76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27f70b0415b02e9d4e4ec8d913653b76">&#9670;&nbsp;</a></span>Cell</h2>
@@ -158,7 +171,7 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00281">281</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00286">286</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
 
 </div>
 </div>
@@ -176,7 +189,7 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00279">279</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00284">284</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
 
 </div>
 </div>
@@ -194,7 +207,7 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00282">282</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00287">287</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
 
 </div>
 </div>
@@ -234,7 +247,9 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructor from a pre-cell. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Constructor from a pre-cell. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cell</td><td>any unsigned pre-cell </td></tr>
     <tr><td class="paramname">open</td><td>'true' if the cell if open. </td></tr>
@@ -279,7 +294,9 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructor from a signed pre-cell. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Constructor from a signed pre-cell. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scell</td><td>any signed pre-cell </td></tr>
     <tr><td class="paramname">open</td><td>'true' if the cell if open. </td></tr>
@@ -306,6 +323,8 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Return 'true' if the iteration is ended. </p>
 <dl class="section return"><dt>Returns</dt><dd>'true' if the iteration is ended. </dd></dl>
 
 </div>
@@ -334,6 +353,7 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Look for next valid coordinate. </p>
 
 </div>
@@ -355,7 +375,9 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Fast comparison with unsigned integer (unused parameter). Comparison is 'false' at the end of the iteration.</p>
+
+<p>Fast comparison with unsigned integer (unused parameter). </p>
+<p>Comparison is 'false' at the end of the iteration.</p>
 <dl class="section return"><dt>Returns</dt><dd>'true' if the iterator is finished. </dd></dl>
 
 </div>
@@ -377,7 +399,9 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Slow comparison with other iterator. Useful to check for end of loop. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Slow comparison with other iterator. Useful to check for end of loop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">other</td><td>any direction iterator. </td></tr>
   </table>
@@ -402,6 +426,8 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Return the current direction. </p>
 <dl class="section return"><dt>Returns</dt><dd>the current direction. </dd></dl>
 
 </div>
@@ -422,6 +448,7 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Pre-increment. Go to next direction. </p>
 
 </div>
@@ -443,7 +470,9 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Slow comparison with other iterator. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Slow comparison with other iterator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">other</td><td>any direction iterator. </td></tr>
   </table>
@@ -474,9 +503,10 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>the cell. </p>
 
-<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00338">338</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00344">344</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
 
 </div>
 </div>
@@ -501,9 +531,10 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>the current direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00336">336</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00342">342</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
 
 </div>
 </div>
@@ -528,9 +559,10 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>If 'true', returns open coordinates, otherwise returns closed coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00341">341</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="KhalimskyPreSpaceND_8h_source.html#l00348">348</a> of file <a class="el" href="KhalimskyPreSpaceND_8h_source.html">KhalimskyPreSpaceND.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +572,7 @@ template&lt;Dimension dim, typename TInteger  = DGtal::int32_t&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 28 2019 08:41:49 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 5 2019 16:31:02 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
