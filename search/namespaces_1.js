@@ -5,6 +5,7 @@ var searchData=
   ['dec',['dec',['http://dgtal.org/doc/tools/nightly/namespaceDGtal_1_1functions_1_1dec.html',1,'DGtal::functions']]],
   ['deprecated',['deprecated',['../namespaceDGtal_1_1deprecated.html',1,'DGtal::deprecated'],['../namespaceDGtal_1_1functors_1_1deprecated.html',1,'DGtal::functors::deprecated']]],
   ['detail',['detail',['../namespaceDGtal_1_1detail.html',1,'DGtal']]],
+  ['details',['details',['../namespaceDGtal_1_1details.html',1,'DGtal']]],
   ['dgtal',['DGtal',['../namespaceDGtal.html',1,'']]],
   ['experimental',['experimental',['../namespaceDGtal_1_1experimental.html',1,'DGtal']]],
   ['functions',['functions',['../namespaceDGtal_1_1functions.html',1,'DGtal']]],

@@ -223,7 +223,7 @@ ConstImageAdapter</h2>
 <div class="caption">
 (4) 16x16 image: (1,1) to (16,16) adapted from image (1) with a thresholder set to 127.</div></div>
  <p>Here is finally the construction of an image adapter that use a functor to change 'unsigned char' values to 'double' values using a log scale functor defined like that:</p>
-<div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scalar&gt;</div><div class="line"><span class="keyword">struct </span>LogScaleFunctor {</div><div class="line"></div><div class="line">  LogScaleFunctor() {};</div><div class="line">  <span class="keywordtype">double</span> operator()(<span class="keyword">const</span> Scalar &amp;a)<span class="keyword"> const</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> std::log( 1 + <a class="code" href="structDGtal_1_1NumberTraits.html#a8a933716b517bdd69c3ca0264ea02ffe">NumberTraits&lt;Scalar&gt;::castToDouble</a>(a) );</div><div class="line">  }</div><div class="line">  </div><div class="line">};</div></div><!-- fragment --><p> defined from the initial image:</p>
+<div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scalar&gt;</div><div class="line"><span class="keyword">struct </span>LogScaleFunctor {</div><div class="line"></div><div class="line">  LogScaleFunctor() {};</div><div class="line">  <span class="keywordtype">double</span> operator()(<span class="keyword">const</span> Scalar &amp;a)<span class="keyword"> const</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> std::log( 1 + <a class="code" href="structDGtal_1_1NumberTraitsImpl.html#af97eb78317d1fc1c6babd4dcc95ed336">NumberTraits&lt;Scalar&gt;::castToDouble</a>(a) );</div><div class="line">  }</div><div class="line">  </div><div class="line">};</div></div><!-- fragment --><p> defined from the initial image:</p>
 <div class="fragment"><div class="line">  <span class="keyword">typedef</span> ConstImageAdapter&lt;Image, Domain, functors::Identity, double, LogScaleFunctor&lt;Image::Value&gt; &gt; ConstImageAdapterForLogScale;</div><div class="line">  LogScaleFunctor&lt;Image::Value&gt; logScale;</div><div class="line">  ConstImageAdapterForLogScale logImage(image, <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>, df, logScale);</div></div><!-- fragment --><p> and here is the result with a simple <a class="el" href="classDGtal_1_1HueShadeColorMap.html" title="Aim: This class template may be used to (linearly) convert scalar values in a given range into a colo...">HueShadeColorMap</a> varying from 0. to logScale(255):</p>
 <div class="image">
 <img src="logImage.png" alt="logImage.png"/>
@@ -308,7 +308,7 @@ Constant image from a function, functor or lambda</h2>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 9 2019 19:54:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 14 2019 18:06:54 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

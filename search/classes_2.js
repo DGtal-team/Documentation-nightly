@@ -35,6 +35,8 @@ var searchData=
   ['board3dto2d',['Board3DTo2D',['../classDGtal_1_1concepts_1_1Board3DTo2D.html',1,'DGtal::concepts::Board3DTo2D&lt; S, KS &gt;'],['../classDGtal_1_1Board3DTo2D.html',1,'DGtal::Board3DTo2D&lt; Space, KSpace &gt;']]],
   ['board3dto2d_3c_20s_2c_20ks_20_3e',['Board3DTo2D&lt; S, KS &gt;',['../classDGtal_1_1Board3DTo2D.html',1,'DGtal']]],
   ['board3dto2dfactory',['Board3DTo2DFactory',['../structDGtal_1_1Board3DTo2DFactory.html',1,'DGtal']]],
+  ['booltotag',['BoolToTag',['../structDGtal_1_1details_1_1BoolToTag.html',1,'DGtal::details']]],
+  ['booltotag_3c_20false_20_3e',['BoolToTag&lt; false &gt;',['../structDGtal_1_1details_1_1BoolToTag_3_01false_01_4.html',1,'DGtal::details']]],
   ['boundarypredicate',['BoundaryPredicate',['../classDGtal_1_1functors_1_1BoundaryPredicate.html',1,'DGtal::functors']]],
   ['breadthfirstvisitor',['BreadthFirstVisitor',['../classDGtal_1_1BreadthFirstVisitor.html',1,'DGtal']]]
 ];

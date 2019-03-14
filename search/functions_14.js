@@ -54,6 +54,7 @@ var searchData=
   ['testbasicfunctors',['testBasicFunctors',['../testBasicFunctors_8cpp.html#a83a06ce684c6dd5907a9305455098521',1,'testBasicFunctors.cpp']]],
   ['testbasicmasks',['testBasicMasks',['../testChamferDT_8cpp.html#a968157cd49c50d1c9d3a1fc3191764e5',1,'testChamferDT.cpp']]],
   ['testbasicmathfunctions',['testBasicMathFunctions',['../testBasicMathFunctions_8cpp.html#a6857db1ebe44d421767c9def5ba4c6c9',1,'testBasicMathFunctions.cpp']]],
+  ['testbiginteger',['testBIGINTEGER',['../testArithmeticalDSSComputer_8cpp.html#a2e30334b9870abc4fd5b0375ff4d03aa',1,'testArithmeticalDSSComputer.cpp']]],
   ['testbigintegerspace',['testBIGINTEGERSpace',['../testDGtalGMP_8cpp.html#adbf5d30a7b5e981bdc131b527135fe4c',1,'testDGtalGMP.cpp']]],
   ['testbinarysearch',['testBinarySearch',['../testMetrics_8cpp.html#a9c214fc97855a42ddd78e8727648a3e3',1,'testMetrics.cpp']]],
   ['testbinomialconvolver',['testBinomialConvolver',['../testBinomialConvolver_8cpp.html#a4ecb4243a25e70cf33decdc6cd18b755',1,'testBinomialConvolver.cpp']]],
