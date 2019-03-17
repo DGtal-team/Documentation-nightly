@@ -218,9 +218,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ac5402e43c71af62b92981831d87f4ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40df03015563d6b071322b24a4317000"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#a40df03015563d6b071322b24a4317000">updateMainHeightAndAntiPodal</a> ()</td></tr>
 <tr class="separator:a40df03015563d6b071322b24a4317000"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3f87c5ba777923dc7346e84138c0e6d"><td class="memTemplParams" colspan="2">template&lt;typename TPointD &gt; </td></tr>
-<tr class="memitem:ab3f87c5ba777923dc7346e84138c0e6d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#ab3f87c5ba777923dc7346e84138c0e6d">projectOnStraightLine</a> (const TPointD &amp;ptA, const TPointD &amp;ptB, const TPointD &amp;ptC, <a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#a8eb9a2d228d2799100546f6c8b1ca550">PointD</a> &amp;ptProjected) const</td></tr>
-<tr class="separator:ab3f87c5ba777923dc7346e84138c0e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbfc3a060eff6729613b2f16f8d82a5f"><td class="memTemplParams" colspan="2">template&lt;typename TPoint , typename TPointD &gt; </td></tr>
+<tr class="memitem:abbfc3a060eff6729613b2f16f8d82a5f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#abbfc3a060eff6729613b2f16f8d82a5f">projectOnStraightLine</a> (const TPoint &amp;ptA, const TPoint &amp;ptB, const TPoint &amp;ptC, TPointD &amp;ptProjected) const</td></tr>
+<tr class="separator:abbfc3a060eff6729613b2f16f8d82a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c55a2151409ccd43b797c5605111f1"><td class="memTemplParams" colspan="2">template&lt;typename TConstIteratorG &gt; </td></tr>
 <tr class="memitem:a60c55a2151409ccd43b797c5605111f1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#a60c55a2151409ccd43b797c5605111f1">computeExtremaPoints</a> (const TConstIteratorG &amp;itBegin, const TConstIteratorG &amp;itEnd, <a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#a8ddf1479bdc3165adf49c4064855d9e6">InputPoint</a> &amp;aFirstExtrPt, <a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#a8ddf1479bdc3165adf49c4064855d9e6">InputPoint</a> &amp;aLastExtrPt) const</td></tr>
 <tr class="separator:a60c55a2151409ccd43b797c5605111f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1601,15 +1601,15 @@ template&lt;typename TInputPoint, typename TConstIterator = typename std::vector
 
 </div>
 </div>
-<a id="ab3f87c5ba777923dc7346e84138c0e6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3f87c5ba777923dc7346e84138c0e6d">&#9670;&nbsp;</a></span>projectOnStraightLine()</h2>
+<a id="abbfc3a060eff6729613b2f16f8d82a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbfc3a060eff6729613b2f16f8d82a5f">&#9670;&nbsp;</a></span>projectOnStraightLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TInputPoint, typename TConstIterator = typename std::vector&lt; TInputPoint &gt;::const_iterator&gt; </div>
 <div class="memtemplate">
-template&lt;typename TPointD &gt; </div>
+template&lt;typename TPoint , typename TPointD &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1617,25 +1617,25 @@ template&lt;typename TPointD &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html">DGtal::AlphaThickSegmentComputer</a>&lt; TInputPoint, TConstIterator &gt;::projectOnStraightLine </td>
           <td>(</td>
-          <td class="paramtype">const TPointD &amp;&#160;</td>
+          <td class="paramtype">const TPoint &amp;&#160;</td>
           <td class="paramname"><em>ptA</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const TPointD &amp;&#160;</td>
+          <td class="paramtype">const TPoint &amp;&#160;</td>
           <td class="paramname"><em>ptB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const TPointD &amp;&#160;</td>
+          <td class="paramtype">const TPoint &amp;&#160;</td>
           <td class="paramname"><em>ptC</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#a8eb9a2d228d2799100546f6c8b1ca550">PointD</a> &amp;&#160;</td>
+          <td class="paramtype">TPointD &amp;&#160;</td>
           <td class="paramname"><em>ptProjected</em>&#160;</td>
         </tr>
         <tr>
@@ -2017,7 +2017,7 @@ template&lt;typename TInputPoint, typename TConstIterator = typename std::vector
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2019 14:06:08 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 17 2019 21:09:28 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

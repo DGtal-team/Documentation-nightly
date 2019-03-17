@@ -62,6 +62,8 @@ var searchData=
   ['cdynamicmatrix',['CDynamicMatrix',['../structDGtal_1_1concepts_1_1CDynamicMatrix.html',1,'DGtal::concepts']]],
   ['cdynamicsegmentcomputer',['CDynamicSegmentComputer',['../structDGtal_1_1concepts_1_1CDynamicSegmentComputer.html',1,'DGtal::concepts']]],
   ['cdynamicvector',['CDynamicVector',['../structDGtal_1_1concepts_1_1CDynamicVector.html',1,'DGtal::concepts']]],
+  ['ceil',['Ceil',['../structDGtal_1_1functors_1_1Ceil.html',1,'DGtal::functors']]],
+  ['ceil_3c_20void_20_3e',['Ceil&lt; void &gt;',['../structDGtal_1_1functors_1_1Ceil_3_01void_01_4.html',1,'DGtal::functors']]],
   ['cellmap',['CellMap',['../structDGtal_1_1KhalimskyPreSpaceND_1_1CellMap.html',1,'DGtal::KhalimskyPreSpaceND&lt; dim, TInteger &gt;::CellMap&lt; Value &gt;'],['../structDGtal_1_1KhalimskySpaceND_1_1CellMap.html',1,'DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;::CellMap&lt; Value &gt;']]],
   ['cellreader',['CellReader',['../structDGtal_1_1Shortcuts_1_1CellReader.html',1,'DGtal::Shortcuts']]],
   ['cellwriter',['CellWriter',['../structDGtal_1_1Shortcuts_1_1CellWriter.html',1,'DGtal::Shortcuts']]],

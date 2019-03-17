@@ -29,5 +29,5 @@ var searchData=
   ['voxelclose',['voxelClose',['../classDGtal_1_1VoxelComplex.html#a47e51e57c1bd97bf26d4710b01cdd78c',1,'DGtal::VoxelComplex']]],
   ['voxelcomplex',['VoxelComplex',['../classDGtal_1_1VoxelComplex.html#a85c2e4b0c3dc45bb9ecd28c2175f3483',1,'DGtal::VoxelComplex::VoxelComplex()'],['../classDGtal_1_1VoxelComplex.html#a62179bbed3f1d2ab3874b9f0a9afaecf',1,'DGtal::VoxelComplex::VoxelComplex(const VoxelComplex &amp;other)']]],
   ['voxelize',['voxelize',['../classDGtal_1_1MeshVoxelizer.html#a579ac9b0b2d8a79e3cf356acccb23b31',1,'DGtal::MeshVoxelizer::voxelize(DigitalSet &amp;outputSet, const Mesh&lt; MeshPoint &gt; &amp;aMesh, const double scaleFactor=1.0)'],['../classDGtal_1_1MeshVoxelizer.html#ac14e705c870be425c06860213fa8b850',1,'DGtal::MeshVoxelizer::voxelize(DigitalSet &amp;outputSet, const MeshPoint &amp;a, const MeshPoint &amp;b, const MeshPoint &amp;c, const double scaleFactor=1.0)']]],
-  ['voxelizetriangle',['voxelizeTriangle',['../classDGtal_1_1MeshVoxelizer.html#a8a28cdd9397ffc105b70fcd2d1bf9ae4',1,'DGtal::MeshVoxelizer']]]
+  ['voxelizetriangle',['voxelizeTriangle',['../classDGtal_1_1MeshVoxelizer.html#a5783b9b91731c4c92138697a525dbd44',1,'DGtal::MeshVoxelizer']]]
 ];

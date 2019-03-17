@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tiledimage_3c_20imagecontainer_2c_20imagefactory_2c_20imagecachereadpolicy_2c_20imagecachewritepolicy_20_3e',['TiledImage&lt; ImageContainer, ImageFactory, ImageCacheReadPolicy, ImageCacheWritePolicy &gt;',['../classDGtal_1_1TiledImage_1_1TiledIterator.html#a8506106f3148123822713663150811a6',1,'DGtal::TiledImage::TiledIterator']]]
+  ['saturatedsegmentation_3c_20tsegmentcomputer_20_3e',['SaturatedSegmentation&lt; TSegmentComputer &gt;',['../classDGtal_1_1SaturatedSegmentation_1_1SegmentComputerIterator.html#a2e7353fcb25ae68120540be5076df531',1,'DGtal::SaturatedSegmentation::SegmentComputerIterator']]],
+  ['sup',['sup',['../classDGtal_1_1PointVector.html#a5fff4f1b28a3365854afea42b86d423c',1,'DGtal::PointVector']]]
 ];

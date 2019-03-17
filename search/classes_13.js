@@ -48,7 +48,7 @@ var searchData=
   ['tracewriter',['TraceWriter',['../classDGtal_1_1TraceWriter.html',1,'DGtal']]],
   ['tracewriterfile',['TraceWriterFile',['../classDGtal_1_1TraceWriterFile.html',1,'DGtal']]],
   ['tracewriterterm',['TraceWriterTerm',['../classDGtal_1_1TraceWriterTerm.html',1,'DGtal']]],
-  ['tracker',['Tracker',['../classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html',1,'DGtal::LightImplicitDigitalSurface&lt; TKSpace, TPointPredicate &gt;::Tracker'],['../classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html',1,'DGtal::ImplicitDigitalSurface&lt; TKSpace, TPointPredicate &gt;::Tracker'],['../classDGtal_1_1DigitalSetBoundary_1_1Tracker.html',1,'DGtal::DigitalSetBoundary&lt; TKSpace, TDigitalSet &gt;::Tracker'],['../classDGtal_1_1LightExplicitDigitalSurface_1_1Tracker.html',1,'DGtal::LightExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;::Tracker'],['../classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html',1,'DGtal::ExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;::Tracker'],['../classDGtal_1_1SetOfSurfels_1_1Tracker.html',1,'DGtal::SetOfSurfels&lt; TKSpace, TSurfelSet &gt;::Tracker']]],
+  ['tracker',['Tracker',['../classDGtal_1_1DigitalSetBoundary_1_1Tracker.html',1,'DGtal::DigitalSetBoundary&lt; TKSpace, TDigitalSet &gt;::Tracker'],['../classDGtal_1_1SetOfSurfels_1_1Tracker.html',1,'DGtal::SetOfSurfels&lt; TKSpace, TSurfelSet &gt;::Tracker'],['../classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html',1,'DGtal::ExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;::Tracker'],['../classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html',1,'DGtal::ImplicitDigitalSurface&lt; TKSpace, TPointPredicate &gt;::Tracker'],['../classDGtal_1_1LightExplicitDigitalSurface_1_1Tracker.html',1,'DGtal::LightExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;::Tracker'],['../classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html',1,'DGtal::LightImplicitDigitalSurface&lt; TKSpace, TPointPredicate &gt;::Tracker']]],
   ['transform',['Transform',['../structDGtal_1_1ChordGenericStandardPlaneComputer_1_1Transform.html',1,'DGtal::ChordGenericStandardPlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;::Transform'],['../structDGtal_1_1COBAGenericStandardPlaneComputer_1_1Transform.html',1,'DGtal::COBAGenericStandardPlaneComputer&lt; TSpace, TInternalInteger &gt;::Transform'],['../structLibBoard_1_1Transform.html',1,'LibBoard::Transform']]],
   ['transformcairo',['TransformCairo',['../structLibBoard_1_1TransformCairo.html',1,'LibBoard']]],
   ['transformedprism',['TransformedPrism',['../structDGtal_1_1TransformedPrism.html',1,'DGtal']]],
@@ -57,7 +57,7 @@ var searchData=
   ['transformsvg',['TransformSVG',['../structLibBoard_1_1TransformSVG.html',1,'LibBoard']]],
   ['transformtikz',['TransformTikZ',['../structLibBoard_1_1TransformTikZ.html',1,'LibBoard']]],
   ['translate2ddomain',['Translate2DDomain',['../structDGtal_1_1Translate2DDomain.html',1,'DGtal']]],
-  ['triangle',['Triangle',['../structDGtal_1_1HalfEdgeDataStructure_1_1Triangle.html',1,'DGtal::HalfEdgeDataStructure::Triangle'],['../structLibBoard_1_1Triangle.html',1,'LibBoard::Triangle']]],
+  ['triangle',['Triangle',['../structLibBoard_1_1Triangle.html',1,'LibBoard::Triangle'],['../structDGtal_1_1HalfEdgeDataStructure_1_1Triangle.html',1,'DGtal::HalfEdgeDataStructure::Triangle']]],
   ['triangled3d',['TriangleD3D',['../structDGtal_1_1Display3D_1_1TriangleD3D.html',1,'DGtal::Display3D']]],
   ['triangulatedsurface',['TriangulatedSurface',['../classDGtal_1_1TriangulatedSurface.html',1,'DGtal']]],
   ['trueboolfct0',['TrueBoolFct0',['../structDGtal_1_1functors_1_1TrueBoolFct0.html',1,'DGtal::functors']]],
@@ -65,5 +65,7 @@ var searchData=
   ['trueglobalestimatoronpoints',['TrueGlobalEstimatorOnPoints',['../classDGtal_1_1TrueGlobalEstimatorOnPoints.html',1,'DGtal']]],
   ['truelocalestimatoronpoints',['TrueLocalEstimatorOnPoints',['../classDGtal_1_1TrueLocalEstimatorOnPoints.html',1,'DGtal']]],
   ['truepointpredicate',['TruePointPredicate',['../structDGtal_1_1functors_1_1TruePointPredicate.html',1,'DGtal::functors']]],
+  ['trunc',['Trunc',['../structDGtal_1_1functors_1_1Trunc.html',1,'DGtal::functors']]],
+  ['trunc_3c_20void_20_3e',['Trunc&lt; void &gt;',['../structDGtal_1_1functors_1_1Trunc_3_01void_01_4.html',1,'DGtal::functors']]],
   ['twosteplocallengthestimator',['TwoStepLocalLengthEstimator',['../classDGtal_1_1TwoStepLocalLengthEstimator.html',1,'DGtal']]]
 ];

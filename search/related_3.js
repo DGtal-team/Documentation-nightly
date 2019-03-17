@@ -1,6 +1,7 @@
 var searchData=
 [
   ['discreteexteriorcalculusfactory_3c_20tlinearalgebrabackend_2c_20tinteger_20_3e',['DiscreteExteriorCalculusFactory&lt; TLinearAlgebraBackend, TInteger &gt;',['../classDGtal_1_1DiscreteExteriorCalculus.html#abf912ad683384c8a8e3b301f4357c2c8',1,'DGtal::DiscreteExteriorCalculus']]],
+  ['dotproduct',['dotProduct',['../classDGtal_1_1PointVector.html#a4e076d6bee8f1dca602c47aac06ca37e',1,'DGtal::PointVector']]],
   ['operator_20_26',['operator &amp;',['../classDGtal_1_1CubicalComplex.html#ab366180c78af566c26880b3111eefd6a',1,'DGtal::CubicalComplex']]],
   ['operator_20_26_3d',['operator &amp;=',['../classDGtal_1_1CubicalComplex.html#adc6dc08cf0716482b1ddbc2e4da37ba2',1,'DGtal::CubicalComplex']]],
   ['operator_21_3d',['operator!=',['../classDGtal_1_1CubicalComplex.html#ad39b71a844732d7e5365a77a4d9f94a6',1,'DGtal::CubicalComplex']]],

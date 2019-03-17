@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['saturatedsegmentation_3c_20tsegmentcomputer_20_3e',['SaturatedSegmentation&lt; TSegmentComputer &gt;',['../classDGtal_1_1SaturatedSegmentation_1_1SegmentComputerIterator.html#a2e7353fcb25ae68120540be5076df531',1,'DGtal::SaturatedSegmentation::SegmentComputerIterator']]]
+  ['pointvector',['PointVector',['../classDGtal_1_1PointVector.html#a99d206e3ea69df490a213b41c77673fe',1,'DGtal::PointVector']]]
 ];

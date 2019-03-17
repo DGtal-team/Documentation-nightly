@@ -24,5 +24,7 @@ var searchData=
   ['reverseiterator',['ReverseIterator',['../classDGtal_1_1ReverseIterator.html',1,'DGtal']]],
   ['reversiblecontainer',['ReversibleContainer',['../structboost_1_1ReversibleContainer.html',1,'boost']]],
   ['rosenproffittlocallengthestimator',['RosenProffittLocalLengthEstimator',['../classDGtal_1_1RosenProffittLocalLengthEstimator.html',1,'DGtal']]],
+  ['round',['Round',['../structDGtal_1_1functors_1_1Round.html',1,'DGtal::functors']]],
+  ['round_3c_20void_20_3e',['Round&lt; void &gt;',['../structDGtal_1_1functors_1_1Round_3_01void_01_4.html',1,'DGtal::functors']]],
   ['rowmajorstorage',['RowMajorStorage',['../structDGtal_1_1RowMajorStorage.html',1,'DGtal']]]
 ];

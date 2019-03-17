@@ -11,6 +11,8 @@ var searchData=
   ['filtered2x2detcomputer',['Filtered2x2DetComputer',['../classDGtal_1_1Filtered2x2DetComputer.html',1,'DGtal']]],
   ['firstblock',['FirstBlock',['../structDGtal_1_1IndexedListWithBlocks_1_1FirstBlock.html',1,'DGtal::IndexedListWithBlocks']]],
   ['flipdomainaxis',['FlipDomainAxis',['../classDGtal_1_1functors_1_1FlipDomainAxis.html',1,'DGtal::functors']]],
+  ['floor',['Floor',['../structDGtal_1_1functors_1_1Floor.html',1,'DGtal::functors']]],
+  ['floor_3c_20void_20_3e',['Floor&lt; void &gt;',['../structDGtal_1_1functors_1_1Floor_3_01void_01_4.html',1,'DGtal::functors']]],
   ['flower2d',['Flower2D',['../classDGtal_1_1Flower2D.html',1,'DGtal']]],
   ['fmm',['FMM',['../classDGtal_1_1FMM.html',1,'DGtal']]],
   ['forwardcategory',['ForwardCategory',['../structDGtal_1_1ForwardCategory.html',1,'DGtal']]],
