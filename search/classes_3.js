@@ -1,6 +1,8 @@
 var searchData=
 [
   ['c2x2detcomputer',['C2x2DetComputer',['../structDGtal_1_1C2x2DetComputer.html',1,'DGtal']]],
+  ['c3dparametriccurve',['C3DParametricCurve',['../structDGtal_1_1concepts_1_1C3DParametricCurve.html',1,'DGtal::concepts']]],
+  ['c3dparametriccurvedecorator',['C3DParametricCurveDecorator',['../structDGtal_1_1concepts_1_1C3DParametricCurveDecorator.html',1,'DGtal::concepts']]],
   ['cadditiveprimitivecomputer',['CAdditivePrimitiveComputer',['../structDGtal_1_1concepts_1_1CAdditivePrimitiveComputer.html',1,'DGtal::concepts']]],
   ['cadjacency',['CAdjacency',['../structDGtal_1_1concepts_1_1CAdjacency.html',1,'DGtal::concepts']]],
   ['cadjacency_3c_20t_20_3e',['CAdjacency&lt; T &gt;',['../structDGtal_1_1concepts_1_1CAdjacency.html',1,'DGtal::concepts']]],
@@ -109,6 +111,7 @@ var searchData=
   ['clinearalgebrasolver',['CLinearAlgebraSolver',['../structDGtal_1_1concepts_1_1CLinearAlgebraSolver.html',1,'DGtal::concepts']]],
   ['clippingplane',['ClippingPlane',['../structDGtal_1_1ClippingPlane.html',1,'DGtal']]],
   ['clippingplaned3d',['ClippingPlaneD3D',['../structDGtal_1_1Display3D_1_1ClippingPlaneD3D.html',1,'DGtal::Display3D']]],
+  ['clmstdssfilter',['CLMSTDSSFilter',['../structDGtal_1_1concepts_1_1CLMSTDSSFilter.html',1,'DGtal::concepts']]],
   ['clmsttangentfromdss',['CLMSTTangentFromDSS',['../structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html',1,'DGtal::concepts']]],
   ['clocalestimatorfromsurfelfunctor',['CLocalEstimatorFromSurfelFunctor',['../structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html',1,'DGtal::concepts']]],
   ['clock',['Clock',['../classDGtal_1_1Clock.html',1,'DGtal']]],

@@ -9,6 +9,7 @@ var searchData=
   ['elementaryconvolutionnormalvectorestimator',['ElementaryConvolutionNormalVectorEstimator',['../classDGtal_1_1functors_1_1ElementaryConvolutionNormalVectorEstimator.html',1,'DGtal::functors']]],
   ['ellipse',['Ellipse',['../structLibBoard_1_1Ellipse.html',1,'LibBoard']]],
   ['ellipse2d',['Ellipse2D',['../classDGtal_1_1Ellipse2D.html',1,'DGtal']]],
+  ['elliptichelix',['EllipticHelix',['../classDGtal_1_1EllipticHelix.html',1,'DGtal']]],
   ['equalitycomparable',['EqualityComparable',['../structboost_1_1EqualityComparable.html',1,'boost']]],
   ['equalpointpredicate',['EqualPointPredicate',['../structDGtal_1_1functors_1_1EqualPointPredicate.html',1,'DGtal::functors']]],
   ['equalpredicatefromlessthancomparator',['EqualPredicateFromLessThanComparator',['../structDGtal_1_1detail_1_1EqualPredicateFromLessThanComparator.html',1,'DGtal::detail']]],

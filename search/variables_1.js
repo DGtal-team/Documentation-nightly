@@ -21,5 +21,5 @@ var searchData=
   ['ascendant',['ascendant',['../structDGtal_1_1LightSternBrocot_1_1Node.html#a6770d9cd94619c73f06d122e40fbd25b',1,'DGtal::LightSternBrocot::Node']]],
   ['ascendantleft',['ascendantLeft',['../structDGtal_1_1SternBrocot_1_1Node.html#a8b9bea0f5619c26b01ef74ebe93e30fa',1,'DGtal::SternBrocot::Node']]],
   ['ascendantright',['ascendantRight',['../structDGtal_1_1SternBrocot_1_1Node.html#a45df24f5f2053fa440342d48d58c249a',1,'DGtal::SternBrocot::Node']]],
-  ['axis',['axis',['../classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602',1,'DGtal::functors::ForwardRigidTransformation3D::axis()'],['../classDGtal_1_1functors_1_1BackwardRigidTransformation3D.html#aef56923165b75687078b6c7c813c10b5',1,'DGtal::functors::BackwardRigidTransformation3D::axis()']]]
+  ['axis',['axis',['../classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e',1,'DGtal::functors::ForwardRigidTransformation3D::axis()'],['../classDGtal_1_1functors_1_1BackwardRigidTransformation3D.html#a74f900a18ec10e92fe744c0d00a7d2c7',1,'DGtal::functors::BackwardRigidTransformation3D::axis()']]]
 ];

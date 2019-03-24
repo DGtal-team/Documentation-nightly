@@ -19,5 +19,6 @@ var searchData=
   ['boolfunctor1',['BoolFunctor1',['../namespaceDGtal_1_1functors.html#a9c097791d2639aed3534e3547291d916',1,'DGtal::functors']]],
   ['boolfunctor2',['BoolFunctor2',['../namespaceDGtal_1_1functors.html#adeef356bd5d6e01987e9ad5f55353050',1,'DGtal::functors']]],
   ['boolfunctor3',['BoolFunctor3',['../namespaceDGtal_1_1functors.html#a471f1996fbfd82c45524da01e25c231b',1,'DGtal::functors']]],
-  ['bounds',['Bounds',['../classDGtal_1_1functors_1_1DomainRigidTransformation2D.html#a8212241aacba03ade28593937e1311e1',1,'DGtal::functors::DomainRigidTransformation2D::Bounds()'],['../classDGtal_1_1functors_1_1DomainRigidTransformation3D.html#ad773125419801ae011f341de168c997d',1,'DGtal::functors::DomainRigidTransformation3D::Bounds()']]]
+  ['bounds',['Bounds',['../classDGtal_1_1functors_1_1DomainRigidTransformation2D.html#a8212241aacba03ade28593937e1311e1',1,'DGtal::functors::DomainRigidTransformation2D::Bounds()'],['../classDGtal_1_1functors_1_1DomainRigidTransformation3D.html#ad773125419801ae011f341de168c997d',1,'DGtal::functors::DomainRigidTransformation3D::Bounds()']]],
+  ['buffer',['Buffer',['../classDGtal_1_1NaiveParametricCurveDigitizer3D.html#ad7e55d0521191875c46eeca56de62c45',1,'DGtal::NaiveParametricCurveDigitizer3D']]]
 ];

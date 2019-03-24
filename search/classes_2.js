@@ -4,7 +4,6 @@ var searchData=
   ['backinsertionsequencetostackadapter',['BackInsertionSequenceToStackAdapter',['../classDGtal_1_1BackInsertionSequenceToStackAdapter.html',1,'DGtal']]],
   ['backpath',['Backpath',['../classDGtal_1_1FrechetShortcut_1_1Backpath.html',1,'DGtal::FrechetShortcut']]],
   ['backwardrigidtransformation2d',['BackwardRigidTransformation2D',['../classDGtal_1_1functors_1_1BackwardRigidTransformation2D.html',1,'DGtal::functors']]],
-  ['backwardrigidtransformation2d_3c_20space_20_3e',['BackwardRigidTransformation2D&lt; Space &gt;',['../classDGtal_1_1functors_1_1BackwardRigidTransformation2D.html',1,'DGtal::functors']]],
   ['backwardrigidtransformation3d',['BackwardRigidTransformation3D',['../classDGtal_1_1functors_1_1BackwardRigidTransformation3D.html',1,'DGtal::functors']]],
   ['ball2d',['Ball2D',['../classDGtal_1_1Ball2D.html',1,'DGtal']]],
   ['ball3d',['Ball3D',['../classDGtal_1_1Ball3D.html',1,'DGtal']]],

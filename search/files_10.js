@@ -164,6 +164,7 @@ var searchData=
   ['testorderedalphabet_2ecpp',['testOrderedAlphabet.cpp',['../testOrderedAlphabet_8cpp.html',1,'']]],
   ['testoutputiteratoradapter_2ecpp',['testOutputIteratorAdapter.cpp',['../testOutputIteratorAdapter_8cpp.html',1,'']]],
   ['testowningoraliasingptr_2ecpp',['testOwningOrAliasingPtr.cpp',['../testOwningOrAliasingPtr_8cpp.html',1,'']]],
+  ['testparametriccurvedigitization_2ecpp',['testParametricCurveDigitization.cpp',['../testParametricCurveDigitization_8cpp.html',1,'']]],
   ['testpardircollapse_2ecpp',['testParDirCollapse.cpp',['../testParDirCollapse_8cpp.html',1,'']]],
   ['testpartialtemplatespecialization_2ecpp',['testPartialTemplateSpecialization.cpp',['../testPartialTemplateSpecialization_8cpp.html',1,'']]],
   ['testpattern_2ecpp',['testPattern.cpp',['../testPattern_8cpp.html',1,'']]],

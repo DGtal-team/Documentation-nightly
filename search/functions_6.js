@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['f',['f',['../classDGtal_1_1EllipticHelix.html#aaa245e31906fab25a5296c7ac69e04f7',1,'DGtal::EllipticHelix']]],
   ['face',['Face',['../structDGtal_1_1DigitalSurface_1_1Face.html#a879f0cc2eeac8db370dcad50fa5dda0a',1,'DGtal::DigitalSurface::Face']]],
   ['facearoundarc',['faceAroundArc',['../classDGtal_1_1PolygonalSurface.html#aba455836b971e22b0981ff86ddcb20cb',1,'DGtal::PolygonalSurface::faceAroundArc()'],['../classDGtal_1_1TriangulatedSurface.html#ae5b100e101085f03d714f6f56beaac3f',1,'DGtal::TriangulatedSurface::faceAroundArc()'],['../classDGtal_1_1IndexedDigitalSurface.html#adb53ffb78be41227a216709385c61aef',1,'DGtal::IndexedDigitalSurface::faceAroundArc()']]],
   ['facebegin',['faceBegin',['../classDGtal_1_1Mesh.html#ae271e7ad2800e9b92178cc94c527c423',1,'DGtal::Mesh::faceBegin() const'],['../classDGtal_1_1Mesh.html#adb2c8773748de5e896e52fadc61b5f1f',1,'DGtal::Mesh::faceBegin()']]],
@@ -36,6 +37,7 @@ var searchData=
   ['findcell',['findCell',['../classDGtal_1_1CubicalComplex.html#a001c0bff6f805df0f1341496bff7c019',1,'DGtal::CubicalComplex::findCell(const Cell &amp;aCell) const'],['../classDGtal_1_1CubicalComplex.html#ab27a6304085863c18d73a3ed06afe1a1',1,'DGtal::CubicalComplex::findCell(Dimension d, const Cell &amp;aCell) const'],['../classDGtal_1_1CubicalComplex.html#a17007abcfa9b0ecfb03709ef130fd9b8',1,'DGtal::CubicalComplex::findCell(const Cell &amp;aCell)'],['../classDGtal_1_1CubicalComplex.html#aecbd356ed2d397a7ed2f46e484df89c0',1,'DGtal::CubicalComplex::findCell(Dimension d, const Cell &amp;aCell)']]],
   ['findcut',['findCut',['../classDGtal_1_1LatticePolytope2D.html#aff1daf856ce8051f581ade1466d39279',1,'DGtal::LatticePolytope2D']]],
   ['findintersection',['findIntersection',['../classDGtal_1_1StarShaped2D.html#a5084b5a07cae6bc0b8cd6f4e84348f57',1,'DGtal::StarShaped2D']]],
+  ['findmainaxis',['findMainAxis',['../exampleParamCurve3dDigitization_8cpp.html#aeb8e735b26609c5db854bf221f5610e8',1,'findMainAxis(const T &amp;curve, const long double &amp;t):&#160;exampleParamCurve3dDigitization.cpp'],['../exampleParamCurve3dDigitizationTransformationDecorator_8cpp.html#aeb8e735b26609c5db854bf221f5610e8',1,'findMainAxis(const T &amp;curve, const long double &amp;t):&#160;exampleParamCurve3dDigitizationTransformationDecorator.cpp'],['../exampleTrofoliKnot_8cpp.html#aeb8e735b26609c5db854bf221f5610e8',1,'findMainAxis(const T &amp;curve, const long double &amp;t):&#160;exampleTrofoliKnot.cpp']]],
   ['findmaxnorm',['findMaxNorm',['../testRealFFT_8cpp.html#a4106a34e7d57e8a11093bdfdbc82516c',1,'testRealFFT.cpp']]],
   ['findmixedtriangle',['findMixedTriangle',['../classDGtal_1_1ChordNaivePlaneComputer.html#aa8889b668315d97af692fe5129e46a7c',1,'DGtal::ChordNaivePlaneComputer']]],
   ['findquadrantchange',['findQuadrantChange',['../classDGtal_1_1FreemanChain.html#aaa389702a76ab252bce4326f973d6004',1,'DGtal::FreemanChain']]],
@@ -56,6 +58,7 @@ var searchData=
   ['firstpoint',['firstPoint',['../classDGtal_1_1FreemanChain.html#a3e1b261684d9cc77a509c9c4c145853f',1,'DGtal::FreemanChain']]],
   ['firstsetbit',['firstSetBit',['../structDGtal_1_1Bits.html#a8213bbebb2f2a580aa914b97cbe734a5',1,'DGtal::Bits']]],
   ['firstunsetbit',['firstUnsetBit',['../structDGtal_1_1Bits.html#a0e31d8489bc1c919ae58c6e04509d59a',1,'DGtal::Bits']]],
+  ['flashbuffers',['flashBuffers',['../classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a6116886f4987870447f47e2db0ba671f',1,'DGtal::NaiveParametricCurveDigitizer3D']]],
   ['flat',['flat',['../classDGtal_1_1DiscreteExteriorCalculus.html#a36498d8bde9fe0a71a53ecb42caaa615',1,'DGtal::DiscreteExteriorCalculus']]],
   ['flatdirectional',['flatDirectional',['../classDGtal_1_1DiscreteExteriorCalculus.html#af79490e785d31bff0344bc2c0d6b4dc9',1,'DGtal::DiscreteExteriorCalculus']]],
   ['flip',['flip',['../classDGtal_1_1Labels.html#afdd9604e54415f7edd64e13e042f2538',1,'DGtal::Labels']]],
@@ -84,8 +87,8 @@ var searchData=
   ['form2toimage',['form2ToImage',['http://dgtal.org/doc/tools/nightly/namespaceDGtal_1_1functions_1_1dec.html#a0e6468a2500539a58154ad4306ee5905',1,'DGtal::functions::dec']]],
   ['formatperiodicity',['formatPeriodicity',['../testPowerMap_8cpp.html#a8573a7a96bb07c89de6d49d280964486',1,'formatPeriodicity(std::array&lt; bool, N &gt; const &amp;aPeriodicity):&#160;testPowerMap.cpp'],['../testVoronoiMap_8cpp.html#a8573a7a96bb07c89de6d49d280964486',1,'formatPeriodicity(std::array&lt; bool, N &gt; const &amp;aPeriodicity):&#160;testVoronoiMap.cpp']]],
   ['forwardfft',['forwardFFT',['../classDGtal_1_1RealFFT_3_01HyperRectDomain_3_01TSpace_01_4_00_01T_01_4.html#a128464bfa8f2c48029e02cf29294db3d',1,'DGtal::RealFFT&lt; HyperRectDomain&lt; TSpace &gt;, T &gt;']]],
-  ['forwardrigidtransformation2d',['ForwardRigidTransformation2D',['../classDGtal_1_1functors_1_1ForwardRigidTransformation2D.html#acbb4df7a798cda7a8f92d957cb5c8419',1,'DGtal::functors::ForwardRigidTransformation2D']]],
-  ['forwardrigidtransformation3d',['ForwardRigidTransformation3D',['../classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a1847b308d84da2cb7890e9b63eb28a0d',1,'DGtal::functors::ForwardRigidTransformation3D']]],
+  ['forwardrigidtransformation2d',['ForwardRigidTransformation2D',['../classDGtal_1_1functors_1_1ForwardRigidTransformation2D.html#ab2ed2a903afe3bfbe8e5d8aa3ffe152b',1,'DGtal::functors::ForwardRigidTransformation2D']]],
+  ['forwardrigidtransformation3d',['ForwardRigidTransformation3D',['../classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ae2019a4a9cad32e10a6e94286f0a16a3',1,'DGtal::functors::ForwardRigidTransformation3D']]],
   ['forwardslr',['forwardSLR',['../classDGtal_1_1OrderedLinearRegression.html#afc258b73fcab9793d30e08dab38919ab',1,'DGtal::OrderedLinearRegression']]],
   ['fp',['FP',['../classDGtal_1_1FP.html#ac807a5ee2174ac5f98d6628f8d9cac25',1,'DGtal::FP::FP(const TIterator &amp;itb, const TIterator &amp;ite)'],['../classDGtal_1_1FP.html#ab1c2ec7ef3aa13b3f20a707a751fef30',1,'DGtal::FP::FP(const FP &amp;other)']]],
   ['fplengthestimator',['FPLengthEstimator',['../classDGtal_1_1FPLengthEstimator.html#a4b45c035a184a818ff966af9966f7685',1,'DGtal::FPLengthEstimator::FPLengthEstimator()'],['../classDGtal_1_1FPLengthEstimator.html#a5190d5b7d0cfdcb3c814b1a12c208b95',1,'DGtal::FPLengthEstimator::FPLengthEstimator(const FPLengthEstimator &amp;other)']]],

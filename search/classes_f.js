@@ -75,6 +75,7 @@ var searchData=
   ['profile',['Profile',['../classDGtal_1_1Profile.html',1,'DGtal']]],
   ['projector',['Projector',['../structDGtal_1_1functors_1_1Projector.html',1,'DGtal::functors']]],
   ['projector_3c_20spacend_3c_202_2c_20coordinate_20_3e_20_3e',['Projector&lt; SpaceND&lt; 2, Coordinate &gt; &gt;',['../structDGtal_1_1functors_1_1Projector.html',1,'DGtal::functors']]],
+  ['projector_3c_20spacend_3c_202_2c_20int_20_3e_20_3e',['Projector&lt; SpaceND&lt; 2, int &gt; &gt;',['../structDGtal_1_1functors_1_1Projector.html',1,'DGtal::functors']]],
   ['promote_5ftrait',['promote_trait',['../structDGtal_1_1promote__trait.html',1,'DGtal']]],
   ['promote_5ftrait_3c_20int32_5ft_2c_20int64_5ft_20_3e',['promote_trait&lt; int32_t, int64_t &gt;',['../structDGtal_1_1promote__trait_3_01int32__t_00_01int64__t_01_4.html',1,'DGtal']]],
   ['property',['Property',['../structDGtal_1_1DiscreteExteriorCalculus_1_1Property.html',1,'DGtal::DiscreteExteriorCalculus']]]

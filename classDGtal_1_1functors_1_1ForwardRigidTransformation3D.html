@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DGtal: DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt; Class Template Reference</title>
+<title>DGtal: DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt; Class Template Reference</div>  </div>
+<div class="title">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -90,133 +90,122 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5329a7e20de3cdc4af54b89418bd81cb"><td class="memItemLeft" align="right" valign="top">typedef TSpace::Point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a5329a7e20de3cdc4af54b89418bd81cb">Point</a></td></tr>
-<tr class="separator:a5329a7e20de3cdc4af54b89418bd81cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af726de2e7eaec98ab43c53014125fb0c"><td class="memItemLeft" align="right" valign="top">typedef TSpace::RealPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#af726de2e7eaec98ab43c53014125fb0c">RealPoint</a></td></tr>
-<tr class="separator:af726de2e7eaec98ab43c53014125fb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad13c1525a41b3c648c21d7ff90c68b8a"><td class="memItemLeft" align="right" valign="top">typedef TSpace::RealVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ad13c1525a41b3c648c21d7ff90c68b8a">RealVector</a></td></tr>
-<tr class="separator:ad13c1525a41b3c648c21d7ff90c68b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d3d47cc1bb8afd24944e0555547809d"><td class="memItemLeft" align="right" valign="top">typedef TSpace::RealPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6d3d47cc1bb8afd24944e0555547809d">RealPoint</a></td></tr>
+<tr class="separator:a6d3d47cc1bb8afd24944e0555547809d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa27db2f00e9f82164ba1f8e33d26e3ee"><td class="memItemLeft" align="right" valign="top">typedef TSpace::RealVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa27db2f00e9f82164ba1f8e33d26e3ee">RealVector</a></td></tr>
+<tr class="separator:aa27db2f00e9f82164ba1f8e33d26e3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1847b308d84da2cb7890e9b63eb28a0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a1847b308d84da2cb7890e9b63eb28a0d">ForwardRigidTransformation3D</a> (const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#af726de2e7eaec98ab43c53014125fb0c">RealPoint</a> &amp;aOrigin, const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ad13c1525a41b3c648c21d7ff90c68b8a">RealVector</a> &amp;aAxis, const double &amp;<a class="el" href="testProjection_8cpp.html#a3df653b2b8243b9ba4587e5c3c1c730b">angle</a>, const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ad13c1525a41b3c648c21d7ff90c68b8a">RealVector</a> &amp;aTranslate)</td></tr>
-<tr class="separator:a1847b308d84da2cb7890e9b63eb28a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a303d15a9946a7fcf917302cdc4a9e80a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a5329a7e20de3cdc4af54b89418bd81cb">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a303d15a9946a7fcf917302cdc4a9e80a">operator()</a> (const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a5329a7e20de3cdc4af54b89418bd81cb">Point</a> &amp;aInput) const</td></tr>
-<tr class="separator:a303d15a9946a7fcf917302cdc4a9e80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2019a4a9cad32e10a6e94286f0a16a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ae2019a4a9cad32e10a6e94286f0a16a3">ForwardRigidTransformation3D</a> (const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6d3d47cc1bb8afd24944e0555547809d">RealPoint</a> &amp;aOrigin, const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa27db2f00e9f82164ba1f8e33d26e3ee">RealVector</a> &amp;aAxis, const double &amp;<a class="el" href="testProjection_8cpp.html#a3df653b2b8243b9ba4587e5c3c1c730b">angle</a>, const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa27db2f00e9f82164ba1f8e33d26e3ee">RealVector</a> &amp;aTranslate)</td></tr>
+<tr class="separator:ae2019a4a9cad32e10a6e94286f0a16a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab262cd4792c7c7c7ee88ea9854dcef00"><td class="memItemLeft" align="right" valign="top">TOutputValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ab262cd4792c7c7c7ee88ea9854dcef00">operator()</a> (const TInputValue &amp;aInput) const</td></tr>
+<tr class="separator:ab262cd4792c7c7c7ee88ea9854dcef00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aac3822c4b3027bebbeff9b95e1342602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ad13c1525a41b3c648c21d7ff90c68b8a">RealVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a></td></tr>
-<tr class="separator:aac3822c4b3027bebbeff9b95e1342602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16bddf1514886b4e40164d55126c05e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#af726de2e7eaec98ab43c53014125fb0c">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a></td></tr>
-<tr class="separator:a16bddf1514886b4e40164d55126c05e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a992e55edfdeb564d2dac9348f54f3eee"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a992e55edfdeb564d2dac9348f54f3eee">t_sin</a></td></tr>
-<tr class="separator:a992e55edfdeb564d2dac9348f54f3eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c15bc50a46a9d6d199f1248a89ba0a9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a></td></tr>
-<tr class="separator:a6c15bc50a46a9d6d199f1248a89ba0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abadf0be177fd665b404d417839eea1c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ad13c1525a41b3c648c21d7ff90c68b8a">RealVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#abadf0be177fd665b404d417839eea1c2">trans</a></td></tr>
-<tr class="separator:abadf0be177fd665b404d417839eea1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0320aaac603a14ed0618a524917c279e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa27db2f00e9f82164ba1f8e33d26e3ee">RealVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a></td></tr>
+<tr class="separator:a0320aaac603a14ed0618a524917c279e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6cef034c6da149f282fd5cca6ecef49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6d3d47cc1bb8afd24944e0555547809d">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a></td></tr>
+<tr class="separator:aa6cef034c6da149f282fd5cca6ecef49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e80c671a889a5e5d49f0a40ebf072c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a90e80c671a889a5e5d49f0a40ebf072c">t_sin</a></td></tr>
+<tr class="separator:a90e80c671a889a5e5d49f0a40ebf072c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4d60e2519e746f2a3c9dff79bfc1cf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a></td></tr>
+<tr class="separator:a0a4d60e2519e746f2a3c9dff79bfc1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16ca23dbe497acc07dc2099eb69e905c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa27db2f00e9f82164ba1f8e33d26e3ee">RealVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16ca23dbe497acc07dc2099eb69e905c">trans</a></td></tr>
+<tr class="separator:a16ca23dbe497acc07dc2099eb69e905c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1236e292562e8215110479f3f2b9c364"><td class="memItemLeft" align="right" valign="top">TFunctor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a1236e292562e8215110479f3f2b9c364">functor</a></td></tr>
+<tr class="separator:a1236e292562e8215110479f3f2b9c364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a157ecbe0024240520f19ad9dfc034948"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a157ecbe0024240520f19ad9dfc034948">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CSpace.html">concepts::CSpace</a>&lt; TSpace &gt;))</td></tr>
-<tr class="memdesc:a157ecbe0024240520f19ad9dfc034948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking concepts.  <a href="#a157ecbe0024240520f19ad9dfc034948">More...</a><br /></td></tr>
-<tr class="separator:a157ecbe0024240520f19ad9dfc034948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad125c4ee3efebb1f500445e765b391f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ad125c4ee3efebb1f500445e765b391f5">BOOST_STATIC_ASSERT</a> ((TSpace::dimension==3))</td></tr>
-<tr class="separator:ad125c4ee3efebb1f500445e765b391f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9b3cb66ed9ba6b822f8403b8765cde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6b9b3cb66ed9ba6b822f8403b8765cde">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CSpace.html">concepts::CSpace</a>&lt; TSpace &gt;))</td></tr>
+<tr class="memdesc:a6b9b3cb66ed9ba6b822f8403b8765cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking concepts.  <a href="#a6b9b3cb66ed9ba6b822f8403b8765cde">More...</a><br /></td></tr>
+<tr class="separator:a6b9b3cb66ed9ba6b822f8403b8765cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720cc259ccc66a2752643f71a863cf2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a720cc259ccc66a2752643f71a863cf2b">BOOST_STATIC_ASSERT</a> ((TSpace::dimension==3))</td></tr>
+<tr class="separator:a720cc259ccc66a2752643f71a863cf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f36b5999903e34e5a216b8be75655d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a85f36b5999903e34e5a216b8be75655d">BOOST_STATIC_ASSERT</a> ((TOutputValue::dimension==3))</td></tr>
+<tr class="separator:a85f36b5999903e34e5a216b8be75655d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca6d255885fb300fcb85eba39c929da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a2ca6d255885fb300fcb85eba39c929da">BOOST_STATIC_ASSERT</a> ((TInputValue::dimension==3))</td></tr>
+<tr class="separator:a2ca6d255885fb300fcb85eba39c929da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename TSpace&gt;<br />
-class DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;</h3>
+<div class="textblock"><h3>template&lt;typename TSpace, typename TInputValue = typename TSpace::RealPoint, typename TOutputValue = typename TSpace::Point, typename TFunctor = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt;<br />
+class DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;</h3>
 
 <p>Aim: implements forward rigid transformation of point in 3D integer space around any arbitrary axis. This implementation uses the <a href="http://mathworld.wolfram.com/RodriguesRotationFormula.html">Rodrigues' rotation formula</a>. Warring: This version uses closest neighbor interpolation. </p>
 <p>Description of template functor like class '<a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html" title="Aim: implements forward rigid transformation of point in 3D integer space around any arbitrary axis...">ForwardRigidTransformation3D</a>' </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TSpace</td><td>a 3 dimensional space.</td></tr>
+    <tr><td class="paramname">TSpace</td><td>a 3 dimensional space. </td></tr>
+    <tr><td class="paramname">TInputValue</td><td>type of the input point e.g., TSpace::RealPoint </td></tr>
+    <tr><td class="paramname">TOutputValue</td><td>type of the output point e.g., TSpace::Point </td></tr>
+    <tr><td class="paramname">TFunctor</td><td>a functor operating on the output e.g., a rounding function.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="exampleRigidtransformation3d_8cpp.html">exampleRigidtransformation3d.cpp</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00070">70</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00076">76</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a5329a7e20de3cdc4af54b89418bd81cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5329a7e20de3cdc4af54b89418bd81cb">&#9670;&nbsp;</a></span>Point</h2>
+<a id="a6d3d47cc1bb8afd24944e0555547809d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d3d47cc1bb8afd24944e0555547809d">&#9670;&nbsp;</a></span>RealPoint</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TSpace::Point <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::<a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a5329a7e20de3cdc4af54b89418bd81cb">Point</a></td>
+          <td class="memname">typedef TSpace::RealPoint <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::<a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6d3d47cc1bb8afd24944e0555547809d">RealPoint</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00078">78</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00086">86</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
 
 </div>
 </div>
-<a id="af726de2e7eaec98ab43c53014125fb0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af726de2e7eaec98ab43c53014125fb0c">&#9670;&nbsp;</a></span>RealPoint</h2>
+<a id="aa27db2f00e9f82164ba1f8e33d26e3ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa27db2f00e9f82164ba1f8e33d26e3ee">&#9670;&nbsp;</a></span>RealVector</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TSpace::RealPoint <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::<a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#af726de2e7eaec98ab43c53014125fb0c">RealPoint</a></td>
+          <td class="memname">typedef TSpace::RealVector <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::<a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa27db2f00e9f82164ba1f8e33d26e3ee">RealVector</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00079">79</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
-
-</div>
-</div>
-<a id="ad13c1525a41b3c648c21d7ff90c68b8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad13c1525a41b3c648c21d7ff90c68b8a">&#9670;&nbsp;</a></span>RealVector</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef TSpace::RealVector <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::<a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ad13c1525a41b3c648c21d7ff90c68b8a">RealVector</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00080">80</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00087">87</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1847b308d84da2cb7890e9b63eb28a0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1847b308d84da2cb7890e9b63eb28a0d">&#9670;&nbsp;</a></span>ForwardRigidTransformation3D()</h2>
+<a id="ae2019a4a9cad32e10a6e94286f0a16a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2019a4a9cad32e10a6e94286f0a16a3">&#9670;&nbsp;</a></span>ForwardRigidTransformation3D()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::<a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">ForwardRigidTransformation3D</a> </td>
+          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::<a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">ForwardRigidTransformation3D</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#af726de2e7eaec98ab43c53014125fb0c">RealPoint</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6d3d47cc1bb8afd24944e0555547809d">RealPoint</a> &amp;&#160;</td>
           <td class="paramname"><em>aOrigin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ad13c1525a41b3c648c21d7ff90c68b8a">RealVector</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa27db2f00e9f82164ba1f8e33d26e3ee">RealVector</a> &amp;&#160;</td>
           <td class="paramname"><em>aAxis</em>, </td>
         </tr>
         <tr>
@@ -228,7 +217,7 @@ template&lt;typename TSpace &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ad13c1525a41b3c648c21d7ff90c68b8a">RealVector</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa27db2f00e9f82164ba1f8e33d26e3ee">RealVector</a> &amp;&#160;</td>
           <td class="paramname"><em>aTranslate</em>&#160;</td>
         </tr>
         <tr>
@@ -253,32 +242,32 @@ template&lt;typename TSpace &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00091">91</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00098">98</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
 
-<p class="reference">References <a class="el" href="RigidTransformation3D_8h_source.html#l00130">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::axis</a>, <a class="el" href="RigidTransformation3D_8h_source.html#l00133">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::t_cos</a>, and <a class="el" href="RigidTransformation3D_8h_source.html#l00132">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::t_sin</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        : <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>(aAxis.<a class="code" href="classDGtal_1_1PointVector.html#ac809069d2efce45b8fece372cb7dbea0">getNormalized</a>()), <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>(aOrigin), <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#abadf0be177fd665b404d417839eea1c2">trans</a>(aTranslate)</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">if</span> ( std::isnan( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>.norm() ) )</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">throw</span> std::runtime_error ( <span class="stringliteral">&quot;Axis of rotation can not be set as a vector of length 0!&quot;</span> );</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a992e55edfdeb564d2dac9348f54f3eee">t_sin</a> = std::sin ( angle );</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> = std::cos ( angle );</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_aac3822c4b3027bebbeff9b95e1342602"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">DGtal::functors::ForwardRigidTransformation3D::axis</a></div><div class="ttdeci">RealVector axis</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00130">RigidTransformation3D.h:130</a></div></div>
-<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_abadf0be177fd665b404d417839eea1c2"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#abadf0be177fd665b404d417839eea1c2">DGtal::functors::ForwardRigidTransformation3D::trans</a></div><div class="ttdeci">RealVector trans</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00134">RigidTransformation3D.h:134</a></div></div>
-<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a6c15bc50a46a9d6d199f1248a89ba0a9"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">DGtal::functors::ForwardRigidTransformation3D::t_cos</a></div><div class="ttdeci">double t_cos</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00133">RigidTransformation3D.h:133</a></div></div>
-<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a16bddf1514886b4e40164d55126c05e2"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">DGtal::functors::ForwardRigidTransformation3D::origin</a></div><div class="ttdeci">RealPoint origin</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00131">RigidTransformation3D.h:131</a></div></div>
+<p class="reference">References <a class="el" href="RigidTransformation3D_8h_source.html#l00137">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::axis</a>, <a class="el" href="RigidTransformation3D_8h_source.html#l00140">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::t_cos</a>, and <a class="el" href="RigidTransformation3D_8h_source.html#l00139">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::t_sin</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        : <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>(aAxis.<a class="code" href="classDGtal_1_1PointVector.html#ac809069d2efce45b8fece372cb7dbea0">getNormalized</a>()), <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>(aOrigin), <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16ca23dbe497acc07dc2099eb69e905c">trans</a>(aTranslate)</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span> ( std::isnan( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>.norm() ) )</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">throw</span> std::runtime_error ( <span class="stringliteral">&quot;Axis of rotation can not be set as a vector of length 0!&quot;</span> );</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a90e80c671a889a5e5d49f0a40ebf072c">t_sin</a> = std::sin ( angle );</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> = std::cos ( angle );</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_aa6cef034c6da149f282fd5cca6ecef49"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">DGtal::functors::ForwardRigidTransformation3D::origin</a></div><div class="ttdeci">RealPoint origin</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00138">RigidTransformation3D.h:138</a></div></div>
+<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a90e80c671a889a5e5d49f0a40ebf072c"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a90e80c671a889a5e5d49f0a40ebf072c">DGtal::functors::ForwardRigidTransformation3D::t_sin</a></div><div class="ttdeci">double t_sin</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00139">RigidTransformation3D.h:139</a></div></div>
 <div class="ttc" id="classDGtal_1_1PointVector_html_ac809069d2efce45b8fece372cb7dbea0"><div class="ttname"><a href="classDGtal_1_1PointVector.html#ac809069d2efce45b8fece372cb7dbea0">DGtal::PointVector::getNormalized</a></div><div class="ttdeci">PointVector&lt; dim, double, std::array&lt; double, dim &gt; &gt; getNormalized() const</div></div>
-<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a992e55edfdeb564d2dac9348f54f3eee"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a992e55edfdeb564d2dac9348f54f3eee">DGtal::functors::ForwardRigidTransformation3D::t_sin</a></div><div class="ttdeci">double t_sin</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00132">RigidTransformation3D.h:132</a></div></div>
+<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a0a4d60e2519e746f2a3c9dff79bfc1cf"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">DGtal::functors::ForwardRigidTransformation3D::t_cos</a></div><div class="ttdeci">double t_cos</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00140">RigidTransformation3D.h:140</a></div></div>
+<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a0320aaac603a14ed0618a524917c279e"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">DGtal::functors::ForwardRigidTransformation3D::axis</a></div><div class="ttdeci">RealVector axis</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00137">RigidTransformation3D.h:137</a></div></div>
+<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a16ca23dbe497acc07dc2099eb69e905c"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16ca23dbe497acc07dc2099eb69e905c">DGtal::functors::ForwardRigidTransformation3D::trans</a></div><div class="ttdeci">RealVector trans</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00141">RigidTransformation3D.h:141</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a157ecbe0024240520f19ad9dfc034948"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a157ecbe0024240520f19ad9dfc034948">&#9670;&nbsp;</a></span>BOOST_CONCEPT_ASSERT()</h2>
+<a id="a6b9b3cb66ed9ba6b822f8403b8765cde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9b3cb66ed9ba6b822f8403b8765cde">&#9670;&nbsp;</a></span>BOOST_CONCEPT_ASSERT()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::BOOST_CONCEPT_ASSERT </td>
+          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::BOOST_CONCEPT_ASSERT </td>
           <td>(</td>
           <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1CSpace.html">concepts::CSpace</a>&lt; TSpace &gt;)&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -296,19 +285,19 @@ template&lt;typename TSpace &gt; </div>
 
 </div>
 </div>
-<a id="ad125c4ee3efebb1f500445e765b391f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad125c4ee3efebb1f500445e765b391f5">&#9670;&nbsp;</a></span>BOOST_STATIC_ASSERT()</h2>
+<a id="a720cc259ccc66a2752643f71a863cf2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720cc259ccc66a2752643f71a863cf2b">&#9670;&nbsp;</a></span>BOOST_STATIC_ASSERT() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::BOOST_STATIC_ASSERT </td>
+          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::BOOST_STATIC_ASSERT </td>
           <td>(</td>
           <td class="paramtype">(TSpace::dimension==3)&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -324,21 +313,77 @@ template&lt;typename TSpace &gt; </div>
 
 </div>
 </div>
-<a id="a303d15a9946a7fcf917302cdc4a9e80a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a303d15a9946a7fcf917302cdc4a9e80a">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="a85f36b5999903e34e5a216b8be75655d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f36b5999903e34e5a216b8be75655d">&#9670;&nbsp;</a></span>BOOST_STATIC_ASSERT() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a5329a7e20de3cdc4af54b89418bd81cb">Point</a> <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::operator() </td>
+          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::BOOST_STATIC_ASSERT </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a5329a7e20de3cdc4af54b89418bd81cb">Point</a> &amp;&#160;</td>
+          <td class="paramtype">(TOutputValue::dimension==3)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ca6d255885fb300fcb85eba39c929da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca6d255885fb300fcb85eba39c929da">&#9670;&nbsp;</a></span>BOOST_STATIC_ASSERT() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::BOOST_STATIC_ASSERT </td>
+          <td>(</td>
+          <td class="paramtype">(TInputValue::dimension==3)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab262cd4792c7c7c7ee88ea9854dcef00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab262cd4792c7c7c7ee88ea9854dcef00">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TOutputValue <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const TInputValue &amp;&#160;</td>
           <td class="paramname"><em>aInput</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -352,32 +397,33 @@ template&lt;typename TSpace &gt; </div>
 <p>Operator</p>
 <dl class="section return"><dt>Returns</dt><dd>the transformed point. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00109">109</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00116">116</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
 
-<p class="reference">References <a class="el" href="RigidTransformation3D_8h_source.html#l00130">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::axis</a>, <a class="el" href="RigidTransformation3D_8h_source.html#l00131">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::origin</a>, <a class="el" href="RigidTransformation3D_8h_source.html#l00133">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::t_cos</a>, <a class="el" href="RigidTransformation3D_8h_source.html#l00132">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::t_sin</a>, and <a class="el" href="RigidTransformation3D_8h_source.html#l00134">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::trans</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        p[0] = std::floor ( ( ( ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> + ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[0] ) * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> ) ) * ( aInput[0] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[0] ) )</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                + ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[1] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> ) - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[2] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a992e55edfdeb564d2dac9348f54f3eee">t_sin</a> ) * ( aInput[1] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[1] ) )</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                + ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[1] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a992e55edfdeb564d2dac9348f54f3eee">t_sin</a> + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[2] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> )  ) * ( aInput[2] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[2] ) ) ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#abadf0be177fd665b404d417839eea1c2">trans</a>[0] ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[0] + 0.5 );</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        p[1] = std::floor ( ( ( ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[2] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a992e55edfdeb564d2dac9348f54f3eee">t_sin</a> + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[1] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> ) ) *  ( aInput[0] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[0] ) )</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                + ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> + ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[1] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[1] ) * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> ) ) * ( aInput[1] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[1] ) )</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                + ( ( -<a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a992e55edfdeb564d2dac9348f54f3eee">t_sin</a> + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[1] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[2] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> ) ) * ( aInput[2] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[2] ) ) ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#abadf0be177fd665b404d417839eea1c2">trans</a>[1] ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[1] + 0.5 );</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        p[2] = std::floor ( ( ( ( ( -<a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[1] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a992e55edfdeb564d2dac9348f54f3eee">t_sin</a> + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[2] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> ) ) * ( aInput[0] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[0] ) )</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                + ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a992e55edfdeb564d2dac9348f54f3eee">t_sin</a> + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[1] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[2] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> ) ) * ( aInput[1] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[1] ) )</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                + ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> + ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[2] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">axis</a>[2] ) * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">t_cos</a> ) ) * ( aInput[2] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[2] ) ) ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#abadf0be177fd665b404d417839eea1c2">trans</a>[2] ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">origin</a>[2] + 0.5 );</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> p;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_aac3822c4b3027bebbeff9b95e1342602"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aac3822c4b3027bebbeff9b95e1342602">DGtal::functors::ForwardRigidTransformation3D::axis</a></div><div class="ttdeci">RealVector axis</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00130">RigidTransformation3D.h:130</a></div></div>
-<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_abadf0be177fd665b404d417839eea1c2"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#abadf0be177fd665b404d417839eea1c2">DGtal::functors::ForwardRigidTransformation3D::trans</a></div><div class="ttdeci">RealVector trans</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00134">RigidTransformation3D.h:134</a></div></div>
-<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a6c15bc50a46a9d6d199f1248a89ba0a9"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6c15bc50a46a9d6d199f1248a89ba0a9">DGtal::functors::ForwardRigidTransformation3D::t_cos</a></div><div class="ttdeci">double t_cos</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00133">RigidTransformation3D.h:133</a></div></div>
-<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a16bddf1514886b4e40164d55126c05e2"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16bddf1514886b4e40164d55126c05e2">DGtal::functors::ForwardRigidTransformation3D::origin</a></div><div class="ttdeci">RealPoint origin</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00131">RigidTransformation3D.h:131</a></div></div>
-<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a992e55edfdeb564d2dac9348f54f3eee"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a992e55edfdeb564d2dac9348f54f3eee">DGtal::functors::ForwardRigidTransformation3D::t_sin</a></div><div class="ttdeci">double t_sin</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00132">RigidTransformation3D.h:132</a></div></div>
-<div class="ttc" id="testClone2_8cpp_html_a15e9592ccc512dc691b46185e6814758"><div class="ttname"><a href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a></div><div class="ttdeci">MyPointD Point</div><div class="ttdef"><b>Definition:</b> <a href="testClone2_8cpp_source.html#l00383">testClone2.cpp:383</a></div></div>
+<p class="reference">References <a class="el" href="RigidTransformation3D_8h_source.html#l00137">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::axis</a>, <a class="el" href="RigidTransformation3D_8h_source.html#l00142">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::functor</a>, <a class="el" href="RigidTransformation3D_8h_source.html#l00138">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::origin</a>, <a class="el" href="RigidTransformation3D_8h_source.html#l00140">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::t_cos</a>, <a class="el" href="RigidTransformation3D_8h_source.html#l00139">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::t_sin</a>, and <a class="el" href="RigidTransformation3D_8h_source.html#l00141">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::trans</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="classDGtal_1_1PointVector.html">RealPoint</a> p;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        p[0] = ( ( ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> + ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[0] ) * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> ) ) * ( aInput[0] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[0] ) )</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                + ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[1] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> ) - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[2] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a90e80c671a889a5e5d49f0a40ebf072c">t_sin</a> ) * ( aInput[1] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[1] ) )</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                + ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[1] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a90e80c671a889a5e5d49f0a40ebf072c">t_sin</a> + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[2] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> )  ) * ( aInput[2] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[2] ) ) ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16ca23dbe497acc07dc2099eb69e905c">trans</a>[0] ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[0];</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        p[1] = ( ( ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[2] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a90e80c671a889a5e5d49f0a40ebf072c">t_sin</a> + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[1] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> ) ) *  ( aInput[0] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[0] ) )</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                + ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> + ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[1] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[1] ) * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> ) ) * ( aInput[1] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[1] ) )</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                + ( ( -<a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a90e80c671a889a5e5d49f0a40ebf072c">t_sin</a> + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[1] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[2] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> ) ) * ( aInput[2] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[2] ) ) ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16ca23dbe497acc07dc2099eb69e905c">trans</a>[1] ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[1];</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        p[2] = ( ( ( ( -<a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[1] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a90e80c671a889a5e5d49f0a40ebf072c">t_sin</a> + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[2] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> ) ) * ( aInput[0] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[0] ) )</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                + ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[0] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a90e80c671a889a5e5d49f0a40ebf072c">t_sin</a> + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[1] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[2] * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> ) ) * ( aInput[1] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[1] ) )</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                + ( ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> + ( <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[2] * <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">axis</a>[2] ) * ( 1. - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">t_cos</a> ) ) * ( aInput[2] - <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[2] ) ) ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16ca23dbe497acc07dc2099eb69e905c">trans</a>[2] ) + <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">origin</a>[2];</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a1236e292562e8215110479f3f2b9c364">functor</a> ( p );</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_aa6cef034c6da149f282fd5cca6ecef49"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa6cef034c6da149f282fd5cca6ecef49">DGtal::functors::ForwardRigidTransformation3D::origin</a></div><div class="ttdeci">RealPoint origin</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00138">RigidTransformation3D.h:138</a></div></div>
+<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a90e80c671a889a5e5d49f0a40ebf072c"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a90e80c671a889a5e5d49f0a40ebf072c">DGtal::functors::ForwardRigidTransformation3D::t_sin</a></div><div class="ttdeci">double t_sin</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00139">RigidTransformation3D.h:139</a></div></div>
+<div class="ttc" id="classDGtal_1_1PointVector_html"><div class="ttname"><a href="classDGtal_1_1PointVector.html">DGtal::PointVector&lt; 3, double &gt;</a></div></div>
+<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a0a4d60e2519e746f2a3c9dff79bfc1cf"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf">DGtal::functors::ForwardRigidTransformation3D::t_cos</a></div><div class="ttdeci">double t_cos</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00140">RigidTransformation3D.h:140</a></div></div>
+<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a0320aaac603a14ed0618a524917c279e"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e">DGtal::functors::ForwardRigidTransformation3D::axis</a></div><div class="ttdeci">RealVector axis</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00137">RigidTransformation3D.h:137</a></div></div>
+<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a16ca23dbe497acc07dc2099eb69e905c"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16ca23dbe497acc07dc2099eb69e905c">DGtal::functors::ForwardRigidTransformation3D::trans</a></div><div class="ttdeci">RealVector trans</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00141">RigidTransformation3D.h:141</a></div></div>
+<div class="ttc" id="classDGtal_1_1functors_1_1ForwardRigidTransformation3D_html_a1236e292562e8215110479f3f2b9c364"><div class="ttname"><a href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a1236e292562e8215110479f3f2b9c364">DGtal::functors::ForwardRigidTransformation3D::functor</a></div><div class="ttdeci">TFunctor functor</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation3D_8h_source.html#l00142">RigidTransformation3D.h:142</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="aac3822c4b3027bebbeff9b95e1342602"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac3822c4b3027bebbeff9b95e1342602">&#9670;&nbsp;</a></span>axis</h2>
+<a id="a0320aaac603a14ed0618a524917c279e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0320aaac603a14ed0618a524917c279e">&#9670;&nbsp;</a></span>axis</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ad13c1525a41b3c648c21d7ff90c68b8a">RealVector</a> <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::axis</td>
+          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa27db2f00e9f82164ba1f8e33d26e3ee">RealVector</a> <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::axis</td>
         </tr>
       </table>
   </td>
@@ -387,25 +433,25 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00130">130</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00137">137</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RigidTransformation3D_8h_source.html#l00091">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::ForwardRigidTransformation3D()</a>, and <a class="el" href="RigidTransformation3D_8h_source.html#l00109">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RigidTransformation3D_8h_source.html#l00098">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::ForwardRigidTransformation3D()</a>, and <a class="el" href="RigidTransformation3D_8h_source.html#l00116">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::operator()()</a>.</p>
 
 </div>
 </div>
-<a id="a16bddf1514886b4e40164d55126c05e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16bddf1514886b4e40164d55126c05e2">&#9670;&nbsp;</a></span>origin</h2>
+<a id="a1236e292562e8215110479f3f2b9c364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1236e292562e8215110479f3f2b9c364">&#9670;&nbsp;</a></span>functor</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#af726de2e7eaec98ab43c53014125fb0c">RealPoint</a> <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::origin</td>
+          <td class="memname">TFunctor <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::functor</td>
         </tr>
       </table>
   </td>
@@ -415,25 +461,25 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00131">131</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00142">142</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RigidTransformation3D_8h_source.html#l00109">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RigidTransformation3D_8h_source.html#l00116">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::operator()()</a>.</p>
 
 </div>
 </div>
-<a id="a6c15bc50a46a9d6d199f1248a89ba0a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c15bc50a46a9d6d199f1248a89ba0a9">&#9670;&nbsp;</a></span>t_cos</h2>
+<a id="aa6cef034c6da149f282fd5cca6ecef49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6cef034c6da149f282fd5cca6ecef49">&#9670;&nbsp;</a></span>origin</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::t_cos</td>
+          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6d3d47cc1bb8afd24944e0555547809d">RealPoint</a> <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::origin</td>
         </tr>
       </table>
   </td>
@@ -443,25 +489,25 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00133">133</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00138">138</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RigidTransformation3D_8h_source.html#l00091">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::ForwardRigidTransformation3D()</a>, and <a class="el" href="RigidTransformation3D_8h_source.html#l00109">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RigidTransformation3D_8h_source.html#l00116">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::operator()()</a>.</p>
 
 </div>
 </div>
-<a id="a992e55edfdeb564d2dac9348f54f3eee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a992e55edfdeb564d2dac9348f54f3eee">&#9670;&nbsp;</a></span>t_sin</h2>
+<a id="a0a4d60e2519e746f2a3c9dff79bfc1cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a4d60e2519e746f2a3c9dff79bfc1cf">&#9670;&nbsp;</a></span>t_cos</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::t_sin</td>
+          <td class="memname">double <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::t_cos</td>
         </tr>
       </table>
   </td>
@@ -471,25 +517,25 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00132">132</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00140">140</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RigidTransformation3D_8h_source.html#l00091">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::ForwardRigidTransformation3D()</a>, and <a class="el" href="RigidTransformation3D_8h_source.html#l00109">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RigidTransformation3D_8h_source.html#l00098">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::ForwardRigidTransformation3D()</a>, and <a class="el" href="RigidTransformation3D_8h_source.html#l00116">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::operator()()</a>.</p>
 
 </div>
 </div>
-<a id="abadf0be177fd665b404d417839eea1c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abadf0be177fd665b404d417839eea1c2">&#9670;&nbsp;</a></span>trans</h2>
+<a id="a90e80c671a889a5e5d49f0a40ebf072c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e80c671a889a5e5d49f0a40ebf072c">&#9670;&nbsp;</a></span>t_sin</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSpace &gt; </div>
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#ad13c1525a41b3c648c21d7ff90c68b8a">RealVector</a> <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace &gt;::trans</td>
+          <td class="memname">double <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::t_sin</td>
         </tr>
       </table>
   </td>
@@ -499,9 +545,37 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00134">134</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00139">139</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RigidTransformation3D_8h_source.html#l00109">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RigidTransformation3D_8h_source.html#l00098">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::ForwardRigidTransformation3D()</a>, and <a class="el" href="RigidTransformation3D_8h_source.html#l00116">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::operator()()</a>.</p>
+
+</div>
+</div>
+<a id="a16ca23dbe497acc07dc2099eb69e905c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16ca23dbe497acc07dc2099eb69e905c">&#9670;&nbsp;</a></span>trans</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint, typename TOutputValue  = typename TSpace::Point, typename TFunctor  = VectorRounding &lt; TInputValue, TOutputValue &gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#aa27db2f00e9f82164ba1f8e33d26e3ee">RealVector</a> <a class="el" href="classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html">DGtal::functors::ForwardRigidTransformation3D</a>&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::trans</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RigidTransformation3D_8h_source.html#l00141">141</a> of file <a class="el" href="RigidTransformation3D_8h_source.html">RigidTransformation3D.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="RigidTransformation3D_8h_source.html#l00116">DGtal::functors::ForwardRigidTransformation3D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -511,7 +585,7 @@ template&lt;typename TSpace &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2019 21:09:40 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 24 2019 09:52:11 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

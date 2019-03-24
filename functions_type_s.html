@@ -208,8 +208,11 @@ $(function() {
 </li>
 <li>Segmentation
 : <a class="el" href="classDGtal_1_1LambdaMST2DEstimator.html#ac1a48200fffcef6c358761fc7fd1671e">DGtal::LambdaMST2DEstimator&lt; TSpace, TSegmentation, Functor &gt;</a>
-, <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#aefaf7a3dd66683c1e11d5d0bc5266bab">DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation, Functor &gt;</a>
+, <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a644aa30564cbeae51eec1f27031112bb">DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation, Functor, DSSFilter &gt;</a>
 , <a class="el" href="classDGtal_1_1MostCenteredMaximalSegmentEstimator.html#a2b3db02393f8a52faa610fad6bf55639">DGtal::MostCenteredMaximalSegmentEstimator&lt; SegmentComputer, SCEstimator &gt;</a>
+</li>
+<li>Segmentation2D
+: <a class="el" href="classDGtal_1_1LambdaMST3DBy2DEstimator.html#a74883e5416be3f4042da2de00b3bbd86">DGtal::LambdaMST3DBy2DEstimator&lt; Iterator3D, Functor, LambdaFunctor, CONNECTIVITY &gt;</a>
 </li>
 <li>SegmentComputer
 : <a class="el" href="structDGtal_1_1concepts_1_1CSegmentComputerEstimator.html#ac795d0702b5c2295593f96d9b9e2a861">DGtal::concepts::CSegmentComputerEstimator&lt; T &gt;</a>
@@ -221,9 +224,12 @@ $(function() {
 , <a class="el" href="classDGtal_1_1GreedySegmentation.html#a48dddaede8dd6951c54350ffa772a485">DGtal::GreedySegmentation&lt; TSegmentComputer &gt;</a>
 , <a class="el" href="classDGtal_1_1GreedySegmentation_1_1SegmentComputerIterator.html#afb0ef4d581b61d1ba8854c1ab9b54d09">DGtal::GreedySegmentation&lt; TSegmentComputer &gt;::SegmentComputerIterator</a>
 , <a class="el" href="classDGtal_1_1LambdaMST2DEstimator.html#a1c61046120e990b4dba368974abd1c76">DGtal::LambdaMST2DEstimator&lt; TSpace, TSegmentation, Functor &gt;</a>
-, <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a3361bb97be0685bed79a531c57e364e8">DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation, Functor &gt;</a>
+, <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a1ceb4764b959c921f1b0c43934b582f5">DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation, Functor, DSSFilter &gt;</a>
 , <a class="el" href="classDGtal_1_1SaturatedSegmentation.html#a3dd3ae471390e3741a9839fd89bcf069">DGtal::SaturatedSegmentation&lt; TSegmentComputer &gt;</a>
 , <a class="el" href="classDGtal_1_1SaturatedSegmentation_1_1SegmentComputerIterator.html#a276fc91f49ea62ebaa890c77a355f1d4">DGtal::SaturatedSegmentation&lt; TSegmentComputer &gt;::SegmentComputerIterator</a>
+</li>
+<li>SegmentComputer2D
+: <a class="el" href="classDGtal_1_1LambdaMST3DBy2DEstimator.html#aec133ec2ee3b4743a5671858976a50ef">DGtal::LambdaMST3DBy2DEstimator&lt; Iterator3D, Functor, LambdaFunctor, CONNECTIVITY &gt;</a>
 </li>
 <li>SegmentIterator
 : <a class="el" href="classDGtal_1_1MostCenteredMaximalSegmentEstimator.html#a27f93b5628b4fa36d2a00badbaabef2c">DGtal::MostCenteredMaximalSegmentEstimator&lt; SegmentComputer, SCEstimator &gt;</a>
@@ -602,6 +608,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1COBAGenericNaivePlaneComputer.html#ab51a77dcbc32ef8819233b40f3b76b64">DGtal::COBAGenericNaivePlaneComputer&lt; TSpace, TInternalInteger &gt;</a>
 , <a class="el" href="classDGtal_1_1COBAGenericStandardPlaneComputer.html#acd6ba4fe31ab497ad7e8344337e687fe">DGtal::COBAGenericStandardPlaneComputer&lt; TSpace, TInternalInteger &gt;</a>
 , <a class="el" href="classDGtal_1_1COBANaivePlaneComputer.html#aeb101c6731e6e1afdfa342768ca11f2b">DGtal::COBANaivePlaneComputer&lt; TSpace, TInternalInteger &gt;</a>
+, <a class="el" href="structDGtal_1_1concepts_1_1C3DParametricCurve.html#a63f951e5621ff52ce12f6e7ae3e0b7ff">DGtal::concepts::C3DParametricCurve&lt; T &gt;</a>
 , <a class="el" href="structDGtal_1_1concepts_1_1CAdjacency.html#a2f3f695d45580d02f07ff565b7bd460d">DGtal::concepts::CAdjacency&lt; Adj &gt;</a>
 , <a class="el" href="structDGtal_1_1concepts_1_1CDigitalMetricSpace.html#ae9859a530b567239145dadb1efbcc459">DGtal::concepts::CDigitalMetricSpace&lt; T &gt;</a>
 , <a class="el" href="structDGtal_1_1concepts_1_1CDomain.html#a8c49b255d1320c98ce49ef5a3dd7e889">DGtal::concepts::CDomain&lt; T &gt;</a>
@@ -613,6 +620,7 @@ $(function() {
 , <a class="el" href="structDGtal_1_1concepts_1_1CPrimitiveComputer.html#a40598944a6f87c0af1e3d5b0ec3f9a06">DGtal::concepts::CPrimitiveComputer&lt; T &gt;</a>
 , <a class="el" href="structDGtal_1_1concepts_1_1CSpace.html#a504e4dde8e7a98dd47939c387c259715">DGtal::concepts::CSpace&lt; T &gt;</a>
 , <a class="el" href="classDGtal_1_1CubicalComplex.html#a363b58cb2fbc5e4ac05a570902fda973">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;</a>
+, <a class="el" href="classDGtal_1_1DecoratorParametricCurveTransformation.html#a859a614bad97ee2594a0198f4bd6263d">DGtal::DecoratorParametricCurveTransformation&lt; TCurve, TTransfromation &gt;</a>
 , <a class="el" href="classDGtal_1_1deprecated_1_1DigitalShapesIntersection.html#ae8f20cb87c0da74d801b1bd8a4769ba6">DGtal::deprecated::DigitalShapesIntersection&lt; ShapeA, ShapeB &gt;</a>
 , <a class="el" href="classDGtal_1_1deprecated_1_1DigitalShapesMinus.html#a97a2be7ff7e3f98936073fc9a2b6d1fa">DGtal::deprecated::DigitalShapesMinus&lt; ShapeA, ShapeB &gt;</a>
 , <a class="el" href="classDGtal_1_1deprecated_1_1DigitalShapesUnion.html#a70e06eb47b2ae8adeed5973d45034d1a">DGtal::deprecated::DigitalShapesUnion&lt; ShapeA, ShapeB &gt;</a>
@@ -633,6 +641,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1DistanceTransformation.html#a0b61b42089f8c9089cc810983976d542">DGtal::DistanceTransformation&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1DomainAdjacency.html#abd4ab9ac4d3538276d9e43256cae7f7f">DGtal::DomainAdjacency&lt; TDomain, TAdjacency &gt;</a>
 , <a class="el" href="classDGtal_1_1Ellipse2D.html#a515b73384203896c4d508a61449a230c">DGtal::Ellipse2D&lt; TSpace &gt;</a>
+, <a class="el" href="classDGtal_1_1EllipticHelix.html#ade73ab9287dbdf504b9364c1db90bd19">DGtal::EllipticHelix&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1EuclideanShapesCSG.html#a533e40695b48f13a6ef6d95b1d5043a9">DGtal::EuclideanShapesCSG&lt; ShapeA, ShapeB &gt;</a>
 , <a class="el" href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#a750e9d187fd4e0a48c2637952a25d1c1">DGtal::ExactPredicateLpPowerSeparableMetric&lt; TSpace, p, TPromoted &gt;</a>
 , <a class="el" href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html#a634fff3f0b95e1533b8978116f2eb194">DGtal::ExactPredicateLpPowerSeparableMetric&lt; TSpace, 2, TPromoted &gt;</a>
@@ -675,6 +684,14 @@ $(function() {
 , <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a95dc7bfa39fd920a0c476a3ea64e8580">DGtal::IntegralInvariantVolumeEstimator&lt; TKSpace, TPointPredicate, TVolumeFunctor &gt;</a>
 , <a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a65ce88aeffa0799d7d39da660abaf0ba">DGtal::KhalimskyPreSpaceND&lt; dim, TInteger &gt;</a>
 , <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#ab2215bc032ca075e029b33eaf129feec">DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;</a>
+, <a class="el" href="classDGtal_1_1Knot__3__1.html#a12efd3315f2cd28e02c483735cd761ba">DGtal::Knot_3_1&lt; TSpace &gt;</a>
+, <a class="el" href="classDGtal_1_1Knot__3__2.html#ae757bac9742e797c5e03d3c9c2566f7c">DGtal::Knot_3_2&lt; TSpace &gt;</a>
+, <a class="el" href="classDGtal_1_1Knot__4__1.html#a10fbea7bb42f04079cdb23bce303f091">DGtal::Knot_4_1&lt; TSpace &gt;</a>
+, <a class="el" href="classDGtal_1_1Knot__4__3.html#ad84d6d4888ce0f02af0b6bbcc59b23a2">DGtal::Knot_4_3&lt; TSpace &gt;</a>
+, <a class="el" href="classDGtal_1_1Knot__5__1.html#a266240e575f29195b756378d2a09ef2c">DGtal::Knot_5_1&lt; TSpace &gt;</a>
+, <a class="el" href="classDGtal_1_1Knot__5__2.html#ad6198e011b8bac38474e40eb74d30be8">DGtal::Knot_5_2&lt; TSpace &gt;</a>
+, <a class="el" href="classDGtal_1_1Knot__6__2.html#a9abaf023e2fa8c09e714c6bd8d505e9c">DGtal::Knot_6_2&lt; TSpace &gt;</a>
+, <a class="el" href="classDGtal_1_1Knot__7__4.html#ae79b1589345f1d285ac4243a3ac52b6b">DGtal::Knot_7_4&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1LatticePolytope2D.html#a229e8fafa51bf7705e97744cb9269da3">DGtal::LatticePolytope2D&lt; TSpace, TSequence &gt;</a>
 , <a class="el" href="classDGtal_1_1Lemniscate2D.html#af9e6a40e909897fa482f9cf97f4270a7">DGtal::Lemniscate2D&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1LightExplicitDigitalSurface.html#aaf6c92d7336be9813de89ad0d1a9e538">DGtal::LightExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;</a>
@@ -774,7 +791,8 @@ $(function() {
 , <a class="el" href="classDGtal_1_1CurvatureFromDSSLengthEstimator.html#a460f2ca2fdfccc0a6ec156de9be9def2">DGtal::CurvatureFromDSSLengthEstimator&lt; DSSComputer &gt;</a>
 , <a class="el" href="classDGtal_1_1DistanceFromDCAEstimator.html#adfbe6577f6714b30fc8f9e1d578dd7aa">DGtal::DistanceFromDCAEstimator&lt; DCAComputer &gt;</a>
 , <a class="el" href="classDGtal_1_1LambdaMST2D.html#a74aa9ee86f892681a2695cb8cf63f842">DGtal::LambdaMST2D&lt; DSSSegmentationComputer, LambdaFunction &gt;</a>
-, <a class="el" href="classDGtal_1_1LambdaMST3D.html#a17b0b21be1c40362dd0c0774e0019bd2">DGtal::LambdaMST3D&lt; DSSSegmentationComputer, LambdaFunction &gt;</a>
+, <a class="el" href="classDGtal_1_1LambdaMST3D.html#ab41fcedf9c49b9ec56b9d85321e5bf89">DGtal::LambdaMST3D&lt; DSSSegmentationComputer, LambdaFunction, DSSFilter &gt;</a>
+, <a class="el" href="classDGtal_1_1LambdaMST3DBy2D.html#afe453482e9f0d715a3845aa06d076d16">DGtal::LambdaMST3DBy2D&lt; Iterator3D, LambdaFunctor, CONNECTIVITY &gt;</a>
 , <a class="el" href="classDGtal_1_1NaiveDSL.html#aa8933d9c02ab20c310c7cb1d05960adf">DGtal::NaiveDSL&lt; TCoordinate, TInteger &gt;</a>
 , <a class="el" href="classDGtal_1_1NaiveDSS8.html#ab945f1d104313ccee5d2c1f58f3ab2d8">DGtal::NaiveDSS8&lt; TCoordinate, TInteger &gt;</a>
 , <a class="el" href="classDGtal_1_1NaiveDSS8Computer.html#af49d96d4ee3769733163b25b2e5943cd">DGtal::NaiveDSS8Computer&lt; TIterator, TInteger &gt;</a>
@@ -906,7 +924,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2019 21:09:42 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 24 2019 09:52:14 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
