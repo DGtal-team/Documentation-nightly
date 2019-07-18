@@ -122,17 +122,21 @@ struct DGtal::concepts::CSegment&lt; T &gt;</h3>
 
 <p>Aim: Defines the concept describing a segment, ie. a valid and not empty range. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CSegment.html" title="Aim: Defines the concept describing a segment, ie. a valid and not empty range. ">CSegment</a>'</b> </p>
-<h3>Refinement of boost::DefaultConstructible&lt;T&gt;, boost::CopyConstructible&lt;T&gt;, boost::Assignable&lt;T&gt;, boost::EqualityComparable&lt;T&gt;</h3>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md187"></a>
+Refinement of boost::DefaultConstructible&lt;T&gt;, boost::CopyConstructible&lt;T&gt;, boost::Assignable&lt;T&gt;, boost::EqualityComparable&lt;T&gt;</h1>
+<h1><a class="anchor" id="autotoc_md188"></a>
+Associated types</h1>
 <ul>
 <li>ConstIterator, the type used to iterate over the elements of the segment, a model of bidirectional iterator</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md189"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CSegment.html" title="Aim: Defines the concept describing a segment, ie. a valid and not empty range. ">CSegment</a></li>
 <li><em>x</em>, <em>y</em> : object of type X</li>
 </ul>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md190"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -141,10 +145,13 @@ struct DGtal::concepts::CSegment&lt; T &gt;</h3>
 <tr class="markdownTableBody" class="markdownTableRowEven">
 <td class="markdownTableBodyNone">end method  </td><td class="markdownTableBodyNone">x.end()  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ConstIterator  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">past-the-end value  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">O(1)   </td></tr>
 </table>
-<h3>Invariants</h3>
+<h1><a class="anchor" id="autotoc_md191"></a>
+Invariants</h1>
 <p>The range [x.begin(),x.end()) is valid (x.end() is reachable from x.begin()) and not empty (x.begin() != x.end()).</p>
-<h3>Models</h3>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md192"></a>
+Models</h1>
+<h1><a class="anchor" id="autotoc_md193"></a>
+Notes</h1>
 <p>A class of segments \( \Sigma_P \) is a set of segments such that for each segment of the set, a given predicate \( P \) is true: \( \forall s \in \Sigma_P, P(s) = \textrm{true} \).</p>
 <p>Segment computers, which refines <a class="el" href="structDGtal_1_1concepts_1_1CSegment.html" title="Aim: Defines the concept describing a segment, ie. a valid and not empty range. ">CSegment</a>, are segment that can control their own extension so that a given predicate remains true.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -273,7 +280,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

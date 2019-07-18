@@ -227,12 +227,14 @@ struct DGtal::concepts::CPreCellularGridSpaceND&lt; T &gt;</h3>
 <p>Models of <a class="el" href="structDGtal_1_1concepts_1_1CPreCellularGridSpaceND.html" title="Aim: This concept describes an unbounded cellular grid space in nD. In these spaces obtained by carte...">CPreCellularGridSpaceND</a> are used whenever you need to define a topology on a full digital space.</p>
 <p>The space size only depends on the given integer precision.</p>
 <p>We refer the reader to <a class="el" href="moduleCellularTopology.html">Cellular grid space and topology, unoriented and oriented cells, incidence</a> for further details.</p>
-<h3>Refinement of</h3>
+<h1><a class="anchor" id="autotoc_md818"></a>
+Refinement of</h1>
 <ul>
 <li><a class="el" href="structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. ">boost::DefaultConstructible</a></li>
 <li><a class="el" href="structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html. ">boost::CopyConstructible</a></li>
 </ul>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md819"></a>
+Associated types</h1>
 <ul>
 <li><em>Integer:</em> the integral type for representing coordinates in the space (model of <a class="el" href="structDGtal_1_1concepts_1_1CInteger.html" title="Aim: Concept checking for Integer Numbers. More precisely, this concept is a refinement of both CEucl...">CInteger</a>).</li>
 <li><em>Space:</em> the corresponding digital space (same dimension and same <em>Integer</em> type as this).</li>
@@ -254,7 +256,8 @@ struct DGtal::concepts::CPreCellularGridSpaceND&lt; T &gt;</h3>
 <li><em>SurfelMap&lt;Value&gt;</em>: an associative container Surfel-&gt;Value rebinder type (efficient for key queries). Use as <code>typename</code> X::template SurfelMap&lt;Value&gt;::Type, which is a model of <a class="el" href="structboost_1_1UniqueAssociativeContainer.html" title="Go to http://www.sgi.com/tech/stl/UniqueAssociativeContainer.html. ">boost::UniqueAssociativeContainer</a> and <a class="el" href="structboost_1_1PairAssociativeContainer.html" title="Go to http://www.sgi.com/tech/stl/PairAssociativeContainer.html. ">boost::PairAssociativeContainer</a>.</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>DirIterator should be use as follows: <div class="fragment"><div class="line"><a class="code" href="classDGtal_1_1KhalimskySpaceND.html">KSpace</a> x;</div><div class="line"><a class="code" href="structDGtal_1_1KhalimskyCell.html">Cell</a> c;</div><div class="line"><span class="keywordflow">for</span> ( <a class="code" href="classDGtal_1_1KhalimskySpaceND.html#ae43e64aef19d01b248cdece71825e1b6">KSpace::DirIterator</a> q = x.uDirs( c ); q != 0; ++q )</div><div class="line">  {</div><div class="line">    <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> dir = *q;</div><div class="line">    ...</div><div class="line">  }</div></div><!-- fragment --></dd></dl>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md820"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <em><a class="el" href="structDGtal_1_1concepts_1_1CPreCellularGridSpaceND.html" title="Aim: This concept describes an unbounded cellular grid space in nD. In these spaces obtained by carte...">CPreCellularGridSpaceND</a></em> </li>
 <li><em>x</em> : object of type <em>X</em> </li>
@@ -267,7 +270,8 @@ struct DGtal::concepts::CPreCellularGridSpaceND&lt; T &gt;</h3>
 <li><em>v</em> : object of type <em>Vector</em> </li>
 <li><em>sign:</em> object of type <em>Sign</em> </li>
 </ul>
-<h3>Definitions</h3>
+<h1><a class="anchor" id="autotoc_md821"></a>
+Definitions</h1>
 <ul>
 <li><b>digital</b> coordinates are the natural coordinates of the cells of maximal dimension in the cellular space. For instance, it represents the coordinates of the pixels in an image. Two adjacent pixels have digital coordinates that differ by one in the cellular space. It is clear that incident cells (cells of lower dimension) may also have the same <em>digital</em> coordinates.</li>
 <li><b>Khalimsky</b> coordinates are a way to number cells such that any two cells have different coordinates. More precisely, digital coordinates are doubled and the odd parity depends on whether or not the cell is open along this coordinate axis.</li>
@@ -276,7 +280,8 @@ struct DGtal::concepts::CPreCellularGridSpaceND&lt; T &gt;</h3>
 <li><b>adjacent</b> cells to some cell <em>c</em> are cells with the same topology as <em>c</em> but whose one of their digital coordinates differs by one. They are often called 1-adjacent.</li>
 <li><b>incident</b> cells to some cell <em>c</em> are cells that are either a face of <em>c</em> or such that <em>c</em> is one of their faces.</li>
 </ul>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md822"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -473,12 +478,15 @@ struct DGtal::concepts::CPreCellularGridSpaceND&lt; T &gt;</h3>
 <tr class="markdownTableBody" class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Indirect incident cell  </td><td class="markdownTableBodyNone"><em>x.sIndirectIncident</em>(<em>sc</em>,<em>k</em>)  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><em>SCell</em>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">return the signed cell that is the indirect incident cell to <em>sc</em> along axis <em>k</em>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h3>Invariants</h3>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md823"></a>
+Invariants</h1>
+<h1><a class="anchor" id="autotoc_md824"></a>
+Models</h1>
 <ul>
 <li><a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html" title="Aim: This class is a model of CPreCellularGridSpaceND. It represents the cubical grid as a cell compl...">KhalimskyPreSpaceND</a></li>
 </ul>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md825"></a>
+Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type that should be a model of <a class="el" href="structDGtal_1_1concepts_1_1CPreCellularGridSpaceND.html" title="Aim: This concept describes an unbounded cellular grid space in nD. In these spaces obtained by carte...">CPreCellularGridSpaceND</a>. </td></tr>
@@ -1700,7 +1708,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

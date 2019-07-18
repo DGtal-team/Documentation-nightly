@@ -184,19 +184,22 @@ struct DGtal::concepts::CPositiveIrreducibleFraction&lt; T &gt;</h3>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CPositiveIrreducibleFraction.html" title="Aim: Defines positive irreducible fractions, i.e. fraction p/q, p and q non-negative integers...">CPositiveIrreducibleFraction</a>'</b> </p>
 <p>Irreducible fractions are nicely represented with the Stern-Brocot tree. Furthermore, the development of a fraction p/q into its simple continued fraction with quotients \([u_0, \ldots, u_k]\) has one-to-one correspondence with the position of the fraction in the Stern-Brocot tree.</p>
 <p>One can "visit" irreducible fractions by enumerating the sequence of its partial quotients. Furthermore, one can push a new quotient at the end of this fraction to get a new fraction which shares all quotients except the last one. In this sense, a fraction is a sequence (container) that can only grow.</p>
-<h3>Refinement of</h3>
+<h1><a class="anchor" id="autotoc_md0"></a>
+Refinement of</h1>
 <ul>
 <li><a class="el" href="structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html. ">boost::CopyConstructible</a>, <a class="el" href="structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. ">boost::DefaultConstructible</a>, <a class="el" href="structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. ">boost::Assignable</a></li>
 <li><a class="el" href="structDGtal_1_1concepts_1_1CBackInsertable.html" title="Aim: Represents types for which a std::back_insert_iterator can be constructed with std::back_inserte...">CBackInsertable</a>, <a class="el" href="structDGtal_1_1concepts_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const single pass range. ">CConstSinglePassRange</a></li>
 </ul>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Associated types</h1>
 <ul>
 <li><em>Integer:</em> the type for representing a numerator or a denominator. Must be a model of <a class="el" href="structDGtal_1_1concepts_1_1CInteger.html" title="Aim: Concept checking for Integer Numbers. More precisely, this concept is a refinement of both CEucl...">CInteger</a>.</li>
 <li><em>Quotient:</em> the type for representing partial quotients, i.e. the integers that appear in the continued fractions of p/q, and for representing the depth of the fraction. Might be the same as Integer but may be also smaller, since quotients are generally much smaller than the convergent numerators and denominators. Must be a model of <a class="el" href="structDGtal_1_1concepts_1_1CInteger.html" title="Aim: Concept checking for Integer Numbers. More precisely, this concept is a refinement of both CEucl...">CInteger</a> since depths may be negative (1/0 is -1).</li>
 <li><em>Value</em> and <em>value_type:</em> the type <code>std::pair&lt;Quotient,Quotient&gt;</code>, useful to create back insertion sequence.</li>
 <li><em>ConstIterator</em> and <em>const_iterator:</em> the type for visiting the quotients of the fraction in sequence. The value of the iterator has type <em>Value</em>.</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CPositiveIrreducibleFraction.html" title="Aim: Defines positive irreducible fractions, i.e. fraction p/q, p and q non-negative integers...">CPositiveIrreducibleFraction</a></li>
 <li><em>x</em> : object of type <em>X</em>, which is below some fraction written \([u_0, \ldots, u_k]\) as a continued fraction</li>
@@ -205,10 +208,12 @@ struct DGtal::concepts::CPositiveIrreducibleFraction&lt; T &gt;</h3>
 <li><em>m</em>, <em>n1</em>, <em>n2</em> : objects of type <em>Quotient</em> </li>
 <li><em>quots</em> : an object of type <code>std::vector&lt;Quotient&gt;</code> </li>
 <li><em>pair</em> : a object of <code>std::pair&lt;Quotient,Quotient&gt;</code>, here (m,k+1) <br />
- <h3>Definitions</h3>
-</li>
+ </li>
 </ul>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -281,13 +286,16 @@ struct DGtal::concepts::CPositiveIrreducibleFraction&lt; T &gt;</h3>
 <tr class="markdownTableBody" class="markdownTableRowEven">
 <td class="markdownTableBodyNone">End visiting quotients  </td><td class="markdownTableBodyNone"><em>x.end()</em>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><em>ConstIterator</em>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">returns a forward iterator after the end of the sequence of quotients \([u_0,...,u_k]\)  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h3>Invariants</h3>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md5"></a>
+Invariants</h1>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Models</h1>
 <ul>
 <li><a class="el" href="classDGtal_1_1SternBrocot_1_1Fraction.html" title="This fraction is a model of CPositiveIrreducibleFraction. ">SternBrocot::Fraction</a>, <a class="el" href="classDGtal_1_1LighterSternBrocot_1_1Fraction.html" title="This fraction is a model of CPositiveIrreducibleFraction. ">LighterSternBrocot::Fraction</a></li>
 <li>also <a class="el" href="classDGtal_1_1LightSternBrocot_1_1Fraction.html" title="This fraction is a model of CPositiveIrreducibleFraction. ">LightSternBrocot::Fraction</a> (but do not use).</li>
 </ul>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type that should be a model of <a class="el" href="structDGtal_1_1concepts_1_1CPositiveIrreducibleFraction.html" title="Aim: Defines positive irreducible fractions, i.e. fraction p/q, p and q non-negative integers...">CPositiveIrreducibleFraction</a>. </td></tr>
@@ -941,7 +949,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -123,21 +123,27 @@ struct DGtal::concepts::CForwardSegmentComputer&lt; T &gt;</h3>
 
 <p>Aim: Defines the concept describing a forward segment computer. Like any model of <a class="el" href="structDGtal_1_1concepts_1_1CIncrementalSegmentComputer.html" title="Aim: Defines the concept describing an incremental segment computer,  ie. a model of CSegmentFactory ...">CIncrementalSegmentComputer</a>, it can control its own extension (in the direction that is relative to the underlying iterator) so that an implicit predicate P remains true. However, contrary to models of <a class="el" href="structDGtal_1_1concepts_1_1CIncrementalSegmentComputer.html" title="Aim: Defines the concept describing an incremental segment computer,  ie. a model of CSegmentFactory ...">CIncrementalSegmentComputer</a>, it garantees that P is also true for any subrange of the whole segment at any time. This extra constraint is necessary to be able to incrementally check whether or not the segment is maximal. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CForwardSegmentComputer.html" title="Aim: Defines the concept describing a forward segment computer. Like any model of CIncrementalSegment...">CForwardSegmentComputer</a>'</b> </p>
-<h3>Refinement of <a class="el" href="structDGtal_1_1concepts_1_1CIncrementalSegmentComputer.html" title="Aim: Defines the concept describing an incremental segment computer,  ie. a model of CSegmentFactory ...">CIncrementalSegmentComputer</a></h3>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md173"></a>
+Refinement of CIncrementalSegmentComputer</h1>
+<h1><a class="anchor" id="autotoc_md174"></a>
+Associated types</h1>
 <ul>
 <li>same as <a class="el" href="structDGtal_1_1concepts_1_1CIncrementalSegmentComputer.html" title="Aim: Defines the concept describing an incremental segment computer,  ie. a model of CSegmentFactory ...">CIncrementalSegmentComputer</a></li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md175"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CForwardSegmentComputer.html" title="Aim: Defines the concept describing a forward segment computer. Like any model of CIncrementalSegment...">CForwardSegmentComputer</a></li>
 <li><em>x</em> : object of type X</li>
 <li><em>r</em> : object of type X::Reverse</li>
 </ul>
-<h3>Invariants</h3>
+<h1><a class="anchor" id="autotoc_md176"></a>
+Invariants</h1>
 <p>Contrary to models of <a class="el" href="structDGtal_1_1concepts_1_1CIncrementalSegmentComputer.html" title="Aim: Defines the concept describing an incremental segment computer,  ie. a model of CSegmentFactory ...">CIncrementalSegmentComputer</a>, models of <a class="el" href="structDGtal_1_1concepts_1_1CForwardSegmentComputer.html" title="Aim: Defines the concept describing a forward segment computer. Like any model of CIncrementalSegment...">CForwardSegmentComputer</a> also garantee that for each iterator it from s.begin() to s.end(), the range [it, s.end()) is a segment such that P is true.</p>
-<div class="fragment"><div class="line"><span class="keywordflow">for</span> ( <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> <a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a> = s.begin(),</div><div class="line">      <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> itEnd = s.end();</div><div class="line">      <a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a> != itEnd; ++<a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a>)</div><div class="line">{ </div><div class="line">  <span class="comment">// [it, itEnd) is a segment:</span></div><div class="line">  <span class="keywordtype">bool</span> flag = <span class="keyword">true</span>;</div><div class="line">  <span class="keywordflow">while</span> ( (s.end() != itEnd)&amp;&amp;(flag) ) { flag = s.extend(); }</div><div class="line">  ASSERT( flag );</div><div class="line">}</div></div><!-- fragment --><h3>Models</h3>
-<h3>Notes</h3>
+<div class="fragment"><div class="line"><span class="keywordflow">for</span> ( <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> <a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a> = s.begin(),</div><div class="line">      <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> itEnd = s.end();</div><div class="line">      <a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a> != itEnd; ++<a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a>)</div><div class="line">{ </div><div class="line">  <span class="comment">// [it, itEnd) is a segment:</span></div><div class="line">  <span class="keywordtype">bool</span> flag = <span class="keyword">true</span>;</div><div class="line">  <span class="keywordflow">while</span> ( (s.end() != itEnd)&amp;&amp;(flag) ) { flag = s.extend(); }</div><div class="line">  ASSERT( flag );</div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="autotoc_md177"></a>
+Models</h1>
+<h1><a class="anchor" id="autotoc_md178"></a>
+Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type that should be a model of <a class="el" href="structDGtal_1_1concepts_1_1CForwardSegmentComputer.html" title="Aim: Defines the concept describing a forward segment computer. Like any model of CIncrementalSegment...">CForwardSegmentComputer</a>. </td></tr>
@@ -152,7 +158,7 @@ struct DGtal::concepts::CForwardSegmentComputer&lt; T &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

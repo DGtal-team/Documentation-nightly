@@ -166,29 +166,34 @@ struct DGtal::concepts::CDigitalSet&lt; T &gt;</h3>
 
 <p>Aim: Represents a set of points within the given domain. This set of points is modifiable by the user. It is thus very close to the STL concept of simple associative container (like set std::set&lt;Point&gt;), except that there is a notion of maximal set of points (the whole domain). </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CDigitalSet.html" title="Aim: Represents a set of points within the given domain. This set of points is modifiable by the user...">CDigitalSet</a>'</b> </p>
-<h3>Refinement of</h3>
+<h1><a class="anchor" id="autotoc_md604"></a>
+Refinement of</h1>
 <ul>
 <li><a class="el" href="structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html. ">boost::CopyConstructible</a></li>
 <li><a class="el" href="structDGtal_1_1concepts_1_1CPointPredicate.html" title="Aim: Defines a predicate on a point. ">concepts::CPointPredicate</a></li>
 </ul>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000055">Todo:</a></b></dt><dd>add <a class="el" href="structboost_1_1Container.html" title="Go to http://www.sgi.com/tech/stl/Container.html. ">boost::Container</a> ? Not for now, since coding style do not match with STL (e.g. Iterator instead of iterator).</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>It is also a refinement of <a class="el" href="structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. ">boost::Assignable</a> from <a class="el" href="structDGtal_1_1concepts_1_1CPointPredicate.html" title="Aim: Defines a predicate on a point. ">concepts::CPointPredicate</a>.</dd></dl>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md605"></a>
+Associated types</h1>
 <ul>
 <li><code>Domain:</code> the domain in which points are defined, a model of concept <a class="el" href="structDGtal_1_1concepts_1_1CDomain.html" title="Aim: This concept represents a digital domain, i.e. a non mutable subset of points of the given digit...">CDomain</a>.</li>
 <li><code>Size:</code> the type for couting elements of the set.</li>
 <li><code>Iterator:</code> the iterator type for visiting elements of the set, as well as modify the set. The iterator should be readable (model of <a class="el" href="structboost__concepts_1_1ReadableIteratorConcept.html" title="Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/ReadableIterator.html. ">boost_concepts::ReadableIteratorConcept</a>) and should allow single pass traversal (model of <a class="el" href="structboost__concepts_1_1SinglePassIteratorConcept.html" title="Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/SinglePassIterator.html. ">boost_concepts::SinglePassIteratorConcept</a>). Its value has type <code>Point</code> (defined in <a class="el" href="structDGtal_1_1concepts_1_1CPointPredicate.html" title="Aim: Defines a predicate on a point. ">concepts::CPointPredicate</a>).</li>
 <li><code>ConstIterator:</code> the type for visiting elements of the set. Note that types for Iterator and ConstIterator should be the same, similarly to STL simple associative containers.</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md606"></a>
+Notation</h1>
 <ul>
 <li><code>X</code> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSet.html" title="Aim: Represents a set of points within the given domain. This set of points is modifiable by the user...">CDigitalSet</a></li>
 <li><em>x</em>, <em>y</em> : objects of type <code>X</code> </li>
 <li><em>p</em>, <em>p1</em>, <em>p2</em> : objects of type <code>Point</code> </li>
 <li><em>it</em> : object of type <code>Iterator</code> </li>
 </ul>
-<h3>Definitions</h3>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md607"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md608"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -231,12 +236,15 @@ struct DGtal::concepts::CDigitalSet&lt; T &gt;</h3>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Search point  </td><td class="markdownTableBodyNone"><em>x.find( p )</em>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><code>ConstIterator</code>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Returns a const iterator pointing on point <em>p</em> if it was found in the set <em>x</em>, or <em>x.end()</em> otherwise.  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h3>Invariants</h3>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md609"></a>
+Invariants</h1>
+<h1><a class="anchor" id="autotoc_md610"></a>
+Models</h1>
 <ul>
 <li><a class="el" href="classDGtal_1_1DigitalSetBySTLVector.html" title="Aim: Realizes the concept CDigitalSet by using the STL container std::vector. ">DigitalSetBySTLVector</a>, <a class="el" href="classDGtal_1_1DigitalSetBySTLSet.html" title="Aim: A container class for storing sets of digital points within some given domain. ">DigitalSetBySTLSet</a>, <a class="el" href="classDGtal_1_1DigitalSetFromMap.html" title="Aim: An adapter for viewing an associative image container like ImageContainerBySTLMap as a simple di...">DigitalSetFromMap</a>, DigitalSetFromAssociativeContainer</li>
 </ul>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md611"></a>
+Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type that should be a model of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSet.html" title="Aim: Represents a set of points within the given domain. This set of points is modifiable by the user...">CDigitalSet</a>. </td></tr>
@@ -772,7 +780,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

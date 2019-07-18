@@ -222,16 +222,19 @@ struct DGtal::concepts::CCellularGridSpaceND&lt; T &gt;</h3>
 
 <p>Aim: This concept describes a cellular grid space in nD. In these spaces obtained by cartesian product, cells have a cubic shape that depends on the dimension: 0-cells are points, 1-cells are unit segments, 2-cells are squares, 3-cells are cubes, and so on. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html" title="Aim: This concept describes a cellular grid space in nD. In these spaces obtained by cartesian produc...">CCellularGridSpaceND</a>'</b> </p>
-<h3>Refinement of <a class="el" href="structDGtal_1_1concepts_1_1CPreCellularGridSpaceND.html" title="Aim: This concept describes an unbounded cellular grid space in nD. In these spaces obtained by carte...">CPreCellularGridSpaceND</a></h3>
+<h1><a class="anchor" id="autotoc_md778"></a>
+Refinement of CPreCellularGridSpaceND</h1>
 <p>In addition of <a class="el" href="structDGtal_1_1concepts_1_1CPreCellularGridSpaceND.html" title="Aim: This concept describes an unbounded cellular grid space in nD. In these spaces obtained by carte...">CPreCellularGridSpaceND</a>, <a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html" title="Aim: This concept describes a cellular grid space in nD. In these spaces obtained by cartesian produc...">CCellularGridSpaceND</a> add bounds and related methods.</p>
 <p>Models of <a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html" title="Aim: This concept describes a cellular grid space in nD. In these spaces obtained by cartesian produc...">CCellularGridSpaceND</a> are used whenever you need to define a topology on your subsets of the digital space, especially boundaries of objects, curves and digital surfaces.</p>
 <p>The space is generally finite (except for arbitrary size integers). The user should choose between a closed (default) cell space or an open cell space.</p>
 <p>We refer the reader to <a class="el" href="moduleCellularTopology.html">Cellular grid space and topology, unoriented and oriented cells, incidence</a> for further details.</p>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md779"></a>
+Associated types</h1>
 <ul>
 <li><em>Size:</em> the integral unsigned type for representing sizes in the space (model of <a class="el" href="structDGtal_1_1concepts_1_1CUnsignedNumber.html" title="Aim: Concept checking for Unsigned numbers. Models of this concept should be listed in NumberTraits c...">CUnsignedNumber</a> and <a class="el" href="structDGtal_1_1concepts_1_1CIntegralNumber.html" title="Aim: Concept checking for Integral Numbers. Models of this concept should be listed in NumberTraits c...">CIntegralNumber</a>).</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md780"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <em><a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html" title="Aim: This concept describes a cellular grid space in nD. In these spaces obtained by cartesian produc...">CCellularGridSpaceND</a></em> </li>
 <li><em>x</em> : object of type <em>X</em> </li>
@@ -244,7 +247,8 @@ struct DGtal::concepts::CCellularGridSpaceND&lt; T &gt;</h3>
 <li><em>v</em> : object of type <em>Vector</em> </li>
 <li><em>sign:</em> object of type <em>Sign</em> </li>
 </ul>
-<h3>Definitions</h3>
+<h1><a class="anchor" id="autotoc_md781"></a>
+Definitions</h1>
 <ul>
 <li>a model of <a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html" title="Aim: This concept describes a cellular grid space in nD. In these spaces obtained by cartesian produc...">CCellularGridSpaceND</a> is said <b>closed</b> if it includes the cells of lower dimension along its bounds. It is indeed closed in the sense of the star-topology.</li>
 <li>a model of <a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html" title="Aim: This concept describes a cellular grid space in nD. In these spaces obtained by cartesian produc...">CCellularGridSpaceND</a> is said <b>open</b> if it does not include the cells of lower dimension along its bounds. It is indeed open in the sense of the star-topology.</li>
@@ -253,7 +257,8 @@ struct DGtal::concepts::CCellularGridSpaceND&lt; T &gt;</h3>
 <li><b>adjacent</b> cells to some cell <em>c</em> are cells, lying within the space bounds, with the same topology as <em>c</em> but whose one of their digital coordinates differs by one. They are often called 1-adjacent.</li>
 <li><b>incident</b> cells to some cell <em>c</em> are cells, lying within the space bounds, that are either a face of <em>c</em> or such that <em>c</em> is one of their faces.</li>
 </ul>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md782"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -304,12 +309,15 @@ struct DGtal::concepts::CCellularGridSpaceND&lt; T &gt;</h3>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Distance to lower bound  </td><td class="markdownTableBodyNone"><em>x.sDistanceToMin</em>(<em>sc</em>,<em>k</em>)  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><em>Integer</em>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">returns the number of decrements to do along the <em>k-th</em> axis to reach the lower bound  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h3>Invariants</h3>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md783"></a>
+Invariants</h1>
+<h1><a class="anchor" id="autotoc_md784"></a>
+Models</h1>
 <ul>
 <li><a class="el" href="classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex...">KhalimskySpaceND</a></li>
 </ul>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md785"></a>
+Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type that should be a model of <a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html" title="Aim: This concept describes a cellular grid space in nD. In these spaces obtained by cartesian produc...">CCellularGridSpaceND</a>. </td></tr>
@@ -718,7 +726,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:17 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

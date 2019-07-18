@@ -137,26 +137,34 @@ struct DGtal::concepts::CBinner&lt; T &gt;</h3>
 <p>Aim: Represents an object that places a quantity into a bin, i.e. a functor that associates a natural integer to a continuous value. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CBinner.html" title="Aim: Represents an object that places a quantity into a bin, i.e. a functor that associates a natural...">CBinner</a>'</b> </p>
 <p>It is used for instance when computing an histogram over samples of a continuous random variable.</p>
-<h3>Refinement of <a class="el" href="structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html. ">boost::CopyConstructible</a></h3>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md612"></a>
+Refinement of boost::CopyConstructible</h1>
+<h1><a class="anchor" id="autotoc_md613"></a>
+Associated types</h1>
 <ul>
 <li><code>Quantity:</code> the type of domain values (i.e. continuous values), a model of <a class="el" href="structDGtal_1_1concepts_1_1CEuclideanRing.html" title="Aim: Defines the mathematical concept equivalent to a unitary commutative ring with a division operat...">CEuclideanRing</a>.</li>
 <li><code>Bin:</code> should be some unsigned integral type and satisfy <a class="el" href="structboost_1_1is__integral.html" title="Go to http://www.boost.org/doc/libs/1_52_0/libs/type_traits/doc/html/index.html. ">boost::is_integral</a> and <a class="el" href="structboost_1_1is__unsigned.html" title="Go to http://www.boost.org/doc/libs/1_52_0/libs/type_traits/doc/html/index.html. ">boost::is_unsigned</a>.</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md614"></a>
+Notation</h1>
 <ul>
 <li><code>X</code> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CBinner.html" title="Aim: Represents an object that places a quantity into a bin, i.e. a functor that associates a natural...">CBinner</a></li>
 <li><em>x</em>, <em>y</em> : object of type X</li>
 </ul>
-<h3>Definitions</h3>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md615"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md616"></a>
+Valid expressions and semantics</h1>
 <p>| Name | Expression | Type requirements | Return type | Precondition | Semantics | Post condition | Complexity | |----&mdash;|---------&mdash;|----------------&mdash;|------------&mdash;|-----------&mdash;|--------&mdash;|-------------&mdash;|---------&mdash;| | construction | <code>X</code>( <em>m</em>, <em>M</em>, <em>n</em> ) | <em>m</em> and <em>M</em> are <code>Quantity</code>, <em>n</em> is a <code>Bin</code> | | | | Constructs a binner with <em>n</em> bins and range from <em>m</em> to <em>M</em> | | | | apply | <em>x</em>( <em>q</em> ) | <em>q</em> is a <code>Quantity</code> | <code>Bin</code> | | returns the bin in which fall <em>q</em> | | |</p>
-<h3>Invariants</h3>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md617"></a>
+Invariants</h1>
+<h1><a class="anchor" id="autotoc_md618"></a>
+Models</h1>
 <ul>
 <li><a class="el" href="structDGtal_1_1RegularBinner.html" title="Aim: Represents an elementary functor that partitions quantities into regular intervals, given a range [min,max] range and a number nb of intervals (each interval is called a bin). ">RegularBinner</a></li>
 </ul>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md619"></a>
+Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type that should be a model of <a class="el" href="structDGtal_1_1concepts_1_1CBinner.html" title="Aim: Represents an object that places a quantity into a bin, i.e. a functor that associates a natural...">CBinner</a>. </td></tr>
@@ -455,7 +463,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:35 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:17 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

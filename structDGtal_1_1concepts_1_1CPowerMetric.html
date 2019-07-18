@@ -150,21 +150,26 @@ struct DGtal::concepts::CPowerMetric&lt; T &gt;</h3>
 
 <p>Aim: defines the concept of special weighted metrics, so called power metrics. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CPowerMetric.html" title="Aim: defines the concept of special weighted metrics, so called power metrics. ">CPowerMetric</a>'</b> </p>
-<h3>Refinement of</h3>
+<h1><a class="anchor" id="autotoc_md359"></a>
+Refinement of</h1>
 <p>boost::CopyConstructible&lt;T&gt;, boost::Assignable&lt;T&gt;</p>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md360"></a>
+Associated types</h1>
 <ul>
 <li><em>Space:</em> type of space on which the premetric is defined (model of <a class="el" href="structDGtal_1_1concepts_1_1CSpace.html" title="Aim: Defines the concept describing a digital space, ie a cartesian product of integer lines...">CSpace</a>)</li>
 <li><em>Weight:</em> type for weights associated to the power metric (model of <a class="el" href="structDGtal_1_1concepts_1_1CQuantity.html" title="Aim: defines the concept of quantity in DGtal. ">CQuantity</a>)</li>
 <li><em>Value:</em> type for power distance value (model of <a class="el" href="structDGtal_1_1concepts_1_1CQuantity.html" title="Aim: defines the concept of quantity in DGtal. ">CQuantity</a>)</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md361"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CPowerMetric.html" title="Aim: defines the concept of special weighted metrics, so called power metrics. ">CPowerMetric</a></li>
 <li><em>x</em>, <em>y</em> : object of type X</li>
 </ul>
-<h3>Definitions</h3>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md362"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md363"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -173,10 +178,13 @@ struct DGtal::concepts::CPowerMetric&lt; T &gt;</h3>
 <tr class="markdownTableBody" class="markdownTableRowEven">
 <td class="markdownTableBodyNone">closest point test  </td><td class="markdownTableBodyNone">closestPower(aOrigin, aP, aWp, aQ, aWq)  </td><td class="markdownTableBodyNone"><em>aOrigin</em>, <em>aP</em>,<em>aQ</em> of type <em>aPoint</em>, <em>aWp</em>,<em>aWq</em> of type <em>Weight</em>  </td><td class="markdownTableBodyNone">a value of type Closest  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">decide between weighted points <em>aP</em> and <em>aQ</em> which one is closer to the origin. This functions returns either <a class="el" href="namespaceDGtal.html#a5859c7f85c05195f2b406298c748169aaa7daf317118fd34dd37643632874eda8">DGtal::ClosestFIRST</a> if <em>aP</em> is closer, <a class="el" href="namespaceDGtal.html#a5859c7f85c05195f2b406298c748169aa2eafe49238a245201270cbbfa540b53e">DGtal::ClosestSECOND</a> if <em>aQ</em> is closer and <a class="el" href="namespaceDGtal.html#a5859c7f85c05195f2b406298c748169aa0474a1c5f3fa97e0be68b1ceaadc0c84">DGtal::ClosestBOTH</a> if both are equidistant.  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<h3>Invariants</h3>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md364"></a>
+Invariants</h1>
+<h1><a class="anchor" id="autotoc_md365"></a>
+Models</h1>
 <p><a class="el" href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html" title="Aim: implements weighted separable l_p metrics with exact predicates. ">ExactPredicateLpPowerSeparableMetric</a></p>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md366"></a>
+Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type that should be a model of <a class="el" href="structDGtal_1_1concepts_1_1CPowerMetric.html" title="Aim: defines the concept of special weighted metrics, so called power metrics. ">CPowerMetric</a>. </td></tr>
@@ -651,7 +659,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

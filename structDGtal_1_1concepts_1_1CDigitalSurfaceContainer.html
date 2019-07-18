@@ -167,8 +167,10 @@ struct DGtal::concepts::CDigitalSurfaceContainer&lt; T &gt;</h3>
 <p>Since there are so many digital surfaces, it is necessary to provide a mechanism to handle them generically. The class <a class="el" href="classDGtal_1_1DigitalSurface.html" title="Aim: Represents a set of n-1-cells in a nD space, together with adjacency relation between these cell...">DigitalSurface</a> will be the common proxy to hide models of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceContainer.html" title="Aim: The digital surface container concept describes a minimal set of inner types and methods so as t...">CDigitalSurfaceContainer</a>.</p>
 <p>Hence <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceContainer.html" title="Aim: The digital surface container concept describes a minimal set of inner types and methods so as t...">CDigitalSurfaceContainer</a> describes how to access the data representing the digital surface in common way.</p>
 <p>See <a class="el" href="moduleDigitalSurfaces.html#dgtal_digsurf_sec3_2">Models of digital surface containers</a></p>
-<h3>Refinement of <a class="el" href="structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html. ">boost::CopyConstructible</a></h3>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md786"></a>
+Refinement of boost::CopyConstructible</h1>
+<h1><a class="anchor" id="autotoc_md787"></a>
+Associated types</h1>
 <ul>
 <li>KSpace: the type of cellular grid space in which lies the digital surface.</li>
 <li>Surfel: the type of an oriented n-1-cell in this space.</li>
@@ -176,14 +178,17 @@ struct DGtal::concepts::CDigitalSurfaceContainer&lt; T &gt;</h3>
 <li>DigitalSurfaceTracker: the type for tracking surfels over the digital surface</li>
 <li>Size: the integral type for counting elements.</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md788"></a>
+Notation</h1>
 <ul>
 <li><code>X</code> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceContainer.html" title="Aim: The digital surface container concept describes a minimal set of inner types and methods so as t...">CDigitalSurfaceContainer</a></li>
 <li><code>x</code> : object of type X</li>
 <li><code>s</code> : object of type Surfel</li>
 </ul>
-<h3>Definitions</h3>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md789"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md790"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -204,12 +209,15 @@ struct DGtal::concepts::CDigitalSurfaceContainer&lt; T &gt;</h3>
 <tr class="markdownTableBody" class="markdownTableRowEven">
 <td class="markdownTableBodyNone">empty container test  </td><td class="markdownTableBodyNone"><em>x.empty()</em>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><em>bool</em>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">returns <code>true</code> iff the digital surface contains no surfel.  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h3>Invariants</h3>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md791"></a>
+Invariants</h1>
+<h1><a class="anchor" id="autotoc_md792"></a>
+Models</h1>
 <ul>
 <li><a class="el" href="classDGtal_1_1DigitalSetBoundary.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as the boundary of a given...">DigitalSetBoundary</a>, <a class="el" href="classDGtal_1_1SetOfSurfels.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as connected surfels...">SetOfSurfels</a>, <a class="el" href="classDGtal_1_1ImplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as the boundary of an impl...">ImplicitDigitalSurface</a>, <a class="el" href="classDGtal_1_1LightImplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as the boundary of an impl...">LightImplicitDigitalSurface</a>, <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as connected surfels...">ExplicitDigitalSurface</a>, <a class="el" href="classDGtal_1_1LightExplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as connected surfels...">LightExplicitDigitalSurface</a></li>
 </ul>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md793"></a>
+Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type that should be a model of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceContainer.html" title="Aim: The digital surface container concept describes a minimal set of inner types and methods so as t...">CDigitalSurfaceContainer</a>. </td></tr>
@@ -696,7 +704,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

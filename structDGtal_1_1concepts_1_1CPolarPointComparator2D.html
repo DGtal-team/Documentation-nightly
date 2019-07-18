@@ -127,22 +127,28 @@ struct DGtal::concepts::CPolarPointComparator2D&lt; T &gt;</h3>
 <p>Aim: This concept gathers classes that are able to compare the position of two given points \( P, Q \) around a pole \( O \). More precisely, they compare the oriented angles lying between the horizontal line passing by \( O \) and the rays \( [OP) \) and \( [OQ) \) (in a counter-clockwise orientation). This is equivalent to compare the angle in radians from 0 (included) to 2 &pi; (excluded). </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CPolarPointComparator2D.html" title="Aim: This concept gathers classes that are able to compare the position of two given points  around a...">CPolarPointComparator2D</a>'</b> </p>
 <p>The main method is the operator() applied on two points. It returns 'true' if the first point is located strictly before the second one, 'false' otherwise. A point \( P \) is located strictly before a point \( Q \) iff the oriented angle done by \( P \) is smaller than the one of \( Q \) or its euclidean norm is shorter if \( O, P, Q \) are aligned. Note that it returns 'false' if \( P = Q \).</p>
-<h3>Refinement of default constructible, copy constructible, assignable</h3>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md319"></a>
+Refinement of default constructible, copy constructible, assignable</h1>
+<h1><a class="anchor" id="autotoc_md320"></a>
+Associated types</h1>
 <ul>
 <li>Point : type of points</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md321"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CPolarPointComparator2D.html" title="Aim: This concept gathers classes that are able to compare the position of two given points  around a...">CPolarPointComparator2D</a></li>
 <li><em>x</em> : object of type X</li>
 <li><em>P</em> : type of points</li>
 <li><em>p</em>, <em>p1</em>, <em>p2</em> : objects type P</li>
 </ul>
-<h3>Definitions</h3>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md322"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md323"></a>
+Valid expressions and semantics</h1>
 <p>| Name | Expression | Type requirements | Return type | Precondition | Semantics | Post condition | Complexity | |------------------&mdash;+-----------&mdash;+-------------------&mdash;+----------&mdash;+-----------&mdash;+----------------------------------------------------&mdash;+-------------&mdash;+--------------&mdash;| | pole setter | x.setPole(p) | p is of type P | | | the pole is set to p | | O(1) | | comparison function | x(p1, p2) | p1, p2 are of type P | bool | | tells whether p1 is located strictly before p2 or not | | model-dependant |</p>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md324"></a>
+Models</h1>
 <p>PolarPointComparator2DBy2x2DetComputer.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -335,7 +341,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

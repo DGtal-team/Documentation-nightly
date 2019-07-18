@@ -123,16 +123,21 @@ struct DGtal::concepts::CDrawableWithViewer3D&lt; T, S, KS &gt;</h3>
 <p>Aim: The concept <a class="el" href="structDGtal_1_1concepts_1_1CDrawableWithViewer3D.html" title="Aim: The concept CDrawableWithViewer3D specifies what are the classes that admit an export with Viewe...">CDrawableWithViewer3D</a> specifies what are the classes that admit an export with <a class="el" href="classDGtal_1_1Viewer3D.html">Viewer3D</a>. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CDrawableWithViewer3D.html" title="Aim: The concept CDrawableWithViewer3D specifies what are the classes that admit an export with Viewe...">CDrawableWithViewer3D</a>'</b> </p>
 <p>An object x satisfying this concept may then be used as:</p>
-<div class="fragment"><div class="line">Viewer3D&lt;Space,KSpace&gt; <a class="code" href="testLabelledMap_8cpp.html#ad7bf55b7a17eb27c4ccabe9ae82a0629">display</a>;</div><div class="line"><a class="code" href="testLabelledMap_8cpp.html#ad7bf55b7a17eb27c4ccabe9ae82a0629">display</a> &lt;&lt; CustomStyle( x.className(), x.defaultStyle() )</div><div class="line">        &lt;&lt; x;</div></div><!-- fragment --><h3>Refinement of</h3>
-<h3>Associated types :</h3>
-<h3>Notation</h3>
+<div class="fragment"><div class="line">Viewer3D&lt;Space,KSpace&gt; <a class="code" href="testLabelledMap_8cpp.html#ad7bf55b7a17eb27c4ccabe9ae82a0629">display</a>;</div><div class="line"><a class="code" href="testLabelledMap_8cpp.html#ad7bf55b7a17eb27c4ccabe9ae82a0629">display</a> &lt;&lt; CustomStyle( x.className(), x.defaultStyle() )</div><div class="line">        &lt;&lt; x;</div></div><!-- fragment --><h1><a class="anchor" id="autotoc_md505"></a>
+Refinement of</h1>
+<h1><a class="anchor" id="autotoc_md506"></a>
+Associated types</h1>
+<h1><a class="anchor" id="autotoc_md507"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of CDrawableWithViewer3DD</li>
 <li><em>x</em>, <em>y</em> : <a class="el" href="classDGtal_1_1Object.html" title="Aim: An object (or digital object) represents a set in some digital space associated with a digital t...">Object</a> of type X</li>
 <li><em>m</em> : a string of characters</li>
 </ul>
-<h3>Definitions</h3>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md508"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md509"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -143,10 +148,13 @@ struct DGtal::concepts::CDrawableWithViewer3D&lt; T, S, KS &gt;</h3>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">the way the object <em>x</em> is drawn  </td><td class="markdownTableBodyNone">x.setStyle(CDrawableWithViewer3D &amp;display)  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">draws the object <code>x</code> on the <code>display</code> stream  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h3>Invariants</h3>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md510"></a>
+Invariants</h1>
+<h1><a class="anchor" id="autotoc_md511"></a>
+Models</h1>
 <p>ArimeticalDSS, <a class="el" href="classDGtal_1_1FreemanChain.html">FreemanChain</a>, <a class="el" href="classDGtal_1_1HyperRectDomain.html" title="Aim: Parallelepidec region of a digital space, model of a &#39;CDomain&#39;. ">HyperRectDomain</a>, ImageContainerByHashTree, <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html">ImageContainerBySTLVector</a>, <a class="el" href="classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. ">PointVector</a>, <a class="el" href="classDGtal_1_1DigitalSetBySTLSet.html" title="Aim: A container class for storing sets of digital points within some given domain. ">DigitalSetBySTLSet</a>,<a class="el" href="classDGtal_1_1DigitalSetBySTLVector.html" title="Aim: Realizes the concept CDigitalSet by using the STL container std::vector. ">DigitalSetBySTLVector</a>, <a class="el" href="classDGtal_1_1Object.html" title="Aim: An object (or digital object) represents a set in some digital space associated with a digital t...">Object</a></p>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md512"></a>
+Notes</h1>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000045">Todo:</a></b></dt><dd><p class="startdd">ImageContainerByHashTree does not implement setStyle(display &amp;). </p>
 <p class="enddd">ImageContainerByHashTree does not implement defaultStyle(std::string&amp;)const. </p>
 </dd></dl>
@@ -279,7 +287,7 @@ template&lt;typename T , typename S , typename KS &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

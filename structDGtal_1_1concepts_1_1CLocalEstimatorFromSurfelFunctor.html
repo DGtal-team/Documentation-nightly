@@ -134,21 +134,26 @@ struct DGtal::concepts::CLocalEstimatorFromSurfelFunctor&lt; T &gt;</h3>
 
 <p>Aim: this concept describes functors on digtal surface surfel which can be used to define local estimator using the adapter <a class="el" href="classDGtal_1_1LocalEstimatorFromSurfelFunctorAdapter.html" title="Aim: this class adapts any local functor on digital surface element to define a local estimator...">LocalEstimatorFromSurfelFunctorAdapter</a>. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html" title="Aim: this concept describes functors on digtal surface surfel which can be used to define local estim...">CLocalEstimatorFromSurfelFunctor</a>'</b> </p>
-<h3>Refinement of</h3>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md311"></a>
+Refinement of</h1>
+<h1><a class="anchor" id="autotoc_md312"></a>
+Associated types</h1>
 <ul>
 <li><em>Surfel:</em> a type of Surfel</li>
 <li><em>Embedder:</em> a model of <a class="el" href="structDGtal_1_1concepts_1_1CSCellEmbedder.html" title="Aim: A cell embedder is a mapping from signed cells to Euclidean points. It adds inner types to funct...">CSCellEmbedder</a></li>
 <li><em>Quantity:</em> a return type for the estimator (model of <a class="el" href="structDGtal_1_1concepts_1_1CQuantity.html" title="Aim: defines the concept of quantity in DGtal. ">CQuantity</a>)</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md313"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html" title="Aim: this concept describes functors on digtal surface surfel which can be used to define local estim...">CLocalEstimatorFromSurfelFunctor</a></li>
 <li><em>x</em>, <em>y</em> : object of type X</li>
 <li><em>aSurfel</em> : object of type <em>Surfel</em> </li>
 </ul>
-<h3>Definitions</h3>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md314"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md315"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -161,10 +166,13 @@ struct DGtal::concepts::CLocalEstimatorFromSurfelFunctor&lt; T &gt;</h3>
 <tr class="markdownTableBody" class="markdownTableRowEven">
 <td class="markdownTableBodyNone">reset  </td><td class="markdownTableBodyNone">x.reset()  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">void  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">reset the estimator  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h3>Invariants</h3>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md316"></a>
+Invariants</h1>
+<h1><a class="anchor" id="autotoc_md317"></a>
+Models</h1>
 <p><a class="el" href="structDGtal_1_1functors_1_1DummyEstimatorFromSurfels.html">functors::DummyEstimatorFromSurfels</a>, <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingGaussianCurvatureEstimator.html" title="Aim: Estimates Gaussian curvature using CGAL Jet Fitting and Monge Form. ">functors::MongeJetFittingGaussianCurvatureEstimator</a> (if WITH_CGAL), <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html" title="Aim: Estimates Mean curvature using CGAL Jet Fitting and Monge Form. ">functors::MongeJetFittingMeanCurvatureEstimator</a> (if WITH_CGAL), <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html" title="Aim: Estimates Gaussian curvature using CGAL Jet Fitting and Monge Form. ">functors::MongeJetFittingPrincipalCurvaturesEstimator</a> (if WITH_CGAL), <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html" title="Aim: Estimates normal vector using CGAL Jet Fitting and Monge Form. ">functors::MongeJetFittingNormalVectorEstimator</a> (if WITH_CGAL), <a class="el" href="classDGtal_1_1functors_1_1LinearLeastSquareFittingNormalVectorEstimator.html" title="Aim: Estimates normal vector using CGAL linear least squares plane fitting. ">functors::LinearLeastSquareFittingNormalVectorEstimator</a> (if WITH_CGAL), <a class="el" href="classDGtal_1_1functors_1_1ElementaryConvolutionNormalVectorEstimator.html" title="Aim: Estimates normal vector by convolution of elementary normal vector to adjacent surfel...">functors::ElementaryConvolutionNormalVectorEstimator</a>, <a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html" title="Aim: Implements a functor to detect feature points from normal tensor voting strategy. ">functors::TensorVotingFeatureExtraction</a>, <a class="el" href="classDGtal_1_1functors_1_1SphereFittingEstimator.html" title="Aim: Use Patate library to perform a local sphere fitting. ">functors::SphereFittingEstimator</a> (if WITH_PATATE)</p>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md318"></a>
+Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type that should be a model of <a class="el" href="structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html" title="Aim: this concept describes functors on digtal surface surfel which can be used to define local estim...">CLocalEstimatorFromSurfelFunctor</a>. </td></tr>
@@ -503,7 +511,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

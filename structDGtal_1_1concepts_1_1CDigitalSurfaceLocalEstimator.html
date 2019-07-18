@@ -143,38 +143,46 @@ struct DGtal::concepts::CDigitalSurfaceLocalEstimator&lt; T &gt;</h3>
 <p>Aim: This concept describes an object that can process a range over some generic digital surface so as to return one estimated quantity for each element of the range (or a given subrange). </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceLocalEstimator.html" title="Aim: This concept describes an object that can process a range over some generic digital surface so a...">CDigitalSurfaceLocalEstimator</a>'</b> </p>
 <p>It refines the concept <a class="el" href="structDGtal_1_1concepts_1_1CSurfelLocalEstimator.html" title="Aim: This concept describes an object that can process a range of surfels (that are supposed to belon...">CSurfelLocalEstimator</a> by forcing the abstract surface to be some digital surface.</p>
-<h3>Refinement of</h3>
+<h1><a class="anchor" id="autotoc_md287"></a>
+Refinement of</h1>
 <ul>
 <li><a class="el" href="structDGtal_1_1concepts_1_1CSurfelLocalEstimator.html" title="Aim: This concept describes an object that can process a range of surfels (that are supposed to belon...">CSurfelLocalEstimator</a></li>
 </ul>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md288"></a>
+Associated types</h1>
 <ul>
 <li>Surface : the type of digital surface, some DigitalSurface&lt;T&gt; where T is a model of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceContainer.html" title="Aim: The digital surface container concept describes a minimal set of inner types and methods so as t...">CDigitalSurfaceContainer</a>.</li>
 <li>Surfel (from <a class="el" href="structDGtal_1_1concepts_1_1CSurfelLocalEstimator.html" title="Aim: This concept describes an object that can process a range of surfels (that are supposed to belon...">CSurfelLocalEstimator</a>) and type Surface::Surfel must be the same</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md289"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceLocalEstimator.html" title="Aim: This concept describes an object that can process a range over some generic digital surface so a...">CDigitalSurfaceLocalEstimator</a></li>
 <li><em>x</em> : object of type <em>X</em> </li>
 <li><em>s</em> : an instance of Surface</li>
 </ul>
-<h3>Definitions</h3>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md290"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md291"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">Complexity   </th></tr>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Attach surface  </td><td class="markdownTableBodyNone"><em>x.attach</em>( <em>s</em> )  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><code>void</code>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Indicates to the estimator the surface on which estimations are done.  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Model dependent   </td></tr>
 </table>
-<h3>Invariants</h3>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md292"></a>
+Invariants</h1>
+<h1><a class="anchor" id="autotoc_md293"></a>
+Models</h1>
 <ul>
 <li><a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html" title="Aim: This class adapts a VoronoiCovarianceMeasureOnDigitalSurface to be a model of CDigitalSurfaceLoc...">VCMDigitalSurfaceLocalEstimator</a>.</li>
 <li><a class="el" href="classDGtal_1_1LocalEstimatorFromSurfelFunctorAdapter.html" title="Aim: this class adapts any local functor on digital surface element to define a local estimator...">LocalEstimatorFromSurfelFunctorAdapter</a>.</li>
 <li><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the volume o...">IntegralInvariantVolumeEstimator</a>.</li>
 <li><a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the covarian...">IntegralInvariantCovarianceEstimator</a>.</li>
 </ul>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md294"></a>
+Notes</h1>
 <ul>
 <li>A surface must be attached to <em>x</em> before the call to <code>init</code> and <code>eval</code>.</li>
 </ul>
@@ -379,7 +387,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

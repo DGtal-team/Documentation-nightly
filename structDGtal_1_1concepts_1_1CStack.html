@@ -130,22 +130,28 @@ struct DGtal::concepts::CStack&lt; T &gt;</h3>
 
 <p>Aim: This concept gathers classes that provide a stack interface. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CStack.html" title="Aim: This concept gathers classes that provide a stack interface. ">CStack</a>'</b> </p>
-<h3>Refinement of copy constructible and assignable</h3>
-<h3>Inner types :</h3>
+<h1><a class="anchor" id="autotoc_md125"></a>
+Refinement of copy constructible and assignable</h1>
+<h1><a class="anchor" id="autotoc_md126"></a>
+Inner types</h1>
 <ul>
 <li>Value type of element stored in the stack</li>
 <li>Size type that represents the number of elements</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md127"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CStack.html" title="Aim: This concept gathers classes that provide a stack interface. ">CStack</a></li>
 <li><em>x</em> : object of type X</li>
 <li><em>v</em> : object of type Value</li>
 </ul>
-<h3>Definitions</h3>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md128"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md129"></a>
+Valid expressions and semantics</h1>
 <p>| Name | Expression | Type requirements | Return type | Precondition | Semantics | Post condition | Complexity | |----&mdash;+---------&mdash;+----------------&mdash;+---------------------&mdash;+-----------&mdash;+---------------------------------&mdash;+-------------&mdash;+---------&mdash;| | size | x.size() | | Size | | returns the number of elements | | O(1) | | empty | x.empty() | | bool | | 'true' is empty, 'false' otherwise | | O(1) | | top | x.top() | | Value&amp; or const Value&amp; | | returns the top element | | O(1) | | push | x.push(v) | | void | | inserts a new element at the top | | O(1) | | pop | x.pop() | | void | | removes the top element | | O(1) |</p>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md130"></a>
+Models</h1>
 <p>std::stack, <a class="el" href="classDGtal_1_1BackInsertionSequenceToStackAdapter.html" title="Aim: This class implements a dynamic adapter to an instance of a model of back insertion sequence in ...">BackInsertionSequenceToStackAdapter</a>, <a class="el" href="classDGtal_1_1FrontInsertionSequenceToStackAdapter.html" title="Aim: This class implements a dynamic adapter to an instance of a model of front insertion sequence in...">FrontInsertionSequenceToStackAdapter</a> are the usual models of <a class="el" href="structDGtal_1_1concepts_1_1CStack.html" title="Aim: This concept gathers classes that provide a stack interface. ">CStack</a>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -386,7 +392,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

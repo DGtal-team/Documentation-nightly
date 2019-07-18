@@ -136,27 +136,32 @@ struct DGtal::C2x2DetComputer&lt; T &gt;</h3>
 
 <p>Aim: This concept gathers all models that are able to compute the (sign of the) determinant of a 2x2 matrix with integral entries. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1C2x2DetComputer.html" title="Aim: This concept gathers all models that are able to compute the (sign of the) determinant of a 2x2 ...">C2x2DetComputer</a>'</b> </p>
-<h3>Invariant</h3>
+<h1><a class="anchor" id="autotoc_md325"></a>
+Invariant</h1>
 <p>The returned value, which is a model of CSignedNumber, is guaranteed to be:</p><ul>
 <li>strictly positive if the determinant is strictly positive</li>
 <li>striclty negative if the determinant is strictly negative</li>
 <li>zero if the determinant is null</li>
 </ul>
-<h3>Refinement of</h3>
+<h1><a class="anchor" id="autotoc_md326"></a>
+Refinement of</h1>
 <p>boost::DefaultConstructible&lt;T&gt;, boost::CopyConstructible&lt;T&gt;, boost::Assignable&lt;T&gt;</p>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md327"></a>
+Associated types</h1>
 <ul>
 <li>ArgumentInteger : integral type of the four entries, at least a model of CEuclideanRing</li>
 <li>ResultInteger : integral type of the result, at least a model of CSignedNumber</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md328"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1C2x2DetComputer.html" title="Aim: This concept gathers all models that are able to compute the (sign of the) determinant of a 2x2 ...">C2x2DetComputer</a></li>
 <li><em>x</em> : object of type X</li>
 <li><em>a</em>, b, c, d : integral entries of type ArgumentInteger</li>
 <li><em>r</em> : result to type ResultInteger</li>
 </ul>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md329"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -167,13 +172,15 @@ struct DGtal::C2x2DetComputer&lt; T &gt;</h3>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">partial operator()  </td><td class="markdownTableBodyNone">r = x(c, d)  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ResultInteger  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">(sign of) ad - bc  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">model dependent   </td></tr>
 </table>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md330"></a>
+Notes</h1>
 <p>In addition to the full operator(), this concept allows another way to compute the quantity ad - bc in two steps:</p><ul>
 <li>first, we set the first column vector, ie a and b.</li>
 <li>then, we compute the quantity ad - bc from a given column vector, ie c and d with the memorized values of a and b. <br />
 This feature is a way of accepting models that incrementally computes many determinants of matrices whose first column vector, ie a and b, is constant and whose second column vector, ie c and d, slightly varies from one computation to the next one. See for instance, <a class="el" href="classDGtal_1_1SimpleIncremental2x2DetComputer.html" title="Aim: Small class useful to compute, in an incremental way, the determinant of a 2x2 matrix from its f...">SimpleIncremental2x2DetComputer</a>.</li>
 </ul>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md331"></a>
+Models</h1>
 <p><a class="el" href="classDGtal_1_1Simple2x2DetComputer.html" title="Aim: Small class useful to compute the determinant of a 2x2 matrix from its four coefficients, ie. . ">Simple2x2DetComputer</a>, <a class="el" href="classDGtal_1_1SimpleIncremental2x2DetComputer.html" title="Aim: Small class useful to compute, in an incremental way, the determinant of a 2x2 matrix from its f...">SimpleIncremental2x2DetComputer</a>, <a class="el" href="classDGtal_1_1AvnaimEtAl2x2DetSignComputer.html" title="Aim: Class that provides a way of computing the sign of the determinant of a 2x2 matrix from its four...">AvnaimEtAl2x2DetSignComputer</a>, <a class="el" href="classDGtal_1_1Filtered2x2DetComputer.html" title="Aim: Class that provides a way of computing the sign of the determinant of a 2x2 matrix from its four...">Filtered2x2DetComputer</a></p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -475,7 +482,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:26 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:07 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

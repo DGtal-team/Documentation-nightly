@@ -164,11 +164,13 @@ struct DGtal::concepts::CGraphVisitor&lt; T &gt;</h3>
 
 <p>Aim: Defines the concept of a visitor onto a graph, that is an object that traverses vertices of the graph according to some order. The user can either use the visitor as is, or even constrain the traversal with a given predicate. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CGraphVisitor.html" title="Aim: Defines the concept of a visitor onto a graph, that is an object that traverses vertices of the ...">CGraphVisitor</a>'</b> </p>
-<h3>Refinement of</h3>
+<h1><a class="anchor" id="autotoc_md383"></a>
+Refinement of</h1>
 <ul>
 <li><a class="el" href="structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html. ">boost::CopyConstructible</a></li>
 </ul>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md384"></a>
+Associated types</h1>
 <ul>
 <li><code>Graph:</code> the type of the graph that the visitor visits, must be a model of <a class="el" href="structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html" title="Aim: Represents the concept of local graph: each vertex has neighboring vertices, but we do not neces...">CUndirectedSimpleLocalGraph</a>.</li>
 <li><code>Vertex:</code> the type for of each vertex, must be Graph::Vertex.</li>
@@ -177,13 +179,16 @@ struct DGtal::concepts::CGraphVisitor&lt; T &gt;</h3>
 <li><code>Data:</code> the type is associated to the current node and may be used for several purposes (like measuring the distance between the current element and the starting point/set), a model of <a class="el" href="structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. ">boost::DefaultConstructible</a>, <a class="el" href="structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. ">boost::Assignable</a>, <a class="el" href="structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html. ">boost::CopyConstructible</a>.</li>
 <li><code>Node:</code> either the pair&lt;Vertex,Data&gt; or a type convertible to the pair&lt;Vertex,Data&gt;, where Vertex is the current node, Data is the attached data.</li>
 </ul>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md385"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CGraphVisitor.html" title="Aim: Defines the concept of a visitor onto a graph, that is an object that traverses vertices of the ...">CGraphVisitor</a></li>
 <li><em>x</em>, <em>y</em> : object of type X</li>
 </ul>
-<h3>Definitions</h3>
-<h3>Valid expressions and semantics</h3>
+<h1><a class="anchor" id="autotoc_md386"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md387"></a>
+Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -206,12 +211,15 @@ struct DGtal::concepts::CGraphVisitor&lt; T &gt;</h3>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Get set of visited vertices  </td><td class="markdownTableBodyNone"><em>x.visitedVertices()</em>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><code>MarkSet</code>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Returns the current set of visited vertices (equal to markedVertices() whenever <em>x.finished()</em> ).  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">linear time in the number of marked vertices.   </td></tr>
 </table>
-<h3>Invariants</h3>
-<h3>Models</h3>
+<h1><a class="anchor" id="autotoc_md388"></a>
+Invariants</h1>
+<h1><a class="anchor" id="autotoc_md389"></a>
+Models</h1>
 <ul>
 <li><a class="el" href="classDGtal_1_1BreadthFirstVisitor.html" title="Aim: This class is useful to perform a breadth-first exploration of a graph given a starting point or...">BreadthFirstVisitor</a>, <a class="el" href="classDGtal_1_1DepthFirstVisitor.html" title="Aim: This class is useful to perform a depth-first exploration of a graph given a starting point or s...">DepthFirstVisitor</a>, DistanceVisitor</li>
 </ul>
-<h3>Notes</h3>
+<h1><a class="anchor" id="autotoc_md390"></a>
+Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type that should be a model of <a class="el" href="structDGtal_1_1concepts_1_1CGraphVisitor.html" title="Aim: Defines the concept of a visitor onto a graph, that is an object that traverses vertices of the ...">CGraphVisitor</a>. </td></tr>
@@ -797,7 +805,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

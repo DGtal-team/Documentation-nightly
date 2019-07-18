@@ -139,17 +139,22 @@ struct DGtal::concepts::CIncrementalSegmentComputer&lt; T &gt;</h3>
 <p>Aim: Defines the concept describing an incremental segment computer, <br />
 ie. a model of <a class="el" href="structDGtal_1_1concepts_1_1CSegmentFactory.html" title="Aim: Defines the concept describing a segment ie. a valid and not empty subrange, which can construct...">CSegmentFactory</a> that can, in addition, incrementally check whether or not an implicit predicate P is true. In other words, it can control its own extension from a range of one element (in the direction that is relative to the underlying iterator) so that an implicit predicate P remains true. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CIncrementalSegmentComputer.html" title="Aim: Defines the concept describing an incremental segment computer,  ie. a model of CSegmentFactory ...">CIncrementalSegmentComputer</a>'</b> </p>
-<h3>Refinement of <a class="el" href="structDGtal_1_1concepts_1_1CSegmentFactory.html" title="Aim: Defines the concept describing a segment ie. a valid and not empty subrange, which can construct...">CSegmentFactory</a></h3>
-<h3>Associated types :</h3>
+<h1><a class="anchor" id="autotoc_md179"></a>
+Refinement of CSegmentFactory</h1>
+<h1><a class="anchor" id="autotoc_md180"></a>
+Associated types</h1>
 <p>the same as <a class="el" href="structDGtal_1_1concepts_1_1CSegmentFactory.html" title="Aim: Defines the concept describing a segment ie. a valid and not empty subrange, which can construct...">CSegmentFactory</a></p>
-<h3>Notation</h3>
+<h1><a class="anchor" id="autotoc_md181"></a>
+Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CIncrementalSegmentComputer.html" title="Aim: Defines the concept describing an incremental segment computer,  ie. a model of CSegmentFactory ...">CIncrementalSegmentComputer</a></li>
 <li><em>x</em>, <em>y</em> : object of type X</li>
 <li><em>i</em> : object of type X::ConstIterator</li>
 </ul>
-<h3>Definitions</h3>
-<h3>Valid expressions and</h3>
+<h1><a class="anchor" id="autotoc_md182"></a>
+Definitions</h1>
+<h1><a class="anchor" id="autotoc_md183"></a>
+Valid expressions and</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name  </th><th class="markdownTableHeadNone">Expression  </th><th class="markdownTableHeadNone">Type requirements  </th><th class="markdownTableHeadNone">Return type  </th><th class="markdownTableHeadNone">Precondition  </th><th class="markdownTableHeadNone">Semantics  </th><th class="markdownTableHeadNone">Post condition  </th><th class="markdownTableHeadNone">Complexity   </th></tr>
@@ -160,10 +165,13 @@ ie. a model of <a class="el" href="structDGtal_1_1concepts_1_1CSegmentFactory.ht
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Extension  </td><td class="markdownTableBodyNone">x.extendFront()  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone">x is valid and P is true  </td><td class="markdownTableBodyNone">check whether x can be extended to x.end() or not, extend only if true  </td><td class="markdownTableBodyNone">x is valid and P is true  </td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h3>Invariants</h3>
+<h1><a class="anchor" id="autotoc_md184"></a>
+Invariants</h1>
 <p>Models of <a class="el" href="structDGtal_1_1concepts_1_1CIncrementalSegmentComputer.html" title="Aim: Defines the concept describing an incremental segment computer,  ie. a model of CSegmentFactory ...">CIncrementalSegmentComputer</a> garantee that for each iterator it from s.begin() to s.end(), the range [s.begin(), it) is a segment such that P is true.</p>
-<div class="fragment"><div class="line"><span class="keywordflow">for</span> ( <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> <a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a> = s.begin(), </div><div class="line">      <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> itEnd = s.end();</div><div class="line">      <a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a> != itEnd; ++<a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a>)</div><div class="line">{ </div><div class="line">   <span class="comment">// [s.begin(), it) is a segment:</span></div><div class="line">   s.init( s.begin() ); </div><div class="line">   <span class="keywordtype">bool</span> flag = <span class="keyword">true</span>; </div><div class="line">   <span class="keywordflow">while</span> ( (s.end() != <a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a>)&amp;&amp;(flag) ) { flag = s.extend(); }</div><div class="line">   ASSERT( flag ); </div><div class="line">}</div></div><!-- fragment --><h3>Models</h3>
-<h3>Notes</h3>
+<div class="fragment"><div class="line"><span class="keywordflow">for</span> ( <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> <a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a> = s.begin(), </div><div class="line">      <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> itEnd = s.end();</div><div class="line">      <a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a> != itEnd; ++<a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a>)</div><div class="line">{ </div><div class="line">   <span class="comment">// [s.begin(), it) is a segment:</span></div><div class="line">   s.init( s.begin() ); </div><div class="line">   <span class="keywordtype">bool</span> flag = <span class="keyword">true</span>; </div><div class="line">   <span class="keywordflow">while</span> ( (s.end() != <a class="code" href="structDGtal_1_1concepts_1_1CSegment.html#a217d1729bff882d316b0ae2d0818be58">it</a>)&amp;&amp;(flag) ) { flag = s.extend(); }</div><div class="line">   ASSERT( flag ); </div><div class="line">}</div></div><!-- fragment --><h1><a class="anchor" id="autotoc_md185"></a>
+Models</h1>
+<h1><a class="anchor" id="autotoc_md186"></a>
+Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type that should be a model of <a class="el" href="structDGtal_1_1concepts_1_1CIncrementalSegmentComputer.html" title="Aim: Defines the concept describing an incremental segment computer,  ie. a model of CSegmentFactory ...">CIncrementalSegmentComputer</a>. </td></tr>
@@ -300,7 +308,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 19 2019 09:59:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2019 20:59:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
