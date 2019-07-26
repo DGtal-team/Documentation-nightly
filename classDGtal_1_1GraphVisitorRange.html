@@ -172,7 +172,7 @@ class DGtal::GraphVisitorRange&lt; TGraphVisitor &gt;</h3>
 <p>Aim: Transforms a graph visitor into a single pass input range. </p>
 <p>Description of template class '<a class="el" href="classDGtal_1_1GraphVisitorRange.html" title="Aim: Transforms a graph visitor into a single pass input range. ">GraphVisitorRange</a>' </p>
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> DepthFirstVisitor&lt;Graph, std::set&lt;Vertex&gt; &gt; DFSVisitor;</div><div class="line"><span class="keyword">typedef</span> GraphVisitorRange&lt;DFSVisitor&gt; VisitorRange;</div><div class="line">VisitorRange range( <span class="keyword">new</span> DFSVisitor( g, <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>( -2, -1 ) ) );</div><div class="line"><span class="keywordflow">for</span> ( <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">VisitorRange::ConstIterator</a> it = range.begin(), itEnd = range.end();</div><div class="line">      it != itEnd; ++it )</div><div class="line">  { <span class="comment">// Vertex is *it</span></div><div class="line">  ...</div><div class="line">  }</div></div><!-- fragment --><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd>Complete boost::range_iterator&lt;&gt; accordingly. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="graph_2graphTraversal_8cpp-example.html#_a23">graph/graphTraversal.cpp</a>, and <a class="el" href="tutorial-examples_2AreaSurfaceEstimation-final_8cpp-example.html#_a21">tutorial-examples/AreaSurfaceEstimation-final.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="graph_2graphTraversal_8cpp-example.html#_a23">graph/graphTraversal.cpp</a>, and <a class="el" href="tutorial-examples_2AreaSurfaceEstimation-final_8cpp-example.html#_a25">tutorial-examples/AreaSurfaceEstimation-final.cpp</a>.</dd>
 </dl>
 <p class="definition">Definition at line <a class="el" href="GraphVisitorRange_8h_source.html#l00071">71</a> of file <a class="el" href="GraphVisitorRange_8h_source.html">GraphVisitorRange.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -487,7 +487,7 @@ template&lt;typename TGraphVisitor &gt; </div>
 </div><div class="memdoc">
 <p>The value of the iterator has type Vertex. </p><dl class="section return"><dt>Returns</dt><dd>a single pass input iterator pointing on the first element of the graph traversal induced by the given visitor.</dd></dl>
 <p>NB: if you have already called <a class="el" href="classDGtal_1_1GraphVisitorRange.html#a179b419f2dc940081cfed89644dac108">begin()</a> or <a class="el" href="classDGtal_1_1GraphVisitorRange.html#a3c5cee7d3543d3a98d77d5cabce4f238">beginNode()</a>, it will raise an assertion. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tutorial-examples_2AreaSurfaceEstimation-final_8cpp-example.html#a27">tutorial-examples/AreaSurfaceEstimation-final.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tutorial-examples_2AreaSurfaceEstimation-final_8cpp-example.html#a31">tutorial-examples/AreaSurfaceEstimation-final.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -529,7 +529,7 @@ template&lt;typename TGraphVisitor &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>The value of the iterator has type Vertex. </p><dl class="section return"><dt>Returns</dt><dd>a single pass input iterator pointing after the last element of the graph traversal induced by the given visitor. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tutorial-examples_2AreaSurfaceEstimation-final_8cpp-example.html#a28">tutorial-examples/AreaSurfaceEstimation-final.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tutorial-examples_2AreaSurfaceEstimation-final_8cpp-example.html#a32">tutorial-examples/AreaSurfaceEstimation-final.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -669,7 +669,7 @@ template&lt;typename TGraphVisitor &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 18 2019 20:59:10 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 26 2019 13:54:20 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

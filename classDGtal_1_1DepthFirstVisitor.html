@@ -190,7 +190,7 @@ class DGtal::DepthFirstVisitor&lt; TGraph, TMarkSet &gt;</h3>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a class="code" href="classDGtal_1_1DepthFirstVisitor.html#a9c7518d87ee8f2d3a6157db3ec2b4e04">Graph</a> g( ... );</div><div class="line"><a class="code" href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Graph::Vertex</a> p( ... );</div><div class="line">DepthFirstVisitor&lt; Graph &gt; visitor( g, p );</div><div class="line"><span class="keywordflow">while</span> ( ! visitor.finished() )</div><div class="line">  {</div><div class="line">    <a class="code" href="classDGtal_1_1DepthFirstVisitor.html#ad1ba7af6d4d1b0ab2be112354a0a00cf">DepthFirstVisitor&lt;Graph&gt;::Node</a> node = visitor.current();</div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Vertex &quot;</span> &lt;&lt; node.first </div><div class="line">              &lt;&lt; <span class="stringliteral">&quot; at distance &quot;</span> &lt;&lt; node.second &lt;&lt; std::endl;</div><div class="line">    visitor.expand();</div><div class="line">  }</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd>testDepthFirstVisitor.cpp </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="geometry_2tools_2exampleAlphaShape_8cpp-example.html#_a21">geometry/tools/exampleAlphaShape.cpp</a>, <a class="el" href="graph_2graphTraversal_8cpp-example.html#_a22">graph/graphTraversal.cpp</a>, and <a class="el" href="tutorial-examples_2AreaSurfaceEstimation-final_8cpp-example.html#_a20">tutorial-examples/AreaSurfaceEstimation-final.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="geometry_2tools_2exampleAlphaShape_8cpp-example.html#_a21">geometry/tools/exampleAlphaShape.cpp</a>, <a class="el" href="graph_2graphTraversal_8cpp-example.html#_a22">graph/graphTraversal.cpp</a>, and <a class="el" href="tutorial-examples_2AreaSurfaceEstimation-final_8cpp-example.html#_a24">tutorial-examples/AreaSurfaceEstimation-final.cpp</a>.</dd>
 </dl>
 <p class="definition">Definition at line <a class="el" href="DepthFirstVisitor_8h_source.html#l00095">95</a> of file <a class="el" href="DepthFirstVisitor_8h_source.html">DepthFirstVisitor.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -932,7 +932,7 @@ template&lt;typename TGraph, typename TMarkSet = typename TGraph::VertexSet&gt; 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 18 2019 20:59:08 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 26 2019 13:54:19 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

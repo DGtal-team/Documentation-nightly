@@ -26,6 +26,7 @@ var searchData=
   ['latticepolytope2d',['LatticePolytope2D',['../classDGtal_1_1LatticePolytope2D.html',1,'DGtal']]],
   ['latticepolytope2d_3c_20internalspace2_20_3e',['LatticePolytope2D&lt; InternalSpace2 &gt;',['../classDGtal_1_1LatticePolytope2D.html',1,'DGtal']]],
   ['lemniscate2d',['Lemniscate2D',['../classDGtal_1_1Lemniscate2D.html',1,'DGtal']]],
+  ['lemniscate2d_3c_20space_20_3e',['Lemniscate2D&lt; Space &gt;',['../classDGtal_1_1Lemniscate2D.html',1,'DGtal']]],
   ['lessoreqthanangular',['LessOrEqThanAngular',['../structDGtal_1_1experimental_1_1ChamferNorm2D_1_1LessOrEqThanAngular.html',1,'DGtal::experimental::ChamferNorm2D']]],
   ['lessthanangular',['LessThanAngular',['../structDGtal_1_1experimental_1_1ChamferNorm2D_1_1LessThanAngular.html',1,'DGtal::experimental::ChamferNorm2D']]],
   ['lessthancomparable',['LessThanComparable',['../structboost_1_1LessThanComparable.html',1,'boost']]],

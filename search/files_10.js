@@ -128,6 +128,7 @@ var searchData=
   ['testlambdamst2d_2ecpp',['testLambdaMST2D.cpp',['../testLambdaMST2D_8cpp.html',1,'']]],
   ['testlambdamst3d_2ecpp',['testLambdaMST3D.cpp',['../testLambdaMST3D_8cpp.html',1,'']]],
   ['testlatticepolytope2d_2ecpp',['testLatticePolytope2D.cpp',['../testLatticePolytope2D_8cpp.html',1,'']]],
+  ['testlemniscate2d_2ecpp',['testLemniscate2D.cpp',['../testLemniscate2D_8cpp.html',1,'']]],
   ['testlightersternbrocot_2ecpp',['testLighterSternBrocot.cpp',['../testLighterSternBrocot_8cpp.html',1,'']]],
   ['testlightsternbrocot_2ecpp',['testLightSternBrocot.cpp',['../testLightSternBrocot_8cpp.html',1,'']]],
   ['testlinearalgebra_2ecpp',['testLinearAlgebra.cpp',['../testLinearAlgebra_8cpp.html',1,'']]],
