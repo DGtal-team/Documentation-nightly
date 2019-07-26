@@ -9,6 +9,7 @@ var searchData=
   ['silver',['Silver',['../classDGtal_1_1Color.html#a9d2c7139ac1ff1ca91975dd1231d8cad',1,'DGtal::Color']]],
   ['singleton',['singleton',['../classDGtal_1_1LighterSternBrocot.html#a63fc59fd3bb767a047fba4b63f064d59',1,'DGtal::LighterSternBrocot::singleton()'],['../classDGtal_1_1LightSternBrocot.html#a090c0049d4a9e7ec9ee7ee84a422967e',1,'DGtal::LightSternBrocot::singleton()'],['../classDGtal_1_1SternBrocot.html#a0aa0ad3b7f1e1b888fa543857fc63ad6',1,'DGtal::SternBrocot::singleton()']]],
   ['size',['size',['../structDGtal_1_1IndexedListWithBlocks_1_1FirstBlock.html#a51d5cf17961c9be1b4ef3205b8d8ed4e',1,'DGtal::IndexedListWithBlocks::FirstBlock::size()'],['../classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a5362c15d25bc8f57f6466c5666202473',1,'DGtal::InGeneralizedDiskOfGivenRadius::size()'],['../classDGtal_1_1InHalfPlaneBy2x2DetComputer.html#a7c74f947ca1d5684dd79a3fd9796506d',1,'DGtal::InHalfPlaneBy2x2DetComputer::size()'],['../classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#afc8e37bfd8009a9138e2fe0e491f8038',1,'DGtal::InHalfPlaneBySimple3x3Matrix::size()'],['../structDGtal_1_1SignalData.html#a0065330bca1c8e5d38e3ac64597a0a58',1,'DGtal::SignalData::size()']]],
+  ['smallest_5fepsilon_5fmap',['smallest_epsilon_map',['../classDGtal_1_1ATSolver2D.html#a6934e9269b94e7c454824cff61bda4b2',1,'DGtal::ATSolver2D']]],
   ['solver',['solver',['../structDGtal_1_1concepts_1_1CLinearAlgebraSolver.html#a742dd26150a2c84df1a2024e8be9b487',1,'DGtal::concepts::CLinearAlgebraSolver']]],
   ['solver_5fu',['solver_u',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu0v1.html#a0771dd909a8260c2b42949bd7bca92dd',1,'DGtal::ATu0v1::solver_u()'],['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a67274c32b41693c8ad338188d8dc732c',1,'DGtal::ATu2v0::solver_u()']]],
   ['solver_5fv',['solver_v',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu0v1.html#a5fc8ee1e7bcb8c73038d759f9195543f',1,'DGtal::ATu0v1::solver_v()'],['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a0edbabfdbe929ae415261e505a242188',1,'DGtal::ATu2v0::solver_v()']]],
@@ -17,5 +18,6 @@ var searchData=
   ['status_5freturn',['status_return',['../structDGtal_1_1concepts_1_1CLinearAlgebraSolver.html#ad0c57c9f5e6c59c8598a276acb89d2df',1,'DGtal::concepts::CLinearAlgebraSolver']]],
   ['step',['step',['../classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a654c8876487f94b14938f0428b081f66',1,'DGtal::NaiveParametricCurveDigitizer3D']]],
   ['subexpr',['subexpr',['../structDGtal_1_1MPolynomialGrammar.html#a246cfdede220e8eb3c0533038494242a',1,'DGtal::MPolynomialGrammar']]],
-  ['surfel',['surfel',['../structDGtal_1_1UmbrellaComputer_1_1State.html#a84d41094941911bf5b8e8af3d67b9812',1,'DGtal::UmbrellaComputer::State']]]
+  ['surfel',['surfel',['../structDGtal_1_1UmbrellaComputer_1_1State.html#a84d41094941911bf5b8e8af3d67b9812',1,'DGtal::UmbrellaComputer::State']]],
+  ['surfel2idx',['surfel2idx',['../classDGtal_1_1ATSolver2D.html#aa10fb1c8ee0c9873a9abe3d6cd04eea1',1,'DGtal::ATSolver2D']]]
 ];

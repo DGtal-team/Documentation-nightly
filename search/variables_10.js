@@ -16,7 +16,9 @@ var searchData=
   ['positive',['positive',['../structDGtal_1_1SignedKhalimskyPreCell.html#a3e6e40bc04f6355781e55ddb328a6f17',1,'DGtal::SignedKhalimskyPreCell']]],
   ['powers',['powers',['../structDGtal_1_1detail_1_1monomial__node.html#a0b91f8a69e004199e8134a75f960713a',1,'DGtal::detail::monomial_node']]],
   ['prev',['prev',['../classmyreverse__iterator.html#a33cbefa63e73014d086480aa574086ef',1,'myreverse_iterator']]],
-  ['primal_5fad2',['primal_AD2',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a3e927be4d582b6ff09df0c9333ae06c6',1,'DGtal::ATu2v0']]],
+  ['primal_5fad2',['primal_AD2',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a3e927be4d582b6ff09df0c9333ae06c6',1,'DGtal::ATu2v0::primal_AD2()'],['../classDGtal_1_1ATSolver2D.html#a78262d79c4f40544ec8eac15c68fa712',1,'DGtal::ATSolver2D::primal_AD2()']]],
+  ['primal_5fd0',['primal_D0',['../classDGtal_1_1ATSolver2D.html#aecc1cb13fbf576486331e9cbda695eca',1,'DGtal::ATSolver2D']]],
+  ['primal_5fd1',['primal_D1',['../classDGtal_1_1ATSolver2D.html#ab9b12aea6bd78758f5f05aeb256916e1',1,'DGtal::ATSolver2D']]],
   ['primal_5fh0',['primal_h0',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#a80c0d7c61acd87171779053c4c63d849',1,'DGtal::DECImage2D']]],
   ['primal_5fh1',['primal_h1',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#a8dcc13cb4c2c2e98d28223676c296f09',1,'DGtal::DECImage2D']]],
   ['primal_5fh2',['primal_h2',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#a28ddbaa8ffe691a3fdfbee9f20c686c4',1,'DGtal::DECImage2D']]],
@@ -25,6 +27,7 @@ var searchData=
   ['ptmax',['ptMax',['../structDGtal_1_1ChordNaivePlaneComputer_1_1State.html#a83f90d8e73d2da1976f523e338b468cd',1,'DGtal::ChordNaivePlaneComputer::State::ptMax()'],['../structDGtal_1_1COBANaivePlaneComputer_1_1State.html#a44b92aabc7ddb0da6e8626bbcf1dcb4e',1,'DGtal::COBANaivePlaneComputer::State::ptMax()']]],
   ['ptmin',['ptMin',['../structDGtal_1_1ChordNaivePlaneComputer_1_1State.html#a9e4c77150d2b0210a74907c9499d5308',1,'DGtal::ChordNaivePlaneComputer::State::ptMin()'],['../structDGtal_1_1COBANaivePlaneComputer_1_1State.html#a79fdfffdf7b7e6a76e8f39504fe2da89',1,'DGtal::COBANaivePlaneComputer::State::ptMin()']]],
   ['ptr',['ptr',['../structDGtal_1_1CountedPtr_1_1Counter.html#a2fdb4f71d85daf70a0d8e6e471f6d891',1,'DGtal::CountedPtr::Counter']]],
+  ['ptrcalculus',['ptrCalculus',['../classDGtal_1_1ATSolver2D.html#aee83b3ac462fb907f43d57a9124e8e7e',1,'DGtal::ATSolver2D']]],
   ['ptrset',['ptrSet',['../structDGtal_1_1VoronoiCovarianceMeasure_1_1CharacteristicSetPredicate.html#a2cc4b18b3828ae66afb519e835561bee',1,'DGtal::VoronoiCovarianceMeasure::CharacteristicSetPredicate']]],
   ['purple',['Purple',['../classDGtal_1_1Color.html#a033c90017ca3223e2ab171bbb0dfad7b',1,'DGtal::Color']]]
 ];

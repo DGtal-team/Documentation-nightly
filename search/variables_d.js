@@ -1,8 +1,8 @@
 var searchData=
 [
   ['m',['M',['../classDGtal_1_1EigenDecomposition.html#ad22cd2d37b1bebef0977e9ccb2195cec',1,'DGtal::EigenDecomposition::M()'],['../classDGtal_1_1SimpleMatrix.html#a34bf09b309ead5a6249afee963c71250',1,'DGtal::SimpleMatrix::M()']]],
-  ['m01',['M01',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#ab00c3b9f32a9ed70bdb833ecda021c7e',1,'DGtal::ATu2v0']]],
-  ['m12',['M12',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a8f7ee247ac70dcda51b597b35a0ccd73',1,'DGtal::ATu2v0']]],
+  ['m01',['M01',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#ab00c3b9f32a9ed70bdb833ecda021c7e',1,'DGtal::ATu2v0::M01()'],['../classDGtal_1_1ATSolver2D.html#af04301709ce9ba5dd2233acde8642301',1,'DGtal::ATSolver2D::M01()']]],
+  ['m12',['M12',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a8f7ee247ac70dcda51b597b35a0ccd73',1,'DGtal::ATu2v0::M12()'],['../classDGtal_1_1ATSolver2D.html#a68577ab02e5f3f631739243a437cffd7',1,'DGtal::ATSolver2D::M12()']]],
   ['m_5fdata',['m_data',['../classDGtal_1_1Signal.html#a8c8d123ae930b668854b29244a2dbaf8',1,'DGtal::Signal']]],
   ['m_5flowerbound',['m_lowerBound',['../classDGtal_1_1TiledImage.html#adcd672593215e0cfd81ca3fd46bfc6b0',1,'DGtal::TiledImage']]],
   ['m_5fnormal',['m_normal',['../classDGtal_1_1functors_1_1SphereFittingEstimator_1_1PatatePoint.html#a115e24c800ba743c41d0c78b6b4c605e',1,'DGtal::functors::SphereFittingEstimator::PatatePoint']]],

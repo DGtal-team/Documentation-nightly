@@ -7,5 +7,6 @@ var searchData=
   ['avantgardebook',['AvantGardeBook',['../namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3aa911b772f521481da7aa40cc1efa2076',1,'LibBoard::Fonts']]],
   ['avantgardebookoblique',['AvantGardeBookOblique',['../namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3ae2a5eb3e995ad5926dc2a20a5f26113e',1,'LibBoard::Fonts']]],
   ['avantgardedemi',['AvantGardeDemi',['../namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3af029c17d1f6ec2445791ff30fcc24b28',1,'LibBoard::Fonts']]],
-  ['avantgardedemioblique',['AvantGardeDemiOblique',['../namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3a3ed537b29c4b710ec6939bb034e2f99f',1,'LibBoard::Fonts']]]
+  ['avantgardedemioblique',['AvantGardeDemiOblique',['../namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3a3ed537b29c4b710ec6939bb034e2f99f',1,'LibBoard::Fonts']]],
+  ['average',['Average',['../classDGtal_1_1ATSolver2D.html#aede4e265e44ce612075bb3c15f8690daadb00ed33d4644ea0a15d240658b90d16',1,'DGtal::ATSolver2D']]]
 ];

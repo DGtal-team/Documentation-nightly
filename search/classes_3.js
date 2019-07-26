@@ -198,6 +198,7 @@ var searchData=
   ['countedconstptrorconstptr',['CountedConstPtrOrConstPtr',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],
   ['countedconstptrorconstptr_3c_20convolutionfunctor_20_3e',['CountedConstPtrOrConstPtr&lt; ConvolutionFunctor &gt;',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],
   ['countedconstptrorconstptr_3c_20dgtal_3a_3adigitalsurface_20_3e',['CountedConstPtrOrConstPtr&lt; DGtal::DigitalSurface &gt;',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],
+  ['countedconstptrorconstptr_3c_20dgtal_3a_3adiscreteexteriorcalculus_20_3e',['CountedConstPtrOrConstPtr&lt; DGtal::DiscreteExteriorCalculus &gt;',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],
   ['countedconstptrorconstptr_3c_20dgtal_3a_3avoronoicovariancemeasureondigitalsurface_20_3e',['CountedConstPtrOrConstPtr&lt; DGtal::VoronoiCovarianceMeasureOnDigitalSurface &gt;',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],
   ['countedconstptrorconstptr_3c_20digitalsurfacecontainer_20_3e',['CountedConstPtrOrConstPtr&lt; DigitalSurfaceContainer &gt;',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],
   ['countedconstptrorconstptr_3c_20dummytbl_20_3e',['CountedConstPtrOrConstPtr&lt; DummyTbl &gt;',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],

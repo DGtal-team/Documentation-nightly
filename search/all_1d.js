@@ -13,6 +13,7 @@ var searchData=
   ['_7earithmeticaldsscomputer',['~ArithmeticalDSSComputer',['../classDGtal_1_1ArithmeticalDSSComputer.html#a46b77ad48a98496c909a6ee7928e219e',1,'DGtal::ArithmeticalDSSComputer']]],
   ['_7earrayimageiterator',['~ArrayImageIterator',['../classDGtal_1_1ArrayImageIterator.html#a6fcd40729d8f979dd091aa142edeaaca',1,'DGtal::ArrayImageIterator']]],
   ['_7eastroid2d',['~Astroid2D',['../classDGtal_1_1Astroid2D.html#ab06e54b672e553a5e1ec49e9aec2d8b6',1,'DGtal::Astroid2D']]],
+  ['_7eatsolver2d',['~ATSolver2D',['../classDGtal_1_1ATSolver2D.html#ad8ef0a982f30c949beb422687931a428',1,'DGtal::ATSolver2D']]],
   ['_7eatu0v1',['~ATu0v1',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu0v1.html#a947e7ef037be77c9ba5e1146013fd3ca',1,'DGtal::ATu0v1']]],
   ['_7eatu2v0',['~ATu2v0',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a618b247662ece483cbc83609bd9fc04b',1,'DGtal::ATu2v0']]],
   ['_7ebackpath',['~Backpath',['../classDGtal_1_1FrechetShortcut_1_1Backpath.html#aba3358f91b99bf119f6079dc2f9701d1',1,'DGtal::FrechetShortcut::Backpath']]],
