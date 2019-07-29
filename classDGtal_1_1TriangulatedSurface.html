@@ -162,6 +162,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a0442ba63377ac3c073ceba4bdab2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa02915bb0ae1b81931806f2c9df2d5dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#acb59633d437cb6cc498c5659c31b1b2f">FaceIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#aa02915bb0ae1b81931806f2c9df2d5dd">addTriangle</a> (<a class="el" href="classDGtal_1_1TriangulatedSurface.html#a3897e97f0c119bfa57dba9e968e4f43f">VertexIndex</a> v0, <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a3897e97f0c119bfa57dba9e968e4f43f">VertexIndex</a> v1, <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a3897e97f0c119bfa57dba9e968e4f43f">VertexIndex</a> v2)</td></tr>
 <tr class="separator:aa02915bb0ae1b81931806f2c9df2d5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996172e38c21878ccc14c52d9e5d2f78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html">HalfEdgeDataStructure</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a996172e38c21878ccc14c52d9e5d2f78">heds</a> ()</td></tr>
+<tr class="separator:a996172e38c21878ccc14c52d9e5d2f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c878185a57d5c43bfa3e79198d181f6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html">HalfEdgeDataStructure</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a9c878185a57d5c43bfa3e79198d181f6">heds</a> () const</td></tr>
 <tr class="separator:a9c878185a57d5c43bfa3e79198d181f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a233fbc291f5430f91afae1c30096bd32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#aba2b1bf0afcc371ba433ee877a61762a">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a233fbc291f5430f91afae1c30096bd32">nbArcs</a> () const</td></tr>
@@ -252,6 +254,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a318325185a4ade47657101197d41eaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dbba7d092aea1979680013ac9ee5cac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a1c42f23af141f67c2192274825a10130">VertexRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a0dbba7d092aea1979680013ac9ee5cac">allBoundaryVertices</a> () const</td></tr>
 <tr class="separator:a0dbba7d092aea1979680013ac9ee5cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f0d7d793674bd131ae8ee39b5d872f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a1c42f23af141f67c2192274825a10130">VertexRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a05f0d7d793674bd131ae8ee39b5d872f">verticesOfFacesAroundArc</a> (const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a> a) const</td></tr>
+<tr class="separator:a05f0d7d793674bd131ae8ee39b5d872f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2477990af39430f0a721eaf15d43295b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a2477990af39430f0a721eaf15d43295b">isFlippable</a> (const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a> a) const</td></tr>
+<tr class="separator:a2477990af39430f0a721eaf15d43295b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee433a41e81899d62c010209c587915"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a6ee433a41e81899d62c010209c587915">flip</a> (const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a> a)</td></tr>
+<tr class="separator:a6ee433a41e81899d62c010209c587915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77cd7a387366b836856de2c5af5cabb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#af61ebc616e280c5e26666d816cc2449b">Vertex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#af77cd7a387366b836856de2c5af5cabb">split</a> (const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a> a, const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a416550d170980be3b5f7a58b6936df19">Point</a> &amp;data)</td></tr>
+<tr class="separator:af77cd7a387366b836856de2c5af5cabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939565e44f328a6496eb74e0396665cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a939565e44f328a6496eb74e0396665cf">isMergeable</a> (const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a> a) const</td></tr>
+<tr class="separator:a939565e44f328a6496eb74e0396665cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50cef10e316f20526542e5c2adf7b21f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#af61ebc616e280c5e26666d816cc2449b">Vertex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a50cef10e316f20526542e5c2adf7b21f">merge</a> (const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a> a, const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a416550d170980be3b5f7a58b6936df19">Point</a> &amp;data)</td></tr>
+<tr class="separator:a50cef10e316f20526542e5c2adf7b21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a049dda300441ed9bb50c462df43b278e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a049dda300441ed9bb50c462df43b278e">selfDisplay</a> (std::ostream &amp;out) const</td></tr>
 <tr class="separator:a049dda300441ed9bb50c462df43b278e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83d1ffdd5b3c2921d2508e161f56373a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a83d1ffdd5b3c2921d2508e161f56373a">isValid</a> () const</td></tr>
@@ -283,7 +297,7 @@ class DGtal::TriangulatedSurface&lt; TPoint &gt;</h3>
 
 <p>Aim: Represents a triangulated surface. The topology is stored with a half-edge data structure. This object stored the positions of vertices in space. If you need further data attached to the surface, you may use property maps (see <code><a class="el" href="classDGtal_1_1TriangulatedSurface.html#ab35510ce21e2e7885a49b947c0bdb112">TriangulatedSurface::makeVertexMap</a></code>). </p>
 <p>Description of template class '<a class="el" href="classDGtal_1_1TriangulatedSurface.html" title="Aim: Represents a triangulated surface. The topology is stored with a half-edge data structure...">TriangulatedSurface</a>' </p>
-<p>For now, the user must add vertices and triangles, and when finished, call '<a class="el" href="classDGtal_1_1TriangulatedSurface.html#af4334ce3ecb5f6cdeb4f609732ed4e77">build()</a>'.</p>
+<p>Except for a few operations, this data structure is rather static. The user must add vertices and triangles, and when finished, call '<a class="el" href="classDGtal_1_1TriangulatedSurface.html#af4334ce3ecb5f6cdeb4f609732ed4e77">build()</a>'.</p>
 <p>Model of CUndirectedSimpleGraph: the vertices and edges of the triangulated surface form indeed a graph structure.</p>
 <dl class="section note"><dt>Note</dt><dd>Vertices, Arcs, and Faces are all integer ranging from 0 to one less than the total number of the respective elements. You may thus iterate on them by just looping on integers. The index INVALID_FACE is an invalid element (equal to HALF_EDGE_INVALID_INDEX).</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -293,10 +307,10 @@ class DGtal::TriangulatedSurface&lt; TPoint &gt;</h3>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html" title="Aim: This class represents an half-edge data structure, which is a structure for representing the top...">HalfEdgeDataStructure</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>You may access the underlying half-edge data structure through <a class="el" href="classDGtal_1_1PolygonalSurface.html#ad4f1d379b476b9d27d19cc3d6bf8a45b">PolygonalSurface::heds</a> method. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You may access the underlying half-edge data structure through <a class="el" href="classDGtal_1_1PolygonalSurface.html#afd1707f376f242320dee7418fa2b7f6d">PolygonalSurface::heds</a> method. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="shapes_2viewMarchingCubes_8cpp-example.html#_a25">shapes/viewMarchingCubes.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00084">84</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00085">85</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a131324d45f00ec530d3ebc6a8b366df7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a131324d45f00ec530d3ebc6a8b366df7">&#9670;&nbsp;</a></span>Arc</h2>
@@ -312,7 +326,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00110">110</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00111">111</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -330,7 +344,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00112">112</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00113">113</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -348,7 +362,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00107">107</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00108">108</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +380,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00106">106</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00107">107</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -384,7 +398,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00092">92</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00093">93</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +416,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00111">111</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00112">112</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +434,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00093">93</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00094">94</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -438,7 +452,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00113">113</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00114">114</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -464,7 +478,7 @@ template&lt;typename TPoint&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00213">213</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00214">214</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -482,7 +496,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00090">90</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00091">91</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -500,7 +514,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00087">87</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00088">88</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -518,7 +532,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00210">210</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00211">211</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -536,7 +550,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00095">95</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00096">96</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -554,7 +568,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00088">88</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00089">89</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +586,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00089">89</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00090">90</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -590,7 +604,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00094">94</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00095">95</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -608,7 +622,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00096">96</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00097">97</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -626,7 +640,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00099">99</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00100">100</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -644,7 +658,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00091">91</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00092">92</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -662,7 +676,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00114">114</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00115">115</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -680,7 +694,7 @@ template&lt;typename TPoint&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00100">100</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00101">101</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -711,8 +725,8 @@ template&lt;typename TPoint&gt; </div>
 </div><div class="memdoc">
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00221">221</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;{}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00222">222</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a16c79ffbf0e1c7f4f899a220fcf4abd8"></a>
@@ -741,8 +755,8 @@ template&lt;typename TPoint&gt; </div>
 </div><div class="memdoc">
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00226">226</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;: <a class="code" href="classDGtal_1_1TriangulatedSurface.html#aa43d5ca3271f568d1099f922e4295355">isHEDSValid</a>( <span class="keyword">false</span> ) {}</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_aa43d5ca3271f568d1099f922e4295355"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#aa43d5ca3271f568d1099f922e4295355">DGtal::TriangulatedSurface::isHEDSValid</a></div><div class="ttdeci">bool isHEDSValid</div><div class="ttdoc">Indicates if the half-edge structure has been created/updated. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00567">TriangulatedSurface.h:567</a></div></div>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00227">227</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;: <a class="code" href="classDGtal_1_1TriangulatedSurface.html#aa43d5ca3271f568d1099f922e4295355">isHEDSValid</a>( <span class="keyword">false</span> ) {}</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_aa43d5ca3271f568d1099f922e4295355"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#aa43d5ca3271f568d1099f922e4295355">DGtal::TriangulatedSurface::isHEDSValid</a></div><div class="ttdeci">bool isHEDSValid</div><div class="ttdoc">Indicates if the half-edge structure has been created/updated. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00659">TriangulatedSurface.h:659</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1020,10 +1034,10 @@ template&lt;typename TPoint&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>a (non mutable) iterator pointing on the first vertex. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00393">393</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00398">398</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a3bfe62e3e4ddbdf18c4f2bea7035ff6f">ConstIterator</a>( 0 ); }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a3bfe62e3e4ddbdf18c4f2bea7035ff6f"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a3bfe62e3e4ddbdf18c4f2bea7035ff6f">DGtal::TriangulatedSurface::ConstIterator</a></div><div class="ttdeci">IntegerSequenceIterator&lt; VertexIndex &gt; ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00107">TriangulatedSurface.h:107</a></div></div>
+<div class="fragment"><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a3bfe62e3e4ddbdf18c4f2bea7035ff6f">ConstIterator</a>( 0 ); }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a3bfe62e3e4ddbdf18c4f2bea7035ff6f"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a3bfe62e3e4ddbdf18c4f2bea7035ff6f">DGtal::TriangulatedSurface::ConstIterator</a></div><div class="ttdeci">IntegerSequenceIterator&lt; VertexIndex &gt; ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00108">TriangulatedSurface.h:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1177,13 +1191,13 @@ template&lt;typename TPoint&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>a (non mutable) iterator pointing after the last vertex. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00397">397</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00402">402</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00258">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbVertices()</a>.</p>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00263">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbVertices()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a3bfe62e3e4ddbdf18c4f2bea7035ff6f">ConstIterator</a>( <a class="code" href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">nbVertices</a>() ); }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_aea67adb96974b73cacc87014b327461a"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">DGtal::TriangulatedSurface::nbVertices</a></div><div class="ttdeci">Size nbVertices() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00258">TriangulatedSurface.h:258</a></div></div>
-<div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a3bfe62e3e4ddbdf18c4f2bea7035ff6f"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a3bfe62e3e4ddbdf18c4f2bea7035ff6f">DGtal::TriangulatedSurface::ConstIterator</a></div><div class="ttdeci">IntegerSequenceIterator&lt; VertexIndex &gt; ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00107">TriangulatedSurface.h:107</a></div></div>
+<div class="fragment"><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a3bfe62e3e4ddbdf18c4f2bea7035ff6f">ConstIterator</a>( <a class="code" href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">nbVertices</a>() ); }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_aea67adb96974b73cacc87014b327461a"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">DGtal::TriangulatedSurface::nbVertices</a></div><div class="ttdeci">Size nbVertices() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00263">TriangulatedSurface.h:263</a></div></div>
+<div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a3bfe62e3e4ddbdf18c4f2bea7035ff6f"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a3bfe62e3e4ddbdf18c4f2bea7035ff6f">DGtal::TriangulatedSurface::ConstIterator</a></div><div class="ttdeci">IntegerSequenceIterator&lt; VertexIndex &gt; ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00108">TriangulatedSurface.h:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1213,12 +1227,12 @@ template&lt;typename TPoint&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the euler characteristic of the triangulated surface (a famous topological invariant that is the number of vertices minus the number of edges plus the number of faces). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00269">269</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00274">274</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="HalfEdgeDataStructure_8h_source.html#l00383">DGtal::HalfEdgeDataStructure::Euler()</a>, and <a class="el" href="TriangulatedSurface_8h_source.html#l00569">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>.</p>
+<p class="reference">References <a class="el" href="HalfEdgeDataStructure_8h_source.html#l00383">DGtal::HalfEdgeDataStructure::Euler()</a>, and <a class="el" href="TriangulatedSurface_8h_source.html#l00661">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>.<a class="code" href="classDGtal_1_1HalfEdgeDataStructure.html#a710f2434db723450fc2f6c49163f7a39">Euler</a>(); }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00569">TriangulatedSurface.h:569</a></div></div>
+<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>.<a class="code" href="classDGtal_1_1HalfEdgeDataStructure.html#a710f2434db723450fc2f6c49163f7a39">Euler</a>(); }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00661">TriangulatedSurface.h:661</a></div></div>
 <div class="ttc" id="classDGtal_1_1HalfEdgeDataStructure_html_a710f2434db723450fc2f6c49163f7a39"><div class="ttname"><a href="classDGtal_1_1HalfEdgeDataStructure.html#a710f2434db723450fc2f6c49163f7a39">DGtal::HalfEdgeDataStructure::Euler</a></div><div class="ttdeci">long Euler() const</div><div class="ttdef"><b>Definition:</b> <a href="HalfEdgeDataStructure_8h_source.html#l00383">HalfEdgeDataStructure.h:383</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1310,6 +1324,39 @@ template&lt;typename TPoint&gt; </div>
 
 </div>
 </div>
+<a id="a6ee433a41e81899d62c010209c587915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ee433a41e81899d62c010209c587915">&#9670;&nbsp;</a></span>flip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TPoint&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDGtal_1_1TriangulatedSurface.html">DGtal::TriangulatedSurface</a>&lt; TPoint &gt;::flip </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flip the edge associated to arc <em>a</em>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>any valid arc.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>the edge must be flippable, <code>isFlippable( a ) == true</code> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a2477990af39430f0a721eaf15d43295b">isFlippable</a></dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>After flip the arc <em>a</em> corresponding to the flipped edge (if you reflip it you get your former triangulation).</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Time complexity is O(1). </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00183">SCENARIO()</a>.</p>
+
+</div>
+</div>
 <a id="a20be18a37d0761f4bd1d14b5ad657cd8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20be18a37d0761f4bd1d14b5ad657cd8">&#9670;&nbsp;</a></span>head()</h2>
 
@@ -1339,8 +1386,41 @@ template&lt;typename TPoint&gt; </div>
 
 </div>
 </div>
+<a id="a996172e38c21878ccc14c52d9e5d2f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996172e38c21878ccc14c52d9e5d2f78">&#9670;&nbsp;</a></span>heds() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TPoint&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html">HalfEdgeDataStructure</a>&amp; <a class="el" href="classDGtal_1_1TriangulatedSurface.html">DGtal::TriangulatedSurface</a>&lt; TPoint &gt;::heds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>(setter) a reference to the topological structure of the triangulated surface (an half-edge data structure). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00251">251</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00661">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>.</p>
+<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>; }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00661">TriangulatedSurface.h:661</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a9c878185a57d5c43bfa3e79198d181f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c878185a57d5c43bfa3e79198d181f6">&#9670;&nbsp;</a></span>heds()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c878185a57d5c43bfa3e79198d181f6">&#9670;&nbsp;</a></span>heds() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1363,12 +1443,12 @@ template&lt;typename TPoint&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a const reference to the half-edge data structure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>(getter) a const reference to the topological structure of the triangulated surface (an half-edge data structure). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00249">249</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00255">255</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00569">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>.</p>
-<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>; }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00569">TriangulatedSurface.h:569</a></div></div>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00661">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>.</p>
+<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>; }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00661">TriangulatedSurface.h:661</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1424,6 +1504,66 @@ template&lt;typename TPoint&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>'true' if and only if arc <em>v</em> lies on a boundary (note that the opposite arc does not lie on the boundary). </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>O(1) operation </dd></dl>
+
+</div>
+</div>
+<a id="a2477990af39430f0a721eaf15d43295b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2477990af39430f0a721eaf15d43295b">&#9670;&nbsp;</a></span>isFlippable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TPoint&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classDGtal_1_1TriangulatedSurface.html">DGtal::TriangulatedSurface</a>&lt; TPoint &gt;::isFlippable </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An edge is (topologically) flippable iff: (1) it does not lie on the boundary, (2) it is bordered by two triangles. (2) is always true for a triangulated surface.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>any arc. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>'true' if the edge containing <em>a</em> is topologically flippable.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Time complexity is O(1). </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00183">SCENARIO()</a>.</p>
+
+</div>
+</div>
+<a id="a939565e44f328a6496eb74e0396665cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a939565e44f328a6496eb74e0396665cf">&#9670;&nbsp;</a></span>isMergeable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TPoint&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classDGtal_1_1TriangulatedSurface.html">DGtal::TriangulatedSurface</a>&lt; TPoint &gt;::isMergeable </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An edge is (topologically) mergeable iff: (1) it is bordered by two triangles, (2) there is no boundary vertex in the two triangles bordering the edge.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>any arc. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>'true' if the edge containing <em>a</em> is topologically mergeable.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Time complexity is O(1). </dd></dl>
 
 </div>
 </div>
@@ -1503,10 +1643,10 @@ template&lt;typename AnyData &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>an edge property map that associates some data to any edge. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00295">295</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00300">300</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00261">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbEdges()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    {</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a6d7c8794fad440626196229ac456d4c7">nbEdges</a>() );</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a6d7c8794fad440626196229ac456d4c7"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a6d7c8794fad440626196229ac456d4c7">DGtal::TriangulatedSurface::nbEdges</a></div><div class="ttdeci">Size nbEdges() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00261">TriangulatedSurface.h:261</a></div></div>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00266">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbEdges()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    {</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a6d7c8794fad440626196229ac456d4c7">nbEdges</a>() );</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a6d7c8794fad440626196229ac456d4c7"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a6d7c8794fad440626196229ac456d4c7">DGtal::TriangulatedSurface::nbEdges</a></div><div class="ttdeci">Size nbEdges() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00266">TriangulatedSurface.h:266</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1545,10 +1685,10 @@ template&lt;typename AnyData &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an edge property map that associates some data to any edge. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00303">303</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00308">308</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00261">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbEdges()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    {</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a6d7c8794fad440626196229ac456d4c7">nbEdges</a>(), value );</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a6d7c8794fad440626196229ac456d4c7"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a6d7c8794fad440626196229ac456d4c7">DGtal::TriangulatedSurface::nbEdges</a></div><div class="ttdeci">Size nbEdges() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00261">TriangulatedSurface.h:261</a></div></div>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00266">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbEdges()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    {</div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a6d7c8794fad440626196229ac456d4c7">nbEdges</a>(), value );</div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a6d7c8794fad440626196229ac456d4c7"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a6d7c8794fad440626196229ac456d4c7">DGtal::TriangulatedSurface::nbEdges</a></div><div class="ttdeci">Size nbEdges() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00266">TriangulatedSurface.h:266</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1580,10 +1720,10 @@ template&lt;typename AnyData &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>a face property map that associates some data to any face. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00310">310</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00315">315</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00264">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbFaces()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    {</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a512b92ee62e9b31649fa9140ef2d6b79">nbFaces</a>() );</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a512b92ee62e9b31649fa9140ef2d6b79"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a512b92ee62e9b31649fa9140ef2d6b79">DGtal::TriangulatedSurface::nbFaces</a></div><div class="ttdeci">Size nbFaces() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00264">TriangulatedSurface.h:264</a></div></div>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00269">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbFaces()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    {</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a512b92ee62e9b31649fa9140ef2d6b79">nbFaces</a>() );</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a512b92ee62e9b31649fa9140ef2d6b79"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a512b92ee62e9b31649fa9140ef2d6b79">DGtal::TriangulatedSurface::nbFaces</a></div><div class="ttdeci">Size nbFaces() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00269">TriangulatedSurface.h:269</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1622,10 +1762,10 @@ template&lt;typename AnyData &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a face property map that associates some data to any face. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00318">318</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00323">323</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00264">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbFaces()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    {</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a512b92ee62e9b31649fa9140ef2d6b79">nbFaces</a>(), value );</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a512b92ee62e9b31649fa9140ef2d6b79"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a512b92ee62e9b31649fa9140ef2d6b79">DGtal::TriangulatedSurface::nbFaces</a></div><div class="ttdeci">Size nbFaces() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00264">TriangulatedSurface.h:264</a></div></div>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00269">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbFaces()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    {</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a512b92ee62e9b31649fa9140ef2d6b79">nbFaces</a>(), value );</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a512b92ee62e9b31649fa9140ef2d6b79"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a512b92ee62e9b31649fa9140ef2d6b79">DGtal::TriangulatedSurface::nbFaces</a></div><div class="ttdeci">Size nbFaces() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00269">TriangulatedSurface.h:269</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1657,10 +1797,10 @@ template&lt;typename AnyData &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>a vertex property map that associates some data to any vertex. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00280">280</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00285">285</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00258">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbVertices()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    {</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">nbVertices</a>() );</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_aea67adb96974b73cacc87014b327461a"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">DGtal::TriangulatedSurface::nbVertices</a></div><div class="ttdeci">Size nbVertices() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00258">TriangulatedSurface.h:258</a></div></div>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00263">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbVertices()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    {</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">nbVertices</a>() );</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_aea67adb96974b73cacc87014b327461a"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">DGtal::TriangulatedSurface::nbVertices</a></div><div class="ttdeci">Size nbVertices() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00263">TriangulatedSurface.h:263</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1699,11 +1839,55 @@ template&lt;typename AnyData &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vertex property map that associates some data to any vertex. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00288">288</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00293">293</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00258">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbVertices()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    {</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">nbVertices</a>(), value );</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_aea67adb96974b73cacc87014b327461a"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">DGtal::TriangulatedSurface::nbVertices</a></div><div class="ttdeci">Size nbVertices() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00258">TriangulatedSurface.h:258</a></div></div>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00263">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbVertices()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    {</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <span class="keywordflow">return</span> IndexedPropertyMap&lt; AnyData &gt;( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">nbVertices</a>(), value );</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_aea67adb96974b73cacc87014b327461a"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">DGtal::TriangulatedSurface::nbVertices</a></div><div class="ttdeci">Size nbVertices() const</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00263">TriangulatedSurface.h:263</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a50cef10e316f20526542e5c2adf7b21f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50cef10e316f20526542e5c2adf7b21f">&#9670;&nbsp;</a></span>merge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TPoint&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#af61ebc616e280c5e26666d816cc2449b">Vertex</a> <a class="el" href="classDGtal_1_1TriangulatedSurface.html">DGtal::TriangulatedSurface</a>&lt; TPoint &gt;::merge </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a416550d170980be3b5f7a58b6936df19">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Merges the edge specified by the arc <em>a</em>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>any valid arc. </td></tr>
+    <tr><td class="paramname">data</td><td>the position for the merged vertex.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of the merged vertex (which is the tail of the arc <em>a</em>)..</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>the edge must be mergeable, <code>isMergeable( a ) == true</code> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a939565e44f328a6496eb74e0396665cf">isMergeable</a></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Time complexity is O(1). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000063">Todo:</a></b></dt><dd>We could also merge boundary triangles.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>All the underlying data-structure is renumbered so that vertex, edge, face and half-edge indices are consecutive. In other words, since 1 vertex, 3 edges, 2 faces and 6 half-edges have been deleted, then the last vertices, edges, faces, half-edges have been renumbered into the freed indices. For instance, the vertex <code>head(a)</code> does not exist anymore (but has been replaced by a renumbered vertex). </dd></dl>
+
 </div>
 </div>
 <a id="a233fbc291f5430f91afae1c30096bd32"></a>
@@ -1732,12 +1916,12 @@ template&lt;typename TPoint&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the number of half edges in the structure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00255">255</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00260">260</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00569">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>, and <a class="el" href="HalfEdgeDataStructure_8h_source.html#l00371">DGtal::HalfEdgeDataStructure::nbHalfEdges()</a>.</p>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00661">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>, and <a class="el" href="HalfEdgeDataStructure_8h_source.html#l00371">DGtal::HalfEdgeDataStructure::nbHalfEdges()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>.<a class="code" href="classDGtal_1_1HalfEdgeDataStructure.html#afd331c78e594c822a8e30af610ceec08">nbHalfEdges</a>(); }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00569">TriangulatedSurface.h:569</a></div></div>
+<div class="fragment"><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>.<a class="code" href="classDGtal_1_1HalfEdgeDataStructure.html#afd331c78e594c822a8e30af610ceec08">nbHalfEdges</a>(); }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00661">TriangulatedSurface.h:661</a></div></div>
 <div class="ttc" id="classDGtal_1_1HalfEdgeDataStructure_html_afd331c78e594c822a8e30af610ceec08"><div class="ttname"><a href="classDGtal_1_1HalfEdgeDataStructure.html#afd331c78e594c822a8e30af610ceec08">DGtal::HalfEdgeDataStructure::nbHalfEdges</a></div><div class="ttdeci">Size nbHalfEdges() const</div><div class="ttdef"><b>Definition:</b> <a href="HalfEdgeDataStructure_8h_source.html#l00371">HalfEdgeDataStructure.h:371</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1768,13 +1952,13 @@ template&lt;typename TPoint&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the number of unoriented edges in the structure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00261">261</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00266">266</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00569">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>, and <a class="el" href="HalfEdgeDataStructure_8h_source.html#l00377">DGtal::HalfEdgeDataStructure::nbEdges()</a>.</p>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00661">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>, and <a class="el" href="HalfEdgeDataStructure_8h_source.html#l00377">DGtal::HalfEdgeDataStructure::nbEdges()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TriangulatedSurface_8h_source.html#l00295">DGtal::TriangulatedSurface&lt; TPoint &gt;::makeEdgeMap()</a>, and <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>.<a class="code" href="classDGtal_1_1HalfEdgeDataStructure.html#ab74db8ed9556a1702ac4c396142bf8be">nbEdges</a>(); }</div><div class="ttc" id="classDGtal_1_1HalfEdgeDataStructure_html_ab74db8ed9556a1702ac4c396142bf8be"><div class="ttname"><a href="classDGtal_1_1HalfEdgeDataStructure.html#ab74db8ed9556a1702ac4c396142bf8be">DGtal::HalfEdgeDataStructure::nbEdges</a></div><div class="ttdeci">Size nbEdges() const</div><div class="ttdef"><b>Definition:</b> <a href="HalfEdgeDataStructure_8h_source.html#l00377">HalfEdgeDataStructure.h:377</a></div></div>
-<div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00569">TriangulatedSurface.h:569</a></div></div>
+<p class="reference">Referenced by <a class="el" href="TriangulatedSurface_8h_source.html#l00300">DGtal::TriangulatedSurface&lt; TPoint &gt;::makeEdgeMap()</a>, and <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>.<a class="code" href="classDGtal_1_1HalfEdgeDataStructure.html#ab74db8ed9556a1702ac4c396142bf8be">nbEdges</a>(); }</div><div class="ttc" id="classDGtal_1_1HalfEdgeDataStructure_html_ab74db8ed9556a1702ac4c396142bf8be"><div class="ttname"><a href="classDGtal_1_1HalfEdgeDataStructure.html#ab74db8ed9556a1702ac4c396142bf8be">DGtal::HalfEdgeDataStructure::nbEdges</a></div><div class="ttdeci">Size nbEdges() const</div><div class="ttdef"><b>Definition:</b> <a href="HalfEdgeDataStructure_8h_source.html#l00377">HalfEdgeDataStructure.h:377</a></div></div>
+<div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00661">TriangulatedSurface.h:661</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1804,13 +1988,13 @@ template&lt;typename TPoint&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the number of faces in the structure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00264">264</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00269">269</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00569">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>, and <a class="el" href="HalfEdgeDataStructure_8h_source.html#l00380">DGtal::HalfEdgeDataStructure::nbFaces()</a>.</p>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00661">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>, and <a class="el" href="HalfEdgeDataStructure_8h_source.html#l00380">DGtal::HalfEdgeDataStructure::nbFaces()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sphereCotangentLaplaceOperator_8cpp_source.html#l00089">laplacian()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00310">DGtal::TriangulatedSurface&lt; TPoint &gt;::makeFaceMap()</a>, and <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>.<a class="code" href="classDGtal_1_1HalfEdgeDataStructure.html#a78346a7e95e16ac104da741d793ecd08">nbFaces</a>(); }</div><div class="ttc" id="classDGtal_1_1HalfEdgeDataStructure_html_a78346a7e95e16ac104da741d793ecd08"><div class="ttname"><a href="classDGtal_1_1HalfEdgeDataStructure.html#a78346a7e95e16ac104da741d793ecd08">DGtal::HalfEdgeDataStructure::nbFaces</a></div><div class="ttdeci">Size nbFaces() const</div><div class="ttdef"><b>Definition:</b> <a href="HalfEdgeDataStructure_8h_source.html#l00380">HalfEdgeDataStructure.h:380</a></div></div>
-<div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00569">TriangulatedSurface.h:569</a></div></div>
+<p class="reference">Referenced by <a class="el" href="sphereCotangentLaplaceOperator_8cpp_source.html#l00089">laplacian()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00315">DGtal::TriangulatedSurface&lt; TPoint &gt;::makeFaceMap()</a>, and <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>.<a class="code" href="classDGtal_1_1HalfEdgeDataStructure.html#a78346a7e95e16ac104da741d793ecd08">nbFaces</a>(); }</div><div class="ttc" id="classDGtal_1_1HalfEdgeDataStructure_html_a78346a7e95e16ac104da741d793ecd08"><div class="ttname"><a href="classDGtal_1_1HalfEdgeDataStructure.html#a78346a7e95e16ac104da741d793ecd08">DGtal::HalfEdgeDataStructure::nbFaces</a></div><div class="ttdeci">Size nbFaces() const</div><div class="ttdef"><b>Definition:</b> <a href="HalfEdgeDataStructure_8h_source.html#l00380">HalfEdgeDataStructure.h:380</a></div></div>
+<div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00661">TriangulatedSurface.h:661</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1840,12 +2024,12 @@ template&lt;typename TPoint&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the number of vertices in the structure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00258">258</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00263">263</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00569">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>, and <a class="el" href="HalfEdgeDataStructure_8h_source.html#l00374">DGtal::HalfEdgeDataStructure::nbVertices()</a>.</p>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00661">DGtal::TriangulatedSurface&lt; TPoint &gt;::myHEDS</a>, and <a class="el" href="HalfEdgeDataStructure_8h_source.html#l00374">DGtal::HalfEdgeDataStructure::nbVertices()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TriangulatedSurface_8h_source.html#l00397">DGtal::TriangulatedSurface&lt; TPoint &gt;::end()</a>, <a class="el" href="sphereCotangentLaplaceOperator_8cpp_source.html#l00089">laplacian()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00280">DGtal::TriangulatedSurface&lt; TPoint &gt;::makeVertexMap()</a>, and <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>.<a class="code" href="classDGtal_1_1HalfEdgeDataStructure.html#a2c9593c989fc2aad6a2a6b857552c67e">nbVertices</a>(); }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00569">TriangulatedSurface.h:569</a></div></div>
+<p class="reference">Referenced by <a class="el" href="TriangulatedSurface_8h_source.html#l00402">DGtal::TriangulatedSurface&lt; TPoint &gt;::end()</a>, <a class="el" href="sphereCotangentLaplaceOperator_8cpp_source.html#l00089">laplacian()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00285">DGtal::TriangulatedSurface&lt; TPoint &gt;::makeVertexMap()</a>, and <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">myHEDS</a>.<a class="code" href="classDGtal_1_1HalfEdgeDataStructure.html#a2c9593c989fc2aad6a2a6b857552c67e">nbVertices</a>(); }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a2fa08435e47fb83ff825c624b111b4da"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a2fa08435e47fb83ff825c624b111b4da">DGtal::TriangulatedSurface::myHEDS</a></div><div class="ttdeci">HalfEdgeDataStructure myHEDS</div><div class="ttdoc">The half-edge data structure that stores the topology of the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00661">TriangulatedSurface.h:661</a></div></div>
 <div class="ttc" id="classDGtal_1_1HalfEdgeDataStructure_html_a2c9593c989fc2aad6a2a6b857552c67e"><div class="ttname"><a href="classDGtal_1_1HalfEdgeDataStructure.html#a2c9593c989fc2aad6a2a6b857552c67e">DGtal::HalfEdgeDataStructure::nbVertices</a></div><div class="ttdeci">Size nbVertices() const</div><div class="ttdef"><b>Definition:</b> <a href="HalfEdgeDataStructure_8h_source.html#l00374">HalfEdgeDataStructure.h:374</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -2021,13 +2205,13 @@ template&lt;typename TPoint&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>the property map stored in the surface that defines vertex positions. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The returned map only references what is stored in the surface. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00273">273</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00278">278</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00571">DGtal::TriangulatedSurface&lt; TPoint &gt;::myPositions</a>.</p>
+<p class="reference">References <a class="el" href="TriangulatedSurface_8h_source.html#l00663">DGtal::TriangulatedSurface&lt; TPoint &gt;::myPositions</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    {</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#ac3620c5b7d2c1515fc00820117673142">PositionsMap</a>( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a6a0282559c1ab5173f1eca66a83b1321">myPositions</a> );</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a6a0282559c1ab5173f1eca66a83b1321"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a6a0282559c1ab5173f1eca66a83b1321">DGtal::TriangulatedSurface::myPositions</a></div><div class="ttdeci">PositionsStorage myPositions</div><div class="ttdoc">Stores the information for each Vertex. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00571">TriangulatedSurface.h:571</a></div></div>
-<div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_ac3620c5b7d2c1515fc00820117673142"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#ac3620c5b7d2c1515fc00820117673142">DGtal::TriangulatedSurface::PositionsMap</a></div><div class="ttdeci">IndexedPropertyMap&lt; Point &gt; PositionsMap</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00210">TriangulatedSurface.h:210</a></div></div>
+<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    {</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#ac3620c5b7d2c1515fc00820117673142">PositionsMap</a>( *<span class="keyword">this</span>, <a class="code" href="classDGtal_1_1TriangulatedSurface.html#a6a0282559c1ab5173f1eca66a83b1321">myPositions</a> );</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_a6a0282559c1ab5173f1eca66a83b1321"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#a6a0282559c1ab5173f1eca66a83b1321">DGtal::TriangulatedSurface::myPositions</a></div><div class="ttdeci">PositionsStorage myPositions</div><div class="ttdoc">Stores the information for each Vertex. </div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00663">TriangulatedSurface.h:663</a></div></div>
+<div class="ttc" id="classDGtal_1_1TriangulatedSurface_html_ac3620c5b7d2c1515fc00820117673142"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#ac3620c5b7d2c1515fc00820117673142">DGtal::TriangulatedSurface::PositionsMap</a></div><div class="ttdeci">IndexedPropertyMap&lt; Point &gt; PositionsMap</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00211">TriangulatedSurface.h:211</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2076,6 +2260,48 @@ template&lt;typename TPoint&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>the number of vertices of the surface. </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
+
+</div>
+</div>
+<a id="af77cd7a387366b836856de2c5af5cabb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77cd7a387366b836856de2c5af5cabb">&#9670;&nbsp;</a></span>split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TPoint&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#af61ebc616e280c5e26666d816cc2449b">Vertex</a> <a class="el" href="classDGtal_1_1TriangulatedSurface.html">DGtal::TriangulatedSurface</a>&lt; TPoint &gt;::split </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a416550d170980be3b5f7a58b6936df19">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Splits the edge specified by the arc <em>a</em>. The two faces incident to <em>a</em> are split into four faces.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>any valid arc. </td></tr>
+    <tr><td class="paramname">data</td><td>the position for the newly created vertex.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of the created vertex.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>the edge must be flippable, <code>isFlippable( a ) == true</code> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a2477990af39430f0a721eaf15d43295b">isFlippable</a></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Time complexity is O(1). </dd></dl>
 
 </div>
 </div>
@@ -2133,6 +2359,38 @@ template&lt;typename TPoint&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>the sequence of vertices that touches this face. The order follows the order of incident arcs (the range size should be 3). </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="sphereCotangentLaplaceOperator_8cpp_source.html#l00089">laplacian()</a>, and <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00073">SCENARIO()</a>.</p>
+
+</div>
+</div>
+<a id="a05f0d7d793674bd131ae8ee39b5d872f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f0d7d793674bd131ae8ee39b5d872f">&#9670;&nbsp;</a></span>verticesOfFacesAroundArc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TPoint&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1TriangulatedSurface.html#a1c42f23af141f67c2192274825a10130">VertexRange</a> <a class="el" href="classDGtal_1_1TriangulatedSurface.html">DGtal::TriangulatedSurface</a>&lt; TPoint &gt;::verticesOfFacesAroundArc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">Arc</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>any arc.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>either the four vertices of the two triangles bordering <em>a</em>, or the three vertices if this is an edge on the boundary.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>O(1) operation</dd>
+<dd>
+Order is, if arc a is (s,t), and a belongs to triangle (s,t,u) and opposite arc belongs to triangle (t,s,v): (t,u,s,v), (t,u,s), (t,s,v) </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="testTriangulatedSurface_8cpp_source.html#l00183">SCENARIO()</a>.</p>
 
 </div>
 </div>
@@ -2261,7 +2519,7 @@ template&lt;typename TPoint&gt; </div>
 
 <p>Indicates if the half-edge structure has been created/updated. </p>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00567">567</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00659">659</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -2289,9 +2547,9 @@ template&lt;typename TPoint&gt; </div>
 
 <p>The half-edge data structure that stores the topology of the mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00569">569</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00661">661</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TriangulatedSurface_8h_source.html#l00269">DGtal::TriangulatedSurface&lt; TPoint &gt;::Euler()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00249">DGtal::TriangulatedSurface&lt; TPoint &gt;::heds()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00255">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbArcs()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00261">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbEdges()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00264">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbFaces()</a>, and <a class="el" href="TriangulatedSurface_8h_source.html#l00258">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbVertices()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TriangulatedSurface_8h_source.html#l00274">DGtal::TriangulatedSurface&lt; TPoint &gt;::Euler()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00251">DGtal::TriangulatedSurface&lt; TPoint &gt;::heds()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00260">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbArcs()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00266">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbEdges()</a>, <a class="el" href="TriangulatedSurface_8h_source.html#l00269">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbFaces()</a>, and <a class="el" href="TriangulatedSurface_8h_source.html#l00263">DGtal::TriangulatedSurface&lt; TPoint &gt;::nbVertices()</a>.</p>
 
 </div>
 </div>
@@ -2319,9 +2577,9 @@ template&lt;typename TPoint&gt; </div>
 
 <p>Stores the information for each Vertex. </p>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00571">571</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00663">663</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TriangulatedSurface_8h_source.html#l00273">DGtal::TriangulatedSurface&lt; TPoint &gt;::positions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TriangulatedSurface_8h_source.html#l00278">DGtal::TriangulatedSurface&lt; TPoint &gt;::positions()</a>.</p>
 
 </div>
 </div>
@@ -2349,7 +2607,7 @@ template&lt;typename TPoint&gt; </div>
 
 <p>Stores the triangles. </p>
 
-<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00573">573</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TriangulatedSurface_8h_source.html#l00665">665</a> of file <a class="el" href="TriangulatedSurface_8h_source.html">TriangulatedSurface.h</a>.</p>
 
 </div>
 </div>
@@ -2359,7 +2617,7 @@ template&lt;typename TPoint&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 26 2019 14:12:47 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 29 2019 20:35:51 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
