@@ -92,8 +92,12 @@ Introduction</h1>
 \[ d_{L_p} (u,v) = \left ( \sum_{i=0}^d w_i|u_i-v_i |^p \right )^{\frac{1}{p}}\]
 </p>
 <p> can be considered.</p>
-<p>In <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a>, we have chosen to implement such volumetric tools such that the underlying metric could be specified independently.</p>
-<p>For a complete discussion of metric concepts in <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a>, please refer to <a class="el" href="moduleMetrics.html">Metric Spaces, Digital Metric Spaces and Related Concepts</a>.</p>
+<p>In <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a>, we have chosen to implement such volumetric tools such that the underlying metric could be specified independently. As an example, we illustrate the distance maps from a single source point for various metrics in 2D using the generic <a class="el" href="classDGtal_1_1DistanceTransformation.html" title="Aim: Implementation of the linear in time distance transformation for separable metrics. ">DistanceTransformation</a> method:</p>
+<div class="image">
+<img src="DTmetrics-small.png" alt="DTmetrics-small.png"/>
+<div class="caption">
+Distance maps for metrics L_1, L_2, L_4, L_80 and Chamfer masks M_{3−4} and M_{5−7−11}.</div></div>
+ For a complete discussion of metric concepts in <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a>, please refer to <a class="el" href="moduleMetrics.html">Metric Spaces, Digital Metric Spaces and Related Concepts</a>.</p>
 <h1><a class="anchor" id="voronoiSect"></a>
 Digital Voronoi Diagram Computation</h1>
 <p>The generic distance transformation is based on a prior Voronoi map construction. Indeed, if we compute the Voronoi diagram of background points, the distance transformation at an object point is exactly its distance to the site associated with the Voronoi cell it belongs to.</p>
@@ -243,7 +247,7 @@ Voronoi map as vectors.</div></div>
 </center> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 13 2019 14:17:20 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2019 15:54:43 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
