@@ -130,6 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a064658802f45654fd80ff1645e88dfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacca705b0cad88ecd974eac1187580be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SimpleMatrix.html#aacca705b0cad88ecd974eac1187580be">SimpleMatrix</a> (const <a class="el" href="classDGtal_1_1SimpleMatrix.html#a3281dbb73674d7199edd34cf6fc2564f">Self</a> &amp;other)</td></tr>
 <tr class="separator:aacca705b0cad88ecd974eac1187580be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd9fed6d4e8d5d2f352b0b19c7dd1e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1SimpleMatrix.html">SimpleMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SimpleMatrix.html#a8fd9fed6d4e8d5d2f352b0b19c7dd1e9">operator=</a> (const <a class="el" href="classDGtal_1_1SimpleMatrix.html#a3281dbb73674d7199edd34cf6fc2564f">Self</a> &amp;other)=default</td></tr>
+<tr class="separator:a8fd9fed6d4e8d5d2f352b0b19c7dd1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3caa17eb0ff9fa9464f6591b5e596d3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SimpleMatrix.html#a3caa17eb0ff9fa9464f6591b5e596d3c">clear</a> ()</td></tr>
 <tr class="separator:a3caa17eb0ff9fa9464f6591b5e596d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d5f7783f9989120535b68caa47a393d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1SimpleMatrix.html#a9d5f7783f9989120535b68caa47a393d">constant</a> (const <a class="el" href="classDGtal_1_1SimpleMatrix.html#a28166da3007be1831076a093cd90ac44">Component</a> &amp;aScalar)</td></tr>
@@ -622,8 +624,8 @@ template&lt;typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN&gt; </
 </div><div class="memdoc">
 <p>Get number of columns. </p>
 
-<p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00173">173</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1SimpleMatrix.html#a7eb6090537206d1dfd1e6e00d25769d2">N</a>; }</div><div class="ttc" id="classDGtal_1_1SimpleMatrix_html_a7eb6090537206d1dfd1e6e00d25769d2"><div class="ttname"><a href="classDGtal_1_1SimpleMatrix.html#a7eb6090537206d1dfd1e6e00d25769d2">DGtal::SimpleMatrix::N</a></div><div class="ttdeci">static const DGtal::Dimension N</div><div class="ttdef"><b>Definition:</b> <a href="SimpleMatrix_8h_source.html#l00081">SimpleMatrix.h:81</a></div></div>
+<p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00180">180</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1SimpleMatrix.html#a7eb6090537206d1dfd1e6e00d25769d2">N</a>; }</div><div class="ttc" id="classDGtal_1_1SimpleMatrix_html_a7eb6090537206d1dfd1e6e00d25769d2"><div class="ttname"><a href="classDGtal_1_1SimpleMatrix.html#a7eb6090537206d1dfd1e6e00d25769d2">DGtal::SimpleMatrix::N</a></div><div class="ttdeci">static const DGtal::Dimension N</div><div class="ttdef"><b>Definition:</b> <a href="SimpleMatrix_8h_source.html#l00081">SimpleMatrix.h:81</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -727,7 +729,7 @@ template&lt;typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN&gt; </
 <p>Set values to create identity matrix</p>
 <dl class="section pre"><dt>Precondition</dt><dd>the matrix is a square one. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="SimpleMatrix_8h_source.html#l00145">DGtal::SimpleMatrix&lt; double, 3, 3 &gt;::setIdentity()</a>, and <a class="el" href="TensorVotingFeatureExtraction_8h_source.html#l00096">DGtal::functors::TensorVotingFeatureExtraction&lt; TSurfel, TEmbedder &gt;::TensorVotingFeatureExtraction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SimpleMatrix_8h_source.html#l00152">DGtal::SimpleMatrix&lt; double, 3, 3 &gt;::setIdentity()</a>, and <a class="el" href="TensorVotingFeatureExtraction_8h_source.html#l00096">DGtal::functors::TensorVotingFeatureExtraction&lt; TSurfel, TEmbedder &gt;::TensorVotingFeatureExtraction()</a>.</p>
 
 </div>
 </div>
@@ -1169,8 +1171,43 @@ template&lt;typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN&gt; </
 
 </div>
 </div>
+<a id="a8fd9fed6d4e8d5d2f352b0b19c7dd1e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd9fed6d4e8d5d2f352b0b19c7dd1e9">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1SimpleMatrix.html">SimpleMatrix</a>&amp; <a class="el" href="classDGtal_1_1SimpleMatrix.html">DGtal::SimpleMatrix</a>&lt; TComponent, TM, TN &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1SimpleMatrix.html#a3281dbb73674d7199edd34cf6fc2564f">Self</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Default assignment operator.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>the object to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af5e025fb588807857becae19115e4840"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5e025fb588807857becae19115e4840">&#9670;&nbsp;</a></span>operator=()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e025fb588807857becae19115e4840">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1289,8 +1326,8 @@ template&lt;typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN&gt; </
 </div><div class="memdoc">
 <p>Get number of rows. </p>
 
-<p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00159">159</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1SimpleMatrix.html#a34bf09b309ead5a6249afee963c71250">M</a>; }</div><div class="ttc" id="classDGtal_1_1SimpleMatrix_html_a34bf09b309ead5a6249afee963c71250"><div class="ttname"><a href="classDGtal_1_1SimpleMatrix.html#a34bf09b309ead5a6249afee963c71250">DGtal::SimpleMatrix::M</a></div><div class="ttdeci">static const DGtal::Dimension M</div><div class="ttdef"><b>Definition:</b> <a href="SimpleMatrix_8h_source.html#l00080">SimpleMatrix.h:80</a></div></div>
+<p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00166">166</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1SimpleMatrix.html#a34bf09b309ead5a6249afee963c71250">M</a>; }</div><div class="ttc" id="classDGtal_1_1SimpleMatrix_html_a34bf09b309ead5a6249afee963c71250"><div class="ttname"><a href="classDGtal_1_1SimpleMatrix.html#a34bf09b309ead5a6249afee963c71250">DGtal::SimpleMatrix::M</a></div><div class="ttdeci">static const DGtal::Dimension M</div><div class="ttdef"><b>Definition:</b> <a href="SimpleMatrix_8h_source.html#l00080">SimpleMatrix.h:80</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1393,8 +1430,8 @@ template&lt;typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00145">145</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{ <a class="code" href="classDGtal_1_1SimpleMatrix.html#a2ddf68437c5b851b68b19a07fd99989a">identity</a>(); }</div><div class="ttc" id="classDGtal_1_1SimpleMatrix_html_a2ddf68437c5b851b68b19a07fd99989a"><div class="ttname"><a href="classDGtal_1_1SimpleMatrix.html#a2ddf68437c5b851b68b19a07fd99989a">DGtal::SimpleMatrix::identity</a></div><div class="ttdeci">void identity()</div></div>
+<p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00152">152</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{ <a class="code" href="classDGtal_1_1SimpleMatrix.html#a2ddf68437c5b851b68b19a07fd99989a">identity</a>(); }</div><div class="ttc" id="classDGtal_1_1SimpleMatrix_html_a2ddf68437c5b851b68b19a07fd99989a"><div class="ttname"><a href="classDGtal_1_1SimpleMatrix.html#a2ddf68437c5b851b68b19a07fd99989a">DGtal::SimpleMatrix::identity</a></div><div class="ttdeci">void identity()</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1444,7 +1481,7 @@ template&lt;typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN&gt; </
 
 <p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00080">80</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SimpleMatrix_8h_source.html#l00159">DGtal::SimpleMatrix&lt; double, 3, 3 &gt;::rows()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SimpleMatrix_8h_source.html#l00166">DGtal::SimpleMatrix&lt; double, 3, 3 &gt;::rows()</a>.</p>
 
 </div>
 </div>
@@ -1471,7 +1508,7 @@ template&lt;typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN&gt; </
 </div><div class="memdoc">
 <p>Static computation of cofactor coefficients </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000058">Todo:</a></b></dt><dd>should be static </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00419">419</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00426">426</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
 
 </div>
 </div>
@@ -1499,7 +1536,7 @@ template&lt;typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN&gt; </
 
 <p>Matrix values containers. </p>
 
-<p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00415">415</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00422">422</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
 
 </div>
 </div>
@@ -1527,7 +1564,7 @@ template&lt;typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN&gt; </
 
 <p class="definition">Definition at line <a class="el" href="SimpleMatrix_8h_source.html#l00081">81</a> of file <a class="el" href="SimpleMatrix_8h_source.html">SimpleMatrix.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SimpleMatrix_8h_source.html#l00173">DGtal::SimpleMatrix&lt; double, 3, 3 &gt;::cols()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SimpleMatrix_8h_source.html#l00180">DGtal::SimpleMatrix&lt; double, 3, 3 &gt;::cols()</a>.</p>
 
 </div>
 </div>
@@ -1537,7 +1574,7 @@ template&lt;typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN&gt; </
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 13 2019 15:54:54 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 24 2019 08:13:49 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

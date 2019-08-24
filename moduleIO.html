@@ -202,7 +202,7 @@ Image Readers</h2>
 Details on the Vol/Longvol formats</h2>
 <p>The Vol and Longvol formats are described on the simplevol project website (<a href="http://liris.cnrs.fr/david.coeurjolly/code/simplevol.html">http://liris.cnrs.fr/david.coeurjolly/code/simplevol.html</a>). Basically, the format consists in:</p>
 <ul>
-<li>an ASCII header with for instance the image size and the Vol format version, ending with a ".". Mandatory information are the size (<em>X</em>, <em>Y</em>, <em>Z</em>) and the format version (<em>Version</em>). E.g. <div class="fragment"><div class="line">Center-X: 5</div><div class="line">Center-Y: 5</div><div class="line">Center-Z: 5</div><div class="line">X: 11</div><div class="line">Y: 11</div><div class="line">Z: 11</div><div class="line">Voxel-Size: 1</div><div class="line">Alpha-Color: 0</div><div class="line">Voxel-Endian: 0</div><div class="line">Int-Endian: 0123</div><div class="line">Version: 3</div><div class="line">.</div></div><!-- fragment --></li>
+<li>an ASCII header with for instance the image size and the Vol format version, ending with a ".". Mandatory information are the size (<em>X</em>, <em>Y</em>, <em>Z</em>) and the format version (<em>Version</em>). E.g. <div class="fragment"><div class="line">Center-X: 5</div><div class="line">Center-Y: 5</div><div class="line">Center-Z: 5</div><div class="line">X: 11</div><div class="line">Y: 11</div><div class="line">Z: 11</div><div class="line">Voxel-<a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a>: 1</div><div class="line">Alpha-Color: 0</div><div class="line">Voxel-Endian: 0</div><div class="line">Int-Endian: 0123</div><div class="line">Version: 3</div><div class="line">.</div></div><!-- fragment --></li>
 <li>a binary chunck with linearized image values. In "Version 2" of Vol and Longvol, the binary chunck is simply a raw export of image values (little endian for Longvol entries). In "Version 3", the binary values are compressed using zlib (default version when using the <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a> reader and writer).</li>
 </ul>
 <p>If you want to export an image to "Version 2" Vol or a Longvol, just add a <em>false</em> flag when exporting. For instance:</p>
@@ -271,7 +271,7 @@ Visualization in PDF of an exported Digital object.</div></div>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 13 2019 15:54:43 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 24 2019 08:13:39 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
