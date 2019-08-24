@@ -135,6 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2653df0d4035e67be3ab5555c7698b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1016c9e27574c6e52633ebc050a54467"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Ball2D.html#aa7f055f5fedb97e14a1e739efbb58e2d">RealPoint2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Ball2D.html#a1016c9e27574c6e52633ebc050a54467">center</a> () const</td></tr>
 <tr class="separator:a1016c9e27574c6e52633ebc050a54467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02ab6a2daa721224ed47bebbe6fed3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Ball2D.html#af02ab6a2daa721224ed47bebbe6fed3c">moveTo</a> (const <a class="el" href="classDGtal_1_1Ball2D.html#aa7f055f5fedb97e14a1e739efbb58e2d">RealPoint2D</a> &amp;newCenter)</td></tr>
+<tr class="separator:af02ab6a2daa721224ed47bebbe6fed3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab7de1a11f6abd098c29249f09fcb06"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Ball2D.html#a0ab7de1a11f6abd098c29249f09fcb06">parameter</a> (const <a class="el" href="classDGtal_1_1Ball2D.html#aa7f055f5fedb97e14a1e739efbb58e2d">RealPoint2D</a> &amp;p) const</td></tr>
 <tr class="separator:a0ab7de1a11f6abd098c29249f09fcb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37c96d760b72f39a68e8a40a3cb9b63f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1Ball2D.html#aa7f055f5fedb97e14a1e739efbb58e2d">RealPoint2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Ball2D.html#a37c96d760b72f39a68e8a40a3cb9b63f">x</a> (const double t) const</td></tr>
@@ -196,7 +198,7 @@ class DGtal::Ball2D&lt; TSpace &gt;</h3>
 
 <p>Aim: Model of the concept StarShaped represents any circle in the plane. </p>
 <p>Description of template class '<a class="el" href="classDGtal_1_1Ball2D.html" title="Aim: Model of the concept StarShaped represents any circle in the plane. ">Ball2D</a>' </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="geometry_2curves_2estimation_2exampleCurvature_8cpp-example.html#_a40">geometry/curves/estimation/exampleCurvature.cpp</a>, <a class="el" href="geometry_2tools_2exampleAlphaShape_8cpp-example.html#_a8">geometry/tools/exampleAlphaShape.cpp</a>, and <a class="el" href="geometry_2tools_2exampleConvexHull2D_8cpp-example.html#_a8">geometry/tools/exampleConvexHull2D.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dec_2exampleHeatLaplace_8cpp-example.html#_a44">dec/exampleHeatLaplace.cpp</a>, <a class="el" href="geometry_2curves_2estimation_2exampleCurvature_8cpp-example.html#_a40">geometry/curves/estimation/exampleCurvature.cpp</a>, <a class="el" href="geometry_2tools_2exampleAlphaShape_8cpp-example.html#_a8">geometry/tools/exampleAlphaShape.cpp</a>, and <a class="el" href="geometry_2tools_2exampleConvexHull2D_8cpp-example.html#_a8">geometry/tools/exampleConvexHull2D.cpp</a>.</dd>
 </dl>
 <p class="definition">Definition at line <a class="el" href="Ball2D_8h_source.html#l00060">60</a> of file <a class="el" href="Ball2D_8h_source.html">Ball2D.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -470,8 +472,8 @@ template&lt;typename TSpace&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Ball2D_8h_source.html#l00122">122</a> of file <a class="el" href="Ball2D_8h_source.html">Ball2D.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Ball2D_8h_source.html#l00171">DGtal::Ball2D&lt; TSpace &gt;::myCenter</a>.</p>
-<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">myCenter</a>;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1Ball2D_html_af006d2c1b25c6e1498f189e14b6baff0"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">DGtal::Ball2D::myCenter</a></div><div class="ttdeci">RealPoint2D myCenter</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00171">Ball2D.h:171</a></div></div>
+<p class="reference">References <a class="el" href="Ball2D_8h_source.html#l00181">DGtal::Ball2D&lt; TSpace &gt;::myCenter</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">myCenter</a>;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1Ball2D_html_af006d2c1b25c6e1498f189e14b6baff0"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">DGtal::Ball2D::myCenter</a></div><div class="ttdeci">RealPoint2D myCenter</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00181">Ball2D.h:181</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -505,12 +507,12 @@ template&lt;typename TSpace&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Ball2D_8h_source.html#l00105">105</a> of file <a class="el" href="Ball2D_8h_source.html">Ball2D.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Ball2D_8h_source.html#l00171">DGtal::Ball2D&lt; TSpace &gt;::myCenter</a>, and <a class="el" href="Ball2D_8h_source.html#l00166">DGtal::Ball2D&lt; TSpace &gt;::myRadius</a>.</p>
+<p class="reference">References <a class="el" href="Ball2D_8h_source.html#l00181">DGtal::Ball2D&lt; TSpace &gt;::myCenter</a>, and <a class="el" href="Ball2D_8h_source.html#l00176">DGtal::Ball2D&lt; TSpace &gt;::myRadius</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="exampleAlphaShape_8cpp_source.html#l00123">alphaShape()</a>, and <a class="el" href="exampleConvexHull2D_8cpp_source.html#l00122">convexHull()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Ball2D.html#aa7f055f5fedb97e14a1e739efbb58e2d">RealPoint2D</a>(<a class="code" href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">myCenter</a>[0] - <a class="code" href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">myRadius</a>, <a class="code" href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">myCenter</a>[1] - <a class="code" href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">myRadius</a>);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1Ball2D_html_af006d2c1b25c6e1498f189e14b6baff0"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">DGtal::Ball2D::myCenter</a></div><div class="ttdeci">RealPoint2D myCenter</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00171">Ball2D.h:171</a></div></div>
+<p class="reference">Referenced by <a class="el" href="exampleAlphaShape_8cpp_source.html#l00123">alphaShape()</a>, <a class="el" href="exampleConvexHull2D_8cpp_source.html#l00122">convexHull()</a>, and <a class="el" href="testHeatLaplace_8cpp_source.html#l00071">laplace_sphere()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Ball2D.html#aa7f055f5fedb97e14a1e739efbb58e2d">RealPoint2D</a>(<a class="code" href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">myCenter</a>[0] - <a class="code" href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">myRadius</a>, <a class="code" href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">myCenter</a>[1] - <a class="code" href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">myRadius</a>);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1Ball2D_html_af006d2c1b25c6e1498f189e14b6baff0"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">DGtal::Ball2D::myCenter</a></div><div class="ttdeci">RealPoint2D myCenter</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00181">Ball2D.h:181</a></div></div>
 <div class="ttc" id="classDGtal_1_1Ball2D_html_aa7f055f5fedb97e14a1e739efbb58e2d"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#aa7f055f5fedb97e14a1e739efbb58e2d">DGtal::Ball2D::RealPoint2D</a></div><div class="ttdeci">Space::RealPoint RealPoint2D</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00067">Ball2D.h:67</a></div></div>
-<div class="ttc" id="classDGtal_1_1Ball2D_html_a5a40541b9e68cca2878fc05783720513"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">DGtal::Ball2D::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00166">Ball2D.h:166</a></div></div>
+<div class="ttc" id="classDGtal_1_1Ball2D_html_a5a40541b9e68cca2878fc05783720513"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">DGtal::Ball2D::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00176">Ball2D.h:176</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -544,12 +546,12 @@ template&lt;typename TSpace&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Ball2D_8h_source.html#l00114">114</a> of file <a class="el" href="Ball2D_8h_source.html">Ball2D.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Ball2D_8h_source.html#l00171">DGtal::Ball2D&lt; TSpace &gt;::myCenter</a>, and <a class="el" href="Ball2D_8h_source.html#l00166">DGtal::Ball2D&lt; TSpace &gt;::myRadius</a>.</p>
+<p class="reference">References <a class="el" href="Ball2D_8h_source.html#l00181">DGtal::Ball2D&lt; TSpace &gt;::myCenter</a>, and <a class="el" href="Ball2D_8h_source.html#l00176">DGtal::Ball2D&lt; TSpace &gt;::myRadius</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="exampleAlphaShape_8cpp_source.html#l00123">alphaShape()</a>, and <a class="el" href="exampleConvexHull2D_8cpp_source.html#l00122">convexHull()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Ball2D.html#aa7f055f5fedb97e14a1e739efbb58e2d">RealPoint2D</a>(<a class="code" href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">myCenter</a>[0] + <a class="code" href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">myRadius</a>, <a class="code" href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">myCenter</a>[1] + <a class="code" href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">myRadius</a>);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1Ball2D_html_af006d2c1b25c6e1498f189e14b6baff0"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">DGtal::Ball2D::myCenter</a></div><div class="ttdeci">RealPoint2D myCenter</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00171">Ball2D.h:171</a></div></div>
+<p class="reference">Referenced by <a class="el" href="exampleAlphaShape_8cpp_source.html#l00123">alphaShape()</a>, <a class="el" href="exampleConvexHull2D_8cpp_source.html#l00122">convexHull()</a>, and <a class="el" href="testHeatLaplace_8cpp_source.html#l00071">laplace_sphere()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Ball2D.html#aa7f055f5fedb97e14a1e739efbb58e2d">RealPoint2D</a>(<a class="code" href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">myCenter</a>[0] + <a class="code" href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">myRadius</a>, <a class="code" href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">myCenter</a>[1] + <a class="code" href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">myRadius</a>);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1Ball2D_html_af006d2c1b25c6e1498f189e14b6baff0"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">DGtal::Ball2D::myCenter</a></div><div class="ttdeci">RealPoint2D myCenter</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00181">Ball2D.h:181</a></div></div>
 <div class="ttc" id="classDGtal_1_1Ball2D_html_aa7f055f5fedb97e14a1e739efbb58e2d"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#aa7f055f5fedb97e14a1e739efbb58e2d">DGtal::Ball2D::RealPoint2D</a></div><div class="ttdeci">Space::RealPoint RealPoint2D</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00067">Ball2D.h:67</a></div></div>
-<div class="ttc" id="classDGtal_1_1Ball2D_html_a5a40541b9e68cca2878fc05783720513"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">DGtal::Ball2D::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00166">Ball2D.h:166</a></div></div>
+<div class="ttc" id="classDGtal_1_1Ball2D_html_a5a40541b9e68cca2878fc05783720513"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#a5a40541b9e68cca2878fc05783720513">DGtal::Ball2D::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00176">Ball2D.h:176</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -571,6 +573,47 @@ template&lt;typename TSpace&gt; </div>
 </div><div class="memdoc">
 <p>Checks the validity/consistency of the object. </p><dl class="section return"><dt>Returns</dt><dd>'true' if the object is valid, 'false' otherwise. </dd></dl>
 
+</div>
+</div>
+<a id="af02ab6a2daa721224ed47bebbe6fed3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02ab6a2daa721224ed47bebbe6fed3c">&#9670;&nbsp;</a></span>moveTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSpace&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDGtal_1_1Ball2D.html">DGtal::Ball2D</a>&lt; TSpace &gt;::moveTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1Ball2D.html#aa7f055f5fedb97e14a1e739efbb58e2d">RealPoint2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>newCenter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Modify the shape center </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newCenter</td><td>the new center position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classDGtal_1_1StarShaped2D.html#a666594ee4c376b08be0fd38c7c995e3c">DGtal::StarShaped2D&lt; TSpace &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Ball2D_8h_source.html#l00132">132</a> of file <a class="el" href="Ball2D_8h_source.html">Ball2D.h</a>.</p>
+
+<p class="reference">References <a class="el" href="Ball2D_8h_source.html#l00181">DGtal::Ball2D&lt; TSpace &gt;::myCenter</a>.</p>
+<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <a class="code" href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">myCenter</a> = newCenter;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1Ball2D_html_af006d2c1b25c6e1498f189e14b6baff0"><div class="ttname"><a href="classDGtal_1_1Ball2D.html#af006d2c1b25c6e1498f189e14b6baff0">DGtal::Ball2D::myCenter</a></div><div class="ttdeci">RealPoint2D myCenter</div><div class="ttdef"><b>Definition:</b> <a href="Ball2D_8h_source.html#l00181">Ball2D.h:181</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac2832c95c1b3207068470ddcd026163e"></a>
@@ -807,9 +850,9 @@ template&lt;typename TSpace&gt; </div>
 </div><div class="memdoc">
 <p>Center of the circle. </p>
 
-<p class="definition">Definition at line <a class="el" href="Ball2D_8h_source.html#l00171">171</a> of file <a class="el" href="Ball2D_8h_source.html">Ball2D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Ball2D_8h_source.html#l00181">181</a> of file <a class="el" href="Ball2D_8h_source.html">Ball2D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Ball2D_8h_source.html#l00122">DGtal::Ball2D&lt; TSpace &gt;::center()</a>, <a class="el" href="Ball2D_8h_source.html#l00105">DGtal::Ball2D&lt; TSpace &gt;::getLowerBound()</a>, and <a class="el" href="Ball2D_8h_source.html#l00114">DGtal::Ball2D&lt; TSpace &gt;::getUpperBound()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Ball2D_8h_source.html#l00122">DGtal::Ball2D&lt; TSpace &gt;::center()</a>, <a class="el" href="Ball2D_8h_source.html#l00105">DGtal::Ball2D&lt; TSpace &gt;::getLowerBound()</a>, <a class="el" href="Ball2D_8h_source.html#l00114">DGtal::Ball2D&lt; TSpace &gt;::getUpperBound()</a>, and <a class="el" href="Ball2D_8h_source.html#l00132">DGtal::Ball2D&lt; TSpace &gt;::moveTo()</a>.</p>
 
 </div>
 </div>
@@ -836,7 +879,7 @@ template&lt;typename TSpace&gt; </div>
 </div><div class="memdoc">
 <p>Radius of the circle. </p>
 
-<p class="definition">Definition at line <a class="el" href="Ball2D_8h_source.html#l00166">166</a> of file <a class="el" href="Ball2D_8h_source.html">Ball2D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Ball2D_8h_source.html#l00176">176</a> of file <a class="el" href="Ball2D_8h_source.html">Ball2D.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Ball2D_8h_source.html#l00105">DGtal::Ball2D&lt; TSpace &gt;::getLowerBound()</a>, and <a class="el" href="Ball2D_8h_source.html#l00114">DGtal::Ball2D&lt; TSpace &gt;::getUpperBound()</a>.</p>
 
@@ -848,7 +891,7 @@ template&lt;typename TSpace&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 24 2019 08:13:40 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 24 2019 08:36:18 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

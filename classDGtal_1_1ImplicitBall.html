@@ -122,6 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab6cc890b20973df07ec38678b49241b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74dc77f775d9da6e50c75bb0f8307ebd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImplicitBall.html#aa8984cedfcd3715a66ac6763e540ffe5">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImplicitBall.html#a74dc77f775d9da6e50c75bb0f8307ebd">getUpperBound</a> () const</td></tr>
 <tr class="separator:a74dc77f775d9da6e50c75bb0f8307ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65aa6f56c77e4cf1d85a78eebf72ab1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImplicitBall.html#aa8984cedfcd3715a66ac6763e540ffe5">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImplicitBall.html#a65aa6f56c77e4cf1d85a78eebf72ab1b">center</a> () const</td></tr>
+<tr class="separator:a65aa6f56c77e4cf1d85a78eebf72ab1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6b3b80ce65d98676f64c3b1ce54b4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImplicitBall.html#aae6b3b80ce65d98676f64c3b1ce54b4f">moveTo</a> (const <a class="el" href="classDGtal_1_1ImplicitBall.html#aa8984cedfcd3715a66ac6763e540ffe5">RealPoint</a> &amp;newCenter)</td></tr>
+<tr class="separator:aae6b3b80ce65d98676f64c3b1ce54b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a901b7b95127a2fe505ac860f23abae91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImplicitBall.html#a901b7b95127a2fe505ac860f23abae91">selfDisplay</a> (std::ostream &amp;out) const</td></tr>
 <tr class="separator:a901b7b95127a2fe505ac860f23abae91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebf82e84ec487960178f1ac52f0d6bc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImplicitBall.html#aebf82e84ec487960178f1ac52f0d6bc2">isValid</a> () const</td></tr>
@@ -299,8 +303,8 @@ template&lt;typename TSpace&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="ImplicitBall_8h_source.html#l00081">81</a> of file <a class="el" href="ImplicitBall_8h_source.html">ImplicitBall.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                                 : <a class="code" href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">myCenter</a>(aCenter),</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <a class="code" href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">myRadius</a>(aRadius)</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {};</div><div class="ttc" id="classDGtal_1_1ImplicitBall_html_abc64d23df2635988b308fff61a5fba4e"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">DGtal::ImplicitBall::myCenter</a></div><div class="ttdeci">RealPoint myCenter</div><div class="ttdoc">Ball center. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00148">ImplicitBall.h:148</a></div></div>
-<div class="ttc" id="classDGtal_1_1ImplicitBall_html_a023ccde4d3e5c64b6d22d75b79dc2817"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">DGtal::ImplicitBall::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdoc">Ball Radius. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00151">ImplicitBall.h:151</a></div></div>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                                 : <a class="code" href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">myCenter</a>(aCenter),</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <a class="code" href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">myRadius</a>(aRadius)</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {};</div><div class="ttc" id="classDGtal_1_1ImplicitBall_html_abc64d23df2635988b308fff61a5fba4e"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">DGtal::ImplicitBall::myCenter</a></div><div class="ttdeci">RealPoint myCenter</div><div class="ttdoc">Ball center. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00164">ImplicitBall.h:164</a></div></div>
+<div class="ttc" id="classDGtal_1_1ImplicitBall_html_a023ccde4d3e5c64b6d22d75b79dc2817"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">DGtal::ImplicitBall::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdoc">Ball Radius. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00167">ImplicitBall.h:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -353,6 +357,39 @@ template&lt;typename TSpace&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a65aa6f56c77e4cf1d85a78eebf72ab1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65aa6f56c77e4cf1d85a78eebf72ab1b">&#9670;&nbsp;</a></span>center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSpace&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1ImplicitBall.html#aa8984cedfcd3715a66ac6763e540ffe5">RealPoint</a> <a class="el" href="classDGtal_1_1ImplicitBall.html">DGtal::ImplicitBall</a>&lt; TSpace &gt;::center </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the center of the star-shaped object. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ImplicitBall_8h_source.html#l00128">128</a> of file <a class="el" href="ImplicitBall_8h_source.html">ImplicitBall.h</a>.</p>
+
+<p class="reference">References <a class="el" href="ImplicitBall_8h_source.html#l00164">DGtal::ImplicitBall&lt; TSpace &gt;::myCenter</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">myCenter</a>;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1ImplicitBall_html_abc64d23df2635988b308fff61a5fba4e"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">DGtal::ImplicitBall::myCenter</a></div><div class="ttdeci">RealPoint myCenter</div><div class="ttdoc">Ball center. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00164">ImplicitBall.h:164</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ab6cc890b20973df07ec38678b49241b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6cc890b20973df07ec38678b49241b0">&#9670;&nbsp;</a></span>getLowerBound()</h2>
 
@@ -380,10 +417,10 @@ template&lt;typename TSpace&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="ImplicitBall_8h_source.html#l00114">114</a> of file <a class="el" href="ImplicitBall_8h_source.html">ImplicitBall.h</a>.</p>
 
-<p class="reference">References <a class="el" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;::diagonal()</a>, <a class="el" href="ImplicitBall_8h_source.html#l00148">DGtal::ImplicitBall&lt; TSpace &gt;::myCenter</a>, and <a class="el" href="ImplicitBall_8h_source.html#l00151">DGtal::ImplicitBall&lt; TSpace &gt;::myRadius</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordflow">return</span> (<a class="code" href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">myCenter</a> - <a class="code" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">RealPoint::diagonal</a>(<a class="code" href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">myRadius</a>));</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1ImplicitBall_html_abc64d23df2635988b308fff61a5fba4e"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">DGtal::ImplicitBall::myCenter</a></div><div class="ttdeci">RealPoint myCenter</div><div class="ttdoc">Ball center. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00148">ImplicitBall.h:148</a></div></div>
+<p class="reference">References <a class="el" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;::diagonal()</a>, <a class="el" href="ImplicitBall_8h_source.html#l00164">DGtal::ImplicitBall&lt; TSpace &gt;::myCenter</a>, and <a class="el" href="ImplicitBall_8h_source.html#l00167">DGtal::ImplicitBall&lt; TSpace &gt;::myRadius</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordflow">return</span> (<a class="code" href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">myCenter</a> - <a class="code" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">RealPoint::diagonal</a>(<a class="code" href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">myRadius</a>));</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1ImplicitBall_html_abc64d23df2635988b308fff61a5fba4e"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">DGtal::ImplicitBall::myCenter</a></div><div class="ttdeci">RealPoint myCenter</div><div class="ttdoc">Ball center. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00164">ImplicitBall.h:164</a></div></div>
 <div class="ttc" id="classDGtal_1_1PointVector_html_aba9def1d899ca259f6fa532a6eb9a8b5"><div class="ttname"><a href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::PointVector::diagonal</a></div><div class="ttdeci">static Self diagonal(Component val=1)</div></div>
-<div class="ttc" id="classDGtal_1_1ImplicitBall_html_a023ccde4d3e5c64b6d22d75b79dc2817"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">DGtal::ImplicitBall::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdoc">Ball Radius. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00151">ImplicitBall.h:151</a></div></div>
+<div class="ttc" id="classDGtal_1_1ImplicitBall_html_a023ccde4d3e5c64b6d22d75b79dc2817"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">DGtal::ImplicitBall::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdoc">Ball Radius. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00167">ImplicitBall.h:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -414,10 +451,10 @@ template&lt;typename TSpace&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="ImplicitBall_8h_source.html#l00120">120</a> of file <a class="el" href="ImplicitBall_8h_source.html">ImplicitBall.h</a>.</p>
 
-<p class="reference">References <a class="el" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;::diagonal()</a>, <a class="el" href="ImplicitBall_8h_source.html#l00148">DGtal::ImplicitBall&lt; TSpace &gt;::myCenter</a>, and <a class="el" href="ImplicitBall_8h_source.html#l00151">DGtal::ImplicitBall&lt; TSpace &gt;::myRadius</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keywordflow">return</span> (<a class="code" href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">myCenter</a> + <a class="code" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">RealPoint::diagonal</a>(<a class="code" href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">myRadius</a>)); </div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1ImplicitBall_html_abc64d23df2635988b308fff61a5fba4e"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">DGtal::ImplicitBall::myCenter</a></div><div class="ttdeci">RealPoint myCenter</div><div class="ttdoc">Ball center. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00148">ImplicitBall.h:148</a></div></div>
+<p class="reference">References <a class="el" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;::diagonal()</a>, <a class="el" href="ImplicitBall_8h_source.html#l00164">DGtal::ImplicitBall&lt; TSpace &gt;::myCenter</a>, and <a class="el" href="ImplicitBall_8h_source.html#l00167">DGtal::ImplicitBall&lt; TSpace &gt;::myRadius</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keywordflow">return</span> (<a class="code" href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">myCenter</a> + <a class="code" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">RealPoint::diagonal</a>(<a class="code" href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">myRadius</a>));</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1ImplicitBall_html_abc64d23df2635988b308fff61a5fba4e"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">DGtal::ImplicitBall::myCenter</a></div><div class="ttdeci">RealPoint myCenter</div><div class="ttdoc">Ball center. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00164">ImplicitBall.h:164</a></div></div>
 <div class="ttc" id="classDGtal_1_1PointVector_html_aba9def1d899ca259f6fa532a6eb9a8b5"><div class="ttname"><a href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::PointVector::diagonal</a></div><div class="ttdeci">static Self diagonal(Component val=1)</div></div>
-<div class="ttc" id="classDGtal_1_1ImplicitBall_html_a023ccde4d3e5c64b6d22d75b79dc2817"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">DGtal::ImplicitBall::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdoc">Ball Radius. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00151">ImplicitBall.h:151</a></div></div>
+<div class="ttc" id="classDGtal_1_1ImplicitBall_html_a023ccde4d3e5c64b6d22d75b79dc2817"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">DGtal::ImplicitBall::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdoc">Ball Radius. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00167">ImplicitBall.h:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -439,6 +476,45 @@ template&lt;typename TSpace&gt; </div>
 </div><div class="memdoc">
 <p>Checks the validity/consistency of the object. </p><dl class="section return"><dt>Returns</dt><dd>'true' if the object is valid, 'false' otherwise. </dd></dl>
 
+</div>
+</div>
+<a id="aae6b3b80ce65d98676f64c3b1ce54b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae6b3b80ce65d98676f64c3b1ce54b4f">&#9670;&nbsp;</a></span>moveTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSpace&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDGtal_1_1ImplicitBall.html">DGtal::ImplicitBall</a>&lt; TSpace &gt;::moveTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1ImplicitBall.html#aa8984cedfcd3715a66ac6763e540ffe5">RealPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>newCenter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Modify the shape center </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newCenter</td><td>the new center position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ImplicitBall_8h_source.html#l00138">138</a> of file <a class="el" href="ImplicitBall_8h_source.html">ImplicitBall.h</a>.</p>
+
+<p class="reference">References <a class="el" href="ImplicitBall_8h_source.html#l00164">DGtal::ImplicitBall&lt; TSpace &gt;::myCenter</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <a class="code" href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">myCenter</a> = newCenter;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1ImplicitBall_html_abc64d23df2635988b308fff61a5fba4e"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">DGtal::ImplicitBall::myCenter</a></div><div class="ttdeci">RealPoint myCenter</div><div class="ttdoc">Ball center. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00164">ImplicitBall.h:164</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1dba1fd0813c7f5e3f236b408c5f9b54"></a>
@@ -469,10 +545,10 @@ template&lt;typename TSpace&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="ImplicitBall_8h_source.html#l00096">96</a> of file <a class="el" href="ImplicitBall_8h_source.html">ImplicitBall.h</a>.</p>
 
-<p class="reference">References <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint()</a>, <a class="el" href="ImplicitBall_8h_source.html#l00148">DGtal::ImplicitBall&lt; TSpace &gt;::myCenter</a>, and <a class="el" href="ImplicitBall_8h_source.html#l00151">DGtal::ImplicitBall&lt; TSpace &gt;::myRadius</a>.</p>
+<p class="reference">References <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint()</a>, <a class="el" href="ImplicitBall_8h_source.html#l00164">DGtal::ImplicitBall&lt; TSpace &gt;::myCenter</a>, and <a class="el" href="ImplicitBall_8h_source.html#l00167">DGtal::ImplicitBall&lt; TSpace &gt;::myRadius</a>.</p>
 <div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">myRadius</a> - (<a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint</a> - <a class="code" href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">myCenter</a> ).norm();</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div><div class="ttc" id="testSimpleRandomAccessRangeFromPoint_8cpp_html_a9ae40316aa447d5a39eb6f76dba59444"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint</a></div><div class="ttdeci">const Point aPoint(3, 4)</div></div>
-<div class="ttc" id="classDGtal_1_1ImplicitBall_html_abc64d23df2635988b308fff61a5fba4e"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">DGtal::ImplicitBall::myCenter</a></div><div class="ttdeci">RealPoint myCenter</div><div class="ttdoc">Ball center. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00148">ImplicitBall.h:148</a></div></div>
-<div class="ttc" id="classDGtal_1_1ImplicitBall_html_a023ccde4d3e5c64b6d22d75b79dc2817"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">DGtal::ImplicitBall::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdoc">Ball Radius. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00151">ImplicitBall.h:151</a></div></div>
+<div class="ttc" id="classDGtal_1_1ImplicitBall_html_abc64d23df2635988b308fff61a5fba4e"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e">DGtal::ImplicitBall::myCenter</a></div><div class="ttdeci">RealPoint myCenter</div><div class="ttdoc">Ball center. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00164">ImplicitBall.h:164</a></div></div>
+<div class="ttc" id="classDGtal_1_1ImplicitBall_html_a023ccde4d3e5c64b6d22d75b79dc2817"><div class="ttname"><a href="classDGtal_1_1ImplicitBall.html#a023ccde4d3e5c64b6d22d75b79dc2817">DGtal::ImplicitBall::myRadius</a></div><div class="ttdeci">double myRadius</div><div class="ttdoc">Ball Radius. </div><div class="ttdef"><b>Definition:</b> <a href="ImplicitBall_8h_source.html#l00167">ImplicitBall.h:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -597,9 +673,9 @@ template&lt;typename TSpace&gt; </div>
 
 <p>Ball center. </p>
 
-<p class="definition">Definition at line <a class="el" href="ImplicitBall_8h_source.html#l00148">148</a> of file <a class="el" href="ImplicitBall_8h_source.html">ImplicitBall.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitBall_8h_source.html#l00164">164</a> of file <a class="el" href="ImplicitBall_8h_source.html">ImplicitBall.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ImplicitBall_8h_source.html#l00114">DGtal::ImplicitBall&lt; TSpace &gt;::getLowerBound()</a>, <a class="el" href="ImplicitBall_8h_source.html#l00120">DGtal::ImplicitBall&lt; TSpace &gt;::getUpperBound()</a>, and <a class="el" href="ImplicitBall_8h_source.html#l00096">DGtal::ImplicitBall&lt; TSpace &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ImplicitBall_8h_source.html#l00128">DGtal::ImplicitBall&lt; TSpace &gt;::center()</a>, <a class="el" href="ImplicitBall_8h_source.html#l00114">DGtal::ImplicitBall&lt; TSpace &gt;::getLowerBound()</a>, <a class="el" href="ImplicitBall_8h_source.html#l00120">DGtal::ImplicitBall&lt; TSpace &gt;::getUpperBound()</a>, <a class="el" href="ImplicitBall_8h_source.html#l00138">DGtal::ImplicitBall&lt; TSpace &gt;::moveTo()</a>, and <a class="el" href="ImplicitBall_8h_source.html#l00096">DGtal::ImplicitBall&lt; TSpace &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -627,7 +703,7 @@ template&lt;typename TSpace&gt; </div>
 
 <p>Ball Radius. </p>
 
-<p class="definition">Definition at line <a class="el" href="ImplicitBall_8h_source.html#l00151">151</a> of file <a class="el" href="ImplicitBall_8h_source.html">ImplicitBall.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitBall_8h_source.html#l00167">167</a> of file <a class="el" href="ImplicitBall_8h_source.html">ImplicitBall.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ImplicitBall_8h_source.html#l00114">DGtal::ImplicitBall&lt; TSpace &gt;::getLowerBound()</a>, <a class="el" href="ImplicitBall_8h_source.html#l00120">DGtal::ImplicitBall&lt; TSpace &gt;::getUpperBound()</a>, and <a class="el" href="ImplicitBall_8h_source.html#l00096">DGtal::ImplicitBall&lt; TSpace &gt;::operator()()</a>.</p>
 
@@ -639,7 +715,7 @@ template&lt;typename TSpace&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 24 2019 08:13:44 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 24 2019 08:36:21 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

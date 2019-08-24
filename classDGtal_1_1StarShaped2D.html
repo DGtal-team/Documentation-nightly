@@ -113,6 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9790e27dd5b75751ff6019d49581b367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2290b83f1b29cb1c651518e794773c5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classDGtal_1_1StarShaped2D.html#a6867a370510f21fb2e97db4561f0b36f">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1StarShaped2D.html#ad2290b83f1b29cb1c651518e794773c5">center</a> () const =0</td></tr>
 <tr class="separator:ad2290b83f1b29cb1c651518e794773c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666594ee4c376b08be0fd38c7c995e3c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1StarShaped2D.html#a666594ee4c376b08be0fd38c7c995e3c">moveTo</a> (const <a class="el" href="classDGtal_1_1StarShaped2D.html#a6867a370510f21fb2e97db4561f0b36f">RealPoint</a> &amp;newCenter)=0</td></tr>
+<tr class="separator:a666594ee4c376b08be0fd38c7c995e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d87076e30318b190b3f3cc5aeb3d4cc"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1StarShaped2D.html#a9d87076e30318b190b3f3cc5aeb3d4cc">parameter</a> (const <a class="el" href="classDGtal_1_1StarShaped2D.html#a6867a370510f21fb2e97db4561f0b36f">RealPoint</a> &amp;p) const =0</td></tr>
 <tr class="separator:a9d87076e30318b190b3f3cc5aeb3d4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7941e02fc02539751c033ef9dc0b862"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classDGtal_1_1StarShaped2D.html#a6867a370510f21fb2e97db4561f0b36f">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1StarShaped2D.html#aa7941e02fc02539751c033ef9dc0b862">x</a> (const double t) const =0</td></tr>
@@ -586,6 +588,42 @@ template&lt;typename TSpace&gt; </div>
 
 </div>
 </div>
+<a id="a666594ee4c376b08be0fd38c7c995e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a666594ee4c376b08be0fd38c7c995e3c">&#9670;&nbsp;</a></span>moveTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSpace&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classDGtal_1_1StarShaped2D.html">DGtal::StarShaped2D</a>&lt; TSpace &gt;::moveTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1StarShaped2D.html#a6867a370510f21fb2e97db4561f0b36f">RealPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>newCenter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Move the center of the star-shaped object to a new position </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newCenter</td><td>the new center position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classDGtal_1_1AccFlower2D.html#a7545ebce24bad7fd244abb11290338b7">DGtal::AccFlower2D&lt; TSpace &gt;</a>, <a class="el" href="classDGtal_1_1Flower2D.html#a71763cfd1fba09509fb2d31ba375806f">DGtal::Flower2D&lt; TSpace &gt;</a>, <a class="el" href="classDGtal_1_1Ellipse2D.html#a764b4237c19b0b811bef5f40af55871b">DGtal::Ellipse2D&lt; TSpace &gt;</a>, <a class="el" href="classDGtal_1_1NGon2D.html#a3b8ebe23b06891dbc6f7c6c3149d64ab">DGtal::NGon2D&lt; TSpace &gt;</a>, <a class="el" href="classDGtal_1_1Astroid2D.html#a3628b6536ad6a25aeb42d295c65c6953">DGtal::Astroid2D&lt; TSpace &gt;</a>, <a class="el" href="classDGtal_1_1Astroid2D.html#a3628b6536ad6a25aeb42d295c65c6953">DGtal::Astroid2D&lt; Space &gt;</a>, <a class="el" href="classDGtal_1_1Lemniscate2D.html#aa2264c81616d42a1bced8acc1f4f5f5c">DGtal::Lemniscate2D&lt; TSpace &gt;</a>, and <a class="el" href="classDGtal_1_1Ball2D.html#af02ab6a2daa721224ed47bebbe6fed3c">DGtal::Ball2D&lt; TSpace &gt;</a>.</p>
+
+</div>
+</div>
 <a id="af198c93fee7e9dbbdbb382ab56b8b1af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af198c93fee7e9dbbdbb382ab56b8b1af">&#9670;&nbsp;</a></span>normal()</h2>
 
@@ -884,7 +922,7 @@ template&lt;typename TSpace&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 24 2019 08:13:49 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 24 2019 08:36:26 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

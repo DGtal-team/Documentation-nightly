@@ -196,6 +196,7 @@ var searchData=
   ['testscellsfunctor_2ecpp',['testSCellsFunctor.cpp',['../testSCellsFunctor_8cpp.html',1,'']]],
   ['testsegmentation_2ecpp',['testSegmentation.cpp',['../testSegmentation_8cpp.html',1,'']]],
   ['testseparablemetricadapter_2ecpp',['testSeparableMetricAdapter.cpp',['../testSeparableMetricAdapter_8cpp.html',1,'']]],
+  ['testshapemovecenter_2ecpp',['testShapeMoveCenter.cpp',['../testShapeMoveCenter_8cpp.html',1,'']]],
   ['testsignal_2ecpp',['testSignal.cpp',['../testSignal_8cpp.html',1,'']]],
   ['testsimpleexpander_2ecpp',['testSimpleExpander.cpp',['../testSimpleExpander_8cpp.html',1,'']]],
   ['testsimplematrix_2ecpp',['testSimpleMatrix.cpp',['../testSimpleMatrix_8cpp.html',1,'']]],

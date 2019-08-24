@@ -11,6 +11,7 @@ var searchData=
   ['firstestimator',['FirstEstimator',['../structDGtal_1_1CompareLocalEstimators.html#a89339be78841c2649eefda6f2a3c91b1',1,'DGtal::CompareLocalEstimators']]],
   ['fit',['Fit',['../classDGtal_1_1functors_1_1SphereFittingEstimator.html#a9a0e393f5571b883dec20ea051220718',1,'DGtal::functors::SphereFittingEstimator']]],
   ['floatimage',['FloatImage',['../classDGtal_1_1Shortcuts.html#a4d0fa67630c4461096d6a178ac6ffad2',1,'DGtal::Shortcuts::FloatImage()'],['../classDGtal_1_1ShortcutsGeometry.html#a924b4058666073e38e4eb438464b7a3c',1,'DGtal::ShortcutsGeometry::FloatImage()']]],
+  ['flower',['Flower',['../testShapeMoveCenter_8cpp.html#aa7983cb650b7993eaa7e621700562f9b',1,'testShapeMoveCenter.cpp']]],
   ['foregroundadjacency',['ForegroundAdjacency',['../classDGtal_1_1Expander.html#a289f66b42d2d19df0cf78671502070aa',1,'DGtal::Expander::ForegroundAdjacency()'],['../classDGtal_1_1DigitalTopology.html#a90140ff99d11cfacc7f487f99b6249d3',1,'DGtal::DigitalTopology::ForegroundAdjacency()'],['../classDGtal_1_1Object.html#adf999422bdd28b628a386d5f4d3d5dca',1,'DGtal::Object::ForegroundAdjacency()']]],
   ['forwarditerator',['ForwardIterator',['../classDGtal_1_1Preimage2D.html#a270954e85d68f591ae8c7c19ba8ecea1',1,'DGtal::Preimage2D']]],
   ['forwardpredicate',['ForwardPredicate',['../classDGtal_1_1MelkmanConvexHull.html#a5e9a6baea32811c11d16723d81e0ddbe',1,'DGtal::MelkmanConvexHull']]],

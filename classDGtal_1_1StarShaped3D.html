@@ -113,6 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af0acd7e05635db94e999a19823961c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab007b15473ea585fe112670c96ffc740"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classDGtal_1_1StarShaped3D.html#a60f0bb28678a97cefa6c449800b17a42">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1StarShaped3D.html#ab007b15473ea585fe112670c96ffc740">center</a> () const =0</td></tr>
 <tr class="separator:ab007b15473ea585fe112670c96ffc740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b698a35d891febfe4e4760efa49ba3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1StarShaped3D.html#a63b698a35d891febfe4e4760efa49ba3">moveTo</a> (const <a class="el" href="classDGtal_1_1StarShaped3D.html#a60f0bb28678a97cefa6c449800b17a42">RealPoint</a> &amp;newCenter)=0</td></tr>
+<tr class="separator:a63b698a35d891febfe4e4760efa49ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a3e9054236a3e5cdd993d8a459a9255"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classDGtal_1_1StarShaped3D.html#a542ca167baf02c64832d7ea741a71fb2">AngularCoordinates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1StarShaped3D.html#a9a3e9054236a3e5cdd993d8a459a9255">parameter</a> (const <a class="el" href="classDGtal_1_1StarShaped3D.html#a60f0bb28678a97cefa6c449800b17a42">RealPoint</a> &amp;p) const =0</td></tr>
 <tr class="separator:a9a3e9054236a3e5cdd993d8a459a9255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5843aeb041eb750a93ec9d2481a4b6a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classDGtal_1_1StarShaped3D.html#a60f0bb28678a97cefa6c449800b17a42">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1StarShaped3D.html#ab5843aeb041eb750a93ec9d2481a4b6a">x</a> (const <a class="el" href="classDGtal_1_1StarShaped3D.html#a542ca167baf02c64832d7ea741a71fb2">AngularCoordinates</a> t) const =0</td></tr>
@@ -579,6 +581,42 @@ template&lt;typename TSpace&gt; </div>
 
 </div>
 </div>
+<a id="a63b698a35d891febfe4e4760efa49ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b698a35d891febfe4e4760efa49ba3">&#9670;&nbsp;</a></span>moveTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSpace&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classDGtal_1_1StarShaped3D.html">DGtal::StarShaped3D</a>&lt; TSpace &gt;::moveTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1StarShaped3D.html#a60f0bb28678a97cefa6c449800b17a42">RealPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>newCenter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Move the center of the star-shaped object to a new position </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newCenter</td><td>the new center position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classDGtal_1_1Ball3D.html#a8585f30ce073007baac6efdfe72c9b32">DGtal::Ball3D&lt; TSpace &gt;</a>.</p>
+
+</div>
+</div>
 <a id="a3ae60d621e086354d210ac6722f2c5c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ae60d621e086354d210ac6722f2c5c7">&#9670;&nbsp;</a></span>normal()</h2>
 
@@ -1029,7 +1067,7 @@ template&lt;typename TSpace&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 24 2019 08:13:49 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 24 2019 08:36:27 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
