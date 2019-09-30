@@ -174,6 +174,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1Image.html#a475cefade83619827786739db921f256">DGtal::Image&lt; TImageContainer &gt;</a>
 , <a class="el" href="structDGtal_1_1ImageFromSet.html#ac1af5e9ffacee36a5deb33f81bfd0397">DGtal::ImageFromSet&lt; TImage &gt;</a>
 , <a class="el" href="classDGtal_1_1ImageLinearCellEmbedder.html#a2c338c3e071e77b9663038d163e97238">DGtal::ImageLinearCellEmbedder&lt; TKSpace, TImage, TEmbedder &gt;</a>
+, <a class="el" href="structDGtal_1_1ITKDicomReader.html#abeb2109e08cae2b579d084dff000b5ad">DGtal::ITKDicomReader&lt; TImage &gt;</a>
 , <a class="el" href="structDGtal_1_1ITKReader.html#a6f1dba854c208db4a7093a898b719a6c">DGtal::ITKReader&lt; TImage &gt;</a>
 , <a class="el" href="structDGtal_1_1ITKWriter.html#a7867b046a86228f7a5342e8ccc0f6cc6">DGtal::ITKWriter&lt; TImage, TFunctor &gt;</a>
 , <a class="el" href="classDGtal_1_1L1LocalDistance.html#a142b64dc63a5f8d59a40c2e927aca47e">DGtal::L1LocalDistance&lt; TImage, TSet &gt;</a>
@@ -244,7 +245,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a69bb1bd7edb29f45863bfaaf23cd5316">DGtal::experimental::ImageContainerByHashTree&lt; TDomain, TValue, THashKey &gt;</a>
 </li>
 <li>ImageContainerByITKImage()
-: <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a593dc4dfaa1260a01179ccc50bd712da">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;</a>
+: <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a60878da7382b1d477e2badffa0da824d">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;</a>
 </li>
 <li>ImageContainerBySTLMap()
 : <a class="el" href="classDGtal_1_1ImageContainerBySTLMap.html#a096649bc9133b860456abd75a065067e">DGtal::ImageContainerBySTLMap&lt; TDomain, TValue &gt;</a>
@@ -340,6 +341,21 @@ $(function() {
 </li>
 <li>importDicom()
 : <a class="el" href="structDGtal_1_1DicomReader.html#ac2e1b9c3bc5356e13b0b7114793ffce8">DGtal::DicomReader&lt; TImageContainer, TFunctor &gt;</a>
+</li>
+<li>importDICOM()
+: <a class="el" href="structDGtal_1_1ITKDicomReader.html#a6fb001cd248364d1f6115aa4ae8debb3">DGtal::ITKDicomReader&lt; TImage &gt;</a>
+</li>
+<li>importDicomFiles()
+: <a class="el" href="structDGtal_1_1DicomReader_1_1Aux.html#ab6c06e40c1d86472da0d1bfc9682f79d">DGtal::DicomReader&lt; TImageContainer, TFunctor &gt;::Aux&lt; Image, Domain, OutPixelType, PixelType &gt;</a>
+, <a class="el" href="structDGtal_1_1DicomReader_1_1Aux_3_01ImageContainerByITKImage_3_01Domain_00_01OutPixelType_01_4f35f230b8e0a6d9a00067527269fdce5.html#a4d1eee6f760ab8d53dbd781ad011e55b">DGtal::DicomReader&lt; TImageContainer, TFunctor &gt;::Aux&lt; ImageContainerByITKImage&lt; Domain, OutPixelType &gt;, Domain, OutPixelType, PixelType &gt;</a>
+, <a class="el" href="structDGtal_1_1DicomReader.html#a8c77ab42821f474b74e3377b0e60619f">DGtal::DicomReader&lt; TImageContainer, TFunctor &gt;</a>
+, <a class="el" href="structDGtal_1_1ITKDicomReader.html#a2ebdef370827a84f40d83132d0551d44">DGtal::ITKDicomReader&lt; TImage &gt;</a>
+</li>
+<li>importDicomFiles_()
+: <a class="el" href="structDGtal_1_1DicomReader.html#a0db1c133d1282235167985ccc3af11f7">DGtal::DicomReader&lt; TImageContainer, TFunctor &gt;</a>
+</li>
+<li>importDicomSeries()
+: <a class="el" href="structDGtal_1_1DicomReader.html#a7e1e6f9d9aa4be2fbbc8feb47789ef05">DGtal::DicomReader&lt; TImageContainer, TFunctor &gt;</a>
 </li>
 <li>importHDF5()
 : <a class="el" href="structDGtal_1_1HDF5Reader.html#ae6d0ff976adb91993bd8ecc11006a3be">DGtal::HDF5Reader&lt; TImageContainer, TFunctor &gt;</a>
@@ -476,7 +492,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1OrderedAlphabet.html#a0001300f1c18c46943c02c53589d22eb">DGtal::OrderedAlphabet</a>
 </li>
 <li>IndexedDigitalSurface()
-: <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a82b152074e45447928fae1e554ddd521">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
+: <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a3735d65a891cbd8be6e5d63d30ceccad">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 </li>
 <li>IndexedListWithBlocks
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1ConstIterator.html#a119ddbdb61e6e0888ba7002ce4a56568">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::ConstIterator</a>
@@ -958,7 +974,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1SaturatedSegmentation_1_1SegmentComputerIterator.html#ad1370fd7e92fd868d2a4653ad6beded4">DGtal::SaturatedSegmentation&lt; TSegmentComputer &gt;::SegmentComputerIterator</a>
 </li>
 <li>IntervalForegroundPredicate()
-: <a class="el" href="classDGtal_1_1functors_1_1IntervalForegroundPredicate.html#abbe93c322727cc80d9d4abaf1facad68">DGtal::functors::IntervalForegroundPredicate&lt; Image &gt;</a>
+: <a class="el" href="classDGtal_1_1functors_1_1IntervalForegroundPredicate.html#a3da2c63a8a0d9bf8c0db7d48fb46af55">DGtal::functors::IntervalForegroundPredicate&lt; Image &gt;</a>
 </li>
 <li>IntervalSet
 : <a class="el" href="classDGtal_1_1FrechetShortcut_1_1Backpath.html#a6c4f31b605fcb32a4cb478b745fad7da">DGtal::FrechetShortcut&lt; TIterator, TInteger &gt;::Backpath</a>
@@ -1079,11 +1095,11 @@ $(function() {
 , <a class="el" href="structDGtal_1_1detail_1_1SetFunctionsImpl_3_01Container_00_01true_00_01true_01_4.html#a74f46082a621d04335e1f99b2ba9e2c1">DGtal::detail::SetFunctionsImpl&lt; Container, true, true &gt;</a>
 </li>
 <li>isExtendable()
-: <a class="el" href="classDGtal_1_1ChordGenericNaivePlaneComputer.html#a4172061afd24d78d4adcf046ea09c356">DGtal::ChordGenericNaivePlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
+: <a class="el" href="classDGtal_1_1ChordGenericNaivePlaneComputer.html#a25665a42df54f419221fa3eacc82c304">DGtal::ChordGenericNaivePlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
 , <a class="el" href="classDGtal_1_1ChordGenericStandardPlaneComputer.html#a712730d42d282dba7c274cd4e591ccf6">DGtal::ChordGenericStandardPlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
 , <a class="el" href="classDGtal_1_1ChordNaivePlaneComputer.html#af352a065758af66f78d3f3defa0ba480">DGtal::ChordNaivePlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
 , <a class="el" href="classDGtal_1_1COBAGenericNaivePlaneComputer.html#aaeaa5e995f412aa718bab660ce3367b9">DGtal::COBAGenericNaivePlaneComputer&lt; TSpace, TInternalInteger &gt;</a>
-, <a class="el" href="classDGtal_1_1COBAGenericStandardPlaneComputer.html#af38ac28b6da888e83fa2080c2793d67b">DGtal::COBAGenericStandardPlaneComputer&lt; TSpace, TInternalInteger &gt;</a>
+, <a class="el" href="classDGtal_1_1COBAGenericStandardPlaneComputer.html#ad082f1bee935c3cee934976770b235eb">DGtal::COBAGenericStandardPlaneComputer&lt; TSpace, TInternalInteger &gt;</a>
 , <a class="el" href="classDGtal_1_1COBANaivePlaneComputer.html#ade84fff24b51267194134370648c7171">DGtal::COBANaivePlaneComputer&lt; TSpace, TInternalInteger &gt;</a>
 </li>
 <li>isExtendableBack()
@@ -1094,7 +1110,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1StabbingLineComputer.html#a49376b075889acbc24f6c92799dada76">DGtal::StabbingLineComputer&lt; TConstIterator &gt;</a>
 </li>
 <li>isExtendableFront()
-: <a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#a65316db84eddaba19593887bb673090d">DGtal::AlphaThickSegmentComputer&lt; TInputPoint, TConstIterator &gt;</a>
+: <a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#a36fe00f5b5e9a85b2155faec2489f335">DGtal::AlphaThickSegmentComputer&lt; TInputPoint, TConstIterator &gt;</a>
 , <a class="el" href="classDGtal_1_1ArithmeticalDSS.html#a575c863a3ab1dd7489e6563bbbb106b5">DGtal::ArithmeticalDSS&lt; TCoordinate, TInteger, adjacency &gt;</a>
 , <a class="el" href="classDGtal_1_1ArithmeticalDSSComputer.html#a21e6c1fc56c21790609d05768f9b81e2">DGtal::ArithmeticalDSSComputer&lt; TIterator, TInteger, adjacency &gt;</a>
 , <a class="el" href="classDGtal_1_1detail_1_1DSSDecorator.html#a6a0cb6e2e3e81c8e0fbb08a0a0ca7808">DGtal::detail::DSSDecorator&lt; TDSS &gt;</a>
@@ -1284,7 +1300,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1CountedPtrOrPtr.html#a3f18b6839dd84b429b0c820141aeec31">DGtal::CountedPtrOrPtr&lt; T &gt;</a>
 </li>
 <li>isSpaceClosed()
-: <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#ad369c3da864750ff40641e6f252da395">DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;</a>
+: <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a24313b4260940c60e6e3fba0e15119bf">DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;</a>
 </li>
 <li>isSpacePeriodic()
 : <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a8c669302ac3b32b59f4680c4a18a7eca">DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;</a>
@@ -1673,7 +1689,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks.html#a6875ebdea49b0b1d3a4f9fe7c97b5469">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;</a>
 </li>
 <li>Iterator()
-: <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#ac2e18c49b3f6935931a53f05ddf2702d">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
+: <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#a30216f39b99d6d06549c9799d063cd9f">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
 , <a class="el" href="classDGtal_1_1IteratorCompletion.html#a3c02bd75db56e57ad7ba6adfd43ddf4a">DGtal::IteratorCompletion&lt; TDerived &gt;</a>
 , <a class="el" href="classDGtal_1_1IteratorCompletionTraits_3_01ArrayImageAdapter_3_01TArrayIterator_00_01TDomain_01_4_01_4.html#afa4fee320d0fbbd92f04e364f7a9934b">DGtal::IteratorCompletionTraits&lt; ArrayImageAdapter&lt; TArrayIterator, TDomain &gt; &gt;</a>
 , <a class="el" href="structDGtal_1_1KhalimskyPreSpaceND_1_1AnyCellCollection.html#ae4d7e7ab122d439ea468fe24c3f684f8">DGtal::KhalimskyPreSpaceND&lt; dim, TInteger &gt;::AnyCellCollection&lt; CellType &gt;</a>
@@ -1737,17 +1753,17 @@ $(function() {
 : <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a409573fadd9f05b0efe96fed767eb015">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;</a>
 </li>
 <li>ITKIOTrait()
-: <a class="el" href="structDGtal_1_1ITKIOTrait.html#a3b204675363fed184cdb27cf5390dcbe">DGtal::ITKIOTrait&lt; Value &gt;</a>
+: <a class="el" href="structDGtal_1_1ITKIOTrait.html#ad16cb1c6e3c406992a4906e1dc1a323f">DGtal::ITKIOTrait&lt; Value &gt;</a>
 </li>
 <li>IVector()
 : <a class="el" href="classDGtal_1_1IVector.html#a8ef304df3b1892f61097158501c30d0c">DGtal::IVector&lt; T, TAlloc, usePointers &gt;</a>
-, <a class="el" href="classDGtal_1_1IVector_3_01T_00_01TAlloc_00_01true_01_4.html#a079a5551c34d93e52414582d6e1187f4">DGtal::IVector&lt; T, TAlloc, true &gt;</a>
+, <a class="el" href="classDGtal_1_1IVector_3_01T_00_01TAlloc_00_01true_01_4.html#a4ae886a1e77dd84a49d0ae4327ac006d">DGtal::IVector&lt; T, TAlloc, true &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 18 2019 08:20:27 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 30 2019 10:05:07 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

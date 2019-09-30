@@ -117,6 +117,7 @@ var searchData=
   ['testintegralinvariantvolumeestimator_2ecpp',['testIntegralInvariantVolumeEstimator.cpp',['../testIntegralInvariantVolumeEstimator_8cpp.html',1,'']]],
   ['testiteratorcirculatortraits_2ecpp',['testIteratorCirculatorTraits.cpp',['../testIteratorCirculatorTraits_8cpp.html',1,'']]],
   ['testiteratorfunctions_2ecpp',['testIteratorFunctions.cpp',['../testIteratorFunctions_8cpp.html',1,'']]],
+  ['testitkdicomreader_2ecpp',['testITKDicomReader.cpp',['../testITKDicomReader_8cpp.html',1,'']]],
   ['testitkimage_2ecpp',['testITKImage.cpp',['../testITKImage_8cpp.html',1,'']]],
   ['testitkio_2ecpp',['testITKio.cpp',['../testITKio_8cpp.html',1,'']]],
   ['testitkreader_2ecpp',['testITKReader.cpp',['../testITKReader_8cpp.html',1,'']]],

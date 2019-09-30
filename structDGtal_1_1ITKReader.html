@@ -74,6 +74,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -88,6 +89,13 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="ITKReader_8h_source.html">DGtal/io/readers/ITKReader.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader_1_1Aux.html">Aux</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader_1_1Aux_3_01ImageContainerByITKImage_3_01Domain_00_01Value_01_4_00_01Dom5214b37485c2468f2418dadbe6e45333.html">Aux&lt; ImageContainerByITKImage&lt; Domain, Value &gt;, Domain, OrigValue, TFunctor, Value &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a6f1dba854c208db4a7093a898b719a6c"><td class="memItemLeft" align="right" valign="top">typedef TImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#a6f1dba854c208db4a7093a898b719a6c">Image</a></td></tr>
@@ -101,8 +109,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a977f256b2c7018564e8e2126f5731777"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#a977f256b2c7018564e8e2126f5731777">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CImage.html">concepts::CImage</a>&lt; TImage &gt;))</td></tr>
 <tr class="separator:a977f256b2c7018564e8e2126f5731777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d6e018f4aa60553d0d6e2014cd07074"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#a4d6e018f4aa60553d0d6e2014cd07074">BOOST_STATIC_ASSERT</a> (((TImage::Domain::dimension==3)||(TImage::Domain::dimension==2)))</td></tr>
-<tr class="separator:a4d6e018f4aa60553d0d6e2014cd07074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -114,6 +120,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
+<tr class="memitem:af4b2899ff03021bf924dd4b96385b2f6"><td class="memTemplParams" colspan="2">template&lt;typename Domain , typename PixelType &gt; </td></tr>
+<tr class="memitem:af4b2899ff03021bf924dd4b96385b2f6"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">ImageContainerByITKImage</a>&lt; <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a>, PixelType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#af4b2899ff03021bf924dd4b96385b2f6">readDGtalITKImage</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:af4b2899ff03021bf924dd4b96385b2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac673573599212962e5101f4c6035b5e0"><td class="memTemplParams" colspan="2">template&lt;typename TypeDGtalImage , typename TFunctor &gt; </td></tr>
 <tr class="memitem:ac673573599212962e5101f4c6035b5e0"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ITKReader.html#a6f1dba854c208db4a7093a898b719a6c">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#ac673573599212962e5101f4c6035b5e0">readDGtalImageFromITKtypes</a> (const std::string &amp;filename, const TFunctor &amp;aFunctor)</td></tr>
 <tr class="separator:ac673573599212962e5101f4c6035b5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +142,7 @@ struct DGtal::ITKReader&lt; TImage &gt;</h3>
 <dd>
 <a class="el" href="structDGtal_1_1ITKIOTrait.html" title="Aim: Provide type trait for ITK reader and ITK writer. ">ITKIOTrait</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ITKReader_8h_source.html#l00078">78</a> of file <a class="el" href="ITKReader_8h_source.html">ITKReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ITKReader_8h_source.html#l00079">79</a> of file <a class="el" href="ITKReader_8h_source.html">ITKReader.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a6f1dba854c208db4a7093a898b719a6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f1dba854c208db4a7093a898b719a6c">&#9670;&nbsp;</a></span>Image</h2>
@@ -149,7 +158,7 @@ template&lt;typename TImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ITKReader_8h_source.html#l00080">80</a> of file <a class="el" href="ITKReader_8h_source.html">ITKReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ITKReader_8h_source.html#l00081">81</a> of file <a class="el" href="ITKReader_8h_source.html">ITKReader.h</a>.</p>
 
 </div>
 </div>
@@ -167,7 +176,7 @@ template&lt;typename TImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ITKReader_8h_source.html#l00081">81</a> of file <a class="el" href="ITKReader_8h_source.html">ITKReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ITKReader_8h_source.html#l00082">82</a> of file <a class="el" href="ITKReader_8h_source.html">ITKReader.h</a>.</p>
 
 </div>
 </div>
@@ -185,7 +194,7 @@ template&lt;typename TImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ITKReader_8h_source.html#l00082">82</a> of file <a class="el" href="ITKReader_8h_source.html">ITKReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ITKReader_8h_source.html#l00083">83</a> of file <a class="el" href="ITKReader_8h_source.html">ITKReader.h</a>.</p>
 
 </div>
 </div>
@@ -202,26 +211,6 @@ template&lt;typename TImage &gt; </div>
           <td class="memname"><a class="el" href="structDGtal_1_1ITKReader.html">DGtal::ITKReader</a>&lt; TImage &gt;::BOOST_CONCEPT_ASSERT </td>
           <td>(</td>
           <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1CImage.html">concepts::CImage</a>&lt; TImage &gt;)&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4d6e018f4aa60553d0d6e2014cd07074"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d6e018f4aa60553d0d6e2014cd07074">&#9670;&nbsp;</a></span>BOOST_STATIC_ASSERT()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TImage &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structDGtal_1_1ITKReader.html">DGtal::ITKReader</a>&lt; TImage &gt;::BOOST_STATIC_ASSERT </td>
-          <td>(</td>
-          <td class="paramtype">((TImage::Domain::dimension==3)||(TImage::Domain::dimension==2))&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -320,7 +309,7 @@ template&lt;typename TFunctor  = typename ITKIOTrait&lt;typename TImage::Value&g
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>read image </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="GenericReader_8h_source.html#l00248">DGtal::GenericReader&lt; TContainer, 3, TValue &gt;::importWithValueFunctor()</a>, <a class="el" href="GenericReader_8h_source.html#l00339">DGtal::GenericReader&lt; TContainer, 3, DGtal::uint32_t &gt;::importWithValueFunctor()</a>, and <a class="el" href="testITKio_8cpp_source.html#l00049">test_image()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GenericReader_8h_source.html#l00248">DGtal::GenericReader&lt; TContainer, 3, TValue &gt;::importWithValueFunctor()</a>, <a class="el" href="GenericReader_8h_source.html#l00339">DGtal::GenericReader&lt; TContainer, 3, DGtal::uint32_t &gt;::importWithValueFunctor()</a>, <a class="el" href="testITKio_8cpp_source.html#l00049">test_image()</a>, and <a class="el" href="testITKReader_8cpp_source.html#l00053">testSpatialInformation()</a>.</p>
 
 </div>
 </div>
@@ -379,13 +368,43 @@ template&lt;typename TypeDGtalImage , typename TFunctor &gt; </div>
 
 </div>
 </div>
+<a id="af4b2899ff03021bf924dd4b96385b2f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b2899ff03021bf924dd4b96385b2f6">&#9670;&nbsp;</a></span>readDGtalITKImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TImage &gt; </div>
+<div class="memtemplate">
+template&lt;typename Domain , typename PixelType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">ImageContainerByITKImage</a>&lt;<a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a>, PixelType&gt; <a class="el" href="structDGtal_1_1ITKReader.html">DGtal::ITKReader</a>&lt; TImage &gt;::readDGtalITKImage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="ITKReader_8h_source.html">ITKReader.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 18 2019 08:20:16 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 30 2019 10:04:55 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

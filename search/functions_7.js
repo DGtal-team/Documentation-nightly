@@ -93,6 +93,7 @@ var searchData=
   ['getfacebarycenter',['getFaceBarycenter',['../classDGtal_1_1Mesh.html#a7599d8a5ef0ee83d0eb182d8f8db575c',1,'DGtal::Mesh']]],
   ['getfacecolor',['getFaceColor',['../classDGtal_1_1Mesh.html#a3a18f7b4eb87075fd3ffd87fd14881e4',1,'DGtal::Mesh']]],
   ['getfillcolor',['getFillColor',['../classDGtal_1_1Display3D.html#a5d3155c6695bf924560f085d298d318f',1,'DGtal::Display3D']]],
+  ['getfirstdicomseriefilenames',['getFirstDicomSerieFileNames',['../testDicomReader_8cpp.html#acab190553e18e8a5619401c978583ed3',1,'getFirstDicomSerieFileNames(const std::string &amp;path):&#160;testDicomReader.cpp'],['../testITKDicomReader_8cpp.html#a6f21d1ad1b55162834d0daf7f9f0f287',1,'getFirstDicomSerieFileNames(const std::string &amp;path):&#160;testITKDicomReader.cpp']]],
   ['getfirstpointsofhull',['getFirstPointsOfHull',['../classDGtal_1_1LatticePolytope2D.html#ad90afd8720b01ee1d8aa9355486ad30f',1,'DGtal::LatticePolytope2D']]],
   ['getfloorceildiv',['getFloorCeilDiv',['../classDGtal_1_1IntegerComputer.html#ab5fccc07ca16031475809cd47d0d2473',1,'DGtal::IntegerComputer']]],
   ['getformerenergy',['getFormerEnergy',['../classDGtal_1_1AngleLinearMinimizer.html#a6d80c0452ad959a6452e034d36d48976',1,'DGtal::AngleLinearMinimizer']]],
