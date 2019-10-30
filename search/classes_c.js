@@ -62,6 +62,5 @@ var searchData=
   ['mutable_5fforwarditerator',['Mutable_ForwardIterator',['../structboost_1_1Mutable__ForwardIterator.html',1,'boost']]],
   ['mutable_5frandomaccesscontainer',['Mutable_RandomAccessContainer',['../structboost_1_1Mutable__RandomAccessContainer.html',1,'boost']]],
   ['mutable_5frandomaccessiterator',['Mutable_RandomAccessIterator',['../structboost_1_1Mutable__RandomAccessIterator.html',1,'boost']]],
-  ['mutable_5freversiblecontainer',['Mutable_ReversibleContainer',['../structboost_1_1Mutable__ReversibleContainer.html',1,'boost']]],
-  ['myreverse_5fiterator',['myreverse_iterator',['../classmyreverse__iterator.html',1,'']]]
+  ['mutable_5freversiblecontainer',['Mutable_ReversibleContainer',['../structboost_1_1Mutable__ReversibleContainer.html',1,'boost']]]
 ];

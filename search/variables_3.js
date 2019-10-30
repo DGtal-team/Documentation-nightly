@@ -25,7 +25,7 @@ var searchData=
   ['coordinates',['coordinates',['../structDGtal_1_1KhalimskyPreCell.html#ac1669938b9a3302874cb069caa661a08',1,'DGtal::KhalimskyPreCell::coordinates()'],['../structDGtal_1_1SignedKhalimskyPreCell.html#a44b496e8836dd4f30cca5ea18537d984',1,'DGtal::SignedKhalimskyPreCell::coordinates()']]],
   ['count',['count',['../structDGtal_1_1CountedPtr_1_1Counter.html#ab12297c617551f68f3e1d8249a68facd',1,'DGtal::CountedPtr::Counter']]],
   ['cr',['cr',['../structDGtal_1_1concepts_1_1CSTLAssociativeContainer.html#a5c11cca7c48bf7a64e95b4b586f5899a',1,'DGtal::concepts::CSTLAssociativeContainer']]],
-  ['current',['current',['../classmyreverse__iterator.html#a4bdbd98b60aad417ff428672e7c812e2',1,'myreverse_iterator']]],
+  ['current',['current',['../classDGtal_1_1HyperRectDomain__ReverseIterator.html#af406bd197c13c95dd9d3940c5850489e',1,'DGtal::HyperRectDomain_ReverseIterator']]],
   ['curve',['curve',['../structDGtal_1_1concepts_1_1C3DParametricCurveDecorator.html#a2ba30eefd58c77fdf21ed8a033041afa',1,'DGtal::concepts::C3DParametricCurveDecorator::curve()'],['../classDGtal_1_1DecoratorParametricCurveTransformation.html#a80a631d00083f54f9c88d86d8933ca91',1,'DGtal::DecoratorParametricCurveTransformation::curve()'],['../classDGtal_1_1NaiveParametricCurveDigitizer3D.html#aa5a7d9732e472d0867aafc217c776afa',1,'DGtal::NaiveParametricCurveDigitizer3D::curve()']]],
   ['cyan',['Cyan',['../classDGtal_1_1Color.html#a58460b1a2f77dcdec69ed0a1a3d8ef85',1,'DGtal::Color']]]
 ];

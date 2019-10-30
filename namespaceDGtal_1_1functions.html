@@ -1172,7 +1172,7 @@ template&lt;typename TObject , typename TMap &gt; </div>
 <div class="ttc" id="namespaceDGtal_html_a319e1944935b8331846f54001a63525f"><div class="ttname"><a href="namespaceDGtal.html#a319e1944935b8331846f54001a63525f">DGtal::NeighborhoodConfiguration</a></div><div class="ttdeci">uint32_t NeighborhoodConfiguration</div><div class="ttdef"><b>Definition:</b> <a href="NeighborhoodConfigurationsHelper_8h_source.html#l00043">NeighborhoodConfigurationsHelper.h:43</a></div></div>
 <div class="ttc" id="testProjection_8cpp_html_a1f1a69f8d8b037b72c2160ed12b3ef51"><div class="ttname"><a href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a></div><div class="ttdeci">Domain domain</div><div class="ttdef"><b>Definition:</b> <a href="testProjection_8cpp_source.html#l00088">testProjection.cpp:88</a></div></div>
 <div class="ttc" id="testClone2_8cpp_html_a15e9592ccc512dc691b46185e6814758"><div class="ttname"><a href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a></div><div class="ttdeci">MyPointD Point</div><div class="ttdef"><b>Definition:</b> <a href="testClone2_8cpp_source.html#l00383">testClone2.cpp:383</a></div></div>
-<div class="ttc" id="classDGtal_1_1HyperRectDomain__Iterator_html"><div class="ttname"><a href="classDGtal_1_1HyperRectDomain__Iterator.html">DGtal::HyperRectDomain_Iterator</a></div><div class="ttdef"><b>Definition:</b> <a href="HyperRectDomain__Iterator_8h_source.html#l00158">HyperRectDomain_Iterator.h:158</a></div></div>
+<div class="ttc" id="classDGtal_1_1HyperRectDomain__Iterator_html"><div class="ttname"><a href="classDGtal_1_1HyperRectDomain__Iterator.html">DGtal::HyperRectDomain_Iterator</a></div><div class="ttdoc">Iterator for HyperRectDomain. </div><div class="ttdef"><b>Definition:</b> <a href="HyperRectDomain__Iterator_8h_source.html#l00142">HyperRectDomain_Iterator.h:142</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2103,7 +2103,7 @@ template&lt;typename TPoint &gt; </div>
 <p>Maps any point in the neighborhood of point Zero (0,..,0) to its corresponding configuration bit mask. This is a helper to use with tables. The order of the configuration is lexicographic, starting in {-1, -1, ...}. </p><dl class="section note"><dt>Note</dt><dd>the neighborhood is considered to be all points p which ||p-zero|| &lt;= 1</dd></dl>
 <p>Example: Point{ -1, -1, -1 } = 1; // corresponding to mask x x 0000 0001 Point{ 0, -1, -1 } = 2; // corresponding to mask x x 0000 0010 Point{ 1, 1, 1 } = 2^26; // x 0010 x x x x x x</p>
 <dl class="section note"><dt>Note</dt><dd>NeighborhoodConfiguration is type uint 32 bits, so the max dimension supported is 3.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1HyperRectDomain__Iterator.html#a314ab049fbcc38ac76af74ebdad5422b">HyperRectDomain_Iterator::nextLexicographicOrder</a> </dd>
+<dl class="section see"><dt>See also</dt><dd>HyperRectDomain_Iterator::nextLexicographicOrder </dd>
 <dd>
 <a class="el" href="testNeighborhoodConfigurations_8cpp.html">testNeighborhoodConfigurations.cpp</a> shows the complete mapping.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -3470,7 +3470,7 @@ template&lt;typename TComplex &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 16 2019 10:32:08 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 30 2019 22:02:33 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

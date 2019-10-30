@@ -9,6 +9,7 @@ var searchData=
   ['thicknesseucl',['thicknessEucl',['../testConvexHull2DThickness_8cpp.html#af420961f3ba72861b36050b0dd195efc',1,'testConvexHull2DThickness.cpp']]],
   ['thicknesshv',['thicknessHV',['../testConvexHull2DReverse_8cpp.html#aea6354e7f0134e8b91293bf32175dc03',1,'thicknessHV():&#160;testConvexHull2DReverse.cpp'],['../testConvexHull2DThickness_8cpp.html#aea6354e7f0134e8b91293bf32175dc03',1,'thicknessHV():&#160;testConvexHull2DThickness.cpp']]],
   ['ti',['ti',['../structDGtal_1_1concepts_1_1CSparseMatrix.html#ad2f9845cd978c7b2b984a53dc0240718',1,'DGtal::concepts::CSparseMatrix']]],
+  ['tic_5ftimer',['tic_timer',['../benchmarkHyperRectDomain_8cpp.html#a4f6331275ece2b579b2ae08bf1dfce18',1,'tic_timer():&#160;benchmarkHyperRectDomain.cpp'],['../exampleHyperRectDomainParallelScan_8cpp.html#a4f6331275ece2b579b2ae08bf1dfce18',1,'tic_timer():&#160;exampleHyperRectDomainParallelScan.cpp']]],
   ['timemax',['timeMax',['../classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a9e6cca0e742b1ec9df0acd29458999a0',1,'DGtal::NaiveParametricCurveDigitizer3D']]],
   ['timemin',['timeMin',['../classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a3596fc6dc82b64cfca2e0fbb0eeec59d',1,'DGtal::NaiveParametricCurveDigitizer3D']]],
   ['top',['top',['../structLibBoard_1_1Rect.html#ad0cc80beee9215d3f0d6a424a8f7124d',1,'LibBoard::Rect::top()'],['../structDGtal_1_1MPolynomialGrammar.html#a3d765f3429b50da8d73990de85fbf95a',1,'DGtal::MPolynomialGrammar::top()']]],

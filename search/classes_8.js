@@ -10,7 +10,7 @@ var searchData=
   ['hash_3c_20dgtal_3a_3abiginteger_20_3e',['hash&lt; DGtal::BigInteger &gt;',['../structstd_1_1hash_3_01DGtal_1_1BigInteger_01_4.html',1,'std::hash&lt; DGtal::BigInteger &gt;'],['../structboost_1_1hash_3_01DGtal_1_1BigInteger_01_4.html',1,'boost::hash&lt; DGtal::BigInteger &gt;']]],
   ['hash_3c_20dgtal_3a_3akhalimskycell_3c_20dim_2c_20tinteger_20_3e_20_3e',['hash&lt; DGtal::KhalimskyCell&lt; dim, TInteger &gt; &gt;',['../structstd_1_1hash_3_01DGtal_1_1KhalimskyCell_3_01dim_00_01TInteger_01_4_01_4.html',1,'std::hash&lt; DGtal::KhalimskyCell&lt; dim, TInteger &gt; &gt;'],['../structboost_1_1hash_3_01DGtal_1_1KhalimskyCell_3_01dim_00_01TInteger_01_4_01_4.html',1,'boost::hash&lt; DGtal::KhalimskyCell&lt; dim, TInteger &gt; &gt;']]],
   ['hash_3c_20dgtal_3a_3apointvector_3c_20dim_2c_20euclideanring_2c_20container_20_3e_20_3e',['hash&lt; DGtal::PointVector&lt; dim, EuclideanRing, Container &gt; &gt;',['../structstd_1_1hash_3_01DGtal_1_1PointVector_3_01dim_00_01EuclideanRing_00_01Container_01_4_01_4.html',1,'std']]],
-  ['hash_3c_20dgtal_3a_3asignedkhalimskycell_3c_20dim_2c_20tinteger_20_3e_20_3e',['hash&lt; DGtal::SignedKhalimskyCell&lt; dim, TInteger &gt; &gt;',['../structboost_1_1hash_3_01DGtal_1_1SignedKhalimskyCell_3_01dim_00_01TInteger_01_4_01_4.html',1,'boost::hash&lt; DGtal::SignedKhalimskyCell&lt; dim, TInteger &gt; &gt;'],['../structstd_1_1hash_3_01DGtal_1_1SignedKhalimskyCell_3_01dim_00_01TInteger_01_4_01_4.html',1,'std::hash&lt; DGtal::SignedKhalimskyCell&lt; dim, TInteger &gt; &gt;']]],
+  ['hash_3c_20dgtal_3a_3asignedkhalimskycell_3c_20dim_2c_20tinteger_20_3e_20_3e',['hash&lt; DGtal::SignedKhalimskyCell&lt; dim, TInteger &gt; &gt;',['../structstd_1_1hash_3_01DGtal_1_1SignedKhalimskyCell_3_01dim_00_01TInteger_01_4_01_4.html',1,'std::hash&lt; DGtal::SignedKhalimskyCell&lt; dim, TInteger &gt; &gt;'],['../structboost_1_1hash_3_01DGtal_1_1SignedKhalimskyCell_3_01dim_00_01TInteger_01_4_01_4.html',1,'boost::hash&lt; DGtal::SignedKhalimskyCell&lt; dim, TInteger &gt; &gt;']]],
   ['hasnestedtypecategory',['HasNestedTypeCategory',['../structDGtal_1_1detail_1_1HasNestedTypeCategory.html',1,'DGtal::detail']]],
   ['hasnestedtypetype',['HasNestedTypeType',['../structDGtal_1_1detail_1_1HasNestedTypeType.html',1,'DGtal::detail']]],
   ['hatfunction',['HatFunction',['../structDGtal_1_1functors_1_1HatFunction.html',1,'DGtal::functors']]],
@@ -26,5 +26,6 @@ var searchData=
   ['hyperrectdomain',['HyperRectDomain',['../classDGtal_1_1HyperRectDomain.html',1,'DGtal']]],
   ['hyperrectdomain_3c_20space_20_3e',['HyperRectDomain&lt; Space &gt;',['../classDGtal_1_1HyperRectDomain.html',1,'DGtal']]],
   ['hyperrectdomain_5fiterator',['HyperRectDomain_Iterator',['../classDGtal_1_1HyperRectDomain__Iterator.html',1,'DGtal']]],
+  ['hyperrectdomain_5freverseiterator',['HyperRectDomain_ReverseIterator',['../classDGtal_1_1HyperRectDomain__ReverseIterator.html',1,'DGtal']]],
   ['hyperrectdomain_5fsubiterator',['HyperRectDomain_subIterator',['../classDGtal_1_1HyperRectDomain__subIterator.html',1,'DGtal']]]
 ];
