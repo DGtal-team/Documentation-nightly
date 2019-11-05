@@ -148,6 +148,7 @@ var searchData=
   ['examplestabbinglinecomputer_2ecpp',['exampleStabbingLineComputer.cpp',['../exampleStabbingLineComputer_8cpp.html',1,'']]],
   ['examplestandarddsl',['exampleStandardDSL',['../exampleArithmeticalDSL_8cpp.html#a079b512a42d57ce5529e19851d8180d7',1,'exampleArithmeticalDSL.cpp']]],
   ['examplestandarddss',['exampleStandardDSS',['../exampleArithmeticalDSS_8cpp.html#a5b19210f9324fc6cc34dcaff7eebe065',1,'exampleArithmeticalDSS.cpp']]],
+  ['examplesurfaceatnormals_2ecpp',['exampleSurfaceATNormals.cpp',['../exampleSurfaceATNormals_8cpp.html',1,'']]],
   ['exampletiledimage_2ecpp',['exampleTiledImage.cpp',['../exampleTiledImage_8cpp.html',1,'']]],
   ['exampletiledimagefromhdf5_5f10blocks3d',['exampleTiledImageFromHDF5_10blocks3D',['../exampleImageFactoryFromHDF5_8cpp.html#aefa1dd845ca62bdecb69a675e29a4e38',1,'exampleImageFactoryFromHDF5.cpp']]],
   ['exampletiledimagefromhdf5_5f1block3d',['exampleTiledImageFromHDF5_1block3D',['../exampleImageFactoryFromHDF5_8cpp.html#a1576daf229bdc139f820ad30239b3794',1,'exampleImageFactoryFromHDF5.cpp']]],

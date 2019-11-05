@@ -330,7 +330,7 @@ class DGtal::ATSolver2D&lt; TKSpace, TLinearAlgebra &gt;</h3>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="comment">// Typical use (with appropriate definitions for types and variables).</span></div><div class="line"><span class="keyword">typedef</span> DiscreteExteriorCalculusFactory&lt;EigenLinearAlgebraBackend&gt; CalculusFactory;</div><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> calculus = CalculusFactory::createFromNSCells&lt;2&gt;( surfels.begin(), surfels.end() );</div><div class="line">ATSolver2D&lt; KSpace &gt; at_solver(calculus, 1);</div><div class="line">at_solver.initInputVectorFieldU2( normals, surfels.cbegin(), surfels.cend() );</div><div class="line">at_solver.setUp( alpha_at, lambda_at );</div><div class="line">at_solver.solveGammaConvergence( 2.0, 0.5, 2.0 );</div><div class="line">at_solver.getOutputVectorFieldU2( normals, surfels.cbegin(), surfels.cend() );</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd>exampleSurfaceATNormals.cpp </dd></dl>
+<div class="fragment"><div class="line"><span class="comment">// Typical use (with appropriate definitions for types and variables).</span></div><div class="line"><span class="keyword">typedef</span> DiscreteExteriorCalculusFactory&lt;EigenLinearAlgebraBackend&gt; CalculusFactory;</div><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> calculus = CalculusFactory::createFromNSCells&lt;2&gt;( surfels.begin(), surfels.end() );</div><div class="line">ATSolver2D&lt; KSpace &gt; at_solver(calculus, 1);</div><div class="line">at_solver.initInputVectorFieldU2( normals, surfels.cbegin(), surfels.cend() );</div><div class="line">at_solver.setUp( alpha_at, lambda_at );</div><div class="line">at_solver.solveGammaConvergence( 2.0, 0.5, 2.0 );</div><div class="line">at_solver.getOutputVectorFieldU2( normals, surfels.cbegin(), surfels.cend() );</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="exampleSurfaceATNormals_8cpp.html">exampleSurfaceATNormals.cpp</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ATSolver2D_8h_source.html#l00090">90</a> of file <a class="el" href="ATSolver2D_8h_source.html">ATSolver2D.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -3248,7 +3248,7 @@ template&lt;typename TKSpace , typename TLinearAlgebra  = EigenLinearAlgebraBack
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 30 2019 22:02:21 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 5 2019 19:58:59 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
