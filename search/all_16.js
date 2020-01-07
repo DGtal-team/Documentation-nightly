@@ -528,6 +528,7 @@ var searchData=
   ['testsettable',['testSetTable',['../testObject_8cpp.html#a37615f52180c2b036d075aaee66dfa53',1,'testObject.cpp']]],
   ['testshapemovecenter_2ecpp',['testShapeMoveCenter.cpp',['../testShapeMoveCenter_8cpp.html',1,'']]],
   ['testshapes',['testShapes',['../testBoard3D_8cpp.html#a96c9de993c3ade67160a0a201a749375',1,'testBoard3D.cpp']]],
+  ['testshortcuts_2ecpp',['testShortcuts.cpp',['../testShortcuts_8cpp.html',1,'']]],
   ['testshrink',['testShrink',['../testChamferDT_8cpp.html#a92632fabb371d143261153114a46e84c',1,'testChamferDT.cpp']]],
   ['testsignal',['testSignal',['../testSignal_8cpp.html#ad4196e2161e3315569d48bb572ef04ab',1,'testSignal.cpp']]],
   ['testsignal_2ecpp',['testSignal.cpp',['../testSignal_8cpp.html',1,'']]],
