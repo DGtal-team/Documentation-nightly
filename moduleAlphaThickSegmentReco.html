@@ -92,7 +92,7 @@ $(function() {
 <p>Part of the <a class="el" href="packageGeometry.html">Geometry package</a>.</p>
 <p>The Digital Straight Segment primitive (described here: <a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments</a>) is commonly used to extract geometric information from digital contours. It is exploited in various estimators as for instance in tangent <a class="el" href="citelist.html#CITEREF_LachaudIVC2007">[56]</a> or curvature estimation <a class="el" href="citelist.html#CITEREF_KerautretLachaud2009">[50]</a> . However, this primitive is not efficient to directly process real contours with the potential presence of noise. To overcome this limitation the alpha-thick segments (called initially Blurred Segments) were first introduced by Debled-Rennesson <em>et</em> al <a class="el" href="citelist.html#CITEREF_debledFuzzy2005">[37]</a> which handle noise or contour irregularities.</p>
 <p>We present here the recognition of alpha-thick segments as described in <a class="el" href="citelist.html#CITEREF_debledFuzzy2005">[37]</a> and <a class="el" href="citelist.html#CITEREF_FaureTangential2008">[40]</a>. From a maximal thickness, it permits the recognition of a thick segment with the possibility to take into accounts some noise. Moreover the segment can be detected from points which are not necessarily connected nor necessarily digital points (RealPoint for instance).</p>
-<dl class="section note"><dt>Note</dt><dd>The proposed implementation is mainly a backport from <a href="https://gforge.liris.cnrs.fr/projects/imagene">ImaGene</a> with some various refactoring.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The proposed implementation is mainly a backport from ImaGene with some various refactoring.</dd></dl>
 <h1><a class="anchor" id="moduleAlphaThickSegmentRecoIntro"></a>
 Alpha-thick Segment</h1>
 <p>The first definition of <b>blurred</b> <b>segment</b> <a class="el" href="citelist.html#CITEREF_debledFuzzy2005">[37]</a> relies on the definition of the digital straight lines (<a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments</a>):</p>
@@ -178,7 +178,7 @@ Tangential cover with alpha-thick segments with alpha = 4 for a point of index 8
   </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 7 2020 19:55:16 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 19 2020 20:16:14 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
