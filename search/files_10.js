@@ -114,6 +114,7 @@ var searchData=
   ['testinteger_2ecpp',['testInteger.cpp',['../testInteger_8cpp.html',1,'']]],
   ['testintegercomputer_2ecpp',['testIntegerComputer.cpp',['../testIntegerComputer_8cpp.html',1,'']]],
   ['testintegralinvariantcovarianceestimator_2ecpp',['testIntegralInvariantCovarianceEstimator.cpp',['../testIntegralInvariantCovarianceEstimator_8cpp.html',1,'']]],
+  ['testintegralinvariantshortcuts_2ecpp',['testIntegralInvariantShortcuts.cpp',['../testIntegralInvariantShortcuts_8cpp.html',1,'']]],
   ['testintegralinvariantvolumeestimator_2ecpp',['testIntegralInvariantVolumeEstimator.cpp',['../testIntegralInvariantVolumeEstimator_8cpp.html',1,'']]],
   ['testiteratorcirculatortraits_2ecpp',['testIteratorCirculatorTraits.cpp',['../testIteratorCirculatorTraits_8cpp.html',1,'']]],
   ['testiteratorfunctions_2ecpp',['testIteratorFunctions.cpp',['../testIteratorFunctions_8cpp.html',1,'']]],
