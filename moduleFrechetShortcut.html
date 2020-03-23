@@ -94,7 +94,7 @@ $(function() {
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Isabelle Sivignon</dd></dl>
 <h1><a class="anchor" id="FS_sectOverview"></a>
 Overview</h1>
-<p>The algorithm implemented in the class <a class="el" href="classDGtal_1_1FrechetShortcut.html" title="Aim: On-line computation Computation of the longest shortcut according to the Fréchet distance for a ...">FrechetShortcut</a> is the one presented in the article <a class="el" href="citelist.html#CITEREF_sivignon2011">[86]</a>. <br />
+<p>The algorithm implemented in the class <a class="el" href="classDGtal_1_1FrechetShortcut.html" title="Aim: On-line computation Computation of the longest shortcut according to the Fréchet distance for a ...">FrechetShortcut</a> is the one presented in the article <a class="el" href="citelist.html#CITEREF_sivignon2011">[88]</a>. <br />
 We present here the basic ideas of the algorithm and at the end, give pointers to the relative structures used in the implementation. <br />
  Given a polygonal curve, the curve simplification problem consists in computing another polygonal curve that (i) approximates the original curve, (ii) satisfies a given error criterion, (iii) with as few vertices as possible. This problem arises in a wide range of applications, such as geographic information systems (GIS), computer graphics or computer vision, where the management of the level of details is of crucial importance to save memory space or to speed-up analysis algorithms.</p>
 <p>Given a 4- or 8-connected digital curve and a maximum error, we propose an algorithm that computes a simplification of the curve (a polygonal curve) such that the Fréchet distance between the original and the simplified curve is less than the error. The Fréchet distance is known to nicely measure the similarity between two curves. It can be intuitively defined considering a man walking his dog. Each protagonist walks along a path, and controls its speed independently, but cannot go backwards. The Fréchet distance between the two pathes is the minimal length of the leash required.</p>
@@ -169,7 +169,7 @@ Updating the backpath length efficiently</h2>
  </p><div class="image">
 <img src="definition_occulter.png" alt="definition_occulter.png"/>
 </div>
-<p>We can prove easily (see <a class="el" href="citelist.html#CITEREF_sivignon2011">[86]</a>) that the origin of the longest backpath is an occulter.</p>
+<p>We can prove easily (see <a class="el" href="citelist.html#CITEREF_sivignon2011">[88]</a>) that the origin of the longest backpath is an occulter.</p>
 <div class="image">
 <img src="occulters.png" alt="occulters.png"/>
 <div class="caption">
@@ -218,7 +218,7 @@ A guaranteed algorithm</h2>
 <div class="image">
 <img src="lemma3.png" alt="lemma3.png"/>
 </div>
- For more details about this proof, please refer to <a class="el" href="citelist.html#CITEREF_sivignon2011">[86]</a>.</p>
+ For more details about this proof, please refer to <a class="el" href="citelist.html#CITEREF_sivignon2011">[88]</a>.</p>
 <h2><a class="anchor" id="subsectComplexity"></a>
 Complexity</h2>
 <p>The theoretical complexity of this algorithm is \(\mathcal{O}(n\log(n_i))\), for a digital curve of \(n\) points. \(n_i\) is the number of intervals used to store the directions for which there exist a backpath of length greater than the error. \(n_i\) is upper bounded by \(n\). Nevertheless, experiments on noisy shapes show that the general behaviour of the algorithm in linear in time.</p>
@@ -239,7 +239,7 @@ Implementation in DGtal</h1>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 17 2020 13:08:16 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 23 2020 12:26:19 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

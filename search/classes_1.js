@@ -9,7 +9,7 @@ var searchData=
   ['adaptableunaryfunction',['AdaptableUnaryFunction',['../structboost_1_1AdaptableUnaryFunction.html',1,'boost']]],
   ['addtextureimage2dwithfunctor',['AddTextureImage2DWithFunctor',['../structDGtal_1_1AddTextureImage2DWithFunctor.html',1,'DGtal']]],
   ['addtextureimage3dwithfunctor',['AddTextureImage3DWithFunctor',['../structDGtal_1_1AddTextureImage3DWithFunctor.html',1,'DGtal']]],
-  ['adjacency_5fiterator',['adjacency_iterator',['../classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1adjacency__iterator.html',1,'boost::graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;::adjacency_iterator'],['../classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1adjacency__iterator.html',1,'boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::adjacency_iterator']]],
+  ['adjacency_5fiterator',['adjacency_iterator',['../classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1adjacency__iterator.html',1,'boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::adjacency_iterator'],['../classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1adjacency__iterator.html',1,'boost::graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;::adjacency_iterator']]],
   ['adjacencygraphconcept',['AdjacencyGraphConcept',['../structboost_1_1AdjacencyGraphConcept.html',1,'boost']]],
   ['alias',['Alias',['../classDGtal_1_1Alias.html',1,'DGtal']]],
   ['alphathicksegmentcomputer',['AlphaThickSegmentComputer',['../classDGtal_1_1AlphaThickSegmentComputer.html',1,'DGtal']]],

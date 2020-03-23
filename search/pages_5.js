@@ -11,6 +11,7 @@ var searchData=
   ['digital_20topology_20and_20digital_20objects',['Digital topology and digital objects',['../moduleDigitalTopology.html',1,'']]],
   ['display3d_3a_20a_20stream_20mechanism_20for_20displaying_203d_20dgtal_20objects',['Display3D: a stream mechanism for displaying 3D DGtal objects',['../moduleDisplay3D.html',1,'']]],
   ['digitization_20of_203d_20parametric_20curves',['Digitization of 3D parametric curves',['../moduleParametricCurves.html',1,'']]],
+  ['digital_20surface_20regularization',['Digital Surface Regularization',['../moduleRegularization.html',1,'']]],
   ['digital_20spaces_2c_20points_2c_20vectors_20and_20domains',['Digital Spaces, Points, Vectors and Domains',['../moduleSpacePointVectorDomain.html',1,'']]],
   ['digital_20voronoi_20covariance_20measure_20and_20geometry_20estimation',['Digital Voronoi Covariance Measure and geometry estimation',['../moduleVCM.html',1,'']]],
   ['dec_20package',['DEC package',['../packageDEC.html',1,'']]],

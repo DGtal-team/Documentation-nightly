@@ -225,6 +225,7 @@ var searchData=
   ['countedptr_3c_20digitalset_20_3e',['CountedPtr&lt; DigitalSet &gt;',['../classDGtal_1_1CountedPtr.html',1,'DGtal']]],
   ['countedptr_3c_20digitalsurfacecontainer_20_3e',['CountedPtr&lt; DigitalSurfaceContainer &gt;',['../classDGtal_1_1CountedPtr.html',1,'DGtal']]],
   ['countedptr_3c_20digitaltopology_20_3e',['CountedPtr&lt; DigitalTopology &gt;',['../classDGtal_1_1CountedPtr.html',1,'DGtal']]],
+  ['countedptr_3c_20digsurface_20_3e',['CountedPtr&lt; DigSurface &gt;',['../classDGtal_1_1CountedPtr.html',1,'DGtal']]],
   ['countedptr_3c_20domain_20_3e',['CountedPtr&lt; Domain &gt;',['../classDGtal_1_1CountedPtr.html',1,'DGtal']]],
   ['countedptr_3c_20drawablewithboard2d_20_3e',['CountedPtr&lt; DrawableWithBoard2D &gt;',['../classDGtal_1_1CountedPtr.html',1,'DGtal']]],
   ['countedptr_3c_20drawablewithdisplay3d_20_3e',['CountedPtr&lt; DrawableWithDisplay3D &gt;',['../classDGtal_1_1CountedPtr.html',1,'DGtal']]],

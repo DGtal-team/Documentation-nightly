@@ -36,6 +36,7 @@ var searchData=
   ['digitalsurfaceconvolver_3c_20tfunctor_2c_20tkernelfunctor_2c_20tkspace_2c_20tdigitalkernel_2c_203_20_3e',['DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;',['../classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html',1,'DGtal']]],
   ['digitalsurfaceembedderwithnormalvectorestimator',['DigitalSurfaceEmbedderWithNormalVectorEstimator',['../classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimator.html',1,'DGtal']]],
   ['digitalsurfaceembedderwithnormalvectorestimatorgradientmap',['DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap',['../classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap.html',1,'DGtal']]],
+  ['digitalsurfaceregularization',['DigitalSurfaceRegularization',['../classDGtal_1_1DigitalSurfaceRegularization.html',1,'DGtal']]],
   ['digitaltopology',['DigitalTopology',['../classDGtal_1_1DigitalTopology.html',1,'DGtal']]],
   ['digitaltopologytraits',['DigitalTopologyTraits',['../structDGtal_1_1DigitalTopologyTraits.html',1,'DGtal']]],
   ['digitaltopologytraits_3c_20metricadjacency_3c_20tspace_2c_201_20_3e_2c_20metricadjacency_3c_20tspace_2c_202_20_3e_2c_202_20_3e',['DigitalTopologyTraits&lt; MetricAdjacency&lt; TSpace, 1 &gt;, MetricAdjacency&lt; TSpace, 2 &gt;, 2 &gt;',['../structDGtal_1_1DigitalTopologyTraits_3_01MetricAdjacency_3_01TSpace_00_011_01_4_00_01MetricAdjac06cfee9ede448beddab595341bf8da45.html',1,'DGtal']]],

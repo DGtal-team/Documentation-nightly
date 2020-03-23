@@ -66,6 +66,7 @@ var searchData=
   ['testdigitalshapesdecorator_2ecpp',['testDigitalShapesDecorator.cpp',['../testDigitalShapesDecorator_8cpp.html',1,'']]],
   ['testdigitalsurface_2ecpp',['testDigitalSurface.cpp',['../testDigitalSurface_8cpp.html',1,'']]],
   ['testdigitalsurfaceboostgraphinterface_2ecpp',['testDigitalSurfaceBoostGraphInterface.cpp',['../testDigitalSurfaceBoostGraphInterface_8cpp.html',1,'']]],
+  ['testdigitalsurfaceregularization_2ecpp',['testDigitalSurfaceRegularization.cpp',['../testDigitalSurfaceRegularization_8cpp.html',1,'']]],
   ['testdigitaltopology_2ecpp',['testDigitalTopology.cpp',['../testDigitalTopology_8cpp.html',1,'']]],
   ['testdiscreteexteriorcalculus_2ecpp',['testDiscreteExteriorCalculus.cpp',['../testDiscreteExteriorCalculus_8cpp.html',1,'']]],
   ['testdiscreteexteriorcalculusextended_2ecpp',['testDiscreteExteriorCalculusExtended.cpp',['../testDiscreteExteriorCalculusExtended_8cpp.html',1,'']]],
