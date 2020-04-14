@@ -9,6 +9,8 @@ var searchData=
   ['faithfulpolygon',['FaithfulPolygon',['../classDGtal_1_1FPLengthEstimator.html#a427ff90d7f263640772b22cf97528199',1,'DGtal::FPLengthEstimator::FaithfulPolygon()'],['../classDGtal_1_1MLPLengthEstimator.html#a791d85163d7afb17144a0b4b97c52043',1,'DGtal::MLPLengthEstimator::FaithfulPolygon()']]],
   ['fftw',['FFTW',['../classDGtal_1_1RealFFT_3_01HyperRectDomain_3_01TSpace_01_4_00_01T_01_4.html#aa6d8b6ec7f7a36ffe14d40f89938fbc8',1,'DGtal::RealFFT&lt; HyperRectDomain&lt; TSpace &gt;, T &gt;']]],
   ['firstestimator',['FirstEstimator',['../structDGtal_1_1CompareLocalEstimators.html#a89339be78841c2649eefda6f2a3c91b1',1,'DGtal::CompareLocalEstimators']]],
+  ['firstprincipalcurvaturefunctor',['FirstPrincipalCurvatureFunctor',['../classDGtal_1_1ShortcutsGeometry.html#added5bcf89f1ea9519db898e115cdb4d',1,'DGtal::ShortcutsGeometry']]],
+  ['firstprincipaldirectionfunctor',['FirstPrincipalDirectionFunctor',['../classDGtal_1_1ShortcutsGeometry.html#ace2eb721907f35a09a74003e65d2c9bd',1,'DGtal::ShortcutsGeometry']]],
   ['fit',['Fit',['../classDGtal_1_1functors_1_1SphereFittingEstimator.html#a9a0e393f5571b883dec20ea051220718',1,'DGtal::functors::SphereFittingEstimator']]],
   ['floatimage',['FloatImage',['../classDGtal_1_1Shortcuts.html#a4d0fa67630c4461096d6a178ac6ffad2',1,'DGtal::Shortcuts::FloatImage()'],['../classDGtal_1_1ShortcutsGeometry.html#a924b4058666073e38e4eb438464b7a3c',1,'DGtal::ShortcutsGeometry::FloatImage()']]],
   ['flower',['Flower',['../testShapeMoveCenter_8cpp.html#aa7983cb650b7993eaa7e621700562f9b',1,'testShapeMoveCenter.cpp']]],

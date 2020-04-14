@@ -139,6 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a49909abcc73f958f6b206f9968b95a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87aed082bc9f9c49fce5a5adc83ea9b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#a87aed082bc9f9c49fce5a5adc83ea9b8">principalCurvatures</a> (const <a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#a2fe0d60c46b63753d6245264f739b627">RealPoint</a> &amp;<a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint</a>, double &amp;k1, double &amp;k2) const</td></tr>
 <tr class="separator:a87aed082bc9f9c49fce5a5adc83ea9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72237c8ef235e1a04abc319963d1489"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#ae72237c8ef235e1a04abc319963d1489">principalDirections</a> (const <a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#a2fe0d60c46b63753d6245264f739b627">RealPoint</a> &amp;<a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint</a>, <a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#a4f3d0049066ade1cc740ef86945ce270">RealVector</a> &amp;d1, <a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#a4f3d0049066ade1cc740ef86945ce270">RealVector</a> &amp;d2) const</td></tr>
+<tr class="separator:ae72237c8ef235e1a04abc319963d1489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac14529a718cbf7e215b8681e9d9becfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#a2fe0d60c46b63753d6245264f739b627">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#ac14529a718cbf7e215b8681e9d9becfc">nearestPoint</a> (const <a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#a2fe0d60c46b63753d6245264f739b627">RealPoint</a> &amp;<a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint</a>, const double accuracy=0.0001, const int maxIter=20, const double gamma=0.5) const</td></tr>
 <tr class="separator:ac14529a718cbf7e215b8681e9d9becfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a434a67d54d1def5a4255c77929557347"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#a434a67d54d1def5a4255c77929557347">selfDisplay</a> (std::ostream &amp;out) const</td></tr>
@@ -685,7 +687,7 @@ template&lt;typename TSpace &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the nearest point on the surface to the one given in parameter. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="ShortcutsGeometry_8h_source.html#l00270">DGtal::ShortcutsGeometry&lt; TKSpace &gt;::getPositions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShortcutsGeometry_8h_source.html#l00285">DGtal::ShortcutsGeometry&lt; TKSpace &gt;::getPositions()</a>.</p>
 
 </div>
 </div>
@@ -823,6 +825,61 @@ template&lt;typename TSpace &gt; </div>
 
 </div>
 </div>
+<a id="ae72237c8ef235e1a04abc319963d1489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae72237c8ef235e1a04abc319963d1489">&#9670;&nbsp;</a></span>principalDirections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSpace &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html">DGtal::ImplicitPolynomial3Shape</a>&lt; TSpace &gt;::principalDirections </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#a2fe0d60c46b63753d6245264f739b627">RealPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>aPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#a4f3d0049066ade1cc740ef86945ce270">RealVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>d1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDGtal_1_1ImplicitPolynomial3Shape.html#a4f3d0049066ade1cc740ef86945ce270">RealVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>d2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Principal directions of curvature estimation at <em>aPoint</em> </p><dl class="section pre"><dt>Precondition</dt><dd><em>aPoint</em> must be close to the surface.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aPoint</td><td>any point in the Euclidean space. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">d1</td><td>first principal direction </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">d2</td><td>second principal direction</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Principal directions are not reliable around umbilic points, i.e. where principal curvatures are the same.</dd></dl>
+<p><a class="el" href="citelist.html#CITEREF_albin2016computational">[4]</a> </p>
+
+</div>
+</div>
 <a id="a434a67d54d1def5a4255c77929557347"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a434a67d54d1def5a4255c77929557347">&#9670;&nbsp;</a></span>selfDisplay()</h2>
 
@@ -872,7 +929,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00226">226</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00244">244</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -898,7 +955,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00230">230</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00248">248</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -924,7 +981,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00231">231</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00249">249</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -950,7 +1007,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00232">232</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00250">250</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -976,7 +1033,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00227">227</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00245">245</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1059,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00234">234</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00252">252</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1085,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00235">235</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00253">253</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1111,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00236">236</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00254">254</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1137,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00228">228</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00246">246</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -1106,7 +1163,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00238">238</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00256">256</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1189,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00239">239</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00257">257</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1215,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00240">240</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00258">258</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1241,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00245">245</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00263">263</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -1212,7 +1269,7 @@ template&lt;typename TSpace &gt; </div>
 
 <p>The 3-polynomial defining the implicit shape. </p>
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00223">223</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00241">241</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1295,7 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00244">244</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImplicitPolynomial3Shape_8h_source.html#l00262">262</a> of file <a class="el" href="ImplicitPolynomial3Shape_8h_source.html">ImplicitPolynomial3Shape.h</a>.</p>
 
 </div>
 </div>
@@ -1248,7 +1305,7 @@ template&lt;typename TSpace &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 9 2020 19:31:02 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 11:43:48 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

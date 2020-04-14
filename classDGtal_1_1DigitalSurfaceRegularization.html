@@ -84,7 +84,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Aim: Implements Digital Surface Regularization as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[26]</a>.  
+<p>Aim: Implements Digital Surface Regularization as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[27]</a>.  
  <a href="classDGtal_1_1DigitalSurfaceRegularization.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="DigitalSurfaceRegularization_8h_source.html">DGtal/geometry/surfaces/DigitalSurfaceRegularization.h</a>&gt;</code></p>
@@ -268,7 +268,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename TDigitalSurface&gt;<br />
 class DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;</h3>
 
-<p>Aim: Implements Digital Surface Regularization as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[26]</a>. </p>
+<p>Aim: Implements Digital Surface Regularization as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[27]</a>. </p>
 <p>Description of template class '<a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html" title="Aim: Implements Digital Surface Regularization as described in . ">DigitalSurfaceRegularization</a>' </p>
 <p>Given a digital surface and a normal vector field attached to the surfels, this class performs a regularization of the digital surface vertices to obtain a piecewise smooth surface such that each quad of the output surface is as perpendicular as possible to the given input normal vector field.</p>
 <dl class="section note"><dt>Note</dt><dd>The digital surface must be a closed.</dd></dl>
@@ -276,7 +276,7 @@ class DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;</h3>
 \[\mathcal{E}(P) := \alpha \sum_{i=1}^{n} \|p_i - \hat{p}_i\|^2 + \beta \sum_{f\in F} \sum_{{e_j} \in \partial{f} } ( e_j \cdot n_{f} )^2 + \gamma \sum_{i=1}^{n} \|\hat{p}_i - \hat{b}_i\|^2\,.\]
 </p>
 <p> where \(&quot;\cdot&quot;\) is the standard \(\mathbb{R}^3\) scalar product, \(e_j\in \partial{f}\) is an edge of the face \(f\) (and is equal to some \(p_k - p_l\)) and \( \hat{b}_i\) is the barycenter of the vertices adjacent to \(\hat{p}_i\).</p>
-<p>To minimize this energy, instead of solving the associated sparse linear system as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[26]</a>, we perform a gradient descent strategy which allows us a finer control over the vertices displacement (see advection methods).</p>
+<p>To minimize this energy, instead of solving the associated sparse linear system as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[27]</a>, we perform a gradient descent strategy which allows us a finer control over the vertices displacement (see advection methods).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="testDigitalSurfaceRegularization_8cpp.html">testDigitalSurfaceRegularization.cpp</a></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -437,11 +437,11 @@ template&lt;typename TDigitalSurface&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="DigitalSurfaceRegularization_8h_source.html#l00114">114</a> of file <a class="el" href="DigitalSurfaceRegularization_8h_source.html">DigitalSurfaceRegularization.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Shortcuts_8h_source.html#l00328">DGtal::Shortcuts&lt; TKSpace &gt;::getKSpace()</a>, <a class="el" href="DigitalSurfaceRegularization_8h_source.html#l00442">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;::myDigitalSurface</a>, and <a class="el" href="DigitalSurfaceRegularization_8h_source.html#l00465">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;::myK</a>.</p>
+<p class="reference">References <a class="el" href="Shortcuts_8h_source.html#l00329">DGtal::Shortcuts&lt; TKSpace &gt;::getKSpace()</a>, <a class="el" href="DigitalSurfaceRegularization_8h_source.html#l00442">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;::myDigitalSurface</a>, and <a class="el" href="DigitalSurfaceRegularization_8h_source.html#l00465">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;::myK</a>.</p>
 <div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    :  <a class="code" href="classDGtal_1_1DigitalSurfaceRegularization.html#a4d864d28ad10328ff7b5068e593ee1ed">myInit</a>(<span class="keyword">false</span>), <a class="code" href="classDGtal_1_1DigitalSurfaceRegularization.html#a255c1c43137da75c2b8642c7fe803bdd">myVerbose</a>(<span class="keyword">false</span>), <a class="code" href="classDGtal_1_1DigitalSurfaceRegularization.html#a45b5245baa0aab6a294a27bb1f7b07e9">myDigitalSurface</a>(aDigSurf)</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <a class="code" href="classDGtal_1_1DigitalSurfaceRegularization.html#a1b686d1c8e54feeb36c96ac7be9e1f85">myK</a> = <a class="code" href="classDGtal_1_1Shortcuts.html#a25d0be45d2b76a79be6cc83c8e2442b2">SH3::getKSpace</a>( <a class="code" href="classDGtal_1_1DigitalSurfaceRegularization.html#a45b5245baa0aab6a294a27bb1f7b07e9">myDigitalSurface</a> );</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div><div class="ttc" id="classDGtal_1_1DigitalSurfaceRegularization_html_a1b686d1c8e54feeb36c96ac7be9e1f85"><div class="ttname"><a href="classDGtal_1_1DigitalSurfaceRegularization.html#a1b686d1c8e54feeb36c96ac7be9e1f85">DGtal::DigitalSurfaceRegularization::myK</a></div><div class="ttdeci">SH3::KSpace myK</div><div class="ttdoc">Instance of the KSpace. </div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurfaceRegularization_8h_source.html#l00465">DigitalSurfaceRegularization.h:465</a></div></div>
 <div class="ttc" id="classDGtal_1_1DigitalSurfaceRegularization_html_a45b5245baa0aab6a294a27bb1f7b07e9"><div class="ttname"><a href="classDGtal_1_1DigitalSurfaceRegularization.html#a45b5245baa0aab6a294a27bb1f7b07e9">DGtal::DigitalSurfaceRegularization::myDigitalSurface</a></div><div class="ttdeci">CountedPtr&lt; DigSurface &gt; myDigitalSurface</div><div class="ttdoc">Input DigitalSurface to regularize. </div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurfaceRegularization_8h_source.html#l00442">DigitalSurfaceRegularization.h:442</a></div></div>
 <div class="ttc" id="classDGtal_1_1DigitalSurfaceRegularization_html_a255c1c43137da75c2b8642c7fe803bdd"><div class="ttname"><a href="classDGtal_1_1DigitalSurfaceRegularization.html#a255c1c43137da75c2b8642c7fe803bdd">DGtal::DigitalSurfaceRegularization::myVerbose</a></div><div class="ttdeci">bool myVerbose</div><div class="ttdoc">Flag for verbose messages. </div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurfaceRegularization_8h_source.html#l00439">DigitalSurfaceRegularization.h:439</a></div></div>
-<div class="ttc" id="classDGtal_1_1Shortcuts_html_a25d0be45d2b76a79be6cc83c8e2442b2"><div class="ttname"><a href="classDGtal_1_1Shortcuts.html#a25d0be45d2b76a79be6cc83c8e2442b2">DGtal::Shortcuts::getKSpace</a></div><div class="ttdeci">static KSpace getKSpace(const Point &amp;low, const Point &amp;up, Parameters params=parametersKSpace())</div><div class="ttdef"><b>Definition:</b> <a href="Shortcuts_8h_source.html#l00328">Shortcuts.h:328</a></div></div>
+<div class="ttc" id="classDGtal_1_1Shortcuts_html_a25d0be45d2b76a79be6cc83c8e2442b2"><div class="ttname"><a href="classDGtal_1_1Shortcuts.html#a25d0be45d2b76a79be6cc83c8e2442b2">DGtal::Shortcuts::getKSpace</a></div><div class="ttdeci">static KSpace getKSpace(const Point &amp;low, const Point &amp;up, Parameters params=parametersKSpace())</div><div class="ttdef"><b>Definition:</b> <a href="Shortcuts_8h_source.html#l00329">Shortcuts.h:329</a></div></div>
 <div class="ttc" id="classDGtal_1_1DigitalSurfaceRegularization_html_a4d864d28ad10328ff7b5068e593ee1ed"><div class="ttname"><a href="classDGtal_1_1DigitalSurfaceRegularization.html#a4d864d28ad10328ff7b5068e593ee1ed">DGtal::DigitalSurfaceRegularization::myInit</a></div><div class="ttdeci">bool myInit</div><div class="ttdoc">Flag if the object has been set up properly. </div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurfaceRegularization_8h_source.html#l00436">DigitalSurfaceRegularization.h:436</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -2157,7 +2157,7 @@ template&lt;typename TDigitalSurface&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 9 2020 19:31:01 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 11:43:47 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -86,9 +86,14 @@ $(function() {
 , <a class="el" href="structDGtal_1_1functors_1_1BallConstantPointFunction.html#a736627307456163122d25a65dc6440a8">DGtal::functors::BallConstantPointFunction&lt; TPoint, TScalar &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1HatFunction.html#a676dcf28cf1e10c2ad6f35898cdc623d">DGtal::functors::HatFunction&lt; TScalar &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1HatPointFunction.html#a30736fe4ea53f1a5cb56f0e85d496290">DGtal::functors::HatPointFunction&lt; TPoint, TScalar &gt;</a>
+, <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#a158d533cbc9e277856e7de7679f6c430">DGtal::functors::ShapeGeometricFunctors::ShapeFirstPrincipalCurvatureFunctor&lt; TShape &gt;</a>
+, <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a864f7edb93ebe840377cf66b670c8378">DGtal::functors::ShapeGeometricFunctors::ShapeFirstPrincipalDirectionFunctor&lt; TShape &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeGaussianCurvatureFunctor.html#aa7d687a464d7f54a516333bbd6dc8999">DGtal::functors::ShapeGeometricFunctors::ShapeGaussianCurvatureFunctor&lt; TShape &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeMeanCurvatureFunctor.html#a1a37d9c7d4938afc1405b7de0f967d46">DGtal::functors::ShapeGeometricFunctors::ShapeMeanCurvatureFunctor&lt; TShape &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeNormalVectorFunctor.html#a3bcad775563eaa4af0970c54a9e88496">DGtal::functors::ShapeGeometricFunctors::ShapeNormalVectorFunctor&lt; TShape &gt;</a>
+, <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapePrincipalCurvaturesAndDirectionsFunctor.html#a0ab444b31a657fb4761f95af6d6cc201">DGtal::functors::ShapeGeometricFunctors::ShapePrincipalCurvaturesAndDirectionsFunctor&lt; TShape &gt;</a>
+, <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeSecondPrincipalCurvatureFunctor.html#a77cc53e1fd116a866c7c224b4b0a9c37">DGtal::functors::ShapeGeometricFunctors::ShapeSecondPrincipalCurvatureFunctor&lt; TShape &gt;</a>
+, <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeSecondPrincipalDirectionFunctor.html#a2eb72d2412a0f3fe744eb3e383b66e05">DGtal::functors::ShapeGeometricFunctors::ShapeSecondPrincipalDirectionFunctor&lt; TShape &gt;</a>
 , <a class="el" href="classDGtal_1_1functors_1_1SphereFittingEstimator_1_1PatatePoint.html#a0f294d53f08910e6c392be4aebf25f62">DGtal::functors::SphereFittingEstimator&lt; TSurfel, TEmbedder, TNormalVectorEstimatorCache &gt;::PatatePoint</a>
 , <a class="el" href="classDGtal_1_1functors_1_1SphereFittingEstimator.html#a2976442aae7afbbe7a9b41fc183dd440">DGtal::functors::SphereFittingEstimator&lt; TSurfel, TEmbedder, TNormalVectorEstimatorCache &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1VCMAbsoluteCurvatureFunctor.html#a61e9f9436c12151ffcdb476a5819b0f1">DGtal::functors::VCMAbsoluteCurvatureFunctor&lt; TVCMOnDigitalSurface &gt;</a>
@@ -207,6 +212,12 @@ $(function() {
 </li>
 <li>SecondEstimator
 : <a class="el" href="structDGtal_1_1CompareLocalEstimators.html#a28bca06f0e119c18bc28a38261fe7116">DGtal::CompareLocalEstimators&lt; TFirstEsimator, TSecondEstimator &gt;</a>
+</li>
+<li>SecondPrincipalCurvatureFunctor
+: <a class="el" href="classDGtal_1_1ShortcutsGeometry.html#a43b932093bfcf34061145d1fa95ba19c">DGtal::ShortcutsGeometry&lt; TKSpace &gt;</a>
+</li>
+<li>SecondPrincipalDirectionFunctor
+: <a class="el" href="classDGtal_1_1ShortcutsGeometry.html#a3b5767f7a7e37e478b9c078b4461b547">DGtal::ShortcutsGeometry&lt; TKSpace &gt;</a>
 </li>
 <li>Segmentation
 : <a class="el" href="classDGtal_1_1LambdaMST2DEstimator.html#ac1a48200fffcef6c358761fc7fd1671e">DGtal::LambdaMST2DEstimator&lt; TSpace, TSegmentation, Functor &gt;</a>
@@ -419,10 +430,15 @@ $(function() {
 </li>
 <li>Shape
 : <a class="el" href="classDGtal_1_1Board2D.html#a8be821845d14d93bbdedef6589fc9f31">DGtal::Board2D</a>
+, <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#a21aa81ea27ee1260f598ad91673a6bf4">DGtal::functors::ShapeGeometricFunctors::ShapeFirstPrincipalCurvatureFunctor&lt; TShape &gt;</a>
+, <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#abe4a52f045636c832627bd846d18b811">DGtal::functors::ShapeGeometricFunctors::ShapeFirstPrincipalDirectionFunctor&lt; TShape &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeGaussianCurvatureFunctor.html#aeab6b04ed59f949f18f634f6926e0171">DGtal::functors::ShapeGeometricFunctors::ShapeGaussianCurvatureFunctor&lt; TShape &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeMeanCurvatureFunctor.html#ab3b11b8a4e80b54fdee108f34c308a3d">DGtal::functors::ShapeGeometricFunctors::ShapeMeanCurvatureFunctor&lt; TShape &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeNormalVectorFunctor.html#a484decce6dbec350fb64aeb185c4eb06">DGtal::functors::ShapeGeometricFunctors::ShapeNormalVectorFunctor&lt; TShape &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapePositionFunctor.html#a0e2e43f7714669c52e35aca5a01054cc">DGtal::functors::ShapeGeometricFunctors::ShapePositionFunctor&lt; TShape &gt;</a>
+, <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapePrincipalCurvaturesAndDirectionsFunctor.html#a324538d1d8ace9ac4b071af88c7ca66e">DGtal::functors::ShapeGeometricFunctors::ShapePrincipalCurvaturesAndDirectionsFunctor&lt; TShape &gt;</a>
+, <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeSecondPrincipalCurvatureFunctor.html#a565e28e03d2eb02903c6be131b037ab0">DGtal::functors::ShapeGeometricFunctors::ShapeSecondPrincipalCurvatureFunctor&lt; TShape &gt;</a>
+, <a class="el" href="structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeSecondPrincipalDirectionFunctor.html#a6e658377e5d283fe5ad6a1c8141ea741">DGtal::functors::ShapeGeometricFunctors::ShapeSecondPrincipalDirectionFunctor&lt; TShape &gt;</a>
 , <a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a6a19af4d40581374c1ce3d9a681ff0c8">DGtal::TrueDigitalSurfaceLocalEstimator&lt; TKSpace, TShape, TGeometricFunctor &gt;</a>
 </li>
 <li>ShapePointFunctor
@@ -952,7 +968,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 9 2020 19:31:12 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 14 2020 11:43:58 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

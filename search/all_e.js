@@ -105,7 +105,7 @@ var searchData=
   ['linearregression',['linearRegression',['../classDGtal_1_1MultiStatistics.html#a8c0d2efc3e472deec869d3977935f98c',1,'DGtal::MultiStatistics']]],
   ['linecap',['LineCap',['../structLibBoard_1_1Shape.html#af09a3c6f719c8a846447c0cd2e2d0368',1,'LibBoard::Shape::LineCap()'],['../structLibBoard_1_1Board_1_1State.html#a49db356e78665f538208b715a511ca5d',1,'LibBoard::Board::State::lineCap()']]],
   ['lined3d',['LineD3D',['../structDGtal_1_1Display3D_1_1LineD3D.html',1,'DGtal::Display3D']]],
-  ['linejoin',['LineJoin',['../structLibBoard_1_1Shape.html#a5618d9c1f412d36189695c557f1b9be2',1,'LibBoard::Shape::LineJoin()'],['../structLibBoard_1_1Board_1_1State.html#a295e41f899d6cc23aa6e2ae29e66bedc',1,'LibBoard::Board::State::lineJoin()']]],
+  ['linejoin',['lineJoin',['../structLibBoard_1_1Board_1_1State.html#a295e41f899d6cc23aa6e2ae29e66bedc',1,'LibBoard::Board::State::lineJoin()'],['../structLibBoard_1_1Shape.html#a5618d9c1f412d36189695c557f1b9be2',1,'LibBoard::Shape::LineJoin()']]],
   ['linel',['linel',['../classDGtal_1_1IndexedDigitalSurface.html#ab215c7e9d040d23b9c900d1acc77fd92',1,'DGtal::IndexedDigitalSurface']]],
   ['linels',['linels',['../classDGtal_1_1IndexedDigitalSurface.html#ad38fd4ba5b92d75796569725e4b7d9ee',1,'DGtal::IndexedDigitalSurface']]],
   ['linestyle',['LineStyle',['../structLibBoard_1_1Shape.html#ad9b9ccfae0a74f1d681cb126a225c900',1,'LibBoard::Shape::LineStyle()'],['../structLibBoard_1_1Board_1_1State.html#a9b57cdf3330a3f51879b9f6c120cf95b',1,'LibBoard::Board::State::lineStyle()']]],
