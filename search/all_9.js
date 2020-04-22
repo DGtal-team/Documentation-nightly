@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['g',['g',['../classDGtal_1_1EllipticHelix.html#a05a4be4cc5f3cfb34cc7219e92c5967d',1,'DGtal::EllipticHelix']]],
+  ['g',['g',['../classDGtal_1_1EllipticHelix.html#a05a4be4cc5f3cfb34cc7219e92c5967d',1,'DGtal::EllipticHelix::g()'],['../classDGtal_1_1Color.html#a1381545578fe2774aa36ed06bce0c54e',1,'DGtal::Color::g()']]],
   ['g0',['g0',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu0v1.html#a1d4fb08675b81748b433c6720764d63b',1,'DGtal::ATu0v1']]],
   ['g2',['G2',['../classDGtal_1_1Signal.html#aab3c8d396882d988d3889b626ff06fea',1,'DGtal::Signal::G2()'],['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a9b7623bc66ece3b31ddcc380c7380455',1,'DGtal::ATu2v0::g2()'],['../classDGtal_1_1ATSolver2D.html#ad6746ffd0e041d8c9e3634d9ecd66ac7',1,'DGtal::ATSolver2D::g2()']]],
   ['g2n',['G2n',['../classDGtal_1_1Signal.html#ab3f2be8aeeab56fb4af32b67777a59fc',1,'DGtal::Signal']]],

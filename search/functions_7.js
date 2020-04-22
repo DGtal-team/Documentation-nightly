@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['g',['g',['../classDGtal_1_1EllipticHelix.html#a05a4be4cc5f3cfb34cc7219e92c5967d',1,'DGtal::EllipticHelix']]],
+  ['g',['g',['../classDGtal_1_1EllipticHelix.html#a05a4be4cc5f3cfb34cc7219e92c5967d',1,'DGtal::EllipticHelix::g()'],['../classDGtal_1_1Color.html#a1381545578fe2774aa36ed06bce0c54e',1,'DGtal::Color::g()']]],
   ['g2',['G2',['../classDGtal_1_1Signal.html#aab3c8d396882d988d3889b626ff06fea',1,'DGtal::Signal']]],
   ['g2n',['G2n',['../classDGtal_1_1Signal.html#ab3f2be8aeeab56fb4af32b67777a59fc',1,'DGtal::Signal']]],
   ['gaussdigitizer',['GaussDigitizer',['../classDGtal_1_1GaussDigitizer.html#a26712fdae169f79683f26a289e35aaeb',1,'DGtal::GaussDigitizer']]],
