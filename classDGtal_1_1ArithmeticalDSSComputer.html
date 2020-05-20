@@ -89,7 +89,7 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for DGtal::ArithmeticalDSSComputer&lt; TIterator, TInteger, adjacency &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classDGtal_1_1ArithmeticalDSSComputer__inherit__graph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDGtal_1_1ArithmeticalDSSComputer__inherit__graph.svg" width="286" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -227,12 +227,11 @@ Protected Attributes</h2></td></tr>
 class DGtal::ArithmeticalDSSComputer&lt; TIterator, TInteger, adjacency &gt;</h3>
 
 <p>Aim: This class is a wrapper around <a class="el" href="classDGtal_1_1ArithmeticalDSS.html" title="Aim: This class represents a naive (resp. standard) digital straight segment (DSS), ie. the sequence of simply 8- (resp. 4-)connected digital points contained in a naive (resp. standard) digital straight line (DSL) between two points of it. ">ArithmeticalDSS</a> that is devoted to the dynamic recognition of digital straight segments (DSS) along any sequence of digital points. </p>
-<p>See <a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments</a> for further details. See also classes <a class="el" href="classDGtal_1_1NaiveDSS8Computer.html" title="Aim: This class is a wrapper around ArithmeticalDSS that is devoted to the dynamic recognition of nai...">NaiveDSS8Computer</a> and <a class="el" href="classDGtal_1_1StandardDSS4Computer.html" title="Aim: This class is a wrapper around ArithmeticalDSS that is devoted to the dynamic recognition of sta...">StandardDSS4Computer</a>, which are aliases of this class.</p>
+<p>See <a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments</a> for further details. See also classes NaiveDSS8Computer and StandardDSS4Computer, which are aliases of this class.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TIterator</td><td>type of iterator on 2d digital points, at least readable and forward. </td></tr>
-    <tr><td class="paramname">TInteger</td><td>type of integers used for the computation of remainders, which is a model of CInteger. <br />
-</td></tr>
+    <tr><td class="paramname">TInteger</td><td>type of integers used for the computation of remainders, which is a model of CInteger. </td></tr>
     <tr><td class="paramname">adjacency</td><td>an unsigned integer equal to 4 for standard (simply 4-connected) DSS or 8 for naive (simply 8-connected) DSS (default).</td></tr>
   </table>
   </dd>
@@ -241,7 +240,7 @@ class DGtal::ArithmeticalDSSComputer&lt; TIterator, TInteger, adjacency &gt;</h3
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1ArithmeticalDSS.html" title="Aim: This class represents a naive (resp. standard) digital straight segment (DSS), ie. the sequence of simply 8- (resp. 4-)connected digital points contained in a naive (resp. standard) digital straight line (DSL) between two points of it. ">ArithmeticalDSS</a> NaiveDSS StandardDSS </dd>
 <dd>
 <a class="el" href="exampleArithmeticalDSS_8cpp.html">exampleArithmeticalDSS.cpp</a> <a class="el" href="exampleArithmeticalDSSComputer_8cpp.html">exampleArithmeticalDSSComputer.cpp</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="geometry_2curves_2convex-and-concave-parts_8cpp-example.html#_a7">geometry/curves/convex-and-concave-parts.cpp</a>, <a class="el" href="geometry_2curves_2estimation_2exampleLMST2D_8cpp-example.html#_a2">geometry/curves/estimation/exampleLMST2D.cpp</a>, and <a class="el" href="geometry_2curves_2greedy-dss-decomposition_8cpp-example.html#_a3">geometry/curves/greedy-dss-decomposition.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="geometry_2curves_2convex-and-concave-parts_8cpp-example.html#_a7">geometry/curves/convex-and-concave-parts.cpp</a>, <a class="el" href="geometry_2curves_2estimation_2exampleLMST2D_8cpp-example.html#_a2">geometry/curves/estimation/exampleLMST2D.cpp</a>, <a class="el" href="geometry_2curves_2exampleArithmeticalDSSComputer_8cpp-example.html#_a2">geometry/curves/exampleArithmeticalDSSComputer.cpp</a>, and <a class="el" href="geometry_2curves_2greedy-dss-decomposition_8cpp-example.html#_a3">geometry/curves/greedy-dss-decomposition.cpp</a>.</dd>
 </dl>
 <p class="definition">Definition at line <a class="el" href="ArithmeticalDSSComputer_8h_source.html#l00086">86</a> of file <a class="el" href="ArithmeticalDSSComputer_8h_source.html">ArithmeticalDSSComputer.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -864,7 +863,8 @@ template&lt;typename TIterator, typename TInteger = typename IteratorCirculatorT
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="geometry_2curves_2exampleArithmeticalDSSComputer_8cpp-example.html#a4">geometry/curves/exampleArithmeticalDSSComputer.cpp</a>.</dd>
+</dl>
 <p class="reference">Referenced by <a class="el" href="exampleArithmeticalDSSComputer_8cpp_source.html#l00056">main()</a>, and <a class="el" href="testArithmeticalDSSComputer_8cpp_source.html#l00264">testIsInsideForOneQuadrant()</a>.</p>
 
 </div>
@@ -1522,7 +1522,7 @@ template&lt;typename TIterator, typename TInteger = typename IteratorCirculatorT
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 9 2020 18:54:01 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 20 2020 08:44:01 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
