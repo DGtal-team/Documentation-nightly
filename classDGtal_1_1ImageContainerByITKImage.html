@@ -91,7 +91,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classDGtal_1_1ImageContainerByITKImage__coll__graph.svg" width="254" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDGtal_1_1ImageContainerByITKImage__coll__graph.svg" width="359" height="264"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -115,6 +115,10 @@ Public Types</h2></td></tr>
 <tr class="separator:a798d10204f477937a875cc4d8af9ce0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6642ee02cc07ffb703140f92316e4edb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a6642ee02cc07ffb703140f92316e4edb">Vertex</a></td></tr>
 <tr class="separator:a6642ee02cc07ffb703140f92316e4edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35966d9d5b2ef32e21faeabd36eb23fc"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1PointVector.html">PointVector</a>&lt; <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a4c8554c709b59144c8a596da62cefa0a">dimension</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a35966d9d5b2ef32e21faeabd36eb23fc">RealPoint</a></td></tr>
+<tr class="separator:a35966d9d5b2ef32e21faeabd36eb23fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64eddc3ee1c3d03579472645907fd2cf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a35966d9d5b2ef32e21faeabd36eb23fc">RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a64eddc3ee1c3d03579472645907fd2cf">PhysicalPoint</a></td></tr>
+<tr class="separator:a64eddc3ee1c3d03579472645907fd2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41999526cd39e962be3dc48c143e4cb6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="testDistancePropagation_8cpp.html#a1d55f1ac39a1cf68fbdb7b1946fbbeab">itk::Image</a>&lt; TValue, <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a4c8554c709b59144c8a596da62cefa0a">dimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a41999526cd39e962be3dc48c143e4cb6">ITKImage</a></td></tr>
 <tr class="separator:a41999526cd39e962be3dc48c143e4cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a409573fadd9f05b0efe96fed767eb015"><td class="memItemLeft" align="right" valign="top">typedef ITKImage::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a409573fadd9f05b0efe96fed767eb015">ITKImagePointer</a></td></tr>
@@ -144,26 +148,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aebc2afa13faaf9b015cc3e0cf435caa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4e6648120a5fc50923ee6e432907396"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#ad4e6648120a5fc50923ee6e432907396">~ImageContainerByITKImage</a> ()</td></tr>
 <tr class="separator:ad4e6648120a5fc50923ee6e432907396"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d4b72fc2385708a91a746fd4e748e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a39d4b72fc2385708a91a746fd4e748e2">updateDomain</a> ()</td></tr>
-<tr class="separator:a39d4b72fc2385708a91a746fd4e748e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dbc91f016379698ba9242d4f057d466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a1dbc91f016379698ba9242d4f057d466">updateDomain</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;inputDomainShift=<a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a>())</td></tr>
+<tr class="separator:a1dbc91f016379698ba9242d4f057d466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6012f0a1e1b347137e64a2a1913322fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a2862914f5285595533299799eef49186">ConstRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a6012f0a1e1b347137e64a2a1913322fd">constRange</a> () const</td></tr>
 <tr class="separator:a6012f0a1e1b347137e64a2a1913322fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92cddc50acc8ec42276d78865df87c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a02a0cea66c8065c064b75110d5de202c">Range</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#aa92cddc50acc8ec42276d78865df87c7">range</a> ()</td></tr>
 <tr class="separator:aa92cddc50acc8ec42276d78865df87c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6c6c167a32d97e7cd4caeac869b2285"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a7187b9faf5f2204c4a5db7c904faa9bf">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#ae6c6c167a32d97e7cd4caeac869b2285">operator()</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;<a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint</a>) const</td></tr>
-<tr class="separator:ae6c6c167a32d97e7cd4caeac869b2285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab757af7f194222f4535142f2fa6565e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a7187b9faf5f2204c4a5db7c904faa9bf">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#ab757af7f194222f4535142f2fa6565e6">operator()</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;indexPoint) const</td></tr>
+<tr class="separator:ab757af7f194222f4535142f2fa6565e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2492c6c5e091ca067ce20ef59c6b5f5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a7187b9faf5f2204c4a5db7c904faa9bf">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a2492c6c5e091ca067ce20ef59c6b5f5c">operator()</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#af8f1f56367c18fd52a3aa4de5400711f">ConstIterator</a> &amp;it) const</td></tr>
 <tr class="separator:a2492c6c5e091ca067ce20ef59c6b5f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a350f90fc24ef09de5f5e400b66346273"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a7187b9faf5f2204c4a5db7c904faa9bf">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a350f90fc24ef09de5f5e400b66346273">operator()</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">Iterator</a> &amp;it) const</td></tr>
 <tr class="separator:a350f90fc24ef09de5f5e400b66346273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef7522844da33da65ef856327cc3258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a4ef7522844da33da65ef856327cc3258">setValue</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;<a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint</a>, const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a7187b9faf5f2204c4a5db7c904faa9bf">Value</a> &amp;aValue)</td></tr>
-<tr class="separator:a4ef7522844da33da65ef856327cc3258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb832b75c80db468ddc8ad1c1912dbaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#adb832b75c80db468ddc8ad1c1912dbaf">setValue</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;indexPoint, const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a7187b9faf5f2204c4a5db7c904faa9bf">Value</a> &amp;aValue)</td></tr>
+<tr class="separator:adb832b75c80db468ddc8ad1c1912dbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0e02a68d2c5cdb910515cd9bb3b89b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#ab0e02a68d2c5cdb910515cd9bb3b89b1">setValue</a> (<a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">Iterator</a> &amp;it, const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a7187b9faf5f2204c4a5db7c904faa9bf">Value</a> &amp;V)</td></tr>
 <tr class="separator:ab0e02a68d2c5cdb910515cd9bb3b89b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8c2559e33b1b9dd3ee2caa1614c6a29"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#af39e12bee983470b73ecc164a4a2a68a">Domain</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#ac8c2559e33b1b9dd3ee2caa1614c6a29">domain</a> () const</td></tr>
 <tr class="separator:ac8c2559e33b1b9dd3ee2caa1614c6a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe61cd4cd5e6e077acd1ed75792cb024"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a409573fadd9f05b0efe96fed767eb015">ITKImagePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#abe61cd4cd5e6e077acd1ed75792cb024">getITKImagePointer</a> () const</td></tr>
 <tr class="separator:abe61cd4cd5e6e077acd1ed75792cb024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9bef6329716fd52f35ea23878c7cf7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a4d9bef6329716fd52f35ea23878c7cf7">getDomainShift</a> () const</td></tr>
+<tr class="separator:a4d9bef6329716fd52f35ea23878c7cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a534a3eb50703ea4ba4e8f192bcd271d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a534a3eb50703ea4ba4e8f192bcd271d2">selfDisplay</a> (std::ostream &amp;out) const</td></tr>
 <tr class="separator:a534a3eb50703ea4ba4e8f192bcd271d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e7e3828be27adffb3f5aaa200663081"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a9e7e3828be27adffb3f5aaa200663081">isValid</a> () const</td></tr>
@@ -176,6 +182,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa581445939c9df0dcd0aa4ccf8f28b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1013e21db7e61d241b368941ecabfda2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a1013e21db7e61d241b368941ecabfda2">end</a> ()</td></tr>
 <tr class="separator:a1013e21db7e61d241b368941ecabfda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09193df220f3be5f6eb412d5b986c0f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a09193df220f3be5f6eb412d5b986c0f9">getDomainPointFromIndex</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;indexPoint) const</td></tr>
+<tr class="separator:a09193df220f3be5f6eb412d5b986c0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf3d60be44f3d25f511c97896fd4e381"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#acf3d60be44f3d25f511c97896fd4e381">getIndexFromDomainPoint</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;domainPoint) const</td></tr>
+<tr class="separator:acf3d60be44f3d25f511c97896fd4e381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78de76f6e1c9e1b4a19d9bc2359675e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a78de76f6e1c9e1b4a19d9bc2359675e4">getDomainPointFromItkIndex</a> (const typename ITKImage::IndexType &amp;itkIndexPoint) const</td></tr>
+<tr class="separator:a78de76f6e1c9e1b4a19d9bc2359675e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79462ef8e017fc6e27befd619f8f9f5e"><td class="memItemLeft" align="right" valign="top">ITKImage::IndexType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a79462ef8e017fc6e27befd619f8f9f5e">getItkIndexFromDomainPoint</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;domainPoint) const</td></tr>
+<tr class="separator:a79462ef8e017fc6e27befd619f8f9f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f02e7443158eef8fd7ba92403d3a96a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a64eddc3ee1c3d03579472645907fd2cf">PhysicalPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a7f02e7443158eef8fd7ba92403d3a96a">getPhysicalPointFromIndex</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;indexPoint) const</td></tr>
+<tr class="separator:a7f02e7443158eef8fd7ba92403d3a96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a55d7ad6acf27e96c438eb72d6bb62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a07a55d7ad6acf27e96c438eb72d6bb62">getIndexFromPhysicalPoint</a> (const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a64eddc3ee1c3d03579472645907fd2cf">PhysicalPoint</a> &amp;physicalPoint) const</td></tr>
+<tr class="separator:a07a55d7ad6acf27e96c438eb72d6bb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b57e704388e43b072a667725e69ed5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a64eddc3ee1c3d03579472645907fd2cf">PhysicalPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#ab7b57e704388e43b072a667725e69ed5">getLowerBoundAsPhysicalPoint</a> () const</td></tr>
+<tr class="separator:ab7b57e704388e43b072a667725e69ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3c06280e2d8da33d2227f2fe9416fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a64eddc3ee1c3d03579472645907fd2cf">PhysicalPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#adf3c06280e2d8da33d2227f2fe9416fa">getUpperBoundAsPhysicalPoint</a> () const</td></tr>
+<tr class="separator:adf3c06280e2d8da33d2227f2fe9416fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -193,6 +215,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a00033b27b67da5898c4e9ef96799226d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dcd752e905d2fae3cc4bd717909d2c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#af39e12bee983470b73ecc164a4a2a68a">Domain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a2dcd752e905d2fae3cc4bd717909d2c8">myDomain</a></td></tr>
 <tr class="separator:a2dcd752e905d2fae3cc4bd717909d2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c2165e70e06ecf59a4e8472563e313"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#ac0c2165e70e06ecf59a4e8472563e313">myDomainShift</a> = <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a>()</td></tr>
+<tr class="separator:ac0c2165e70e06ecf59a4e8472563e313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TDomain, typename TValue&gt;<br />
@@ -200,10 +224,10 @@ class DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;</h3>
 
 <p>Aim: implements a model of CImageContainer using a ITK <a class="el" href="classDGtal_1_1Image.html" title="Aim: implements association bewteen points lying in a digital domain and values. ">Image</a>. </p>
 <p>Description of template class '<a class="el" href="classDGtal_1_1ImageContainerByITKImage.html" title="Aim: implements a model of CImageContainer using a ITK Image. ">ImageContainerByITKImage</a>' </p>
-<p>Using this container, you can switch from <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a> alogrithms to ITK processing pipeline. The Ownership of the underlying ITK image is shared between the wrapper and the ITK pipeline. If the ITK image region is modified, one should manually update the domain of the wrapper. This is done by calling the <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a39d4b72fc2385708a91a746fd4e748e2">updateDomain()</a> method.</p>
+<p>Using this container, you can switch from <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a> alogrithms to ITK processing pipeline. The Ownership of the underlying ITK image is shared between the wrapper and the ITK pipeline. If the ITK image region is modified, one should manually update the domain of the wrapper. This is done by calling the <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a1dbc91f016379698ba9242d4f057d466">updateDomain()</a> method.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="testITKImage_8cpp.html">testITKImage.cpp</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00091">91</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00093">93</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af8f1f56367c18fd52a3aa4de5400711f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8f1f56367c18fd52a3aa4de5400711f">&#9670;&nbsp;</a></span>ConstIterator</h2>
@@ -219,7 +243,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00115">115</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00119">119</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +261,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00118">118</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00122">122</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -255,7 +279,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00108">108</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00110">110</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -273,7 +297,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00100">100</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00102">102</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -291,7 +315,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00109">109</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00111">111</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +333,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00116">116</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00120">120</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -327,7 +351,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00113">113</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00117">117</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -345,7 +369,25 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00114">114</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00118">118</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+
+</div>
+</div>
+<a id="a64eddc3ee1c3d03579472645907fd2cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64eddc3ee1c3d03579472645907fd2cf">&#9670;&nbsp;</a></span>PhysicalPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a35966d9d5b2ef32e21faeabd36eb23fc">RealPoint</a> <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::<a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a64eddc3ee1c3d03579472645907fd2cf">PhysicalPoint</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00115">115</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +405,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00106">106</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00108">108</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +423,25 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00119">119</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00123">123</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+
+</div>
+</div>
+<a id="a35966d9d5b2ef32e21faeabd36eb23fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35966d9d5b2ef32e21faeabd36eb23fc">&#9670;&nbsp;</a></span>RealPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classDGtal_1_1PointVector.html">PointVector</a>&lt;<a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a4c8554c709b59144c8a596da62cefa0a">dimension</a>, double&gt; <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::<a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a35966d9d5b2ef32e21faeabd36eb23fc">RealPoint</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00114">114</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -399,7 +459,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00101">101</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00103">103</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +477,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00110">110</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00112">112</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +495,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00099">99</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00101">101</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -453,7 +513,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00107">107</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00109">109</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -471,7 +531,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00111">111</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00113">113</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -632,12 +692,12 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </div><div class="memdoc">
 <p><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a331362e9c1b610fd9392fd8bb0d6df42">begin() const </a>iterator. </p>
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00265">265</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00279">279</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00323">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myITKImagePointer</a>.</p>
-<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      {</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;          <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> iter = <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#af8f1f56367c18fd52a3aa4de5400711f">ConstIterator</a>(<a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>, <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>-&gt;GetLargestPossibleRegion());</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;          iter.GoToBegin();</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;          <span class="keywordflow">return</span> iter;</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a00033b27b67da5898c4e9ef96799226d"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">DGtal::ImageContainerByITKImage::myITKImagePointer</a></div><div class="ttdeci">ITKImagePointer myITKImagePointer</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00323">ImageContainerByITKImage.h:323</a></div></div>
+<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00391">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myITKImagePointer</a>.</p>
+<div class="fragment"><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      {</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;          <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> iter = <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#af8f1f56367c18fd52a3aa4de5400711f">ConstIterator</a>(<a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>, <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>-&gt;GetLargestPossibleRegion());</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;          iter.GoToBegin();</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;          <span class="keywordflow">return</span> iter;</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a00033b27b67da5898c4e9ef96799226d"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">DGtal::ImageContainerByITKImage::myITKImagePointer</a></div><div class="ttdeci">ITKImagePointer myITKImagePointer</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00391">ImageContainerByITKImage.h:391</a></div></div>
 <div class="ttc" id="greedy-plane-segmentation-ex2_8cpp_html_a6d06fad433cff067dfcbbbf16d6e2dbf"><div class="ttname"><a href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a></div><div class="ttdeci">MyDigitalSurface::ConstIterator ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="greedy-plane-segmentation-ex2_8cpp_source.html#l00093">greedy-plane-segmentation-ex2.cpp:93</a></div></div>
-<div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_af8f1f56367c18fd52a3aa4de5400711f"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#af8f1f56367c18fd52a3aa4de5400711f">DGtal::ImageContainerByITKImage::ConstIterator</a></div><div class="ttdeci">itk::ImageRegionConstIterator&lt; ITKImage &gt; ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00115">ImageContainerByITKImage.h:115</a></div></div>
+<div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_af8f1f56367c18fd52a3aa4de5400711f"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#af8f1f56367c18fd52a3aa4de5400711f">DGtal::ImageContainerByITKImage::ConstIterator</a></div><div class="ttdeci">itk::ImageRegionConstIterator&lt; ITKImage &gt; ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00119">ImageContainerByITKImage.h:119</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -667,11 +727,11 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </div><div class="memdoc">
 <p><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a331362e9c1b610fd9392fd8bb0d6df42">begin() const </a>iterator. </p>
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00277">277</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00291">291</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00323">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myITKImagePointer</a>.</p>
-<div class="fragment"><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      {</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;          <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">Iterator</a> iter = <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">Iterator</a>(<a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>, <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>-&gt;GetLargestPossibleRegion());</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;          iter.GoToBegin();</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;          <span class="keywordflow">return</span> iter;</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a00033b27b67da5898c4e9ef96799226d"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">DGtal::ImageContainerByITKImage::myITKImagePointer</a></div><div class="ttdeci">ITKImagePointer myITKImagePointer</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00323">ImageContainerByITKImage.h:323</a></div></div>
-<div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a30ff02a955aff05b821e3dc1fa5cc38c"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">DGtal::ImageContainerByITKImage::Iterator</a></div><div class="ttdeci">itk::ImageRegionIterator&lt; ITKImage &gt; Iterator</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00116">ImageContainerByITKImage.h:116</a></div></div>
+<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00391">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myITKImagePointer</a>.</p>
+<div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      {</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;          <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">Iterator</a> iter = <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">Iterator</a>(<a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>, <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>-&gt;GetLargestPossibleRegion());</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;          iter.GoToBegin();</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;          <span class="keywordflow">return</span> iter;</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a00033b27b67da5898c4e9ef96799226d"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">DGtal::ImageContainerByITKImage::myITKImagePointer</a></div><div class="ttdeci">ITKImagePointer myITKImagePointer</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00391">ImageContainerByITKImage.h:391</a></div></div>
+<div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a30ff02a955aff05b821e3dc1fa5cc38c"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">DGtal::ImageContainerByITKImage::Iterator</a></div><div class="ttdeci">itk::ImageRegionIterator&lt; ITKImage &gt; Iterator</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00120">ImageContainerByITKImage.h:120</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -741,8 +801,8 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the range providing begin and end iterators to scan the values of image. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00171">171</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      {</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a2862914f5285595533299799eef49186">ConstRange</a>(*<span class="keyword">this</span>);</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a2862914f5285595533299799eef49186"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a2862914f5285595533299799eef49186">DGtal::ImageContainerByITKImage::ConstRange</a></div><div class="ttdeci">DefaultConstImageRange&lt; Self &gt; ConstRange</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00118">ImageContainerByITKImage.h:118</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00179">179</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      {</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a2862914f5285595533299799eef49186">ConstRange</a>(*<span class="keyword">this</span>);</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a2862914f5285595533299799eef49186"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a2862914f5285595533299799eef49186">DGtal::ImageContainerByITKImage::ConstRange</a></div><div class="ttdeci">DefaultConstImageRange&lt; Self &gt; ConstRange</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00122">ImageContainerByITKImage.h:122</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -772,10 +832,10 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the domain associated to the image. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00231">231</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00239">239</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00324">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myDomain</a>.</p>
-<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      {</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a2dcd752e905d2fae3cc4bd717909d2c8">myDomain</a>;</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a2dcd752e905d2fae3cc4bd717909d2c8"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a2dcd752e905d2fae3cc4bd717909d2c8">DGtal::ImageContainerByITKImage::myDomain</a></div><div class="ttdeci">Domain myDomain</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00324">ImageContainerByITKImage.h:324</a></div></div>
+<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00392">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myDomain</a>.</p>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      {</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a2dcd752e905d2fae3cc4bd717909d2c8">myDomain</a>;</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a2dcd752e905d2fae3cc4bd717909d2c8"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a2dcd752e905d2fae3cc4bd717909d2c8">DGtal::ImageContainerByITKImage::myDomain</a></div><div class="ttdeci">Domain myDomain</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00392">ImageContainerByITKImage.h:392</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -805,12 +865,12 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </div><div class="memdoc">
 <p><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#aa581445939c9df0dcd0aa4ccf8f28b1b">end() const </a>iterator. </p>
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00289">289</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00303">303</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00323">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myITKImagePointer</a>.</p>
-<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      {</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;          <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> iter = <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#af8f1f56367c18fd52a3aa4de5400711f">ConstIterator</a>(<a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>, <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>-&gt;GetLargestPossibleRegion());</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          iter.GoToEnd();</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;          <span class="keywordflow">return</span> iter;</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a00033b27b67da5898c4e9ef96799226d"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">DGtal::ImageContainerByITKImage::myITKImagePointer</a></div><div class="ttdeci">ITKImagePointer myITKImagePointer</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00323">ImageContainerByITKImage.h:323</a></div></div>
+<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00391">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myITKImagePointer</a>.</p>
+<div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      {</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;          <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a> iter = <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#af8f1f56367c18fd52a3aa4de5400711f">ConstIterator</a>(<a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>, <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>-&gt;GetLargestPossibleRegion());</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;          iter.GoToEnd();</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;          <span class="keywordflow">return</span> iter;</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a00033b27b67da5898c4e9ef96799226d"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">DGtal::ImageContainerByITKImage::myITKImagePointer</a></div><div class="ttdeci">ITKImagePointer myITKImagePointer</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00391">ImageContainerByITKImage.h:391</a></div></div>
 <div class="ttc" id="greedy-plane-segmentation-ex2_8cpp_html_a6d06fad433cff067dfcbbbf16d6e2dbf"><div class="ttname"><a href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a></div><div class="ttdeci">MyDigitalSurface::ConstIterator ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="greedy-plane-segmentation-ex2_8cpp_source.html#l00093">greedy-plane-segmentation-ex2.cpp:93</a></div></div>
-<div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_af8f1f56367c18fd52a3aa4de5400711f"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#af8f1f56367c18fd52a3aa4de5400711f">DGtal::ImageContainerByITKImage::ConstIterator</a></div><div class="ttdeci">itk::ImageRegionConstIterator&lt; ITKImage &gt; ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00115">ImageContainerByITKImage.h:115</a></div></div>
+<div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_af8f1f56367c18fd52a3aa4de5400711f"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#af8f1f56367c18fd52a3aa4de5400711f">DGtal::ImageContainerByITKImage::ConstIterator</a></div><div class="ttdeci">itk::ImageRegionConstIterator&lt; ITKImage &gt; ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00119">ImageContainerByITKImage.h:119</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -840,12 +900,172 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </div><div class="memdoc">
 <p><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a1013e21db7e61d241b368941ecabfda2">end()</a> iterator. </p>
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00301">301</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00315">315</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00323">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myITKImagePointer</a>.</p>
-<div class="fragment"><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      {</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;          <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">Iterator</a> iter = <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">Iterator</a>(<a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>, <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>-&gt;GetLargestPossibleRegion());</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;          iter.GoToEnd();</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;          <span class="keywordflow">return</span> iter;</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a00033b27b67da5898c4e9ef96799226d"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">DGtal::ImageContainerByITKImage::myITKImagePointer</a></div><div class="ttdeci">ITKImagePointer myITKImagePointer</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00323">ImageContainerByITKImage.h:323</a></div></div>
-<div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a30ff02a955aff05b821e3dc1fa5cc38c"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">DGtal::ImageContainerByITKImage::Iterator</a></div><div class="ttdeci">itk::ImageRegionIterator&lt; ITKImage &gt; Iterator</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00116">ImageContainerByITKImage.h:116</a></div></div>
+<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00391">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myITKImagePointer</a>.</p>
+<div class="fragment"><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      {</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;          <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">Iterator</a> iter = <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">Iterator</a>(<a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>, <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>-&gt;GetLargestPossibleRegion());</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          iter.GoToEnd();</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;          <span class="keywordflow">return</span> iter;</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a00033b27b67da5898c4e9ef96799226d"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">DGtal::ImageContainerByITKImage::myITKImagePointer</a></div><div class="ttdeci">ITKImagePointer myITKImagePointer</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00391">ImageContainerByITKImage.h:391</a></div></div>
+<div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a30ff02a955aff05b821e3dc1fa5cc38c"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a30ff02a955aff05b821e3dc1fa5cc38c">DGtal::ImageContainerByITKImage::Iterator</a></div><div class="ttdeci">itk::ImageRegionIterator&lt; ITKImage &gt; Iterator</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00120">ImageContainerByITKImage.h:120</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a09193df220f3be5f6eb412d5b986c0f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09193df220f3be5f6eb412d5b986c0f9">&#9670;&nbsp;</a></span>getDomainPointFromIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::getDomainPointFromIndex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>indexPoint</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>IndexPoint refers to a valid ITKImage::IndexPoint DomainPoint refers to a Point between lowerBound and upperBound of myDomain. They are different only when myDomainShift is different than Zero.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indexPoint</td><td>a point holding valid index coordinates of the ITK image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>domainPoint a point between lowerBound and upperBound </dd></dl>
+
+</div>
+</div>
+<a id="a78de76f6e1c9e1b4a19d9bc2359675e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78de76f6e1c9e1b4a19d9bc2359675e4">&#9670;&nbsp;</a></span>getDomainPointFromItkIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::getDomainPointFromItkIndex </td>
+          <td>(</td>
+          <td class="paramtype">const typename ITKImage::IndexType &amp;&#160;</td>
+          <td class="paramname"><em>itkIndexPoint</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The same as <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a78de76f6e1c9e1b4a19d9bc2359675e4">getDomainPointFromItkIndex</a> and <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#acf3d60be44f3d25f511c97896fd4e381">getIndexFromDomainPoint</a> but using ITK types.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itkIndexPoint</td><td>an IndexType of ITK. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>domainPoint a point between lowerBound and upperBound </dd></dl>
+
+</div>
+</div>
+<a id="a4d9bef6329716fd52f35ea23878c7cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9bef6329716fd52f35ea23878c7cf7">&#9670;&nbsp;</a></span>getDomainShift()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a>&amp; <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::getDomainShift </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00254">254</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+
+<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00410">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myDomainShift</a>.</p>
+<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      {</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#ac0c2165e70e06ecf59a4e8472563e313">myDomainShift</a>;</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_ac0c2165e70e06ecf59a4e8472563e313"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#ac0c2165e70e06ecf59a4e8472563e313">DGtal::ImageContainerByITKImage::myDomainShift</a></div><div class="ttdeci">Point myDomainShift</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00410">ImageContainerByITKImage.h:410</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acf3d60be44f3d25f511c97896fd4e381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf3d60be44f3d25f511c97896fd4e381">&#9670;&nbsp;</a></span>getIndexFromDomainPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::getIndexFromDomainPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>domainPoint</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07a55d7ad6acf27e96c438eb72d6bb62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a55d7ad6acf27e96c438eb72d6bb62">&#9670;&nbsp;</a></span>getIndexFromPhysicalPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::getIndexFromPhysicalPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a64eddc3ee1c3d03579472645907fd2cf">PhysicalPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>physicalPoint</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="abe61cd4cd5e6e077acd1ed75792cb024"></a>
@@ -874,11 +1094,132 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </div><div class="memdoc">
 <p>Returns a copy of the itkImage smartPointer </p>
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00240">240</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00248">248</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00323">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myITKImagePointer</a>.</p>
-<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      {</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>;</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a00033b27b67da5898c4e9ef96799226d"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">DGtal::ImageContainerByITKImage::myITKImagePointer</a></div><div class="ttdeci">ITKImagePointer myITKImagePointer</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00323">ImageContainerByITKImage.h:323</a></div></div>
+<p class="reference">References <a class="el" href="ImageContainerByITKImage_8h_source.html#l00391">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::myITKImagePointer</a>.</p>
+<div class="fragment"><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      {</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">myITKImagePointer</a>;</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a00033b27b67da5898c4e9ef96799226d"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a00033b27b67da5898c4e9ef96799226d">DGtal::ImageContainerByITKImage::myITKImagePointer</a></div><div class="ttdeci">ITKImagePointer myITKImagePointer</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00391">ImageContainerByITKImage.h:391</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a79462ef8e017fc6e27befd619f8f9f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79462ef8e017fc6e27befd619f8f9f5e">&#9670;&nbsp;</a></span>getItkIndexFromDomainPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ITKImage::IndexType <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::getItkIndexFromDomainPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>domainPoint</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7b57e704388e43b072a667725e69ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b57e704388e43b072a667725e69ed5">&#9670;&nbsp;</a></span>getLowerBoundAsPhysicalPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a64eddc3ee1c3d03579472645907fd2cf">PhysicalPoint</a> <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::getLowerBoundAsPhysicalPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the lower and upper bounds as physical points. Note that the location of pixels in ITK are in the center of the square. But in <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a> a lowerBound is in the south-west corner of that square. And an upperBound is the north-east corner of the last pixel.</p>
+<dl class="section return"><dt>Returns</dt><dd>physical point of the location of the start index of the region. </dd></dl>
+
+</div>
+</div>
+<a id="a7f02e7443158eef8fd7ba92403d3a96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f02e7443158eef8fd7ba92403d3a96a">&#9670;&nbsp;</a></span>getPhysicalPointFromIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a64eddc3ee1c3d03579472645907fd2cf">PhysicalPoint</a> <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::getPhysicalPointFromIndex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>indexPoint</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get PhysicalPoints from index and viceversa.</p>
+<p>Remember that GetOrigin() in ITK is the physical location of the index {0,0...}. Not the location of the start index of the region.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indexPoint</td><td>a point holding valid index coordinates of the ITK image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>physical point of the index. </dd></dl>
+
+</div>
+</div>
+<a id="adf3c06280e2d8da33d2227f2fe9416fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf3c06280e2d8da33d2227f2fe9416fa">&#9670;&nbsp;</a></span>getUpperBoundAsPhysicalPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a64eddc3ee1c3d03579472645907fd2cf">PhysicalPoint</a> <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::getUpperBoundAsPhysicalPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a9e7e3828be27adffb3f5aaa200663081"></a>
@@ -901,8 +1242,8 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 
 </div>
 </div>
-<a id="ae6c6c167a32d97e7cd4caeac869b2285"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6c6c167a32d97e7cd4caeac869b2285">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/3]</span></h2>
+<a id="ab757af7f194222f4535142f2fa6565e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab757af7f194222f4535142f2fa6565e6">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -913,7 +1254,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
           <td class="memname"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a7187b9faf5f2204c4a5db7c904faa9bf">Value</a> <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>aPoint</em></td><td>)</td>
+          <td class="paramname"><em>indexPoint</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -921,11 +1262,11 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 <p>Get the value of an image at a given position.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aPoint</td><td>position in the image. </td></tr>
+    <tr><td class="paramname">indexPoint</td><td>position in the image. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the value at aPoint. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the value at indexPoint. </dd></dl>
 
 </div>
 </div>
@@ -953,7 +1294,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the value at aPoint. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of the point pointed by the iterator. </dd></dl>
 
 </div>
 </div>
@@ -981,7 +1322,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the value at aPoint. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of the point pointed by the iterator. </dd></dl>
 
 </div>
 </div>
@@ -1039,8 +1380,8 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the range providing begin and end iterators to scan the values of image. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00180">180</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      {</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a02a0cea66c8065c064b75110d5de202c">Range</a>(*<span class="keyword">this</span>);</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a02a0cea66c8065c064b75110d5de202c"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a02a0cea66c8065c064b75110d5de202c">DGtal::ImageContainerByITKImage::Range</a></div><div class="ttdeci">DefaultImageRange&lt; Self &gt; Range</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00119">ImageContainerByITKImage.h:119</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00188">188</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      {</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ImageContainerByITKImage.html#a02a0cea66c8065c064b75110d5de202c">Range</a>(*<span class="keyword">this</span>);</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      }</div><div class="ttc" id="classDGtal_1_1ImageContainerByITKImage_html_a02a0cea66c8065c064b75110d5de202c"><div class="ttname"><a href="classDGtal_1_1ImageContainerByITKImage.html#a02a0cea66c8065c064b75110d5de202c">DGtal::ImageContainerByITKImage::Range</a></div><div class="ttdeci">DefaultImageRange&lt; Self &gt; Range</div><div class="ttdef"><b>Definition:</b> <a href="ImageContainerByITKImage_8h_source.html#l00123">ImageContainerByITKImage.h:123</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1070,8 +1411,8 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 
 </div>
 </div>
-<a id="a4ef7522844da33da65ef856327cc3258"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ef7522844da33da65ef856327cc3258">&#9670;&nbsp;</a></span>setValue() <span class="overload">[1/2]</span></h2>
+<a id="adb832b75c80db468ddc8ad1c1912dbaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb832b75c80db468ddc8ad1c1912dbaf">&#9670;&nbsp;</a></span>setValue() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1082,7 +1423,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
           <td class="memname">void <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::setValue </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>aPoint</em>, </td>
+          <td class="paramname"><em>indexPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1097,10 +1438,10 @@ template&lt;typename TDomain, typename TValue&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set a value on an <a class="el" href="classDGtal_1_1Image.html" title="Aim: implements association bewteen points lying in a digital domain and values. ">Image</a> at aPoint.</p>
+<p>Set a value on an <a class="el" href="classDGtal_1_1Image.html" title="Aim: implements association bewteen points lying in a digital domain and values. ">Image</a> at indexPoint.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aPoint</td><td>location of the point to associate with aValue. </td></tr>
+    <tr><td class="paramname">indexPoint</td><td>location of the point to associate with aValue. </td></tr>
     <tr><td class="paramname">aValue</td><td>the value. </td></tr>
   </table>
   </dd>
@@ -1135,7 +1476,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set a value on an <a class="el" href="classDGtal_1_1Image.html" title="Aim: implements association bewteen points lying in a digital domain and values. ">Image</a> at aPoint.</p>
+<p>Set a value on an <a class="el" href="classDGtal_1_1Image.html" title="Aim: implements association bewteen points lying in a digital domain and values. ">Image</a> at a given position</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">it</td><td>location of the point (Iterator) to associate with aValue. </td></tr>
@@ -1146,8 +1487,8 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 
 </div>
 </div>
-<a id="a39d4b72fc2385708a91a746fd4e748e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39d4b72fc2385708a91a746fd4e748e2">&#9670;&nbsp;</a></span>updateDomain()</h2>
+<a id="a1dbc91f016379698ba9242d4f057d466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dbc91f016379698ba9242d4f057d466">&#9670;&nbsp;</a></span>updateDomain()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1157,12 +1498,20 @@ template&lt;typename TDomain, typename TValue&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::updateDomain </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>inputDomainShift</em> = <code><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a>()</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>update internal domain cache. should be called after modifying underlying ITK image. </p>
+<p>update internal domain cache. should be called after modifying underlying ITK image or to set myDomainShift.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputDomainShift</td><td>applies a domainShift to the lowerBound and upperBound of myDomain. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#ac0c2165e70e06ecf59a4e8472563e313">myDomainShift</a> </dd></dl>
 
 </div>
 </div>
@@ -1189,7 +1538,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00104">104</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00106">106</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
 </div>
 </div>
@@ -1215,9 +1564,42 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00324">324</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00392">392</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ImageContainerByITKImage_8h_source.html#l00231">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::domain()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ImageContainerByITKImage_8h_source.html#l00239">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::domain()</a>.</p>
+
+</div>
+</div>
+<a id="ac0c2165e70e06ecf59a4e8472563e313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c2165e70e06ecf59a4e8472563e313">&#9670;&nbsp;</a></span>myDomainShift</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDomain, typename TValue&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a> <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">DGtal::ImageContainerByITKImage</a>&lt; TDomain, TValue &gt;::myDomainShift = <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a410c0313ce51361820962a8397a96be3">Point</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Apply a shift in the lower and upper bounds. Useful to represent multiple images, or images with physical information, i.e with non-default Origin (see ITK for Origin, Spacing and Direction metadata)</p>
+<p>Set it using the function updateDomain(inputDomainShift)</p>
+<p>Please note that this is a workaround, <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a> cannot fully work in the Physical Domain. The spacing in <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types. ">DGtal</a> is fixed to 1. This allows to work to represent multiple images with different Origins, but they need to have the same Spacing and Direction for the visualization to be meaningful.</p>
+<p>Default to zero.</p>
+<p>When is not zero, use <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#acf3d60be44f3d25f511c97896fd4e381">getIndexFromDomainPoint</a> and <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a09193df220f3be5f6eb412d5b986c0f9">getDomainPointFromIndex</a> to switch between points in the domain and indices in the itk image. </p>
+
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00410">410</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ImageContainerByITKImage_8h_source.html#l00254">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::getDomainShift()</a>.</p>
 
 </div>
 </div>
@@ -1243,9 +1625,9 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00323">323</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ImageContainerByITKImage_8h_source.html#l00391">391</a> of file <a class="el" href="ImageContainerByITKImage_8h_source.html">ImageContainerByITKImage.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ImageContainerByITKImage_8h_source.html#l00265">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::begin()</a>, <a class="el" href="ImageContainerByITKImage_8h_source.html#l00289">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::end()</a>, and <a class="el" href="ImageContainerByITKImage_8h_source.html#l00240">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::getITKImagePointer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ImageContainerByITKImage_8h_source.html#l00279">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::begin()</a>, <a class="el" href="ImageContainerByITKImage_8h_source.html#l00303">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::end()</a>, and <a class="el" href="ImageContainerByITKImage_8h_source.html#l00248">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;::getITKImagePointer()</a>.</p>
 
 </div>
 </div>
@@ -1255,7 +1637,7 @@ template&lt;typename TDomain, typename TValue&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 20 2020 08:44:04 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 20 2020 21:16:15 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
