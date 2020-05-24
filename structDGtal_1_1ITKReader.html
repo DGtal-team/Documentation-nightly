@@ -112,20 +112,22 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af4eac65e07d5f083fa75f604a3d1d91e"><td class="memTemplParams" colspan="2">template&lt;typename TFunctor  = typename ITKIOTrait&lt;typename TImage::Value&gt;::DefaultReadFunctor&gt; </td></tr>
-<tr class="memitem:af4eac65e07d5f083fa75f604a3d1d91e"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ITKReader.html#a6f1dba854c208db4a7093a898b719a6c">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#af4eac65e07d5f083fa75f604a3d1d91e">importITK</a> (const std::string &amp;filename, const TFunctor &amp;aFunctor=TFunctor())</td></tr>
-<tr class="separator:af4eac65e07d5f083fa75f604a3d1d91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abab1e1acff16b3ac4bdf24d8e5494c"><td class="memTemplParams" colspan="2">template&lt;typename TFunctor  = typename ITKIOTrait&lt;typename TImage::Value&gt;::DefaultReadFunctor&gt; </td></tr>
+<tr class="memitem:a0abab1e1acff16b3ac4bdf24d8e5494c"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ITKReader.html#a6f1dba854c208db4a7093a898b719a6c">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#a0abab1e1acff16b3ac4bdf24d8e5494c">importITK</a> (const std::string &amp;filename, const TFunctor &amp;aFunctor=TFunctor(), bool shiftDomainUsingOrigin=true)</td></tr>
+<tr class="separator:a0abab1e1acff16b3ac4bdf24d8e5494c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b66ab92b65fa95b39e8e8453c062ec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ITKReader.html#a6f1dba854c208db4a7093a898b719a6c">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#a70b66ab92b65fa95b39e8e8453c062ec">importITK</a> (const std::string &amp;filename, bool shiftDomainUsingOrigin)</td></tr>
+<tr class="separator:a70b66ab92b65fa95b39e8e8453c062ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2befdf84ca7ea1d02579b3c3f8ac36a9"><td class="memItemLeft" align="right" valign="top">static itk::ImageIOBase::IOComponentType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#a2befdf84ca7ea1d02579b3c3f8ac36a9">getITKComponentType</a> (const std::string &amp;filename)</td></tr>
 <tr class="separator:a2befdf84ca7ea1d02579b3c3f8ac36a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:af4b2899ff03021bf924dd4b96385b2f6"><td class="memTemplParams" colspan="2">template&lt;typename Domain , typename PixelType &gt; </td></tr>
-<tr class="memitem:af4b2899ff03021bf924dd4b96385b2f6"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">ImageContainerByITKImage</a>&lt; <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a>, PixelType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#af4b2899ff03021bf924dd4b96385b2f6">readDGtalITKImage</a> (const std::string &amp;filename)</td></tr>
-<tr class="separator:af4b2899ff03021bf924dd4b96385b2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac673573599212962e5101f4c6035b5e0"><td class="memTemplParams" colspan="2">template&lt;typename TypeDGtalImage , typename TFunctor &gt; </td></tr>
-<tr class="memitem:ac673573599212962e5101f4c6035b5e0"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ITKReader.html#a6f1dba854c208db4a7093a898b719a6c">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#ac673573599212962e5101f4c6035b5e0">readDGtalImageFromITKtypes</a> (const std::string &amp;filename, const TFunctor &amp;aFunctor)</td></tr>
-<tr class="separator:ac673573599212962e5101f4c6035b5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773cb512a966bbe1d50163495a5d9932"><td class="memTemplParams" colspan="2">template&lt;typename Domain , typename PixelType &gt; </td></tr>
+<tr class="memitem:a773cb512a966bbe1d50163495a5d9932"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">ImageContainerByITKImage</a>&lt; <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a>, PixelType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#a773cb512a966bbe1d50163495a5d9932">readDGtalITKImage</a> (const std::string &amp;filename, bool shiftDomainUsingOrigin=true)</td></tr>
+<tr class="separator:a773cb512a966bbe1d50163495a5d9932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f4bacbd2449dc4bc3b6261ef83cfbe"><td class="memTemplParams" colspan="2">template&lt;typename TypeDGtalImage , typename TFunctor &gt; </td></tr>
+<tr class="memitem:a28f4bacbd2449dc4bc3b6261ef83cfbe"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ITKReader.html#a6f1dba854c208db4a7093a898b719a6c">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader.html#a28f4bacbd2449dc4bc3b6261ef83cfbe">readDGtalImageFromITKtypes</a> (const std::string &amp;filename, const TFunctor &amp;aFunctor, bool shiftDomainUsingOrigin=true)</td></tr>
+<tr class="separator:a28f4bacbd2449dc4bc3b6261ef83cfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TImage&gt;<br />
@@ -255,8 +257,8 @@ template&lt;typename TImage &gt; </div>
 
 </div>
 </div>
-<a id="af4eac65e07d5f083fa75f604a3d1d91e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4eac65e07d5f083fa75f604a3d1d91e">&#9670;&nbsp;</a></span>importITK()</h2>
+<a id="a0abab1e1acff16b3ac4bdf24d8e5494c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0abab1e1acff16b3ac4bdf24d8e5494c">&#9670;&nbsp;</a></span>importITK() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +280,13 @@ template&lt;typename TFunctor  = typename ITKIOTrait&lt;typename TImage::Value&g
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const TFunctor &amp;&#160;</td>
-          <td class="paramname"><em>aFunctor</em> = <code>TFunctor()</code>&#160;</td>
+          <td class="paramname"><em>aFunctor</em> = <code>TFunctor()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shiftDomainUsingOrigin</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -298,6 +306,7 @@ template&lt;typename TFunctor  = typename ITKIOTrait&lt;typename TImage::Value&g
   <table class="params">
     <tr><td class="paramname">filename</td><td>name of the input file. </td></tr>
     <tr><td class="paramname">aFunctor</td><td>functor used to cast image values. </td></tr>
+    <tr><td class="paramname">shiftDomainUsingOrigin</td><td>shift the image domain according to the physical information of the source image) </td></tr>
   </table>
   </dd>
 </dl>
@@ -313,8 +322,56 @@ template&lt;typename TFunctor  = typename ITKIOTrait&lt;typename TImage::Value&g
 
 </div>
 </div>
-<a id="ac673573599212962e5101f4c6035b5e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac673573599212962e5101f4c6035b5e0">&#9670;&nbsp;</a></span>readDGtalImageFromITKtypes()</h2>
+<a id="a70b66ab92b65fa95b39e8e8453c062ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b66ab92b65fa95b39e8e8453c062ec">&#9670;&nbsp;</a></span>importITK() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TImage &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structDGtal_1_1ITKReader.html#a6f1dba854c208db4a7093a898b719a6c">Image</a> <a class="el" href="structDGtal_1_1ITKReader.html">DGtal::ITKReader</a>&lt; TImage &gt;::importITK </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shiftDomainUsingOrigin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Import an <a class="el" href="classDGtal_1_1Image.html" title="Aim: implements association bewteen points lying in a digital domain and values. ">Image</a> with a format supported by ITK.</p>
+<p>First an <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html" title="Aim: implements a model of CImageContainer using a ITK Image. ">ImageContainerByITKImage</a> is constructed by using the source type of the input ITK image, and in a second step the resulting image type is adapted to the TImage type with the use of a default <a class="el" href="structDGtal_1_1ITKIOTrait.html#a73eea0bdfa8083c6b517dc89b730370a">ITKIOTrait::DefaultReadFunctor</a>. <br />
+ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>name of the input file. </td></tr>
+    <tr><td class="paramname">shiftDomainUsingOrigin</td><td>shift the image domain according to the physical information of the source image) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>read image </dd></dl>
+
+</div>
+</div>
+<a id="a28f4bacbd2449dc4bc3b6261ef83cfbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f4bacbd2449dc4bc3b6261ef83cfbe">&#9670;&nbsp;</a></span>readDGtalImageFromITKtypes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,7 +393,13 @@ template&lt;typename TypeDGtalImage , typename TFunctor &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const TFunctor &amp;&#160;</td>
-          <td class="paramname"><em>aFunctor</em>&#160;</td>
+          <td class="paramname"><em>aFunctor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shiftDomainUsingOrigin</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -355,6 +418,7 @@ template&lt;typename TypeDGtalImage , typename TFunctor &gt; </div>
   <table class="params">
     <tr><td class="paramname">filename</td><td>name of the input file </td></tr>
     <tr><td class="paramname">aFunctor</td><td>functor used to cast image values </td></tr>
+    <tr><td class="paramname">shiftDomainUsingOrigin</td><td>shift the image domain according to the physical information of the source image) </td></tr>
   </table>
   </dd>
 </dl>
@@ -368,8 +432,8 @@ template&lt;typename TypeDGtalImage , typename TFunctor &gt; </div>
 
 </div>
 </div>
-<a id="af4b2899ff03021bf924dd4b96385b2f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4b2899ff03021bf924dd4b96385b2f6">&#9670;&nbsp;</a></span>readDGtalITKImage()</h2>
+<a id="a773cb512a966bbe1d50163495a5d9932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773cb512a966bbe1d50163495a5d9932">&#9670;&nbsp;</a></span>readDGtalITKImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,8 +449,18 @@ template&lt;typename Domain , typename PixelType &gt; </div>
           <td class="memname">static <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html">ImageContainerByITKImage</a>&lt;<a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a>, PixelType&gt; <a class="el" href="structDGtal_1_1ITKReader.html">DGtal::ITKReader</a>&lt; TImage &gt;::readDGtalITKImage </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shiftDomainUsingOrigin</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -404,7 +478,7 @@ template&lt;typename Domain , typename PixelType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 20 2020 21:16:16 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 24 2020 08:03:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

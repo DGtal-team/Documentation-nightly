@@ -82,8 +82,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad745c2c00c5e62fc84a4aabaa8f74e3d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ITKReader.html#a6f1dba854c208db4a7093a898b719a6c">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader_1_1Aux.html#ad745c2c00c5e62fc84a4aabaa8f74e3d">readDGtalImageFromITKtypes</a> (const std::string &amp;filename, const TFunctor &amp;aFunctor)</td></tr>
-<tr class="separator:ad745c2c00c5e62fc84a4aabaa8f74e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d07706b47d986b20665fc4c930420e8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ITKReader.html#a6f1dba854c208db4a7093a898b719a6c">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ITKReader_1_1Aux.html#a7d07706b47d986b20665fc4c930420e8">readDGtalImageFromITKtypes</a> (const std::string &amp;filename, const TFunctor &amp;aFunctor, bool shiftDomainUsingOrigin=true)</td></tr>
+<tr class="separator:a7d07706b47d986b20665fc4c930420e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TImage&gt;<br />
@@ -91,10 +91,10 @@ template&lt;typename Image, typename Domain, typename OrigValue, typename TFunct
 struct DGtal::ITKReader&lt; TImage &gt;::Aux&lt; Image, Domain, OrigValue, TFunctor, Value &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="ITKReader_8h_source.html#l00128">128</a> of file <a class="el" href="ITKReader_8h_source.html">ITKReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ITKReader_8h_source.html#l00144">144</a> of file <a class="el" href="ITKReader_8h_source.html">ITKReader.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad745c2c00c5e62fc84a4aabaa8f74e3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad745c2c00c5e62fc84a4aabaa8f74e3d">&#9670;&nbsp;</a></span>readDGtalImageFromITKtypes()</h2>
+<a id="a7d07706b47d986b20665fc4c930420e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d07706b47d986b20665fc4c930420e8">&#9670;&nbsp;</a></span>readDGtalImageFromITKtypes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -116,7 +116,13 @@ template&lt;typename Image , typename Domain , typename OrigValue , typename TFu
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const TFunctor &amp;&#160;</td>
-          <td class="paramname"><em>aFunctor</em>&#160;</td>
+          <td class="paramname"><em>aFunctor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shiftDomainUsingOrigin</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -139,7 +145,7 @@ template&lt;typename Image , typename Domain , typename OrigValue , typename TFu
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 20 2020 21:16:16 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 24 2020 08:03:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

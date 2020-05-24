@@ -46,7 +46,7 @@ var searchData=
   ['importhdf5',['importHDF5',['../structDGtal_1_1HDF5Reader.html#ae6d0ff976adb91993bd8ecc11006a3be',1,'DGtal::HDF5Reader']]],
   ['importhdf5_5f3d',['importHDF5_3D',['../structDGtal_1_1HDF5Reader.html#a01b612cad072d5fc3e77227087141ae5',1,'DGtal::HDF5Reader']]],
   ['importimage',['importImage',['../structDGtal_1_1MagickReader.html#a907c5ebaba284a548c8c26b990ed8b38',1,'DGtal::MagickReader']]],
-  ['importitk',['importITK',['../structDGtal_1_1ITKReader.html#af4eac65e07d5f083fa75f604a3d1d91e',1,'DGtal::ITKReader']]],
+  ['importitk',['importITK',['../structDGtal_1_1ITKReader.html#a0abab1e1acff16b3ac4bdf24d8e5494c',1,'DGtal::ITKReader::importITK(const std::string &amp;filename, const TFunctor &amp;aFunctor=TFunctor(), bool shiftDomainUsingOrigin=true)'],['../structDGtal_1_1ITKReader.html#a70b66ab92b65fa95b39e8e8453c062ec',1,'DGtal::ITKReader::importITK(const std::string &amp;filename, bool shiftDomainUsingOrigin)']]],
   ['importlongvol',['importLongvol',['../structDGtal_1_1LongvolReader.html#a78f458a6dc1b4876148685694800e68b',1,'DGtal::LongvolReader']]],
   ['importofffile',['importOFFFile',['../structDGtal_1_1MeshReader.html#a0688dd0f43cd8375df9a96a15d15a29d',1,'DGtal::MeshReader']]],
   ['importofsfile',['importOFSFile',['../structDGtal_1_1MeshReader.html#a1405bde20c95604a8e065bdce9bbb16e',1,'DGtal::MeshReader']]],
