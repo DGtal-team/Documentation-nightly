@@ -134,9 +134,12 @@ Public Types</h2></td></tr>
 <tr class="memitem:a0b5fbc72524f77bf6420a19fd830a9c9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a1101d4adbc2a87db33afcb42209b6f04">KSpace::Integer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a0b5fbc72524f77bf6420a19fd830a9c9">Integer</a></td></tr>
 <tr class="memdesc:a0b5fbc72524f77bf6420a19fd830a9c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for integers in the space.  <a href="#a0b5fbc72524f77bf6420a19fd830a9c9">More...</a><br /></td></tr>
 <tr class="separator:a0b5fbc72524f77bf6420a19fd830a9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40726f15df8d1f8f5cd777efb002275d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#af87a8fec76262bec1a3b33881fa38f1f">KSpace::Cell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a></td></tr>
+<tr class="memitem:a40726f15df8d1f8f5cd777efb002275d"><td class="memItemLeft" align="right" valign="top">typedef KSpace::Cell&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a></td></tr>
 <tr class="memdesc:a40726f15df8d1f8f5cd777efb002275d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for a cell in the space.  <a href="#a40726f15df8d1f8f5cd777efb002275d">More...</a><br /></td></tr>
 <tr class="separator:a40726f15df8d1f8f5cd777efb002275d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112d62a9f2b5f7aa9761dac35a24711e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDGtal_1_1KhalimskyCell.html#aa2b60151c6f09b4378696297a458fafb">Cell::PreCell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a112d62a9f2b5f7aa9761dac35a24711e">PreCell</a></td></tr>
+<tr class="memdesc:a112d62a9f2b5f7aa9761dac35a24711e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for a precell in the space.  <a href="#a112d62a9f2b5f7aa9761dac35a24711e">More...</a><br /></td></tr>
+<tr class="separator:a112d62a9f2b5f7aa9761dac35a24711e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabf7cb1cd7ab96ca6cf6305d89624869"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#afbb82ddbe915a3a4a4f6ecea1ad873ce">KSpace::Cells</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#aabf7cb1cd7ab96ca6cf6305d89624869">Cells</a></td></tr>
 <tr class="memdesc:aabf7cb1cd7ab96ca6cf6305d89624869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for a sequence of cells in the space.  <a href="#aabf7cb1cd7ab96ca6cf6305d89624869">More...</a><br /></td></tr>
 <tr class="separator:aabf7cb1cd7ab96ca6cf6305d89624869"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,8 +298,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa860b7f6a7c82c75583c7510343ffbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2255fad7ac5e85f6534cbc214bc2869"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#ab2255fad7ac5e85f6534cbc214bc2869">belongs</a> (const <a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a> &amp;aCell) const</td></tr>
 <tr class="separator:ab2255fad7ac5e85f6534cbc214bc2869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778f897780bf19af1ac9bbd7802d94e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a778f897780bf19af1ac9bbd7802d94e0">belongs</a> (const <a class="el" href="classDGtal_1_1CubicalComplex.html#a112d62a9f2b5f7aa9761dac35a24711e">PreCell</a> &amp;aCell) const</td></tr>
+<tr class="separator:a778f897780bf19af1ac9bbd7802d94e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0a0dfb04225e2be31c529193099f744"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#af0a0dfb04225e2be31c529193099f744">belongs</a> (<a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> d, const <a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a> &amp;aCell) const</td></tr>
 <tr class="separator:af0a0dfb04225e2be31c529193099f744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331fe3583baf9566d72acd4c9db12862"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a331fe3583baf9566d72acd4c9db12862">belongs</a> (<a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> d, const <a class="el" href="classDGtal_1_1CubicalComplex.html#a112d62a9f2b5f7aa9761dac35a24711e">PreCell</a> &amp;aCell) const</td></tr>
+<tr class="separator:a331fe3583baf9566d72acd4c9db12862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f0308a85ada8bb02146f5c6607e8d66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CubicalComplex.html#a8389e2e1b45c05818bc5a4093cf1b1d8">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a2f0308a85ada8bb02146f5c6607e8d66">eraseCell</a> (const <a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a> &amp;aCell)</td></tr>
 <tr class="separator:a2f0308a85ada8bb02146f5c6607e8d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec3d938e50dd4a2e90838aea26be2b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1CubicalComplex.html#a8389e2e1b45c05818bc5a4093cf1b1d8">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#aec3d938e50dd4a2e90838aea26be2b7d">eraseCell</a> (<a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> d, const <a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a> &amp;aCell)</td></tr>
@@ -473,7 +480,7 @@ class DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;</h3>
 template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::template CellMap&lt; CubicalCellData &gt;::Type&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#af87a8fec76262bec1a3b33881fa38f1f">KSpace::Cell</a> <a class="el" href="classDGtal_1_1CubicalComplex.html">DGtal::CubicalComplex</a>&lt; TKSpace, TCellContainer &gt;::<a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a></td>
+          <td class="memname">typedef KSpace::Cell <a class="el" href="classDGtal_1_1CubicalComplex.html">DGtal::CubicalComplex</a>&lt; TKSpace, TCellContainer &gt;::<a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -520,7 +527,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 <p>Type for storing cells, an associative container Cell -&gt; Data. </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00250">250</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00251">251</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +547,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 <p>Const iterator for visiting type CellMap. </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00251">251</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00252">252</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -560,7 +567,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 <p><a class="el" href="structDGtal_1_1CubicalComplex_1_1Iterator.html">Iterator</a> for visiting type CellMap. </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00252">252</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00253">253</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +587,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 <p>Type for a sequence of cells in the space. </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00245">245</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00246">246</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +605,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00513">513</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00514">514</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -616,7 +623,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00521">521</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00522">522</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -634,7 +641,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00517">517</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00518">518</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -672,7 +679,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00519">519</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00520">520</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -692,7 +699,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 <p>Type for iterating over cell directions. </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00249">249</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00250">250</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -730,7 +737,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00514">514</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00515">515</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -770,7 +777,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 <p>Type for a point in the digital space. </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00248">248</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00249">249</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -788,7 +795,27 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00520">520</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00521">521</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+
+</div>
+</div>
+<a id="a112d62a9f2b5f7aa9761dac35a24711e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112d62a9f2b5f7aa9761dac35a24711e">&#9670;&nbsp;</a></span>PreCell</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::template CellMap&lt; CubicalCellData &gt;::Type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structDGtal_1_1KhalimskyCell.html#aa2b60151c6f09b4378696297a458fafb">Cell::PreCell</a> <a class="el" href="classDGtal_1_1CubicalComplex.html">DGtal::CubicalComplex</a>&lt; TKSpace, TCellContainer &gt;::<a class="el" href="classDGtal_1_1CubicalComplex.html#a112d62a9f2b5f7aa9761dac35a24711e">PreCell</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type for a precell in the space. </p>
+
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00245">245</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -806,7 +833,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00516">516</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00517">517</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -844,7 +871,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 <p>Type for a number of elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00247">247</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00248">248</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -862,7 +889,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00518">518</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00519">519</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -882,7 +909,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 <p>Type of the digital space. </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00246">246</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00247">247</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +927,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00515">515</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00516">516</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -929,10 +956,10 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00256">256</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                  {</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <a class="code" href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60baf0cd516f40fc9991e187b4a0b87b4d28">Maximal</a> ,</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <a class="code" href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60ba801d1a99c453142a837990851cb97056">Free</a>    ,</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <a class="code" href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60ba021bd3f986f7643daafce35e8eb7b04c">Any</a>     </div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    };</div><div class="ttc" id="classDGtal_1_1CubicalComplex_html_ace655803b6d1411c4b04b106b8cae60baf0cd516f40fc9991e187b4a0b87b4d28"><div class="ttname"><a href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60baf0cd516f40fc9991e187b4a0b87b4d28">DGtal::CubicalComplex::Maximal</a></div><div class="ttdef"><b>Definition:</b> <a href="CubicalComplex_8h_source.html#l00257">CubicalComplex.h:257</a></div></div>
-<div class="ttc" id="classDGtal_1_1CubicalComplex_html_ace655803b6d1411c4b04b106b8cae60ba021bd3f986f7643daafce35e8eb7b04c"><div class="ttname"><a href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60ba021bd3f986f7643daafce35e8eb7b04c">DGtal::CubicalComplex::Any</a></div><div class="ttdef"><b>Definition:</b> <a href="CubicalComplex_8h_source.html#l00259">CubicalComplex.h:259</a></div></div>
-<div class="ttc" id="classDGtal_1_1CubicalComplex_html_ace655803b6d1411c4b04b106b8cae60ba801d1a99c453142a837990851cb97056"><div class="ttname"><a href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60ba801d1a99c453142a837990851cb97056">DGtal::CubicalComplex::Free</a></div><div class="ttdef"><b>Definition:</b> <a href="CubicalComplex_8h_source.html#l00258">CubicalComplex.h:258</a></div></div>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00257">257</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                  {</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <a class="code" href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60baf0cd516f40fc9991e187b4a0b87b4d28">Maximal</a> ,</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <a class="code" href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60ba801d1a99c453142a837990851cb97056">Free</a>    ,</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <a class="code" href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60ba021bd3f986f7643daafce35e8eb7b04c">Any</a>     </div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    };</div><div class="ttc" id="classDGtal_1_1CubicalComplex_html_ace655803b6d1411c4b04b106b8cae60baf0cd516f40fc9991e187b4a0b87b4d28"><div class="ttname"><a href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60baf0cd516f40fc9991e187b4a0b87b4d28">DGtal::CubicalComplex::Maximal</a></div><div class="ttdef"><b>Definition:</b> <a href="CubicalComplex_8h_source.html#l00258">CubicalComplex.h:258</a></div></div>
+<div class="ttc" id="classDGtal_1_1CubicalComplex_html_ace655803b6d1411c4b04b106b8cae60ba021bd3f986f7643daafce35e8eb7b04c"><div class="ttname"><a href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60ba021bd3f986f7643daafce35e8eb7b04c">DGtal::CubicalComplex::Any</a></div><div class="ttdef"><b>Definition:</b> <a href="CubicalComplex_8h_source.html#l00260">CubicalComplex.h:260</a></div></div>
+<div class="ttc" id="classDGtal_1_1CubicalComplex_html_ace655803b6d1411c4b04b106b8cae60ba801d1a99c453142a837990851cb97056"><div class="ttname"><a href="classDGtal_1_1CubicalComplex.html#ace655803b6d1411c4b04b106b8cae60ba801d1a99c453142a837990851cb97056">DGtal::CubicalComplex::Free</a></div><div class="ttdef"><b>Definition:</b> <a href="CubicalComplex_8h_source.html#l00259">CubicalComplex.h:259</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1058,7 +1085,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 <dl class="section return"><dt>Returns</dt><dd>an iterator pointing on the first cell of this complex (lower dimensional cells come first). </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="topology_2cubical-complex-illustrations_8cpp-example.html#a30">topology/cubical-complex-illustrations.cpp</a>, and <a class="el" href="topology_2digitalSetToCubicalComplexes2D_8cpp-example.html#a25">topology/digitalSetToCubicalComplexes2D.cpp</a>.</dd>
 </dl>
-<p class="reference">Referenced by <a class="el" href="CubicalComplex_8h_source.html#l00330">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::ConstIterator()</a>, <a class="el" href="cubicalComplexThinning_8cpp_source.html#l00073">drawComplex()</a>, <a class="el" href="testCubicalComplex_8cpp_source.html#l00070">GIVEN()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00434">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::Iterator()</a>, <a class="el" href="cubical-complex-collapse_8cpp_source.html#l00115">main()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00366">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::nextDimension()</a>, and <a class="el" href="CubicalComplex_8h_source.html#l00470">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::nextDimension()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CubicalComplex_8h_source.html#l00331">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::ConstIterator()</a>, <a class="el" href="cubicalComplexThinning_8cpp_source.html#l00073">drawComplex()</a>, <a class="el" href="testCubicalComplex_8cpp_source.html#l00070">GIVEN()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00435">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::Iterator()</a>, <a class="el" href="cubical-complex-collapse_8cpp_source.html#l00115">main()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00367">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::nextDimension()</a>, and <a class="el" href="CubicalComplex_8h_source.html#l00471">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::nextDimension()</a>.</p>
 
 </div>
 </div>
@@ -1137,7 +1164,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 </div>
 </div>
 <a id="ab2255fad7ac5e85f6534cbc214bc2869"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2255fad7ac5e85f6534cbc214bc2869">&#9670;&nbsp;</a></span>belongs() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2255fad7ac5e85f6534cbc214bc2869">&#9670;&nbsp;</a></span>belongs() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1163,8 +1190,28 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 </div>
 </div>
+<a id="a778f897780bf19af1ac9bbd7802d94e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a778f897780bf19af1ac9bbd7802d94e0">&#9670;&nbsp;</a></span>belongs() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::template CellMap&lt; CubicalCellData &gt;::Type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classDGtal_1_1CubicalComplex.html">DGtal::CubicalComplex</a>&lt; TKSpace, TCellContainer &gt;::belongs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1CubicalComplex.html#a112d62a9f2b5f7aa9761dac35a24711e">PreCell</a> &amp;&#160;</td>
+          <td class="paramname"><em>aCell</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af0a0dfb04225e2be31c529193099f744"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0a0dfb04225e2be31c529193099f744">&#9670;&nbsp;</a></span>belongs() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a0dfb04225e2be31c529193099f744">&#9670;&nbsp;</a></span>belongs() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1198,6 +1245,36 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>'true' if and only if <em>aCell</em> belongs to this complex. </dd></dl>
+
+</div>
+</div>
+<a id="a331fe3583baf9566d72acd4c9db12862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331fe3583baf9566d72acd4c9db12862">&#9670;&nbsp;</a></span>belongs() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::template CellMap&lt; CubicalCellData &gt;::Type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classDGtal_1_1CubicalComplex.html">DGtal::CubicalComplex</a>&lt; TKSpace, TCellContainer &gt;::belongs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a>&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1CubicalComplex.html#a112d62a9f2b5f7aa9761dac35a24711e">PreCell</a> &amp;&#160;</td>
+          <td class="paramname"><em>aCell</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2187,7 +2264,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 <dl class="section return"><dt>Returns</dt><dd>an iterator pointing after the last cell of this complex (upper dimensional cells arrive last). </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="topology_2cubical-complex-illustrations_8cpp-example.html#a31">topology/cubical-complex-illustrations.cpp</a>, and <a class="el" href="topology_2digitalSetToCubicalComplexes2D_8cpp-example.html#a26">topology/digitalSetToCubicalComplexes2D.cpp</a>.</dd>
 </dl>
-<p class="reference">Referenced by <a class="el" href="CubicalComplex_8h_source.html#l00330">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::ConstIterator()</a>, <a class="el" href="cubicalComplexThinning_8cpp_source.html#l00073">drawComplex()</a>, <a class="el" href="testCubicalComplex_8cpp_source.html#l00070">GIVEN()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00434">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::Iterator()</a>, <a class="el" href="cubical-complex-collapse_8cpp_source.html#l00115">main()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00366">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::nextDimension()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00470">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::nextDimension()</a>, and <a class="el" href="testCubicalComplex_8cpp_source.html#l00195">SCENARIO()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CubicalComplex_8h_source.html#l00331">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::ConstIterator()</a>, <a class="el" href="cubicalComplexThinning_8cpp_source.html#l00073">drawComplex()</a>, <a class="el" href="testCubicalComplex_8cpp_source.html#l00070">GIVEN()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00435">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::Iterator()</a>, <a class="el" href="cubical-complex-collapse_8cpp_source.html#l00115">main()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00367">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::nextDimension()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00471">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::nextDimension()</a>, and <a class="el" href="testCubicalComplex_8cpp_source.html#l00195">SCENARIO()</a>.</p>
 
 </div>
 </div>
@@ -4416,7 +4493,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 <p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l00242">242</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CubicalComplex_8h_source.html#l00330">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::ConstIterator()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00434">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::Iterator()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00366">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::nextDimension()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00470">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::nextDimension()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00180">DGtal::operator &amp;()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00201">DGtal::operator &amp;=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00293">DGtal::operator!=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00118">DGtal::operator-()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00097">DGtal::operator-=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00317">DGtal::operator&lt;=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00266">DGtal::operator==()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00340">DGtal::operator&gt;=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00222">DGtal::operator^()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00245">DGtal::operator^=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00139">DGtal::operator|()</a>, and <a class="el" href="CubicalComplexFunctions_8h_source.html#l00160">DGtal::operator|=()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CubicalComplex_8h_source.html#l00331">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::ConstIterator()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00435">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::Iterator()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00367">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator::nextDimension()</a>, <a class="el" href="CubicalComplex_8h_source.html#l00471">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator::nextDimension()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00180">DGtal::operator &amp;()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00201">DGtal::operator &amp;=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00293">DGtal::operator!=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00118">DGtal::operator-()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00097">DGtal::operator-=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00317">DGtal::operator&lt;=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00266">DGtal::operator==()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00340">DGtal::operator&gt;=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00222">DGtal::operator^()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00245">DGtal::operator^=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00139">DGtal::operator|()</a>, and <a class="el" href="CubicalComplexFunctions_8h_source.html#l00160">DGtal::operator|=()</a>.</p>
 
 </div>
 </div>
@@ -4443,7 +4520,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 </div><div class="memdoc">
 <p>An array of map Cell -&gt; Data that stores cells dimension per dimension (i.e. cells of dimension 0 are stored in myCells[0], cells of dimension 1 in myCells[1] and so on). </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l01290">1290</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l01293">1293</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CubicalComplexFunctions_8h_source.html#l00180">DGtal::operator &amp;()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00201">DGtal::operator &amp;=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00293">DGtal::operator!=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00118">DGtal::operator-()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00097">DGtal::operator-=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00266">DGtal::operator==()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00340">DGtal::operator&gt;=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00222">DGtal::operator^()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00245">DGtal::operator^=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00139">DGtal::operator|()</a>, and <a class="el" href="CubicalComplexFunctions_8h_source.html#l00160">DGtal::operator|=()</a>.</p>
 
@@ -4473,7 +4550,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 <p>The Khalimsky space in which lives the cubical complex. </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l01285">1285</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l01288">1288</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -4483,7 +4560,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 24 2020 14:18:55 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 24 2020 15:32:27 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
