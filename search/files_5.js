@@ -16,6 +16,7 @@ var searchData=
   ['exampleconstimagefunctorholder_2ecpp',['exampleConstImageFunctorHolder.cpp',['../exampleConstImageFunctorHolder_8cpp.html',1,'']]],
   ['exampleconvexhull2d_2ecpp',['exampleConvexHull2D.cpp',['../exampleConvexHull2D_8cpp.html',1,'']]],
   ['examplecurvature_2ecpp',['exampleCurvature.cpp',['../exampleCurvature_8cpp.html',1,'']]],
+  ['exampledigitalconvexity_2ecpp',['exampleDigitalConvexity.cpp',['../exampleDigitalConvexity_8cpp.html',1,'']]],
   ['exampledslsubsegment_2ecpp',['exampleDSLSubsegment.cpp',['../exampleDSLSubsegment_8cpp.html',1,'']]],
   ['exampleeuclideanshapesdecorator_2ecpp',['exampleEuclideanShapesDecorator.cpp',['../exampleEuclideanShapesDecorator_8cpp.html',1,'']]],
   ['examplefmm2d_2ecpp',['exampleFMM2D.cpp',['../exampleFMM2D_8cpp.html',1,'']]],

@@ -37,5 +37,11 @@ var searchData=
   ['booltotag',['BoolToTag',['../structDGtal_1_1details_1_1BoolToTag.html',1,'DGtal::details']]],
   ['booltotag_3c_20false_20_3e',['BoolToTag&lt; false &gt;',['../structDGtal_1_1details_1_1BoolToTag_3_01false_01_4.html',1,'DGtal::details']]],
   ['boundarypredicate',['BoundaryPredicate',['../classDGtal_1_1functors_1_1BoundaryPredicate.html',1,'DGtal::functors']]],
+  ['boundedlatticepolytope',['BoundedLatticePolytope',['../classDGtal_1_1BoundedLatticePolytope.html',1,'DGtal']]],
+  ['boundedlatticepolytopespecializer',['BoundedLatticePolytopeSpecializer',['../structDGtal_1_1detail_1_1BoundedLatticePolytopeSpecializer.html',1,'DGtal::detail']]],
+  ['boundedlatticepolytopespecializer_3c_203_2c_20tinteger_20_3e',['BoundedLatticePolytopeSpecializer&lt; 3, TInteger &gt;',['../structDGtal_1_1detail_1_1BoundedLatticePolytopeSpecializer_3_013_00_01TInteger_01_4.html',1,'DGtal::detail']]],
+  ['boundedrationalpolytope',['BoundedRationalPolytope',['../classDGtal_1_1BoundedRationalPolytope.html',1,'DGtal']]],
+  ['boundedrationalpolytopespecializer',['BoundedRationalPolytopeSpecializer',['../structDGtal_1_1detail_1_1BoundedRationalPolytopeSpecializer.html',1,'DGtal::detail']]],
+  ['boundedrationalpolytopespecializer_3c_203_2c_20tinteger_20_3e',['BoundedRationalPolytopeSpecializer&lt; 3, TInteger &gt;',['../structDGtal_1_1detail_1_1BoundedRationalPolytopeSpecializer_3_013_00_01TInteger_01_4.html',1,'DGtal::detail']]],
   ['breadthfirstvisitor',['BreadthFirstVisitor',['../classDGtal_1_1BreadthFirstVisitor.html',1,'DGtal']]]
 ];

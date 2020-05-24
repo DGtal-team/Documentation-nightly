@@ -25,6 +25,8 @@ var searchData=
   ['largetruncationfunctor',['LargeTruncationFunctor',['../structDGtal_1_1functors_1_1LargeTruncationFunctor.html',1,'DGtal::functors']]],
   ['latticepolytope2d',['LatticePolytope2D',['../classDGtal_1_1LatticePolytope2D.html',1,'DGtal']]],
   ['latticepolytope2d_3c_20internalspace2_20_3e',['LatticePolytope2D&lt; InternalSpace2 &gt;',['../classDGtal_1_1LatticePolytope2D.html',1,'DGtal']]],
+  ['leftstrictunitcell',['LeftStrictUnitCell',['../structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html',1,'DGtal::BoundedLatticePolytope']]],
+  ['leftstrictunitsegment',['LeftStrictUnitSegment',['../structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitSegment.html',1,'DGtal::BoundedLatticePolytope']]],
   ['lemniscate2d',['Lemniscate2D',['../classDGtal_1_1Lemniscate2D.html',1,'DGtal']]],
   ['lessoreqthanangular',['LessOrEqThanAngular',['../structDGtal_1_1experimental_1_1ChamferNorm2D_1_1LessOrEqThanAngular.html',1,'DGtal::experimental::ChamferNorm2D']]],
   ['lessthanangular',['LessThanAngular',['../structDGtal_1_1experimental_1_1ChamferNorm2D_1_1LessThanAngular.html',1,'DGtal::experimental::ChamferNorm2D']]],

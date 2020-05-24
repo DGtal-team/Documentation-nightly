@@ -12,6 +12,7 @@ var searchData=
   ['derivativetester',['DerivativeTester',['../structDerivativeTester.html',1,'']]],
   ['derivativetester_3c_20calculus_2c_20_2d1_20_3e',['DerivativeTester&lt; Calculus, -1 &gt;',['../structDerivativeTester_3_01Calculus_00_01-1_01_4.html',1,'']]],
   ['dicomreader',['DicomReader',['../structDGtal_1_1DicomReader.html',1,'DGtal']]],
+  ['digitalconvexity',['DigitalConvexity',['../classDGtal_1_1DigitalConvexity.html',1,'DGtal']]],
   ['digitalmetricadapter',['DigitalMetricAdapter',['../classDGtal_1_1DigitalMetricAdapter.html',1,'DGtal']]],
   ['digitalsetboundary',['DigitalSetBoundary',['../classDGtal_1_1DigitalSetBoundary.html',1,'DGtal']]],
   ['digitalsetbyassociativecontainer',['DigitalSetByAssociativeContainer',['../classDGtal_1_1DigitalSetByAssociativeContainer.html',1,'DGtal']]],

@@ -7,6 +7,7 @@ var searchData=
   ['digital_20straight_20lines_20and_20segments',['Digital straight lines and segments',['../moduleArithDSSReco.html',1,'']]],
   ['detailed_20explanation_20of_20coba_20plane_20recognition_20algorithm',['Detailed explanation of COBA plane recognition algorithm',['../moduleCOBANaivePlaneRecognition.html',1,'']]],
   ['discrete_20exterior_20calculus',['Discrete exterior calculus',['../moduleDECIntroduction.html',1,'']]],
+  ['digital_20convexity',['Digital convexity',['../moduleDigitalConvexity.html',1,'']]],
   ['digital_20surfaces',['Digital surfaces',['../moduleDigitalSurfaces.html',1,'']]],
   ['digital_20topology_20and_20digital_20objects',['Digital topology and digital objects',['../moduleDigitalTopology.html',1,'']]],
   ['display3d_3a_20a_20stream_20mechanism_20for_20displaying_203d_20dgtal_20objects',['Display3D: a stream mechanism for displaying 3D DGtal objects',['../moduleDisplay3D.html',1,'']]],

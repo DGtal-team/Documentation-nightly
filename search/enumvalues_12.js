@@ -5,6 +5,7 @@ var searchData=
   ['umillimeter',['UMillimeter',['../classLibBoard_1_1Board.html#a3f79f876d837d6d427deb9e15e5589e5a179790e8669753f69f7427bc8d504af0',1,'LibBoard::Board']]],
   ['unbounded',['UNBOUNDED',['../namespaceDGtal.html#a65228f031a436d2f4edd698ae733ba31a1906bfa4ce33f3c129b1e974826f686d',1,'DGtal']]],
   ['undefdirection',['undefDirection',['../classDGtal_1_1Viewer3D.html#ac62e198b80da8dcedc191434a2075f9ea8d57cc8d48acea389c6878079dd771a5',1,'DGtal::Viewer3D']]],
+  ['unitary',['UNITARY',['../classDGtal_1_1DigitalConvexity.html#a346b3d21e164cc7d12d1b1c1ed1c0ccca90bf49c52ada611f7d9892cab80c310f',1,'DGtal::DigitalConvexity']]],
   ['unknown',['UNKNOWN',['../namespaceDGtal.html#a5df441c76f46779791d077a80f0b902ea01966050c6ac7ceb9818c946cd229fc4',1,'DGtal']]],
   ['unknown_5fdt',['UNKNOWN_DT',['../namespaceDGtal.html#a9f57dcd68d3056024eec6b4205f7083dabce62ac78855e24784c74bdd7d8e4e88',1,'DGtal']]],
   ['unsigned',['UNSIGNED',['../namespaceDGtal.html#a679e16b34aad98ff340decf89d1c86dba4e5cd9a9d62617341034f3f1c0f79b32',1,'DGtal']]],
