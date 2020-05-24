@@ -18,6 +18,7 @@ var searchData=
   ['cmap_5fjet',['CMAP_JET',['../namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2ac677c31e4299bc29c4e591063b4fc9bb',1,'DGtal']]],
   ['cmap_5fspring',['CMAP_SPRING',['../namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2ad222787b0de6a7d74f0e403da496266c',1,'DGtal']]],
   ['cmap_5fsummer',['CMAP_SUMMER',['../namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2aa5b0ef9d5b1e2e496ac149d9a42dd3e7',1,'DGtal']]],
+  ['cmap_5fviridis',['CMAP_VIRIDIS',['../namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2a0d238d17f03f562e296b94e68b9b4ea4',1,'DGtal']]],
   ['cmap_5fwinter',['CMAP_WINTER',['../namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2acd0da059abca1decd6b75ecc6d131be7',1,'DGtal']]],
   ['connected',['CONNECTED',['../namespaceDGtal.html#a5df441c76f46779791d077a80f0b902ea71b8166fccee5ea03cd61a4a9b3ece1a',1,'DGtal']]],
   ['const_5fleft_5fvalue_5fref',['CONST_LEFT_VALUE_REF',['../classDGtal_1_1Alias.html#a22a7083f7b9350124620c5d49e329b08a11981c83117f3dac4ec7da5e691c21d0',1,'DGtal::Alias::CONST_LEFT_VALUE_REF()'],['../classDGtal_1_1Clone.html#ad6256b7bcf50412643a5d485da330b76ab78f44d9d665f6fc77bd966d18e009fc',1,'DGtal::Clone::CONST_LEFT_VALUE_REF()'],['../classDGtal_1_1ConstAlias.html#a5fb4ec0c751d31c22b68fa8af4f86fcfa094085b7a4abd5773ee908670ab2ae3a',1,'DGtal::ConstAlias::CONST_LEFT_VALUE_REF()']]],

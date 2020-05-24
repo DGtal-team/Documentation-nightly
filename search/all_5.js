@@ -276,6 +276,7 @@ var searchData=
   ['cmap_5fjet',['CMAP_JET',['../namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2ac677c31e4299bc29c4e591063b4fc9bb',1,'DGtal']]],
   ['cmap_5fspring',['CMAP_SPRING',['../namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2ad222787b0de6a7d74f0e403da496266c',1,'DGtal']]],
   ['cmap_5fsummer',['CMAP_SUMMER',['../namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2aa5b0ef9d5b1e2e496ac149d9a42dd3e7',1,'DGtal']]],
+  ['cmap_5fviridis',['CMAP_VIRIDIS',['../namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2a0d238d17f03f562e296b94e68b9b4ea4',1,'DGtal']]],
   ['cmap_5fwinter',['CMAP_WINTER',['../namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2acd0da059abca1decd6b75ecc6d131be7',1,'DGtal']]],
   ['cmatrix',['CMatrix',['../structDGtal_1_1concepts_1_1CMatrix.html',1,'DGtal::concepts']]],
   ['cmetricspace',['CMetricSpace',['../structDGtal_1_1concepts_1_1CMetricSpace.html',1,'DGtal::concepts']]],
