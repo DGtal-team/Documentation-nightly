@@ -9,8 +9,8 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 291)">
 <title>Graphical Class Hierarchy</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-291 298,-291 298,4 -4,4"/>
-<!-- Node618 -->
-<g id="node1" class="node"><title>Node618</title>
+<!-- Node624 -->
+<g id="node1" class="node"><title>Node624</title>
 <polygon fill="white" stroke="#bfbfbf" points="0,-147.5 0,-166.5 52,-166.5 52,-147.5 0,-147.5"/>
 <text text-anchor="middle" x="26" y="-154.5" font-family="FreeSans" font-size="10.00">iterator</text>
 </g>
@@ -23,13 +23,13 @@
 </a>
 </g>
 </g>
-<!-- Node618&#45;&gt;Node0 -->
-<g id="edge1" class="edge"><title>Node618&#45;&gt;Node0</title>
+<!-- Node624&#45;&gt;Node0 -->
+<g id="edge1" class="edge"><title>Node624&#45;&gt;Node0</title>
 <path fill="none" stroke="midnightblue" d="M34.7859,-175.93C44.2733,-196.592 62.2831,-229.112 88,-247 98.7767,-254.496 111.56,-259.753 124.368,-263.438"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="37.921,-174.363 30.711,-166.6 31.5062,-177.165 37.921,-174.363"/>
 </g>
-<!-- Node620 -->
-<g id="node3" class="node"><title>Node620</title>
+<!-- Node626 -->
+<g id="node3" class="node"><title>Node626</title>
 <g id="a_node3"><a xlink:href="classDGtal_1_1FreemanChain_1_1ConstIterator.html" target="_top" xlink:title="DGtal::FreemanChain\l\&lt; TInteger \&gt;::ConstIterator">
 <polygon fill="white" stroke="black" points="117.5,-208 117.5,-238 264.5,-238 264.5,-208 117.5,-208"/>
 <text text-anchor="start" x="125.5" y="-226" font-family="FreeSans" font-size="10.00">DGtal::FreemanChain</text>
@@ -37,26 +37,26 @@
 </a>
 </g>
 </g>
-<!-- Node618&#45;&gt;Node620 -->
-<g id="edge2" class="edge"><title>Node618&#45;&gt;Node620</title>
+<!-- Node624&#45;&gt;Node626 -->
+<g id="edge2" class="edge"><title>Node624&#45;&gt;Node626</title>
 <path fill="none" stroke="midnightblue" d="M46.8634,-172.972C58.3093,-181.483 73.3049,-191.507 88,-198 97.2557,-202.09 107.292,-205.581 117.336,-208.542"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="48.9323,-170.148 38.8664,-166.843 44.6738,-175.704 48.9323,-170.148"/>
 </g>
-<!-- Node621 -->
-<g id="node4" class="node"><title>Node621</title>
+<!-- Node627 -->
+<g id="node4" class="node"><title>Node627</title>
 <g id="a_node4"><a xlink:href="classDGtal_1_1OneItemOutputIterator.html" target="_top" xlink:title="Aim: model of output iterator, ie incrementable and writable iterator, which only stores in a variabl...">
 <polygon fill="white" stroke="black" points="97.5,-169.5 97.5,-188.5 284.5,-188.5 284.5,-169.5 97.5,-169.5"/>
 <text text-anchor="middle" x="191" y="-176.5" font-family="FreeSans" font-size="10.00">DGtal::OneItemOutputIterator&lt; T &gt;</text>
 </a>
 </g>
 </g>
-<!-- Node618&#45;&gt;Node621 -->
-<g id="edge3" class="edge"><title>Node618&#45;&gt;Node621</title>
+<!-- Node624&#45;&gt;Node627 -->
+<g id="edge3" class="edge"><title>Node624&#45;&gt;Node627</title>
 <path fill="none" stroke="midnightblue" d="M62.4866,-161.79C79.1899,-164.044 99.7286,-166.816 119.404,-169.472"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="62.4899,-158.258 52.1115,-160.389 61.5535,-165.195 62.4899,-158.258"/>
 </g>
-<!-- Node622 -->
-<g id="node5" class="node"><title>Node622</title>
+<!-- Node628 -->
+<g id="node5" class="node"><title>Node628</title>
 <g id="a_node5"><a xlink:href="classDGtal_1_1OutputIteratorAdapter.html" target="_top" xlink:title="Aim: Adapts an output iterator i with a unary functor f, both given at construction, so that the element pointed to by i is updated with a given value through f. ">
 <polygon fill="white" stroke="black" points="97,-120 97,-150 285,-150 285,-120 97,-120"/>
 <text text-anchor="start" x="105" y="-138" font-family="FreeSans" font-size="10.00">DGtal::OutputIteratorAdapter</text>
@@ -64,13 +64,13 @@
 </a>
 </g>
 </g>
-<!-- Node618&#45;&gt;Node622 -->
-<g id="edge4" class="edge"><title>Node618&#45;&gt;Node622</title>
+<!-- Node624&#45;&gt;Node628 -->
+<g id="edge4" class="edge"><title>Node624&#45;&gt;Node628</title>
 <path fill="none" stroke="midnightblue" d="M62.3473,-152.229C72.7332,-150.827 84.6108,-149.224 96.8462,-147.573"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="61.5535,-148.805 52.1115,-153.611 62.4899,-155.742 61.5535,-148.805"/>
 </g>
-<!-- Node623 -->
-<g id="node6" class="node"><title>Node623</title>
+<!-- Node629 -->
+<g id="node6" class="node"><title>Node629</title>
 <g id="a_node6"><a xlink:href="classDGtal_1_1SetValueIterator.html" target="_top" xlink:title="Aim: implements an output iterator, which is able to write values in an underlying image...">
 <polygon fill="white" stroke="black" points="116.5,-71 116.5,-101 265.5,-101 265.5,-71 116.5,-71"/>
 <text text-anchor="start" x="124.5" y="-89" font-family="FreeSans" font-size="10.00">DGtal::SetValueIterator</text>
@@ -78,13 +78,13 @@
 </a>
 </g>
 </g>
-<!-- Node618&#45;&gt;Node623 -->
-<g id="edge5" class="edge"><title>Node618&#45;&gt;Node623</title>
+<!-- Node624&#45;&gt;Node629 -->
+<g id="edge5" class="edge"><title>Node624&#45;&gt;Node629</title>
 <path fill="none" stroke="midnightblue" d="M44.5268,-140.716C56.0838,-130.792 71.9944,-118.599 88,-111 96.8941,-106.778 106.575,-103.224 116.314,-100.245"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="42.101,-138.189 36.9418,-147.443 46.7457,-143.426 42.101,-138.189"/>
 </g>
-<!-- Node624 -->
-<g id="node7" class="node"><title>Node624</title>
+<!-- Node630 -->
+<g id="node7" class="node"><title>Node630</title>
 <g id="a_node7"><a xlink:href="classDGtal_1_1TiledImage_1_1TiledIterator.html" target="_top" xlink:title="DGtal::TiledImage\&lt;\l TImageContainer, TImageFactory,\l TImageCacheReadPolicy, TImageCache\lWritePolicy \&gt;::TiledIterator">
 <polygon fill="white" stroke="black" points="88,-0 88,-52 294,-52 294,-0 88,-0"/>
 <text text-anchor="start" x="96" y="-40" font-family="FreeSans" font-size="10.00">DGtal::TiledImage&lt;</text>
@@ -94,8 +94,8 @@
 </a>
 </g>
 </g>
-<!-- Node618&#45;&gt;Node624 -->
-<g id="edge6" class="edge"><title>Node618&#45;&gt;Node624</title>
+<!-- Node624&#45;&gt;Node630 -->
+<g id="edge6" class="edge"><title>Node624&#45;&gt;Node630</title>
 <path fill="none" stroke="midnightblue" d="M34.5879,-138.125C44.0714,-116.792 62.2473,-82.3877 88,-62 92.6379,-58.3283 97.6788,-55.0151 102.953,-52.0278"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="31.3239,-136.857 30.6355,-147.43 37.7667,-139.594 31.3239,-136.857"/>
 </g>

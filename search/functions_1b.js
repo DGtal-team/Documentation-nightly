@@ -288,6 +288,7 @@ var searchData=
   ['_7etruelocalestimatoronpoints',['~TrueLocalEstimatorOnPoints',['../classDGtal_1_1TrueLocalEstimatorOnPoints.html#ae4840949c7a5791cb25e4289548e2179',1,'DGtal::TrueLocalEstimatorOnPoints']]],
   ['_7etwosteplocallengthestimator',['~TwoStepLocalLengthEstimator',['../classDGtal_1_1TwoStepLocalLengthEstimator.html#ad6635ecde57d534cadb04c9ef3cfd1bd',1,'DGtal::TwoStepLocalLengthEstimator']]],
   ['_7eumbrellacomputer',['~UmbrellaComputer',['../classDGtal_1_1UmbrellaComputer.html#a14608dc0c9bd83ddeab73a4791d8d5b2',1,'DGtal::UmbrellaComputer']]],
+  ['_7eunorderedsetbyblock',['~UnorderedSetByBlock',['../structDGtal_1_1UnorderedSetByBlock.html#a163d61323a33d57bad4a03015568a434',1,'DGtal::UnorderedSetByBlock']]],
   ['_7evcmdigitalsurfacelocalestimator',['~VCMDigitalSurfaceLocalEstimator',['../classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#ab3ded431e7837722a22d2b0566443e36',1,'DGtal::VCMDigitalSurfaceLocalEstimator']]],
   ['_7evoronoicovariancemeasure',['~VoronoiCovarianceMeasure',['../classDGtal_1_1VoronoiCovarianceMeasure.html#a143af5d582cb1de0c447c66f48da8f98',1,'DGtal::VoronoiCovarianceMeasure']]],
   ['_7evoronoicovariancemeasureondigitalsurface',['~VoronoiCovarianceMeasureOnDigitalSurface',['../classDGtal_1_1VoronoiCovarianceMeasureOnDigitalSurface.html#a5d29d7d1e39037921ed4732808ad3040',1,'DGtal::VoronoiCovarianceMeasureOnDigitalSurface']]],

@@ -98,6 +98,9 @@ $(function() {
 , <a class="el" href="classDGtal_1_1StarShaped2D.html#a9d87076e30318b190b3f3cc5aeb3d4cc">DGtal::StarShaped2D&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1StarShaped3D.html#a9a3e9054236a3e5cdd993d8a459a9255">DGtal::StarShaped3D&lt; TSpace &gt;</a>
 </li>
+<li>parameterize()
+: <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a7706992c8edeebb4b82ac7ec262983cd">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;</a>
+</li>
 <li>Parameters()
 : <a class="el" href="structDGtal_1_1Parameters.html#a8bfa9142ab51cd3104f6be5e6d9fd8d5">DGtal::Parameters</a>
 </li>
@@ -176,7 +179,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1functors_1_1SphereFittingEstimator_1_1PatatePoint.html#aed310928db2e8f456f2820dab325bb2d">DGtal::functors::SphereFittingEstimator&lt; TSurfel, TEmbedder, TNormalVectorEstimatorCache &gt;::PatatePoint</a>
 </li>
 <li>Path()
-: <a class="el" href="structLibBoard_1_1Path.html#adaeaa20feec7b56d42e2820ce14cfc41">LibBoard::Path</a>
+: <a class="el" href="structLibBoard_1_1Path.html#a3740d32ef36f08b9321c468202391959">LibBoard::Path</a>
 </li>
 <li>Pattern()
 : <a class="el" href="classDGtal_1_1Pattern.html#a9e8c74a3a37a20b03b7cc462bdc33328">DGtal::Pattern&lt; TFraction &gt;</a>
@@ -324,7 +327,8 @@ $(function() {
 , <a class="el" href="classDGtal_1_1FreemanChain_1_1ConstIterator.html#a90524b1c2a6cb135153589c6d77b22b9">DGtal::FreemanChain&lt; TInteger &gt;::ConstIterator</a>
 , <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a3b13f4f3589b004ad956cd0f3b0e1c80">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1PolygonalSurface.html#a890f54e01915a9dd294763c696ecf10b">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
-, <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a7d1079ed7637d478c3fc80d919d5f71d">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
+, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a1f5c11e345a2877995030d21126d5eb4">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;</a>
+, <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a5ceeb2d2f1e10a04d656b77965dd30de">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
 <li>PositionFunctorFrom2DPoint()
 : <a class="el" href="structDGtal_1_1functors_1_1PositionFunctorFrom2DPoint.html#aea90046a61efacdb2f6bc04e338a6a1f">DGtal::functors::PositionFunctorFrom2DPoint&lt; Vector, TPosition &gt;</a>
@@ -332,6 +336,7 @@ $(function() {
 <li>positions()
 : <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#aef0e92ad88bab17061e25404b565df15">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1PolygonalSurface.html#ae86b2753566087b882846a42f231a972">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
+, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a6689733570755d7ad94a8aa8ba4872d5">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a65dacd74aaae7dfcdf12917d87750605">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
 <li>positionWrtRay()
@@ -377,6 +382,9 @@ $(function() {
 <li>precompute_projection_matrix()
 : <a class="el" href="classDGtal_1_1Board3DTo2D.html#a983df0e0dd2ce4ebaadf48aa2512563c">DGtal::Board3DTo2D&lt; Space, KSpace &gt;</a>
 </li>
+<li>precomputeTopology()
+: <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a2da9e42790984a3e6c77899b6dbeaeac">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;</a>
+</li>
 <li>predicate()
 : <a class="el" href="classDGtal_1_1concepts_1_1CDomainArchetype.html#a19f7f89e2ecddd780b7140a6f69a71e0">DGtal::concepts::CDomainArchetype&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1DigitalSetDomain.html#ae9a2f5a76946a1ac73b7424fa65920c2">DGtal::DigitalSetDomain&lt; TDigitalSet &gt;</a>
@@ -413,17 +421,15 @@ $(function() {
 , <a class="el" href="classDGtal_1_1TraceWriterTerm.html#ac912424ccc2816980a6da1d380b531e8">DGtal::TraceWriterTerm</a>
 </li>
 <li>Preimage2D()
-: <a class="el" href="classDGtal_1_1Preimage2D.html#a22050bcbb9ee35bbf92f3b39f5c018a7">DGtal::Preimage2D&lt; Shape &gt;</a>
+: <a class="el" href="classDGtal_1_1Preimage2D.html#a45b87da460f28e2a9ad2458c6b2a127d">DGtal::Preimage2D&lt; Shape &gt;</a>
 </li>
 <li>prepare()
 : <a class="el" href="classDGtal_1_1Histogram.html#a5471028122773a3a2a2ee3b3d62f72c2">DGtal::Histogram&lt; TQuantity, TBinner &gt;</a>
 </li>
-<li>prepareSubsetOperations()
-: <a class="el" href="classDGtal_1_1CellGeometry.html#aab3983076764a3ee6e53428af12dff44">DGtal::CellGeometry&lt; TKSpace &gt;</a>
-</li>
 <li>prev()
 : <a class="el" href="classDGtal_1_1ImageContainerBySTLVector_1_1SpanIterator.html#a3b764b39632d0dfd0d830df0a6b29065">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;::SpanIterator</a>
 , <a class="el" href="structDGtal_1_1OneBalancedWordComputer_1_1ConstPointIterator.html#aed40734cdf61bd6fbc712a5572514e7e">DGtal::OneBalancedWordComputer&lt; TConstIterator, TInteger &gt;::ConstPointIterator</a>
+, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#aa0cd119cd9fbd4ecec5a86d4c98ca1c7">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;</a>
 </li>
 <li>previous()
 : <a class="el" href="classDGtal_1_1FreemanChain_1_1ConstIterator.html#ab8a3b61b76756bead6d7f9e326049e6c">DGtal::FreemanChain&lt; TInteger &gt;::ConstIterator</a>
@@ -477,7 +483,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#ae0c3f655132dbed4c85081b938f6c39f">DGtal::experimental::ImageContainerByHashTree&lt; TDomain, TValue, THashKey &gt;</a>
 </li>
 <li>Profile()
-: <a class="el" href="classDGtal_1_1Profile.html#a34d9dd0fdaa5c359388ec77fc74b556f">DGtal::Profile&lt; TValueFunctor, TValue &gt;</a>
+: <a class="el" href="classDGtal_1_1Profile.html#a1a113f295cd06fa2757f5dc3799a40a8">DGtal::Profile&lt; TValueFunctor, TValue &gt;</a>
 </li>
 <li>progressBar()
 : <a class="el" href="classDGtal_1_1Trace.html#ad8efd553b31277903be115e7aa256f74">DGtal::Trace</a>
@@ -568,7 +574,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 8 2020 19:35:45 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 3 2020 14:53:19 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

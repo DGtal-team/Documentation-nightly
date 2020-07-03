@@ -28,6 +28,7 @@ var searchData=
   ['hash_3c_20dgtal_3a_3apointvector_3c_20dim_2c_20euclideanring_2c_20container_20_3e_20_3e',['hash&lt; DGtal::PointVector&lt; dim, EuclideanRing, Container &gt; &gt;',['../structstd_1_1hash_3_01DGtal_1_1PointVector_3_01dim_00_01EuclideanRing_00_01Container_01_4_01_4.html',1,'std']]],
   ['hash_3c_20dgtal_3a_3asignedkhalimskycell_3c_20dim_2c_20tinteger_20_3e_20_3e',['hash&lt; DGtal::SignedKhalimskyCell&lt; dim, TInteger &gt; &gt;',['../structstd_1_1hash_3_01DGtal_1_1SignedKhalimskyCell_3_01dim_00_01TInteger_01_4_01_4.html',1,'std::hash&lt; DGtal::SignedKhalimskyCell&lt; dim, TInteger &gt; &gt;'],['../structboost_1_1hash_3_01DGtal_1_1SignedKhalimskyCell_3_01dim_00_01TInteger_01_4_01_4.html',1,'boost::hash&lt; DGtal::SignedKhalimskyCell&lt; dim, TInteger &gt; &gt;']]],
   ['hash_5fvalue',['hash_value',['../namespaceDGtal.html#a7adead813e8d0e92752ff8e086bbbad1',1,'DGtal']]],
+  ['hasher',['hasher',['../structDGtal_1_1UnorderedSetByBlock.html#a00baafce323046c26f3f9632a0bba1f3',1,'DGtal::UnorderedSetByBlock']]],
   ['hashkey',['HashKey',['../classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#ad221f359a3fde2fa6760a42f78469853',1,'DGtal::experimental::ImageContainerByHashTree::HashKey()'],['../classDGtal_1_1Morton.html#ae4273971ca28eabe5aecb71084aca182',1,'DGtal::Morton::HashKey()']]],
   ['hasnestedtypecategory',['HasNestedTypeCategory',['../structDGtal_1_1detail_1_1HasNestedTypeCategory.html',1,'DGtal::detail']]],
   ['hasnestedtypetype',['HasNestedTypeType',['../structDGtal_1_1detail_1_1HasNestedTypeType.html',1,'DGtal::detail']]],

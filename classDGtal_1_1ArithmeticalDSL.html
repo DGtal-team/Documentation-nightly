@@ -246,7 +246,7 @@ Friends</h2></td></tr>
 class DGtal::ArithmeticalDSL&lt; TCoordinate, TInteger, adjacency &gt;</h3>
 
 <p>Aim: This class represents a naive (resp. standard) digital straight line (DSL), ie. the set of digital points \( (x,y) \in \mathbb{Z}^2 \) such that \( \mu \leq ax - by &lt; \mu + \omega \) with \( a,b,\mu,\omega \in \mathbb{Z} \), \( \gcd(a,b) = 1 \) and \( \omega = \max(|a|,|b|) \) (resp. \( \omega = |a| + |b| \)). Note that any DSL such that \( \omega = \max(|a|,|b|) \) (resp. \( \omega = |a| + |b| \)) is simply 8-connected (resp. 4-connected). </p>
-<p>[Reveilles, 1991 : <a class="el" href="citelist.html#CITEREF_Reveilles_1991_thesis">[78]</a>].</p>
+<p>[Reveilles, 1991 : <a class="el" href="citelist.html#CITEREF_Reveilles_1991_thesis">[79]</a>].</p>
 <p>A naive DSL can be declared and constructed as follows: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;DGtal/arithmetic/geometry/curves/ArithmeticalDSL.h&quot;</span></div><div class="line">...</div><div class="line">ArithmeticalDSL&lt;<a class="code" href="namespaceDGtal.html#ac1e9ac6a329319ae13c51c0c9e92486a">DGtal::int32_t</a>, <a class="code" href="namespaceDGtal.html#a1c09e3f63904ff371f1b99f45069fc63">DGtal::int64_t</a>, 8&gt; line( 17711, 28657, 1607895256 );</div><div class="line"><span class="comment">// equivalent to ArithmeticalDSL&lt;DGtal::int32_t, DGtal::int64_t&gt; line( 17711, 28657, 1607895256 );</span></div></div><!-- fragment --><p>See <a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments</a> for further details.</p>
 <p>This class is a model of CPointFunctor and of CConstBidirectionalRange.</p>
 <p>In the standard case, it is enough to replace 8 by 4. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -1773,7 +1773,7 @@ template&lt;typename TCoordinate, typename TInteger = TCoordinate, unsigned shor
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 8 2020 19:35:29 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 3 2020 14:53:03 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

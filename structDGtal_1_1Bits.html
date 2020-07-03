@@ -553,7 +553,7 @@ template&lt;typename T &gt; </div>
 
 <p class="reference">References <a class="el" href="Bits_8h_source.html#l00395">myLSB</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Bits_8h_source.html#l00307">leastSignificantBit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UnorderedSetByBlock_8h_source.html#l00214">DGtal::UnorderedSetByBlock&lt; Key, TSplitter, Hash, KeyEqual, UnorderedMapAllocator &gt;::const_iterator::const_iterator()</a>, <a class="el" href="UnorderedSetByBlock_8h_source.html#l00269">DGtal::UnorderedSetByBlock&lt; Key, TSplitter, Hash, KeyEqual, UnorderedMapAllocator &gt;::const_iterator::increment()</a>, <a class="el" href="UnorderedSetByBlock_8h_source.html#l00409">DGtal::UnorderedSetByBlock&lt; Key, TSplitter, Hash, KeyEqual, UnorderedMapAllocator &gt;::iterator::increment()</a>, <a class="el" href="UnorderedSetByBlock_8h_source.html#l00329">DGtal::UnorderedSetByBlock&lt; Key, TSplitter, Hash, KeyEqual, UnorderedMapAllocator &gt;::iterator::iterator()</a>, and <a class="el" href="Bits_8h_source.html#l00307">leastSignificantBit()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    {</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="structDGtal_1_1Bits.html#af35b3671127ea8e517ef5dc19dd14092">myLSB</a>[ n ];</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div><div class="ttc" id="structDGtal_1_1Bits_html_af35b3671127ea8e517ef5dc19dd14092"><div class="ttname"><a href="structDGtal_1_1Bits.html#af35b3671127ea8e517ef5dc19dd14092">DGtal::Bits::myLSB</a></div><div class="ttdeci">static const DGtal::uint8_t myLSB[256]</div><div class="ttdef"><b>Definition:</b> <a href="Bits_8h_source.html#l00395">Bits.h:395</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -898,7 +898,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Bits_8h_source.html#l00130">130</a> of file <a class="el" href="Bits_8h_source.html">Bits.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Bits_8h_source.html#l00225">indexInSetBits()</a>, <a class="el" href="testBits_8cpp_source.html#l00056">main()</a>, and <a class="el" href="Bits_8h_source.html#l00158">nbSetBits()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UnorderedSetByBlock_8h_source.html#l00760">DGtal::UnorderedSetByBlock&lt; PointVector&lt; dim, Integer &gt;, DGtal::Splitter&lt; PointVector&lt; dim, Integer &gt;, uint64_t &gt; &gt;::erase()</a>, <a class="el" href="Bits_8h_source.html#l00225">indexInSetBits()</a>, <a class="el" href="testBits_8cpp_source.html#l00056">main()</a>, and <a class="el" href="Bits_8h_source.html#l00158">nbSetBits()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#ifdef TRACE_BITS</span></div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;unsigned int nbSetBits(T val)&quot;</span> &lt;&lt; std::endl;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <span class="keywordflow">for</span> ( ; val; ++i) {val ^= val &amp; -val; }</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">return</span> i;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
@@ -1153,7 +1153,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 8 2020 19:35:29 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 3 2020 14:53:03 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

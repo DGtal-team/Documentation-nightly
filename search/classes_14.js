@@ -14,6 +14,8 @@ var searchData=
   ['unorderedmultimapassociativecategory',['UnorderedMultimapAssociativeCategory',['../structDGtal_1_1UnorderedMultimapAssociativeCategory.html',1,'DGtal']]],
   ['unorderedmultisetassociativecategory',['UnorderedMultisetAssociativeCategory',['../structDGtal_1_1UnorderedMultisetAssociativeCategory.html',1,'DGtal']]],
   ['unorderedsetassociativecategory',['UnorderedSetAssociativeCategory',['../structDGtal_1_1UnorderedSetAssociativeCategory.html',1,'DGtal']]],
+  ['unorderedsetbyblock',['UnorderedSetByBlock',['../structDGtal_1_1UnorderedSetByBlock.html',1,'DGtal']]],
+  ['unorderedsetbyblock_3c_20pointvector_3c_20dim_2c_20integer_20_3e_2c_20dgtal_3a_3asplitter_3c_20pointvector_3c_20dim_2c_20integer_20_3e_2c_20uint64_5ft_20_3e_20_3e',['UnorderedSetByBlock&lt; PointVector&lt; dim, Integer &gt;, DGtal::Splitter&lt; PointVector&lt; dim, Integer &gt;, uint64_t &gt; &gt;',['../structDGtal_1_1UnorderedSetByBlock.html',1,'DGtal']]],
   ['unsignedinteger',['UnsignedInteger',['../structboost_1_1UnsignedInteger.html',1,'boost']]],
   ['update2ddomainposition',['Update2DDomainPosition',['../structDGtal_1_1Update2DDomainPosition.html',1,'DGtal']]],
   ['updateimage3dembedding',['UpdateImage3DEmbedding',['../structDGtal_1_1UpdateImage3DEmbedding.html',1,'DGtal']]],
