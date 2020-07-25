@@ -19,7 +19,7 @@ var searchData=
   ['monomial',['monomial',['../structDGtal_1_1MPolynomialGrammar.html#a6f1d49e7645270350fe18ae0049edcac',1,'DGtal::MPolynomialGrammar']]],
   ['mulexpr',['mulexpr',['../structDGtal_1_1MPolynomialGrammar.html#a6bd949e510188efe0f4190e378da5277',1,'DGtal::MPolynomialGrammar']]],
   ['my2dimage',['my2DImage',['../structDGtal_1_1AddTextureImage2DWithFunctor.html#a1148351a8670b8b49ed833c108591540',1,'DGtal::AddTextureImage2DWithFunctor']]],
-  ['my3dimage',['my3dImage',['http://dgtal.org/doc/tools/nightly/classViewer3DImage.html#a4c2bcc09863090445d9c9a16ca60ef30',1,'Viewer3DImage::my3dImage()'],['../structDGtal_1_1AddTextureImage3DWithFunctor.html#a3766d6a4c18fab5c44f67aefcb6bef4c',1,'DGtal::AddTextureImage3DWithFunctor::my3DImage()']]],
+  ['my3dimage',['my3DImage',['../structDGtal_1_1AddTextureImage3DWithFunctor.html#a3766d6a4c18fab5c44f67aefcb6bef4c',1,'DGtal::AddTextureImage3DWithFunctor::my3DImage()'],['http://dgtal.org/doc/tools/nightly/classViewer3DImage.html#a4c2bcc09863090445d9c9a16ca60ef30',1,'Viewer3DImage::my3dImage()']]],
   ['my_5felements',['my_elements',['../structDGtal_1_1UnorderedSetByBlock.html#ac7cee622b2e5576c418b0fecf303390f',1,'DGtal::UnorderedSetByBlock']]],
   ['my_5fsize',['my_size',['../structDGtal_1_1UnorderedSetByBlock.html#aaa8363d4cddc821fc441df9f35a39d1c',1,'DGtal::UnorderedSetByBlock']]],
   ['my_5fsplitter',['my_splitter',['../structDGtal_1_1UnorderedSetByBlock.html#aa28026264edfe83b6866d13da3b0e568',1,'DGtal::UnorderedSetByBlock']]],
