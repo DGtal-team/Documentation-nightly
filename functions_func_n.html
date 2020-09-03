@@ -122,6 +122,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#ab74db8ed9556a1702ac4c396142bf8be">DGtal::HalfEdgeDataStructure</a>
 , <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#add517866d0cfdf517053ccd3750cbabe">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1PolygonalSurface.html#a4930f51b38209cdd268fee860748864f">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
+, <a class="el" href="structDGtal_1_1SurfaceMesh.html#aadc9198c62b1e9b19107f97dc2ddf006">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 , <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a6d7c8794fad440626196229ac456d4c7">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
 <li>nbFaces()
@@ -129,6 +130,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#ad54920b1b5d2df2ddf0766391d0ee3a2">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1Mesh.html#a2ee374247e92f475edc66095a00da6b5">DGtal::Mesh&lt; TPoint &gt;</a>
 , <a class="el" href="classDGtal_1_1PolygonalSurface.html#a1211a5fdc6b542a201975d2ff1d90261">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
+, <a class="el" href="structDGtal_1_1SurfaceMesh.html#aac6df23e1b3e15f57df733bb6db40a81">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 , <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a512b92ee62e9b31649fa9140ef2d6b79">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
 <li>nbHalfEdges()
@@ -165,6 +167,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#a2c9593c989fc2aad6a2a6b857552c67e">DGtal::HalfEdgeDataStructure</a>
 , <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a36573822d4b58558c8b2edffe6179b50">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1PolygonalSurface.html#a6eb96511c68f5dcb1b30165e8bf87e82">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
+, <a class="el" href="structDGtal_1_1SurfaceMesh.html#ad32cc734fe88ed61b14c03632d2cde31">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 , <a class="el" href="classDGtal_1_1TriangulatedSurface.html#aea67adb96974b73cacc87014b327461a">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
 <li>nearestPoint()
@@ -175,6 +178,9 @@ $(function() {
 , <a class="el" href="classDGtal_1_1ArithmeticalDSS.html#a11d64f0e6371a510b56563a276f24f77">DGtal::ArithmeticalDSS&lt; TCoordinate, TInteger, adjacency &gt;</a>
 , <a class="el" href="structDGtal_1_1ClosedIntegerHalfPlane.html#a0b450b65897067400746837b27f66929">DGtal::ClosedIntegerHalfPlane&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1PointVector.html#af1ef76404dfcd42da67274de0fcd3eb3">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;</a>
+</li>
+<li>neighborFaces()
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#a14252183ef38876935be2fc60b1a95fe">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>neighborhood()
 : <a class="el" href="classDGtal_1_1Object.html#a6a8da6bf41905a4ae6b24c93d3d0298c">DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt;</a>
@@ -190,6 +196,9 @@ $(function() {
 </li>
 <li>neighboringVertices()
 : <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#a7100c45e3dceb391e70dbf2cf650c8bc">DGtal::HalfEdgeDataStructure</a>
+</li>
+<li>neighborVertices()
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#adeecc6c396f542ac4a4687d44fa143cb">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>newCurrentTriangle()
 : <a class="el" href="classDGtal_1_1ChordNaivePlaneComputer.html#a53d06facd1d66074f583ef6f544991b9">DGtal::ChordNaivePlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
@@ -247,7 +256,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1DSLSubsegment.html#a8df5b5b3e273ed4f5d57cc3bb39e7a17">DGtal::DSLSubsegment&lt; TInteger, TNumber &gt;</a>
 </li>
 <li>NGon2D()
-: <a class="el" href="classDGtal_1_1NGon2D.html#a31067f0dbf0a9b4e6a9f47a37b0bab12">DGtal::NGon2D&lt; TSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1NGon2D.html#a4a71e9ce7c8510e142d8d4fe69b9e30d">DGtal::NGon2D&lt; TSpace &gt;</a>
 </li>
 <li>Node()
 : <a class="el" href="structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#a46bc8fd10acdea3a99eb225c49abf8fa">DGtal::DistanceBreadthFirstVisitor&lt; TGraph, TVertexFunctor, TMarkSet &gt;::Node</a>
@@ -318,7 +327,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 3 2020 07:48:08 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 3 2020 09:47:15 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

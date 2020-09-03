@@ -8,7 +8,7 @@ var searchData=
   ['_5fangle1',['_angle1',['../structLibBoard_1_1Arc.html#a193e666227b4a3e53939d300716ae451',1,'LibBoard::Arc']]],
   ['_5fangle2',['_angle2',['../structLibBoard_1_1Arc.html#a4303e155c23d01f2815c306591f51340',1,'LibBoard::Arc']]],
   ['_5faxestoerase',['_axesToErase',['../classDGtal_1_1ChordGenericNaivePlaneComputer.html#a1998d1b1bd24f5908789d46818b99ff3',1,'DGtal::ChordGenericNaivePlaneComputer::_axesToErase()'],['../classDGtal_1_1COBAGenericNaivePlaneComputer.html#a319ddb4c3b3ef6126b10334f9319fb15',1,'DGtal::COBAGenericNaivePlaneComputer::_axesToErase()']]],
-  ['_5fb',['_B',['../classDGtal_1_1LatticePolytope2D.html#a79790e0da5d56aee322677e7fd3f893b',1,'DGtal::LatticePolytope2D::_B()'],['../classDGtal_1_1LatticePolytope2D.html#a77f7587c633fa632c67160620b1e0ffb',1,'DGtal::LatticePolytope2D::_b()']]],
+  ['_5fb',['_b',['../classDGtal_1_1LatticePolytope2D.html#a77f7587c633fa632c67160620b1e0ffb',1,'DGtal::LatticePolytope2D::_b()'],['../classDGtal_1_1LatticePolytope2D.html#a79790e0da5d56aee322677e7fd3f893b',1,'DGtal::LatticePolytope2D::_B()']]],
   ['_5fb1',['_B1',['../classDGtal_1_1LatticePolytope2D.html#a28152d6e05208877c808500d8347d3fb',1,'DGtal::LatticePolytope2D']]],
   ['_5fb2',['_B2',['../classDGtal_1_1LatticePolytope2D.html#a5c403ae8dc6f5f0d38c004f789b332eb',1,'DGtal::LatticePolytope2D']]],
   ['_5fbackgroundcolor',['_backgroundColor',['../classLibBoard_1_1Board.html#a1e7bd3bf4c652bd42e31a07ad419b960',1,'LibBoard::Board']]],

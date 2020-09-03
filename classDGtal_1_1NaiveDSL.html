@@ -241,7 +241,7 @@ Additional Inherited Members</h2></td></tr>
 class DGtal::NaiveDSL&lt; TCoordinate, TInteger &gt;</h3>
 
 <p>Aim: This class is an alias of <a class="el" href="classDGtal_1_1ArithmeticalDSS.html" title="Aim: This class represents a naive (resp. standard) digital straight segment (DSS), ie. the sequence of simply 8- (resp. 4-)connected digital points contained in a naive (resp. standard) digital straight line (DSL) between two points of it. ">ArithmeticalDSS</a> for naive DSL. It represents a naive digital straight line (DSL), ie. the set of digital points \( (x,y) \in \mathbb{Z}^2 \) such that \( \mu \leq ax - by &lt; \mu + \omega \) with \( a,b,\mu,\omega \in \mathbb{Z} \), \( \gcd(a,b) = 1 \) and \( \omega = \max(|a|,|b|) \). Note that any DSL such that \( \omega = \max(|a|,|b|) \) is simply 8-connected. </p>
-<p>[Reveilles, 1991 : <a class="el" href="citelist.html#CITEREF_Reveilles_1991_thesis">[79]</a>].</p>
+<p>[Reveilles, 1991 : <a class="el" href="citelist.html#CITEREF_Reveilles_1991_thesis">[80]</a>].</p>
 <p>As a quick start, a naive DSL can be declared and constructed as follows: </p><div class="fragment"><div class="line">  <span class="comment">// Construct a naive DSL from a, b, mu</span></div><div class="line">  NaiveDSL&lt;Integer&gt; line( 2, 5, 0 ); </div></div><!-- fragment --><p> Then, within a window defined by two points (called firstPoint and lastPoint below), you can iterate over the DSL points: </p><div class="fragment"><div class="line">  <span class="comment">// Draw the DSL points between firstPoint and lastPoint</span></div><div class="line">  <span class="keywordflow">for</span> ( <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">NaiveDSL&lt;Integer&gt;::ConstIterator</a> </div><div class="line">          it = line.begin(firstPoint), </div><div class="line">          ite = line.end(lastPoint);</div><div class="line">        it != ite; ++it )</div><div class="line">    {</div><div class="line">      board &lt;&lt; SetMode( it-&gt;className(), <span class="stringliteral">&quot;Paving&quot;</span> )</div><div class="line">            &lt;&lt; *it; <span class="comment">//Draw the point</span></div><div class="line">    }</div></div><!-- fragment --><p> See <a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments</a> for further details.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -419,7 +419,7 @@ template&lt;typename TCoordinate, typename TInteger = TCoordinate&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 3 2020 07:47:58 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 3 2020 09:47:05 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

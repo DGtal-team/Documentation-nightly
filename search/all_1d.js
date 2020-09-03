@@ -268,6 +268,7 @@ var searchData=
   ['_7estatistic',['~Statistic',['../classDGtal_1_1Statistic.html#a858e7f4b4cf1d574281a919e23a32891',1,'DGtal::Statistic']]],
   ['_7esternbrocot',['~SternBrocot',['../classDGtal_1_1SternBrocot.html#a4e7228bebf42eacea49a42efa86f2f87',1,'DGtal::SternBrocot']]],
   ['_7estraightlinefrom2points',['~StraightLineFrom2Points',['../classDGtal_1_1StraightLineFrom2Points.html#a4f6513dfc575e198a964e71cc237a409',1,'DGtal::StraightLineFrom2Points']]],
+  ['_7esurfacemesh',['~SurfaceMesh',['../structDGtal_1_1SurfaceMesh.html#a75ed7f77cd2c82051aa605c9e544dae9',1,'DGtal::SurfaceMesh']]],
   ['_7esurfaces',['~Surfaces',['../classDGtal_1_1Surfaces.html#a4a40685150ee27be46185eed33b49582',1,'DGtal::Surfaces']]],
   ['_7esurfeladjacency',['~SurfelAdjacency',['../classDGtal_1_1SurfelAdjacency.html#addeaf81ee90edc82ffc70bdf0d39a325',1,'DGtal::SurfelAdjacency']]],
   ['_7esurfelneighborhood',['~SurfelNeighborhood',['../classDGtal_1_1SurfelNeighborhood.html#afc4e7480cd718b88fa0c4e4d62fb823d',1,'DGtal::SurfelNeighborhood']]],

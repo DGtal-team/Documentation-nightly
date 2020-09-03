@@ -159,6 +159,7 @@ var searchData=
   ['getmaterialindex',['getMaterialIndex',['../classDGtal_1_1Board3D.html#a050dd7c4bb8da5b3346ee2ba437f1bcd',1,'DGtal::Board3D']]],
   ['getmax',['getMax',['../classDGtal_1_1FMM.html#a9ee247a9576c4bb8d95508cc3daf1ae5',1,'DGtal::FMM']]],
   ['getmaxcollisions',['getMaxCollisions',['../classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#ac6af934bd80ff5801dc7634002e2c137',1,'DGtal::experimental::ImageContainerByHashTree']]],
+  ['getmaxweights',['getMaxWeights',['../structDGtal_1_1SurfaceMesh.html#a40da91badf55d7dca689038c9e7f2022',1,'DGtal::SurfaceMesh']]],
   ['getmeancurvatures',['getMeanCurvatures',['../classDGtal_1_1ShortcutsGeometry.html#a1cb96ef81a9b8be93d59dd2e08425a7c',1,'DGtal::ShortcutsGeometry']]],
   ['getmiddleiterator',['getMiddleIterator',['../namespaceDGtal.html#a8c4fb1b2976e5fc35dc1b4073149408e',1,'DGtal::getMiddleIterator(const IC &amp;itb, const IC &amp;ite, RandomAccessCategory)'],['../namespaceDGtal.html#a9cf4e9405b276ba5b8b931f72d180d9d',1,'DGtal::getMiddleIterator(const IC &amp;itb, const IC &amp;ite, BidirectionalCategory)'],['../namespaceDGtal.html#a8f53c482fe83e31093accf95ec7190d9',1,'DGtal::getMiddleIterator(const IC &amp;itb, const IC &amp;ite, ForwardCategory)'],['../namespaceDGtal.html#a318f9e3e73cd0988af98b3a66a543334',1,'DGtal::getMiddleIterator(const IC &amp;itb, const IC &amp;ite)']]],
   ['getmidpointsrange',['getMidPointsRange',['../classDGtal_1_1GridCurve.html#a3d5edad190d32f745d8c441b39a9a33c',1,'DGtal::GridCurve']]],

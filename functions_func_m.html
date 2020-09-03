@@ -105,8 +105,11 @@ $(function() {
 <li>makeDualPolygonalSurface()
 : <a class="el" href="classDGtal_1_1Shortcuts.html#aafa01465d7e5b56cadc7dc0ec767033b">DGtal::Shortcuts&lt; TKSpace &gt;</a>
 </li>
+<li>makeEdge()
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#aca1088826624c5caeec89959e81c6fbf">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
+</li>
 <li>makeEdgeMap()
-: <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a915700481b88edc9e7e9a9d246b2a2eb">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
+: <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a346c170079ccf0a1380879e6fdceda2c">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1PolygonalSurface.html#a77a72a0062c73f5bfc57a9dbded83058">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
 , <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a581cba6d5c6c5f98e4bcd88198add2ec">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
@@ -127,6 +130,9 @@ $(function() {
 <li>makeImplicitShape3D()
 : <a class="el" href="classDGtal_1_1Shortcuts.html#a125018cf8ad78a3432d06ef36931569d">DGtal::Shortcuts&lt; TKSpace &gt;</a>
 </li>
+<li>makeLantern()
+: <a class="el" href="structDGtal_1_1SurfaceMeshHelper.html#abfedc0b0759677aab667ce60d6dfa5b8">DGtal::SurfaceMeshHelper&lt; TRealPoint, TRealVector &gt;</a>
+</li>
 <li>makeLightDigitalSurface()
 : <a class="el" href="classDGtal_1_1Shortcuts.html#ace7edc4c51484efe4a8a6f12b1eedfca">DGtal::Shortcuts&lt; TKSpace &gt;</a>
 </li>
@@ -143,13 +149,19 @@ $(function() {
 : <a class="el" href="classDGtal_1_1Shortcuts.html#a9af40910bf4adcdcb1a37105f2dfb082">DGtal::Shortcuts&lt; TKSpace &gt;</a>
 </li>
 <li>makeRationalSimplex()
-: <a class="el" href="classDGtal_1_1DigitalConvexity.html#a03423890027c65b5d42ec327fd251c53">DGtal::DigitalConvexity&lt; TKSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1DigitalConvexity.html#a6943f4ca052e4badf5b12e7ab4180d55">DGtal::DigitalConvexity&lt; TKSpace &gt;</a>
 </li>
 <li>makeSetFromPointPredicate()
 : <a class="el" href="classDGtal_1_1Shapes.html#a35ca19a113c3581b536f39d182e60dc7">DGtal::Shapes&lt; TDomain &gt;</a>
 </li>
 <li>makeSimplex()
 : <a class="el" href="classDGtal_1_1DigitalConvexity.html#a1f7509afa782b4513656ac5600cba55d">DGtal::DigitalConvexity&lt; TKSpace &gt;</a>
+</li>
+<li>makeSphere()
+: <a class="el" href="structDGtal_1_1SurfaceMeshHelper.html#aaefdf1b72df3d261c2e08f0315feb4f8">DGtal::SurfaceMeshHelper&lt; TRealPoint, TRealVector &gt;</a>
+</li>
+<li>makeTorus()
+: <a class="el" href="structDGtal_1_1SurfaceMeshHelper.html#abf505fb6da1221e624eac901e9a56362">DGtal::SurfaceMeshHelper&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>makeTriangulatedSurface()
 : <a class="el" href="classDGtal_1_1Shortcuts.html#aff7ae78444d8de1a8a26e801c66ea2f1">DGtal::Shortcuts&lt; TKSpace &gt;</a>
@@ -283,7 +295,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1SternBrocot_1_1Fraction.html#a80dd80efa10159c0c7abf37048010e0f">DGtal::SternBrocot&lt; TInteger, TQuotient &gt;::Fraction</a>
 </li>
 <li>MelkmanConvexHull()
-: <a class="el" href="classDGtal_1_1MelkmanConvexHull.html#a154b6c336f17895b7ab4696a2365d4c2">DGtal::MelkmanConvexHull&lt; TPoint, TOrientationFunctor &gt;</a>
+: <a class="el" href="classDGtal_1_1MelkmanConvexHull.html#a3c6564b72984ecb272ea4d53d74c70e7">DGtal::MelkmanConvexHull&lt; TPoint, TOrientationFunctor &gt;</a>
 </li>
 <li>melkmanIsConvexValid()
 : <a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#ac5402e43c71af62b92981831d87f4ef7">DGtal::AlphaThickSegmentComputer&lt; TInputPoint, TConstIterator &gt;</a>
@@ -325,7 +337,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1ReverseDistanceTransformation.html#a8e2c032a8f9dd6471c33e4f89451e92c">DGtal::ReverseDistanceTransformation&lt; TWeightImage, TPSeparableMetric, TImageContainer &gt;</a>
 </li>
 <li>min()
-: <a class="el" href="structDGtal_1_1AngleComputer.html#af19b9dfb6aa857e68b996351178b66e1">DGtal::AngleComputer</a>
+: <a class="el" href="structDGtal_1_1AngleComputer.html#a026f4c9edca45bb993ac99a1e537f783">DGtal::AngleComputer</a>
 , <a class="el" href="classDGtal_1_1ColorBrightnessColorMap.html#a8aa98490c7453bf7e2dca8274e19bf41">DGtal::ColorBrightnessColorMap&lt; PValue, PDefaultColor &gt;</a>
 , <a class="el" href="structDGtal_1_1details_1_1NumberTraitsImplFundamental.html#a5bcafe54939a861e535c00ae0e3871ad">DGtal::details::NumberTraitsImplFundamental&lt; T &gt;</a>
 , <a class="el" href="classDGtal_1_1FMM.html#a7e5f6f6ef2528f1903afd495c976c81d">DGtal::FMM&lt; TImage, TSet, TPointPredicate, TPointFunctor &gt;</a>
@@ -375,7 +387,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1EuclideanShapesCSG.html#af53de9304901eb74314f76b161f27264">DGtal::EuclideanShapesCSG&lt; ShapeA, ShapeB &gt;</a>
 </li>
 <li>MLPLengthEstimator()
-: <a class="el" href="classDGtal_1_1MLPLengthEstimator.html#a726e5e3aa09b1f48b9bf89d54137f598">DGtal::MLPLengthEstimator&lt; TConstIterator &gt;</a>
+: <a class="el" href="classDGtal_1_1MLPLengthEstimator.html#a0a5ca80f4263070ecd73d179abb2808f">DGtal::MLPLengthEstimator&lt; TConstIterator &gt;</a>
 </li>
 <li>ModuloComputer()
 : <a class="el" href="classDGtal_1_1ModuloComputer.html#ae1e3568f91e97c2149420d391dc0e59f">DGtal::ModuloComputer&lt; TInteger &gt;</a>
@@ -404,7 +416,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1MostCenteredMaximalSegmentEstimator.html#ab8849fe7b77b51afb32eb572b648fba3">DGtal::MostCenteredMaximalSegmentEstimator&lt; SegmentComputer, SCEstimator &gt;</a>
 </li>
 <li>mostSignificantBit()
-: <a class="el" href="structDGtal_1_1Bits.html#a25b5f464fec0d951d75f1fe10a07f0ea">DGtal::Bits</a>
+: <a class="el" href="structDGtal_1_1Bits.html#ab229501f4d295aa6b46d404908ea7d4e">DGtal::Bits</a>
 </li>
 <li>mouseMoveEvent()
 : <a class="el" href="structDGtal_1_1Viewer3D_1_1Extension.html#a148dae829b6779d975403fe8899736ac">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::Extension</a>
@@ -449,7 +461,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1StarShaped3D.html#a63b698a35d891febfe4e4760efa49ba3">DGtal::StarShaped3D&lt; TSpace &gt;</a>
 </li>
 <li>MPolynomial()
-: <a class="el" href="classDGtal_1_1MPolynomial.html#a0bdf0850f559874761bc16804eeaf481">DGtal::MPolynomial&lt; n, TRing, TAlloc &gt;</a>
+: <a class="el" href="classDGtal_1_1MPolynomial.html#aa1d611c82e4fae30a85ffd3cd19afbf5">DGtal::MPolynomial&lt; n, TRing, TAlloc &gt;</a>
 , <a class="el" href="classDGtal_1_1MPolynomial_3_010_00_01TRing_00_01TAlloc_01_4.html#a12c689acf27488533537550fa28d045c">DGtal::MPolynomial&lt; 0, TRing, TAlloc &gt;</a>
 </li>
 <li>MPolynomialEvaluator()
@@ -492,7 +504,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 3 2020 07:48:08 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 3 2020 09:47:15 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

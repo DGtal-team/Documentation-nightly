@@ -106,7 +106,7 @@ the last point of the container is removed.  <a href="#ad39d6db9714b4194a49a1789
 <tr class="memitem:a22b3737b4aeb5443d541b9336116f6d8"><td class="memTemplParams" colspan="2">template&lt;typename Stack , typename ForwardIterator , typename Predicate &gt; </td></tr>
 <tr class="memitem:a22b3737b4aeb5443d541b9336116f6d8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#a22b3737b4aeb5443d541b9336116f6d8">buildHullWithStack</a> (Stack &amp;aStack, const ForwardIterator &amp;itb, const ForwardIterator &amp;ite, const Predicate &amp;aPredicate)</td></tr>
 <tr class="memdesc:a22b3737b4aeb5443d541b9336116f6d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedure that retrieves the vertices of the convex hull of a weakly externally visible polygon (WEVP) in linear-time. This technique is called Sklansky's scan, Graham's scan or 3-coins algorithm. <br />
-It works for all WEVP [Toussaint and Avis, 1982 : <a class="el" href="citelist.html#CITEREF_ToussaintAvis1982">[93]</a>].  <a href="#a22b3737b4aeb5443d541b9336116f6d8">More...</a><br /></td></tr>
+It works for all WEVP [Toussaint and Avis, 1982 : <a class="el" href="citelist.html#CITEREF_ToussaintAvis1982">[94]</a>].  <a href="#a22b3737b4aeb5443d541b9336116f6d8">More...</a><br /></td></tr>
 <tr class="separator:a22b3737b4aeb5443d541b9336116f6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c864509908d68566f323096fbe7bbcc"><td class="memTemplParams" colspan="2">template&lt;typename Stack , typename ForwardIterator , typename Predicate &gt; </td></tr>
 <tr class="memitem:a6c864509908d68566f323096fbe7bbcc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#a6c864509908d68566f323096fbe7bbcc">buildHullWithAdaptedStack</a> (Stack aStack, const ForwardIterator &amp;itb, const ForwardIterator &amp;ite, const Predicate &amp;aPredicate)</td></tr>
@@ -161,7 +161,7 @@ It works for all WEVP [Toussaint and Avis, 1982 : <a class="el" href="citelist.h
 <tr class="separator:a367555edf6627f6b054f5910778e84a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acab511ebdfea4fa4b0d02901fa5f1464"><td class="memTemplParams" colspan="2">template&lt;typename ForwardIterator , typename OutputIterator , typename Functor &gt; </td></tr>
 <tr class="memitem:acab511ebdfea4fa4b0d02901fa5f1464"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#acab511ebdfea4fa4b0d02901fa5f1464">melkmanConvexHullAlgorithm</a> (const ForwardIterator &amp;itb, const ForwardIterator &amp;ite, OutputIterator res, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a> &amp;aFunctor)</td></tr>
-<tr class="memdesc:acab511ebdfea4fa4b0d02901fa5f1464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedure that retrieves the vertices of the hull of a set of 2D points given by the range [ <em>itb</em> , <em>ite</em> ). This procedure follows the well-known Melkman algorithm [Melkman, 1979 : <a class="el" href="citelist.html#CITEREF_Melkman1987">[67]</a>].  <a href="#acab511ebdfea4fa4b0d02901fa5f1464">More...</a><br /></td></tr>
+<tr class="memdesc:acab511ebdfea4fa4b0d02901fa5f1464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedure that retrieves the vertices of the hull of a set of 2D points given by the range [ <em>itb</em> , <em>ite</em> ). This procedure follows the well-known Melkman algorithm [Melkman, 1979 : <a class="el" href="citelist.html#CITEREF_Melkman1987">[68]</a>].  <a href="#acab511ebdfea4fa4b0d02901fa5f1464">More...</a><br /></td></tr>
 <tr class="separator:acab511ebdfea4fa4b0d02901fa5f1464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -365,7 +365,7 @@ template&lt;typename Stack , typename ForwardIterator , typename Predicate &gt; 
 </div><div class="memdoc">
 
 <p>Procedure that retrieves the vertices of the convex hull of a weakly externally visible polygon (WEVP) in linear-time. This technique is called Sklansky's scan, Graham's scan or 3-coins algorithm. <br />
-It works for all WEVP [Toussaint and Avis, 1982 : <a class="el" href="citelist.html#CITEREF_ToussaintAvis1982">[93]</a>]. </p>
+It works for all WEVP [Toussaint and Avis, 1982 : <a class="el" href="citelist.html#CITEREF_ToussaintAvis1982">[94]</a>]. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aStack</td><td>reference to the stack of retrieved vertices </td></tr>
@@ -1100,7 +1100,7 @@ template&lt;typename ForwardIterator , typename OutputIterator , typename Functo
       </table>
 </div><div class="memdoc">
 
-<p>Procedure that retrieves the vertices of the hull of a set of 2D points given by the range [ <em>itb</em> , <em>ite</em> ). This procedure follows the well-known Melkman algorithm [Melkman, 1979 : <a class="el" href="citelist.html#CITEREF_Melkman1987">[67]</a>]. </p>
+<p>Procedure that retrieves the vertices of the hull of a set of 2D points given by the range [ <em>itb</em> , <em>ite</em> ). This procedure follows the well-known Melkman algorithm [Melkman, 1979 : <a class="el" href="citelist.html#CITEREF_Melkman1987">[68]</a>]. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1MelkmanConvexHull.html" title="Aim: This class implements the on-line algorithm of Melkman for the computation of the convex hull of...">MelkmanConvexHull</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1305,7 +1305,7 @@ the last point of the container is removed. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 3 2020 07:48:05 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 3 2020 09:47:12 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

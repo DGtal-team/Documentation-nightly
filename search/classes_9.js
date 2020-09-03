@@ -83,7 +83,7 @@ var searchData=
   ['isarithmeticconversionvalid_3c_20t_2c_20u_2c_20typename_20std_3a_3aconditional_3c_20false_2c_20arithmeticconversiontype_3c_20t_2c_20u_20_3e_2c_20void_20_3e_3a_3atype_20_3e',['IsArithmeticConversionValid&lt; T, U, typename std::conditional&lt; false, ArithmeticConversionType&lt; T, U &gt;, void &gt;::type &gt;',['../structDGtal_1_1IsArithmeticConversionValid_3_01T_00_01U_00_01typename_01std_1_1conditional_3_01f3d12afaad57391e67b8a4fff74de6483.html',1,'DGtal']]],
   ['isassociativecontainer',['IsAssociativeContainer',['../structDGtal_1_1IsAssociativeContainer.html',1,'DGtal']]],
   ['isassociativecontainerfromcategory',['IsAssociativeContainerFromCategory',['../structDGtal_1_1detail_1_1IsAssociativeContainerFromCategory.html',1,'DGtal::detail']]],
-  ['iscirculator',['IsCirculator',['../structDGtal_1_1IsCirculator.html',1,'DGtal::IsCirculator&lt; IC &gt;'],['../structDGtal_1_1detail_1_1IsCirculator.html',1,'DGtal::detail::IsCirculator&lt; IC, flagHasNestedTypeCalledType &gt;']]],
+  ['iscirculator',['IsCirculator',['../structDGtal_1_1detail_1_1IsCirculator.html',1,'DGtal::detail::IsCirculator&lt; IC, flagHasNestedTypeCalledType &gt;'],['../structDGtal_1_1IsCirculator.html',1,'DGtal::IsCirculator&lt; IC &gt;']]],
   ['iscirculator_3c_20ic_2c_20true_20_3e',['IsCirculator&lt; IC, true &gt;',['../structDGtal_1_1detail_1_1IsCirculator_3_01IC_00_01true_01_4.html',1,'DGtal::detail']]],
   ['iscirculatorfromtype',['IsCirculatorFromType',['../structDGtal_1_1detail_1_1IsCirculatorFromType.html',1,'DGtal::detail']]],
   ['iscirculatorfromtype_3c_20ic_2c_20circulatortype_20_3e',['IsCirculatorFromType&lt; IC, CirculatorType &gt;',['../structDGtal_1_1detail_1_1IsCirculatorFromType_3_01IC_00_01CirculatorType_01_4.html',1,'DGtal::detail']]],

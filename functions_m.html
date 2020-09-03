@@ -141,6 +141,9 @@ $(function() {
 <li>makeDualPolygonalSurface()
 : <a class="el" href="classDGtal_1_1Shortcuts.html#aafa01465d7e5b56cadc7dc0ec767033b">DGtal::Shortcuts&lt; TKSpace &gt;</a>
 </li>
+<li>makeEdge()
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#aca1088826624c5caeec89959e81c6fbf">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
+</li>
 <li>makeEdgeMap()
 : <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a915700481b88edc9e7e9a9d246b2a2eb">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1PolygonalSurface.html#a77a72a0062c73f5bfc57a9dbded83058">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
@@ -158,10 +161,13 @@ $(function() {
 : <a class="el" href="classDGtal_1_1Shortcuts.html#a2bc9ae3d572b07e7a895c69388485d3b">DGtal::Shortcuts&lt; TKSpace &gt;</a>
 </li>
 <li>makeIdxDigitalSurface()
-: <a class="el" href="classDGtal_1_1Shortcuts.html#ac56ea1169685808c40bcbc693b691b89">DGtal::Shortcuts&lt; TKSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1Shortcuts.html#ae97d93976657f72a8a53385bfc972788">DGtal::Shortcuts&lt; TKSpace &gt;</a>
 </li>
 <li>makeImplicitShape3D()
 : <a class="el" href="classDGtal_1_1Shortcuts.html#a125018cf8ad78a3432d06ef36931569d">DGtal::Shortcuts&lt; TKSpace &gt;</a>
+</li>
+<li>makeLantern()
+: <a class="el" href="structDGtal_1_1SurfaceMeshHelper.html#abfedc0b0759677aab667ce60d6dfa5b8">DGtal::SurfaceMeshHelper&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>makeLightDigitalSurface()
 : <a class="el" href="classDGtal_1_1Shortcuts.html#ace7edc4c51484efe4a8a6f12b1eedfca">DGtal::Shortcuts&lt; TKSpace &gt;</a>
@@ -186,6 +192,12 @@ $(function() {
 </li>
 <li>makeSimplex()
 : <a class="el" href="classDGtal_1_1DigitalConvexity.html#a1f7509afa782b4513656ac5600cba55d">DGtal::DigitalConvexity&lt; TKSpace &gt;</a>
+</li>
+<li>makeSphere()
+: <a class="el" href="structDGtal_1_1SurfaceMeshHelper.html#aaefdf1b72df3d261c2e08f0315feb4f8">DGtal::SurfaceMeshHelper&lt; TRealPoint, TRealVector &gt;</a>
+</li>
+<li>makeTorus()
+: <a class="el" href="structDGtal_1_1SurfaceMeshHelper.html#abf505fb6da1221e624eac901e9a56362">DGtal::SurfaceMeshHelper&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>makeTriangulatedSurface()
 : <a class="el" href="classDGtal_1_1Shortcuts.html#aff7ae78444d8de1a8a26e801c66ea2f1">DGtal::Shortcuts&lt; TKSpace &gt;</a>
@@ -443,11 +455,11 @@ $(function() {
 <li>MessageStream()
 : <a class="el" href="classLibBoard_1_1MessageStream.html#a7ebcea2c511ddd97a8df7de836eebf6e">LibBoard::MessageStream</a>
 </li>
-<li>MetaData
-: <a class="el" href="classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a3cfc3b8eab967ae59bf17bfbade83e21">DGtal::NaiveParametricCurveDigitizer3D&lt; TParametricCurve &gt;</a>
-</li>
 <li>metaData
 : <a class="el" href="classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a65a05baa8fb4757abd0a5dddf3e460fa">DGtal::NaiveParametricCurveDigitizer3D&lt; TParametricCurve &gt;</a>
+</li>
+<li>MetaData
+: <a class="el" href="classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a3cfc3b8eab967ae59bf17bfbade83e21">DGtal::NaiveParametricCurveDigitizer3D&lt; TParametricCurve &gt;</a>
 </li>
 <li>metaDataContainter
 : <a class="el" href="classDGtal_1_1NaiveParametricCurveDigitizer3D.html#ac01c3d766da8b2741976ea64c3abc0e4">DGtal::NaiveParametricCurveDigitizer3D&lt; TParametricCurve &gt;</a>
@@ -1491,8 +1503,20 @@ $(function() {
 <li>myE2base
 : <a class="el" href="structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_0126_00_011_01_4.html#aad96f20ac0b204df003c7cb4ba2d564d">DGtal::IntersectionTargetTrait&lt; TSpace, TSeparation, TDimension &gt;::IntersectionTarget&lt; Space, 26, 1 &gt;</a>
 </li>
+<li>myEdgeFaces
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#a94ca1e662aa8011cf3363006871a9526">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
+</li>
 <li>myEdgeHalfEdges
 : <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#a879380fd2b99827b4227bc9126331fbb">DGtal::HalfEdgeDataStructure</a>
+</li>
+<li>myEdgeLeftFaces
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#ae82da19d82e484c2f98ae05044ccfdbe">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
+</li>
+<li>myEdgeRightFaces
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#a53fe37e4877f4301fb1f072bc298f576">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
+</li>
+<li>myEdgeVertices
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#adb61d468b23d5df256699b61a6f33213">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>myElement
 : <a class="el" href="structDGtal_1_1concepts_1_1CPredicate.html#a111eaaaf2d1c7b482d9a0d6b1db11027">DGtal::concepts::CPredicate&lt; T, TElement &gt;</a>
@@ -1624,6 +1648,9 @@ $(function() {
 </li>
 <li>myFaceList
 : <a class="el" href="classDGtal_1_1Mesh.html#ad77ea6f9d493bb06f7785c3521a11b26">DGtal::Mesh&lt; TPoint &gt;</a>
+</li>
+<li>myFaceNormals
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#ae05f830c68a02278be71c7922daabbaf">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>myFaces
 : <a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#ab420b306d430643c95a9cc9a57c4ca7b">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;</a>
@@ -1988,11 +2015,11 @@ $(function() {
 , <a class="el" href="classDGtal_1_1ImageToConstantFunctor.html#a5c9910f6a367799aa9df874f959a610d">DGtal::ImageToConstantFunctor&lt; Image, PointPredicate, TValue &gt;</a>
 , <a class="el" href="structDGtal_1_1UpdateImageData.html#a2a28dd2b6b0d6da349bb14fee38c5a52">DGtal::UpdateImageData&lt; TImageType, TFunctor &gt;</a>
 </li>
-<li>MyImageCache
-: <a class="el" href="classDGtal_1_1TiledImage.html#a9dd9dc8b8c093bd3f6e876d808376ae2">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;</a>
-</li>
 <li>myImageCache
 : <a class="el" href="classDGtal_1_1TiledImage.html#a6318f6c967b1284ce4c4a1de58b369a6">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;</a>
+</li>
+<li>MyImageCache
+: <a class="el" href="classDGtal_1_1TiledImage.html#a9dd9dc8b8c093bd3f6e876d808376ae2">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;</a>
 </li>
 <li>myImageDomainList
 : <a class="el" href="classDGtal_1_1Viewer3D.html#a7a074ce5a2ffdca7ec0d9f4e7267b3e0">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;</a>
@@ -2037,6 +2064,12 @@ $(function() {
 , <a class="el" href="classDGtal_1_1L2FirstOrderLocalDistance.html#aae4624d7c28ca9590ad04a23b7ffe444">DGtal::L2FirstOrderLocalDistance&lt; TImage, TSet &gt;</a>
 , <a class="el" href="classDGtal_1_1L2SecondOrderLocalDistance.html#ae737bd5d45c00447dac9b2d748210482">DGtal::L2SecondOrderLocalDistance&lt; TImage, TSet &gt;</a>
 , <a class="el" href="classDGtal_1_1LInfLocalDistance.html#af25b65772b257e71eb217dd569af53e4">DGtal::LInfLocalDistance&lt; TImage, TSet &gt;</a>
+</li>
+<li>myIncidentFaces
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#a507ad5f04fc7844dbaeeb8a04954ee1b">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
+</li>
+<li>myIncidentVertices
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#ae7fc97b6c2697523ca155e726ef343d5">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>myIndex
 : <a class="el" href="structDGtal_1_1Translate2DDomain.html#a1608f0312529c98b288e22b91523676b">DGtal::Translate2DDomain</a>
@@ -2705,6 +2738,9 @@ $(function() {
 <li>myNeighborConfigurationMap
 : <a class="el" href="classDGtal_1_1Object.html#afe7171793aceb3537baf557ef15ef234">DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt;</a>
 </li>
+<li>myNeighborFaces
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#a2d35067801e14f192242359f1e38d3d2">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
+</li>
 <li>myNeighborhood
 : <a class="el" href="classDGtal_1_1DigitalSetBoundary_1_1Tracker.html#ab2b82f21768791e47c373f3a633d23a6">DGtal::DigitalSetBoundary&lt; TKSpace, TDigitalSet &gt;::Tracker</a>
 , <a class="el" href="classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#adc9433c6abc0d116b09b1661579175a8">DGtal::ExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;::Tracker</a>
@@ -2712,6 +2748,9 @@ $(function() {
 , <a class="el" href="classDGtal_1_1LightExplicitDigitalSurface_1_1Tracker.html#a26224e25996fa3d4a59217a4475cecd8">DGtal::LightExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;::Tracker</a>
 , <a class="el" href="classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#ab44d9b44266f40a911b568e864f49e8a">DGtal::LightImplicitDigitalSurface&lt; TKSpace, TPointPredicate &gt;::Tracker</a>
 , <a class="el" href="classDGtal_1_1SetOfSurfels_1_1Tracker.html#aa3feaccae136074ce7ae480974a2f231">DGtal::SetOfSurfels&lt; TKSpace, TSurfelSet &gt;::Tracker</a>
+</li>
+<li>myNeighborVertices
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#a7be58ac805a733844b58c2f0f3ee173e">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>myNewDirection
 : <a class="el" href="structDGtal_1_1Update2DDomainPosition.html#acbb9405b781793bf7f1b3a5ab26f511b">DGtal::Update2DDomainPosition&lt; Space, KSpace &gt;</a>
@@ -3079,6 +3118,7 @@ $(function() {
 <li>myPositions
 : <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a6e1a820cd5ad0ee8e3b210e4a3148218">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1PolygonalSurface.html#a88b29a735ddb06f28bd5495b2ebd8bba">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
+, <a class="el" href="structDGtal_1_1SurfaceMesh.html#aebc23b806fa96668c563c3dc429fc32f">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 , <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a6a0282559c1ab5173f1eca66a83b1321">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
 <li>myPosSelector
@@ -4055,6 +4095,9 @@ $(function() {
 <li>myVertexList
 : <a class="el" href="classDGtal_1_1Mesh.html#ac9d1e900d157dc93d411443b809fd157">DGtal::Mesh&lt; TPoint &gt;</a>
 </li>
+<li>myVertexNormals
+: <a class="el" href="structDGtal_1_1SurfaceMesh.html#ae859e2460c888208060d4760b7cb4411">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
+</li>
 <li>myVertexRange
 : <a class="el" href="classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1edge__iterator.html#aed6ea6aee449f1d9b3a788b0f5caa992">boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::edge_iterator</a>
 , <a class="el" href="classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1edge__iterator.html#a5a101d7956a3bb7dcbfec779ee44f68f">boost::graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;::edge_iterator</a>
@@ -4237,7 +4280,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 3 2020 07:48:08 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 3 2020 09:47:15 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
