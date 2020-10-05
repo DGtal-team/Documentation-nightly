@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.1.beta</span>
+   &#160;<span id="projectnumber">1.1.0</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Description of class '<a class="el" href="structDGtal_1_1detail_1_1NormalizedTangentVectorFromDSS.html">NormalizedTangentVectorFromDSS</a>' </p>
 <p>Aim: computes the unit vector of a DSS </p>
 
-<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l00716">716</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l00715">715</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af8059172831af032bba7aff9bc20e255"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8059172831af032bba7aff9bc20e255">&#9670;&nbsp;</a></span>RealVector</h2>
@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l00719">719</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l00718">718</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
 
 </div>
 </div>
@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l00720">720</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l00719">719</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
 
 </div>
 </div>
@@ -175,10 +175,10 @@ template&lt;typename DSS &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l00735">735</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l00734">734</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
 
 <p class="reference">References <a class="el" href="NumberTraits_8h_source.html#l00154">DGtal::NumberTraitsImpl&lt; std::decay&lt; T &gt;::type &gt;::castToDouble()</a>, and <a class="el" href="PointVector_8h_source.html#l01488">DGtal::PointVector&lt; 2, double &gt;::L_2</a>.</p>
-<div class="fragment"><div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;      {</div><div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        <span class="keywordtype">double</span> x = <a class="code" href="structDGtal_1_1NumberTraitsImpl.html#af97eb78317d1fc1c6babd4dcc95ed336">NumberTraits&lt;typename DSS::Integer&gt;</a></div><div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<a class="code" href="structDGtal_1_1NumberTraitsImpl.html#af97eb78317d1fc1c6babd4dcc95ed336">	  ::castToDouble</a>( aDSS.b() ); </div><div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        <span class="keywordtype">double</span> y = <a class="code" href="structDGtal_1_1NumberTraitsImpl.html#af97eb78317d1fc1c6babd4dcc95ed336">NumberTraits&lt;typename DSS::Integer&gt;</a></div><div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<a class="code" href="structDGtal_1_1NumberTraitsImpl.html#af97eb78317d1fc1c6babd4dcc95ed336">	  ::castToDouble</a>( aDSS.a() );</div><div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <a class="code" href="classDGtal_1_1PointVector.html">RealVector</a> v(x,y); </div><div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="keywordtype">double</span> norm = v.norm(<a class="code" href="classDGtal_1_1PointVector.html#ae1c647ad60b34b4d7c8b7d8d7b917fcbae627bbf70b529a021661ac613e53e892">RealVector::L_2</a>);</div><div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        v /= norm; </div><div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        <span class="keywordflow">return</span> v;</div><div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;      }</div><div class="ttc" id="structDGtal_1_1NumberTraitsImpl_html_af97eb78317d1fc1c6babd4dcc95ed336"><div class="ttname"><a href="structDGtal_1_1NumberTraitsImpl.html#af97eb78317d1fc1c6babd4dcc95ed336">DGtal::NumberTraitsImpl&lt; std::decay&lt; T &gt;::type &gt;::castToDouble</a></div><div class="ttdeci">static double castToDouble(const std::decay&lt; T &gt;::type &amp;aT)</div><div class="ttdoc">Cast method to double (for I/O or board export uses only). </div><div class="ttdef"><b>Definition:</b> <a href="NumberTraits_8h_source.html#l00154">NumberTraits.h:154</a></div></div>
+<div class="fragment"><div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;      {</div><div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <span class="keywordtype">double</span> x = <a class="code" href="structDGtal_1_1NumberTraitsImpl.html#af97eb78317d1fc1c6babd4dcc95ed336">NumberTraits&lt;typename DSS::Integer&gt;</a></div><div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<a class="code" href="structDGtal_1_1NumberTraitsImpl.html#af97eb78317d1fc1c6babd4dcc95ed336">          ::castToDouble</a>( aDSS.b() ); </div><div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <span class="keywordtype">double</span> y = <a class="code" href="structDGtal_1_1NumberTraitsImpl.html#af97eb78317d1fc1c6babd4dcc95ed336">NumberTraits&lt;typename DSS::Integer&gt;</a></div><div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<a class="code" href="structDGtal_1_1NumberTraitsImpl.html#af97eb78317d1fc1c6babd4dcc95ed336">          ::castToDouble</a>( aDSS.a() );</div><div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        <a class="code" href="classDGtal_1_1PointVector.html">RealVector</a> v(x,y); </div><div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <span class="keywordtype">double</span> norm = v.norm(<a class="code" href="classDGtal_1_1PointVector.html#ae1c647ad60b34b4d7c8b7d8d7b917fcbae627bbf70b529a021661ac613e53e892">RealVector::L_2</a>);</div><div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        v /= norm; </div><div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        <span class="keywordflow">return</span> v;</div><div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;      }</div><div class="ttc" id="structDGtal_1_1NumberTraitsImpl_html_af97eb78317d1fc1c6babd4dcc95ed336"><div class="ttname"><a href="structDGtal_1_1NumberTraitsImpl.html#af97eb78317d1fc1c6babd4dcc95ed336">DGtal::NumberTraitsImpl&lt; std::decay&lt; T &gt;::type &gt;::castToDouble</a></div><div class="ttdeci">static double castToDouble(const std::decay&lt; T &gt;::type &amp;aT)</div><div class="ttdoc">Cast method to double (for I/O or board export uses only). </div><div class="ttdef"><b>Definition:</b> <a href="NumberTraits_8h_source.html#l00154">NumberTraits.h:154</a></div></div>
 <div class="ttc" id="classDGtal_1_1PointVector_html"><div class="ttname"><a href="classDGtal_1_1PointVector.html">DGtal::PointVector</a></div><div class="ttdoc">Aim: Implements basic operations that will be used in Point and Vector classes. </div><div class="ttdef"><b>Definition:</b> <a href="PointVector_8h_source.html#l00165">PointVector.h:165</a></div></div>
 <div class="ttc" id="classDGtal_1_1PointVector_html_ae1c647ad60b34b4d7c8b7d8d7b917fcbae627bbf70b529a021661ac613e53e892"><div class="ttname"><a href="classDGtal_1_1PointVector.html#ae1c647ad60b34b4d7c8b7d8d7b917fcbae627bbf70b529a021661ac613e53e892">DGtal::PointVector&lt; 2, double &gt;::L_2</a></div><div class="ttdef"><b>Definition:</b> <a href="PointVector_8h_source.html#l01488">PointVector.h:1488</a></div></div>
 </div><!-- fragment -->
@@ -190,7 +190,7 @@ template&lt;typename DSS &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 3 2020 09:47:11 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 5 2020 08:54:54 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

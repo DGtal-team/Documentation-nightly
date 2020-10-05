@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.1.beta</span>
+   &#160;<span id="projectnumber">1.1.0</span>
    </div>
   </td>
  </tr>
@@ -116,13 +116,13 @@ Length estimation</h1>
 <div class="caption">
 DSS segmentation </div></div>
  <p>Then, we initialize the DSS length estimator from the points range and get the estimated length.</p>
-<div class="fragment"><div class="line">    <span class="comment">//length estimation based on a DSS segmentation</span></div><div class="line">    DSSLengthEstimator&lt; Range::ConstCirculator &gt; DSSlength;</div><div class="line">    DSSlength.init(1, r.c(), r.c());</div><div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;Length: &quot;</span> &lt;&lt; DSSlength.eval() &lt;&lt; std::endl; </div></div><!-- fragment --><p> You should see in the standard output:</p>
+<div class="fragment"><div class="line">    <span class="comment">//length estimation based on a DSS segmentation</span></div><div class="line">    DSSLengthEstimator&lt; Range::ConstCirculator &gt; DSSlength;</div><div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;Length: &quot;</span> &lt;&lt; DSSlength.eval(r.c(), r.c(), 1.) &lt;&lt; std::endl; </div></div><!-- fragment --><p> You should see in the standard output:</p>
 <div class="fragment"><div class="line">Length: 723.238 </div></div><!-- fragment --><h1><a class="anchor" id="secttutoImageGridCurveEstimator4"></a>
 Required includes</h1>
 <p>You should include these common files: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;DGtal/base/Common.h&quot;</span></div><div class="line"><span class="preprocessor">#include &quot;DGtal/helpers/StdDefs.h&quot;</span></div><div class="line"><span class="preprocessor">#include &quot;ConfigExamples.h&quot;</span></div></div><!-- fragment --><p> For loading the image and extracting a digital set by thresholding: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;DGtal/base/BasicFunctors.h&quot;</span></div><div class="line"><span class="preprocessor">#include &quot;DGtal/kernel/BasicPointPredicates.h&quot;</span></div><div class="line"><span class="preprocessor">#include &quot;DGtal/io/readers/PGMReader.h&quot;</span></div><div class="line"><span class="preprocessor">#include &quot;DGtal/images/ImageContainerBySTLVector.h&quot;</span></div></div><!-- fragment --><p> For extracting the contours of the digital set: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;DGtal/topology/helpers/Surfaces.h&quot;</span></div></div><!-- fragment --><p> And finally, for estimating the length of the retrieved contours, you should include this: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;DGtal/geometry/curves/estimation/DSSLengthEstimator.h&quot;</span></div></div><!-- fragment --></div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 3 2020 09:46:58 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 5 2020 08:54:41 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

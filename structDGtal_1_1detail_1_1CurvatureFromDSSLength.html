@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.1.beta</span>
+   &#160;<span id="projectnumber">1.1.0</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ Public Member Functions</h2></td></tr>
 <p>Aim: Computes the curvature \( k \) from the discrete length \( l \) of a DSS as follow: \( 1/k = l*l/8 + 1/2 \)</p>
 <dl class="section note"><dt>Note</dt><dd>Adaption from Coeurjolly, D. and Miguet, S. and Tougne, L. "Discrete Curvature Based on Osculating Circle Estimation", Proc. IWVF, LNCS, vol 2059, pp.303-312, 2001 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l01234">1234</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l01233">1233</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ab62993b8ab34b52b6e966e91196c2854"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab62993b8ab34b52b6e966e91196c2854">&#9670;&nbsp;</a></span>Value</h2>
@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l01237">1237</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l01236">1236</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
 
 </div>
 </div>
@@ -144,8 +144,8 @@ template&lt;typename DSS &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l01240">1240</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;      {</div><div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">DSS::Vector</a> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>; </div><div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;        <span class="comment">//length</span></div><div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;        <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> v = ( *aDSS.begin() - *boost::prior(aDSS.end()) ); </div><div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;        <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a> l = v.norm(Vector::L_2);</div><div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;        <span class="comment">//result</span></div><div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;        <span class="keywordflow">return</span> 1/( (l*l)/8 + 0.5 );  </div><div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;      }</div><div class="ttc" id="testSimpleRandomAccessRangeFromPoint_8cpp_html_a566a00621638570a4186414035153a2e"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a></div><div class="ttdeci">double Value</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00038">testSimpleRandomAccessRangeFromPoint.cpp:38</a></div></div>
+<p class="definition">Definition at line <a class="el" href="SegmentComputerEstimators_8h_source.html#l01239">1239</a> of file <a class="el" href="SegmentComputerEstimators_8h_source.html">SegmentComputerEstimators.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;      {</div><div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">DSS::Vector</a> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>; </div><div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;        <span class="comment">//length</span></div><div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;        <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> v = ( *aDSS.begin() - *boost::prior(aDSS.end()) ); </div><div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;        <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a> l = v.norm(Vector::L_2);</div><div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;        <span class="comment">//result</span></div><div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;        <span class="keywordflow">return</span> 1./( (l*l)/8. + 0.5 );  </div><div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;      }</div><div class="ttc" id="testSimpleRandomAccessRangeFromPoint_8cpp_html_a566a00621638570a4186414035153a2e"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a></div><div class="ttdeci">double Value</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00038">testSimpleRandomAccessRangeFromPoint.cpp:38</a></div></div>
 <div class="ttc" id="testCombinDSS_8cpp_html_a609ee1808a3b4f883fb28df65e9a2ed6"><div class="ttname"><a href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a></div><div class="ttdeci">FreemanChain&lt; int &gt;::Vector Vector</div><div class="ttdef"><b>Definition:</b> <a href="testCombinDSS_8cpp_source.html#l00060">testCombinDSS.cpp:60</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -156,7 +156,7 @@ template&lt;typename DSS &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 3 2020 09:47:11 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 5 2020 08:54:54 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
