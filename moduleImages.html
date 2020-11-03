@@ -154,7 +154,7 @@ Main methods</h2>
 <li><code>operator()</code> to get the value associated to a given point</li>
 <li><code>setValue</code> to assign a value to a given point.</li>
 </ul>
-<div class="fragment"><div class="line"><span class="comment">//process the values</span></div><div class="line"><a class="code" href="classDGtal_1_1ImageContainerBySTLVector.html#a95d272d9ee40bcc6df56f49b8bd775ae">Image::Domain</a> d = image.domain(); </div><div class="line"><span class="keywordflow">for</span> (<a class="code" href="classDGtal_1_1ImageContainerBySTLVector.html#a7c3bf02944fcaa9efa550e266663e773">Image::Domain::ConstIterator</a> it = d.begin(), itEnd = d.end(); </div><div class="line">     it != itEnd; ++it)</div><div class="line">{</div><div class="line">  <a class="code" href="classDGtal_1_1ImageContainerBySTLVector.html#a969107fe40d0efab29fe28f72813cb66">Image::Value</a> v = <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a614d1b1c043b31763c1eb50f64666737">image</a>( *it ); </div><div class="line">  v += 5; <span class="comment">//adding 5 to all values</span></div><div class="line">  image.setValue( v ); </div><div class="line">}</div></div><!-- fragment --><p>Note that this method of iterating over the values of an image is not always the fastest and that is why we also provide ranges of values.</p>
+<div class="fragment"><div class="line"><span class="comment">//process the values</span></div><div class="line"><a class="code" href="classDGtal_1_1ImageContainerBySTLVector.html#a95d272d9ee40bcc6df56f49b8bd775ae">Image::Domain</a> d = image.domain(); </div><div class="line"><span class="keywordflow">for</span> (<a class="code" href="classDGtal_1_1ImageContainerBySTLVector.html#a7c3bf02944fcaa9efa550e266663e773">Image::Domain::ConstIterator</a> it = d.begin(), itEnd = d.end(); </div><div class="line">     it != itEnd; ++it)</div><div class="line">{</div><div class="line">  <a class="code" href="classDGtal_1_1ImageContainerBySTLVector.html#a969107fe40d0efab29fe28f72813cb66">Image::Value</a> v = <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a614d1b1c043b31763c1eb50f64666737">image</a>( *it ); </div><div class="line">  v += 5; <span class="comment">//adding 5 to all values</span></div><div class="line">  image.setValue( *it, v ); </div><div class="line">}</div></div><!-- fragment --><p>Note that this method of iterating over the values of an image is not always the fastest and that is why we also provide ranges of values.</p>
 <h2><a class="anchor" id="dgtalImagesRanges"></a>
 Ranges of values</h2>
 <p>Constant images provide a constant range of values returned by the <code>constRange</code> method. As every model of <a class="el" href="structDGtal_1_1concepts_1_1CConstBidirectionalRange.html" title="Aim: Defines the concept describing a bidirectional const range. ">concepts::CConstBidirectionalRange</a>, it provides <code>begin</code>, <code>end</code>, <code>rbegin</code> and <code>rend</code> methods returning constant iterators to iterate over the values in the forward or backward direction.</p>
@@ -308,7 +308,7 @@ Constant image from a function, functor or lambda</h2>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 12 2020 11:36:17 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 3 2020 09:42:43 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
