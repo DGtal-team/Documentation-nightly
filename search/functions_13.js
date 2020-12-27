@@ -124,7 +124,7 @@ var searchData=
   ['setpredicate',['SetPredicate',['../structDGtal_1_1deprecated_1_1SetPredicate.html#a842b53b4d046b9e196621db4c673882c',1,'DGtal::deprecated::SetPredicate::SetPredicate(ConstAlias&lt; DigitalSet &gt; aSet)'],['../structDGtal_1_1deprecated_1_1SetPredicate.html#a9ed1ee954837445dbd268e255e9aba54',1,'DGtal::deprecated::SetPredicate::SetPredicate(const SetPredicate &amp;other)'],['../structDGtal_1_1deprecated_1_1SetPredicate.html#a782b230caefcbe08b2c55a1c814b9f4a',1,'DGtal::deprecated::SetPredicate::SetPredicate()']]],
   ['setrgba',['setRGBA',['../classDGtal_1_1Color.html#a41463e4354ca13cba0a651395a7259c5',1,'DGtal::Color']]],
   ['setrgbf',['setRGBf',['../classDGtal_1_1Color.html#ac6b0209c260df290d4a976958b80c23c',1,'DGtal::Color']]],
-  ['setrgbi',['setRGBi',['../classDGtal_1_1Color.html#adee040c5b45596150f72db467b7a5738',1,'DGtal::Color']]],
+  ['setrgbi',['setRGBi',['../classDGtal_1_1Color.html#a3f4dc58b29b8313f98abdd4581a8dcd1',1,'DGtal::Color']]],
   ['setscale1_5f1_5fimagex',['setScale1_1_ImageX',['http://dgtal.org/doc/tools/nightly/classMainWindow.html#addbc7ae148a0a0f50680dd8529227709',1,'MainWindow']]],
   ['setscale1_5f1_5fimagey',['setScale1_1_ImageY',['http://dgtal.org/doc/tools/nightly/classMainWindow.html#a550a638a8accca4f36678cc54f45c7c0',1,'MainWindow']]],
   ['setscale1_5f1_5fimagez',['setScale1_1_ImageZ',['http://dgtal.org/doc/tools/nightly/classMainWindow.html#a7230e4fbde03214110640b1672887459',1,'MainWindow']]],
