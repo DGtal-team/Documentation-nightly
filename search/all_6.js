@@ -353,7 +353,7 @@ var searchData=
   ['dummy',['Dummy',['../structDGtal_1_1concepts_1_1CPreCellularGridSpaceND.html#a847a99432fda3036fecafc96b296476f',1,'DGtal::concepts::CPreCellularGridSpaceND']]],
   ['dummyestimatorfromsurfels',['DummyEstimatorFromSurfels',['../structDGtal_1_1functors_1_1DummyEstimatorFromSurfels.html',1,'DGtal::functors::DummyEstimatorFromSurfels&lt; TSurfel, TSCellEmbedder &gt;'],['../structDGtal_1_1functors_1_1DummyEstimatorFromSurfels.html#a8bdf786e14baf82a4216ec43bbe30466',1,'DGtal::functors::DummyEstimatorFromSurfels::DummyEstimatorFromSurfels(ConstAlias&lt; SCellEmbedder &gt; anEmbedder, const double h)'],['../structDGtal_1_1functors_1_1DummyEstimatorFromSurfels.html#ad778aaf54cdef8de48755507e091bf72',1,'DGtal::functors::DummyEstimatorFromSurfels::DummyEstimatorFromSurfels()']]],
   ['dummyobject',['DummyObject',['../structDGtal_1_1DummyObject.html',1,'DGtal']]],
-  ['dumpvoxels',['dumpVoxels',['../classDGtal_1_1VoxelComplex.html#af51f1dc5823c69b4c6979dae15125da6',1,'DGtal::VoxelComplex']]],
+  ['dumpvoxels',['dumpVoxels',['../classDGtal_1_1VoxelComplex.html#a09e033a22eaa6a4b5a68b111ef5dae0f',1,'DGtal::VoxelComplex']]],
   ['dup',['dup',['../structLibBoard_1_1ShapeList.html#a7934bacbd7748570e9d7ead96b01d0e6',1,'LibBoard::ShapeList']]],
   ['durchblick',['durchblick',['../testMPolynomial_8cpp.html#a6e894967b765694bb7edd53da833392d',1,'testMPolynomial.cpp']]],
   ['durchblickc',['durchblickC',['../testMPolynomial_8cpp.html#af2efdf895184702ecb9e3f9c524022f1',1,'testMPolynomial.cpp']]],

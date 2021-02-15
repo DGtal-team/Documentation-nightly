@@ -158,7 +158,7 @@ var searchData=
   ['dualform1toimage',['dualForm1ToImage',['http://dgtal.org/doc/tools/nightly/namespaceDGtal_1_1functions_1_1dec.html#a7fd12bedfdc0cb9d387cac611954ca9e',1,'DGtal::functions::dec']]],
   ['dualform1torgbcolorimage',['dualForm1ToRGBColorImage',['http://dgtal.org/doc/tools/nightly/namespaceDGtal_1_1functions_1_1dec.html#a69a0b5992fc0b6286c67e29e5fa93c32',1,'DGtal::functions::dec']]],
   ['dummyestimatorfromsurfels',['DummyEstimatorFromSurfels',['../structDGtal_1_1functors_1_1DummyEstimatorFromSurfels.html#a8bdf786e14baf82a4216ec43bbe30466',1,'DGtal::functors::DummyEstimatorFromSurfels::DummyEstimatorFromSurfels(ConstAlias&lt; SCellEmbedder &gt; anEmbedder, const double h)'],['../structDGtal_1_1functors_1_1DummyEstimatorFromSurfels.html#ad778aaf54cdef8de48755507e091bf72',1,'DGtal::functors::DummyEstimatorFromSurfels::DummyEstimatorFromSurfels()']]],
-  ['dumpvoxels',['dumpVoxels',['../classDGtal_1_1VoxelComplex.html#af51f1dc5823c69b4c6979dae15125da6',1,'DGtal::VoxelComplex']]],
+  ['dumpvoxels',['dumpVoxels',['../classDGtal_1_1VoxelComplex.html#a09e033a22eaa6a4b5a68b111ef5dae0f',1,'DGtal::VoxelComplex']]],
   ['dup',['dup',['../structLibBoard_1_1ShapeList.html#a7934bacbd7748570e9d7ead96b01d0e6',1,'LibBoard::ShapeList']]],
   ['durchblick',['durchblick',['../testMPolynomial_8cpp.html#a6e894967b765694bb7edd53da833392d',1,'testMPolynomial.cpp']]],
   ['durchblickc',['durchblickC',['../testMPolynomial_8cpp.html#af2efdf895184702ecb9e3f9c524022f1',1,'testMPolynomial.cpp']]],

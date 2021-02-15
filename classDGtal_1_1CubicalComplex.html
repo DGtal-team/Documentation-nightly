@@ -128,7 +128,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a0b5fbc72524f77bf6420a19fd830a9c9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a1101d4adbc2a87db33afcb42209b6f04">KSpace::Integer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a0b5fbc72524f77bf6420a19fd830a9c9">Integer</a></td></tr>
 <tr class="memdesc:a0b5fbc72524f77bf6420a19fd830a9c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for integers in the space.  <a href="#a0b5fbc72524f77bf6420a19fd830a9c9">More...</a><br /></td></tr>
 <tr class="separator:a0b5fbc72524f77bf6420a19fd830a9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40726f15df8d1f8f5cd777efb002275d"><td class="memItemLeft" align="right" valign="top">typedef KSpace::Cell&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a></td></tr>
+<tr class="memitem:a40726f15df8d1f8f5cd777efb002275d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#af87a8fec76262bec1a3b33881fa38f1f">KSpace::Cell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a></td></tr>
 <tr class="memdesc:a40726f15df8d1f8f5cd777efb002275d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for a cell in the space.  <a href="#a40726f15df8d1f8f5cd777efb002275d">More...</a><br /></td></tr>
 <tr class="separator:a40726f15df8d1f8f5cd777efb002275d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a112d62a9f2b5f7aa9761dac35a24711e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDGtal_1_1KhalimskyCell.html#aa2b60151c6f09b4378696297a458fafb">Cell::PreCell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1CubicalComplex.html#a112d62a9f2b5f7aa9761dac35a24711e">PreCell</a></td></tr>
@@ -474,7 +474,7 @@ class DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;</h3>
 template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::template CellMap&lt; CubicalCellData &gt;::Type&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef KSpace::Cell <a class="el" href="classDGtal_1_1CubicalComplex.html">DGtal::CubicalComplex</a>&lt; TKSpace, TCellContainer &gt;::<a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a></td>
+          <td class="memname">typedef <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#af87a8fec76262bec1a3b33881fa38f1f">KSpace::Cell</a> <a class="el" href="classDGtal_1_1CubicalComplex.html">DGtal::CubicalComplex</a>&lt; TKSpace, TCellContainer &gt;::<a class="el" href="classDGtal_1_1CubicalComplex.html#a40726f15df8d1f8f5cd777efb002275d">Cell</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1201,6 +1201,13 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aCell</td><td>any pre-cell valid in the Khalimsky space associated to the complex. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>'true' if and only if <em>aCell</em> belongs to this complex. </dd></dl>
 
 </div>
 </div>
@@ -1269,6 +1276,14 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>the dimension of cell <em>aCell</em>. </td></tr>
+    <tr><td class="paramname">aCell</td><td>any precell valid in the Khalimsky space associated to the complex. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>'true' if and only if <em>aCell</em> belongs to this complex. </dd></dl>
 
 </div>
 </div>
@@ -1927,7 +1942,13 @@ template&lt;typename TDigitalSet &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor a complex from a digital set. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Construct a complex from a digital set. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TDigitalSet</td><td>either kind of DigitalSet </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">set</td><td>- a digital set from which to create a complex. Set has to be of the same dimension as a Khalimsky space. </td></tr>
   </table>
@@ -4514,7 +4535,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 </div><div class="memdoc">
 <p>An array of map Cell -&gt; Data that stores cells dimension per dimension (i.e. cells of dimension 0 are stored in myCells[0], cells of dimension 1 in myCells[1] and so on). </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l01291">1291</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l01301">1301</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CubicalComplexFunctions_8h_source.html#l00180">DGtal::operator &amp;()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00201">DGtal::operator &amp;=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00293">DGtal::operator!=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00118">DGtal::operator-()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00097">DGtal::operator-=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00266">DGtal::operator==()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00340">DGtal::operator&gt;=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00222">DGtal::operator^()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00245">DGtal::operator^=()</a>, <a class="el" href="CubicalComplexFunctions_8h_source.html#l00139">DGtal::operator|()</a>, and <a class="el" href="CubicalComplexFunctions_8h_source.html#l00160">DGtal::operator|=()</a>.</p>
 
@@ -4544,7 +4565,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 
 <p>The Khalimsky space in which lives the cubical complex. </p>
 
-<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l01286">1286</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CubicalComplex_8h_source.html#l01296">1296</a> of file <a class="el" href="CubicalComplex_8h_source.html">CubicalComplex.h</a>.</p>
 
 </div>
 </div>
@@ -4554,7 +4575,7 @@ template&lt;typename TKSpace, typename TCellContainer = typename TKSpace::templa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 3 2021 15:42:08 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 15 2021 14:21:33 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

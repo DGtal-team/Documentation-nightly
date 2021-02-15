@@ -51,7 +51,7 @@ var searchData=
   ['_7ecobagenericstandardplanecomputer',['~COBAGenericStandardPlaneComputer',['../classDGtal_1_1COBAGenericStandardPlaneComputer.html#a31e4a4164796e984c7c5ce68f12b36d6',1,'DGtal::COBAGenericStandardPlaneComputer']]],
   ['_7ecobanaiveplanecomputer',['~COBANaivePlaneComputer',['../classDGtal_1_1COBANaivePlaneComputer.html#a4e7dee5884e9f5f2009413e01e223c77',1,'DGtal::COBANaivePlaneComputer']]],
   ['_7ecodesrange',['~CodesRange',['../classDGtal_1_1FreemanChain_1_1CodesRange.html#a02e777f205d7970123d9c2fbceff0a87',1,'DGtal::FreemanChain::CodesRange']]],
-  ['_7ecolor',['~Color',['../classDGtal_1_1Color.html#ada5d57c6cddf6a5be3866873ff362660',1,'DGtal::Color']]],
+  ['_7ecolor',['~Color',['../classDGtal_1_1Color.html#ab5bebff10ba52f211b8f80f62d37c19d',1,'DGtal::Color']]],
   ['_7ecolorbrightnesscolormap',['~ColorBrightnessColorMap',['../classDGtal_1_1ColorBrightnessColorMap.html#a658b86624f848e769997fd71238b7930',1,'DGtal::ColorBrightnessColorMap']]],
   ['_7ecommond3d',['~CommonD3D',['../structDGtal_1_1Display3D_1_1CommonD3D.html#a2d65889fa3b059f4ec44aa6dd943d0ff',1,'DGtal::Display3D::CommonD3D']]],
   ['_7econstalias',['~ConstAlias',['../classDGtal_1_1ConstAlias.html#a8d9fbf0ed55ad29ef43c6d92c59623ee',1,'DGtal::ConstAlias']]],
