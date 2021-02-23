@@ -216,6 +216,7 @@ var searchData=
   ['countedconstptrorconstptr_3c_20pointpredicate_20_3e',['CountedConstPtrOrConstPtr&lt; PointPredicate &gt;',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],
   ['countedconstptrorconstptr_3c_20shape_20_3e',['CountedConstPtrOrConstPtr&lt; Shape &gt;',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],
   ['countedconstptrorconstptr_3c_20shapea_20_3e',['CountedConstPtrOrConstPtr&lt; ShapeA &gt;',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],
+  ['countedconstptrorconstptr_3c_20surface_20_3e',['CountedConstPtrOrConstPtr&lt; Surface &gt;',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],
   ['countedconstptrorconstptr_3c_20vcmondigitalsurface_20_3e',['CountedConstPtrOrConstPtr&lt; VCMOnDigitalSurface &gt;',['../classDGtal_1_1CountedConstPtrOrConstPtr.html',1,'DGtal']]],
   ['countedptr',['CountedPtr',['../classDGtal_1_1CountedPtr.html',1,'DGtal']]],
   ['countedptr_3c_20a1_20_3e',['CountedPtr&lt; A1 &gt;',['../classDGtal_1_1CountedPtr.html',1,'DGtal']]],

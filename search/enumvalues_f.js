@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['r',['R',['../namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ae1e1d3d40573127e9ee0480caf1283d6',1,'DGtal']]],
+  ['r1',['R1',['../namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49acda522d4353b166cc2dee84673307b4e',1,'DGtal']]],
   ['renderingdefault',['RenderingDefault',['../classDGtal_1_1Viewer3D.html#a41f43f5d8ed445215b84664faa6b6243aa93b954356483a52bc36a145aecb2135',1,'DGtal::Viewer3D']]],
   ['renderinglambertian',['RenderingLambertian',['../classDGtal_1_1Viewer3D.html#a41f43f5d8ed445215b84664faa6b6243a278937fbe6fc548a8da3360a7459dfcb',1,'DGtal::Viewer3D']]],
   ['renderingmetallic',['RenderingMetallic',['../classDGtal_1_1Viewer3D.html#a41f43f5d8ed445215b84664faa6b6243aac2fca9712fd03ce432bf061a5686036',1,'DGtal::Viewer3D']]],

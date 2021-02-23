@@ -12,6 +12,7 @@ var searchData=
   ['palatinoroman',['PalatinoRoman',['../namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3a4721d8c6bbb43c0846946400600c7eaa',1,'LibBoard::Fonts']]],
   ['paving',['PAVING',['../namespaceDGtal.html#a2526218ffac7b4842d393facbedd9ee3ad788351651a8e983ca1b5b30861ad8ba',1,'DGtal']]],
   ['periodic',['PERIODIC',['../classDGtal_1_1KhalimskySpaceND.html#ab1e57d8bd06fd2d995555de82b39d959ae5819c27512f541df22534e93f0ea146',1,'DGtal::KhalimskySpaceND']]],
+  ['planar',['Planar',['../classDGtal_1_1PlaneProbingNeighborhood.html#a7de337aa87bc093fb60c384bb1ad860fa93a097009b6443e711996c50b5354adf',1,'DGtal::PlaneProbingNeighborhood']]],
   ['pointels',['Pointels',['../namespaceDGtal.html#aaad242ffef715835e8928579a506b2d5ac0a8bc5774ff6530ee71a7cacd6ca6f4',1,'DGtal']]],
   ['primal',['PRIMAL',['../namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7',1,'DGtal']]],
   ['ptr',['PTR',['../classDGtal_1_1Alias.html#a22a7083f7b9350124620c5d49e329b08a3f6ad271e4b9bc20db0935cf8ad44a34',1,'DGtal::Alias::PTR()'],['../classDGtal_1_1Clone.html#ad6256b7bcf50412643a5d485da330b76aec5204418ac3a40d75ab8b336b4eee1f',1,'DGtal::Clone::PTR()'],['../classDGtal_1_1ConstAlias.html#a5fb4ec0c751d31c22b68fa8af4f86fcfa5125cc9153ec3db3e1084e84315cf2bc',1,'DGtal::ConstAlias::PTR()']]]

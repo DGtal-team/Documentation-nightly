@@ -79,6 +79,8 @@ $(function() {
 , <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#af597d333bda6b3424848e3b7500aab92">DGtal::IntegralInvariantCovarianceEstimator&lt; TKSpace, TPointPredicate, TCovarianceMatrixFunctor &gt;</a>
 , <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a277b53712b54a058768cf1af492b8d0a">DGtal::IntegralInvariantVolumeEstimator&lt; TKSpace, TPointPredicate, TVolumeFunctor &gt;</a>
 , <a class="el" href="classDGtal_1_1LocalEstimatorFromSurfelFunctorAdapter.html#aaef26c98ed8c6a6f7c885fdaf09a88a6">DGtal::LocalEstimatorFromSurfelFunctorAdapter&lt; TDigitalSurfaceContainer, TMetric, TFunctorOnSurfel, TConvolutionFunctor &gt;</a>
+, <a class="el" href="classDGtal_1_1MaximalSegmentSliceEstimation.html#a9e33ccf5b1230e4dd4f77699164f9758">DGtal::MaximalSegmentSliceEstimation&lt; TSurface &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator.html#ade8551ef834b9df5c6bd1af95f849220">DGtal::PlaneProbingDigitalSurfaceLocalEstimator&lt; TSurface, TInternalProbingAlgorithm &gt;</a>
 , <a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a13f63d9a6a8085f38bc94d37b99a4f99">DGtal::TrueDigitalSurfaceLocalEstimator&lt; TKSpace, TShape, TGeometricFunctor &gt;</a>
 , <a class="el" href="classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a64ef348d85dea6854242d95caa9ec72c">DGtal::VCMDigitalSurfaceLocalEstimator&lt; TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction, TVCMGeometricFunctor &gt;</a>
 </li>
@@ -124,7 +126,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#afbd9c8260f6201857a4b8ef5cf3dcc59">DGtal::HalfEdgeDataStructure</a>
 </li>
 <li>halfSpace()
-: <a class="el" href="classDGtal_1_1LatticePolytope2D.html#ae2e05bb0fc7abcdbac093a78e471748d">DGtal::LatticePolytope2D&lt; TSpace, TSequence &gt;</a>
+: <a class="el" href="classDGtal_1_1LatticePolytope2D.html#ad2442aea864ee83a2c2295dc3624a840">DGtal::LatticePolytope2D&lt; TSpace, TSequence &gt;</a>
 </li>
 <li>HatFunction()
 : <a class="el" href="structDGtal_1_1functors_1_1HatFunction.html#a081b14897ec803a1300846c6f0d1756f">DGtal::functors::HatFunction&lt; TScalar &gt;</a>
@@ -141,7 +143,7 @@ $(function() {
 </li>
 <li>HeaderField()
 : <a class="el" href="structDGtal_1_1LongvolReader_1_1HeaderField.html#a85e9d27823efd4a265641a551c2dd589">DGtal::LongvolReader&lt; TImageContainer, TFunctor &gt;::HeaderField</a>
-, <a class="el" href="structDGtal_1_1VolReader_1_1HeaderField.html#acbd14a6445248668356a34fe63900409">DGtal::VolReader&lt; TImageContainer, TFunctor &gt;::HeaderField</a>
+, <a class="el" href="structDGtal_1_1VolReader_1_1HeaderField.html#aec184d0f81a6ece1c3a0a9ba1831b8ed">DGtal::VolReader&lt; TImageContainer, TFunctor &gt;::HeaderField</a>
 </li>
 <li>heatLaplace()
 : <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#ac66dd85e32675b5a4320965c4d74d19f">DGtal::DiscreteExteriorCalculus&lt; dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger &gt;</a>
@@ -149,7 +151,7 @@ $(function() {
 <li>heds()
 : <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a718f6e87d5a331e18fae0103a996fd9c">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1PolygonalSurface.html#afd1707f376f242320dee7418fa2b7f6d">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
-, <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a9c878185a57d5c43bfa3e79198d181f6">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
+, <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a996172e38c21878ccc14c52d9e5d2f78">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
 <li>height()
 : <a class="el" href="structLibBoard_1_1Rectangle.html#a64aa9555a7c402ae9e3733d55c408312">LibBoard::Rectangle</a>
@@ -157,6 +159,14 @@ $(function() {
 <li>helpString()
 : <a class="el" href="structDGtal_1_1Viewer3D_1_1Extension.html#a52c86b89a1da667ee3ac5868bb33a549">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::Extension</a>
 , <a class="el" href="classDGtal_1_1Viewer3D.html#a0ea600ff686a3526590af02aef6da929">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;</a>
+</li>
+<li>hexagonState()
+: <a class="el" href="classDGtal_1_1PlaneProbingHNeighborhood.html#a81996e4862da96ab6317f58b5efabdca">DGtal::PlaneProbingHNeighborhood&lt; TPredicate &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingNeighborhood.html#a08f18457bbee5140c7f73b0e5480ae79">DGtal::PlaneProbingNeighborhood&lt; TPredicate &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html#aa5e2f8b29b1a082821c2dd773c32d4f3">DGtal::PlaneProbingParallelepipedEstimator&lt; TPredicate, mode &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingR1Neighborhood.html#a19e95dd6c4b7335b55365b2cf23d7ca7">DGtal::PlaneProbingR1Neighborhood&lt; TPredicate &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingRNeighborhood.html#afb25c0852649162fe1a435ae059b4ad7">DGtal::PlaneProbingRNeighborhood&lt; TPredicate &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingTetrahedronEstimator.html#a424a41ce3158aa2fa9485ab27799f62e">DGtal::PlaneProbingTetrahedronEstimator&lt; TPredicate, mode &gt;</a>
 </li>
 <li>hiddenBy()
 : <a class="el" href="classDGtal_1_1ExactPredicateLpSeparableMetric.html#a88fd75ad801228797391c45831892104">DGtal::ExactPredicateLpSeparableMetric&lt; TSpace, p, TRawValue &gt;</a>
@@ -170,7 +180,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html#a675f7a25bb953c5e31d18fd1b118bb95">DGtal::ExactPredicateLpPowerSeparableMetric&lt; TSpace, 2, TPromoted &gt;</a>
 </li>
 <li>Histogram()
-: <a class="el" href="classDGtal_1_1Histogram.html#ae804298415e30ec7189ab5b0e2223e67">DGtal::Histogram&lt; TQuantity, TBinner &gt;</a>
+: <a class="el" href="classDGtal_1_1Histogram.html#ad299c6a3bb2572ecbf40ae586246a7c6">DGtal::Histogram&lt; TQuantity, TBinner &gt;</a>
 </li>
 <li>hodge()
 : <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#abeb4ba6563c8654e5c3649dcc226887a">DGtal::DiscreteExteriorCalculus&lt; dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger &gt;</a>
@@ -183,10 +193,10 @@ $(function() {
 , <a class="el" href="classDGtal_1_1HueShadeColorMap.html#aeffa24792b783463b9ba1bfe748c3ce5">DGtal::HueShadeColorMap&lt; PValue, DefaultCycles &gt;</a>
 </li>
 <li>HueShadeColorMap()
-: <a class="el" href="classDGtal_1_1HueShadeColorMap.html#a5ab4366736994494d4d8d052af3e3057">DGtal::HueShadeColorMap&lt; PValue, DefaultCycles &gt;</a>
+: <a class="el" href="classDGtal_1_1HueShadeColorMap.html#a28e870b92f2a3e5a220f72aa419d525c">DGtal::HueShadeColorMap&lt; PValue, DefaultCycles &gt;</a>
 </li>
 <li>HyperRectDomain()
-: <a class="el" href="classDGtal_1_1HyperRectDomain.html#a83a6ef9490a47306b61359731af57806">DGtal::HyperRectDomain&lt; TSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1HyperRectDomain.html#abef399988cdd5ced13c0d37a98a29312">DGtal::HyperRectDomain&lt; TSpace &gt;</a>
 </li>
 <li>HyperRectDomain_Iterator()
 : <a class="el" href="classDGtal_1_1HyperRectDomain__Iterator.html#a05f6fb1ffdb55d2d149cefd74b71f645">DGtal::HyperRectDomain_Iterator&lt; TPoint &gt;</a>
@@ -201,7 +211,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 15 2021 14:21:46 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 23 2021 14:12:52 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

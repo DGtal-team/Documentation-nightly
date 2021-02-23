@@ -76,6 +76,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1ArithmeticalDSL.html#af860d391483feadd985f5853af1b3e20">DGtal::ArithmeticalDSL&lt; TCoordinate, TInteger, adjacency &gt;</a>
 , <a class="el" href="classDGtal_1_1ArithmeticalDSS.html#a41def093b715f9a5f0c34ae47fa4eb9b">DGtal::ArithmeticalDSS&lt; TCoordinate, TInteger, adjacency &gt;</a>
 , <a class="el" href="classDGtal_1_1ArithmeticalDSSComputer.html#a826db536e1d373c4973b7bebf2dcea2c">DGtal::ArithmeticalDSSComputer&lt; TIterator, TInteger, adjacency &gt;</a>
+, <a class="el" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html#a89f1262ac86eed78d813ad07ab866fb1">DGtal::ArithmeticalDSSComputerOnSurfels&lt; TKSpace, TIterator, TInteger, adjacency &gt;</a>
 </li>
 <li>A
 : <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html#a8a3a76e31a55dc3f5ca31fffa99af01e">DGtal::BoundedLatticePolytope&lt; TSpace &gt;</a>
@@ -114,6 +115,9 @@ $(function() {
 , <a class="el" href="classDGtal_1_1SeparableMetricAdapter.html#a424bf62df3e7763bb5c39688a799dd5a">DGtal::SeparableMetricAdapter&lt; TMetric &gt;</a>
 , <a class="el" href="classDGtal_1_1VoronoiMap.html#a9fc11e4b8f57edd1661f42f971f76d5b">DGtal::VoronoiMap&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;</a>
 </li>
+<li>absolutePoint()
+: <a class="el" href="classDGtal_1_1PlaneProbingNeighborhood.html#ac4248aea0ca0b8a1522a1e91cf2c6ceb">DGtal::PlaneProbingNeighborhood&lt; TPredicate &gt;</a>
+</li>
 <li>AcceptedPointSet
 : <a class="el" href="classDGtal_1_1FMM.html#a58d1c864335c88ab103335b9ff525f09">DGtal::FMM&lt; TImage, TSet, TPointPredicate, TPointFunctor &gt;</a>
 </li>
@@ -121,7 +125,7 @@ $(function() {
 : <a class="el" href="structDGtal_1_1GraphVisitorRange_1_1GenericConstIterator.html#a7c5c65a12ed3a375ee05f994d9b23525">DGtal::GraphVisitorRange&lt; TGraphVisitor &gt;::GenericConstIterator&lt; TAccessor &gt;</a>
 </li>
 <li>AccFlower2D()
-: <a class="el" href="classDGtal_1_1AccFlower2D.html#a2a7b9eb852149fc7d90cf9ee4b4d23ae">DGtal::AccFlower2D&lt; TSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1AccFlower2D.html#a644134ceff0c7c02dd966104f76864c1">DGtal::AccFlower2D&lt; TSpace &gt;</a>
 </li>
 <li>accumulate()
 : <a class="el" href="classDGtal_1_1LambdaMST2DEstimator.html#a7d74cee36a84ba9e5f0c43cb3751c475">DGtal::LambdaMST2DEstimator&lt; TSpace, TSegmentation, Functor &gt;</a>
@@ -375,6 +379,8 @@ $(function() {
 , <a class="el" href="classDGtal_1_1HyperRectDomain__ReverseIterator.html#ac907c042573fe4c8bd781cbc4a8ec421">DGtal::HyperRectDomain_ReverseIterator&lt; TIterator &gt;</a>
 , <a class="el" href="classDGtal_1_1HyperRectDomain__subIterator.html#a619bd8d4f02f73b8c7d1f30cd370c018">DGtal::HyperRectDomain_subIterator&lt; TPoint &gt;</a>
 , <a class="el" href="classDGtal_1_1IntegerSequenceIterator.html#a3e14faa60d494b6d23853f8b48593fde">DGtal::IntegerSequenceIterator&lt; TInteger &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html#ad1d3ed58cbdc622f3ed6773ac74957de">DGtal::PlaneProbingParallelepipedEstimator&lt; TPredicate, mode &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingTetrahedronEstimator.html#aa83bad21bbf69d0367957066b4a4fc22">DGtal::PlaneProbingTetrahedronEstimator&lt; TPredicate, mode &gt;</a>
 , <a class="el" href="classDGtal_1_1ReverseIterator.html#a996cbee8cdbb5c04ffb49495b108212b">DGtal::ReverseIterator&lt; Iterator &gt;</a>
 </li>
 <li>algorithm()
@@ -520,11 +526,14 @@ $(function() {
 </li>
 <li>append()
 : <a class="el" href="structDGtal_1_1ImageFromSet.html#acebb8a6b3c4d0411dd7659e9c7ccb981">DGtal::ImageFromSet&lt; TImage &gt;</a>
-, <a class="el" href="structDGtal_1_1SetFromImage.html#a885b957d423d277ec94979f1388943d4">DGtal::SetFromImage&lt; TSet &gt;</a>
+, <a class="el" href="structDGtal_1_1SetFromImage.html#a81d51b66273dbaf4f0897c4c72e9fced">DGtal::SetFromImage&lt; TSet &gt;</a>
 </li>
 <li>apply()
 : <a class="el" href="structDGtal_1_1detail_1_1FFTWComplexCast.html#a3392cf6eba729d9034fc0a273366ca7e">DGtal::detail::FFTWComplexCast&lt; TFFTW &gt;</a>
 , <a class="el" href="structLibBoard_1_1Transform.html#a6ac37c50159ba922e47c750dce5f513b">LibBoard::Transform</a>
+</li>
+<li>applyOperation()
+: <a class="el" href="classDGtal_1_1PlaneProbingTetrahedronEstimator.html#a1c92bdfcbbad2d5004d859b719cd0e92">DGtal::PlaneProbingTetrahedronEstimator&lt; TPredicate, mode &gt;</a>
 </li>
 <li>Aqua
 : <a class="el" href="classDGtal_1_1Color.html#a22854415f2e4edd1c512c6ef4482b8a9">DGtal::Color</a>
@@ -538,27 +547,27 @@ $(function() {
 <li>Arc()
 : <a class="el" href="structDGtal_1_1DigitalSurface_1_1Arc.html#ade3f5b2fcdff6deefd779a16242a3d2d">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Arc</a>
 , <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#ac934168ece424e22ea11abd10f4d4d75">DGtal::HalfEdgeDataStructure</a>
+, <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#afc77a3bac1f7f77d2cdaf805420234d0">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 </li>
 <li>arc()
 : <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#aa174c0e7251e3f5e71650bb5a0de6cca">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 </li>
 <li>Arc
-: <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#afc77a3bac1f7f77d2cdaf805420234d0">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
+: <a class="el" href="classDGtal_1_1PolygonalSurface.html#aaf0f323727b16abc554253733f07c5ec">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
 </li>
 <li>arc()
 : <a class="el" href="classDGtal_1_1PolygonalSurface.html#a5db040c9bdaede4c98cce1edc6bc7956">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
 </li>
 <li>Arc
-: <a class="el" href="classDGtal_1_1PolygonalSurface.html#aaf0f323727b16abc554253733f07c5ec">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
-, <a class="el" href="classDGtal_1_1Shortcuts.html#ad2d2e887c78b56e51669c55c371e0bd5">DGtal::Shortcuts&lt; TKSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1Shortcuts.html#ad2d2e887c78b56e51669c55c371e0bd5">DGtal::Shortcuts&lt; TKSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1ShortcutsGeometry.html#a7791a764bc395565719add60fca44929">DGtal::ShortcutsGeometry&lt; TKSpace &gt;</a>
+, <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
 <li>arc()
 : <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a2e058cf9a8277bd42daa1fa0929766c4">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
-<li>Arc
-: <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
-, <a class="el" href="structLibBoard_1_1Arc.html#ae6e4ed44cf06d15f70142d843f04a0ee">LibBoard::Arc</a>
+<li>Arc()
+: <a class="el" href="structLibBoard_1_1Arc.html#ae6e4ed44cf06d15f70142d843f04a0ee">LibBoard::Arc</a>
 </li>
 <li>arc2FaceIndex()
 : <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#a4aa9ab6bd236c9999fa0cd2f21b3fc6d">DGtal::HalfEdgeDataStructure</a>
@@ -672,7 +681,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1ArithmeticalDSL.html#a53bb1a77803e0375b9dc60635459dabb">DGtal::ArithmeticalDSL&lt; TCoordinate, TInteger, adjacency &gt;</a>
 </li>
 <li>ArithmeticalDSS()
-: <a class="el" href="classDGtal_1_1ArithmeticalDSS.html#af6140f8c735a5d2ccd7151fb7a995b04">DGtal::ArithmeticalDSS&lt; TCoordinate, TInteger, adjacency &gt;</a>
+: <a class="el" href="classDGtal_1_1ArithmeticalDSS.html#abe977771dd95d8ebafc54829d4175636">DGtal::ArithmeticalDSS&lt; TCoordinate, TInteger, adjacency &gt;</a>
 </li>
 <li>arithmeticalDSS2d()
 : <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a1719e94ad5ea5d64dfe1f77c6b25c770">DGtal::Naive3DDSSComputer&lt; TIterator, TInteger, connectivity &gt;</a>
@@ -694,21 +703,24 @@ $(function() {
 : <a class="el" href="classDGtal_1_1ArithmeticalDSL.html#aabb3ddbfab64df9bc31fe86e1e697c10">DGtal::ArithmeticalDSL&lt; TCoordinate, TInteger, adjacency &gt;</a>
 </li>
 <li>ArithmeticalDSSComputer()
-: <a class="el" href="classDGtal_1_1ArithmeticalDSSComputer.html#a874919f9aea1d7f05da32a66df31ee43">DGtal::ArithmeticalDSSComputer&lt; TIterator, TInteger, adjacency &gt;</a>
+: <a class="el" href="classDGtal_1_1ArithmeticalDSSComputer.html#a9d57da79170cc8227d860fe6a3acccf7">DGtal::ArithmeticalDSSComputer&lt; TIterator, TInteger, adjacency &gt;</a>
 </li>
 <li>ArithmeticalDSSComputer2d
 : <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a5060a3f1d4eee15419510d9f18e13cf4">DGtal::Naive3DDSSComputer&lt; TIterator, TInteger, connectivity &gt;</a>
 , <a class="el" href="classDGtal_1_1StandardDSS6Computer.html#a30c956e41d45bfb98415e406a511d19d">DGtal::StandardDSS6Computer&lt; TIterator, TInteger, connectivity &gt;</a>
 </li>
+<li>ArithmeticalDSSComputerOnSurfels()
+: <a class="el" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html#aae26293a066ddaaa2dd72f396aa5faf9">DGtal::ArithmeticalDSSComputerOnSurfels&lt; TKSpace, TIterator, TInteger, adjacency &gt;</a>
+</li>
 <li>ArithmeticalDSSFactory&lt; TCoordinate, TInteger, adjacency &gt;
 : <a class="el" href="classDGtal_1_1ArithmeticalDSS.html#a61689fe4e24e1f70842ae002078765c8">DGtal::ArithmeticalDSS&lt; TCoordinate, TInteger, adjacency &gt;</a>
 </li>
 <li>ArrayImageAdapter()
-: <a class="el" href="classDGtal_1_1ArrayImageAdapter_3_01TArrayIterator_00_01HyperRectDomain_3_01TSpace_01_4_01_4.html#a279c3922188948e54990bb29fd7e6cf7">DGtal::ArrayImageAdapter&lt; TArrayIterator, HyperRectDomain&lt; TSpace &gt; &gt;</a>
+: <a class="el" href="classDGtal_1_1ArrayImageAdapter_3_01TArrayIterator_00_01HyperRectDomain_3_01TSpace_01_4_01_4.html#a98d3ad11c4f79768f8bd395f7d28fd0a">DGtal::ArrayImageAdapter&lt; TArrayIterator, HyperRectDomain&lt; TSpace &gt; &gt;</a>
 </li>
 <li>ArrayImageIterator
 : <a class="el" href="classDGtal_1_1ArrayImageAdapter_3_01TArrayIterator_00_01HyperRectDomain_3_01TSpace_01_4_01_4.html#afc65493ea8199948c604229edca5761f">DGtal::ArrayImageAdapter&lt; TArrayIterator, HyperRectDomain&lt; TSpace &gt; &gt;</a>
-, <a class="el" href="classDGtal_1_1ArrayImageIterator.html#ab4c889857fdc86a4717c6811103685a0">DGtal::ArrayImageIterator&lt; TIterableClass &gt;</a>
+, <a class="el" href="classDGtal_1_1ArrayImageIterator.html#a94c342bc114035f3e906c7d6cc8d9f2f">DGtal::ArrayImageIterator&lt; TIterableClass &gt;</a>
 </li>
 <li>ArrayIterator
 : <a class="el" href="classDGtal_1_1ArrayImageAdapter_3_01TArrayIterator_00_01HyperRectDomain_3_01TSpace_01_4_01_4.html#a64b3af435afa5d198bdacae40498e626">DGtal::ArrayImageAdapter&lt; TArrayIterator, HyperRectDomain&lt; TSpace &gt; &gt;</a>
@@ -732,7 +744,7 @@ $(function() {
 : <a class="el" href="structDGtal_1_1SternBrocot_1_1Node.html#a45df24f5f2053fa440342d48d58c249a">DGtal::SternBrocot&lt; TInteger, TQuotient &gt;::Node</a>
 </li>
 <li>assign()
-: <a class="el" href="structDGtal_1_1DigitalSetConverter.html#a945b818a34fc6ade645a16b9919c4846">DGtal::DigitalSetConverter&lt; OutputDigitalSet &gt;</a>
+: <a class="el" href="structDGtal_1_1DigitalSetConverter.html#a2b45094134f938634b2b450d9100170e">DGtal::DigitalSetConverter&lt; OutputDigitalSet &gt;</a>
 </li>
 <li>assignDifference()
 : <a class="el" href="structDGtal_1_1detail_1_1SetFunctionsImpl.html#aa8b448648a8af77b80fe9a62651041f4">DGtal::detail::SetFunctionsImpl&lt; Container, associative, ordered &gt;</a>
@@ -769,10 +781,10 @@ $(function() {
 : <a class="el" href="classDGtal_1_1RandomColorMap.html#a87b2d6f9a63bcafd1ac1698252a0fc40">DGtal::RandomColorMap</a>
 </li>
 <li>Astroid2D()
-: <a class="el" href="classDGtal_1_1Astroid2D.html#a9da70b68f631443494b6f2f17c17ef19">DGtal::Astroid2D&lt; TSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1Astroid2D.html#abb671fadd88b005a8ebec06624ac2374">DGtal::Astroid2D&lt; TSpace &gt;</a>
 </li>
 <li>ATSolver2D()
-: <a class="el" href="classDGtal_1_1ATSolver2D.html#a3d53f156dd63e507459e1e6f90bee138">DGtal::ATSolver2D&lt; TKSpace, TLinearAlgebra &gt;</a>
+: <a class="el" href="classDGtal_1_1ATSolver2D.html#a9cd935c7278fa1c6a413908565952638">DGtal::ATSolver2D&lt; TKSpace, TLinearAlgebra &gt;</a>
 </li>
 <li>attach()
 : <a class="el" href="classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#ab9e8c6e3afc1f332188d5339ac29dbf9">DGtal::deprecated::IntegralInvariantNormalVectorEstimator&lt; TKSpace, TPointPredicate &gt;</a>
@@ -801,8 +813,10 @@ $(function() {
 , <a class="el" href="classDGtal_1_1LambdaMST2DEstimator.html#aabf22500c243469f8198e2c7d49cc1cb">DGtal::LambdaMST2DEstimator&lt; TSpace, TSegmentation, Functor &gt;</a>
 , <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a3a49b802996bdc30e9b46b19d2f7b434">DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation, Functor, DSSFilter &gt;</a>
 , <a class="el" href="classDGtal_1_1LocalEstimatorFromSurfelFunctorAdapter.html#a2d81bd26e87c473e26ab71d055797ea5">DGtal::LocalEstimatorFromSurfelFunctorAdapter&lt; TDigitalSurfaceContainer, TMetric, TFunctorOnSurfel, TConvolutionFunctor &gt;</a>
+, <a class="el" href="classDGtal_1_1MaximalSegmentSliceEstimation.html#a6e00fb44da92a4bda38769207ca74c1e">DGtal::MaximalSegmentSliceEstimation&lt; TSurface &gt;</a>
 , <a class="el" href="classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a061a1aea3d4dac35e0b1d40f21516ca1">DGtal::NaiveParametricCurveDigitizer3D&lt; TParametricCurve &gt;</a>
 , <a class="el" href="classDGtal_1_1ParDirCollapse.html#a498d963e99a6a1ef86f8e84cda506838">DGtal::ParDirCollapse&lt; CC &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator.html#a9b500f4fbea2b650ff3e95ebe7cdd91f">DGtal::PlaneProbingDigitalSurfaceLocalEstimator&lt; TSurface, TInternalProbingAlgorithm &gt;</a>
 , <a class="el" href="classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#ad250a2c7ff5b14b563dc7c3455edca0b">DGtal::TrueDigitalSurfaceLocalEstimator&lt; TKSpace, TShape, TGeometricFunctor &gt;</a>
 , <a class="el" href="classDGtal_1_1TrueGlobalEstimatorOnPoints.html#a54a80844e30227e53595920a0065a7cf">DGtal::TrueGlobalEstimatorOnPoints&lt; TConstIteratorOnPoints, TParametricShape, TParametricShapeFunctor &gt;</a>
 , <a class="el" href="classDGtal_1_1TrueLocalEstimatorOnPoints.html#af6609e95a13d0713936451164b5551c3">DGtal::TrueLocalEstimatorOnPoints&lt; TConstIteratorOnPoints, TParametricShape, TParametricShapeFunctor &gt;</a>
@@ -836,14 +850,14 @@ $(function() {
 , <a class="el" href="classDGtal_1_1COBAGenericNaivePlaneComputer.html#a7b79527b23a9424cbb70b71bcca122fd">DGtal::COBAGenericNaivePlaneComputer&lt; TSpace, TInternalInteger &gt;</a>
 </li>
 <li>axisWidth()
-: <a class="el" href="classDGtal_1_1ChordNaivePlaneComputer.html#a05cd912009304ebb5cc8c8ad3047069a">DGtal::ChordNaivePlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
+: <a class="el" href="classDGtal_1_1ChordNaivePlaneComputer.html#af421ba91acbe7014aa6160f3840eee98">DGtal::ChordNaivePlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
 , <a class="el" href="classDGtal_1_1ParallelStrip.html#a5118babb83a033b5c833c222681e73bb">DGtal::ParallelStrip&lt; TSpace, muIncluded, muPlusNuIncluded &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 15 2021 14:21:46 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 23 2021 14:12:52 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

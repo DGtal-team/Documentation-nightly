@@ -35,6 +35,8 @@ var searchData=
   ['arithmeticaldss_3c_20tcoordinate_2c_20tinteger_2c_208_20_3e',['ArithmeticalDSS&lt; TCoordinate, TInteger, 8 &gt;',['../classDGtal_1_1ArithmeticalDSS.html',1,'DGtal']]],
   ['arithmeticaldsscomputer',['ArithmeticalDSSComputer',['../classDGtal_1_1ArithmeticalDSSComputer.html',1,'DGtal']]],
   ['arithmeticaldsscomputer_3c_20iteratoradapter_2c_20tinteger_2c_20connectivity_20_3e',['ArithmeticalDSSComputer&lt; IteratorAdapter, TInteger, connectivity &gt;',['../classDGtal_1_1ArithmeticalDSSComputer.html',1,'DGtal']]],
+  ['arithmeticaldsscomputer_3c_20std_3a_3avector_3c_20z2i_3a_3apoint_20_3e_3a_3aconst_5fiterator_2c_20int_2c_204_20_3e',['ArithmeticalDSSComputer&lt; std::vector&lt; Z2i::Point &gt;::const_iterator, int, 4 &gt;',['../classDGtal_1_1ArithmeticalDSSComputer.html',1,'DGtal']]],
+  ['arithmeticaldsscomputeronsurfels',['ArithmeticalDSSComputerOnSurfels',['../classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html',1,'DGtal']]],
   ['arithmeticaldssfactory',['ArithmeticalDSSFactory',['../classDGtal_1_1ArithmeticalDSSFactory.html',1,'DGtal']]],
   ['arithmeticconversiontraits',['ArithmeticConversionTraits',['../structDGtal_1_1ArithmeticConversionTraits.html',1,'DGtal']]],
   ['arithmeticconversiontraits_3c_20_5f_5fgmp_5fexpr_3c_20gmp1_2c_20gmp2_20_3e_2c_20u_2c_20typename_20std_3a_3aenable_5fif_3c_20std_3a_3ais_5fintegral_3c_20u_20_3e_3a_3avalue_20_3e_3a_3atype_20_3e',['ArithmeticConversionTraits&lt; __gmp_expr&lt; GMP1, GMP2 &gt;, U, typename std::enable_if&lt; std::is_integral&lt; U &gt;::value &gt;::type &gt;',['../structDGtal_1_1ArithmeticConversionTraits_3_01____gmp__expr_3_01GMP1_00_01GMP2_01_4_00_01U_00_01b7e75f2d4577aabc7b63b093e79af931.html',1,'DGtal']]],

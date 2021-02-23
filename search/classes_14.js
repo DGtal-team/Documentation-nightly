@@ -8,18 +8,20 @@ var searchData=
   ['uniqueassociativecategory',['UniqueAssociativeCategory',['../structDGtal_1_1UniqueAssociativeCategory.html',1,'DGtal']]],
   ['uniqueassociativecontainer',['UniqueAssociativeContainer',['../structboost_1_1UniqueAssociativeContainer.html',1,'boost']]],
   ['unitcell',['UnitCell',['../structDGtal_1_1BoundedRationalPolytope_1_1UnitCell.html',1,'DGtal::BoundedRationalPolytope&lt; TSpace &gt;::UnitCell'],['../structDGtal_1_1BoundedLatticePolytope_1_1UnitCell.html',1,'DGtal::BoundedLatticePolytope&lt; TSpace &gt;::UnitCell']]],
-  ['unitsegment',['UnitSegment',['../structDGtal_1_1BoundedLatticePolytope_1_1UnitSegment.html',1,'DGtal::BoundedLatticePolytope&lt; TSpace &gt;::UnitSegment'],['../structDGtal_1_1BoundedRationalPolytope_1_1UnitSegment.html',1,'DGtal::BoundedRationalPolytope&lt; TSpace &gt;::UnitSegment']]],
+  ['unitsegment',['UnitSegment',['../structDGtal_1_1BoundedRationalPolytope_1_1UnitSegment.html',1,'DGtal::BoundedRationalPolytope&lt; TSpace &gt;::UnitSegment'],['../structDGtal_1_1BoundedLatticePolytope_1_1UnitSegment.html',1,'DGtal::BoundedLatticePolytope&lt; TSpace &gt;::UnitSegment']]],
   ['unorderedassociativecategory',['UnorderedAssociativeCategory',['../structDGtal_1_1UnorderedAssociativeCategory.html',1,'DGtal']]],
   ['unorderedmapassociativecategory',['UnorderedMapAssociativeCategory',['../structDGtal_1_1UnorderedMapAssociativeCategory.html',1,'DGtal']]],
   ['unorderedmultimapassociativecategory',['UnorderedMultimapAssociativeCategory',['../structDGtal_1_1UnorderedMultimapAssociativeCategory.html',1,'DGtal']]],
   ['unorderedmultisetassociativecategory',['UnorderedMultisetAssociativeCategory',['../structDGtal_1_1UnorderedMultisetAssociativeCategory.html',1,'DGtal']]],
   ['unorderedsetassociativecategory',['UnorderedSetAssociativeCategory',['../structDGtal_1_1UnorderedSetAssociativeCategory.html',1,'DGtal']]],
   ['unorderedsetbyblock',['UnorderedSetByBlock',['../structDGtal_1_1UnorderedSetByBlock.html',1,'DGtal']]],
+  ['unorderedsetbyblock_3c_20point_20_3e',['UnorderedSetByBlock&lt; Point &gt;',['../structDGtal_1_1UnorderedSetByBlock.html',1,'DGtal']]],
   ['unorderedsetbyblock_3c_20pointvector_3c_20dim_2c_20integer_20_3e_2c_20dgtal_3a_3asplitter_3c_20pointvector_3c_20dim_2c_20integer_20_3e_2c_20uint64_5ft_20_3e_20_3e',['UnorderedSetByBlock&lt; PointVector&lt; dim, Integer &gt;, DGtal::Splitter&lt; PointVector&lt; dim, Integer &gt;, uint64_t &gt; &gt;',['../structDGtal_1_1UnorderedSetByBlock.html',1,'DGtal']]],
   ['unsignedinteger',['UnsignedInteger',['../structboost_1_1UnsignedInteger.html',1,'boost']]],
   ['update2ddomainposition',['Update2DDomainPosition',['../structDGtal_1_1Update2DDomainPosition.html',1,'DGtal']]],
   ['updateimage3dembedding',['UpdateImage3DEmbedding',['../structDGtal_1_1UpdateImage3DEmbedding.html',1,'DGtal']]],
   ['updateimagedata',['UpdateImageData',['../structDGtal_1_1UpdateImageData.html',1,'DGtal']]],
   ['updateimageposition',['UpdateImagePosition',['../structDGtal_1_1UpdateImagePosition.html',1,'DGtal']]],
-  ['updatelastimageposition',['UpdateLastImagePosition',['../structDGtal_1_1UpdateLastImagePosition.html',1,'DGtal']]]
+  ['updatelastimageposition',['UpdateLastImagePosition',['../structDGtal_1_1UpdateLastImagePosition.html',1,'DGtal']]],
+  ['updateoperation',['UpdateOperation',['../structDGtal_1_1PlaneProbingNeighborhood_1_1UpdateOperation.html',1,'DGtal::PlaneProbingNeighborhood']]]
 ];

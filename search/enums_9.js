@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['orientation',['Orientation',['../namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41',1,'DGtal']]]
+  ['normalstype',['NormalsType',['../structDGtal_1_1SurfaceMeshHelper.html#ae82bf760634a092658792c5cceb520c9',1,'DGtal::SurfaceMeshHelper']]],
+  ['normtype',['NormType',['../classDGtal_1_1PointVector.html#ae1c647ad60b34b4d7c8b7d8d7b917fcb',1,'DGtal::PointVector']]]
 ];

@@ -238,6 +238,9 @@ $(function() {
 <li>RegularPointEmbedder()
 : <a class="el" href="classDGtal_1_1RegularPointEmbedder.html#ac2453f63881727627c6ddc3e0c38d225">DGtal::RegularPointEmbedder&lt; TSpace &gt;</a>
 </li>
+<li>relativePoint()
+: <a class="el" href="classDGtal_1_1PlaneProbingNeighborhood.html#a678b52139178cf275f8b21f0ca424692">DGtal::PlaneProbingNeighborhood&lt; TPredicate &gt;</a>
+</li>
 <li>release()
 : <a class="el" href="classDGtal_1_1CountedConstPtrOrConstPtr.html#a9bd6dffebbb8fd194e7df6bdafb31593">DGtal::CountedConstPtrOrConstPtr&lt; T &gt;</a>
 , <a class="el" href="classDGtal_1_1CountedPtr.html#afaf01784bb07127df0e9e9b2266e7698">DGtal::CountedPtr&lt; T &gt;</a>
@@ -365,12 +368,14 @@ $(function() {
 <li>retractBack()
 : <a class="el" href="classDGtal_1_1ArithmeticalDSS.html#aaf1473297c53a47ac348e31e4ea6454a">DGtal::ArithmeticalDSS&lt; TCoordinate, TInteger, adjacency &gt;</a>
 , <a class="el" href="classDGtal_1_1ArithmeticalDSSComputer.html#a550ad8bf204be891674785add8d9d83f">DGtal::ArithmeticalDSSComputer&lt; TIterator, TInteger, adjacency &gt;</a>
+, <a class="el" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html#ae9ac7e33dc9c20645cd1e01135fc92fa">DGtal::ArithmeticalDSSComputerOnSurfels&lt; TKSpace, TIterator, TInteger, adjacency &gt;</a>
 , <a class="el" href="classDGtal_1_1detail_1_1DSSDecorator.html#a34e65cf39ce6693dfecd1be722c04569">DGtal::detail::DSSDecorator&lt; TDSS &gt;</a>
 , <a class="el" href="classDGtal_1_1OneBalancedWordComputer.html#ae5ad5913dd92ef9c51b5e0dda123e970">DGtal::OneBalancedWordComputer&lt; TConstIterator, TInteger &gt;</a>
 </li>
 <li>retractFront()
 : <a class="el" href="classDGtal_1_1ArithmeticalDSS.html#a619ab2bab18c6967df376858ad6a25aa">DGtal::ArithmeticalDSS&lt; TCoordinate, TInteger, adjacency &gt;</a>
 , <a class="el" href="classDGtal_1_1ArithmeticalDSSComputer.html#a8fdf4ec3102394c4f5b86e1d8dee872a">DGtal::ArithmeticalDSSComputer&lt; TIterator, TInteger, adjacency &gt;</a>
+, <a class="el" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html#a0af94f97e831f5091ae56d5b8bfc5ae3">DGtal::ArithmeticalDSSComputerOnSurfels&lt; TKSpace, TIterator, TInteger, adjacency &gt;</a>
 , <a class="el" href="classDGtal_1_1OneBalancedWordComputer.html#af1cfba9723a5618fe9b408fc1d228148">DGtal::OneBalancedWordComputer&lt; TConstIterator, TInteger &gt;</a>
 </li>
 <li>retractUpdateLeaningPoints()
@@ -387,7 +392,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1OrderedAlphabet.html#a5ed50fb9e674312a1a4daa5a05c50c6c">DGtal::OrderedAlphabet</a>
 </li>
 <li>ReverseDistanceTransformation()
-: <a class="el" href="classDGtal_1_1ReverseDistanceTransformation.html#a85845b7c106fb24ee8435332c82b65fc">DGtal::ReverseDistanceTransformation&lt; TWeightImage, TPSeparableMetric, TImageContainer &gt;</a>
+: <a class="el" href="classDGtal_1_1ReverseDistanceTransformation.html#a7d132c77161b9440488e5d5c22c2ab81">DGtal::ReverseDistanceTransformation&lt; TWeightImage, TPSeparableMetric, TImageContainer &gt;</a>
 </li>
 <li>reversedSmartDSS()
 : <a class="el" href="classDGtal_1_1StandardDSLQ0.html#a2548ce4c9fcb01f5537d21868c012130">DGtal::StandardDSLQ0&lt; TFraction &gt;</a>
@@ -396,7 +401,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a33ce8793d38f99d903557a0e31a4b08c">DGtal::experimental::ImageContainerByHashTree&lt; TDomain, TValue, THashKey &gt;</a>
 </li>
 <li>ReverseIterator()
-: <a class="el" href="classDGtal_1_1ReverseIterator.html#a5e399e6d5df138729bb1af5f5d1b7399">DGtal::ReverseIterator&lt; Iterator &gt;</a>
+: <a class="el" href="classDGtal_1_1ReverseIterator.html#a645065ec8af5e77374426f5311ae07e3">DGtal::ReverseIterator&lt; Iterator &gt;</a>
 </li>
 <li>reverseTopology()
 : <a class="el" href="classDGtal_1_1DigitalTopology.html#a7dd3f3e5e43443126126517c0655bef0">DGtal::DigitalTopology&lt; TForegroundAdjacency, TBackgroundAdjacency &gt;</a>
@@ -419,45 +424,48 @@ $(function() {
 : <a class="el" href="classDGtal_1_1AngleLinearMinimizer.html#a1f933bc03bd611f74feb5ab4e04240a7">DGtal::AngleLinearMinimizer</a>
 </li>
 <li>RosenProffittLocalLengthEstimator()
-: <a class="el" href="classDGtal_1_1RosenProffittLocalLengthEstimator.html#ae969576bf1d1040101143279a03e8003">DGtal::RosenProffittLocalLengthEstimator&lt; TConstIterator &gt;</a>
+: <a class="el" href="classDGtal_1_1RosenProffittLocalLengthEstimator.html#a42e64f4ad17fcd29fdbca663b564ed6f">DGtal::RosenProffittLocalLengthEstimator&lt; TConstIterator &gt;</a>
 </li>
 <li>rot()
 : <a class="el" href="structDGtal_1_1FrechetShortcut_1_1Tools.html#aa4fb5fce47906a7fb9293c7dad8c7a40">DGtal::FrechetShortcut&lt; TIterator, TInteger &gt;::Tools</a>
 </li>
 <li>rotate()
-: <a class="el" href="classLibBoard_1_1Board.html#aa8f8dc7a4acd1e5b1d2f5b8ac600df29">LibBoard::Board</a>
+: <a class="el" href="classLibBoard_1_1Board.html#a334d1399623ca73ca9a8030f884dca74">LibBoard::Board</a>
 , <a class="el" href="structLibBoard_1_1Circle.html#a6d7d4700dab42e185e6a874f84fdb591">LibBoard::Circle</a>
-, <a class="el" href="structLibBoard_1_1Dot.html#a2d7130a0723e0f281178cd0ea9c24d4b">LibBoard::Dot</a>
-, <a class="el" href="structLibBoard_1_1Ellipse.html#ac095c0123aa391d96f525d3a0c384dc5">LibBoard::Ellipse</a>
-, <a class="el" href="structLibBoard_1_1GouraudTriangle.html#a2c29bb312afe953477ad60850f138285">LibBoard::GouraudTriangle</a>
+, <a class="el" href="structLibBoard_1_1Dot.html#afe1a0d4cf79834b537bbfbd19c29898f">LibBoard::Dot</a>
+, <a class="el" href="structLibBoard_1_1Ellipse.html#a7ebef8625592373e7fdabbd3698bfa76">LibBoard::Ellipse</a>
+, <a class="el" href="structLibBoard_1_1GouraudTriangle.html#a6f097e2c3534447e31d068aeb3d644e0">LibBoard::GouraudTriangle</a>
 , <a class="el" href="structLibBoard_1_1Group.html#a29c96d5c21218a2219bfe21e6156cd91">LibBoard::Group</a>
-, <a class="el" href="structLibBoard_1_1Line.html#a0135dff71fc7125c9d69708b592ecbe0">LibBoard::Line</a>
+, <a class="el" href="structLibBoard_1_1Line.html#aebf27ccb69e39fc4bbde9f749a298679">LibBoard::Line</a>
 , <a class="el" href="structLibBoard_1_1Path.html#a0ea809acdc26dc86d6ff26f5f796dc00">LibBoard::Path</a>
-, <a class="el" href="structLibBoard_1_1Point.html#aa5544eab734bbadf99eae715011c4afd">LibBoard::Point</a>
+, <a class="el" href="structLibBoard_1_1Point.html#aaf22508fea142493915e9b2c2a567422">LibBoard::Point</a>
 , <a class="el" href="structLibBoard_1_1Polyline.html#a4e3ba6a56334b38282bc78d57c7bf537">LibBoard::Polyline</a>
-, <a class="el" href="structLibBoard_1_1Shape.html#adb7cb27eabc6fae81fd5edc52da314a9">LibBoard::Shape</a>
-, <a class="el" href="structLibBoard_1_1ShapeList.html#a32fcab74f4aa76f735d828c9107a98f0">LibBoard::ShapeList</a>
-, <a class="el" href="structLibBoard_1_1Text.html#a88d2bf89949b5d1826f19806a33af12b">LibBoard::Text</a>
+, <a class="el" href="structLibBoard_1_1Shape.html#afa039e72e735987002a07db4c3e9cd7e">LibBoard::Shape</a>
+, <a class="el" href="structLibBoard_1_1ShapeList.html#a315cb223409547e28c2daf578d26a8e8">LibBoard::ShapeList</a>
+, <a class="el" href="structLibBoard_1_1Text.html#abc7fc46217f5d6ee6a6be268a3c9c145">LibBoard::Text</a>
 </li>
 <li>rotated()
-: <a class="el" href="structLibBoard_1_1Arrow.html#aba9f3a51a07de32e826e23d250ae3a87">LibBoard::Arrow</a>
+: <a class="el" href="structLibBoard_1_1Arrow.html#a9d73292419a02cf59e2c4b0e7b0fab0d">LibBoard::Arrow</a>
 , <a class="el" href="classLibBoard_1_1Board.html#af0603f0645e8616d2383979a67c80f5a">LibBoard::Board</a>
-, <a class="el" href="structLibBoard_1_1Circle.html#a6945b12d5f66cf517c001a99d9d2b53b">LibBoard::Circle</a>
+, <a class="el" href="structLibBoard_1_1Circle.html#a05a7da7da9f4455c1b0edfbcae72c94a">LibBoard::Circle</a>
 , <a class="el" href="structLibBoard_1_1Dot.html#a27887cdb5eba7e72f7e72429d3080b2d">LibBoard::Dot</a>
 , <a class="el" href="structLibBoard_1_1Ellipse.html#aeae064025efb9b0c373f025987ef5740">LibBoard::Ellipse</a>
 , <a class="el" href="structLibBoard_1_1GouraudTriangle.html#a276e7e47ecb32c99887d457dad36b345">LibBoard::GouraudTriangle</a>
-, <a class="el" href="structLibBoard_1_1Group.html#a52cf3eb792dd2bb93f2211cebf889c36">LibBoard::Group</a>
+, <a class="el" href="structLibBoard_1_1Group.html#a669d4b8226da8635c4bca60ede453fb8">LibBoard::Group</a>
 , <a class="el" href="structLibBoard_1_1Line.html#a20680c178e89944fb9b8deaa942aabe5">LibBoard::Line</a>
 , <a class="el" href="structLibBoard_1_1Path.html#a2582de89ecf8c292d82f4ab1b8b36a4c">LibBoard::Path</a>
 , <a class="el" href="structLibBoard_1_1Point.html#a91c24307373125f4921157186a3dd7ed">LibBoard::Point</a>
-, <a class="el" href="structLibBoard_1_1Polyline.html#a163d053a438714286f2e4035b325424a">LibBoard::Polyline</a>
+, <a class="el" href="structLibBoard_1_1Polyline.html#a144c94110db8afca508c14917884f355">LibBoard::Polyline</a>
 , <a class="el" href="structLibBoard_1_1Rectangle.html#a26647b7b93beae1ad30711555d5ffd0c">LibBoard::Rectangle</a>
 , <a class="el" href="structLibBoard_1_1ShapeList.html#aed287253d31092f1b0ea9eefb42515f3">LibBoard::ShapeList</a>
 , <a class="el" href="structLibBoard_1_1Text.html#a8990500c347991993b5cf442b03d9f5c">LibBoard::Text</a>
 , <a class="el" href="structLibBoard_1_1Triangle.html#a931f4d4f18fb2202c242b72e6c719fd4">LibBoard::Triangle</a>
 </li>
+<li>rotatedCopy()
+: <a class="el" href="structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#aa7e979afd894d9e032e52be793fb04be">DGtal::PlaneProbingDigitalSurfaceLocalEstimator&lt; TSurface, TInternalProbingAlgorithm &gt;::ProbingFrame</a>
+</li>
 <li>rotateDeg()
-: <a class="el" href="structLibBoard_1_1Shape.html#aaf4c2df13fedd9d673ecd5fc07318c87">LibBoard::Shape</a>
+: <a class="el" href="structLibBoard_1_1Shape.html#a759a26a61ca5c8aed0d7b18a83d42d02">LibBoard::Shape</a>
 </li>
 <li>rotateDomain()
 : <a class="el" href="classDGtal_1_1Viewer3D.html#a7356f726030ad34affb5a1ea6d6bbacd">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;</a>
@@ -486,8 +494,8 @@ $(function() {
 <li>routputIterator()
 : <a class="el" href="classDGtal_1_1DefaultImageRange.html#a9899cd0256d2206cb318768b043f5249">DGtal::DefaultImageRange&lt; TImage &gt;</a>
 , <a class="el" href="classDGtal_1_1SimpleRandomAccessRangeFromPoint.html#aecf436ce3f8f0da848de0aadcd5c554b">DGtal::SimpleRandomAccessRangeFromPoint&lt; TConstIterator, TIterator, DistanceFunctor &gt;</a>
-, <a class="el" href="classDGtal_1_1TiledImage.html#a66db204957e140238d6f62dbfdde9273">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;</a>
-, <a class="el" href="classDGtal_1_1TiledImageBidirectionalRangeFromPoint.html#ab0bc1de72dd28e29e2aef21c081d05fc">DGtal::TiledImageBidirectionalRangeFromPoint&lt; TTiledImage &gt;</a>
+, <a class="el" href="classDGtal_1_1TiledImage.html#a5f99c1d639f91af0abae52cc70bdddf8">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;</a>
+, <a class="el" href="classDGtal_1_1TiledImageBidirectionalRangeFromPoint.html#afe8268673d610966d2b1d442a2b7acdb">DGtal::TiledImageBidirectionalRangeFromPoint&lt; TTiledImage &gt;</a>
 </li>
 <li>row()
 : <a class="el" href="classDGtal_1_1SimpleMatrix.html#a7a28e0643c629ced7956e8aab5820bbd">DGtal::SimpleMatrix&lt; TComponent, TM, TN &gt;</a>
@@ -526,7 +534,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 15 2021 14:21:46 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 23 2021 14:12:52 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -100,9 +100,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c24a6693023e70955df345757c45fdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html#a8c24a6693023e70955df345757c45fdd">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html">concepts::CCellularGridSpaceND</a>&lt; typename <a class="el" href="sphereCotangentLaplaceOperator_8cpp.html#a55d0319fc69f55ae6fba7a8dd4d6f3e8">Surface::KSpace</a> &gt;))</td></tr>
+<tr class="memitem:a8c24a6693023e70955df345757c45fdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html#a8c24a6693023e70955df345757c45fdd">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html">concepts::CCellularGridSpaceND</a>&lt; typename <a class="el" href="classDGtal_1_1DigitalSurface.html#a9a527561977510dc5ab21cec7438727c">Surface::KSpace</a> &gt;))</td></tr>
 <tr class="separator:a8c24a6693023e70955df345757c45fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13bb02b278606b563d8e95f0260ab1c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html#a13bb02b278606b563d8e95f0260ab1c5">BOOST_STATIC_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1ConceptUtils_1_1SameType.html">ConceptUtils::SameType</a>&lt; <a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html#ac01b16349602e2cfacb524c18af92a7d">SCell</a>, typename Surface::SCell &gt;::value))</td></tr>
+<tr class="memitem:a13bb02b278606b563d8e95f0260ab1c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html#a13bb02b278606b563d8e95f0260ab1c5">BOOST_STATIC_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1ConceptUtils_1_1SameType.html">ConceptUtils::SameType</a>&lt; <a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html#ac01b16349602e2cfacb524c18af92a7d">SCell</a>, typename <a class="el" href="classDGtal_1_1DigitalSurface.html#abfa4ca29739a597b3683da322b007002">Surface::SCell</a> &gt;::value))</td></tr>
 <tr class="separator:a13bb02b278606b563d8e95f0260ab1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22b0ed575e41a1a3da27c85acec5dc40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html#a22b0ed575e41a1a3da27c85acec5dc40">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structboost_1_1InputIterator.html">boost::InputIterator</a>&lt; <a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html#ab1cb86b963a47ce2f36c39db6065ee26">ConstIterator</a> &gt;))</td></tr>
 <tr class="separator:a22b0ed575e41a1a3da27c85acec5dc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,8 +136,8 @@ Refinement of</h1>
 Associated types</h1>
 <ul>
 <li>Surface : the type of digital surface (must be some DigitalSurface&lt;X&gt;)</li>
-<li>ConstIterator : an iterator on the signed cells of the digital surface (same as Surface::ConstIterator).</li>
-<li>SCell : the type of signed cell (for surfels along the digital surface) (same as Surface::SCell).</li>
+<li>ConstIterator : an iterator on the signed cells of the digital surface (same as <a class="el" href="classDGtal_1_1DigitalSurface.html#a40056dd099c93e7ab5dfc5196a56e550">Surface::ConstIterator</a>).</li>
+<li>SCell : the type of signed cell (for surfels along the digital surface) (same as <a class="el" href="classDGtal_1_1DigitalSurface.html#abfa4ca29739a597b3683da322b007002">Surface::SCell</a>).</li>
 <li>Quantity: the type representing normal vectors.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md297"></a>
@@ -264,7 +264,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html">DGtal::concepts::CNormalVectorEstimator</a>&lt; T &gt;::BOOST_CONCEPT_ASSERT </td>
           <td>(</td>
-          <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html">concepts::CCellularGridSpaceND</a>&lt; typename <a class="el" href="sphereCotangentLaplaceOperator_8cpp.html#a55d0319fc69f55ae6fba7a8dd4d6f3e8">Surface::KSpace</a> &gt;)&#160;</td>
+          <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html">concepts::CCellularGridSpaceND</a>&lt; typename <a class="el" href="classDGtal_1_1DigitalSurface.html#a9a527561977510dc5ab21cec7438727c">Surface::KSpace</a> &gt;)&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -343,7 +343,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html">DGtal::concepts::CNormalVectorEstimator</a>&lt; T &gt;::BOOST_STATIC_ASSERT </td>
           <td>(</td>
-          <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1ConceptUtils_1_1SameType.html">ConceptUtils::SameType</a>&lt; <a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html#ac01b16349602e2cfacb524c18af92a7d">SCell</a>, typename Surface::SCell &gt;::value)&#160;</td>
+          <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1ConceptUtils_1_1SameType.html">ConceptUtils::SameType</a>&lt; <a class="el" href="structDGtal_1_1concepts_1_1CNormalVectorEstimator.html#ac01b16349602e2cfacb524c18af92a7d">SCell</a>, typename <a class="el" href="classDGtal_1_1DigitalSurface.html#abfa4ca29739a597b3683da322b007002">Surface::SCell</a> &gt;::value)&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -530,7 +530,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 15 2021 14:21:41 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 23 2021 14:12:47 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -7,6 +7,8 @@ var searchData=
   ['mainwindow',['MainWindow',['http://dgtal.org/doc/tools/nightly/classMainWindow.html',1,'']]],
   ['mapassociativecategory',['MapAssociativeCategory',['../structDGtal_1_1MapAssociativeCategory.html',1,'DGtal']]],
   ['max',['Max',['../structDGtal_1_1functors_1_1Max.html',1,'DGtal::functors']]],
+  ['maximalsegmentsliceestimation',['MaximalSegmentSliceEstimation',['../classDGtal_1_1MaximalSegmentSliceEstimation.html',1,'DGtal']]],
+  ['maximalsegmentsliceestimation_3c_20surface_20_3e',['MaximalSegmentSliceEstimation&lt; Surface &gt;',['../classDGtal_1_1MaximalSegmentSliceEstimation.html',1,'DGtal']]],
   ['meanchannels',['MeanChannels',['../structDGtal_1_1functors_1_1MeanChannels.html',1,'DGtal::functors']]],
   ['meaningfulscaleanalysis',['MeaningfulScaleAnalysis',['../classDGtal_1_1MeaningfulScaleAnalysis.html',1,'DGtal']]],
   ['measure',['Measure',['../classDGtal_1_1Measure.html',1,'DGtal']]],

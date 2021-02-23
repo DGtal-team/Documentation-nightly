@@ -86,7 +86,7 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for DGtal::Splitter&lt; TElement, TWord &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structDGtal_1_1Splitter__inherit__graph.svg" width="254" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structDGtal_1_1Splitter__inherit__graph.svg" width="414" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -122,7 +122,7 @@ Static Public Member Functions</h2></td></tr>
 struct DGtal::Splitter&lt; TElement, TWord &gt;</h3>
 
 <p>Splits an integral-array element into an integral-array element and a 32 or 64 bit integer (depending on <em>TWord</em>). The expected behaviour is for an element e of dimension 3 (and 32 bits word):</p>
-<div class="fragment"><div class="line">Splitter&lt; Point &gt; <a class="code" href="structDGtal_1_1Splitter.html#a95457f8d755e3ed642f8c0ae985b6a45">split</a>; <span class="comment">// default is split with 32 bits word</span></div><div class="line"><span class="keyword">auto</span> v = <a class="code" href="structDGtal_1_1Splitter.html#a95457f8d755e3ed642f8c0ae985b6a45">split</a>( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>( 117, 43, 52 ) );</div><div class="line">v.first  == 117 &amp; 31</div><div class="line">v.second == <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>( 117 - v.first, 43, 52 );</div></div><!-- fragment --><div class="fragment"><div class="line">Splitter&lt; Point,uint64_t &gt; <a class="code" href="structDGtal_1_1Splitter.html#a95457f8d755e3ed642f8c0ae985b6a45">split</a>; <span class="comment">// for 64 bits word</span></div><div class="line"><span class="keyword">auto</span> v = <a class="code" href="structDGtal_1_1Splitter.html#a95457f8d755e3ed642f8c0ae985b6a45">split</a>( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>( 117, 43, 52 ) );</div><div class="line">v.first  == 117 &amp; 63</div><div class="line">v.second == <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>( 117 - v.first, 43, 52 );</div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+<div class="fragment"><div class="line"><a class="code" href="structDGtal_1_1Splitter.html">Splitter&lt; Point &gt;</a> <a class="code" href="structDGtal_1_1Splitter.html#a95457f8d755e3ed642f8c0ae985b6a45">split</a>; <span class="comment">// default is split with 32 bits word</span></div><div class="line"><span class="keyword">auto</span> v = <a class="code" href="structDGtal_1_1Splitter.html#a95457f8d755e3ed642f8c0ae985b6a45">split</a>( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>( 117, 43, 52 ) );</div><div class="line">v.first  == 117 &amp; 31</div><div class="line">v.second == <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>( 117 - v.first, 43, 52 );</div></div><!-- fragment --><div class="fragment"><div class="line">Splitter&lt; Point,uint64_t &gt; <a class="code" href="structDGtal_1_1Splitter.html#a95457f8d755e3ed642f8c0ae985b6a45">split</a>; <span class="comment">// for 64 bits word</span></div><div class="line"><span class="keyword">auto</span> v = <a class="code" href="structDGtal_1_1Splitter.html#a95457f8d755e3ed642f8c0ae985b6a45">split</a>( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>( 117, 43, 52 ) );</div><div class="line">v.first  == 117 &amp; 63</div><div class="line">v.second == <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>( 117 - v.first, 43, 52 );</div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TElement</td><td>the type of array-like element.</td></tr>
     <tr><td class="paramname">TWord</td><td>the type for holding blocks (uint64_t or uint32_t generally), a model of <a class="el" href="structDGtal_1_1concepts_1_1CIntegralNumber.html" title="Aim: Concept checking for Integral Numbers. Models of this concept should be listed in NumberTraits c...">concepts::CIntegralNumber</a> and <a class="el" href="structDGtal_1_1concepts_1_1CUnsignedNumber.html" title="Aim: Concept checking for Unsigned numbers. Models of this concept should be listed in NumberTraits c...">concepts::CUnsignedNumber</a>.</td></tr>
@@ -380,7 +380,7 @@ template&lt;typename TElement, typename TWord = uint32_t&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 15 2021 14:21:39 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 23 2021 14:12:44 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -100,7 +100,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a1ceb4764b959c921f1b0c43934b582f5"><td class="memItemLeft" align="right" valign="top">typedef TSegmentation::SegmentComputer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a1ceb4764b959c921f1b0c43934b582f5">SegmentComputer</a></td></tr>
 <tr class="memdesc:a1ceb4764b959c921f1b0c43934b582f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Curve segmentation algorithm.  <a href="#a1ceb4764b959c921f1b0c43934b582f5">More...</a><br /></td></tr>
 <tr class="separator:a1ceb4764b959c921f1b0c43934b582f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade9ec68bf90a2b7243febf3e7f82e486"><td class="memItemLeft" align="right" valign="top">typedef SegmentComputer::ConstIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#ade9ec68bf90a2b7243febf3e7f82e486">ConstIterator</a></td></tr>
+<tr class="memitem:ade9ec68bf90a2b7243febf3e7f82e486"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ArithmeticalDSSComputer.html#a0cd19f3271d0a93d1ef66a18f2363894">SegmentComputer::ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#ade9ec68bf90a2b7243febf3e7f82e486">ConstIterator</a></td></tr>
 <tr class="memdesc:ade9ec68bf90a2b7243febf3e7f82e486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of iterator, at least readable and forward.  <a href="#ade9ec68bf90a2b7243febf3e7f82e486">More...</a><br /></td></tr>
 <tr class="separator:ade9ec68bf90a2b7243febf3e7f82e486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd59441e164e8eec5b9c71ce37d5ea4a"><td class="memItemLeft" align="right" valign="top">typedef Functor::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#acd59441e164e8eec5b9c71ce37d5ea4a">Value</a></td></tr>
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a734a849bc9472293592812248edc4830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71f2b3be77cca3f1ca4a73f5f0028d6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a71f2b3be77cca3f1ca4a73f5f0028d6b">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CLMSTDSSFilter.html">concepts::CLMSTDSSFilter</a>&lt; DSSFilter &gt;))</td></tr>
 <tr class="separator:a71f2b3be77cca3f1ca4a73f5f0028d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41707bb7ef40d3283bbc22e15eead8ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a41707bb7ef40d3283bbc22e15eead8ee">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CForwardSegmentComputer.html">concepts::CForwardSegmentComputer</a>&lt; typename TSegmentation::SegmentComputer &gt;))</td></tr>
+<tr class="memitem:a41707bb7ef40d3283bbc22e15eead8ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#a41707bb7ef40d3283bbc22e15eead8ee">BOOST_CONCEPT_ASSERT</a> ((<a class="el" href="structDGtal_1_1concepts_1_1CForwardSegmentComputer.html">concepts::CForwardSegmentComputer</a>&lt; typename <a class="el" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#a51bb21fda3840e1eff0ee53753ebcbc3">TSegmentation::SegmentComputer</a> &gt;))</td></tr>
 <tr class="separator:a41707bb7ef40d3283bbc22e15eead8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac41f0dc6ad43397a56a7713b4ef6fd26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#ac41f0dc6ad43397a56a7713b4ef6fd26">LambdaMST3DEstimator</a> ()</td></tr>
 <tr class="memdesc:ac41f0dc6ad43397a56a7713b4ef6fd26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ac41f0dc6ad43397a56a7713b4ef6fd26">More...</a><br /></td></tr>
@@ -198,7 +198,7 @@ class DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation, Functor, DSSFilter 
 template&lt;typename TSpace, typename TSegmentation, typename Functor, typename DSSFilter&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef SegmentComputer::ConstIterator <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a>, DSSFilter &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#ade9ec68bf90a2b7243febf3e7f82e486">ConstIterator</a></td>
+          <td class="memname">typedef <a class="el" href="classDGtal_1_1ArithmeticalDSSComputer.html#a0cd19f3271d0a93d1ef66a18f2363894">SegmentComputer::ConstIterator</a> <a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a>, DSSFilter &gt;::<a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html#ade9ec68bf90a2b7243febf3e7f82e486">ConstIterator</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -524,7 +524,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor, typename 
         <tr>
           <td class="memname"><a class="el" href="classDGtal_1_1LambdaMST3DEstimator.html">DGtal::LambdaMST3DEstimator</a>&lt; TSpace, TSegmentation, <a class="el" href="testConvexHull2DThickness_8cpp.html#a4bad680b63620f54f15b233c7ba4ce6d">Functor</a>, DSSFilter &gt;::BOOST_CONCEPT_ASSERT </td>
           <td>(</td>
-          <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1CForwardSegmentComputer.html">concepts::CForwardSegmentComputer</a>&lt; typename TSegmentation::SegmentComputer &gt;)&#160;</td>
+          <td class="paramtype">(<a class="el" href="structDGtal_1_1concepts_1_1CForwardSegmentComputer.html">concepts::CForwardSegmentComputer</a>&lt; typename <a class="el" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#a51bb21fda3840e1eff0ee53753ebcbc3">TSegmentation::SegmentComputer</a> &gt;)&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -965,7 +965,7 @@ template&lt;typename TSpace, typename TSegmentation, typename Functor, typename 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 15 2021 14:21:36 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 23 2021 14:12:41 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
