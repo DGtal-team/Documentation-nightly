@@ -160,7 +160,7 @@ Antiderivative</h3>
 </p>
 <h3><a class="anchor" id="sectDECoperatorMusical"></a>
 Sharp and flat</h3>
-<p>Sharp \(\sharp\) and flat \(\flat\), called <em>musical isomorphisms</em> in <a class="el" href="citelist.html#CITEREF_goes2013digital">[37]</a>, transform 1-form into vector field and the other way around. In the continuous world, these two operators cancel each other exactly.</p>
+<p>Sharp \(\sharp\) and flat \(\flat\), called <em>musical isomorphisms</em> in <a class="el" href="citelist.html#CITEREF_goes2013digital">[38]</a>, transform 1-form into vector field and the other way around. In the continuous world, these two operators cancel each other exactly.</p>
 <p class="formulaDsp">
 \[ (x ^\sharp) ^\flat = x \]
 </p>
@@ -213,8 +213,8 @@ DEC linear problem</h2>
 <h2><a class="anchor" id="sectDECIntroductionFurther"></a>
 Further reading</h2>
 <ul>
-<li>Keenan Crane SIGGRAPH lecture 2013 "Geometry processing using DEC" <a href="https://github.com/dgpdec/course">github repository</a> <a class="el" href="citelist.html#CITEREF_goes2013digital">[37]</a></li>
-<li>Mathieu Desbrun article on discrete exterior calculus <a class="el" href="citelist.html#CITEREF_desbrun2005discrete">[41]</a></li>
+<li>Keenan Crane SIGGRAPH lecture 2013 "Geometry processing using DEC" <a href="https://github.com/dgpdec/course">github repository</a> <a class="el" href="citelist.html#CITEREF_goes2013digital">[38]</a></li>
+<li>Mathieu Desbrun article on discrete exterior calculus <a class="el" href="citelist.html#CITEREF_desbrun2005discrete">[42]</a></li>
 <li>Digital foam presentation with an introduction to DEC in the second section <a href="http://sd-33294.dedibox.fr/~pierre/presentation_dec.pdf">pdf</a></li>
 </ul>
 <h1><a class="anchor" id="sectDECHandsOn"></a>
@@ -241,7 +241,7 @@ Calculus without border.</div></div>
 KForm and VectorField manipulation</h2>
 <p>K-forms are represented by the <a class="el" href="classDGtal_1_1KForm.html" title="Aim: KForm represents discrete kforms in the dec package. ">KForm</a> templated class and vector field are represented by the <a class="el" href="classDGtal_1_1VectorField.html" title="Aim: VectorField represents a discrete vector field in the dec package. Vector field values are attac...">VectorField</a> templated class. Note that <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html" title="Aim: DiscreteExteriorCalculus represents a calculus in the dec package. This is the main structure in...">DiscreteExteriorCalculus</a> provides handy typedef of common k-forms and vector field, such as <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a93139e8d35019c8edeed41a4beb21cc6">DiscreteExteriorCalculus::PrimalForm0</a>, <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a7b0fdce92ad2444aad7014fb362fd82d">DiscreteExteriorCalculus::DualForm2</a>, <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#afe6524b41e6c4aff575b3e2de440a6cf">DiscreteExteriorCalculus::PrimalVectorField</a> and <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#ace4e6442cca56661799f2dcd64345a6d">DiscreteExteriorCalculus::DualVectorField</a>. Once a k-form is created, its actual values can by accessed through <a class="el" href="classDGtal_1_1KForm.html#a19e859f462f1d851550465b7fcc2c68d">KForm.myContainer</a>. Cell indexes can be retrieved from cells using <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a60d5c4790f28ac28d8b595de9002e44d">DiscreteExteriorCalculus.getSCell</a> and cell can be retrieved from cells using <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a60d5c4790f28ac28d8b595de9002e44d">DiscreteExteriorCalculus.getSCell</a>.</p>
 <p>Convenience members <a class="el" href="classDGtal_1_1KForm.html#a1cc70af046b3d7be85f8f49121a56d39">KForm.length</a>, <a class="el" href="classDGtal_1_1VectorField.html#a41d23b8dc915244c696d2d53d121b83d">VectorField.length</a>, <a class="el" href="classDGtal_1_1KForm.html#acbbda0e8b98473c552b3dd12aa6a8853">KForm.getSCell</a> and <a class="el" href="classDGtal_1_1VectorField.html#ab4bdaa2b59b29f2c467c1e25ca31e888">VectorField.getSCell</a> can be used to traverse structures easily. Here is a example snippet that compute a Euclidean distance map (scalar field) on the structure defined above.</p>
-<div class="fragment"><div class="line">        Calculus::PrimalForm0 primal_zero_form(calculus);</div><div class="line">        <span class="keywordflow">for</span> (Calculus::Index index=0; index&lt;primal_zero_form.length(); index++)</div><div class="line">        {</div><div class="line">            <span class="keyword">const</span> Calculus::SCell&amp; cell = primal_zero_form.getSCell(index);</div><div class="line">            <span class="keyword">const</span> Calculus::Scalar&amp; value = <a class="code" href="namespaceDGtal_1_1Z2i.html#afa16730fe413692cdb474b45d4fff388">Z2i::l2Metric</a>(calculus.myKSpace.sKCoords(cell), center)/2;</div><div class="line">            primal_zero_form.myContainer(index) = value;</div><div class="line">        }</div></div><!-- fragment --><div class="image">
+<div class="fragment"><div class="line">        Calculus::PrimalForm0 primal_zero_form(calculus);</div><div class="line">        <span class="keywordflow">for</span> (Calculus::Index index=0; index&lt;primal_zero_form.length(); index++)</div><div class="line">        {</div><div class="line">            <span class="keyword">const</span> Calculus::SCell&amp; cell = primal_zero_form.getSCell(index);</div><div class="line">            <span class="keyword">const</span> Calculus::Scalar&amp; value = <a class="code" href="namespaceDGtal_1_1Z2i.html#afa16730fe413692cdb474b45d4fff388">Z2i::l2Metric</a>(calculus.myKSpace.sKCoords(cell), <a class="code" href="namespaceDGtal_1_1detail.html#a9b056b7d2516565a223eb8c9ec3702c8">center</a>)/2;</div><div class="line">            primal_zero_form.myContainer(index) = value;</div><div class="line">        }</div></div><!-- fragment --><div class="image">
 <img src="usage_primal_zero_form.png" alt="usage_primal_zero_form.png"/>
 <div class="caption">
 Primal 0-form.</div></div>
@@ -272,7 +272,7 @@ DEC linear solver</h2>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 10 2021 15:53:23 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 27 2021 18:32:39 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

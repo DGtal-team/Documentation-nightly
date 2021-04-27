@@ -330,6 +330,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a8145e1ac56a4074a096b56e8b5c2e523"><td class="memTemplParams" colspan="2">template&lt;typename Integer &gt; </td></tr>
 <tr class="memitem:a8145e1ac56a4074a096b56e8b5c2e523"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#a8145e1ac56a4074a096b56e8b5c2e523">operator&lt;&lt;</a> (std::ostream &amp;aOs, <a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html">PointOnProbingRay</a>&lt; <a class="el" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a> &gt; const &amp;aRay)</td></tr>
 <tr class="separator:a8145e1ac56a4074a096b56e8b5c2e523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b056b7d2516565a223eb8c9ec3702c8"><td class="memTemplParams" colspan="2">template&lt;typename Point &gt; </td></tr>
+<tr class="memitem:a9b056b7d2516565a223eb8c9ec3702c8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#a9b056b7d2516565a223eb8c9ec3702c8">center</a> (const std::vector&lt; <a class="el" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> &gt; &amp;points)</td></tr>
+<tr class="separator:a9b056b7d2516565a223eb8c9ec3702c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b156d16d8dcc572091dc472166c2b7"><td class="memTemplParams" colspan="2">template&lt;typename OutputValue , typename ForwardIterator , typename ConversionFct &gt; </td></tr>
+<tr class="memitem:a38b156d16d8dcc572091dc472166c2b7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#a38b156d16d8dcc572091dc472166c2b7">transform</a> (std::vector&lt; OutputValue &gt; &amp;output_values, std::vector&lt; std::size_t &gt; &amp;input2output, std::vector&lt; std::size_t &gt; &amp;output2input, ForwardIterator itb, ForwardIterator ite, const ConversionFct &amp;F, bool remove_duplicates)</td></tr>
+<tr class="separator:a38b156d16d8dcc572091dc472166c2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a359c1231aec596688bdfb7a5d7341d4d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#a359c1231aec596688bdfb7a5d7341d4d">mpz_set_sll</a> (mpz_t n, long long sll)</td></tr>
+<tr class="memdesc:a359c1231aec596688bdfb7a5d7341d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">-------&mdash;&mdash; GMP SPECIALIZED SERVICES ----------------------&mdash;&mdash;  <a href="#a359c1231aec596688bdfb7a5d7341d4d">More...</a><br /></td></tr>
+<tr class="separator:a359c1231aec596688bdfb7a5d7341d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd402c98be0bd4ebd407d9ad486f3808"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#acd402c98be0bd4ebd407d9ad486f3808">mpz_set_ull</a> (mpz_t n, unsigned long long ull)</td></tr>
+<tr class="separator:acd402c98be0bd4ebd407d9ad486f3808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967280e194b8e0af815a09c1cd3ffeaa"><td class="memItemLeft" align="right" valign="top">static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#a967280e194b8e0af815a09c1cd3ffeaa">mpz_get_ull</a> (mpz_t n)</td></tr>
+<tr class="separator:a967280e194b8e0af815a09c1cd3ffeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44086f7dbbcd00f7e206a426a48ec049"><td class="memItemLeft" align="right" valign="top">static long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#a44086f7dbbcd00f7e206a426a48ec049">mpz_get_sll</a> (mpz_t n)</td></tr>
+<tr class="separator:a44086f7dbbcd00f7e206a426a48ec049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><code>detail</code> namespace gathers internal classes and functions. </p>
@@ -516,6 +531,43 @@ template&lt;typename TData &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the pair (N,M) that minimizes the memory usage of a <a class="el" href="classDGtal_1_1LabelledMap.html" title="Aim: Represents a map label -&gt; data, where the label is an integer between 0 and a constant L-1...">LabelledMap</a> for the given distribution. </dd></dl>
 
+</div>
+</div>
+<a id="a9b056b7d2516565a223eb8c9ec3702c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b056b7d2516565a223eb8c9ec3702c8">&#9670;&nbsp;</a></span>center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Point &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> DGtal::detail::center </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compute the center of the bounding box containing the given points. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Point</td><td>any type of points </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>a range of points </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the (approximate center of the given range. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Complexity is O(n), if n is the size of <em>points</em>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="QuickHullKernels_8h_source.html#l00066">66</a> of file <a class="el" href="QuickHullKernels_8h_source.html">QuickHullKernels.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">if</span> ( points.empty() ) <span class="keywordflow">return</span> Point::zero;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> l = points[ 0 ];</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> u = l;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">for</span> ( <span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : points ) {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        l = l.inf( p );</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        u = u.sup( p );</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      }</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>( ( l + u ) / 2 );</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div><div class="ttc" id="testClone2_8cpp_html_a15e9592ccc512dc691b46185e6814758"><div class="ttname"><a href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a></div><div class="ttdeci">MyPointD Point</div><div class="ttdef"><b>Definition:</b> <a href="testClone2_8cpp_source.html#l00383">testClone2.cpp:383</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa866abfa12f4bcf1a4c1600f09cfa852"></a>
@@ -743,6 +795,175 @@ template&lt;typename IC &gt; </div>
   </dd>
 </dl>
 
+</div>
+</div>
+<a id="a44086f7dbbcd00f7e206a426a48ec049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44086f7dbbcd00f7e206a426a48ec049">&#9670;&nbsp;</a></span>mpz_get_sll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long long DGtal::detail::mpz_get_sll </td>
+          <td>(</td>
+          <td class="paramtype">mpz_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Conversion to int64 is tricky and not native for GMP. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>any number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>its int64 representation. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="IntegerConverter_8h_source.html#l00095">95</a> of file <a class="el" href="IntegerConverter_8h_source.html">IntegerConverter.h</a>.</p>
+
+<p class="reference">References <a class="el" href="IntegerConverter_8h_source.html#l00079">mpz_get_ull()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">return</span> (<span class="keywordtype">long</span> <span class="keywordtype">long</span>)<a class="code" href="namespaceDGtal_1_1detail.html#a967280e194b8e0af815a09c1cd3ffeaa">mpz_get_ull</a>(n); <span class="comment">/* just use unsigned version */</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div><div class="ttc" id="namespaceDGtal_1_1detail_html_a967280e194b8e0af815a09c1cd3ffeaa"><div class="ttname"><a href="namespaceDGtal_1_1detail.html#a967280e194b8e0af815a09c1cd3ffeaa">DGtal::detail::mpz_get_ull</a></div><div class="ttdeci">static unsigned long long mpz_get_ull(mpz_t n)</div><div class="ttdef"><b>Definition:</b> <a href="IntegerConverter_8h_source.html#l00079">IntegerConverter.h:79</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a967280e194b8e0af815a09c1cd3ffeaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967280e194b8e0af815a09c1cd3ffeaa">&#9670;&nbsp;</a></span>mpz_get_ull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned long long DGtal::detail::mpz_get_ull </td>
+          <td>(</td>
+          <td class="paramtype">mpz_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Conversion to uint64 is tricky and not native for GMP. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>any number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>its uint64 representation. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="IntegerConverter_8h_source.html#l00079">79</a> of file <a class="el" href="IntegerConverter_8h_source.html">IntegerConverter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="IntegerConverter_8h_source.html#l00095">mpz_get_sll()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lo, hi;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      mpz_t tmp;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      mpz_init( tmp );</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      mpz_mod_2exp( tmp, n, 64 );   <span class="comment">/* tmp = (lower 64 bits of n) */</span></div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      lo = mpz_get_ui( tmp );       <span class="comment">/* lo = tmp &amp; 0xffffffff */</span> </div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      mpz_div_2exp( tmp, tmp, 32 ); <span class="comment">/* tmp &gt;&gt;= 32 */</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      hi = mpz_get_ui( tmp );       <span class="comment">/* hi = tmp &amp; 0xffffffff */</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      mpz_clear( tmp );</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">return</span> (((<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>)hi) &lt;&lt; 32) + lo;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a359c1231aec596688bdfb7a5d7341d4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a359c1231aec596688bdfb7a5d7341d4d">&#9670;&nbsp;</a></span>mpz_set_sll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void DGtal::detail::mpz_set_sll </td>
+          <td>(</td>
+          <td class="paramtype">mpz_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>sll</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>-------&mdash;&mdash; GMP SPECIALIZED SERVICES ----------------------&mdash;&mdash; </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">n</td><td>the (initialized) big integer to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sll</td><td>a signed long long integer to assign to <em>n</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="IntegerConverter_8h_source.html#l00060">60</a> of file <a class="el" href="IntegerConverter_8h_source.html">IntegerConverter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="IntegerConverter_8h_source.html#l00347">DGtal::IntegerConverter&lt; dim, DGtal::BigInteger &gt;::cast()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      mpz_set_si(n, (<span class="keywordtype">int</span>)(sll &gt;&gt; 32));     <span class="comment">/* n = (int)sll &gt;&gt; 32 */</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      mpz_mul_2exp(n, n, 32 );             <span class="comment">/* n &lt;&lt;= 32 */</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      mpz_add_ui(n, n, (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)sll); <span class="comment">/* n += (unsigned int)sll */</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="acd402c98be0bd4ebd407d9ad486f3808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd402c98be0bd4ebd407d9ad486f3808">&#9670;&nbsp;</a></span>mpz_set_ull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void DGtal::detail::mpz_set_ull </td>
+          <td>(</td>
+          <td class="paramtype">mpz_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>ull</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">n</td><td>the (initialized) big integer to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ull</td><td>an unsigned long long integer to assign to <em>n</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="IntegerConverter_8h_source.html#l00069">69</a> of file <a class="el" href="IntegerConverter_8h_source.html">IntegerConverter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      mpz_set_ui(n, (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)(ull &gt;&gt; 32)); <span class="comment">/* n = (unsigned int)(ull &gt;&gt; 32) */</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      mpz_mul_2exp(n, n, 32);                   <span class="comment">/* n &lt;&lt;= 32 */</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      mpz_add_ui(n, n, (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)ull);      <span class="comment">/* n += (unsigned int)ull */</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }      </div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8145e1ac56a4074a096b56e8b5c2e523"></a>
@@ -1457,10 +1678,95 @@ template&lt;typename Point &gt; </div>
 
 </div>
 </div>
+<a id="a38b156d16d8dcc572091dc472166c2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b156d16d8dcc572091dc472166c2b7">&#9670;&nbsp;</a></span>transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OutputValue , typename ForwardIterator , typename ConversionFct &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGtal::detail::transform </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; OutputValue &gt; &amp;&#160;</td>
+          <td class="paramname"><em>output_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>input2output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>output2input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ForwardIterator&#160;</td>
+          <td class="paramname"><em>itb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ForwardIterator&#160;</td>
+          <td class="paramname"><em>ite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ConversionFct &amp;&#160;</td>
+          <td class="paramname"><em>F</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>remove_duplicates</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transform an input range of points into an output range with a conversion function, and possibly removes duplicates in the output range. Used as preprocessing of <a class="el" href="structDGtal_1_1QuickHull.html" title="Aim: Implements the quickhull algorithm by Barber et al. , a famous arbitrary dimensional convex hull...">QuickHull</a> algorithm.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">OutputValue</td><td>any value that is LessThanComparable, Assignable, CopyConstructible, DefaultConstructible.</td></tr>
+    <tr><td class="paramname">ConversionFct</td><td>is a functor from input values to OutputValue.</td></tr>
+    <tr><td class="paramname">ForwardIterator</td><td>is a forward iterator on some input values.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">output_values</td><td>a range of points converted from the input range, with duplicates possibly removed according to <em>remove_duplicates</em> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">input2output</td><td>the surjective mapping between the input range and the output range used for computation.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output2input</td><td>the injective mapping between the output range and the input range.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">itb,ite</td><td>a range of values.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">F</td><td>a function that may transform input values to output values</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remove_duplicates</td><td>when 'true' remove duplicate values, otherwise, <code>output_values.size()</code> is equal to the size of the range itb,ite. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="QuickHullKernels_8h_source.html#l00109">109</a> of file <a class="el" href="QuickHullKernels_8h_source.html">QuickHullKernels.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="QuickHullKernels_8h_source.html#l00454">DGtal::ConvexHullIntegralKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;::makeInput()</a>, <a class="el" href="QuickHullKernels_8h_source.html#l00589">DGtal::DelaunayIntegralKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;::makeInput()</a>, <a class="el" href="QuickHullKernels_8h_source.html#l00748">DGtal::ConvexHullRationalKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;::makeInput()</a>, and <a class="el" href="QuickHullKernels_8h_source.html#l00924">DGtal::DelaunayRationalKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;::makeInput()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keyword">typedef</span> std::size_t <a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a>;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      std::vector&lt; OutputValue &gt; input;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">while</span> ( itb != ite ) {</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> ip = *itb++;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        input.push_back( F( ip ) );</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      }</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keywordflow">if</span> ( ! remove_duplicates ) {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        output_values.swap( input );</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        input2output.resize( input.size() );</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        output2input.resize( input.size() );</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">for</span> ( <a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a> i = 0; i &lt; input.size(); ++i )</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;          input2output[ i ] = output2input[ i ] = i;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      }</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keywordflow">else</span> {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        output_values.clear();</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        std::vector&lt; std::size_t &gt; i2c_sort( input.size() );</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        input2output.resize( input.size() );</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">for</span> ( <a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a> i = 0; i &lt; input.size(); i++ ) i2c_sort[ i ] = i;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="comment">// indirect sort</span></div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        std::sort( i2c_sort.begin(), i2c_sort.end(),</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                   [&amp;input] ( <a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a> i, <a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a> j ) { <span class="keywordflow">return</span> input[ i ] &lt; input[ j ]; } );</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        output_values.resize( input.size() );</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        output_values[ 0 ] = input[ i2c_sort[ 0 ] ];</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        input2output[ i2c_sort[ 0 ] ] = 0;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a> j = 0;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">for</span> ( <a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a> i = 1; i &lt; input.size(); i++ ) {</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;          <span class="keywordflow">if</span> ( input[ i2c_sort[ i-1 ] ] != input[ i2c_sort[ i ] ] )</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            output_values[ ++j ] = input[ i2c_sort[ i ] ];</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;          input2output[ i2c_sort[ i ] ] = j;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        output_values.resize( j+1 );</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        output2input.resize( output_values.size() );</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">for</span> ( <a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a> i = 0; i &lt; input2output.size(); i++ )</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;          output2input[ input2output[ i ] ] = i;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      }      </div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div><div class="ttc" id="testHalfEdgeDataStructure_8cpp_html_a1aba5499fd29449181365ce424303a10"><div class="ttname"><a href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a></div><div class="ttdeci">HalfEdgeDataStructure::Size Size</div><div class="ttdef"><b>Definition:</b> <a href="testHalfEdgeDataStructure_8cpp_source.html#l00050">testHalfEdgeDataStructure.cpp:50</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 10 2021 15:53:38 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 27 2021 18:32:53 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

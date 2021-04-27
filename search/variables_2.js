@@ -4,6 +4,7 @@ var searchData=
   ['b1',['b1',['../structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#ae01c4c20c060d6e3a2d607019c7febb0',1,'DGtal::PlaneProbingDigitalSurfaceLocalEstimator::ProbingFrame']]],
   ['b2',['b2',['../structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#a3563559a906e3f0ae8d350cee4d87249',1,'DGtal::PlaneProbingDigitalSurfaceLocalEstimator::ProbingFrame']]],
   ['base',['base',['../structDGtal_1_1DigitalSurface_1_1Arc.html#aa7ea3ca7e711f11e537cb1a3c3e3d5e9',1,'DGtal::DigitalSurface::Arc']]],
+  ['below',['below',['../structDGtal_1_1QuickHull_1_1Facet.html#a6b8bca97a4d5da10772255a15dd0b690',1,'DGtal::QuickHull::Facet']]],
   ['bisvalid',['bIsValid',['../classDGtal_1_1DigitalShapesCSG.html#ae33277452099617072060a2c9f2ab069',1,'DGtal::DigitalShapesCSG::bIsValid()'],['../classDGtal_1_1EuclideanShapesCSG.html#a0de204bbc31e21df62234bab2a9a0c82',1,'DGtal::EuclideanShapesCSG::bIsValid()']]],
   ['bit',['bit',['../structDGtal_1_1UnorderedSetByBlock_1_1const__iterator.html#aca16c580f64b91fb4935ccfc0b478256',1,'DGtal::UnorderedSetByBlock::const_iterator::bit()'],['../structDGtal_1_1UnorderedSetByBlock_1_1iterator.html#a52f1d53100b77d0c162af87bb6167554',1,'DGtal::UnorderedSetByBlock::iterator::bit()']]],
   ['black',['Black',['../classDGtal_1_1Color.html#ac26d8585885e7a354893b7e93c6a9dda',1,'DGtal::Color']]],

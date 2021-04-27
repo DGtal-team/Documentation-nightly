@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['raw2hdf5',['raw2HDF5',['http://dgtal.org/doc/tools/nightly/raw2HDF5.html',1,'']]],
-  ['raw2vol',['raw2vol',['http://dgtal.org/doc/tools/nightly/raw2vol.html',1,'']]]
+  ['quickhull_20algorithm_20in_20arbitrary_20dimension_20for_20convex_20hull_20and_20delaunay_20cell_20complex_20computation',['QuickHull algorithm in arbitrary dimension for convex hull and Delaunay cell complex computation',['../moduleQuickHull.html',1,'']]]
 ];

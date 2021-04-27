@@ -49,6 +49,7 @@ var searchData=
   ['pointvector_3c_203_2c_20internalinteger_20_3e',['PointVector&lt; 3, InternalInteger &gt;',['../classDGtal_1_1PointVector.html',1,'DGtal']]],
   ['pointvector_3c_203_2c_20internalscalar_20_3e',['PointVector&lt; 3, InternalScalar &gt;',['../classDGtal_1_1PointVector.html',1,'DGtal']]],
   ['pointvector_3c_20dim_2c_20integer_20_3e',['PointVector&lt; dim, Integer &gt;',['../classDGtal_1_1PointVector.html',1,'DGtal']]],
+  ['pointvector_3c_20dim_2c_20internalinteger_20_3e',['PointVector&lt; dim, InternalInteger &gt;',['../classDGtal_1_1PointVector.html',1,'DGtal']]],
   ['pointvector_3c_20space_3a_3adimension_2c_20real_20_3e',['PointVector&lt; Space::dimension, Real &gt;',['../classDGtal_1_1PointVector.html',1,'DGtal']]],
   ['polarpointcomparatorby2x2detcomputer',['PolarPointComparatorBy2x2DetComputer',['../classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer.html',1,'DGtal::functors']]],
   ['polygonalsurface',['PolygonalSurface',['../classDGtal_1_1PolygonalSurface.html',1,'DGtal']]],

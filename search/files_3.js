@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['checklatticeballquickhull_2ecpp',['checkLatticeBallQuickHull.cpp',['../checkLatticeBallQuickHull_8cpp.html',1,'']]],
   ['convergents_2dbiginteger_2ecpp',['convergents-biginteger.cpp',['../convergents-biginteger_8cpp.html',1,'']]],
   ['convergents_2ecpp',['convergents.cpp',['../convergents_8cpp.html',1,'']]],
   ['convex_2dand_2dconcave_2dparts_2ecpp',['convex-and-concave-parts.cpp',['../convex-and-concave-parts_8cpp.html',1,'']]],

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['face',['Face',['../structDGtal_1_1DigitalSurface_1_1Face.html',1,'DGtal::DigitalSurface']]],
+  ['facet',['Facet',['../structDGtal_1_1QuickHull_1_1Facet.html',1,'DGtal::QuickHull']]],
   ['falseboolfct0',['FalseBoolFct0',['../structDGtal_1_1functors_1_1FalseBoolFct0.html',1,'DGtal::functors']]],
   ['falsepointpredicate',['FalsePointPredicate',['../structDGtal_1_1functors_1_1FalsePointPredicate.html',1,'DGtal::functors']]],
   ['fftwcomplexcast',['FFTWComplexCast',['../structDGtal_1_1detail_1_1FFTWComplexCast.html',1,'DGtal::detail']]],
@@ -25,7 +26,7 @@ var searchData=
   ['forwardtraversalconcept',['ForwardTraversalConcept',['../structboost__concepts_1_1ForwardTraversalConcept.html',1,'boost_concepts']]],
   ['fp',['FP',['../classDGtal_1_1FP.html',1,'DGtal']]],
   ['fplengthestimator',['FPLengthEstimator',['../classDGtal_1_1FPLengthEstimator.html',1,'DGtal']]],
-  ['fraction',['Fraction',['../classDGtal_1_1LightSternBrocot_1_1Fraction.html',1,'DGtal::LightSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction'],['../classDGtal_1_1SternBrocot_1_1Fraction.html',1,'DGtal::SternBrocot&lt; TInteger, TQuotient &gt;::Fraction'],['../classDGtal_1_1LighterSternBrocot_1_1Fraction.html',1,'DGtal::LighterSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction']]],
+  ['fraction',['Fraction',['../classDGtal_1_1LighterSternBrocot_1_1Fraction.html',1,'DGtal::LighterSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction'],['../classDGtal_1_1LightSternBrocot_1_1Fraction.html',1,'DGtal::LightSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction'],['../classDGtal_1_1SternBrocot_1_1Fraction.html',1,'DGtal::SternBrocot&lt; TInteger, TQuotient &gt;::Fraction']]],
   ['frechetshortcut',['FrechetShortcut',['../classDGtal_1_1FrechetShortcut.html',1,'DGtal']]],
   ['frechetshortcut_3c_20constiterator_2c_20integer_20_3e',['FrechetShortcut&lt; ConstIterator, Integer &gt;',['../classDGtal_1_1FrechetShortcut.html',1,'DGtal']]],
   ['freemanchain',['FreemanChain',['../classDGtal_1_1FreemanChain.html',1,'DGtal']]],

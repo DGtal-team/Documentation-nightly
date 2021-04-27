@@ -8,6 +8,8 @@ var searchData=
   ['defaultconstructible',['DefaultConstructible',['../structboost_1_1DefaultConstructible.html',1,'boost']]],
   ['defaultconstructible_3c_20s_20_3e',['DefaultConstructible&lt; S &gt;',['../structboost_1_1DefaultConstructible.html',1,'boost']]],
   ['defaultimagerange',['DefaultImageRange',['../classDGtal_1_1DefaultImageRange.html',1,'DGtal']]],
+  ['delaunayintegralkernel',['DelaunayIntegralKernel',['../structDGtal_1_1DelaunayIntegralKernel.html',1,'DGtal']]],
+  ['delaunayrationalkernel',['DelaunayRationalKernel',['../structDGtal_1_1DelaunayRationalKernel.html',1,'DGtal']]],
   ['depthfirstvisitor',['DepthFirstVisitor',['../classDGtal_1_1DepthFirstVisitor.html',1,'DGtal']]],
   ['derivativetester',['DerivativeTester',['../structDerivativeTester.html',1,'']]],
   ['derivativetester_3c_20calculus_2c_20_2d1_20_3e',['DerivativeTester&lt; Calculus, -1 &gt;',['../structDerivativeTester_3_01Calculus_00_01-1_01_4.html',1,'']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['convexhullcommonkernel_3c_20dim_2c_20coordinateinteger_2c_20internalinteger_20_3e',['ConvexHullCommonKernel&lt; dim, CoordinateInteger, InternalInteger &gt;',['../classDGtal_1_1ConvexHullCommonKernel_1_1HalfSpace.html#ad48dad49ff22559d0e7037cae388ab14',1,'DGtal::ConvexHullCommonKernel::HalfSpace']]],
   ['cosinesimilarity',['cosineSimilarity',['../classDGtal_1_1PointVector.html#a1095a37515fa7accd9d0b3ed6e5e37d9',1,'DGtal::PointVector']]],
   ['countedconstptrorconstptr_3c_20t_20_3e',['CountedConstPtrOrConstPtr&lt; T &gt;',['../classDGtal_1_1CountedPtr.html#aa7fae706026ef074841e8de7cc4e3c3c',1,'DGtal::CountedPtr::CountedConstPtrOrConstPtr&lt; T &gt;()'],['../classDGtal_1_1CountedPtrOrPtr.html#aa7fae706026ef074841e8de7cc4e3c3c',1,'DGtal::CountedPtrOrPtr::CountedConstPtrOrConstPtr&lt; T &gt;()']]],
   ['countedptrorptr_3c_20t_20_3e',['CountedPtrOrPtr&lt; T &gt;',['../classDGtal_1_1CountedPtr.html#a54111cfe23286d47b955d18297d9d3a5',1,'DGtal::CountedPtr']]],

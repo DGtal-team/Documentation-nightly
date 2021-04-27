@@ -6,5 +6,6 @@ var searchData=
   ['quadraticbeziercurve',['QuadraticBezierCurve',['../structLibBoard_1_1QuadraticBezierCurve.html#ab6b637e81d436e8328828859f7ebe842',1,'LibBoard::QuadraticBezierCurve']]],
   ['quadtotriangularfaces',['quadToTriangularFaces',['../classDGtal_1_1Mesh.html#a394b88b6975c2e174db9a0058f0cbf72',1,'DGtal::Mesh']]],
   ['quantity',['Quantity',['../structDGtal_1_1functors_1_1SphereFittingEstimator_1_1Quantity.html#a39f7c630e801f99349be0d8edaa3e87f',1,'DGtal::functors::SphereFittingEstimator::Quantity::Quantity()'],['../structDGtal_1_1functors_1_1SphereFittingEstimator_1_1Quantity.html#a97c971a8bf5e83cd875b526ccf4926f7',1,'DGtal::functors::SphereFittingEstimator::Quantity::Quantity(RealPoint p, double rad, double _tau, double _kappa, RealPoint _eta)']]],
-  ['quasinulltest',['quasiNullTest',['../testInHalfPlane-benchmark_8cpp.html#aabe8fbe6213d61ac950100aa13c20963',1,'testInHalfPlane-benchmark.cpp']]]
+  ['quasinulltest',['quasiNullTest',['../testInHalfPlane-benchmark_8cpp.html#aabe8fbe6213d61ac950100aa13c20963',1,'testInHalfPlane-benchmark.cpp']]],
+  ['quickhull',['QuickHull',['../structDGtal_1_1QuickHull.html#a102d2e0a8d3bfa3d231a0a925a04ec82',1,'DGtal::QuickHull']]]
 ];

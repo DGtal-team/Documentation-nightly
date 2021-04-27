@@ -127,6 +127,9 @@ $(function() {
 <li>datatype
 : <a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#a9ab65951228d509736520d2841a2a0aa">DGtal::ImageFactoryFromHDF5&lt; TImageContainer &gt;</a>
 </li>
+<li>debug_level
+: <a class="el" href="structDGtal_1_1QuickHull.html#a20bb4cb932d8ee3820c8c78e0bb2d34f">DGtal::QuickHull&lt; TKernel &gt;</a>
+</li>
 <li>defaultInnerMoments
 : <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver.html#a26a9174603ebead270cc06d14843218a">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, dimension &gt;</a>
 , <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a5cf457ce040bd6652e78d6b757150b42">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;</a>
@@ -163,6 +166,9 @@ $(function() {
 </li>
 <li>Degree
 : <a class="el" href="classLibBoard_1_1Board.html#a809c4701e9c467a747476ad3b27badd1">LibBoard::Board</a>
+</li>
+<li>deleted_facets
+: <a class="el" href="structDGtal_1_1QuickHull.html#a801c27c7be6ae6e11b8858b169ceb41d">DGtal::QuickHull&lt; TKernel &gt;</a>
 </li>
 <li>descendant
 : <a class="el" href="structDGtal_1_1LightSternBrocot_1_1Node.html#a55e0e1035e4a8a0017cbcbfd0f65e49e">DGtal::LightSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Node</a>
@@ -205,6 +211,9 @@ $(function() {
 , <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html#ad7af9a26ea1c963944d83149a7abbe2d">DGtal::BoundedLatticePolytope&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1BoundedRationalPolytope.html#a6f51061febd61c9872fb69f952da25b9">DGtal::BoundedRationalPolytope&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1CellGeometry.html#a09fd2937beccba3685bd9c433c160f05">DGtal::CellGeometry&lt; TKSpace &gt;</a>
+, <a class="el" href="structDGtal_1_1ConvexCellComplex.html#a9fbef2e5b69fa32d63267653bd1a2972">DGtal::ConvexCellComplex&lt; TPoint &gt;</a>
+, <a class="el" href="structDGtal_1_1ConvexHullCommonKernel.html#aa35ddda10cc2e98dc809e4b4c7628b84">DGtal::ConvexHullCommonKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;</a>
+, <a class="el" href="structDGtal_1_1ConvexityHelper.html#a556209b9719d1be518d335b6821bf549">DGtal::ConvexityHelper&lt; dim, TInteger, TInternalInteger &gt;</a>
 , <a class="el" href="classDGtal_1_1CubicalComplex.html#ac4a7b9f7a80e6bd5415cd0792b5f5797">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;</a>
 , <a class="el" href="structDGtal_1_1detail_1_1BoundedLatticePolytopeSpecializer.html#a9a6f524a915934c9664b0c5a9bec4349">DGtal::detail::BoundedLatticePolytopeSpecializer&lt; N, TInteger &gt;</a>
 , <a class="el" href="structDGtal_1_1detail_1_1BoundedLatticePolytopeSpecializer_3_013_00_01TInteger_01_4.html#ab534a864556e8d5e034ec031eb32111e">DGtal::detail::BoundedLatticePolytopeSpecializer&lt; 3, TInteger &gt;</a>
@@ -222,6 +231,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#ae2b2dcf34c36a5e3eae4bf13291f1578">DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;</a>
 , <a class="el" href="structDGtal_1_1LinearAlgebra.html#adf39f09adea8af09299e1f10024adf02">DGtal::LinearAlgebra&lt; Space &gt;</a>
 , <a class="el" href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;</a>
+, <a class="el" href="structDGtal_1_1QuickHull.html#abe85473796699a79239d6f73d6769e5a">DGtal::QuickHull&lt; TKernel &gt;</a>
 , <a class="el" href="classDGtal_1_1RealFFT_3_01HyperRectDomain_3_01TSpace_01_4_00_01T_01_4.html#a9c9de66aa127bfa9431e915fa0aecc6f">DGtal::RealFFT&lt; HyperRectDomain&lt; TSpace &gt;, T &gt;</a>
 , <a class="el" href="classDGtal_1_1SpaceND.html#aae87d3efb1051dbdeac28e159781ba92">DGtal::SpaceND&lt; dim, TInteger &gt;</a>
 , <a class="el" href="structDGtal_1_1SurfaceMesh.html#a3f6f9354e215383da77399540b9b4375">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
@@ -269,7 +279,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 10 2021 15:53:42 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 27 2021 18:32:58 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

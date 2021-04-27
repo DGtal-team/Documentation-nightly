@@ -15,7 +15,7 @@ var searchData=
   ['orderedalphabet',['OrderedAlphabet',['../classDGtal_1_1OrderedAlphabet.html',1,'DGtal']]],
   ['orderedassociativecategory',['OrderedAssociativeCategory',['../structDGtal_1_1OrderedAssociativeCategory.html',1,'DGtal']]],
   ['orderedlinearregression',['OrderedLinearRegression',['../classDGtal_1_1OrderedLinearRegression.html',1,'DGtal']]],
-  ['out_5fedge_5fiterator',['out_edge_iterator',['../classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1out__edge__iterator.html',1,'boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::out_edge_iterator'],['../classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html',1,'boost::graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;::out_edge_iterator']]],
+  ['out_5fedge_5fiterator',['out_edge_iterator',['../classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html',1,'boost::graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;::out_edge_iterator'],['../classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1out__edge__iterator.html',1,'boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::out_edge_iterator']]],
   ['outputiterator',['OutputIterator',['../structboost_1_1OutputIterator.html',1,'boost']]],
   ['outputiteratoradapter',['OutputIteratorAdapter',['../classDGtal_1_1OutputIteratorAdapter.html',1,'DGtal']]],
   ['owningoraliasingptr',['OwningOrAliasingPtr',['../classDGtal_1_1OwningOrAliasingPtr.html',1,'DGtal']]],

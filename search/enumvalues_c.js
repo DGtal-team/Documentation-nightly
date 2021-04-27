@@ -8,5 +8,6 @@ var searchData=
   ['nonconvex',['NonConvex',['../classDGtal_1_1PlaneProbingNeighborhood.html#a7de337aa87bc093fb60c384bb1ad860fac9e6593baa1567a5a6b95e90dbe4c3c7',1,'DGtal::PlaneProbingNeighborhood']]],
   ['nonplanar',['NonPlanar',['../classDGtal_1_1PlaneProbingNeighborhood.html#a7de337aa87bc093fb60c384bb1ad860fae40e881a22ad7aec86bcf0de5a1c0b8a',1,'DGtal::PlaneProbingNeighborhood']]],
   ['normal_5fcontainer_5fi',['NORMAL_CONTAINER_I',['../namespaceDGtal.html#a0a142484d2c7efc3d29f5bbde3b449b7a0a9f2a6126427332825d75e775f59388',1,'DGtal']]],
-  ['not_5fjordan_5fdt',['NOT_JORDAN_DT',['../namespaceDGtal.html#a9f57dcd68d3056024eec6b4205f7083da76d2c48b4a35a0dcb5ca4e6cf2462ff0',1,'DGtal']]]
+  ['not_5fjordan_5fdt',['NOT_JORDAN_DT',['../namespaceDGtal.html#a9f57dcd68d3056024eec6b4205f7083da76d2c48b4a35a0dcb5ca4e6cf2462ff0',1,'DGtal']]],
+  ['notfulldimensional',['NotFullDimensional',['../structDGtal_1_1QuickHull.html#abeb4e0b07fd4ae7d1c488a810673479da6fee237ccd00911e80cb260b8db94c61',1,'DGtal::QuickHull']]]
 ];

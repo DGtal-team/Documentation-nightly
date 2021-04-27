@@ -417,6 +417,12 @@ $(function() {
 <li>getFaceColor()
 : <a class="el" href="classDGtal_1_1Mesh.html#a3a18f7b4eb87075fd3ffd87fd14881e4">DGtal::Mesh&lt; TPoint &gt;</a>
 </li>
+<li>getFacetHalfSpaces()
+: <a class="el" href="structDGtal_1_1QuickHull.html#acd995b1d75034bf38e8a5c26e45d80c4">DGtal::QuickHull&lt; TKernel &gt;</a>
+</li>
+<li>getFacetVertices()
+: <a class="el" href="structDGtal_1_1QuickHull.html#a6d3026c921bb8f8e542435411dbb1077">DGtal::QuickHull&lt; TKernel &gt;</a>
+</li>
 <li>getFillColor()
 : <a class="el" href="classDGtal_1_1Display3D.html#a5d3155c6695bf924560f085d298d318f">DGtal::Display3D&lt; Space, KSpace &gt;</a>
 </li>
@@ -664,7 +670,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#ab87831bcc5c09087000be3b2b46afb91">DGtal::experimental::ImageContainerByHashTree&lt; TDomain, TValue, THashKey &gt;</a>
 </li>
 <li>getNbNodes()
-: <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#afba0a8a649151c1a113c696f7a69ae50">DGtal::experimental::ImageContainerByHashTree&lt; TDomain, TValue, THashKey &gt;</a>
+: <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a64c60e2de8263f3aa3b6372f176b465e">DGtal::experimental::ImageContainerByHashTree&lt; TDomain, TValue, THashKey &gt;</a>
 </li>
 <li>getNeighborhoodCode()
 : <a class="el" href="classDGtal_1_1PlaneProbingR1Neighborhood.html#afd0c803605c0dadcbb72427460ee0f8e">DGtal::PlaneProbingR1Neighborhood&lt; TPredicate &gt;</a>
@@ -755,7 +761,7 @@ $(function() {
 <li>getPage()
 : <a class="el" href="classDGtal_1_1ImageCache.html#a4db963a2f50c647856e0c03f71a3135a">DGtal::ImageCache&lt; TImageContainer, TImageFactory, TReadPolicy, TWritePolicy &gt;</a>
 , <a class="el" href="classDGtal_1_1ImageCacheReadPolicyFIFO.html#a3748408b44e0d9a6e0117dbd7bbfb14f">DGtal::ImageCacheReadPolicyFIFO&lt; TImageContainer, TImageFactory &gt;</a>
-, <a class="el" href="classDGtal_1_1ImageCacheReadPolicyLAST.html#a447a22b0a83403885450137489a7ac2e">DGtal::ImageCacheReadPolicyLAST&lt; TImageContainer, TImageFactory &gt;</a>
+, <a class="el" href="classDGtal_1_1ImageCacheReadPolicyLAST.html#a6661566f11bece5c1f864604010e4b02">DGtal::ImageCacheReadPolicyLAST&lt; TImageContainer, TImageFactory &gt;</a>
 </li>
 <li>getPageToDetach()
 : <a class="el" href="classDGtal_1_1ImageCacheReadPolicyFIFO.html#aa145486311ee13a3c017c79c878c84cc">DGtal::ImageCacheReadPolicyFIFO&lt; TImageContainer, TImageFactory &gt;</a>
@@ -789,6 +795,9 @@ $(function() {
 , <a class="el" href="classDGtal_1_1ArrayImageIterator.html#a3d29c3a8d0497bad372d3b417d0c5852">DGtal::ArrayImageIterator&lt; TIterableClass &gt;</a>
 , <a class="el" href="classDGtal_1_1FreemanChain.html#ac90db68852b08dfdf8abab56d6f19d43">DGtal::FreemanChain&lt; TInteger &gt;</a>
 , <a class="el" href="structDGtal_1_1Linearizer_3_01HyperRectDomain_3_01TSpace_01_4_00_01TStorageOrder_01_4.html#a79050af1a7eb8bd0d7f3494da654fbcd">DGtal::Linearizer&lt; HyperRectDomain&lt; TSpace &gt;, TStorageOrder &gt;</a>
+</li>
+<li>getPoint2Vertex()
+: <a class="el" href="structDGtal_1_1QuickHull.html#adb9b873052d072f891fc7f0b3e013106">DGtal::QuickHull&lt; TKernel &gt;</a>
 </li>
 <li>getPointelRange()
 : <a class="el" href="classDGtal_1_1Shortcuts.html#a4f8b1f94bbce1f2bd1b7023d49293bde">DGtal::Shortcuts&lt; TKSpace &gt;</a>
@@ -839,7 +848,7 @@ $(function() {
 </li>
 <li>getPrimalVertices()
 : <a class="el" href="classDGtal_1_1Shortcuts.html#a7ad5b9ef0af94af7207392485becfe4a">DGtal::Shortcuts&lt; TKSpace &gt;</a>
-, <a class="el" href="classDGtal_1_1Surfaces.html#a9db77292cbc2b556ed03944da543eb06">DGtal::Surfaces&lt; TKSpace &gt;</a>
+, <a class="el" href="classDGtal_1_1Surfaces.html#a74c7ea4699593fb54ae92e5df50c69a6">DGtal::Surfaces&lt; TKSpace &gt;</a>
 </li>
 <li>getPrincipalCurvaturesAndDirections()
 : <a class="el" href="classDGtal_1_1ShortcutsGeometry.html#ab36851dca630838116e4930fc7488ba2">DGtal::ShortcutsGeometry&lt; TKSpace &gt;</a>
@@ -921,7 +930,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1VectorField.html#ab4bdaa2b59b29f2c467c1e25ca31e888">DGtal::VectorField&lt; TCalculus, duality &gt;</a>
 </li>
 <li>getSCellEmbedder()
-: <a class="el" href="classDGtal_1_1Shortcuts.html#a027cd699c32ac7625b950db2aa3e7f0d">DGtal::Shortcuts&lt; TKSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1Shortcuts.html#a457e9554b69794249fd19353c39aba36">DGtal::Shortcuts&lt; TKSpace &gt;</a>
 </li>
 <li>getSCellsRange()
 : <a class="el" href="classDGtal_1_1GridCurve.html#a290d4c48de7ac0e14615cbefb3a452d6">DGtal::GridCurve&lt; TKSpace &gt;</a>
@@ -974,7 +983,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1RealFFT_3_01HyperRectDomain_3_01TSpace_01_4_00_01T_01_4.html#a71c9a788d6fa8585e2e90abd0163605d">DGtal::RealFFT&lt; HyperRectDomain&lt; TSpace &gt;, T &gt;</a>
 </li>
 <li>getSpatialImage()
-: <a class="el" href="classDGtal_1_1RealFFT_3_01HyperRectDomain_3_01TSpace_01_4_00_01T_01_4.html#a48576e5b9714eceb9cb188a4b4d59eaa">DGtal::RealFFT&lt; HyperRectDomain&lt; TSpace &gt;, T &gt;</a>
+: <a class="el" href="classDGtal_1_1RealFFT_3_01HyperRectDomain_3_01TSpace_01_4_00_01T_01_4.html#a43301ef74dc50711f5c82ca913f33d84">DGtal::RealFFT&lt; HyperRectDomain&lt; TSpace &gt;, T &gt;</a>
 </li>
 <li>getSpatialStorage()
 : <a class="el" href="classDGtal_1_1RealFFT_3_01HyperRectDomain_3_01TSpace_01_4_00_01T_01_4.html#a851edd06074b40f3f80d157d84ae2f26">DGtal::RealFFT&lt; HyperRectDomain&lt; TSpace &gt;, T &gt;</a>
@@ -1098,6 +1107,12 @@ $(function() {
 : <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a62afec51975aed8a419958baf63bf7e1">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1Mesh.html#a52197b826c9684ac685d1663b20f2dc3">DGtal::Mesh&lt; TPoint &gt;</a>
 </li>
+<li>getVertex2Point()
+: <a class="el" href="structDGtal_1_1QuickHull.html#a93a79d8e2808d181814e486b6944b897">DGtal::QuickHull&lt; TKernel &gt;</a>
+</li>
+<li>getVertexPositions()
+: <a class="el" href="structDGtal_1_1QuickHull.html#ab504ada81b6b8d3cbec4a79ab8f4f255">DGtal::QuickHull&lt; TKernel &gt;</a>
+</li>
 <li>getVoronoiVector()
 : <a class="el" href="classDGtal_1_1DistanceTransformation.html#a8ef8a9c5be72cba265ac6b6fad444400">DGtal::DistanceTransformation&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;</a>
 </li>
@@ -1138,7 +1153,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1Viewer3D.html#a73bc26f4d1415f16e0064f2527058871">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;</a>
 </li>
 <li>GLTextureImage()
-: <a class="el" href="structDGtal_1_1Viewer3D_1_1GLTextureImage.html#a7f96f1863afc34d712126eb065f1c0b1">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::GLTextureImage</a>
+: <a class="el" href="structDGtal_1_1Viewer3D_1_1GLTextureImage.html#a5dfc0f666cb0867f8918bd3cc4cba6e1">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::GLTextureImage</a>
 </li>
 <li>glUpdateBackground()
 : <a class="el" href="classDGtal_1_1Viewer3D.html#a5aafa78aab579f631893245bc9d54292">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;</a>
@@ -1166,16 +1181,18 @@ $(function() {
 </li>
 <li>GradientMap
 : <a class="el" href="structDGtal_1_1concepts_1_1CWithGradientMap.html#adb54591c41bc7583d286d05affa18528">DGtal::concepts::CWithGradientMap&lt; T &gt;</a>
-, <a class="el" href="classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimator.html#a357b9bf06064c6673161304e49aaf89e">DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator&lt; TDigitalSurfaceEmbedder, TNormalVectorEstimator &gt;</a>
 </li>
 <li>gradientMap()
 : <a class="el" href="classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimator.html#a72d5ce5e96570d1dfc439e4b0de42afa">DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator&lt; TDigitalSurfaceEmbedder, TNormalVectorEstimator &gt;</a>
 </li>
 <li>GradientMap
-: <a class="el" href="classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html#ae451d007be37168d06dd3fcfe16c1954">DGtal::ImplicitFunctionDiff1LinearCellEmbedder&lt; TKSpace, TImplicitFunctionDiff1, TEmbedder &gt;</a>
+: <a class="el" href="classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimator.html#a357b9bf06064c6673161304e49aaf89e">DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator&lt; TDigitalSurfaceEmbedder, TNormalVectorEstimator &gt;</a>
 </li>
 <li>gradientMap()
 : <a class="el" href="classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html#a80b29c48274da75c8b2e5258837a241e">DGtal::ImplicitFunctionDiff1LinearCellEmbedder&lt; TKSpace, TImplicitFunctionDiff1, TEmbedder &gt;</a>
+</li>
+<li>GradientMap
+: <a class="el" href="classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html#ae451d007be37168d06dd3fcfe16c1954">DGtal::ImplicitFunctionDiff1LinearCellEmbedder&lt; TKSpace, TImplicitFunctionDiff1, TEmbedder &gt;</a>
 </li>
 <li>gradientNorm()
 : <a class="el" href="classDGtal_1_1L2FirstOrderLocalDistance.html#a6d1c7485672bf572107a3e0276af3394">DGtal::L2FirstOrderLocalDistance&lt; TImage, TSet &gt;</a>
@@ -1191,21 +1208,25 @@ $(function() {
 </li>
 <li>Graph
 : <a class="el" href="structDGtal_1_1concepts_1_1CGraphVisitor.html#ace717a2c000eeab60fa30ef1fc72336f">DGtal::concepts::CGraphVisitor&lt; T &gt;</a>
-, <a class="el" href="classDGtal_1_1DepthFirstVisitor.html#a9c7518d87ee8f2d3a6157db3ec2b4e04">DGtal::DepthFirstVisitor&lt; TGraph, TMarkSet &gt;</a>
 </li>
 <li>graph()
 : <a class="el" href="classDGtal_1_1DepthFirstVisitor.html#a1ca7bc8dc1ef86d047fd31642bfb211e">DGtal::DepthFirstVisitor&lt; TGraph, TMarkSet &gt;</a>
-, <a class="el" href="classDGtal_1_1DistanceBreadthFirstVisitor.html#a3c960416fdc7d2ccf36f551ff46af4b6">DGtal::DistanceBreadthFirstVisitor&lt; TGraph, TVertexFunctor, TMarkSet &gt;</a>
 </li>
 <li>Graph
-: <a class="el" href="classDGtal_1_1DistanceBreadthFirstVisitor.html#aa69545f7baa597b26e716570d543da18">DGtal::DistanceBreadthFirstVisitor&lt; TGraph, TVertexFunctor, TMarkSet &gt;</a>
-, <a class="el" href="classDGtal_1_1GraphVisitorRange.html#a8d025e87fe64efafdeae3fb993b785ea">DGtal::GraphVisitorRange&lt; TGraphVisitor &gt;</a>
+: <a class="el" href="classDGtal_1_1DepthFirstVisitor.html#a9c7518d87ee8f2d3a6157db3ec2b4e04">DGtal::DepthFirstVisitor&lt; TGraph, TMarkSet &gt;</a>
+, <a class="el" href="classDGtal_1_1DistanceBreadthFirstVisitor.html#aa69545f7baa597b26e716570d543da18">DGtal::DistanceBreadthFirstVisitor&lt; TGraph, TVertexFunctor, TMarkSet &gt;</a>
+</li>
+<li>graph()
+: <a class="el" href="classDGtal_1_1DistanceBreadthFirstVisitor.html#a3c960416fdc7d2ccf36f551ff46af4b6">DGtal::DistanceBreadthFirstVisitor&lt; TGraph, TVertexFunctor, TMarkSet &gt;</a>
+</li>
+<li>Graph
+: <a class="el" href="classDGtal_1_1GraphVisitorRange.html#a8d025e87fe64efafdeae3fb993b785ea">DGtal::GraphVisitorRange&lt; TGraphVisitor &gt;</a>
 </li>
 <li>GraphVisitor
 : <a class="el" href="classDGtal_1_1GraphVisitorRange.html#a657b2f95e9a8094070bcf6b437a75614">DGtal::GraphVisitorRange&lt; TGraphVisitor &gt;</a>
 </li>
 <li>GraphVisitorRange()
-: <a class="el" href="classDGtal_1_1GraphVisitorRange.html#aabd57ceca272bcaa8f1b57d2f53f1820">DGtal::GraphVisitorRange&lt; TGraphVisitor &gt;</a>
+: <a class="el" href="classDGtal_1_1GraphVisitorRange.html#a43e8f247ead6d020f56b1aa0b01ca6be">DGtal::GraphVisitorRange&lt; TGraphVisitor &gt;</a>
 </li>
 <li>Gray
 : <a class="el" href="classDGtal_1_1Color.html#a8f63fa6339912ad4d499f546bbc6f9b4">DGtal::Color</a>
@@ -1225,7 +1246,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1Viewer3D.html#a542350413b6cfa5ffae5cd6b21a81750af15722305fee39ae0e0593779677ea8c">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;</a>
 </li>
 <li>GreedySegmentation()
-: <a class="el" href="classDGtal_1_1GreedySegmentation.html#afc88d3d3247fd551fd5f0675783c8c92">DGtal::GreedySegmentation&lt; TSegmentComputer &gt;</a>
+: <a class="el" href="classDGtal_1_1GreedySegmentation.html#aaf63ba6392b57db4b699e2fc0ba1b908">DGtal::GreedySegmentation&lt; TSegmentComputer &gt;</a>
 </li>
 <li>GreedySegmentation&lt; TSegmentComputer &gt;
 : <a class="el" href="classDGtal_1_1GreedySegmentation_1_1SegmentComputerIterator.html#afa9e7dc4baf767cddbcc37d223babdea">DGtal::GreedySegmentation&lt; TSegmentComputer &gt;::SegmentComputerIterator</a>
@@ -1240,7 +1261,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1Color.html#aba6651bbad764d65339271fc5fe8fd88">DGtal::Color</a>
 </li>
 <li>GridCurve()
-: <a class="el" href="classDGtal_1_1GridCurve.html#a259f272325184ef123ff78b8f9ee1fd9">DGtal::GridCurve&lt; TKSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1GridCurve.html#a8f157cf12cbc3404ee2f432830fdeb63">DGtal::GridCurve&lt; TKSpace &gt;</a>
 </li>
 <li>gridSteps()
 : <a class="el" href="classDGtal_1_1GaussDigitizer.html#a6069aed37793aee9f857f64f138352e8">DGtal::GaussDigitizer&lt; TSpace, TEuclideanShape &gt;</a>
@@ -1253,7 +1274,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 10 2021 15:53:42 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 27 2021 18:32:58 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

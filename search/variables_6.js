@@ -2,6 +2,9 @@ var searchData=
 [
   ['f',['f',['../classDGtal_1_1FunctorOnCells.html#a71bca65e4acde0b95400c9d00104e669',1,'DGtal::FunctorOnCells']]],
   ['face',['face',['../structDGtal_1_1HalfEdgeDataStructure_1_1HalfEdge.html#adf24ad847f8298ffe2d473b75655b419',1,'DGtal::HalfEdgeDataStructure::HalfEdge']]],
+  ['facet_5fcounter',['facet_counter',['../structDGtal_1_1QuickHull.html#a9b46be3914d310d1053d8af1bcea1f98',1,'DGtal::QuickHull']]],
+  ['facets',['facets',['../structDGtal_1_1QuickHull.html#a6bee048b8ecb27c46de6ad5376319c15',1,'DGtal::QuickHull']]],
+  ['false_5fface_5fcell',['false_face_cell',['../structDGtal_1_1ConvexCellComplex.html#a51d9f8d3d24998da8bc93f95e89e1987',1,'DGtal::ConvexCellComplex']]],
   ['falsebf0',['falseBF0',['../namespaceDGtal_1_1functors.html#ab21e836606fcc449ad58326a746ec06b',1,'DGtal::functors']]],
   ['fct',['fct',['../structDGtal_1_1Display3D_1_1SelectCallbackFctStore.html#ab1708b2aae600d7848593eabf9e1210e',1,'DGtal::Display3D::SelectCallbackFctStore']]],
   ['file',['file',['../classDGtal_1_1ImageFactoryFromHDF5.html#acf6ea2a2bb5924dd36b5cb26e18eead0',1,'DGtal::ImageFactoryFromHDF5']]],
