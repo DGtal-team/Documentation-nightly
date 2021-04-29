@@ -96,7 +96,7 @@ $(function() {
 <h1><a class="anchor" id="moduleAlphaThickSegmentRecoIntro"></a>
 Alpha-thick Segment</h1>
 <p>The first definition of <b>blurred</b> <b>segment</b> <a class="el" href="citelist.html#CITEREF_debledFuzzy2005">[41]</a> relies on the definition of the digital straight lines (<a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments</a>):</p>
-<p>A set \( \mathcal{S}_f \) of consecutive points ( \( \mathcal{S}_f \geq 2 \)) of an 8-connected curve is a blurred segment with order \( d \) if there exists a discrete line \( \mathcal{D}(a,b, \mu, \omega) \) such that all points of \( \mathcal{S}_f \) belong to \( \mathcal{D} \) and \( \frac{\omega}{max(|a|,|b|) \leq d } \). The line \( D \) is said bounding for \( \mathcal{S}_f \).</p>
+<p>A set \( \mathcal{S}_f \) of consecutive points ( \( \mathcal{S}_f \geq 2 \)) of an 8-connected curve is a blurred segment with order \( d \) if there exists a discrete line \( \mathcal{D}(a,b, \mu, \omega) \) such that all points of \( \mathcal{S}_f \) belong to \( \mathcal{D} \) and \( \frac{\omega}{max(|a|,|b|)} \leq d \). The line \( D \) is said bounding for \( \mathcal{S}_f \).</p>
 <p>Following this definition, the authors also propose an incremental linear time algorithm to segment a digital curve into blurred segments of order \( d \). The main drawback of such a decomposition is the non optimality (it implies over segmentation). Then the author introduce the notion of blurred segment of width \( \nu \) <a class="el" href="citelist.html#CITEREF_DebledRennessonBlurred2005">[40]</a>. The width \( \nu \) is associated to the isothetic thickness of a set of points, ie. the minimum value between its vertical and horizontal thicknesses (see figure below).</p>
 <div class="image">
 <img src="exampleConvexHullHV.png" alt="exampleConvexHullHV.png"/>
@@ -178,7 +178,7 @@ Tangential cover with alpha-thick segments with alpha = 4 for a point of index 8
   </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 27 2021 18:32:40 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 29 2021 06:39:51 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
