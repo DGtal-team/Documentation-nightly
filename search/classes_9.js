@@ -130,6 +130,7 @@ var searchData=
   ['itkiotrait_3c_20bool_20_3e',['ITKIOTrait&lt; bool &gt;',['../structDGtal_1_1ITKIOTrait_3_01bool_01_4.html',1,'DGtal']]],
   ['itkreader',['ITKReader',['../structDGtal_1_1ITKReader.html',1,'DGtal']]],
   ['itkwriter',['ITKWriter',['../structDGtal_1_1ITKWriter.html',1,'DGtal']]],
+  ['itkwriter_3c_20imagecontainerbyitkimage_3c_20tdomain_2c_20tvalue_20_3e_2c_20tfunctor_20_3e',['ITKWriter&lt; ImageContainerByITKImage&lt; TDomain, TValue &gt;, TFunctor &gt;',['../structDGtal_1_1ITKWriter_3_01ImageContainerByITKImage_3_01TDomain_00_01TValue_01_4_00_01TFunctor_01_4.html',1,'DGtal']]],
   ['ivector',['IVector',['../classDGtal_1_1IVector.html',1,'DGtal']]],
   ['ivector_3c_20t_2c_20talloc_2c_20true_20_3e',['IVector&lt; T, TAlloc, true &gt;',['../classDGtal_1_1IVector_3_01T_00_01TAlloc_00_01true_01_4.html',1,'DGtal']]]
 ];

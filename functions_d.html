@@ -765,7 +765,8 @@ $(function() {
 , <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html#afe361d84b433a30a1706111223ef6d04">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;</a>
 </li>
 <li>dimension
-: <a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a1f65673ef232a8af9fa6cd30a4a8b9b5">DGtal::KhalimskyPreSpaceND&lt; dim, TInteger &gt;</a>
+: <a class="el" href="structDGtal_1_1ITKWriter.html#a1f6f98a7539c59e393e8a507027018e8">DGtal::ITKWriter&lt; TImage, TFunctor &gt;</a>
+, <a class="el" href="classDGtal_1_1KhalimskyPreSpaceND.html#a1f65673ef232a8af9fa6cd30a4a8b9b5">DGtal::KhalimskyPreSpaceND&lt; dim, TInteger &gt;</a>
 , <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#ae2b2dcf34c36a5e3eae4bf13291f1578">DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;</a>
 , <a class="el" href="structDGtal_1_1LinearAlgebra.html#adf39f09adea8af09299e1f10024adf02">DGtal::LinearAlgebra&lt; Space &gt;</a>
 , <a class="el" href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;</a>
@@ -856,7 +857,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a36eb3d6a20cb5faf6ba6880c2e41f286">DGtal::DiscreteExteriorCalculus&lt; dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger &gt;</a>
 </li>
 <li>DiscreteExteriorCalculusFactory()
-: <a class="el" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html#ab0d2ac8d6c9213741ce003738fcc416a">DGtal::DiscreteExteriorCalculusFactory&lt; TLinearAlgebraBackend, TInteger &gt;</a>
+: <a class="el" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html#abacfd14ebaa390603966ac755b90ab90">DGtal::DiscreteExteriorCalculusFactory&lt; TLinearAlgebraBackend, TInteger &gt;</a>
 </li>
 <li>DiscreteExteriorCalculusFactory&lt; TLinearAlgebraBackend, TInteger &gt;
 : <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#abf912ad683384c8a8e3b301f4357c2c8">DGtal::DiscreteExteriorCalculus&lt; dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger &gt;</a>
@@ -1008,13 +1009,13 @@ $(function() {
 </li>
 <li>Domain
 : <a class="el" href="classDGtal_1_1DigitalSetDomain.html#a0a3017744f0b867390670f3845eb8f04">DGtal::DigitalSetDomain&lt; TDigitalSet &gt;</a>
+, <a class="el" href="classDGtal_1_1DigitalSetFromMap.html#a5832334b8ce3f8805077ee5edb7108f3">DGtal::DigitalSetFromMap&lt; TMapImage &gt;</a>
 </li>
 <li>domain()
 : <a class="el" href="classDGtal_1_1DigitalSetFromMap.html#a839d9a4c94b5c69f187c311c2d1c5c65">DGtal::DigitalSetFromMap&lt; TMapImage &gt;</a>
 </li>
 <li>Domain
-: <a class="el" href="classDGtal_1_1DigitalSetFromMap.html#a5832334b8ce3f8805077ee5edb7108f3">DGtal::DigitalSetFromMap&lt; TMapImage &gt;</a>
-, <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver.html#a88e3cc5c4769d14de75b8d7a2a44fe0a">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, dimension &gt;</a>
+: <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver.html#a88e3cc5c4769d14de75b8d7a2a44fe0a">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, dimension &gt;</a>
 , <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#ac37a94cd1986a1ba64f01a5708e23b1e">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;</a>
 , <a class="el" href="classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#a06317bb2eacb5f722f4f0154addc75d2">DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;</a>
 , <a class="el" href="classDGtal_1_1DistanceTransformation.html#a4bc367e600ef6582f37dcf3a0f37c2ae">DGtal::DistanceTransformation&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;</a>
@@ -1079,23 +1080,19 @@ $(function() {
 </li>
 <li>domain()
 : <a class="el" href="classDGtal_1_1ImageContainerBySTLMap.html#ab8956f23a0051692663bdb35838a8caf">DGtal::ImageContainerBySTLMap&lt; TDomain, TValue &gt;</a>
+, <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html#a01e9383b24908cf4b6bb52e5f8cdf136">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;</a>
 </li>
 <li>Domain
 : <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html#a95d272d9ee40bcc6df56f49b8bd775ae">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;</a>
+, <a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#aafa263c82cbbe0a0efe68e82e0a16869">DGtal::ImageFactoryFromHDF5&lt; TImageContainer &gt;</a>
 </li>
 <li>domain()
-: <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html#a01e9383b24908cf4b6bb52e5f8cdf136">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;</a>
-, <a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#a9a595e158a01deb8beeb5ce95ead7710">DGtal::ImageFactoryFromHDF5&lt; TImageContainer &gt;</a>
+: <a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#a9a595e158a01deb8beeb5ce95ead7710">DGtal::ImageFactoryFromHDF5&lt; TImageContainer &gt;</a>
+, <a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#ae1733dfc6e622aba24b5d8cb51fb20f6">DGtal::ImageFactoryFromImage&lt; TImageContainer &gt;</a>
 </li>
 <li>Domain
-: <a class="el" href="classDGtal_1_1ImageFactoryFromHDF5.html#aafa263c82cbbe0a0efe68e82e0a16869">DGtal::ImageFactoryFromHDF5&lt; TImageContainer &gt;</a>
-, <a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#a69306035ebd128cfc40adc4c5ad292ca">DGtal::ImageFactoryFromImage&lt; TImageContainer &gt;</a>
-</li>
-<li>domain()
-: <a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#ae1733dfc6e622aba24b5d8cb51fb20f6">DGtal::ImageFactoryFromImage&lt; TImageContainer &gt;</a>
-</li>
-<li>Domain
-: <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#aba2afbfbb95f5229445b0ad75d7c07c7">DGtal::IntegralInvariantCovarianceEstimator&lt; TKSpace, TPointPredicate, TCovarianceMatrixFunctor &gt;</a>
+: <a class="el" href="classDGtal_1_1ImageFactoryFromImage.html#a69306035ebd128cfc40adc4c5ad292ca">DGtal::ImageFactoryFromImage&lt; TImageContainer &gt;</a>
+, <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html#aba2afbfbb95f5229445b0ad75d7c07c7">DGtal::IntegralInvariantCovarianceEstimator&lt; TKSpace, TPointPredicate, TCovarianceMatrixFunctor &gt;</a>
 , <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html#a8b197f8949e229ecbc80cd5d7a2b1238">DGtal::IntegralInvariantVolumeEstimator&lt; TKSpace, TPointPredicate, TVolumeFunctor &gt;</a>
 , <a class="el" href="classDGtal_1_1IteratorCompletionTraits_3_01ArrayImageAdapter_3_01TArrayIterator_00_01TDomain_01_4_01_4_1_1DistanceFunctor.html#a79a0f67cc951326052b97eeea300e2c1">DGtal::IteratorCompletionTraits&lt; ArrayImageAdapter&lt; TArrayIterator, TDomain &gt; &gt;::DistanceFunctor</a>
 , <a class="el" href="classDGtal_1_1KanungoNoise.html#af1ac8ecd0ac58d561a2ced870794fe32">DGtal::KanungoNoise&lt; TPointPredicate, TDomain, TDigitalSetContainer &gt;</a>
@@ -1107,33 +1104,33 @@ $(function() {
 </li>
 <li>domain()
 : <a class="el" href="classDGtal_1_1Object.html#a26b464a2575955585165e2e647ae1964">DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt;</a>
+, <a class="el" href="classDGtal_1_1PowerMap.html#a9e9fbfb4ab86e2087c78325f400df3b7">DGtal::PowerMap&lt; TWeightImage, TPowerSeparableMetric, TImageContainer &gt;</a>
 </li>
 <li>Domain
 : <a class="el" href="classDGtal_1_1PowerMap.html#a79d414a31dc132259b5e54b522610172">DGtal::PowerMap&lt; TWeightImage, TPowerSeparableMetric, TImageContainer &gt;</a>
-</li>
-<li>domain()
-: <a class="el" href="classDGtal_1_1PowerMap.html#a9e9fbfb4ab86e2087c78325f400df3b7">DGtal::PowerMap&lt; TWeightImage, TPowerSeparableMetric, TImageContainer &gt;</a>
-</li>
-<li>Domain
-: <a class="el" href="classDGtal_1_1RealFFT_3_01HyperRectDomain_3_01TSpace_01_4_00_01T_01_4.html#ab5201d0aa2870cdb856239972eef48f0">DGtal::RealFFT&lt; HyperRectDomain&lt; TSpace &gt;, T &gt;</a>
+, <a class="el" href="classDGtal_1_1RealFFT_3_01HyperRectDomain_3_01TSpace_01_4_00_01T_01_4.html#ab5201d0aa2870cdb856239972eef48f0">DGtal::RealFFT&lt; HyperRectDomain&lt; TSpace &gt;, T &gt;</a>
+, <a class="el" href="classDGtal_1_1ReverseDistanceTransformation.html#aae3e99ae37d8e9c7928d585b7f1c61bc">DGtal::ReverseDistanceTransformation&lt; TWeightImage, TPSeparableMetric, TImageContainer &gt;</a>
 </li>
 <li>domain()
 : <a class="el" href="classDGtal_1_1ReverseDistanceTransformation.html#a4874d0d80f1fa46bce6f5b8c60c8e196">DGtal::ReverseDistanceTransformation&lt; TWeightImage, TPSeparableMetric, TImageContainer &gt;</a>
 </li>
 <li>Domain
-: <a class="el" href="classDGtal_1_1ReverseDistanceTransformation.html#aae3e99ae37d8e9c7928d585b7f1c61bc">DGtal::ReverseDistanceTransformation&lt; TWeightImage, TPSeparableMetric, TImageContainer &gt;</a>
-, <a class="el" href="classDGtal_1_1Shapes.html#aa9a8621947bb3fdbaed2e5f36deb67bf">DGtal::Shapes&lt; TDomain &gt;</a>
+: <a class="el" href="classDGtal_1_1Shapes.html#aa9a8621947bb3fdbaed2e5f36deb67bf">DGtal::Shapes&lt; TDomain &gt;</a>
 , <a class="el" href="classDGtal_1_1Shortcuts.html#adf178f7428632fde4e8b6b72e9baaac3">DGtal::Shortcuts&lt; TKSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1ShortcutsGeometry.html#adf598c4fbfc633a6aa45176846486e2f">DGtal::ShortcutsGeometry&lt; TKSpace &gt;</a>
-, <a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#a9eb14583d7c08df83896255cc0ac4b25">DGtal::SpatialCubicalSubdivision&lt; TSpace &gt;</a>
 </li>
 <li>domain()
 : <a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#a9619e018c1b1fb2282e52af595914f15">DGtal::SpatialCubicalSubdivision&lt; TSpace &gt;</a>
-, <a class="el" href="classDGtal_1_1TiledImage.html#a5e640b808fae4d9e9f97ca6f37715beb">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;</a>
 </li>
 <li>Domain
-: <a class="el" href="classDGtal_1_1TiledImage.html#ae6a80ac6619abea14e324b69139a6a49">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;</a>
-, <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a167dc09000a4c21ac55e30f3e9c2ecad">DGtal::VoronoiCovarianceMeasure&lt; TSpace, TSeparableMetric &gt;</a>
+: <a class="el" href="classDGtal_1_1SpatialCubicalSubdivision.html#a9eb14583d7c08df83896255cc0ac4b25">DGtal::SpatialCubicalSubdivision&lt; TSpace &gt;</a>
+, <a class="el" href="classDGtal_1_1TiledImage.html#ae6a80ac6619abea14e324b69139a6a49">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;</a>
+</li>
+<li>domain()
+: <a class="el" href="classDGtal_1_1TiledImage.html#a5e640b808fae4d9e9f97ca6f37715beb">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;</a>
+</li>
+<li>Domain
+: <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a167dc09000a4c21ac55e30f3e9c2ecad">DGtal::VoronoiCovarianceMeasure&lt; TSpace, TSeparableMetric &gt;</a>
 </li>
 <li>domain()
 : <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html#a3a43d3a667ab0aedd51abd489f6cf22a">DGtal::VoronoiCovarianceMeasure&lt; TSpace, TSeparableMetric &gt;</a>
@@ -1143,13 +1140,13 @@ $(function() {
 : <a class="el" href="classDGtal_1_1VoronoiMap.html#a471aa9180dd6cadeb52c2533d00359e2">DGtal::VoronoiMap&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;</a>
 </li>
 <li>DomainAdjacency()
-: <a class="el" href="classDGtal_1_1DomainAdjacency.html#a39ad0428f571fea7cbd6c5df8133a18b">DGtal::DomainAdjacency&lt; TDomain, TAdjacency &gt;</a>
+: <a class="el" href="classDGtal_1_1DomainAdjacency.html#a5aa77bf0753e624c07c827b6e2c79d06">DGtal::DomainAdjacency&lt; TDomain, TAdjacency &gt;</a>
 </li>
 <li>domainBlockCoords()
 : <a class="el" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;</a>
 </li>
 <li>DomainMetricAdjacency()
-: <a class="el" href="classDGtal_1_1deprecated_1_1DomainMetricAdjacency.html#ab5a8c21ebd2b13fb5099ef8b236287b2">DGtal::deprecated::DomainMetricAdjacency&lt; Domain, maxNorm1, dimension &gt;</a>
+: <a class="el" href="classDGtal_1_1deprecated_1_1DomainMetricAdjacency.html#a3436cc9ebaf52063f6f8b41c54d64328">DGtal::deprecated::DomainMetricAdjacency&lt; Domain, maxNorm1, dimension &gt;</a>
 </li>
 <li>domainPointer()
 : <a class="el" href="classDGtal_1_1concepts_1_1CDigitalSetArchetype.html#a7fcd04eaf75f150bc4915d112414a4e7">DGtal::concepts::CDigitalSetArchetype&lt; TDomain &gt;</a>
@@ -1160,7 +1157,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1Object.html#a68e8dc93a72c12e10496b4a86ccfb0c9">DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt;</a>
 </li>
 <li>DomainPredicate()
-: <a class="el" href="structDGtal_1_1functors_1_1DomainPredicate.html#a768de3dbdab2a0cff1797469d0e11afe">DGtal::functors::DomainPredicate&lt; TDomain &gt;</a>
+: <a class="el" href="structDGtal_1_1functors_1_1DomainPredicate.html#a4ea25c859f8d5551cc43197b9de684ae">DGtal::functors::DomainPredicate&lt; TDomain &gt;</a>
 </li>
 <li>DomainPtr
 : <a class="el" href="classDGtal_1_1ImageContainerBySTLMap.html#a66d4907552db5912954afafe8150b07a">DGtal::ImageContainerBySTLMap&lt; TDomain, TValue &gt;</a>
@@ -1199,13 +1196,13 @@ $(function() {
 : <a class="el" href="structDGtal_1_1functors_1_1IICurvatureFunctor.html#a1715235db7ddb22771dedf0eed94ced7">DGtal::functors::IICurvatureFunctor&lt; TSpace &gt;</a>
 </li>
 <li>draw()
-: <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#a7e9d89a4960031c95000c9acb945d760">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
-, <a class="el" href="structDGtal_1_1Display2DFactory.html#a0939b8b660728ce587e3257a37be114c">DGtal::Display2DFactory</a>
+: <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#a92b41171cc6452165ec410e4475a17ff">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
+, <a class="el" href="structDGtal_1_1Display2DFactory.html#a91720d2493618bf2807344a9ea917f81">DGtal::Display2DFactory</a>
 , <a class="el" href="structDGtal_1_1Display3DFactory.html#a4ed590c06301e77d0c69381d44aa538b">DGtal::Display3DFactory&lt; TSpace, TKSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1Style2DFactory.html#af1b4bbf998656781bb2e100769f790ef">DGtal::Style2DFactory</a>
 , <a class="el" href="classDGtal_1_1Viewer3D.html#a9ce7966defee14c32c45f2b8e80343ac">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1Viewer3D_1_1Extension.html#a5a8f4662c864d9120c85e5c5040a2d0a">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::Extension</a>
-, <a class="el" href="structDGtal_1_1Viewer3DFactory.html#a4d7be5a97a9972cdcdc96f9d1e813bfb">DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;</a>
+, <a class="el" href="structDGtal_1_1Viewer3DFactory.html#a2d5a538bda7136a0d3a9c4fea773decc">DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;</a>
 </li>
 <li>drawAnnulus()
 : <a class="el" href="structDGtal_1_1Display2DFactory.html#aa8acca368b5a01334a98f7e043fe11cf">DGtal::Display2DFactory</a>
@@ -1218,18 +1215,18 @@ $(function() {
 : <a class="el" href="classLibBoard_1_1Board.html#a91f02bfc3d6ba41c0e19fea2aab80472">LibBoard::Board</a>
 </li>
 <li>drawAsBalls()
-: <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#a743f003358733f904f45a962184852d1">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
-, <a class="el" href="structDGtal_1_1Display3DFactory.html#a7867fdb53c27e98a6f7ca2a7d5eb6bd0">DGtal::Display3DFactory&lt; TSpace, TKSpace &gt;</a>
+: <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#ae9d60b16e7da37eae0b96f72264ba3a5">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
+, <a class="el" href="structDGtal_1_1Display3DFactory.html#a2fb9b288fb15041815c0bf6bf59bfbb4">DGtal::Display3DFactory&lt; TSpace, TKSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1Viewer3DFactory.html#a3715d7d62f55f36941891699cb2f37b7">DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;</a>
 </li>
 <li>drawAsBoundingBox()
 : <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#ad33997c919ac74cf790f0586693cab27">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1Display2DFactory.html#a0832845328e774f0d9166c37e1c9605f">DGtal::Display2DFactory</a>
-, <a class="el" href="structDGtal_1_1Display3DFactory.html#a1f51117a4f2f51a637430e9f4680f59f">DGtal::Display3DFactory&lt; TSpace, TKSpace &gt;</a>
-, <a class="el" href="structDGtal_1_1Viewer3DFactory.html#a8dbadb6d3aaab9628850db9f6104238a">DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;</a>
+, <a class="el" href="structDGtal_1_1Display3DFactory.html#a99fe0fea435312d42db4d500d0c80dbf">DGtal::Display3DFactory&lt; TSpace, TKSpace &gt;</a>
+, <a class="el" href="structDGtal_1_1Viewer3DFactory.html#a8e4920c6e02d12f127e34e2322586514">DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;</a>
 </li>
 <li>drawAsDigitalPoints()
-: <a class="el" href="structDGtal_1_1Display2DFactory.html#aaf2de3a1977df4b521a33d38b8be287a">DGtal::Display2DFactory</a>
+: <a class="el" href="structDGtal_1_1Display2DFactory.html#a47bf6ad9847d8e6af5731c7f8777132e">DGtal::Display2DFactory</a>
 </li>
 <li>drawAsFaces()
 : <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#a8346c4b7b4035ae3ab81d1349df26acd">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
@@ -1237,7 +1234,7 @@ $(function() {
 , <a class="el" href="structDGtal_1_1Viewer3DFactory.html#a23bed34b67ff18f4b26324d3bbcaaf7d">DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;</a>
 </li>
 <li>drawAsGrid()
-: <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#abf2c087e2206f2db0b8549eb0942f4f3">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
+: <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#af7f2c1dc30e87a2c0c52d8da8182e9e7">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1Display2DFactory.html#a27009afadf67d36cd5476432d6254327">DGtal::Display2DFactory</a>
 , <a class="el" href="structDGtal_1_1Display3DFactory.html#a373ded059785a96322c0460fb67a66e7">DGtal::Display3DFactory&lt; TSpace, TKSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1Viewer3DFactory.html#a028d5800bf8e6e117ab0c65405e94974">DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;</a>
@@ -1246,10 +1243,10 @@ $(function() {
 : <a class="el" href="structDGtal_1_1Display2DFactory.html#af014ccb408100f198edd9c22d2b80e29">DGtal::Display2DFactory</a>
 </li>
 <li>drawAsPaving()
-: <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#aecaeb9e1b90b3a028586f66958b01e37">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
+: <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#a962141ae2ca888fb7836154b854fcc5b">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1Display2DFactory.html#af16a54b4aec2329f78ea6d92b89dbcaf">DGtal::Display2DFactory</a>
-, <a class="el" href="structDGtal_1_1Display3DFactory.html#a42abdc35c3794d67b80548e7d529cc05">DGtal::Display3DFactory&lt; TSpace, TKSpace &gt;</a>
-, <a class="el" href="structDGtal_1_1Viewer3DFactory.html#a1accf5dce7500ab71f747aabcb36f2da">DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;</a>
+, <a class="el" href="structDGtal_1_1Display3DFactory.html#a5d348cf0028a0f5abf78b738cc5ce29a">DGtal::Display3DFactory&lt; TSpace, TKSpace &gt;</a>
+, <a class="el" href="structDGtal_1_1Viewer3DFactory.html#a2e3bc344d8b987401671eb8dce715d22">DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;</a>
 </li>
 <li>drawAsPavingBalls()
 : <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#a388af103fb98666fca44d34405bca0d0">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
@@ -1257,7 +1254,7 @@ $(function() {
 , <a class="el" href="structDGtal_1_1Viewer3DFactory.html#a6ed59092db9ea170fee645c91c5cf0b6">DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;</a>
 </li>
 <li>drawAsPavingTransparent()
-: <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#a3ffb960288e148b6d1b82bdc7e5505a9">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
+: <a class="el" href="structDGtal_1_1Board3DTo2DFactory.html#a8b81deabe57353cf6b8379cfc8b03ebd">DGtal::Board3DTo2DFactory&lt; TSpace, TKSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1Display3DFactory.html#ae18ddc671d8687549eb0bbd88442c906">DGtal::Display3DFactory&lt; TSpace, TKSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1Viewer3DFactory.html#af29b421fb81ad4ab2b8adfd353467904">DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;</a>
 </li>
@@ -1279,7 +1276,7 @@ $(function() {
 : <a class="el" href="classLibBoard_1_1Board.html#a80da45abe8e9b12f24913a71b7056b5a">LibBoard::Board</a>
 </li>
 <li>drawDECSignedKhalimskyCell()
-: <a class="el" href="structDGtal_1_1Display2DFactory.html#ad0ac83ea8127969f88dd5e95750b7809">DGtal::Display2DFactory</a>
+: <a class="el" href="structDGtal_1_1Display2DFactory.html#a298dba7e30b298ca61b336e3f676b2af">DGtal::Display2DFactory</a>
 </li>
 <li>drawDot()
 : <a class="el" href="classLibBoard_1_1Board.html#a7e4e62a0f349a1ec0ed89f09685c2f93">LibBoard::Board</a>
@@ -1328,7 +1325,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1Viewer3D.html#a0ca2570ef58828faf2a8c3c1deb685a0">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;</a>
 </li>
 <li>drawText()
-: <a class="el" href="classLibBoard_1_1Board.html#ab40642b0fff9e5b8585793c8177d2901">LibBoard::Board</a>
+: <a class="el" href="classLibBoard_1_1Board.html#a337f95036e1ac863d8be80f3cd2b011c">LibBoard::Board</a>
 </li>
 <li>drawTriangle()
 : <a class="el" href="classLibBoard_1_1Board.html#a4c7005d95ef8d295b089ebfd1042992d">LibBoard::Board</a>
@@ -1367,7 +1364,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1StandardDSS4.html#a22d1b32aeb75f61b8f53f0496ba6af4b">DGtal::StandardDSS4&lt; TCoordinate, TInteger &gt;</a>
 </li>
 <li>DSLSubsegment()
-: <a class="el" href="classDGtal_1_1DSLSubsegment.html#ae9acafc8e68c3ddb47ce40c502afafef">DGtal::DSLSubsegment&lt; TInteger, TNumber &gt;</a>
+: <a class="el" href="classDGtal_1_1DSLSubsegment.html#a2ea61c4919870b3067e4c28a90bc0ec9">DGtal::DSLSubsegment&lt; TInteger, TNumber &gt;</a>
 </li>
 <li>DSLSubsegmentFareyFan()
 : <a class="el" href="classDGtal_1_1DSLSubsegment.html#a7adb70fcc0d998e3d0105f76222fe72d">DGtal::DSLSubsegment&lt; TInteger, TNumber &gt;</a>
@@ -1482,7 +1479,7 @@ $(function() {
 : <a class="el" href="structDGtal_1_1concepts_1_1CPreCellularGridSpaceND.html#a847a99432fda3036fecafc96b296476f">DGtal::concepts::CPreCellularGridSpaceND&lt; T &gt;</a>
 </li>
 <li>DummyEstimatorFromSurfels()
-: <a class="el" href="structDGtal_1_1functors_1_1DummyEstimatorFromSurfels.html#a8bdf786e14baf82a4216ec43bbe30466">DGtal::functors::DummyEstimatorFromSurfels&lt; TSurfel, TSCellEmbedder &gt;</a>
+: <a class="el" href="structDGtal_1_1functors_1_1DummyEstimatorFromSurfels.html#ad778aaf54cdef8de48755507e091bf72">DGtal::functors::DummyEstimatorFromSurfels&lt; TSurfel, TSCellEmbedder &gt;</a>
 </li>
 <li>dumpVoxels()
 : <a class="el" href="classDGtal_1_1VoxelComplex.html#a09e033a22eaa6a4b5a68b111ef5dae0f">DGtal::VoxelComplex&lt; TKSpace, TCellContainer &gt;</a>
@@ -1506,7 +1503,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 29 2021 12:03:40 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 1 2021 21:08:39 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
